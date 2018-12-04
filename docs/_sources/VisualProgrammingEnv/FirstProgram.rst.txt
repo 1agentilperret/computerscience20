@@ -3,39 +3,39 @@
    :start: 1
 
 
-Introduction to Scratch (Broadcasts)
+Introduction à Scratch (envoyer à tous)
 ============================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
     Introduction au cours, et à l'environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l'idée d'utiliser le bloc de diffusion pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.
 
 
 .. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+    :showtitle: Résultats du programme d'études traités dans cette section. 
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-FP2** Investigate how control structures affect program flow.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
 
 
 Introduction
 ----------------------------
 
-Welcome here! The goal of this course is to teach you how to problem solve, and we will be using the concepts of Computer Science to achieve that goal. By the end of the semester, you will be able to confidently solve problems by writing computer programs. In other words, you will be able to control what the computer does by writing algorithms (a series of steps).
+Bienvenue! Le but de ce cours est de vous apprendre à résoudre des problèmes, et nous utiliserons les concepts de l'informatique pour atteindre cet objectif. À la fin de la session, vous serez en mesure de résoudre les problèmes en toute confiance en écrivant des programmes informatiques. En d'autres termes, vous serez en mesure de contrôler ce que l'ordinateur fait en écrivant des algorithmes (une série d'étapes).
 
-Although we will eventually get to writing plain text into a file to create computer programs, that process can be a bit intimidating. To help you understand what you are able to teach a computer to do, we will follow the following process:
+Bien que nous finirons par écrire du texte brut dans un fichier pour créer des programmes informatiques, ce processus peut être un peu intimidant. Pour vous aider à comprendre ce que vous êtes capable d'enseigner à un ordinateur, nous suivrons le processus suivant:
 
-- use a visual programming environment (this will allow you to understand the basic control structures of computer science, and will prevent you from making any syntax errors that would cause your program to report an error when you run it)
-- use a constrained language to solve algorithmic puzzles (here you will type in text to control what the computer is doing, which means you will run into syntax errors, but the puzzles you are solving will give you instant visual feedback)
-- use a "traditional" computer science language (once you are feeling confident with many of the basic ideas of computer science, we will apply them using a traditional computer language)
+- utiliser un environnement de programmation visuel (cela vous permettra de comprendre les structures de contrôle de base de l'informatique et vous évitera de faire des erreurs de syntaxe qui amèneraient votre programme à signaler une erreur lorsque vous l'exécutez)
+- utilisez un langage contraint pour résoudre les puzzles algorithmiques (ici vous tapez du texte pour contrôler ce que fait l'ordinateur, ce qui signifie que vous rencontrerez des erreurs de syntaxe, mais les énigmes que vous résolvez vous donneront un retour visuel instantané)
+- utiliser un langage informatique "traditionnel" (une fois que vous vous sentirez confiant avec de nombreuses idées de base de l'informatique, nous les appliquerons en utilisant un langage informatique traditionnel)
 
+Votre premier programme informatique!
+--------------------------------------
 
-Your First Computer Program!
-----------------------------
+Il existe de nombreux environnements de programmation visuelle différents, mais celui que nous utiliserons s'appelle `Scratch <https://scratch.mit.edu/>`_. Votre première tâche consiste à créer un compte sur le site Web Scratch, afin que les programmes que vous écrivez puissent être sauvegardés et consultés plus tard. 
+`Allez faire cela maintenant! <https://scratch.mit.edu/>`_  
 
-There are many different visual programming environments, but the one we will use is called `Scratch <https://scratch.mit.edu/>`_. Your first task is to create an account on the Scratch website, so that the programs you write can be saved and accessed later. Go do that now!
-
-If you'd prefer to watch a video describing how to create your first Scratch program, `the following video <https://www.youtube.com/watch?v=pJYCRtSDJSk>`_ demonstrates the same ideas as what I've described in text below.
+Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watch?v=pJYCRtSDJSk>`_ suivante montre les mêmes idées que celles que j'ai décrites dans le texte ci-dessous.
 
 .. youtube:: pJYCRtSDJSk
     :height: 315
@@ -43,15 +43,15 @@ If you'd prefer to watch a video describing how to create your first Scratch pro
     :align: left
     :http: https
 
-Now that you have an account, let's make your first computer program of the semester! Click the Create button on the top of the Scratch website to create a new project.
+Maintenant que vous avez un compte, faisons votre premier programme informatique du semestre! Cliquez sur le bouton Créer en haut du site Web Scratch pour **créer** un nouveau projet.
 
 .. image:: images/scratch_create.png
 
-In the project view, the screen is divided into a number of panes, including the *stage* (where you will see your project run), *sprite list* (shows which sprites are part of your project, and allows you to select them), *block palette* (where all the blocks you can drag-and-drop onto your scripts), and the *scripts area* (where you will combine blocks of code to create programs for your sprites to run). One of the most important things for you to keep in mind is that **you can't break the environment**, so feel free to explore as much as you want!
+Dans la vue du projet, l'écran est divisé en plusieurs volets, y compris la scène (où vous verrez votre projet s'exécuter), la liste des lutins (montre quels lutins font partie de votre projet, et vous permet de les sélectionner), palette de blocs (voici tous les blocs que vous pouvez glisser et déposer sur vos scripts), et la zone des scripts (où vous allez combiner des blocs de code pour créer des programmes pour vos lutins à exécuter). L'une des choses les plus importantes à garder à l'esprit est que **vous ne pouvez pas briser l'environnement**, alors n'hésitez pas à explorer autant que vous voulez!
 
 .. image:: images/scratch_areas.png
 
-.. sidebar:: Teacher Note
+.. sidebar:: Note de l'enseignant
 
     You may want to spend some time exploring the environment with the students before you actually create the first program.
 
