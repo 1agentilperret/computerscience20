@@ -11,8 +11,8 @@ Preface
    About/ForTeachers.rst
    About/Acknowledgments.rst
 
-Scratch
-:::::::
+|Scratch|  
+:::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -32,8 +32,8 @@ Scratch
    VisualProgrammingEnv/StudentDirectedProject.rst
 
 
-Reeborg
-:::::::
+|Reeborg|
+::::::::::
 
 .. toctree::
    :maxdepth: 1
@@ -220,3 +220,11 @@ Appendices
    Python/EasyGUI/Reference.rst
    Python/TurtleConfusion/Challenges.rst
    Python/Microbit/QuickStartExamples.rst
+
+.. |Scratch| raw:: html
+
+   <a href="https://scratch.mit.edu/" target="_blank" style="color:black;">Scratch</a>
+
+.. |Reeborg| raw:: html
+
+   <a href="https://reeborg.cs20.ca" target="_blank" style="color:black;">Reeborg</a>

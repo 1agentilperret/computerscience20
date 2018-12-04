@@ -53,74 +53,74 @@ Dans la vue du projet, l'écran est divisé en plusieurs volets, y compris la sc
 
 .. sidebar:: Note de l'enseignant
 
-    You may want to spend some time exploring the environment with the students before you actually create the first program.
+    Vous voudrez peut-être passer un peu de temps à explorer l'environnement avec les élèves avant de créer le premier programme.
 
-For our first program, let's create a simple conversation between two sprites. To do this, you'll need to add a second sprite to the project. You do this in a number of ways, each of which have an icon at the top of the sprite list pane. You can hover over each of the images with your mouse to discover what they represent. For now, use the "Choose Sprite from Library" icon to add an additional sprite to the stage.
+Pour notre premier programme, **créons une conversation simple entre deux lutins**. Pour ce faire, vous devez **ajouter** un deuxième lutin au projet. Il existe plusieurs façon d'en ajouter, chacune représenté par une icône en haut du volet de la liste des lutins. Vous pouvez survoler chacune des images avec votre souris pour découvrir ce qu'elles représentent. Pour l'instant, utilisez l'icône **"Choisir un lutin dans la bibliothèque"** pour ajouter un lutin supplémentaire à la scène.
 
 .. image:: images/scratch_add_new_sprite_from_library.png
 
-For this example, I included the Giga sprite, so my stage looks like this:
+Pour cet exemple, j'ai inclus le lutin Giga (dans le thème espace), donc ma scène ressemble à ceci:
 
 .. image:: images/scratch_initial_characters.png
 
-.. note:: Once you have more than one sprite in the sprite list pane, you will be able to see that the scripts area pane shows the script for the currently selected sprite. To be sure you understand this, drag a block from the block palette onto the scripts area. Now select a different sprite in the sprite list by clicking on it. Notice how the blocks in the scripts area change when you select a different sprite.
+.. note:: Une fois que vous avez plus qu'un lutin dans la liste des lutins, vous pouvez voir que le volet de la zone des scripts affiche le script du lutin sélectionnée. Pour être sûr de comprendre cela, faites glisser un bloc de la palette de blocs dans la zone des scripts. Maintenant, sélectionnez un autre lutin dans la liste des lutins en cliquant dessus. Notez comment les blocs de la zone de scripts changent lorsque vous sélectionnez une autre lutin.
 
-Now that you have two sprites in the sprite list pane, let's get them to have a simple conversation. Select the **Looks** tab in the block palette, then drag a **say "Hello" for 2 secs** block to the scripts area. A quick way to see the result of this block is by double clicking it. Try it now! *Note that the small image of the cat is intended to show which sprite is selected in the Sprite List when dragging the block from the Block Palette to the Scripts Area.*
+Maintenant que vous avez deux lutins dans la liste des lutins, faisons en sorte qu'ils aient une conversation simple. Sélectionnez l'onglet **Apparences** *looks* dans la palette de blocs, puis faites glisser **"dire "Bonjour" pendant 2 secondes"** dans la zone des scripts. Un moyen rapide de voir le résultat de ce bloc est en double-cliquant dessus. Essayez-le maintenant! *Notez que la petite image du chat dans les images suivante est pour montrer quel lutin est sélectionné dans la liste des lutins lorsque vous faites glisser le bloc de la palette de blocs vers la zone des scripts*.
 
 .. image:: images/scratch_say_block.png
 
-Of course, we don't want to have to double click the block to make the conversation happen, so we need to have an event trigger the say block. Select the **Events** tab in the block palette, then drag a **when flag clicked** block into the scripts area. Now, drag the **say "Hello" for 2 secs** block until it snaps onto the **when flag clicked** block. At this point, you should be able to make your sprite say Hello when you click the flag above the stage.
+Bien sûr, nous ne voulons pas devoir double-cliquer sur le bloc pour que la conversation ait lieu, nous devons donc avoir un événement qui déclenche le bloc. Sélectionnez l'onglet **Evénements** *events* dans la palette des blocs, puis faites glisser le bloc **"quand drapeau est cliqué"** dans la zone des scripts. Maintenant, faites glisser  "dire "Bonjour" pendant 2 secondes" jusqu'à ce qu'il s'enclenche sur le bloc **"quand drapeau est cliqué"**. À ce stade, vous devriez être en mesure de faire votre lutin dire Bonjour lorsque vous cliquez sur le drapeau au-dessus de la scène.
 
 .. image:: images/scratch_blocks_connected.png
 
-Before we move on with the conversation, we should know how to delete things. If you have a block in your Scripts Area that you no longer want, simply drag it back to the Block Palette and release the mouse.
+Avant de poursuivre la conversation, nous devrions savoir comment supprimer les blocs. Si vous avez un bloc dans votre zone de scripts que vous ne voulez plus, il suffit de le faire glisser dans la palette de blocs et de relâcher la souris.
 
 .. image:: images/scratch_deleting_a_block.gif
 
-To get our conversation going, drag one sprite to the left side of the stage, and the other to the right side of the stage. Now, let's set their starting locations. Hook up the character on the left side of the stage to a block, as follows:
+Pour faire avancer notre conversation, faites glisser un lutin sur le côté gauche de la scène, et l'autre sur le côté droit de la scène. Maintenant, fixons leurs emplacements de départ. Accrocher le personnage sur le côté gauche de la scène à un bloc, comme suit:
 
 .. image:: images/scratch_goTo_1.png
 
-The character on the right side of the stage should have the a script similar to this:
+Le personnage sur le côté droit de la scène devrait avoir un script similaire à ceci:
 
 .. image:: images/scratch_goTo_2.png
 
 .. note::
-  Notice that Scratch uses the Cartesian plane (the xy grid system you learned in math class), and that the origin is directly in the centre of the stage, as shown below:
+  Notez que Scratch utilise le plan cartésien (le système de grille x-y que vous avez appris en mathématique), et que l'origine est directement au centre de la scène, comme indiqué ci-dessous:
 
   .. image:: images/scratch_coordinate_plane.png
      :align: center
 
-Drag both sprites to the locations you would like them to be when they are going to have the conversation. Notice that the x and y values in the *Go to* block in the block palette updates with the x and y locations of the sprite when you release the mouse. Now hook a **glide 1 secs to x: y:** block to the bottom of the script of the character coming in from the left hand side of the stage. Then drag a **say Hello! for 2 secs** block from the Looks tab onto the bottom of that, to have the character start the conversation. Finally, drag a **broadcast** block from the Events tab and hook it onto the bottom of the script. It should now look something like this:
+Faites glisser les deux lutins vers les emplacements que vous souhaitez qu'ils soient quand ils vont avoir la conversation avec le bloc **"aller à x: y:"**. Notez que les valeurs x et y dans le bloc Atteindre dans la palette de blocs sont mises à jour avec les emplacements x et y du lutin lorsque vous relâchez la souris. Maintenant, accrochez **"glisser en 1 secondes à x: y:"** au bas du script du personnage venant du côté gauche de la scène. Ensuite, faites glisser   "dire "Bonjour" pendant 2 secondes" pour que le personnage commence la conversation. Enfin, faites glisser un bloc de diffusion (envoyer ou broadcast) de l'onglet **"Evénements"** et accrochez-le au bas du script. Il devrait maintenant ressembler à ceci:
 
 .. image:: images/scratch_goTo_andGlide.png
 
-Broadcasts
-----------
+Diffusion *Broadcasts*
+-----------------------
 
-What is the point of that broadcast block that we added to the script? In this situation, we wanted the second sprite (the one entering from the right side of the screen) to do something **once an action performed by another sprite was completed**. Broadcasts let us send messages, and any sprite (including the sprite that sent the message) within our project can listen for that message, and respond accordingly. This time, what we'd like to have happen is for the second sprite to enter the screen after the first sprite has moved to the middle of the screen and said something.
+Quel est le but de ce bloc de diffusion que nous avons ajouté au script? Dans cette situation, nous voulions que le deuxième lutin (celui qui vient du côté droit de l'écran) fasse quelque chose **une fois qu'une action effectuée par un autre lutin sera terminée.** Les diffusions nous permettent d'envoyer des messages, et tout lutin (y compris le lutin qui a envoyé le message) dans notre projet peut écouter ce message et répondre en conséquence. Cette fois, nous aimerions que le deuxième lutin entre dans l'écran après que le premier lutin se soit déplacé au milieu de l'écran et ait dit quelque chose.
 
-.. note:: Broadcasts are a simple way to introduce the idea of the event-driven programming paradigm. Although much of this course will be using the procedural programming paradigm, it is really helpful to be understand the basic concept of responding to user events!
+.. note:: Les diffusions sont un moyen simple d'introduire l'idée du paradigme de la programmation événementielle. Bien qu'une grande partie de ce cours utilisera le paradigme de la programmation procédurale, il est vraiment utile de comprendre le concept de base de la réponse aux événements de l'utilisateur!
 
-To have another sprite listen for a broadcast, click on the sprite that you would like to react to the broadcast, then drag a *when I receive* block from the **Events** tab of the block palette to the scripts area. We could have the character do anything we want, but for this example, let's make our characters have a simple conversation. Recreate the following, and click the Green flag.
+Pour qu'un autre lutin écoute une diffusion, cliquez sur le lutin à laquelle vous souhaitez réagir, puis faites glisser un bloc **"quand je reçois"** de l'onglet **"Evénements"** de la palette de blocs vers la zone des scripts. Nous pourrions faire en sorte que le personnage fasse ce que nous voulons, mais pour cet exemple, faisons en sorte que nos personnages aient une conversation simple. Recréez les éléments suivants et cliquez sur le drapeau vert. 
 
 .. image:: images/scratch_when_i_receive.png
 
-We can hook up as many chained broadcasts as we like. For example, in the example shown below, both characters react to the flag being clicked by going to their starting locations. After that, the chain of events is controlled by the following broadcasts:
+Nous pouvons brancher autant de diffusion enchaînées que nous le voulons. Par exemple, dans l'exemple ci-dessous, les deux caractères réagissent au drapeau sur lequel ils cliquent en se rendant à leurs emplacements de départ. Après cela, la chaîne d'événements est contrôlée par les diffusions suivantes:
 
-- Giga Enters
-- Cat Replies
-- Goodbye
+- Giga entre
+- Réponse de chat
+- Au revoir
 
 .. image:: images/scratch_conversation_complete.png
 
-Notice as well that any number of sprites can react to the same broadcast. In the above example, only one sprite reacts to the Giga Enters and Cat Replies broadcasts. For the Goodbye broadcast, however, both the Cat and Giga react by hiding.
+Notez également que n'importe quel nombre de lutins peut réagir à la même diffusion. Dans l'exemple ci-dessus, un seul lutin réagit aux diffusions "Giga entre" et "Réponse de chat". Pour l'émission "Au revoir", cependant, Cat et Giga réagissent en se cachant.
 
-Check Your Understanding
+Vérifie ta compréhension
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: scratch_broadcast_check_1
-   :answer_a: The current sprite would say "Go"
+   :answer_a: Le lutin actuel dirait "Go"
    :answer_b: The current sprite would say "Go", then say "Green!"
    :answer_c: The current sprite would say "Green!", then say "Go"
    :answer_d: The current sprite would say "Green!"
@@ -130,7 +130,7 @@ Check Your Understanding
    :feedback_c: No, it will say "Go" first (since that is the first thing in the chunk of code that executes when the flag is clicked).
    :feedback_d: It will do this, but it will say "Go" first (since that is the first thing in the chunk of code that executes when the flag is clicked).
 
-   What would happen when you click the green flag, given the code below?
+   Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous?
 
    .. image:: images/scratch_broadcast_check_1.png
 
