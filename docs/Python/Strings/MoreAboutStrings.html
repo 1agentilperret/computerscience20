@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -286,7 +285,7 @@
 
 <textarea data-component="activecode" id=wdtpd_string_manipulation_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 title = "Pirates of the Caribbean"
 print(title[1])
@@ -297,7 +296,7 @@ print(title[1])
 
 <textarea data-component="activecode" id=wdtpd_string_manipulation_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 title = "Pirates of the Caribbean"
 print(title[-3])
@@ -308,7 +307,7 @@ print(title[-3])
 
 <textarea data-component="activecode" id=wdtpd_string_manipulation_3 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 title = "Pirates of the Caribbean"
 print(title[2:6])
@@ -319,7 +318,7 @@ print(title[2:6])
 
 <textarea data-component="activecode" id=wdtpd_string_manipulation_4 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 fruit = "pineapple"
 for poorly_named_variable in fruit:
@@ -389,7 +388,7 @@ correctly when using <code class="docutils literal notranslate"><span class="pre
 
 <textarea data-component="activecode" id=string_for_loop_by_index_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 fruit = "apple"
 for current_index in range(len(fruit)):
@@ -484,7 +483,7 @@ $(window).resize(function() {
 
 <textarea data-component="activecode" id=string_in_not_in_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 print('p' in 'apple')
 print('i' in 'apple')
@@ -500,7 +499,7 @@ like to think about these edge cases quite carefully!)</em></p>
 
 <textarea data-component="activecode" id=string_in_not_in_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 print('a' in 'a')
 print('apple' in 'apple')
@@ -514,7 +513,7 @@ print('' in 'apple')
 
 <textarea data-component="activecode" id=string_in_not_in_3 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 print('x' not in 'apple')
 </textarea>
@@ -530,7 +529,7 @@ write a function that removes all the vowels from a string.  The idea is to star
 
 <textarea data-component="activecode" id=string_accumulator_pattern_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 def remove_vowels(original_string):
     vowels = "aeiouAEIOU"
@@ -648,7 +647,7 @@ $(window).resize(function() {
             </ul>
             </div>
             
-    <div data-component="reveal" id="reveal_string_manipulation_reversed_order_of_concatenation"   data-showtitle="Need Help?" data-hidetitle="Hide Help">
+    <div data-component="reveal" id="reveal_string_manipulation_reversed_order_of_concatenation"   data-showtitle="Need Help?" data-hidetitle="Hide Help" >
     <p>Consider the following table, which shows the values of the variables as the code iterates:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -721,7 +720,7 @@ print(new_word)
 
 <textarea data-component="activecode" id=practice_problem_string_more_info_1 data-lang="python" 
       data-timelimit=25000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 def even_letters(word):
     return ""
@@ -744,7 +743,7 @@ myTests().main()
 </textarea>
 </div>
 
-    <div data-component="reveal" id="reveal_string_manipulation_even_letters_hint"   data-showtitle="Need a Hint?" data-hidetitle="Hide Hint">
+    <div data-component="reveal" id="reveal_string_manipulation_even_letters_hint"   data-showtitle="Need a Hint?" data-hidetitle="Hide Hint" >
     <p>Since you are trying to get only the even letters, you need to know which index value you are currently on. That means we need to traverse the string using a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">counter</span> <span class="pre">in</span> <span class="pre">range()</span></code> style loop. The accumulator pattern will look something like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">even_letters</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="n">new_word</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
@@ -773,7 +772,7 @@ myTests().main()
 
 <textarea data-component="activecode" id=practice_problem_string_more_info_2 data-lang="python" 
       data-timelimit=25000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 def reverse_me(word):
     return ""
@@ -812,7 +811,7 @@ myTests().main()
 
 <textarea data-component="activecode" id=practice_problem_string_more_info_3 data-lang="python" 
       data-timelimit=25000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 def letter_destroyer(word, letter_to_destroy):
     return ""
@@ -851,7 +850,7 @@ myTests().main()
 
 <textarea data-component="activecode" id=practice_problem_string_more_info_4 data-lang="python" 
       data-timelimit=25000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 def qwerty_finder(word):
     return ""

@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -262,7 +261,7 @@
 <h1>1. Introduction to Scratch (Broadcasts)<a class="headerlink" href="#introduction-to-scratch-broadcasts" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
-<p>Introduction to the course, and to the Scratch environment. Explain the coordinate plane used in Scratch, and basic movement blocks. Introduce the idea of using the <strong>broadcast</strong> block to send messages, which is used to control program flow.</p>
+<p>Introduction au cours, et à l’environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l’idée d’utiliser le bloc de diffusion pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.</p>
 </div>
 <div class="section" id="introduction">
 <h2>1.1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
@@ -280,30 +279,8 @@
 <p>If you’d prefer to watch a video describing how to create your first Scratch program, <a class="reference external" href="https://www.youtube.com/watch?v=pJYCRtSDJSk">the following video</a> demonstrates the same ideas as what I’ve described in text below.</p>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
-    <div id="pJYCRtSDJSk_vid"></div>
+        <div id="pJYCRtSDJSk_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="pJYCRtSDJSk" data-video-divid="pJYCRtSDJSk_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
-    <script id="pJYCRtSDJSk_script">
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var ytScriptTag = document.getElementById('pJYCRtSDJSk_script');
-      ytScriptTag.parentNode.insertBefore(tag, ytScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('pJYCRtSDJSk_vid', {
-          height: '315',
-          width: '560',
-          videoId: 'pJYCRtSDJSk',
-          events: {
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-    </script>
     <p>Now that you have an account, let’s make your first computer program of the semester! Click the Create button on the top of the Scratch website to create a new project.</p>
 <img alt="../_images/scratch_create.png" src="../_images/scratch_create.png" />
 <p>In the project view, the screen is divided into a number of panes, including the <em>stage</em> (where you will see your project run), <em>sprite list</em> (shows which sprites are part of your project, and allows you to select them), <em>block palette</em> (where all the blocks you can drag-and-drop onto your scripts), and the <em>scripts area</em> (where you will combine blocks of code to create programs for your sprites to run). One of the most important things for you to keep in mind is that <strong>you can’t break the environment</strong>, so feel free to explore as much as you want!</p>

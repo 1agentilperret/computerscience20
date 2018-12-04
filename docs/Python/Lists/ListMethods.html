@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -289,7 +288,7 @@
 
 <textarea data-component="activecode" id=wdtpd_lists_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", 3.14, False]
 print(len(a_list))
@@ -300,7 +299,7 @@ print(len(a_list))
 
 <textarea data-component="activecode" id=wdtpd_lists_2 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(len(a_list))
@@ -311,7 +310,7 @@ print(len(a_list))
 
 <textarea data-component="activecode" id=wdtpd_lists_3 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(a_list[5])
@@ -322,7 +321,7 @@ print(a_list[5])
 
 <textarea data-component="activecode" id=wdtpd_lists_4 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(a_list[2][0])
@@ -333,7 +332,7 @@ print(a_list[2][0])
 
 <textarea data-component="activecode" id=wdtpd_lists_5 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [4, 2, 8, 6, 5]
 a_list[2] = True
@@ -345,7 +344,7 @@ print(a_list)
 
 <textarea data-component="activecode" id=wdtpd_lists_6 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(a_list[3][2])
@@ -356,7 +355,7 @@ print(a_list[3][2])
 
 <textarea data-component="activecode" id=wdtpd_lists_7 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='What will this program print?' >
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(a_list[3][2][2])
@@ -374,7 +373,7 @@ easy to understand.</p>
 
 <textarea data-component="activecode" id=list_methods_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 my_list = []
 my_list.append(5)
@@ -483,7 +482,7 @@ and <code class="docutils literal notranslate"><span class="pre">reverse</span><
 
 <textarea data-component="activecode" id=list_methods_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 my_list = []
 my_list.append(5)
@@ -569,7 +568,7 @@ print(my_list)
 
 <textarea data-component="activecode" id=inventory_example_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 inventory = []
 print(inventory)
@@ -581,7 +580,7 @@ print(inventory)
 
 <textarea data-component="activecode" id=inventory_example_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 inventory = []
 inventory.append("room 1 key")
@@ -594,7 +593,7 @@ print(inventory)
 
 <textarea data-component="activecode" id=inventory_example_3 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 inventory = []
 
@@ -617,7 +616,7 @@ print(inventory)
 
 <textarea data-component="activecode" id=inventory_example_4 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 inventory = []
 
@@ -651,7 +650,7 @@ print(inventory)
 
 <textarea data-component="activecode" id=shopping_list_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 shopping_list = []
 item = input("Please enter an item to add to your shopping list:")
@@ -665,7 +664,7 @@ print(shopping_list)
 
 <textarea data-component="activecode" id=shopping_list_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 shopping_list = []
 
@@ -696,7 +695,7 @@ for thing_to_get in shopping_list:
 
 <textarea data-component="activecode" id=shakespeare_insult_example_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 import random
 
@@ -711,7 +710,7 @@ print(random.choice(name_list))
 
 <textarea data-component="activecode" id=shakespeare_insult_example_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 # Shakespeare Insult Kit
 # Idea from http://www.pangloss.com/seidel/shake_rule.html
@@ -745,7 +744,7 @@ default, any number of whitespace characters is considered a word boundary.</p>
 
 <textarea data-component="activecode" id=string_lists_split1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 song = "The rain in Spain..."
 word_list = song.split()
@@ -760,7 +759,7 @@ characters to use as word boundaries. The following example uses the string
 
 <textarea data-component="activecode" id=string_lists_split2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 song = "The rain in Spain..."
 word_list = song.split('ai')
@@ -776,7 +775,7 @@ and join the list with the glue between each of the elements.</p>
 
 <textarea data-component="activecode" id=string_lists_join data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 word_list = ["red", "blue", "green"]
 glue = ';'
@@ -828,13 +827,13 @@ you can use empty glue or multi-character strings as glue.</p>
 
 <textarea data-component="activecode" id=list_methods_practice_1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 # your code goes here!
 </textarea>
 </div>
 
-    <div data-component="reveal" id="methods_practice_1"   data-showtitle="Reveal Solution" data-hidetitle="Hide">
+    <div data-component="reveal" id="methods_practice_1"   data-showtitle="Reveal Solution" data-hidetitle="Hide" >
     <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">76</span><span class="p">)</span>
@@ -865,7 +864,7 @@ you can use empty glue or multi-character strings as glue.</p>
 
 <textarea data-component="activecode" id=list_methods_practice_2 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 my_list = [76, 92.3, 'hello', True, 4, 76]
 
@@ -873,7 +872,7 @@ my_list = [76, 92.3, 'hello', True, 4, 76]
 </textarea>
 </div>
 
-    <div data-component="reveal" id="methods_practice_2"   data-showtitle="Reveal Solution" data-hidetitle="Hide">
+    <div data-component="reveal" id="methods_practice_2"   data-showtitle="Reveal Solution" data-hidetitle="Hide" >
     <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">76</span><span class="p">,</span> <span class="mf">92.3</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">76</span><span class="p">]</span>
 
 <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">)</span>         <span class="c1"># a</span>
@@ -900,7 +899,7 @@ my_list = [76, 92.3, 'hello', True, 4, 76]
 
 <textarea data-component="activecode" id=list_methods_practice_3 data-lang="python" 
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # your code goes here!
 </textarea>
@@ -914,7 +913,7 @@ my_list = [76, 92.3, 'hello', True, 4, 76]
 
 <textarea data-component="activecode" id=list_methods_practice_4 data-lang="python" 
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # your code goes here!
 </textarea>
@@ -935,7 +934,7 @@ my_list = [76, 92.3, 'hello', True, 4, 76]
 
 <textarea data-component="activecode" id=list_methods_practice_5 data-lang="python" 
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 def count(thing_to_find, list_to_look_in):
     # your code goes here!

@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../_static/fitb.js"></script>
     <script type="text/javascript" src="../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -300,7 +299,7 @@
 
 <textarea data-component="activecode" id=html_1 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
     &lt;head&gt;
@@ -328,7 +327,7 @@
 
 <textarea data-component="activecode" id=html_headings data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;h1&gt;Level one&lt;/h1&gt;
 &lt;h2&gt;Level two&lt;/h2&gt;
@@ -337,7 +336,7 @@
 </div>
 <p>Now modify the example above to add the next three levels of headings.  What do you notice?  What happens if you add a level 7 heading?   What happens if you close an h2 tag with an h1 or an h3?</p>
 
-    <div data-component="reveal" id="reveal_heading"   data-showtitle="Show" data-hidetitle="Hide">
+    <div data-component="reveal" id="reveal_heading"   data-showtitle="Show" data-hidetitle="Hide" >
     As you might expect, the headings continue to get smaller as you go from 1 to 6.  But when you go to level 7 the text gets bigger.  This is because the web browser is written so that it just ignores any tags that it does not know about.  This is somewhat of a disadvantage as you don’t get any error messages, things just look wrong, and you have to figure out why.
     </div>
     <p>Another aspect of the heading tag is that it is what we call a <strong>block</strong> tag.  Notice that each heading appears on its own line.  Thats pretty much what we would expect for a heading.  But not necessarily for other tags.  shortly, we will see some <strong>inline</strong> tags that do not each appear on their own line.</p>
@@ -350,7 +349,7 @@
 
 <textarea data-component="activecode" id=html_paragraph data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;p&gt;This is a short sentence.&lt;/p&gt;
 &lt;p&gt;This is a paragraph.  What happens when we have a really really really long line that takes up more than one line of the browser? &lt;/p&gt;
@@ -368,7 +367,7 @@
 
 <textarea data-component="activecode" id=html_img1 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;h1&gt;Embedded Images&lt;/h1&gt;
 &lt;p&gt;Images are inline elements because they fit in the flow
@@ -383,7 +382,7 @@ that there isn&#x27;t a http:// at the start of the path.&lt;/p&gt;
 
 <textarea data-component="activecode" id=html_img2 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;p&gt;Images are inline elements because they fit in the flow
 &lt;img src=&quot;http://cs20.ca/_static/skflag.png&quot;&gt;
@@ -408,7 +407,7 @@ that there is a http:// at the start of the path.&lt;/p&gt;
 
 <textarea data-component="activecode" id=html_link data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;h1&gt;Links make the web!&lt;/h1&gt;
 &lt;p&gt;Links are another inline element.  You can read about links and their attributes on
@@ -433,7 +432,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=html_fmt data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 &lt;body&gt;
@@ -493,7 +492,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=advhtml_ul data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;ul&gt;
 &lt;li&gt;This is an unordered list&lt;/li&gt;
@@ -509,7 +508,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=advhtml_ol data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;ol&gt;
 &lt;li&gt;This is an ordered list&lt;/li&gt;
@@ -536,7 +535,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=advhtml_nested data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;ol&gt;
 &lt;li&gt;This is an ordered list&lt;/li&gt;
@@ -565,7 +564,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=advhtml_table data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
  &lt;table&gt;
  &lt;caption&gt;Table of Scores&lt;/caption&gt;
@@ -621,7 +620,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=audio_demo data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
  &lt;audio controls&gt;
      &lt;source src=&quot;/computerscience20/_static/battleThemeA.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
@@ -640,7 +639,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=video_demo data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
  &lt;video height=300 width=400 controls&gt;
      &lt;source src=&quot;/computerscience20/_static/run-cycle.mp4&quot; type=&quot;video/mp4&quot;&gt;
@@ -659,7 +658,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=iframe_example data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
  Open up YouTube, find a video, then copy/paste the iframe embed code here!
 </textarea>
@@ -680,7 +679,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_1 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -695,7 +694,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_2 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -710,7 +709,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_3 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -725,7 +724,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_4 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -740,7 +739,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_5 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -755,7 +754,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_6 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -770,7 +769,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_7 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 
@@ -785,7 +784,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 
 <textarea data-component="activecode" id=ex_html_8 data-lang="htmlmixed" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 &lt;html&gt;
 

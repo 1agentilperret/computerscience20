@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -298,7 +297,7 @@
 
 <textarea data-component="activecode" id=syntax_error_indentation data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='Fix the syntax error by indenting the code properly.' >
 some_number = 5
 if some_number > 3:
@@ -395,7 +394,7 @@ print("Yeah, the number is bigger.")
 
 <textarea data-component="activecode" id=checking_data_types data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 print( type(5) )
 </textarea>
@@ -414,7 +413,7 @@ print( type(5) )
 
 <textarea data-component="activecode" id=casting_data_types data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 a = 4         #a is an int
 print( type(a) )
@@ -495,7 +494,7 @@ print( type(c) )
 
 <textarea data-component="activecode" id=if_intro_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 number = 42
 
@@ -515,7 +514,7 @@ if number == 23:
 
 <textarea data-component="activecode" id=if_elif_else_intro data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 temp = -3
 
@@ -536,7 +535,7 @@ else:
 
 <textarea data-component="activecode" id=while_loop_intro data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 counter = 10
 
@@ -556,7 +555,7 @@ print("Blastoff!")
 
 <textarea data-component="activecode" id=for_loop_intro_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 for counter in range(10):
     print(counter)
@@ -568,7 +567,7 @@ for counter in range(10):
 
 <textarea data-component="activecode" id=for_loop_intro_2 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 for counter in range(5, 11):
     print(counter)
@@ -591,7 +590,7 @@ for counter in range(5, 11):
 
 <textarea data-component="activecode" id=list_intro_3 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 grocery_list = ["apples", "carrots", "milk", "yogurt"]
 for item in grocery_list:
@@ -604,7 +603,7 @@ for item in grocery_list:
 
 <textarea data-component="activecode" id=list_intro_4 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 grocery_list = ["apples", "carrots", "milk", "yogurt"]
 print("Don't forget to buy some", grocery_list[1])
@@ -619,7 +618,7 @@ print("Don't forget to buy some", grocery_list[1])
 
 <textarea data-component="activecode" id=functions_overview_intro_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 def say_hello():
     print("Hello there!")
@@ -632,7 +631,7 @@ say_hello()
 
 <textarea data-component="activecode" id=functions_overview_intro_2 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 def say_hello(some_name):
     print("Hello there,", some_name)
@@ -653,7 +652,7 @@ say_hello("Eli")
 
 <textarea data-component="activecode" id=input_intro_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 your_name = input("What is your name?")
 print(your_name)
@@ -664,7 +663,7 @@ print(your_name)
 
 <textarea data-component="activecode" id=input_intro_2 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 def say_hello(some_name):
     print("Hello there, ", some_name)
@@ -679,7 +678,7 @@ say_hello(your_name)
 
 <textarea data-component="activecode" id=input_intro_3 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='Can you figure out what is wrong?' >
 age = input("How old are you?")
 
@@ -698,7 +697,7 @@ elif age == 15:
 
 <textarea data-component="activecode" id=module_intro_1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='This works, but is not recommended.' >
 from math import *
 
@@ -711,7 +710,7 @@ print( cos(0) )
 
 <textarea data-component="activecode" id=module_intro_2 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
          data-caption='This is the better way to import a module.' >
 import math
 
@@ -724,7 +723,7 @@ print( math.cos(0) )
 
 <textarea data-component="activecode" id=module_intro_3 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 import random
 
@@ -748,7 +747,7 @@ print( random.randrange(1, 10) )
 
 <textarea data-component="activecode" id=number_guessing_game_attempt data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
          data-caption='Create a number guessing game here!' >
 # the algorithm for the game can be described as follows
 # your job is to try to convert the comments into real Python code!

@@ -8,7 +8,7 @@ Introduction to Scratch (Broadcasts)
 
 .. topic:: Quick Overview of Day
 
-    Introduction to the course, and to the Scratch environment. Explain the coordinate plane used in Scratch, and basic movement blocks. Introduce the idea of using the **broadcast** block to send messages, which is used to control program flow.
+    Introduction au cours, et à l'environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l'idée d'utiliser le bloc de diffusion pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.
 
 
 .. reveal:: curriculum_addressed

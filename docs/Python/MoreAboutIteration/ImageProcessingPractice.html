@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -364,7 +363,7 @@
 
 <textarea data-component="activecode" id=gray_scale data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -393,7 +392,7 @@ for y in range(height):
 </textarea>
 </div>
 
-    <div data-component="reveal" id="greyscale_solution"   data-showtitle="Reveal Solution" data-hidetitle="Hide">
+    <div data-component="reveal" id="greyscale_solution"   data-showtitle="Reveal Solution" data-hidetitle="Hide" >
     <p>One possible solution is as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">image</span>
 
@@ -436,7 +435,7 @@ for y in range(height):
 
 <textarea data-component="activecode" id=black_white_threshold data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -444,7 +443,7 @@ for y in range(height):
 </textarea>
 </div>
 
-    <div data-component="reveal" id="threshold_solution"   data-showtitle="Reveal Solution" data-hidetitle="Hide">
+    <div data-component="reveal" id="threshold_solution"   data-showtitle="Reveal Solution" data-hidetitle="Hide" >
     <p>One possible solution is as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">image</span>
 
@@ -495,7 +494,7 @@ for y in range(height):
 
 <textarea data-component="activecode" id=practice_problem_red_remover data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -512,7 +511,7 @@ img.draw(win)
 </textarea>
 </div>
 
-    <div data-component="reveal" id="red_remover_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="red_remover_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/red-remover-solution.png" src="../../_images/red-remover-solution.png" />
 
@@ -527,7 +526,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_color_swapper data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -535,7 +534,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="color_swapping_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="color_swapping_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/color-swapping-solution.png" src="../../_images/color-swapping-solution.png" />
 
@@ -550,7 +549,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_keep_the_green data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -558,7 +557,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="keep_green_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="keep_green_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/keep-green-solution.png" src="../../_images/keep-green-solution.png" />
 
@@ -573,7 +572,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_half_red data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -581,7 +580,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="half_red_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="half_red_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/half-red-solution.png" src="../../_images/half-red-solution.png" />
 
@@ -596,7 +595,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_combining_colors data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -604,7 +603,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="combining_colors_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="combining_colors_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/combining-colors-solution.png" src="../../_images/combining-colors-solution.png" />
 
@@ -619,7 +618,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_half_each_color data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -627,7 +626,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="half_each_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="half_each_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/half-each-solution.png" src="../../_images/half-each-solution.png" />
 
@@ -642,7 +641,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_sepia_tone data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 # Try to create a solution to this problem
 #   WITHOUT looking back to previous solutions.
@@ -650,7 +649,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="sepia_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="sepia_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/sepia-solution.png" src="../../_images/sepia-solution.png" />
 

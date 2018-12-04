@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -291,7 +290,7 @@
 
 <textarea data-component="activecode" id=isolate_the_moon data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 # import the module so we can access images
 import image
@@ -360,7 +359,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=grayscale_left_half data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 # import the module so we can access images
 import image
@@ -431,7 +430,7 @@ for x in range(width):
 
 <textarea data-component="activecode" id=combining_images data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 # import the module so we can access images
 import image
@@ -498,7 +497,7 @@ for x in range(width_small):
 
 <textarea data-component="activecode" id=practice_problem_no_red_left_side data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -513,7 +512,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="no_red_left_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="no_red_left_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the berries.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/no-red-left-side-solution.png" src="../../_images/no-red-left-side-solution.png" />
 
@@ -528,7 +527,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_blue_tint_top_right data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -543,7 +542,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="blue_tint_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="blue_tint_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the sneakers.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/blue-tint-solution.png" src="../../_images/blue-tint-solution.png" />
 
@@ -558,7 +557,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_change_rooster_colour data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -573,7 +572,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="rooster_color_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="rooster_color_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you changed the rooster from red to blue, your solution should look something like this:</p>
 <img alt="../../_images/change-rooster-color-solution.png" src="../../_images/change-rooster-color-solution.png" />
 
@@ -588,7 +587,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_repeat_left_twice data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -603,7 +602,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="left_twice_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="left_twice_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the giraffe.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/left-twice-solution.png" src="../../_images/left-twice-solution.png" />
 
@@ -618,7 +617,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_mirror_horizontal data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -633,7 +632,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="mirror_horizontal_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="mirror_horizontal_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the giraffe.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/mirror-horizontal-solution.png" src="../../_images/mirror-horizontal-solution.png" />
 
@@ -648,7 +647,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_mirror_vertical data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -663,7 +662,7 @@ img.draw(win)
 </div>
 </div></blockquote>
 
-    <div data-component="reveal" id="mirror_vertical_solution"   data-showtitle="Solution Image" data-hidetitle="Hide">
+    <div data-component="reveal" id="mirror_vertical_solution"   data-showtitle="Solution Image" data-hidetitle="Hide" >
     <p>If you are using the giraffe.jpg image, your solution should look something like this:</p>
 <img alt="../../_images/mirror-vertical-solution.png" src="../../_images/mirror-vertical-solution.png" />
 
@@ -677,7 +676,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_gradient data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -704,7 +703,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=practice_problem_radial_gradient data-lang="python" 
       data-timelimit=180000   data-enabledownload="true" 
-    data-audio=''   
+    data-audio=''    
           >
 import image
 

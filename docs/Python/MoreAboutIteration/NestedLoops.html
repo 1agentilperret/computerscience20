@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/accessibility.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/activecode.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/codemirror.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/clickable.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pytutor.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/modal-basic.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/datafile.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/dragndrop.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/fitb.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/matrixeq.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/p5.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/parsons.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/js_lib/prettify.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/poll.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/showEval.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/tabbedstuff.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/video.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webgldemo.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/webglinteractive.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/accessibility.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/js_lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/webglinteractive.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
@@ -79,7 +79,6 @@
     <script type="text/javascript" src="../../_static/fitb.js"></script>
     <script type="text/javascript" src="../../_static/timedfitb.js"></script>
     <script type="text/javascript" src="../../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../../_static/p5-widget.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/prettify.js"></script>
     <script type="text/javascript" src="../../_static/js_lib/hammer.min.js"></script>
     <script type="text/javascript" src="../../_static/parsons.js"></script>
@@ -94,7 +93,7 @@
     <script type="text/javascript" src="../../_static/webglinteractive.js"></script>
     <script type="text/javascript" src="../../_static/FileSaver.min.js"></script>
     <script type="text/javascript" src="../../_static/Blob.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../../_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="../../_static/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
@@ -130,7 +129,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = true;
   eBookConfig.basecourse = 'cs20sk';
-  eBookConfig.runestone_version = '3.2.8';
+  eBookConfig.runestone_version = '3.2.16';
 </script>
 
 
@@ -287,30 +286,8 @@
 <p>The following video (created by Code.org) describes how images are represented using binary digits, as well as an overview of how image filters work. It is a great introduction to the image filtering that follows.</p>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
-    <div id="15aqFQQVBWU_vid"></div>
+        <div id="15aqFQQVBWU_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="15aqFQQVBWU" data-video-divid="15aqFQQVBWU_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
-    <script id="15aqFQQVBWU_script">
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var ytScriptTag = document.getElementById('15aqFQQVBWU_script');
-      ytScriptTag.parentNode.insertBefore(tag, ytScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('15aqFQQVBWU_vid', {
-          height: '315',
-          width: '560',
-          videoId: '15aqFQQVBWU',
-          events: {
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-    </script>
     <p>Two dimensional tables have both rows and columns.  You have probably seen many tables like this if you have used a
 spreadsheet program.  Another object that is organized in rows and columns is a digital image.  In this section we will
 explore how iteration allows us to manipulate these images.</p>
@@ -447,7 +424,7 @@ the same as the current amount of green.</p>
 
 <textarea data-component="activecode" id=pixelex1a data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -498,7 +475,7 @@ However, the body of the loop can contain any statements, including another iter
 
 <textarea data-component="activecode" id=nested1 data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
+    data-audio=''    
           >
 for i in range(5):
     for j in range(3):
@@ -579,7 +556,7 @@ The inner <code class="docutils literal notranslate"><span class="pre">for</span
 
 <textarea data-component="activecode" id=empty_image_demo data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -598,7 +575,7 @@ img.draw(win)
 
 <textarea data-component="activecode" id=change_empty_image_to_red data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
@@ -680,7 +657,7 @@ on its basic color intensities.</p>
 
 <textarea data-component="activecode" id=pixelex1 data-lang="python" 
       data-timelimit=25000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 img = image.Image("skflag.png")
@@ -726,7 +703,7 @@ and 255.  For example, if the original red component was 50, then the opposite, 
 
 <textarea data-component="activecode" id=acimg_1 data-lang="python" 
       data-timelimit=180000    
-    data-audio=''   
+    data-audio=''    
           >
 import image
 
