@@ -169,9 +169,9 @@ C.
 
 
 
-Practice Problem
------------------
+Problème de pratique
+---------------------
 
-Make a new Scratch project. Save it as ``Conversation``. Pick at least two sprites, and make them have a little conversation. Be sure to use **broadcasts** to control the flow of your program!
-
-If you want a bit more of a challenge, explore the blocks palette and incorporate some other blocks that haven't been discussed yet!
+Faites un nouveau projet Scratch. Enregistrez-le en tant que Conversation et ajouté le lien dans votre dossier de travail sous "Scratch-1-converstion". Choisissez au moins deux lutins, et faites-leur une petite conversation. Assurez-vous d'utiliser des **diffusions** pour contrôler le déroulement de votre programme! 
+ 
+Si vous voulez un peu plus d'un défi, explorez la palette de blocs et incorporez d'autres blocs qui n'ont pas encore été discutés!
