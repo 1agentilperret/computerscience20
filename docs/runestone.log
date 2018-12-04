@@ -29280,3 +29280,28 @@ Aborted!
 127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_static/user-highlights.js HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_static/jquery.idle-timer.js HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_static/processing-1.4.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_static/jquery.hotkey.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_static/jquery-migrate-1.2.1.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:55] "GET /_images/scratch_create.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_static/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_static/img/logo_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_areas.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_add_new_sprite_from_library.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_initial_characters.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_say_block.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_blocks_connected.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_deleting_a_block.gif HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_goTo_1.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_goTo_2.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_coordinate_plane.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_goTo_andGlide.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_when_i_receive.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_conversation_complete.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_broadcast_check_1.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_broadcast_check_2.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_images/scratch_broadcast_check_3.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:56] "GET /_static/images/ui-icons_222222_256x240.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 15:37:57] code 404, message File not found
+127.0.0.1 - - [04/Dec/2018 15:37:57] "GET /runestone/static/favicon.ico HTTP/1.1" 404 -
+
+Aborted!
