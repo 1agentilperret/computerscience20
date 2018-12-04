@@ -135,31 +135,35 @@ Vérifie ta compréhension
    .. image:: images/scratch_broadcast_check_1.png
 
 
-.. mchoice:: scratch_broadcast_check_2
-   :answer_a: The current sprite would say "Go" for 1 second, say "Green!" for 1 second, then move 10 steps.
-   :answer_b: The current sprite would say "Go" for 1 second, move 10 steps, then say "Green!" for 1 second after the sprite stops moving.
-   :answer_c: The current sprite would say "Go" for 1 second, then simultaneously move 10 steps and say "Green!" for 1 second.
-   :correct: c
-   :feedback_a: No, sending the broadcast will will cause the second chunk of blocks to execute, but will not stop the first chunk of code from continuing to execute. In other words, Scratch will not wait for the broadcast to be resolved before completing the rest of the chunk of code (in this case, the move 10 steps block).
-   :feedback_b: No, both the say "Green" block and the move 10 steps block will happen simultaneously.
-   :feedback_c: Yes, sending the broadcast will will cause the second chunk of blocks to execute, but will not stop the first chunk of code from continuing to execute.
+A.  
+B. 
+C.  
 
-   What would happen when you click the green flag, given the code below?
+.. mchoice:: scratch_broadcast_check_2
+   :answer_a: Le lutin actuel dit "Allez" pendant 1 seconde, ensuite "Vert!" pendant 1 seconde, puis se déplace de 10 pas. 
+   :answer_b: Le lutin actuel dirait "Go" pendant 1 seconde, se déplace de 10 pas, puis dirait "Vert!" pendant 1 seconde après l'arrêt du lutin.
+   :answer_c: Le lutin actuel dirait "Go" pendant 1 seconde, puis déplacez simultanément 10 étapes et dites "Vert!" pendant 1 seconde.
+   :correct: c
+   :feedback_a: Non, l'envoi de la diffusion entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter. C.À.D., Scratch n'attendra pas que la diffusion soit résolue avant de terminer le reste du groupe de code (dans ce cas, le bloc de déplacement de 10 pas).
+   :feedback_b: Non, le bloc dit "vert et le bloc de déplacement de 10 pas auront lieu simultanément.
+   :feedback_c: Oui, l'envoi de la diffusion entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter.
+
+   Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous?
 
    .. image:: images/scratch_broadcast_check_2.png
 
 
 
 .. mchoice:: scratch_broadcast_check_3
-   :answer_a: The current sprite would say "Go" for 1 second, say "Green!" for 1 second, then move 10 steps.
-   :answer_b: The current sprite would say "Go" for 1 second, move 10 steps, then say "Green!" for 1 second after the sprite stops moving.
-   :answer_c: The current sprite would say "Go" for 1 second, then simultaneously move 10 steps and say "Green!" for 1 second.
+   :answer_a: Le lutin actuel dirait "Allez" pendant 1 seconde, ensuite "Vert!" pendant 1 seconde, puis se déplace de 10 pas. 
+   :answer_b: Le lutin actuel dirait "Aller" pendant 1 seconde, se déplace de 10 pas, ensuite dit "Vert!" pendant 1 seconde après l'arrêt du lutin. 
+   :answer_c: Le lutin actuel dirait "Aller" pendant 1 seconde, se déplace simultanément de 10 pas et dit "Vert!" pendant 1 seconde.
    :correct: a
-   :feedback_a: Yes! Since we are now using a broadcast and wait block, Scratch will pause the execution of the chunk of code that sent the broadcast until all scripts that reacted to the broadcast being sent have finished executing. 
-   :feedback_b: No, the broadcast happens before the move, so the sprite will say "Green" before it moves.
-   :feedback_c: No, since we are using a broadcast and wait block, the two scripts will not run simultaneously this time.
+   :feedback_a: Oui! Puisque nous utilisons maintenant un bloc de diffusion et de attendre, Scratch mettra en pause l'exécution du groupe de code qui a envoyé la diffusion jusqu'à ce que tous les scripts ayant réagi à la diffusion soient terminés.
+   :feedback_b: Non, la diffusion a lieu avant le déplacement, ainsi le sprite dira "Vert" avant de se déplacer.
+   :feedback_c: Non, puisque nous utilisons un bloc de diffusion et attendre, les deux scripts ne seront pas exécutés simultanément cette fois-ci.
 
-   What would happen when you click the green flag, given the code below?
+   Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, compte tenu du code ci-dessous?
 
    .. image:: images/scratch_broadcast_check_3.png
 
