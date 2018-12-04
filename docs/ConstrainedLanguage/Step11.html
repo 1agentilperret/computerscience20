@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Step 12: While" href="Step12.html" />
     <link rel="prev" title="Step 10: Jumping Hurdles (repeat and functions)" href="Step10.html" />
 <meta charset='utf-8'>
@@ -206,7 +206,7 @@
 <li><a class="reference internal" href="#">Step 11: If/Else</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a></li>
 <li><a class="reference internal" href="#your-turn">Your Turn</a></li>
-<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You’re Having Trouble (a more detailed explanation)</a></li>
+<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You're Having Trouble (a more detailed explanation)</a></li>
 </ul>
 </li>
 </ul>
@@ -254,12 +254,12 @@
 <div class="container" id="main-content">
   
   <div class="section" id="step-11-if-else">
-<h1>Step 11: If/Else<a class="headerlink" href="#step-11-if-else" title="Permalink to this headline">¶</a></h1>
+<h1>Step 11: If/Else<a class="headerlink" href="#step-11-if-else" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Lien permanent vers ce titre">¶</a></h2>
 <p>While learning how to program is fun, you should not spend all your
 time in front of the computer. When you are at home, <code class="docutils literal notranslate"><span class="pre">if</span></code> it rains, keep reading, otherwise, go outside and play!</p>
-<p>Let’s rewrite the sentence that starts with <code class="docutils literal notranslate"><span class="pre">if</span></code> above:</p>
+<p>Let's rewrite the sentence that starts with <code class="docutils literal notranslate"><span class="pre">if</span></code> above:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">it</span> <span class="n">rains</span><span class="p">,</span>
     <span class="n">keep</span> <span class="n">reading</span><span class="p">,</span>
 <span class="n">otherwise</span><span class="p">,</span>
@@ -274,8 +274,8 @@ time in front of the computer. When you are at home, <code class="docutils liter
 </pre></div>
 </div>
 <p>Yes, Python includes the possibility of more than one choice with
-the keyword <code class="docutils literal notranslate"><span class="pre">else</span></code>. Let’s use it with another example. Reeborg can see
-if there’s a wall right in front him, using the function <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code>. This can be used with <code class="docutils literal notranslate"><span class="pre">if/else</span></code> to write a program that will guide Reeborg around a rectangular world. Something like the following should do the trick:</p>
+the keyword <code class="docutils literal notranslate"><span class="pre">else</span></code>. Let's use it with another example. Reeborg can see
+if there's a wall right in front him, using the function <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code>. This can be used with <code class="docutils literal notranslate"><span class="pre">if/else</span></code> to write a program that will guide Reeborg around a rectangular world. Something like the following should do the trick:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">move_or_turn</span><span class="p">():</span>
     <span class="k">if</span> <span class="n">front_is_clear</span><span class="p">():</span>
         <span class="c1"># something</span>
@@ -288,10 +288,10 @@ if there’s a wall right in front him, using the function <code class="docutils
 </div>
 </div>
 <div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
+<h2>Your Turn<a class="headerlink" href="#your-turn" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Open Step 11 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2011" target="_blank">Reeborg environment</a>.</p>
 <img alt="../_images/step11.png" src="../_images/step11.png" />
-<p>Reeborg wants to make some bouquets of flowers for it’s friends, Zoe and Eli. Reeborg has permission to <code class="docutils literal notranslate"><span class="pre">take()</span></code> tulips from some of his neighbor’s yards. Unfortunately for Reeborg, each of the yards is different. Reeborg does know that the yard will be rectangular, that it will take 23 steps to get around the yard, and that there will be a tulip in each corner of the yard.</p>
+<p>Reeborg wants to make some bouquets of flowers for it's friends, Zoe and Eli. Reeborg has permission to <code class="docutils literal notranslate"><span class="pre">take()</span></code> tulips from some of his neighbor's yards. Unfortunately for Reeborg, each of the yards is different. Reeborg does know that the yard will be rectangular, that it will take 23 steps to get around the yard, and that there will be a tulip in each corner of the yard.</p>
 <p>Create a program to have Reeborg walk around the outside of the yard, picking up a tulip if it can, and moving ahead if it cannot. You <strong>must</strong> use a <code class="docutils literal notranslate"><span class="pre">repeat</span> <span class="pre">23:</span></code> and <code class="docutils literal notranslate"><span class="pre">if/else</span></code>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -299,7 +299,7 @@ if there’s a wall right in front him, using the function <code class="docutils
 </div>
 </div>
 <div class="section" id="if-you-re-having-trouble-a-more-detailed-explanation">
-<h2>If You’re Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Permalink to this headline">¶</a></h2>
+<h2>If You're Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Lien permanent vers ce titre">¶</a></h2>
 <p>We have seen how <code class="docutils literal notranslate"><span class="pre">def</span></code>s and <code class="docutils literal notranslate"><span class="pre">if</span></code> statements could be thought
 of as being (sometimes) equivalent to inserting a code block; the
 exception was when the condition of the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement was <code class="docutils literal notranslate"><span class="pre">False</span></code>,

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="2. Image Processing Practice" href="ImageProcessingPractice.html" />
     <link rel="prev" title="5. Reaction Game with Micro:bit" href="../Functions/MicrobitReactionGame.html" />
 <meta charset='utf-8'>
@@ -271,16 +271,16 @@
 <div class="container" id="main-content">
   
   <div class="section" id="nested-loops-and-image-processing">
-<h1>1. Nested Loops and Image Processing<a class="headerlink" href="#nested-loops-and-image-processing" title="Permalink to this headline">¶</a></h1>
+<h1>1. Nested Loops and Image Processing<a class="headerlink" href="#nested-loops-and-image-processing" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Use nested loops to demonstrate how to do simple image processing, by iterating through each pixel in an image and making some changes.</p>
 </div>
 <div class="section" id="image-processing-introduction">
-<h2>1.1. Image Processing Introduction<a class="headerlink" href="#image-processing-introduction" title="Permalink to this headline">¶</a></h2>
+<h2>1.1. Image Processing Introduction<a class="headerlink" href="#image-processing-introduction" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Before starting this section, you will want to install the <code class="docutils literal notranslate"><span class="pre">cs20-image</span></code> package. To do this, open Thonny and select Tools -&gt; Manage packages…, then type in <code class="docutils literal notranslate"><span class="pre">cs20-image</span></code> and press Search. Once the package is selected, click install. You should now be able to use any image that you download with the example code shown below.</p>
+<p>Before starting this section, you will want to install the <code class="docutils literal notranslate"><span class="pre">cs20-image</span></code> package. To do this, open Thonny and select Tools -&gt; Manage packages..., then type in <code class="docutils literal notranslate"><span class="pre">cs20-image</span></code> and press Search. Once the package is selected, click install. You should now be able to use any image that you download with the example code shown below.</p>
 <p class="last"><strong>Be careful! You need to save the Python file and the image file in the same directory on your computer for this to work!</strong></p>
 </div>
 <p>The following video (created by Code.org) describes how images are represented using binary digits, as well as an overview of how image filters work. It is a great introduction to the image filtering that follows.</p>
@@ -292,14 +292,14 @@
 spreadsheet program.  Another object that is organized in rows and columns is a digital image.  In this section we will
 explore how iteration allows us to manipulate these images.</p>
 <p>A <strong>digital image</strong> is a finite collection of small, discrete picture elements called <strong>pixels</strong>.  These pixels are organized in a two-dimensional grid.  Each pixel represents the smallest amount of picture information that is
-available.  Sometimes these pixels appear as small “dots”.</p>
+available.  Sometimes these pixels appear as small &quot;dots&quot;.</p>
 <p>Each image (grid of pixels) has its own width and its own height.  The width is the number of columns and the height is the number of rows.  We can name the pixels in the grid by using the column number and row number.  However, it is very important to remember
 that computer scientists like to start counting with 0!  This means that if there are 20 rows, they will be named 0,1,2, and so on through 19.  This will be very useful later when we iterate using range.</p>
 <p>In the figure below, the pixel of interest is found at column <strong>c</strong> and row <strong>r</strong>.</p>
 <img alt="../../_images/image_pixels.png" src="../../_images/image_pixels.png" />
 </div>
 <div class="section" id="the-rgb-color-model">
-<span id="index-0"></span><h2>1.2. The RGB Color Model<a class="headerlink" href="#the-rgb-color-model" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>1.2. The RGB Color Model<a class="headerlink" href="#the-rgb-color-model" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Each pixel of the image will represent a single color.  The specific color depends on a formula that mixes various amounts
 of three basic colors: red, green, and blue.  This technique for creating color is known as the <strong>RGB Color Model</strong>.
 The amount of each color, sometimes called the <strong>intensity</strong> of the color, allows us to have very fine control over the
@@ -307,8 +307,8 @@ resulting color.</p>
 <p>The minimum intensity value for a basic color is 0.  For example if the red intensity is 0, then there is no red in the pixel.  The maximum
 intensity is 255.  This means that there are actually 256 different amounts of intensity for each basic color.  Since there
 are three basic colors, that means that you can create 256<sup>3</sup> distinct colors using the RGB Color Model.</p>
-<p>Here are the red, green and blue intensities for some common colors.  Note that “Black” is represented by a pixel having
-no basic color.  On the other hand, “White” has maximum values for all three basic color components.</p>
+<p>Here are the red, green and blue intensities for some common colors.  Note that &quot;Black&quot; is represented by a pixel having
+no basic color.  On the other hand, &quot;White&quot; has maximum values for all three basic color components.</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="25%" />
@@ -367,7 +367,7 @@ no basic color.  On the other hand, “White” has maximum values for all three
 </div>
 </div>
 <div class="section" id="creating-and-manipulating-pixels">
-<span id="index-1"></span><h2>1.3. Creating and Manipulating Pixels<a class="headerlink" href="#creating-and-manipulating-pixels" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>1.3. Creating and Manipulating Pixels<a class="headerlink" href="#creating-and-manipulating-pixels" title="Lien permanent vers ce titre">¶</a></h2>
 <p>In order to manipulate an image, we need to be able to access individual pixels.  This capability is provided by
 a module called <strong>image</strong>, provided in ActiveCode (or with the <code class="docutils literal notranslate"><span class="pre">cs20-image</span></code> package). The image module defines two classes: <code class="docutils literal notranslate"><span class="pre">Image</span></code> and <code class="docutils literal notranslate"><span class="pre">Pixel</span></code>.</p>
 <p>Each Pixel object has three attributes: the red intensity, the green intensity, and the blue intensity.  A pixel provides three methods (functions)
@@ -437,7 +437,7 @@ print(p.get_green(), p.get_blue())
 </textarea>
 </div>
 <div class="section" id="check-your-understanding">
-<h3>1.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
+<h3>1.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question7_8_1_1">
@@ -456,7 +456,7 @@ print(p.get_green(), p.get_blue())
             </div>
 </div>
 <div class="section" id="nested-iteration">
-<span id="index-2"></span><h2>1.4. Nested Iteration<a class="headerlink" href="#nested-iteration" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>1.4. Nested Iteration<a class="headerlink" href="#nested-iteration" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Image processing</strong> refers to the ability to manipulate the individual pixels in a digital image.  In order to process
 all of the pixels, we need to be able to systematically visit all of the rows and columns in the image.  The best way
 to do this is to use <strong>nested iteration</strong>.</p>
@@ -485,7 +485,7 @@ for i in range(5):
 <p>The <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span></code> iteration is the <cite>outer iteration</cite> and the <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">j</span></code> iteration is the <cite>inner iteration</cite>.  Each pass through
 the outer iteration will result in the complete processing of the inner iteration from beginning to end.  This means that
 the output from this nested iteration will show that for each value of <code class="docutils literal notranslate"><span class="pre">i</span></code>, all values of <code class="docutils literal notranslate"><span class="pre">j</span></code> will occur.</p>
-<p>Note that the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> stays the same while the value of <code class="docutils literal notranslate"><span class="pre">j</span></code> changes.  The inner iteration, in effect, is moving “faster” than the outer iteration.</p>
+<p>Note that the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> stays the same while the value of <code class="docutils literal notranslate"><span class="pre">j</span></code> changes.  The inner iteration, in effect, is moving &quot;faster&quot; than the outer iteration.</p>
 <p>Another way to see this in more detail is to examine the behavior with codelens.  Step through the iterations to see the
 flow of control as it occurs with the nested iteration.  Again, for every value of <code class="docutils literal notranslate"><span class="pre">i</span></code>, all of the values of <code class="docutils literal notranslate"><span class="pre">j</span></code> will occur.  You can see that the inner iteration completes before going on to the next pass of the outer iteration.</p>
 
@@ -549,8 +549,8 @@ The inner <code class="docutils literal notranslate"><span class="pre">for</span
 </div>
 </div>
 <div class="section" id="creating-an-empty-image">
-<h2>1.5. Creating an Empty Image<a class="headerlink" href="#creating-an-empty-image" title="Permalink to this headline">¶</a></h2>
-<p>It is possible to create an Image object that is “empty”.  An <code class="docutils literal notranslate"><span class="pre">EmptyImage</span></code> has a width and a height.  However, the pixel collection consists of only white pixels when it is created. We can create and draw an empty image like this:</p>
+<h2>1.5. Creating an Empty Image<a class="headerlink" href="#creating-an-empty-image" title="Lien permanent vers ce titre">¶</a></h2>
+<p>It is possible to create an Image object that is &quot;empty&quot;.  An <code class="docutils literal notranslate"><span class="pre">EmptyImage</span></code> has a width and a height.  However, the pixel collection consists of only white pixels when it is created. We can create and draw an empty image like this:</p>
 
 <div data-childcomponent="empty_image_demo" class="runestone explainer ac_section alert alert-warning">
 
@@ -594,16 +594,16 @@ img.draw(win)
 </textarea>
 </div>
 <div class="section" id="try-this">
-<h3>1.5.1. Try This<a class="headerlink" href="#try-this" title="Permalink to this headline">¶</a></h3>
+<h3>1.5.1. Try This<a class="headerlink" href="#try-this" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li>Change the code above to draw an image of a different color.</li>
-<li>Adapt the code above to draw a “pinstripe” image. In other words, change the code so that only every other row is colored red. <em>Hint: recall the modulus % operator.</em></li>
+<li>Adapt the code above to draw a &quot;pinstripe&quot; image. In other words, change the code so that only every other row is colored red. <em>Hint: recall the modulus % operator.</em></li>
 <li>Can you make it work for every other column (instead of every other row)? How about every 5th row/column?</li>
 </ul>
 </div>
 </div>
 <div class="section" id="image-objects">
-<span id="index-3"></span><h2>1.6. Image Objects<a class="headerlink" href="#image-objects" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>1.6. Image Objects<a class="headerlink" href="#image-objects" title="Lien permanent vers ce titre">¶</a></h2>
 <p>To create a non-empty Image object, we pass in the name of a file that stores a digital image.  The resulting image object has an attribute corresponding to the width, the height, and the collection of pixels in the image.</p>
 <p>We can ask an image object to return its size using the <code class="docutils literal notranslate"><span class="pre">get_width</span></code> and <code class="docutils literal notranslate"><span class="pre">get_height</span></code> methods.  We can also get a pixel from a particular location in the image using <code class="docutils literal notranslate"><span class="pre">get_pixel</span></code> and change the pixel at
 a particular location using <code class="docutils literal notranslate"><span class="pre">set_pixel</span></code>.</p>
@@ -673,26 +673,26 @@ print(p.get_red(), p.get_green(), p.get_blue())
 pixel at column 45, row 55, has RGB values of 253, 212, and 1.  Try a few other pixel locations by changing the <code class="docutils literal notranslate"><span class="pre">get_pixel</span></code> arguments and rerunning the program.</p>
 </div>
 <div class="section" id="image-processing-with-an-existing-image">
-<h2>1.7. Image Processing with an Existing Image<a class="headerlink" href="#image-processing-with-an-existing-image" title="Permalink to this headline">¶</a></h2>
+<h2>1.7. Image Processing with an Existing Image<a class="headerlink" href="#image-processing-with-an-existing-image" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="increasing-a-color">
-<h3>1.7.1. Increasing a Color<a class="headerlink" href="#increasing-a-color" title="Permalink to this headline">¶</a></h3>
-<img src="../../_static/sneakers.jpg" id="sneakers.jpg"><p>Let’s say that we wanted to increase the amount of green in the image shown above (<code class="docutils literal notranslate"><span class="pre">sneakers.jpg</span></code>). To do so, we would need to look at every individual pixel, determine how much green that pixel contained, and then increase it by some amount. Here is a simple program that does just that:</p>
+<h3>1.7.1. Increasing a Color<a class="headerlink" href="#increasing-a-color" title="Lien permanent vers ce titre">¶</a></h3>
+<img src="../../_static/sneakers.jpg" id="sneakers.jpg"><p>Let's say that we wanted to increase the amount of green in the image shown above (<code class="docutils literal notranslate"><span class="pre">sneakers.jpg</span></code>). To do so, we would need to look at every individual pixel, determine how much green that pixel contained, and then increase it by some amount. Here is a simple program that does just that:</p>
 <div class="admonition caution">
-<p class="first admonition-title">Caution</p>
+<p class="first admonition-title">Prudence</p>
 <p>There is a chance that the following program will not finish execution before triggering a <code class="docutils literal notranslate"><span class="pre">TimeLimitError</span></code> in your web browser. To see the completed version of the image, you may either:</p>
 <ul class="last simple">
 <li>copy/paste this code into Thonny and execute it there (being sure to save the image file into the same folder as the Python code)</li>
 <li>unindent (remove all spaces before) the call to <code class="docutils literal notranslate"><span class="pre">img.draw(canvas)</span></code> (this will remove the animation, as the you only draw the completely transformed image, instead of the altered version after one completed loop)</li>
 </ul>
 </div>
-<p>Let’s take a closer look at the code.  After importing the image module, we create an image object called <code class="docutils literal notranslate"><span class="pre">img</span></code> that represents a typical digital photo. We use the <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> and <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> functions to create a window that is the same size as the image.</p>
+<p>Let's take a closer look at the code.  After importing the image module, we create an image object called <code class="docutils literal notranslate"><span class="pre">img</span></code> that represents a typical digital photo. We use the <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> and <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> functions to create a window that is the same size as the image.</p>
 <p>Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
 Line 10 gets an individual pixel at the current location of the nested loop.</p>
 <p>Lines 12-14 extract the original intensity from the pixel. For red and blue, the new values stay the same as the original value. For the green intensity, we simply add 50 to whatever green amount was there previously. Note that if you pass a value higher than 255 or lower than 0 when setting the intensity of a pixel, the image module will automatically set the value to the highest/lowest value allowed (255/0). Once we have the <code class="docutils literal notranslate"><span class="pre">new_red</span></code>, <code class="docutils literal notranslate"><span class="pre">new_green</span></code>, and <code class="docutils literal notranslate"><span class="pre">new_blue</span></code> values, we can create a new pixel (Line 15).</p>
 <p>Finally, we need to replace the old pixel with the new, adjusted pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.</p>
 </div>
 <div class="section" id="negative-images">
-<h3>1.7.2. Negative Images<a class="headerlink" href="#negative-images" title="Permalink to this headline">¶</a></h3>
+<h3>1.7.2. Negative Images<a class="headerlink" href="#negative-images" title="Lien permanent vers ce titre">¶</a></h3>
 <p>One of the easiest image processing algorithms will create what is known as a <strong>negative</strong> image.  A negative image simply means that each pixel will be the <em>opposite</em> of what it was originally.  But what does opposite mean?</p>
 <p>In the RGB color model, we can consider the opposite of the red component as the difference between the original red
 and 255.  For example, if the original red component was 50, then the opposite, or negative red value would be
@@ -740,7 +740,7 @@ for y in range(height):
 </div>
 </div>
 <div class="section" id="id1">
-<h3>1.7.3. Try This<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>1.7.3. Try This<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 <ul class="simple">
 <li>Change the name of the file in the <code class="docutils literal notranslate"><span class="pre">image.Image()</span></code> call to see how other images look as negatives. Here are two other images that you can use (<code class="docutils literal notranslate"><span class="pre">fransaskoisflag.jpg</span></code> and <code class="docutils literal notranslate"><span class="pre">pineapples.jpg</span></code>):</li>
 </ul>
@@ -752,7 +752,7 @@ for y in range(height):
 </ul>
 </div>
 <div class="section" id="id2">
-<h3>1.7.4. Check Your Understanding<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>1.7.4. Check Your Understanding<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question7_8_3_1">
@@ -837,7 +837,7 @@ for y in range(height):
             </div>
             </div>
 <div class="section" id="acknowledgments">
-<h3>1.7.5. Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h3>
+<h3>1.7.5. Acknowledgments<a class="headerlink" href="#acknowledgments" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Images are from <a class="reference external" href="https://www.pexels.com/">Pexels</a>, and are licensed as CC-0. Saskatchewan flag images are also licensed as CC-0, obtained from Wikimedia.</p>
 </div>
 </div>

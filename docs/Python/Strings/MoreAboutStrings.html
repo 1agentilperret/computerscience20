@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="3. String Methods" href="StringMethods.html" />
     <link rel="prev" title="1. String Index, Length, Slicing and Traversal" href="StringIntro.html" />
 <meta charset='utf-8'>
@@ -268,13 +268,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="string-traversal-by-index-and-the-accumulator-pattern-with-strings">
-<h1>2. String Traversal (by index), and the Accumulator Pattern with Strings<a class="headerlink" href="#string-traversal-by-index-and-the-accumulator-pattern-with-strings" title="Permalink to this headline">¶</a></h1>
+<h1>2. String Traversal (by index), and the Accumulator Pattern with Strings<a class="headerlink" href="#string-traversal-by-index-and-the-accumulator-pattern-with-strings" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>WDTPD string questions. Explore string traversal (for loop by index), <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators, and the accumulator pattern with strings. Work on practice problems covering these ideas.</p>
 </div>
 <div class="section" id="what-does-this-program-do">
-<h2>2.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
+<h2>2.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
@@ -327,7 +327,7 @@ for poorly_named_variable in fruit:
 </div>
 </div>
 <div class="section" id="traversal-and-the-for-loop-by-index">
-<h2>2.2. Traversal and the <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop: By Index<a class="headerlink" href="#traversal-and-the-for-loop-by-index" title="Permalink to this headline">¶</a></h2>
+<h2>2.2. Traversal and the <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop: By Index<a class="headerlink" href="#traversal-and-the-for-loop-by-index" title="Lien permanent vers ce titre">¶</a></h2>
 <p>It is also possible to use the <code class="docutils literal notranslate"><span class="pre">range</span></code> function to systematically generate the indices of the characters.  The <code class="docutils literal notranslate"><span class="pre">for</span></code> loop can then be used to iterate over these positions.
 These positions can be used together with the indexing operator to access the individual
 characters in the string.</p>
@@ -379,7 +379,7 @@ $(window).resize(function() {
 });
 </script>
 </div>
-<p>The index positions in “apple” are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by <code class="docutils literal notranslate"><span class="pre">range(5)</span></code>.  The first time through the for loop, <code class="docutils literal notranslate"><span class="pre">current_index</span></code> will be 0 and the “a” will be printed.  Then, <code class="docutils literal notranslate"><span class="pre">current_index</span></code> will be reassigned to 1 and “p” will be displayed.  This will repeat for all the range values up to but not including 5.  Since “e” has index 4, this will be exactly right to show all
+<p>The index positions in &quot;apple&quot; are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by <code class="docutils literal notranslate"><span class="pre">range(5)</span></code>.  The first time through the for loop, <code class="docutils literal notranslate"><span class="pre">current_index</span></code> will be 0 and the &quot;a&quot; will be printed.  Then, <code class="docutils literal notranslate"><span class="pre">current_index</span></code> will be reassigned to 1 and &quot;p&quot; will be displayed.  This will repeat for all the range values up to but not including 5.  Since &quot;e&quot; has index 4, this will be exactly right to show all
 of the characters.</p>
 <p>In order to make the iteration more general, we can use the <code class="docutils literal notranslate"><span class="pre">len</span></code> function to provide the bound for <code class="docutils literal notranslate"><span class="pre">range</span></code>.  This is a very common pattern for traversing any sequence by position.  Make sure you understand why the range function behaves
 correctly when using <code class="docutils literal notranslate"><span class="pre">len</span></code> of the string as its parameter value.</p>
@@ -450,7 +450,7 @@ $(window).resize(function() {
 </div>
 <p>Trace the values of <code class="docutils literal notranslate"><span class="pre">current_index</span></code> and satisfy yourself that they are correct.  In particular, note the start and end of the range.</p>
 <div class="section" id="check-your-understanding">
-<h3>2.2.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
+<h3>2.2.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string_for_loop_by_index_test_question_1">
@@ -476,7 +476,7 @@ $(window).resize(function() {
             </div>
 </div>
 <div class="section" id="the-in-and-not-in-operators">
-<span id="index-0"></span><h2>2.3. The <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators<a class="headerlink" href="#the-in-and-not-in-operators" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>2.3. The <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators<a class="headerlink" href="#the-in-and-not-in-operators" title="Lien permanent vers ce titre">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">in</span></code> operator tests if one string is a substring of another:</p>
 
 <div data-childcomponent="string_in_not_in_1" class="runestone explainer ac_section alert alert-warning">
@@ -520,10 +520,10 @@ print('x' not in 'apple')
 </div>
 </div>
 <div class="section" id="the-accumulator-pattern-with-strings">
-<span id="index-1"></span><h2>2.4. The Accumulator Pattern with Strings<a class="headerlink" href="#the-accumulator-pattern-with-strings" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>2.4. The Accumulator Pattern with Strings<a class="headerlink" href="#the-accumulator-pattern-with-strings" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Combining the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator with string concatenation using <code class="docutils literal notranslate"><span class="pre">+</span></code> and the accumulator pattern, we can
 write a function that removes all the vowels from a string.  The idea is to start with a string and iterate over each character, checking to see if the character is a vowel.  As we process the characters, we will build up a new string consisting of only the nonvowel characters.  To do this, we use the accumulator pattern.</p>
-<p>Remember that the accumulator pattern allows us to keep a “running total”.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
+<p>Remember that the accumulator pattern allows us to keep a &quot;running total&quot;.  With strings, we are not accumulating a numeric total.  Instead we are accumulating characters onto a string.</p>
 
 <div data-childcomponent="string_accumulator_pattern_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -553,7 +553,7 @@ print(remove_vowels("aAbEefIijOopUus"))
 </pre></div>
 </div>
 <p>Look carefully at line 6 in the above program (<code class="docutils literal notranslate"><span class="pre">string_without_vowels</span> <span class="pre">=</span> <span class="pre">string_without_vowels</span> <span class="pre">+</span> <span class="pre">each_char</span></code>).  We will do this for every character that is not a vowel.  This should look
-very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to “accumulate” the final result.
+very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to &quot;accumulate&quot; the final result.
 In words it says that the new value of <code class="docutils literal notranslate"><span class="pre">string_without_vowels</span></code> will be the old value of <code class="docutils literal notranslate"><span class="pre">string_without_vowels</span></code> concatenated with
 the value of <code class="docutils literal notranslate"><span class="pre">each_char</span></code>.  We are building the result string character by character.</p>
 <p>Take a close look also at the initialization of <code class="docutils literal notranslate"><span class="pre">string_without_vowels</span></code>.  We start with an empty string and then begin adding
@@ -607,7 +607,7 @@ $(window).resize(function() {
 </script>
 </div>
 <div class="section" id="id1">
-<h3>2.4.1. Check Your Understanding<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>2.4.1. Check Your Understanding<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string_accumulator_pattern_test_question_1">
@@ -701,18 +701,18 @@ print(new_word)
     </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>2.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
+<h2>2.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Try the following practice problems. You can either work directly in the textbook, or use Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
 <p><strong>Hint: For each of the following, you will want to use the accumulator pattern with strings. In other words, you first need to create an empty string, then concatenate letters onto it as needed.</strong></p>
 <div class="section" id="even-letters-of-a-word">
-<h3>2.5.1. Even Letters of a Word<a class="headerlink" href="#even-letters-of-a-word" title="Permalink to this headline">¶</a></h3>
+<h3>2.5.1. Even Letters of a Word<a class="headerlink" href="#even-letters-of-a-word" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
 </div>
 
 <div data-childcomponent="practice_problem_string_more_info_1" class="runestone explainer ac_section alert alert-warning">
-<p>Create a function with a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> that returns the even letters of the <code class="docutils literal notranslate"><span class="pre">word</span></code> (the first letter is even, since we start counting our index values at 0). For example, given the <code class="docutils literal notranslate"><span class="pre">word</span></code> “Saskatoon”, the function should return “Ssaon”.</p>
+<p>Create a function with a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> that returns the even letters of the <code class="docutils literal notranslate"><span class="pre">word</span></code> (the first letter is even, since we start counting our index values at 0). For example, given the <code class="docutils literal notranslate"><span class="pre">word</span></code> &quot;Saskatoon&quot;, the function should return &quot;Ssaon&quot;.</p>
 <p><strong>Examples:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">even_letters(&quot;Saskatoon&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;Ssaon&quot;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">even_letters(&quot;Saskatchewan&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;Ssacea&quot;</span></code></p>
@@ -757,14 +757,14 @@ myTests().main()
     </div>
     </div>
 <div class="section" id="reverse-me">
-<h3>2.5.2. Reverse Me<a class="headerlink" href="#reverse-me" title="Permalink to this headline">¶</a></h3>
+<h3>2.5.2. Reverse Me<a class="headerlink" href="#reverse-me" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
 </div>
 
 <div data-childcomponent="practice_problem_string_more_info_2" class="runestone explainer ac_section alert alert-warning">
-<p>Create a function with a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> that returns the <code class="docutils literal notranslate"><span class="pre">word</span></code> spelled backwards. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was “Saskatoon”, the function should return “nootaksaS”.</p>
+<p>Create a function with a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> that returns the <code class="docutils literal notranslate"><span class="pre">word</span></code> spelled backwards. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was &quot;Saskatoon&quot;, the function should return &quot;nootaksaS&quot;.</p>
 <p><strong>Examples:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">reverse_me(&quot;Saskatoon&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;nootaksaS&quot;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">reverse_me(&quot;Saskatchewan&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;nawehctaksaS&quot;</span></code></p>
@@ -796,14 +796,14 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="letter-destroyer">
-<h3>2.5.3. Letter Destroyer<a class="headerlink" href="#letter-destroyer" title="Permalink to this headline">¶</a></h3>
+<h3>2.5.3. Letter Destroyer<a class="headerlink" href="#letter-destroyer" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
 </div>
 
 <div data-childcomponent="practice_problem_string_more_info_3" class="runestone explainer ac_section alert alert-warning">
-<p>Create a function with two parameters, <code class="docutils literal notranslate"><span class="pre">word</span></code> and <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code>. The function should return the <code class="docutils literal notranslate"><span class="pre">word</span></code>, but without any of the occurrences of the <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code> in the string. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was “Saskatoon”, and the <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code> was ‘o’, the function should return “Saskatn”.</p>
+<p>Create a function with two parameters, <code class="docutils literal notranslate"><span class="pre">word</span></code> and <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code>. The function should return the <code class="docutils literal notranslate"><span class="pre">word</span></code>, but without any of the occurrences of the <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code> in the string. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was &quot;Saskatoon&quot;, and the <code class="docutils literal notranslate"><span class="pre">letter_to_destroy</span></code> was 'o', the function should return &quot;Saskatn&quot;.</p>
 <p><strong>Examples:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">letter_destroyer(&quot;Saskatoon&quot;,</span> <span class="pre">&quot;o&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;Saskatn&quot;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">letter_destroyer(&quot;Saskatchewan&quot;,</span> <span class="pre">&quot;a&quot;)</span> <span class="pre">→</span> <span class="pre">&quot;Ssktchewn&quot;</span></code></p>
@@ -835,14 +835,14 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="qwerty-finder">
-<h3>2.5.4. QWERTY Finder<a class="headerlink" href="#qwerty-finder" title="Permalink to this headline">¶</a></h3>
+<h3>2.5.4. QWERTY Finder<a class="headerlink" href="#qwerty-finder" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
 </div>
 
 <div data-childcomponent="practice_problem_string_more_info_4" class="runestone explainer ac_section alert alert-warning">
-<p>Create a function that takes in a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> and returns the location of the first occurrence of one of the following letters: “qwerty”. If none of these letters exist in the word, have the function return -1. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was “Saskatoon”, the function should return 5 (the index value for the <code class="docutils literal notranslate"><span class="pre">t</span></code> in “Saskatoon”).</p>
+<p>Create a function that takes in a single parameter <code class="docutils literal notranslate"><span class="pre">word</span></code> and returns the location of the first occurrence of one of the following letters: &quot;qwerty&quot;. If none of these letters exist in the word, have the function return -1. For example, if the <code class="docutils literal notranslate"><span class="pre">word</span></code> was &quot;Saskatoon&quot;, the function should return 5 (the index value for the <code class="docutils literal notranslate"><span class="pre">t</span></code> in &quot;Saskatoon&quot;).</p>
 <p><strong>Examples:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">qwerty_finder(&quot;Saskatoon&quot;)</span> <span class="pre">→</span> <span class="pre">5</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">qwerty_finder(&quot;Naomi&quot;)</span> <span class="pre">→</span> <span class="pre">-1</span></code></p>

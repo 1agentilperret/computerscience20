@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Step 14: The not Keyword" href="Step14.html" />
     <link rel="prev" title="Step 12: While" href="Step12.html" />
 <meta charset='utf-8'>
@@ -206,7 +206,7 @@
 <li><a class="reference internal" href="#">Step 13: If/Elif/Else</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a></li>
 <li><a class="reference internal" href="#your-turn">Your Turn</a></li>
-<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You’re Having Trouble (a more detailed explanation)</a></li>
+<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You're Having Trouble (a more detailed explanation)</a></li>
 </ul>
 </li>
 </ul>
@@ -254,11 +254,11 @@
 <div class="container" id="main-content">
   
   <div class="section" id="step-13-if-elif-else">
-<h1>Step 13: If/Elif/Else<a class="headerlink" href="#step-13-if-elif-else" title="Permalink to this headline">¶</a></h1>
+<h1>Step 13: If/Elif/Else<a class="headerlink" href="#step-13-if-elif-else" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Reeborg lives in Canada where it not only can rain or be sunny, but snow
-can also be falling. Let’s suppose that only one of those can happen at a time. Then,
+can also be falling. Let's suppose that only one of those can happen at a time. Then,
 Reeborg could be faced with the following choices:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">it_rains</span><span class="p">():</span>
     <span class="n">play_indoors</span><span class="p">()</span>
@@ -268,7 +268,7 @@ Reeborg could be faced with the following choices:</p>
     <span class="n">go_swimming</span><span class="p">()</span> <span class="c1"># assuming it is warm!</span>
 </pre></div>
 </div>
-<p>Notice the use of <code class="docutils literal notranslate"><span class="pre">elif</span></code> (which means “else if”) for choice 2. If we took into account other
+<p>Notice the use of <code class="docutils literal notranslate"><span class="pre">elif</span></code> (which means &quot;else if&quot;) for choice 2. If we took into account other
 possible weather phenomena, like hail, thunder, fog, drizzle, etc., we
 could add other choices using additional <code class="docutils literal notranslate"><span class="pre">elif:</span> <span class="pre">...</span></code> code blocks.</p>
 <p>Here is a graphical representation of the choices that Reeborg faces:</p>
@@ -290,7 +290,7 @@ something like this:</p>
 </pre></div>
 </div>
 <p>Although this code works fine for the hurdle world you were given, <strong>it would fail if the hurdles were not spaced evenly apart</strong>.</p>
-<p>Here’s a program skeleton that should work for the world we mentioned above,
+<p>Here's a program skeleton that should work for the world we mentioned above,
 provided you fill in the missing pieces. <em>Note: You may find the `done` function (which tells Reeborg to stop doing anything) helpful here.</em></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">jump_over_hurdle</span><span class="p">():</span>
      <span class="c1"># suitable definition</span>
@@ -312,7 +312,7 @@ you should see that it gives three independent choices: <strong>only one of them
 will be executed</strong>.</p>
 </div>
 <div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
+<h2>Your Turn<a class="headerlink" href="#your-turn" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Open Step 13 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2013" target="_blank">Reeborg environment</a>, and copy/paste the following code to begin your solution:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">jump_over_hurdle</span><span class="p">():</span>
      <span class="c1"># suitable definition</span>
@@ -333,7 +333,7 @@ will be executed</strong>.</p>
 <p>Reeborg is jumping hurdles again. This time, however, the hurdles may not all be the same distance apart. You should use a <code class="docutils literal notranslate"><span class="pre">repeat</span></code> loop to have Reeborg jump the hurdles, and end at the goal (12, 1). You <strong>must</strong> use an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> structure in your program.</p>
 </div>
 <div class="section" id="if-you-re-having-trouble-a-more-detailed-explanation">
-<h2>If You’re Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Permalink to this headline">¶</a></h2>
+<h2>If You're Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Lien permanent vers ce titre">¶</a></h2>
 <p>A series of <code class="docutils literal notranslate"><span class="pre">if/elif/</span> <span class="pre">...</span> <span class="pre">/else</span></code> statements is equivalent to
 inserting the <strong>first</strong> code block that evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. Thus:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="kc">False</span><span class="p">:</span>

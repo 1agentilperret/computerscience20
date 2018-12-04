@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="12. The Time Module and Using a Micro:bit" href="Microbit.html" />
     <link rel="prev" title="10. Multiple Turtles and for Loops" href="MultipleTurtlesAndForLoops.html" />
 <meta charset='utf-8'>
@@ -277,13 +277,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="logical-operators">
-<h1>11. Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h1>
+<h1>11. Logical Operators<a class="headerlink" href="#logical-operators" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Introduce the logical operators <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code>. Work on practice problems, in which students create programs that utilize logical operators. Booleans practice quiz.</p>
 </div>
 <div class="section" id="and-or-not">
-<span id="index-0"></span><h2>11.1. <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code><a class="headerlink" href="#and-or-not" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>11.1. <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code><a class="headerlink" href="#and-or-not" title="Lien permanent vers ce titre">¶</a></h2>
 <p>There are three <strong>logical operators</strong>: <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span></code>. The
 semantics (meaning) of these operators is similar to their meaning in English.
 For example, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> is true only if <code class="docutils literal notranslate"><span class="pre">x</span></code> is greater than 0 <em>and</em>
@@ -308,12 +308,12 @@ print(n % 2 == 0 or n % 3 == 0)
 </textarea>
 </div>
 <div class="admonition caution">
-<p class="first admonition-title">Caution</p>
+<p class="first admonition-title">Prudence</p>
 <p>Common Mistake!</p>
-<p class="last">There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <code class="docutils literal notranslate"><span class="pre">number</span></code> and we want to check to see if its value is 5,6, or 7.  In words we might say: “number equal to 5 or 6 or 7”.  However, if we translate this into Python, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">7</span></code>, it will not be correct.  The <code class="docutils literal notranslate"><span class="pre">or</span></code> operator must join the results of three equality checks.  The correct way to write this is <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">number</span> <span class="pre">==</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">number</span> <span class="pre">==</span> <span class="pre">7</span></code>.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.</p>
+<p class="last">There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <code class="docutils literal notranslate"><span class="pre">number</span></code> and we want to check to see if its value is 5,6, or 7.  In words we might say: &quot;number equal to 5 or 6 or 7&quot;.  However, if we translate this into Python, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">7</span></code>, it will not be correct.  The <code class="docutils literal notranslate"><span class="pre">or</span></code> operator must join the results of three equality checks.  The correct way to write this is <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">number</span> <span class="pre">==</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">number</span> <span class="pre">==</span> <span class="pre">7</span></code>.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.</p>
 </div>
 <div class="section" id="check-your-understanding">
-<h3>11.1.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
+<h3>11.1.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question6_2_1">
@@ -330,7 +330,7 @@ print(n % 2 == 0 or n % 3 == 0)
             </div>
 </div>
 <div class="section" id="precedence-of-operators">
-<span id="index-1"></span><h2>11.2. Precedence of Operators<a class="headerlink" href="#precedence-of-operators" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>11.2. Precedence of Operators<a class="headerlink" href="#precedence-of-operators" title="Lien permanent vers ce titre">¶</a></h2>
 <p>We have now added a number of additional operators to those we have learned.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <code class="docutils literal notranslate"><span class="pre">x*5</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">y-6</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <code class="docutils literal notranslate"><span class="pre">and</span></code> will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.</p>
 <p>The following table summarizes the precedence discussed so far from highest to lowest.</p>
 <table border="1" class="docutils">
@@ -377,7 +377,7 @@ print(n % 2 == 0 or n % 3 == 0)
 </tbody>
 </table>
 <div class="section" id="id1">
-<h3>11.2.1. Check Your Understanding<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>11.2.1. Check Your Understanding<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question6_3_1">
@@ -412,10 +412,10 @@ print(n % 2 == 0 or n % 3 == 0)
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>11.3. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
+<h2>11.3. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="under-100">
-<h3>11.3.1. Under 100<a class="headerlink" href="#under-100" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that takes in a number from the user, and correctly prints either “That number is between 1 to 100” or “That number is not between 1 to 100”. <em>You may only use a single if/else block to solve this problem</em>.</p>
+<h3>11.3.1. Under 100<a class="headerlink" href="#under-100" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that takes in a number from the user, and correctly prints either &quot;That number is between 1 to 100&quot; or &quot;That number is not between 1 to 100&quot;. <em>You may only use a single if/else block to solve this problem</em>.</p>
 
 <div data-childcomponent="under-100" class="runestone explainer ac_section alert alert-warning">
 
@@ -428,8 +428,8 @@ print(n % 2 == 0 or n % 3 == 0)
 </div>
 </div>
 <div class="section" id="from-saskatchewan">
-<h3>11.3.2. From Saskatchewan<a class="headerlink" href="#from-saskatchewan" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that asks the user which province they live in. If the province isn’t “saskatchewan”, print out “You should come visit Saskatchewan sometime!”. <em>You must use at least one logical operator in your solution</em>.</p>
+<h3>11.3.2. From Saskatchewan<a class="headerlink" href="#from-saskatchewan" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that asks the user which province they live in. If the province isn't &quot;saskatchewan&quot;, print out &quot;You should come visit Saskatchewan sometime!&quot;. <em>You must use at least one logical operator in your solution</em>.</p>
 
 <div data-childcomponent="from-saskatchewan" class="runestone explainer ac_section alert alert-warning">
 
@@ -442,8 +442,8 @@ print(n % 2 == 0 or n % 3 == 0)
 </div>
 </div>
 <div class="section" id="divisible-by-3-or-5">
-<h3>11.3.3. Divisible by 3 or 5<a class="headerlink" href="#divisible-by-3-or-5" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that asks the user to enter a number. You should print out a message to the user, either “That number is divisible by either 3 or 5”, or “That number is not divisible by either 3 or 5”. <em>Be sure to consider the data type of the input you are taking in from the user. Use a single if/else block to solve this problem.</em></p>
+<h3>11.3.3. Divisible by 3 or 5<a class="headerlink" href="#divisible-by-3-or-5" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that asks the user to enter a number. You should print out a message to the user, either &quot;That number is divisible by either 3 or 5&quot;, or &quot;That number is not divisible by either 3 or 5&quot;. <em>Be sure to consider the data type of the input you are taking in from the user. Use a single if/else block to solve this problem.</em></p>
 
 <div data-childcomponent="divisible-by-3-or-5" class="runestone explainer ac_section alert alert-warning">
 
@@ -456,7 +456,7 @@ print(n % 2 == 0 or n % 3 == 0)
 </div>
 </div>
 <div class="section" id="turtle-stuck-in-a-square">
-<h3>11.3.4. Turtle Stuck In a Square<a class="headerlink" href="#turtle-stuck-in-a-square" title="Permalink to this headline">¶</a></h3>
+<h3>11.3.4. Turtle Stuck In a Square<a class="headerlink" href="#turtle-stuck-in-a-square" title="Lien permanent vers ce titre">¶</a></h3>
 <p>You have been given some starter code for the problem below. <strong>You only need to change one line of the code, specifically the line containing the while loop.</strong> Replace the word <code class="docutils literal notranslate"><span class="pre">something</span></code> with the appropriate boolean questions that will cause the turtle to continue moving until it gets to one of the edges of the square. Each time the program is run, the turtle will pick a new random direction to move. When executed, your program should look something like this:</p>
 <img alt="../../_images/stuck_in_square.gif" src="../../_images/stuck_in_square.gif" />
 <p>Note that you can get the current x coordinate of the turtle by calling <code class="docutils literal notranslate"><span class="pre">bob.xcor()</span></code>, and the current y coordinate by calling <code class="docutils literal notranslate"><span class="pre">bob.ycor()</span></code>. Also remember that the turtle begins at the origin (0, 0), which is in the center of the screen. The vertices of the square have x and y coordinates as shown below:</p>
@@ -502,10 +502,10 @@ while something:
 </div>
 </div>
 <div class="section" id="booleans-practice-quiz">
-<h2>11.4. Booleans Practice Quiz<a class="headerlink" href="#booleans-practice-quiz" title="Permalink to this headline">¶</a></h2>
+<h2>11.4. Booleans Practice Quiz<a class="headerlink" href="#booleans-practice-quiz" title="Lien permanent vers ce titre">¶</a></h2>
 <p>To confirm you are feeling confident with booleans and logical operators, try to answer the following:</p>
 <div class="section" id="question-1">
-<h3>11.4.1. Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.1. Question 1<a class="headerlink" href="#question-1" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_1">
@@ -525,7 +525,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-2">
-<h3>11.4.2. Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.2. Question 2<a class="headerlink" href="#question-2" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_2">
@@ -545,7 +545,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-3">
-<h3>11.4.3. Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.3. Question 3<a class="headerlink" href="#question-3" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_3">
@@ -565,7 +565,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-4">
-<h3>11.4.4. Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.4. Question 4<a class="headerlink" href="#question-4" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_4">
@@ -585,7 +585,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-5">
-<h3>11.4.5. Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.5. Question 5<a class="headerlink" href="#question-5" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_5">
@@ -605,7 +605,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-6">
-<h3>11.4.6. Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.6. Question 6<a class="headerlink" href="#question-6" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_6">
@@ -625,7 +625,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-7">
-<h3>11.4.7. Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.7. Question 7<a class="headerlink" href="#question-7" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_7">
@@ -645,7 +645,7 @@ while something:
             </div>
             </div>
 <div class="section" id="question-8">
-<h3>11.4.8. Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h3>
+<h3>11.4.8. Question 8<a class="headerlink" href="#question-8" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="booleans_practice_quiz_8">

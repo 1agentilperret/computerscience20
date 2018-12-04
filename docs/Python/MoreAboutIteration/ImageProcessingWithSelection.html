@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="4. Functions and Image Processing" href="ImageProcessingFunctions.html" />
     <link rel="prev" title="2. Image Processing Practice" href="ImageProcessingPractice.html" />
 <meta charset='utf-8'>
@@ -275,13 +275,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="image-processing-with-conditionals">
-<h1>3. Image Processing With Conditionals<a class="headerlink" href="#image-processing-with-conditionals" title="Permalink to this headline">¶</a></h1>
+<h1>3. Image Processing With Conditionals<a class="headerlink" href="#image-processing-with-conditionals" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Use nested loops to practice simple image processing, this time including conditionals to control when certain effects are done.</p>
 </div>
 <div class="section" id="applying-an-effect-based-on-pixel-colour">
-<h2>3.1. Applying an Effect Based on Pixel Colour<a class="headerlink" href="#applying-an-effect-based-on-pixel-colour" title="Permalink to this headline">¶</a></h2>
+<h2>3.1. Applying an Effect Based on Pixel Colour<a class="headerlink" href="#applying-an-effect-based-on-pixel-colour" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Say you had an image that looked like this:</p>
 <img src="../../_static/moon.jpg" id="moon.jpg">
 <h4 style="text-align: center;">moon.jpg</h4><p>Due to the contrast in the image, we can apply certain effects to only a portion of the image. For example, we could turn the sky (which is currently black) into another colour, while leaving the moon itself untouched. The following code turns the sky a light gray colour.</p>
@@ -340,17 +340,17 @@ img.draw(win)
 </textarea>
 </div>
 <div class="section" id="try-this">
-<h3>3.1.1. Try This<a class="headerlink" href="#try-this" title="Permalink to this headline">¶</a></h3>
+<h3>3.1.1. Try This<a class="headerlink" href="#try-this" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Adapt the code above to:</p>
 <ul class="simple">
 <li>change the color of the sky to a different colour (something other than gray)</li>
 <li>instead of changing the sky, adapt the program to tint the moon slightly blue</li>
-<li>switch the image to be <code class="docutils literal notranslate"><span class="pre">bird-far.jpg</span></code>, then change the program so that all of the sky is “erased” (turned white), while the bird itself is left alone</li>
+<li>switch the image to be <code class="docutils literal notranslate"><span class="pre">bird-far.jpg</span></code>, then change the program so that all of the sky is &quot;erased&quot; (turned white), while the bird itself is left alone</li>
 </ul>
 </div>
 </div>
 <div class="section" id="applying-an-effect-to-an-area-of-an-image">
-<h2>3.2. Applying an Effect to an Area of an Image<a class="headerlink" href="#applying-an-effect-to-an-area-of-an-image" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. Applying an Effect to an Area of an Image<a class="headerlink" href="#applying-an-effect-to-an-area-of-an-image" title="Lien permanent vers ce titre">¶</a></h2>
 <p>You might want to affect only one area of an image. For example, perhaps you want to make the left half of the following image grayscale, but leave the right half of the image unchanged.</p>
 <img src="../../_static/sneakers.jpg" id="sneakers.jpg">
 <h4 style="text-align: center;">sneakers.jpg</h4><p>To apply an effect to just the left hand side, we can write a program that iterates through every pixel, but only apply the grayscale effect if the x coordinate is in the left half of the image. Here is a program that does just that:</p>
@@ -410,7 +410,7 @@ for x in range(width):
 </textarea>
 </div>
 <div class="section" id="id1">
-<h3>3.2.1. Try This<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>3.2.1. Try This<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Adapt the code above to:</p>
 <ul class="simple">
 <li>adapt the program so that the left half of the image remains unchanged, but the right of the image is converted to grayscale</li>
@@ -420,7 +420,7 @@ for x in range(width):
 </div>
 </div>
 <div class="section" id="combining-images">
-<h2>3.3. Combining Images<a class="headerlink" href="#combining-images" title="Permalink to this headline">¶</a></h2>
+<h2>3.3. Combining Images<a class="headerlink" href="#combining-images" title="Lien permanent vers ce titre">¶</a></h2>
 <p>If you want to combine two images together, you need to copy the pixel information from one image onto the pixel information of the other image. For example, if we want to have the smile emoji below show up in the image of the rooster, we need to look through each of the pixels in the smile image to see if we are looking at a white background pixel, or part of the image that we should be copying over to the rooster image. <em>Note that to make this example simpler, the teeth in the smile emoji have been turned slightly off-white, and the color of the emoji has been changed so that the yellow value of the emoji is (248, 216, 102). This allows us to check whether a pixel is white by simply checking if all of the rgb values are above a threshold of 250.</em></p>
 <img src="../../_static/emoji/smile.png" id="smile.png">
 <h4 style="text-align: center;">smile.png</h4><img src="../../_static/rooster.jpg" id="rooster.jpg">
@@ -474,22 +474,22 @@ for x in range(width_small):
 </textarea>
 </div>
 <div class="section" id="id3">
-<h3>3.3.1. Try This<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>3.3.1. Try This<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Adapt the code above to:</p>
 <ul class="simple">
-<li>adapt the program the smile shows up on top of the rooster’s head</li>
+<li>adapt the program the smile shows up on top of the rooster's head</li>
 </ul>
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>3.4. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
+<h2>3.4. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
 <p>For the following problems, use one of the images from the examples above, or one of these new ones:</p>
 <img src="../../_static/bird-far.jpg" id="bird-far.jpg">
 <h4 style="text-align: center;">bird-far.jpg</h4><img src="../../_static/berries.jpg" id="berries.jpg">
 <h4 style="text-align: center;">berries.jpg</h4><img src="../../_static/giraffe.jpg" id="giraffe.jpg">
 <h4 style="text-align: center;">giraffe.jpg</h4><img src="../../_static/emoji/no-med.png" id="ban.png">
 <h4 style="text-align: center;">ban.png</h4><div class="section" id="no-red-left-side">
-<h3>3.4.1. No Red Left Side<a class="headerlink" href="#no-red-left-side" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.1. No Red Left Side<a class="headerlink" href="#no-red-left-side" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Write a program that sets the red intensity of all pixels on the left half of the picture to be 0. On the right side of the picture, the red intensity should remain the same as the original value. The green and blue intensities should remain the same as the original for all parts of the image.</p>
 <blockquote>
 <div>
@@ -519,7 +519,7 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="blue-tint-top-right">
-<h3>3.4.2. Blue Tint Top Right<a class="headerlink" href="#blue-tint-top-right" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.2. Blue Tint Top Right<a class="headerlink" href="#blue-tint-top-right" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Write a program that makes the top right quarter of the image be tinted blue (by increasing the amount of blue in that area of the image).</p>
 <blockquote>
 <div>
@@ -549,8 +549,8 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="change-the-rooster-colour">
-<h3>3.4.3. Change the Rooster Colour<a class="headerlink" href="#change-the-rooster-colour" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that changes the colour of the rooster’s comb and wattle (the red stuff on the rooster’s head) from red to blue. <em>Note that your program will likely only partially work. That is okay! The edges of the converted parts of the image do not need to be clean.</em></p>
+<h3>3.4.3. Change the Rooster Colour<a class="headerlink" href="#change-the-rooster-colour" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that changes the colour of the rooster's comb and wattle (the red stuff on the rooster's head) from red to blue. <em>Note that your program will likely only partially work. That is okay! The edges of the converted parts of the image do not need to be clean.</em></p>
 <blockquote>
 <div>
 <div data-childcomponent="practice_problem_change_rooster_colour" class="runestone explainer ac_section alert alert-warning">
@@ -579,7 +579,7 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="repeat-left-twice">
-<h3>3.4.4. Repeat Left Twice<a class="headerlink" href="#repeat-left-twice" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.4. Repeat Left Twice<a class="headerlink" href="#repeat-left-twice" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Write a program that takes the left side of an image and displays it both on the left half, and the right half, of the image. In other words, replace the right side of the image with a copy of the left side of the image.</p>
 <blockquote>
 <div>
@@ -609,8 +609,8 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="mirror-horizontal">
-<h3>3.4.5. Mirror Horizontal<a class="headerlink" href="#mirror-horizontal" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that mirrors an image from left to right around a vertical line of symmetry in the middle of the image. <em>Hint: you’ll need to figure out how far away from the line of symmetry you are…</em></p>
+<h3>3.4.5. Mirror Horizontal<a class="headerlink" href="#mirror-horizontal" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that mirrors an image from left to right around a vertical line of symmetry in the middle of the image. <em>Hint: you'll need to figure out how far away from the line of symmetry you are...</em></p>
 <blockquote>
 <div>
 <div data-childcomponent="practice_problem_mirror_horizontal" class="runestone explainer ac_section alert alert-warning">
@@ -639,8 +639,8 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="mirror-vertical">
-<h3>3.4.6. Mirror Vertical<a class="headerlink" href="#mirror-vertical" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that mirrors an image from top to bottom around a horizontal line of symmetry in the middle of the image. <em>Hint: you’ll need to figure out how far away from the line of symmetry you are…</em></p>
+<h3>3.4.6. Mirror Vertical<a class="headerlink" href="#mirror-vertical" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Write a program that mirrors an image from top to bottom around a horizontal line of symmetry in the middle of the image. <em>Hint: you'll need to figure out how far away from the line of symmetry you are...</em></p>
 <blockquote>
 <div>
 <div data-childcomponent="practice_problem_mirror_vertical" class="runestone explainer ac_section alert alert-warning">
@@ -669,7 +669,7 @@ img.draw(win)
     </div>
     </div>
 <div class="section" id="gradient">
-<h3>3.4.7. Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.7. Gradient<a class="headerlink" href="#gradient" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Write a program that creates a gradient effect (slowly transitioning from one color to another). Begin with all red and no green, and <strong>after each pass of the inner loop</strong>, decrease the red and increase the green by some amount. The blue intensity can be set to 0 for all pixels.</p>
 
 <div data-childcomponent="practice_problem_gradient" class="runestone explainer ac_section alert alert-warning">
@@ -693,7 +693,7 @@ img.draw(win)
 </div>
 </div>
 <div class="section" id="radial-gradient-extra-challenge">
-<h3>3.4.8. Radial Gradient (Extra Challenge)<a class="headerlink" href="#radial-gradient-extra-challenge" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.8. Radial Gradient (Extra Challenge)<a class="headerlink" href="#radial-gradient-extra-challenge" title="Lien permanent vers ce titre">¶</a></h3>
 <p>If you want to try something even more challenging, see if you can create a radial gradient. Radial gradients look like this:</p>
 <img alt="../../_images/radial-gradient.png" src="../../_images/radial-gradient.png" />
 <p>To make a radial gradient, you need to set a centre point, then for each pixel, calculate the distance between the current pixel and the centre point. You might find it helpful to create a <code class="docutils literal notranslate"><span class="pre">distance</span></code> function that takes in the coordinates of two points <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">y1</span></code>, <code class="docutils literal notranslate"><span class="pre">x2</span></code>, <code class="docutils literal notranslate"><span class="pre">y2</span></code>, and returns the distance between the two points (think Pythagorean theorem). Use the distance from the centre point as one of the RGB values when looping through each pixel. To create the image above, each pixel used an R value of 150, a G value of 50, and the distance from the centre point as the B value.</p>
@@ -721,7 +721,7 @@ img.draw(win)
 </div></blockquote>
 </div>
 <div class="section" id="acknowledgments">
-<h3>3.4.9. Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h3>
+<h3>3.4.9. Acknowledgments<a class="headerlink" href="#acknowledgments" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Images are from <a class="reference external" href="https://www.pexels.com/">Pexels</a>, and are licensed as CC-0. Emoji artwork is provided by <a class="reference external" href="https://www.emojione.com/">EmojiOne</a> EmojiOne and is licensed under <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0</a>.</p>
 </div>
 </div>

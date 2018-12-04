@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="2. List Methods" href="ListMethods.html" />
     <link rel="prev" title="4. Turtle Drawing and Strings (L-Systems)" href="../Strings/LSystems.html" />
 <meta charset='utf-8'>
@@ -234,7 +234,7 @@
 <li><a class="reference internal" href="#sum-of-squares">1.10.3. Sum of Squares</a></li>
 <li><a class="reference internal" href="#count-odd-numbers">1.10.4. Count Odd Numbers</a></li>
 <li><a class="reference internal" href="#count-words-with-length-5">1.10.5. Count Words with Length 5</a></li>
-<li><a class="reference internal" href="#look-for-saskatchewan">1.10.6. Look For “saskatchewan”</a></li>
+<li><a class="reference internal" href="#look-for-saskatchewan">1.10.6. Look For &quot;saskatchewan&quot;</a></li>
 </ul>
 </li>
 </ul>
@@ -284,21 +284,21 @@
 <div class="container" id="main-content">
   
   <div class="section" id="using-lists">
-<h1>1. Using Lists<a class="headerlink" href="#using-lists" title="Permalink to this headline">¶</a></h1>
+<h1>1. Using Lists<a class="headerlink" href="#using-lists" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Creating lists. Checking the length of a list. Access elements of a list using the index operator. Using <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>. Taking a slice of a list. Immutability of strings, mutability of lists. For loops with lists.</p>
 </div>
 <div class="section" id="list-overview">
-<h2>1.1. List Overview<a class="headerlink" href="#list-overview" title="Permalink to this headline">¶</a></h2>
-<p>We’ve been using lists throughout the course, so you probably already feel quite comfortable with them. Some of the following information will be a review for you, but we will spend a bit of time going into more depth than we have done up to now.</p>
+<h2>1.1. List Overview<a class="headerlink" href="#list-overview" title="Lien permanent vers ce titre">¶</a></h2>
+<p>We've been using lists throughout the course, so you probably already feel quite comfortable with them. Some of the following information will be a review for you, but we will spend a bit of time going into more depth than we have done up to now.</p>
 <p>A <strong>list</strong> is a sequential collection of Python data values, where each value is identified by an
 index. The values that make up a list are called its <strong>elements</strong>. Lists are
 similar to strings, which are ordered collections of characters, except that the
 elements of a list can have any type and for any one list, the items can be of different types.</p>
 </div>
 <div class="section" id="list-values">
-<h2>1.2. List Values<a class="headerlink" href="#list-values" title="Permalink to this headline">¶</a></h2>
+<h2>1.2. List Values<a class="headerlink" href="#list-values" title="Lien permanent vers ce titre">¶</a></h2>
 <p>There are several ways to create a new list.  The simplest is to enclose the
 elements in square brackets ( <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code>).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
@@ -306,7 +306,7 @@ elements in square brackets ( <code class="docutils literal notranslate"><span c
 </pre></div>
 </div>
 <p>The first example is a list of four integers. The second is a list of three
-strings. As we said above, the elements of a list don’t have to be the same type.  The following
+strings. As we said above, the elements of a list don't have to be the same type.  The following
 list contains a string, a float, an integer, and
 another list.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]]</span>
@@ -336,7 +336,7 @@ print(new_list)
 </div>
 </div>
 <div class="section" id="list-length">
-<span id="index-0"></span><h2>1.3. List Length<a class="headerlink" href="#list-length" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>1.3. List Length<a class="headerlink" href="#list-length" title="Lien permanent vers ce titre">¶</a></h2>
 <p>As with strings, the function <code class="docutils literal notranslate"><span class="pre">len</span></code> returns the length of a list (the number
 of items in the list).  However, since lists can have items which are themselves lists, it important to note
 that <code class="docutils literal notranslate"><span class="pre">len</span></code> only returns the top-most length.  In other words, sublists are considered to be a single
@@ -354,7 +354,7 @@ print(len(['Hepburn', 1, ['Saskatoon', 'Regina', 'Prince Albert'], [1, 2, 3]]))
 </textarea>
 </div>
 <div class="section" id="check-your-understanding">
-<h3>1.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
+<h3>1.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question9_2_1">
@@ -390,9 +390,9 @@ print(len(['Hepburn', 1, ['Saskatoon', 'Regina', 'Prince Albert'], [1, 2, 3]]))
             </div>
 </div>
 <div class="section" id="accessing-elements">
-<span id="index-1"></span><h2>1.4. Accessing Elements<a class="headerlink" href="#accessing-elements" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>1.4. Accessing Elements<a class="headerlink" href="#accessing-elements" title="Lien permanent vers ce titre">¶</a></h2>
 <p>The syntax for accessing the elements of a list is the same as the syntax for
-accessing the characters of a string.  We use the index operator ( <code class="docutils literal notranslate"><span class="pre">[]</span></code> – not to
+accessing the characters of a string.  We use the index operator ( <code class="docutils literal notranslate"><span class="pre">[]</span></code> -- not to
 be confused with an empty list). The expression inside the brackets specifies
 the index. Remember that the indices start at 0.  Any integer expression can be used
 as an index and as with strings, negative index values will locate items from the right instead
@@ -439,7 +439,7 @@ print(places[2][1][3])
 </textarea>
 </div>
 <div class="section" id="id1">
-<h3>1.4.1. Check Your Understanding<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>1.4.1. Check Your Understanding<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question9_3_1">
@@ -481,7 +481,7 @@ print(places[2][1][3])
             </div>
 </div>
 <div class="section" id="list-membership">
-<span id="index-2"></span><h2>1.5. List Membership<a class="headerlink" href="#list-membership" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2>1.5. List Membership<a class="headerlink" href="#list-membership" title="Lien permanent vers ce titre">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> are boolean operators that test membership in a sequence. We
 used them previously with strings and they also work here.</p>
 
@@ -498,7 +498,7 @@ print("pear" in fruit)
 </textarea>
 </div>
 <div class="section" id="id2">
-<h3>1.5.1. Check Your Understanding<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>1.5.1. Check Your Understanding<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question9_4_1">
@@ -534,7 +534,7 @@ print("pear" in fruit)
             </div>
 </div>
 <div class="section" id="list-slices">
-<span id="index-3"></span><h2>1.6. List Slices<a class="headerlink" href="#list-slices" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>1.6. List Slices<a class="headerlink" href="#list-slices" title="Lien permanent vers ce titre">¶</a></h2>
 <p>The slice operation we saw with strings also work on lists.  Remember that the first index is the starting point for the slice and the second number is one index past the end of the slice (up to but not including that element).  Recall also
 that if you omit the first index (before the colon), the slice starts at the
 beginning of the sequence. If you omit the second index, the slice goes to the
@@ -554,7 +554,7 @@ print(a_list[:])
 </textarea>
 </div>
 <div class="section" id="id3">
-<h3>1.6.1. Check Your Understanding<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>1.6.1. Check Your Understanding<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question9_6_1">
@@ -576,7 +576,7 @@ print(a_list[:])
             </div>
 </div>
 <div class="section" id="strings-are-immutable">
-<span id="index-4"></span><h2>1.7. Strings are Immutable<a class="headerlink" href="#strings-are-immutable" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2>1.7. Strings are Immutable<a class="headerlink" href="#strings-are-immutable" title="Lien permanent vers ce titre">¶</a></h2>
 <p>One thing that makes strings different from Python lists is that
 you are not allowed to modify the individual characters in a string.  It is tempting to use the <code class="docutils literal notranslate"><span class="pre">[]</span></code> operator on the left side of an assignment,
 with the intention of changing a character in a string.  For example, in the following code, we would like to change the first letter of <code class="docutils literal notranslate"><span class="pre">greeting</span></code>.</p>
@@ -613,7 +613,7 @@ print(greeting)            # same as it was
 <code class="docutils literal notranslate"><span class="pre">greeting</span></code>. This operation has no effect on the original string.</p>
 </div>
 <div class="section" id="lists-are-mutable">
-<span id="index-5"></span><h2>1.8. Lists are Mutable<a class="headerlink" href="#lists-are-mutable" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>1.8. Lists are Mutable<a class="headerlink" href="#lists-are-mutable" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Unlike strings, lists are <strong>mutable</strong>.  This means we can change an item in a list by accessing
 it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
 update one of the list items.</p>
@@ -635,7 +635,7 @@ print(fruit)
 <p>An assignment to an element of a list is called <strong>item assignment</strong>. Item
 assignment does not work for strings.  Recall that strings are immutable.</p>
 <div class="section" id="id4">
-<h3>1.8.1. Check Your Understanding<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>1.8.1. Check Your Understanding<a class="headerlink" href="#id4" title="Lien permanent vers ce titre">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question9_7_1">
@@ -658,7 +658,7 @@ assignment does not work for strings.  Recall that strings are immutable.</p>
             </div>
 </div>
 <div class="section" id="lists-and-for-loops">
-<h2>1.9. Lists and <code class="docutils literal notranslate"><span class="pre">for</span></code> loops<a class="headerlink" href="#lists-and-for-loops" title="Permalink to this headline">¶</a></h2>
+<h2>1.9. Lists and <code class="docutils literal notranslate"><span class="pre">for</span></code> loops<a class="headerlink" href="#lists-and-for-loops" title="Lien permanent vers ce titre">¶</a></h2>
 <p>It is also possible to perform <strong>list traversal</strong> using iteration by item as well as iteration by index.</p>
 
 <div data-childcomponent="chp09_03a" class="runestone explainer ac_section alert alert-warning">
@@ -718,9 +718,9 @@ it works. We are interested here in both the <em>value</em> and its <em>index</e
 list, so that we can assign a new value to it.</p>
 </div>
 <div class="section" id="practice-problems">
-<h2>1.10. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
+<h2>1.10. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="warmup">
-<h3>1.10.1. Warmup<a class="headerlink" href="#warmup" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.1. Warmup<a class="headerlink" href="#warmup" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Create a list called <code class="docutils literal notranslate"><span class="pre">my_list</span></code> with the following six items: <code class="docutils literal notranslate"><span class="pre">76,</span> <span class="pre">92.3,</span> <span class="pre">&quot;hello&quot;,</span> <span class="pre">True,</span> <span class="pre">4,</span> <span class="pre">76</span></code>. Print out the list to make sure it is doing what you intend.</p>
 
 <div data-childcomponent="list_overview_practice_problem_1" class="runestone explainer ac_section alert alert-warning">
@@ -734,7 +734,7 @@ list, so that we can assign a new value to it.</p>
 </div>
 </div>
 <div class="section" id="make-it-fun">
-<h3>1.10.2. Make it Fun<a class="headerlink" href="#make-it-fun" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.2. Make it Fun<a class="headerlink" href="#make-it-fun" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
@@ -769,7 +769,7 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="sum-of-squares">
-<h3>1.10.3. Sum of Squares<a class="headerlink" href="#sum-of-squares" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.3. Sum of Squares<a class="headerlink" href="#sum-of-squares" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
@@ -806,7 +806,7 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="count-odd-numbers">
-<h3>1.10.4. Count Odd Numbers<a class="headerlink" href="#count-odd-numbers" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.4. Count Odd Numbers<a class="headerlink" href="#count-odd-numbers" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
@@ -842,7 +842,7 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="count-words-with-length-5">
-<h3>1.10.5. Count Words with Length 5<a class="headerlink" href="#count-words-with-length-5" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.5. Count Words with Length 5<a class="headerlink" href="#count-words-with-length-5" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
@@ -877,14 +877,14 @@ myTests().main()
 </div>
 </div>
 <div class="section" id="look-for-saskatchewan">
-<h3>1.10.6. Look For “saskatchewan”<a class="headerlink" href="#look-for-saskatchewan" title="Permalink to this headline">¶</a></h3>
+<h3>1.10.6. Look For &quot;saskatchewan&quot;<a class="headerlink" href="#look-for-saskatchewan" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The only thing you need to do for this question is to complete the function definition! <strong>You do not need to call the function</strong>, as that will be done automatically for you.</p>
 </div>
 
 <div data-childcomponent="list_overview_practice_problem_5" class="runestone explainer ac_section alert alert-warning">
-<p>Write a function to check if the word “saskatchewan” shows up somewhere in a list. If it does, return <code class="docutils literal notranslate"><span class="pre">True</span></code>. If it doesn’t, return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Write a function to check if the word &quot;saskatchewan&quot; shows up somewhere in a list. If it does, return <code class="docutils literal notranslate"><span class="pre">True</span></code>. If it doesn't, return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p><strong>Examples:</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">has_sask([&quot;computer&quot;,</span> <span class="pre">&quot;science&quot;])</span> <span class="pre">→</span> <span class="pre">False</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">has_sask([&quot;sask&quot;,</span> <span class="pre">&quot;is&quot;,</span> <span class="pre">&quot;nice&quot;])</span> <span class="pre">→</span> <span class="pre">False</span></code></p>

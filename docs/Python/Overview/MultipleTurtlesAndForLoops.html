@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="11. Logical Operators" href="LogicalOperators.html" />
     <link rel="prev" title="9. Our First Turtle Program" href="FirstTurtleProgram.html" />
 <meta charset='utf-8'>
@@ -204,7 +204,7 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">10. Multiple Turtles and <code class="docutils literal notranslate"><span class="pre">for</span></code> Loops</a><ul>
-<li><a class="reference internal" href="#instances-a-herd-of-turtles">10.1. Instances — A Herd of Turtles</a><ul>
+<li><a class="reference internal" href="#instances-a-herd-of-turtles">10.1. Instances --- A Herd of Turtles</a><ul>
 <li><a class="reference internal" href="#mixed-up-programs">10.1.1. Mixed Up Programs</a></li>
 </ul>
 </li>
@@ -267,16 +267,16 @@
 <div class="container" id="main-content">
   
   <div class="section" id="multiple-turtles-and-for-loops">
-<h1>10. Multiple Turtles and <code class="docutils literal notranslate"><span class="pre">for</span></code> Loops<a class="headerlink" href="#multiple-turtles-and-for-loops" title="Permalink to this headline">¶</a></h1>
+<h1>10. Multiple Turtles and <code class="docutils literal notranslate"><span class="pre">for</span></code> Loops<a class="headerlink" href="#multiple-turtles-and-for-loops" title="Lien permanent vers ce titre">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Explore how to instantiate more than one turtle object in the same program. Introduce the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, and use the <code class="docutils literal notranslate"><span class="pre">range()</span></code> function to simplify the creation of large for loops.</p>
 </div>
 <div class="section" id="instances-a-herd-of-turtles">
-<h2>10.1. Instances — A Herd of Turtles<a class="headerlink" href="#instances-a-herd-of-turtles" title="Permalink to this headline">¶</a></h2>
+<h2>10.1. Instances --- A Herd of Turtles<a class="headerlink" href="#instances-a-herd-of-turtles" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Just like we can have many different integers in a program, we can have many
 turtles.  Each of them is an independent object, and we call each one an <strong>instance</strong> of the Turtle type (class).  Each instance has its own
-attributes and methods — so alex might draw with a thin black pen and be at
+attributes and methods --- so alex might draw with a thin black pen and be at
 some position, while tess might be going in her own direction with a fat pink
 pen.  So here is what happens when alex completes a square and tess
 completes a triangle:</p>
@@ -328,21 +328,21 @@ wn.exitonclick()
 <p>Here are some <em>How to think like a computer scientist</em> observations:</p>
 <ul class="simple">
 <li>We could have left out the last turn for alex, but that would not have been
-as satisfying.  If you’re asked to draw a closed shape like a square or a
+as satisfying.  If you're asked to draw a closed shape like a square or a
 rectangle, it is a good idea to complete all the turns and to leave the
 turtle back where it started, facing the same direction as it started in.
 This makes reasoning about the program and composing chunks of code into
 bigger programs easier for us humans!</li>
 <li>We did the same with tess: she drew her triangle and turned through a full
 360 degress.  Then we turned her around and moved her aside.  Even the blank
-line 21 is a hint about how the programmer’s <em>mental chunking</em> is working: in
-big terms, tess’ movements were chunked as “draw the triangle”  (lines 15-20)
-and then “move away from the origin” (lines 22 and 23).</li>
+line 21 is a hint about how the programmer's <em>mental chunking</em> is working: in
+big terms, tess' movements were chunked as &quot;draw the triangle&quot;  (lines 15-20)
+and then &quot;move away from the origin&quot; (lines 22 and 23).</li>
 <li>One of the key uses for comments is to record your mental chunking, and big
-ideas. They’re not always explicit in the code.</li>
+ideas. They're not always explicit in the code.</li>
 </ul>
 <div class="section" id="mixed-up-programs">
-<h3>10.1.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Permalink to this headline">¶</a></h3>
+<h3>10.1.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Lien permanent vers ce titre">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="for-loops-parsons-1"      >
@@ -392,14 +392,14 @@ wn.exitonclick()
     </div>
 </div>
 <div class="section" id="the-for-loop">
-<span id="index-0"></span><h2>10.2. The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#the-for-loop" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>10.2. The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#the-for-loop" title="Lien permanent vers ce titre">¶</a></h2>
 <p>When we drew a square yesterday, it was quite tedious.  We had to move then turn, move
 then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
 or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.</p>
 <p>As we have seen previously, using <strong>iteration</strong> to repeat code over and over can solve the copy/pasting code problem we encountered when drawing a square.</p>
-<p>In Python, the <strong>for</strong> statement allows us to write programs that implement iteration.   As a simple example, let’s say we have some friends, and
-we’d like to send them each an email inviting them to our party.  We
-don’t quite know how to send email yet, so for the moment we’ll just print a
+<p>In Python, the <strong>for</strong> statement allows us to write programs that implement iteration.   As a simple example, let's say we have some friends, and
+we'd like to send them each an email inviting them to our party.  We
+don't quite know how to send email yet, so for the moment we'll just print a
 message for each friend.</p>
 
 <div data-childcomponent="for-loops-2" class="runestone explainer ac_section alert alert-warning">
@@ -412,14 +412,14 @@ for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     print("Hi", name, "Please come to my party on Saturday!")
 </textarea>
 </div>
-<p>Take a look at the output produced when you press the <code class="docutils literal notranslate"><span class="pre">run</span></code> button.  There is one line printed for each friend.  Here’s how it works:</p>
+<p>Take a look at the output produced when you press the <code class="docutils literal notranslate"><span class="pre">run</span></code> button.  There is one line printed for each friend.  Here's how it works:</p>
 <ul class="simple">
 <li><strong>name</strong> in this <code class="docutils literal notranslate"><span class="pre">for</span></code> statement is called the <strong>loop variable</strong>.</li>
 <li>The list of names in the square brackets is called a Python <strong>list</strong>.
 Lists are very useful.  We will have much more to say about them later.</li>
 <li>Line 2  is the <strong>loop body</strong>.  The loop body is always
-indented. The indentation determines exactly what statements are “in the
-loop”.  The loop body is performed one time for each name in the list.</li>
+indented. The indentation determines exactly what statements are &quot;in the
+loop&quot;.  The loop body is performed one time for each name in the list.</li>
 <li>On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if
 there are still more items to be processed.  If there are none left (this is
 called the <strong>terminating condition</strong> of the loop), the loop has finished.
@@ -435,7 +435,7 @@ to the <code class="docutils literal notranslate"><span class="pre">for</span></
 works with the for loop. Click on the <strong>Show CodeLens</strong> button in the example above. Try stepping forward and backward through the program by pressing the buttons. You can see the value of <code class="docutils literal notranslate"><span class="pre">name</span></code> change as the loop iterates through the list of friends.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Although you might not want to worry about this yet, it is <strong>really</strong> useful to know that you can access any specific part of list by providing it’s index value in square brackets, such as <code class="docutils literal notranslate"><span class="pre">some_list[2]</span></code> (the first element has an index of 0, the second has an index of 1, etc). Consider the following:</p>
+<p>Although you might not want to worry about this yet, it is <strong>really</strong> useful to know that you can access any specific part of list by providing it's index value in square brackets, such as <code class="docutils literal notranslate"><span class="pre">some_list[2]</span></code> (the first element has an index of 0, the second has an index of 1, etc). Consider the following:</p>
 <div class="last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;James&quot;</span><span class="p">,</span> <span class="s2">&quot;Malindu&quot;</span><span class="p">,</span> <span class="s2">&quot;Michelle&quot;</span><span class="p">,</span> <span class="s2">&quot;Zoe&quot;</span><span class="p">,</span> <span class="s2">&quot;Eli&quot;</span><span class="p">,</span> <span class="s2">&quot;Bree&quot;</span><span class="p">]</span>
 
 <span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># prints James</span>
@@ -445,8 +445,8 @@ works with the for loop. Click on the <strong>Show CodeLens</strong> button in t
 </div>
 </div>
 <div class="section" id="iteration-simplifies-our-turtle-program">
-<h2>10.3. Iteration Simplifies our Turtle Program<a class="headerlink" href="#iteration-simplifies-our-turtle-program" title="Permalink to this headline">¶</a></h2>
-<p>To draw a square we’d like to do the same thing four times — move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
+<h2>10.3. Iteration Simplifies our Turtle Program<a class="headerlink" href="#iteration-simplifies-our-turtle-program" title="Lien permanent vers ce titre">¶</a></h2>
+<p>To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
 square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the <cite>forward</cite> and <cite>left</cite> four times, one time for each value in the list.</p>
 
 <div data-childcomponent="ch03_for1" class="runestone explainer ac_section alert alert-warning">
@@ -469,9 +469,9 @@ for i in [0, 1, 2, 3]:
 wn.exitonclick()
 </textarea>
 </div>
-<p>While “saving some lines of code” might be convenient, it is not the big
-deal here.  What is much more important is that we’ve found a “repeating
-pattern” of statements, and we reorganized our program to repeat the pattern.
+<p>While &quot;saving some lines of code&quot; might be convenient, it is not the big
+deal here.  What is much more important is that we've found a &quot;repeating
+pattern&quot; of statements, and we reorganized our program to repeat the pattern.
 Finding the chunks and somehow getting our programs arranged around those
 chunks is a vital skill when learning <em>How to think like a computer scientist</em>.</p>
 <p>It is also important to realize that we could have used a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop to accomplish the same drawing, and a version that does just that is below:</p>
@@ -498,7 +498,7 @@ while counter < 4:
 wn.exitonclick()
 </textarea>
 </div>
-<p>Notice that although this code does the same thing as the for loop version, it requires some extra code compared to the for loop version. Generally speaking, if you know ahead of time how many times a loop should iterate, you should use a for loop (for example, iterating 4 times to draw a square). If you don’t know ahead of time how many times a loop should iterate, a while loop is a better choice (for example, iterating until Reeborg had a wall in front of it).</p>
+<p>Notice that although this code does the same thing as the for loop version, it requires some extra code compared to the for loop version. Generally speaking, if you know ahead of time how many times a loop should iterate, you should use a for loop (for example, iterating 4 times to draw a square). If you don't know ahead of time how many times a loop should iterate, a while loop is a better choice (for example, iterating until Reeborg had a wall in front of it).</p>
 <p>Thinking back to the for loop version we saw above, the values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values. For example, consider the following program.</p>
 
 <div data-childcomponent="ch03_forcolor" class="runestone explainer ac_section alert alert-warning">
@@ -546,7 +546,7 @@ wn.exitonclick()
 </div>
 <p>In this case, the value of <code class="docutils literal notranslate"><span class="pre">some_color</span></code> is used to change the color attribute of <code class="docutils literal notranslate"><span class="pre">alex</span></code>.  Each iteration causes <code class="docutils literal notranslate"><span class="pre">some_color</span></code> to change to the next value in the list.</p>
 <div class="section" id="id1">
-<h3>10.3.1. Mixed Up Programs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h3>10.3.1. Mixed Up Programs<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="3_8"      >
@@ -642,7 +642,7 @@ wn.exitonclick()
             </div>
 </div>
 <div class="section" id="the-range-function">
-<span id="index-1"></span><h2>10.4. The Range Function<a class="headerlink" href="#the-range-function" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>10.4. The Range Function<a class="headerlink" href="#the-range-function" title="Lien permanent vers ce titre">¶</a></h2>
 <p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
 want to write simple <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
 In fact, these lists are so popular that Python gives us special built-in
@@ -667,12 +667,12 @@ the <code class="docutils literal notranslate"><span class="pre">for</span></cod
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>10.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
+<h2>10.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
 <p>You might find the Python Documentation for the turtle module to be helpful: <a class="reference external" href="https://docs.python.org/3/library/turtle.html">https://docs.python.org/3/library/turtle.html</a>.</p>
 <div class="section" id="regular-polygons">
-<h3>10.5.1. Regular Polygons<a class="headerlink" href="#regular-polygons" title="Permalink to this headline">¶</a></h3>
-<p>Create a program that uses for loops to make a turtle draw regular polygons (regular means all sides the same lengths, all angles the same). First, ask the user how many sides they want the polygon to have, and how long each side length should be. Now draw the regular polygon that meets the user’s requirements!</p>
+<h3>10.5.1. Regular Polygons<a class="headerlink" href="#regular-polygons" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Create a program that uses for loops to make a turtle draw regular polygons (regular means all sides the same lengths, all angles the same). First, ask the user how many sides they want the polygon to have, and how long each side length should be. Now draw the regular polygon that meets the user's requirements!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Remember that in a regular polygon, the sum of the interior angles of the polygon will always be 360 degrees.</p>
@@ -691,7 +691,7 @@ import turtle
 </div>
 </div>
 <div class="section" id="draw-a-star">
-<h3>10.5.2. Draw a Star<a class="headerlink" href="#draw-a-star" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.2. Draw a Star<a class="headerlink" href="#draw-a-star" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Create a program that uses the turtle module to draw a five sided star. The user should be able to set a number of options each time the code runs, so the program should ask the user for:</p>
 <ul class="simple">
 <li>the width of the turtles pen</li>
@@ -715,7 +715,7 @@ import turtle
 </div>
 </div>
 <div class="section" id="drawing-a-clock">
-<h3>10.5.3. Drawing a Clock<a class="headerlink" href="#drawing-a-clock" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.3. Drawing a Clock<a class="headerlink" href="#drawing-a-clock" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Create a program that uses the turtle module to draw the shape of an analogue clock. Do this using <strong>ONLY ONE TURTLE object</strong>. It should look like the following:</p>
 <img alt="../../_images/tess_clock1.png" src="../../_images/tess_clock1.png" />
 <p>You might need to explore the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Turtle documentation on the Python Docs website</a> to figure out how to leave an image of where the turtle was.</p>
