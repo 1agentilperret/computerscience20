@@ -120,15 +120,15 @@ Vérifie ta compréhension
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: scratch_broadcast_check_1
-   :answer_a: Le lutin actuel dirait "Go"
-   :answer_b: The current sprite would say "Go", then say "Green!"
-   :answer_c: The current sprite would say "Green!", then say "Go"
-   :answer_d: The current sprite would say "Green!"
+   :answer_a: Le lutin actuel dirait "Aller"
+   :answer_b: Le lutin actuel dirait "Aller", ensuite dirait "Vert!"
+   :answer_c: Le lutin actuel dirait "Vert!", Ensuite "Aller" 
+   :answer_d: Le lutin actuel dirait "Vert!" 
    :correct: b
-   :feedback_a: Although this would happen, it is not the only thing! Consider what happens when the broadcast is sent.
-   :feedback_b: Yes! The sprite would say "Go" for 1 second, then broadcast <em>first</em>, which it would respond to by saying "Green!" for 1 second.
-   :feedback_c: No, it will say "Go" first (since that is the first thing in the chunk of code that executes when the flag is clicked).
-   :feedback_d: It will do this, but it will say "Go" first (since that is the first thing in the chunk of code that executes when the flag is clicked).
+   :feedback_a: Bien que cela se produise, ce n'est pas la seule chose qui se produise! Considérez ce qui se passe lorsque la diffusion est envoyée.
+   :feedback_b: Oui! Le sprite dirait "Aller" pendant 1 seconde, puis diffusera <em>premier</em>, auquel il répondra en disant "Vert!" pendant 1 seconde.
+   :feedback_c: Non, il dira d'abord "Aller" (puisque c'est la première partie du code qui s'exécute lorsque l'utilisateur clique sur le drapeau).
+   :feedback_d: Bien que cela se produise, il dira d'abord "aller" (puisqu'il s'agit de la première chose dans le code qui s'exécute lorsque l'utilisateur clique sur le drapeau).
 
    Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous?
 
