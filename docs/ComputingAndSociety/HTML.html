@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Cascading Style Sheets (CSS)" href="CSS.html" />
     <link rel="prev" title="How the Internet Works Practice Quiz" href="HowTheInternetWorksPracticeQuiz.html" />
 <meta charset='utf-8'>
@@ -272,13 +272,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="the-hypertext-markup-language">
-<h1>The HyperText Markup Language<a class="headerlink" href="#the-hypertext-markup-language" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>The HyperText Markup Language<a class="headerlink" href="#the-hypertext-markup-language" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Experiment with HTML (HyperText Markup Language).</p>
 </div>
 <div class="section" id="introduction-to-html">
-<span id="index-0"></span><h2>Introduction to HTML<a class="headerlink" href="#introduction-to-html" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="index-0"></span><h2>Introduction to HTML<a class="headerlink" href="#introduction-to-html" title="Permalink to this headline">¶</a></h2>
 <p>As we noted in the previous chapter, HTML is the language of the web for expressing content. But before we dive into the specifics of HTML, lets look at what we mean by a markup language in general.  A markup language is a language that <strong>annotates</strong> text so that the computer can manipulate it for some purpose.  Most markup languages are readable by humans and are designed to be written with a plain text editor as rather than a fancy word processor like Microsoft Word.</p>
 <p>As we learn HTML its important to keep in mind that the job of HTML is to structure the document and provide content.  Making the webpage look good is the job of a different technology called Cascading Style Sheets (CSS).</p>
 <p>HTML uses a set of tags to annotate (mark up) the document.  The tags all look like this: <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">tagname</span> <span class="pre">&gt;</span></code> and they are balanced so that at the end of the content for that tag there is <code class="docutils literal notranslate"><span class="pre">&lt;/</span> <span class="pre">tagname</span> <span class="pre">&gt;</span></code>. Notice that the closing tag contains a slash at the beginning to differentiate itself from an opening tag.</p>
@@ -286,11 +286,11 @@
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>When experimenting with HTML, you can simply use a web based environment (like the one you are in right now), but it can be very instructive to experiment with how to do this with files on your computer as well. For any of the examples given below, you can simply create a text file on your computer, type some HTML, then make sure you save the file as <code class="docutils literal notranslate"><span class="pre">something.html</span></code>. The .html extension is very important, as it allows your computer to identify what type of content is contained within the file. After the file is saved, open it using your web browser of choice (Chrome, Edge, Firefox, etc.).</p>
-<p class="last">When creating the text file on your computer, be sure to use a plain text editor (something like Notepad, not Word!). I recommend using <a class="reference external" href="https://atom.io/">Atom</a>, as it works the same for Windows/Mac/Linux, is free, and doesn't require admin rights to install in a lab setting.</p>
+<p class="last">When creating the text file on your computer, be sure to use a plain text editor (something like Notepad, not Word!). I recommend using <a class="reference external" href="https://atom.io/">Atom</a>, as it works the same for Windows/Mac/Linux, is free, and doesn’t require admin rights to install in a lab setting.</p>
 </div>
 </div>
 <div class="section" id="my-first-heading">
-<h2>My First Heading<a class="headerlink" href="#my-first-heading" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>My First Heading<a class="headerlink" href="#my-first-heading" title="Permalink to this headline">¶</a></h2>
 <p>A simple paragraph of text.</p>
 <p>Another paragraph of text.</p>
 <p>The HTML for this document is as follows:</p>
@@ -313,14 +313,14 @@
 &lt;/html&gt;
 </textarea>
 </div>
-<p>If you click the render button you will see the HTML in the example above in a special output window that mimics your browser.  Try changing the text of one of the paragraphs and click run again.   Try changing the <code class="docutils literal notranslate"><span class="pre">h1</span></code> tag to <code class="docutils literal notranslate"><span class="pre">h2</span></code>  Don't forget to change both the opening and closing tags.   I have indented the HTML for you so you can see the opening and closing tags more clearly.  A web browser does not care about indentation one bit; you can get rid of all of the indentation, or put everything on one line and the page will still look the same.</p>
-<p>Before we move on to talk more about specific HTML tags its useful to think about the page that is produced and the structure of the page.  You get a sense of the structure from the indentation I have provided, but its useful to look at this from another perspective.  Figure 2 illustrates a &quot;tree view&quot; of an HTML page.</p>
-<img alt="../_images/tree.svg" src="../_images/tree.svg" /><p>This tree is upside down with how we usually think of a tree, but in computer science we put the &quot;root&quot; of the tree at the top.  So the root of this tree is the html tag.  The html tag has two <strong>children</strong>, the head and the body.  The head has one child, which is the head tag.  The html tag is the <strong>parent</strong> of the head tag.  The body has three children, the h1 tag and two p tags.  You may also find it helpful to think of this as an outline, although you would have to rotate the picture 90 degrees counter clockwise to get the orientation into outline form.  We will see how this tree structure of an html page is useful later on if/when we start to use CSS and Javascript.</p>
+<p>If you click the render button you will see the HTML in the example above in a special output window that mimics your browser.  Try changing the text of one of the paragraphs and click run again.   Try changing the <code class="docutils literal notranslate"><span class="pre">h1</span></code> tag to <code class="docutils literal notranslate"><span class="pre">h2</span></code>  Don’t forget to change both the opening and closing tags.   I have indented the HTML for you so you can see the opening and closing tags more clearly.  A web browser does not care about indentation one bit; you can get rid of all of the indentation, or put everything on one line and the page will still look the same.</p>
+<p>Before we move on to talk more about specific HTML tags its useful to think about the page that is produced and the structure of the page.  You get a sense of the structure from the indentation I have provided, but its useful to look at this from another perspective.  Figure 2 illustrates a “tree view” of an HTML page.</p>
+<img alt="../_images/tree.svg" src="../_images/tree.svg" /><p>This tree is upside down with how we usually think of a tree, but in computer science we put the “root” of the tree at the top.  So the root of this tree is the html tag.  The html tag has two <strong>children</strong>, the head and the body.  The head has one child, which is the head tag.  The html tag is the <strong>parent</strong> of the head tag.  The body has three children, the h1 tag and two p tags.  You may also find it helpful to think of this as an outline, although you would have to rotate the picture 90 degrees counter clockwise to get the orientation into outline form.  We will see how this tree structure of an html page is useful later on if/when we start to use CSS and Javascript.</p>
 </div>
 <div class="section" id="basic-html-tags">
-<h2>Basic HTML Tags<a class="headerlink" href="#basic-html-tags" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Basic HTML Tags<a class="headerlink" href="#basic-html-tags" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="headings">
-<h3>Headings<a class="headerlink" href="#headings" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h3>
 <p>Like any document HTML documents may have several layers of headings.  In fact you can have heading levels from 1 to 6 in an HTML document.</p>
 
 <div data-childcomponent="html_headings" class="runestone explainer ac_section alert alert-warning">
@@ -337,12 +337,12 @@
 <p>Now modify the example above to add the next three levels of headings.  What do you notice?  What happens if you add a level 7 heading?   What happens if you close an h2 tag with an h1 or an h3?</p>
 
     <div data-component="reveal" id="reveal_heading"   data-showtitle="Show" data-hidetitle="Hide" >
-    As you might expect, the headings continue to get smaller as you go from 1 to 6.  But when you go to level 7 the text gets bigger.  This is because the web browser is written so that it just ignores any tags that it does not know about.  This is somewhat of a disadvantage as you don't get any error messages, things just look wrong, and you have to figure out why.
+    As you might expect, the headings continue to get smaller as you go from 1 to 6.  But when you go to level 7 the text gets bigger.  This is because the web browser is written so that it just ignores any tags that it does not know about.  This is somewhat of a disadvantage as you don’t get any error messages, things just look wrong, and you have to figure out why.
     </div>
     <p>Another aspect of the heading tag is that it is what we call a <strong>block</strong> tag.  Notice that each heading appears on its own line.  Thats pretty much what we would expect for a heading.  But not necessarily for other tags.  shortly, we will see some <strong>inline</strong> tags that do not each appear on their own line.</p>
 </div>
 <div class="section" id="paragraphs">
-<h3>Paragraphs<a class="headerlink" href="#paragraphs" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h3>
 <p>Paragraphs are another funamental element of documents.  Paragraphs are also another example of a block element in that each paragraph gets its own space and is separated from other html elements by blank lines in the document.</p>
 
 <div data-childcomponent="html_paragraph" class="runestone explainer ac_section alert alert-warning">
@@ -359,7 +359,7 @@
 <p>What happens when you put a paragraph inside another paragraph?  What about a header inside a paragraph?</p>
 </div>
 <div class="section" id="images">
-<h3>Images<a class="headerlink" href="#images" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
 <p>Images are another common element of a document or a web page.  To include an image in a document you must use an <code class="docutils literal notranslate"><span class="pre">img</span></code> tag.  Image tags are an example of an <strong>inline</strong> element because they just flow in with the surrounding text.  They do not force a new block to be created in the rendering of the html.</p>
 <p>The image tag has a new component to it called an attribute.  In general tags can have many attributes in the case of an image we can inlude it by using a <code class="docutils literal notranslate"><span class="pre">src</span></code> attribute that contains the URL to the image we want to embed.  We can embed any image on the internet in our own document by referring to it by its URL in the <code class="docutils literal notranslate"><span class="pre">src</span></code> attribute.</p>
 
@@ -400,7 +400,7 @@ that there is a http:// at the start of the path.&lt;/p&gt;
 <p>There are several other attributes of the image tag as well.  You can read about them <a class="reference external" href="http://www.w3schools.com/tags/tag_img.asp">here</a>.</p>
 </div>
 <div class="section" id="links">
-<h3>Links<a class="headerlink" href="#links" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h3>
 <p>The last basic tag to cover in this section is the link tag <code class="docutils literal notranslate"><span class="pre">a</span></code>.  In fact the last sentence of the previous section used a link to send you to the w3schools website to learn more about the attributes of an <code class="docutils literal notranslate"><span class="pre">img</span></code> tag.  Links are what made the web so popular in the first place.  Today we call them links, but in earlier years they were usually referred to as Hyperlinks. You can provide a link to any URL on the web using the <code class="docutils literal notranslate"><span class="pre">href</span></code> attribute on the <code class="docutils literal notranslate"><span class="pre">a</span></code> tag.   The text that you will click on goes between the opening <code class="docutils literal notranslate"><span class="pre">a</span></code> tag and the closing <code class="docutils literal notranslate"><span class="pre">a</span></code> tag.</p>
 
 <div data-childcomponent="html_link" class="runestone explainer ac_section alert alert-warning">
@@ -414,7 +414,7 @@ that there is a http:// at the start of the path.&lt;/p&gt;
 &lt;a href=&quot;http://www.w3schools.com/tags/tag_a.asp&quot;&gt;the w3schools website&lt;/a&gt;.&lt;/p&gt;
 </textarea>
 </div>
-<p>Try clicking on the link in the example above.  What happens?  How do you get back?   Don't worry, you can always just reload this page.</p>
+<p>Try clicking on the link in the example above.  What happens?  How do you get back?   Don’t worry, you can always just reload this page.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Due to a rendering error within ActiveCode, &lt;a&gt; tags will look like regular links, but will not function properly. To see the result of an &lt;a&gt; tag in action, I recommend doing these demonstrations using a text editor (such as Atom), and viewing the page in your browser.</p>
@@ -425,7 +425,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 </div>
 </div>
 <div class="section" id="simple-text-formatting">
-<h2>Simple Text Formatting<a class="headerlink" href="#simple-text-formatting" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Simple Text Formatting<a class="headerlink" href="#simple-text-formatting" title="Permalink to this headline">¶</a></h2>
 <p>Making text bold or italic and other formatting is easy in HTML as well.  The following example illustrates the basic text formatting tags.</p>
 
 <div data-childcomponent="html_fmt" class="runestone explainer ac_section alert alert-warning">
@@ -484,9 +484,9 @@ a link that will jump to the target anywhere else on the page using <code class=
 </div>
 </div>
 <div class="section" id="advanced-html-tags">
-<h2>Advanced HTML Tags<a class="headerlink" href="#advanced-html-tags" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Advanced HTML Tags<a class="headerlink" href="#advanced-html-tags" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="unordered-lists">
-<h3>Unordered Lists<a class="headerlink" href="#unordered-lists" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Unordered Lists<a class="headerlink" href="#unordered-lists" title="Permalink to this headline">¶</a></h3>
 
 <div data-childcomponent="advhtml_ul" class="runestone explainer ac_section alert alert-warning">
 
@@ -502,7 +502,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 </div>
 </div>
 <div class="section" id="ordered-lists">
-<h3>Ordered Lists<a class="headerlink" href="#ordered-lists" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Ordered Lists<a class="headerlink" href="#ordered-lists" title="Permalink to this headline">¶</a></h3>
 
 <div data-childcomponent="advhtml_ol" class="runestone explainer ac_section alert alert-warning">
 
@@ -528,7 +528,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 <p>Try it yourself.</p>
 </div>
 <div class="section" id="nesting-lists">
-<h3>Nesting Lists<a class="headerlink" href="#nesting-lists" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Nesting Lists<a class="headerlink" href="#nesting-lists" title="Permalink to this headline">¶</a></h3>
 <p>Lists can be inside of other lists. This is true for most HTML tags.</p>
 
 <div data-childcomponent="advhtml_nested" class="runestone explainer ac_section alert alert-warning">
@@ -551,13 +551,13 @@ a link that will jump to the target anywhere else on the page using <code class=
 </div>
 </div>
 <div class="section" id="tables">
-<h3>Tables<a class="headerlink" href="#tables" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h3>
 <p>Tables are used when we need to show information in a traditional grid format. Here is a complete example that illustrates the use of the following table specific tags</p>
 <ul class="simple">
-<li>table  -- This is the main tag for a table</li>
-<li>tr  -- every row in a table starts with a tr tag</li>
-<li>td -- every column in a row is delineated by a <code class="docutils literal notranslate"><span class="pre">td</span></code> tag</li>
-<li>th -- You can use the <code class="docutils literal notranslate"><span class="pre">th</span></code> tag in place of the <code class="docutils literal notranslate"><span class="pre">td</span></code> tag in the first row to make headings</li>
+<li>table  – This is the main tag for a table</li>
+<li>tr  – every row in a table starts with a tr tag</li>
+<li>td – every column in a row is delineated by a <code class="docutils literal notranslate"><span class="pre">td</span></code> tag</li>
+<li>th – You can use the <code class="docutils literal notranslate"><span class="pre">th</span></code> tag in place of the <code class="docutils literal notranslate"><span class="pre">td</span></code> tag in the first row to make headings</li>
 </ul>
 
 <div data-childcomponent="advhtml_table" class="runestone explainer ac_section alert alert-warning">
@@ -606,14 +606,14 @@ a link that will jump to the target anywhere else on the page using <code class=
 <li><code class="docutils literal notranslate"><span class="pre">table</span></code>
 * begins the table element</li>
 <li><code class="docutils literal notranslate"><span class="pre">td</span></code>
-* colspan  -- if you have a particular table where you need an extra wide column in some rows you can make a cell of your table span more than one column using the colspan attribute.  Its value is the number of columns.</li>
+* colspan  – if you have a particular table where you need an extra wide column in some rows you can make a cell of your table span more than one column using the colspan attribute.  Its value is the number of columns.</li>
 <li><code class="docutils literal notranslate"><span class="pre">tr</span></code>
-* rowspan -- If you have a particular table where you need an column to span multiple rows you can make a cell of your table span more than one row using the rowspan attribute.  Its value is the number of rows.</li>
+* rowspan – If you have a particular table where you need an column to span multiple rows you can make a cell of your table span more than one row using the rowspan attribute.  Its value is the number of rows.</li>
 </ul>
 <p>Experiment with a table.  What kinds of tags can you include inside each <code class="docutils literal notranslate"><span class="pre">td</span></code>?  Can you make a table inside another table?</p>
 </div>
 <div class="section" id="audio">
-<h3>Audio<a class="headerlink" href="#audio" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h3>
 <p>Embedding audio in your webpage allows you to link to various files containing music or speech.  The audio tag looks like the following:</p>
 
 <div data-childcomponent="audio_demo" class="runestone explainer ac_section alert alert-warning">
@@ -632,7 +632,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 <p>The <code class="docutils literal notranslate"><span class="pre">controls</span></code> attribute provides start/stop/fast-forward/rewind buttons for the listener.  The <code class="docutils literal notranslate"><span class="pre">source</span></code> tags inside the <code class="docutils literal notranslate"><span class="pre">audio</span></code> tag allow you to provide several different audio formats.  This is because different browsers support different kinds of audio The browser will go through the list, in order, until it finds a format it understands, or else, it will replace the controller with the message at the end.</p>
 </div>
 <div class="section" id="video">
-<h3>Video<a class="headerlink" href="#video" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h3>
 <p>Embedding video in your webpage allows you to link to various files containing movies.</p>
 
 <div data-childcomponent="video_demo" class="runestone explainer ac_section alert alert-warning">
@@ -651,7 +651,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 <p>The <code class="docutils literal notranslate"><span class="pre">controls</span></code> attribute provides start/stop/fast-forward/rewind buttons for the listener.  The <code class="docutils literal notranslate"><span class="pre">source</span></code> tags inside the <code class="docutils literal notranslate"><span class="pre">video</span></code> tag allow you to provide several different video formats.  This is because different browsers support different kinds of video The browser will go through the list, in order, until it finds a format it understands, or else, it will replace the controller with the message at the end.</p>
 </div>
 <div class="section" id="iframes">
-<h3>IFrames<a class="headerlink" href="#iframes" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>IFrames<a class="headerlink" href="#iframes" title="Permalink to this headline">¶</a></h3>
 <p>IFrames allow you to embed a webpage within another webpage.  The activecode examples in this book use an iframe to allow you to experiment with the html, by creating a page within a page. If you wanted to embed a YouTube video onto a webpage, you would copy/paste the iframe element from YouTube into your HTML.</p>
 
 <div data-childcomponent="iframe_example" class="runestone explainer ac_section alert alert-warning">
@@ -670,7 +670,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Make a little webpage to tell me a little about yourself.  Use at least three levels of headings and some paragraphs.</li>
 </ol>
@@ -687,7 +687,7 @@ a link that will jump to the target anywhere else on the page using <code class=
 </textarea>
 </div>
 <ol class="arabic simple" start="2">
-<li>You can copy the URL of almost any image in a browser by right clicking on the image and choosing &quot;copy image URL&quot;  or something similar.  Write an html page in the activecode window for this exercise that includes a header element giving a title to some image you find,  then include the image in the page, sized appropriately,  and a paragraph that describes the image.</li>
+<li>You can copy the URL of almost any image in a browser by right clicking on the image and choosing “copy image URL”  or something similar.  Write an html page in the activecode window for this exercise that includes a header element giving a title to some image you find,  then include the image in the page, sized appropriately,  and a paragraph that describes the image.</li>
 </ol>
 
 <div data-childcomponent="ex_html_2" class="runestone explainer ac_section alert alert-warning">

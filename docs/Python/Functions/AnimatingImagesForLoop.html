@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="5. Reaction Game with Micro:bit" href="MicrobitReactionGame.html" />
     <link rel="prev" title="3. Micro:bit Custom Images" href="MicrobitCustomImages.html" />
 <meta charset='utf-8'>
@@ -255,14 +255,14 @@
 <div class="container" id="main-content">
   
   <div class="section" id="animating-a-micro-bit-led-image-with-a-for-loop">
-<h1>4. Animating a Micro:bit LED Image with a <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#animating-a-micro-bit-led-image-with-a-for-loop" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>4. Animating a Micro:bit LED Image with a <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#animating-a-micro-bit-led-image-with-a-for-loop" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Animate images using a list and a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Work time for fruitful and non-fruitful function assignment (likely a Micro:bit assignment).</p>
 </div>
 <div class="section" id="animate-built-in-images-on-micro-bit-leds">
-<h2>4.1. Animate Built-In Images On Micro:bit LEDs<a class="headerlink" href="#animate-built-in-images-on-micro-bit-leds" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Let's pick a few of the <a class="reference internal" href="../Microbit/QuickStartExamples.html#microbit-predefined-images"><span class="std std-ref">List of Pre-Defined Images</span></a>), and have them show in succession, one after another. There are a number of ways we could do this, but we will use a list. We've used a list before, in code that looked like this:</p>
+<h2>4.1. Animate Built-In Images On Micro:bit LEDs<a class="headerlink" href="#animate-built-in-images-on-micro-bit-leds" title="Permalink to this headline">¶</a></h2>
+<p>Let’s pick a few of the <a class="reference internal" href="../Microbit/QuickStartExamples.html#microbit-predefined-images"><span class="std std-ref">List of Pre-Defined Images</span></a>), and have them show in succession, one after another. There are a number of ways we could do this, but we will use a list. We’ve used a list before, in code that looked like this:</p>
 
 <div data-childcomponent="colorlist-list-refresher" class="runestone explainer ac_section alert alert-warning">
 
@@ -343,7 +343,7 @@ for some_color in color_list:
 </div>
 </div>
 <div class="section" id="animating-custom-made-images">
-<h2>4.2. Animating Custom Made Images<a class="headerlink" href="#animating-custom-made-images" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.2. Animating Custom Made Images<a class="headerlink" href="#animating-custom-made-images" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes we might want to animate a series of Micro:bit images that we create, as opposed to the built in images we animated above. The logic for this is the same as what we did above, though we need to define each image first. Consider the following, in which an image is defined for each side of a 6 sided die, then displayed one after another.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">microbit</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -404,8 +404,8 @@ for some_color in color_list:
 </div>
 </div>
 <div class="section" id="moving-an-led-on-the-bottom-row">
-<h2>4.3. Moving an LED On the Bottom Row<a class="headerlink" href="#moving-an-led-on-the-bottom-row" title="Lien permanent vers ce titre">¶</a></h2>
-<p>If you want to create a game that moves an LED around the 5x5 LED grid of the Micro:bit, you will need to learn how to manipulate strings. For now, however, we can make a simple visualization of how to &quot;move&quot; and LED left and right on the bottom row of the grid using the a and b buttons. Before we can do this, however, you need to understand how to access particular elements inside of a list. Consider the following:</p>
+<h2>4.3. Moving an LED On the Bottom Row<a class="headerlink" href="#moving-an-led-on-the-bottom-row" title="Permalink to this headline">¶</a></h2>
+<p>If you want to create a game that moves an LED around the 5x5 LED grid of the Micro:bit, you will need to learn how to manipulate strings. For now, however, we can make a simple visualization of how to “move” and LED left and right on the bottom row of the grid using the a and b buttons. Before we can do this, however, you need to understand how to access particular elements inside of a list. Consider the following:</p>
 
 <div data-childcomponent="list-accessing-values" class="runestone explainer ac_section alert alert-warning">
 
@@ -419,7 +419,7 @@ print(color_list[0])
 </textarea>
 </div>
 <p>After running the code above, change the 0 to some different numbers to make sure you understand how to access particular elements inside of a list.</p>
-<p>In the code below, print out the element of the list that contains &quot;00090&quot;:</p>
+<p>In the code below, print out the element of the list that contains “00090”:</p>
 
 <div data-childcomponent="list-accessing-values-practice" class="runestone explainer ac_section alert alert-warning">
 
@@ -469,11 +469,11 @@ print()
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Although the code above works, you might want to adapt the code so that the program does not crash (or behave strangely) when the LED goes &quot;off the screen&quot;.</p>
+<p class="last">Although the code above works, you might want to adapt the code so that the program does not crash (or behave strangely) when the LED goes “off the screen”.</p>
 </div>
 </div>
 <div class="section" id="work-time-on-assignment">
-<h2>4.4. Work Time on Assignment<a class="headerlink" href="#work-time-on-assignment" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.4. Work Time on Assignment<a class="headerlink" href="#work-time-on-assignment" title="Permalink to this headline">¶</a></h2>
 <p>Continue working on your current assignment (focused on creating fruitful and non-fruitful functions).</p>
 </div>
 </div>

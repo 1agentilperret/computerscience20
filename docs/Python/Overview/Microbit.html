@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Loops Review and Turtle Drawing" href="../MoreTurtles/LoopsReview.html" />
     <link rel="prev" title="11. Logical Operators" href="LogicalOperators.html" />
 <meta charset='utf-8'>
@@ -268,14 +268,14 @@
 <div class="container" id="main-content">
   
   <div class="section" id="the-time-module-and-using-a-micro-bit">
-<h1>12. The Time Module and Using a Micro:bit<a class="headerlink" href="#the-time-module-and-using-a-micro-bit" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>12. The Time Module and Using a Micro:bit<a class="headerlink" href="#the-time-module-and-using-a-micro-bit" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Learn about the time module. Learn how to use a BBC Micro:bit to sense the physical world, and send output to the LED grid of the Micro:bit.</p>
 </div>
 <div class="section" id="time-module">
-<span id="index-0"></span><h2>12.1. Time Module<a class="headerlink" href="#time-module" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Sometimes, we'd like to wait a bit before running the next command in a Python program. To do this, we can <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">time</span></code>, then use the <code class="docutils literal notranslate"><span class="pre">sleep()</span></code> function. An example is below:</p>
+<span id="index-0"></span><h2>12.1. Time Module<a class="headerlink" href="#time-module" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes, we’d like to wait a bit before running the next command in a Python program. To do this, we can <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">time</span></code>, then use the <code class="docutils literal notranslate"><span class="pre">sleep()</span></code> function. An example is below:</p>
 
 <div data-childcomponent="time-sleep-1" class="runestone explainer ac_section alert alert-warning">
 
@@ -311,17 +311,17 @@ print("All done!")
 </div>
 </div>
 <div class="section" id="micro-bit-setup">
-<span id="index-1"></span><h2>12.2. Micro:bit Setup<a class="headerlink" href="#micro-bit-setup" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="index-1"></span><h2>12.2. Micro:bit Setup<a class="headerlink" href="#micro-bit-setup" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="installing-a-driver-if-using-legacy-windows-os">
-<h3>12.2.1. Installing a Driver If Using Legacy Windows OS<a class="headerlink" href="#installing-a-driver-if-using-legacy-windows-os" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>12.2.1. Installing a Driver If Using Legacy Windows OS<a class="headerlink" href="#installing-a-driver-if-using-legacy-windows-os" title="Permalink to this headline">¶</a></h3>
 <p><strong>The following only applies to users of Windows that are on a version earlier than Windows 10. If you are using Windows 10, Mac, or Linux, you can skip this step.</strong></p>
 <p>If you are on a Windows machine (<em>&lt; Windows 10</em>), you will need to download the <a class="reference external" href="https://os.mbed.com/handbook/Windows-serial-configuration">mbed driver</a> if you want to use your Micro:bit as an input/output device. Note that you will need to have a Micro:bit plugged into your machine when installing the driver, and that it requires admin rights. If you want to simply run code on your Micro:bit, and not communicate with your computer, no driver is required for any platform (but this does really limit the types of interesting things that can be done, and none of the examples in the textbook will work).</p>
 </div>
 <div class="section" id="micro-bit-modes">
-<h3>12.2.2. Micro:bit Modes<a class="headerlink" href="#micro-bit-modes" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>12.2.2. Micro:bit Modes<a class="headerlink" href="#micro-bit-modes" title="Permalink to this headline">¶</a></h3>
 <p>Your Micro:bit can be used in two modes:</p>
 <ul class="simple">
-<li>running &quot;flashed&quot; code, independent of a computer (can run on batteries, or through power supplied via the computers USB port)</li>
+<li>running “flashed” code, independent of a computer (can run on batteries, or through power supplied via the computers USB port)</li>
 <li>communicating through the serial port with your computer as an input/output device</li>
 </ul>
 <p>For the purposes of this textbook, we will always be using the Micro:bit as an input/output device by communicating over a USB connection.</p>
@@ -331,7 +331,7 @@ print("All done!")
 </div>
 </div>
 <div class="section" id="flashing-the-micro-bit">
-<h3>12.2.3. Flashing the Micro:bit<a class="headerlink" href="#flashing-the-micro-bit" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>12.2.3. Flashing the Micro:bit<a class="headerlink" href="#flashing-the-micro-bit" title="Permalink to this headline">¶</a></h3>
 <p>While your Micro:bit is connected to your computer via USB, it is possible to send instructions to the Micro:bit using serial commands. In order to do this, we first need to flash the Micro:bit with a micropython .hex file. This lets you use a BBC Micro:bit in Python to sense the physical world around you, and to output to LEDs (and much more, if you hook up additional sensors). <strong>You should only have to do this once</strong>, unless you flash the Micro:bit with a different .hex file in order to use it without being tethered to a computer.</p>
 <p>To flash your Micro:bit, first connect your Micro:bit to your computer via USB. Now download the <a class="reference download internal" download="" href="../../_downloads/738527250f3b504dec1ad8464baa4e3c/bitio.hex"><code class="xref download docutils literal notranslate"><span class="pre">bitio.hex</span></code></a> file to your computer. Drag the .hex file onto your Micro:bit in the Windows Explorer (or Mac Finder), as shown below.</p>
 <img alt="../../_images/flash-microbit1.gif" src="../../_images/flash-microbit1.gif" />
@@ -343,12 +343,12 @@ print("All done!")
 </div>
 </div>
 <div class="section" id="installing-the-micro-bit-module-in-thonny">
-<h3>12.2.4. Installing the Micro:bit Module in Thonny<a class="headerlink" href="#installing-the-micro-bit-module-in-thonny" title="Lien permanent vers ce titre">¶</a></h3>
-<p>In order to communicate with the microbit in Python, you need to install the <code class="docutils literal notranslate"><span class="pre">cs20-microbitio</span></code> package in Thonny. To do that, go to Tools -&gt; Manage packages..., type in <code class="docutils literal notranslate"><span class="pre">cs20-microbitio</span></code> into the search bar, and install. You only need to do this once, after which you should be able to use <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">microbit</span></code> whenever you want to interact with the Micro:bit in Python.</p>
+<h3>12.2.4. Installing the Micro:bit Module in Thonny<a class="headerlink" href="#installing-the-micro-bit-module-in-thonny" title="Permalink to this headline">¶</a></h3>
+<p>In order to communicate with the microbit in Python, you need to install the <code class="docutils literal notranslate"><span class="pre">cs20-microbitio</span></code> package in Thonny. To do that, go to Tools -&gt; Manage packages…, type in <code class="docutils literal notranslate"><span class="pre">cs20-microbitio</span></code> into the search bar, and install. You only need to do this once, after which you should be able to use <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">microbit</span></code> whenever you want to interact with the Micro:bit in Python.</p>
 </div>
 </div>
 <div class="section" id="using-the-micro-bit">
-<h2>12.3. Using the Micro:bit<a class="headerlink" href="#using-the-micro-bit" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>12.3. Using the Micro:bit<a class="headerlink" href="#using-the-micro-bit" title="Permalink to this headline">¶</a></h2>
 <p>Once you have done that, try running the code below:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">microbit</span>
 
@@ -361,15 +361,15 @@ print("All done!")
 <div class="line">No micro:bit has previously been detected</div>
 <div class="line">Scanning for serial ports</div>
 <div class="line">remove device, then press ENTER</div>
-<div class="line">scanning...</div>
+<div class="line">scanning…</div>
 <div class="line">found 132 device(s)</div>
 <div class="line">plug in device, then press ENTER</div>
-<div class="line">scanning...</div>
+<div class="line">scanning…</div>
 <div class="line">found 133 device(s)</div>
 <div class="line">found 1 new device</div>
 <div class="line">selected:/dev/tty.usbmodem1422</div>
 <div class="line">Do you want this device to be remembered? (Y/N)Y</div>
-<div class="line">connecting...</div>
+<div class="line">connecting…</div>
 <div class="line">Your micro:bit has been detected</div>
 <div class="line">Now running your program</div>
 </div>
@@ -377,8 +377,8 @@ print("All done!")
 <p>Once the connection is established, you should see the message scroll across the 5x5 LED grid on your Micro:bit.</p>
 </div>
 <div class="section" id="displaying-single-characters">
-<h2>12.4. Displaying Single Characters<a class="headerlink" href="#displaying-single-characters" title="Lien permanent vers ce titre">¶</a></h2>
-<p>If we wanted to display the letters from the word &quot;SASK&quot; one at a time, there are a number of different ways we could do it. Our first thought might be to do something like this:</p>
+<h2>12.4. Displaying Single Characters<a class="headerlink" href="#displaying-single-characters" title="Permalink to this headline">¶</a></h2>
+<p>If we wanted to display the letters from the word “SASK” one at a time, there are a number of different ways we could do it. Our first thought might be to do something like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">microbit</span>
 
 <span class="n">microbit</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;S&quot;</span><span class="p">)</span>
@@ -411,8 +411,8 @@ print("All done!")
 </div>
 </div>
 <div class="section" id="drawing-with-a-turtle">
-<h2>12.5. Drawing with a Turtle<a class="headerlink" href="#drawing-with-a-turtle" title="Lien permanent vers ce titre">¶</a></h2>
-<p>The examples above used the Micro:bit as an output device, as we sent instructions telling the Micro:bit to change what the LED grid was displaying. We can also use the Micro:bit as an input device. One of the built in ways of taking input from the Micro:bit is the accelerometer. An accelerometer allows us to detect the orientation of the device (in other words, whether it is tilted in the <em>x</em>, <em>y</em> or <em>z</em> axis). The following example checks the <em>x</em> axis to detect whether the device has been tilted left or right. To help you understand the values that are sent back to Python, I have printed out the value of x (note that in order to concatenate the x value, I had to convert it's data type to a string).</p>
+<h2>12.5. Drawing with a Turtle<a class="headerlink" href="#drawing-with-a-turtle" title="Permalink to this headline">¶</a></h2>
+<p>The examples above used the Micro:bit as an output device, as we sent instructions telling the Micro:bit to change what the LED grid was displaying. We can also use the Micro:bit as an input device. One of the built in ways of taking input from the Micro:bit is the accelerometer. An accelerometer allows us to detect the orientation of the device (in other words, whether it is tilted in the <em>x</em>, <em>y</em> or <em>z</em> axis). The following example checks the <em>x</em> axis to detect whether the device has been tilted left or right. To help you understand the values that are sent back to Python, I have printed out the value of x (note that in order to concatenate the x value, I had to convert it’s data type to a string).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">microbit</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
@@ -448,9 +448,9 @@ print("All done!")
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>12.6. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>12.6. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="better-turtle-controller">
-<h3>12.6.1. Better Turtle Controller<a class="headerlink" href="#better-turtle-controller" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>12.6.1. Better Turtle Controller<a class="headerlink" href="#better-turtle-controller" title="Permalink to this headline">¶</a></h3>
 <p>Adapt the program shown above to make your turtle:</p>
 <ul class="simple">
 <li>turn left or right based on tilting the <em>x</em> axis</li>
@@ -458,12 +458,12 @@ print("All done!")
 </ul>
 </div>
 <div class="section" id="drawing-different-shapes">
-<h3>12.6.2. Drawing Different Shapes<a class="headerlink" href="#drawing-different-shapes" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Create a program that uses the turtle module to draw a square when you press the &quot;A&quot; button, and a triangle when you press the &quot;B&quot; button. You will need look at the <a class="reference internal" href="../Microbit/QuickStartExamples.html#microbit-reference"><span class="std std-ref">Micro:bit Reference</span></a> in the appendix to figure out how to detect a button being pressed.</p>
+<h3>12.6.2. Drawing Different Shapes<a class="headerlink" href="#drawing-different-shapes" title="Permalink to this headline">¶</a></h3>
+<p>Create a program that uses the turtle module to draw a square when you press the “A” button, and a triangle when you press the “B” button. You will need look at the <a class="reference internal" href="../Microbit/QuickStartExamples.html#microbit-reference"><span class="std std-ref">Micro:bit Reference</span></a> in the appendix to figure out how to detect a button being pressed.</p>
 </div>
 </div>
 <div class="section" id="going-further">
-<h2>12.7. Going Further<a class="headerlink" href="#going-further" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>12.7. Going Further<a class="headerlink" href="#going-further" title="Permalink to this headline">¶</a></h2>
 <p>Look at the <a class="reference internal" href="../Microbit/QuickStartExamples.html#microbit-reference"><span class="std std-ref">Micro:bit Reference</span></a> in the appendix, and run some of the demonstration code found there to get a sense of what the Micro:bit can do.</p>
 </div>
 </div>

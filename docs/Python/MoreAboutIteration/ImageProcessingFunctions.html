@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. String Index, Length, Slicing and Traversal" href="../Strings/StringIntro.html" />
     <link rel="prev" title="3. Image Processing With Conditionals" href="ImageProcessingWithSelection.html" />
 <meta charset='utf-8'>
@@ -261,13 +261,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="functions-and-image-processing">
-<h1>4. Functions and Image Processing<a class="headerlink" href="#functions-and-image-processing" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>4. Functions and Image Processing<a class="headerlink" href="#functions-and-image-processing" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Use nested loops to practice simple image processing.</p>
 </div>
 <div class="section" id="image-conversion-with-functions">
-<h2>4.1. Image Conversion with Functions<a class="headerlink" href="#image-conversion-with-functions" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.1. Image Conversion with Functions<a class="headerlink" href="#image-conversion-with-functions" title="Permalink to this headline">¶</a></h2>
 <p>In a previous lesson, we used code similar to the following, which increases the amount of green in an image:</p>
 
 <div data-childcomponent="increase_color_amount" class="runestone explainer ac_section alert alert-warning">
@@ -338,7 +338,7 @@ converted_img.draw(win)
 <p>Notice that in the function, an EmptyImage <em>of the same size as the original image</em> was created. We then iterate through every pixel in the original image, extract the RGB values from each pixel, increase the amount in the green channel, then set the corresponding pixel in the <strong>new</strong> image (the one that began as an EmptyImage). Because this is a fruitful function (which returns a image object), we can set the result to a variable, which is called <code class="docutils literal notranslate"><span class="pre">converted_img</span></code> below.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>If you'd like the function to animate while it runs, you can rewrite the function to have a parameter for the ImageWin to draw to, as follows:</p>
+<p>If you’d like the function to animate while it runs, you can rewrite the function to have a parameter for the ImageWin to draw to, as follows:</p>
 
 <div data-childcomponent="increase_green_function_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -380,7 +380,7 @@ converted_img.draw(win)
 </div>
 </div>
 <div class="section" id="controlling-image-manipulation-with-micro-bit">
-<h2>4.2. Controlling Image Manipulation with Micro:bit<a class="headerlink" href="#controlling-image-manipulation-with-micro-bit" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.2. Controlling Image Manipulation with Micro:bit<a class="headerlink" href="#controlling-image-manipulation-with-micro-bit" title="Permalink to this headline">¶</a></h2>
 <p>Now that we can organize our image manipulation code using functions, it makes it simple to call these image manipulation functions when a specific event occurs. For example, we might want to call the <code class="docutils literal notranslate"><span class="pre">increase_green</span></code> function when the A button on the Micro:bit is pressed. To make things more interesting, we will first get the accelerometer value on the x axis (to determine how much the Micro:bit is tilted to the left or right), and use the resulting value as the <code class="docutils literal notranslate"><span class="pre">amount_of_green_to_add</span></code> argument we pass to the <code class="docutils literal notranslate"><span class="pre">increase_green</span></code> function. Since the accelerometer value will be negative when the Micro:bit is tilted to the left, if we press the A button while tilting to the left, we will remove green from the image. If the Micro:bit is tilted to the right, the accelerometer value will be positive, so we will add green to the image.</p>
 <p>Rather than have the second button sit idle, we will execute a different image manipulation function when the B button is pressed. For this example, I chose to take the negative of the image when the B button is pressed.</p>
 <p>Finally, it would be nice to have a way to end the program when we are done playing with images. To accomplish this, I created a <code class="docutils literal notranslate"><span class="pre">still_playing</span></code> variable and set it to <code class="docutils literal notranslate"><span class="pre">True</span></code>. When you flip the Micro:bit over (so the LEDs are facing the ground), the z axis becomes positive, and we change the <code class="docutils literal notranslate"><span class="pre">still_playing</span></code> variable to be <code class="docutils literal notranslate"><span class="pre">False</span></code>. This causes the loop to exit, ending our program.</p>
@@ -448,7 +448,7 @@ converted_img.draw(win)
 </pre></div>
 </div>
 <div class="section" id="try-this">
-<h3>4.2.1. Try This<a class="headerlink" href="#try-this" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>4.2.1. Try This<a class="headerlink" href="#try-this" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>implement a different image manipulation algorithm, and replace the negative function with your new function (in other words, your function should execute when the B button is pressed)</li>
 <li>save more than one image file into the folder containing your Python code, and switch which image is being manipulated based on when the Micro:bit is tilted very far up, or very far down (on the y-axis).</li>
@@ -456,14 +456,14 @@ converted_img.draw(win)
 </div>
 </div>
 <div class="section" id="practice-problems">
-<h2>4.3. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.3. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <p>For the following problems, use one of these images:</p>
 <img src="../../_static/skflag.png" id="skflag.png">
 <h4 style="text-align: center;">skflag.png</h4><img src="../../_static/moon.jpg" id="moon.jpg">
 <h4 style="text-align: center;">moon.jpg</h4><img src="../../_static/sneakers.jpg" id="sneakers.jpg">
 <h4 style="text-align: center;">sneakers.jpg</h4><img src="../../_static/rooster.jpg" id="rooster.jpg">
 <h4 style="text-align: center;">rooster.jpg</h4><div class="section" id="red-remover-function">
-<h3>4.3.1. Red Remover Function<a class="headerlink" href="#red-remover-function" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>4.3.1. Red Remover Function<a class="headerlink" href="#red-remover-function" title="Permalink to this headline">¶</a></h3>
 <p>Create a function called <code class="docutils literal notranslate"><span class="pre">red_remover(original_image)</span></code> that performs an image manipulation and returns the changed image. The function remove all of the red channel, but leave the green and blue amounts unchanged.</p>
 
 <div data-childcomponent="practice_problem_red_remover_function" class="runestone explainer ac_section alert alert-warning">
@@ -488,7 +488,7 @@ converted_img.draw(win)
 </div>
 </div>
 <div class="section" id="your-choice">
-<h3>4.3.2. Your Choice<a class="headerlink" href="#your-choice" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>4.3.2. Your Choice<a class="headerlink" href="#your-choice" title="Permalink to this headline">¶</a></h3>
 <p>Look back at the last few sections, and pick 2 image manipulation practice problems. Convert these into functions, then control them with the Micro:bit. Call one of these functions when the A button is pressed, and the other function when the B button is pressed.</p>
 
 <div data-childcomponent="practice_problem_your_choice" class="runestone explainer ac_section alert alert-warning">

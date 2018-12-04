@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Step 9: Repeating Instructions" href="Step9.html" />
     <link rel="prev" title="Step 7: Thinking and Birthday Message" href="Step7.html" />
 <meta charset='utf-8'>
@@ -206,7 +206,7 @@
 <li><a class="reference internal" href="#">Step 8: Asking Questions</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a></li>
 <li><a class="reference internal" href="#your-turn">Your Turn</a></li>
-<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You're Having Trouble (a more detailed explanation)</a></li>
+<li><a class="reference internal" href="#if-you-re-having-trouble-a-more-detailed-explanation">If You’re Having Trouble (a more detailed explanation)</a></li>
 </ul>
 </li>
 </ul>
@@ -254,10 +254,10 @@
 <div class="container" id="main-content">
   
   <div class="section" id="step-8-asking-questions">
-<h1>Step 8: Asking Questions<a class="headerlink" href="#step-8-asking-questions" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>Step 8: Asking Questions<a class="headerlink" href="#step-8-asking-questions" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Sometimes, we don't know ahead of time exactly what the world that Reeborg is going to be faced with will look like. Thankfully, Reeborg can sense the world around it, and we can ask Reeborg questions about it. To ask the computer a question, we use an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. The so-called <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>statement</strong> follows a pattern somewhat similar to that of <code class="docutils literal notranslate"><span class="pre">function</span></code>s :</p>
+<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes, we don’t know ahead of time exactly what the world that Reeborg is going to be faced with will look like. Thankfully, Reeborg can sense the world around it, and we can ask Reeborg questions about it. To ask the computer a question, we use an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. The so-called <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>statement</strong> follows a pattern somewhat similar to that of <code class="docutils literal notranslate"><span class="pre">function</span></code>s :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">some_name</span><span class="p">():</span>
     <span class="c1"># block of code</span>
 
@@ -324,14 +324,14 @@ Reeborg to collect objects (dandelions, carrots, etc), one part of the code coul
 </table>
 </div>
 <div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
 <p>Open Step 8 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">Reeborg environment</a>.</p>
 <img alt="../_images/step8.png" src="../_images/step8.png" />
-<p>Reeborg's friend Bree loves to pick dandelions and blow the seeds as far as she can. Because of this, Reeborg often finds dandelions growing in the front yard. The dandelions aren't always in the same spot, though. To see this, press the play button on the Step 8 world, and notice that dandelions appear in different places each time. <em>You can tell that this is going to happen because of the black question mark underneath the image of the dandelion.</em></p>
+<p>Reeborg’s friend Bree loves to pick dandelions and blow the seeds as far as she can. Because of this, Reeborg often finds dandelions growing in the front yard. The dandelions aren’t always in the same spot, though. To see this, press the play button on the Step 8 world, and notice that dandelions appear in different places each time. <em>You can tell that this is going to happen because of the black question mark underneath the image of the dandelion.</em></p>
 <p>Create a program to have Reeborg walk across the front yard, picking up a dandelion whenever it finds one. There might be a dandelion in any of the locations that have a dandelion image with a question mark underneath (you can see this again if you press the reload button). You will need to ask Reeborg questions as it moves across the front yard. Once every possible dandelion is picked up, have Reeborg put down all the dandelions it has picked up at (2,3), then return to the flag (1,3). Remember to use comments and whitespace to increase the readability of your solution!</p>
 </div>
 <div class="section" id="if-you-re-having-trouble-a-more-detailed-explanation">
-<h2>If You're Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>If You’re Having Trouble (a more detailed explanation)<a class="headerlink" href="#if-you-re-having-trouble-a-more-detailed-explanation" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
     <span class="n">move</span><span class="p">()</span>
 
@@ -339,7 +339,7 @@ Reeborg to collect objects (dandelions, carrots, etc), one part of the code coul
     <span class="n">turn_left</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>In the code above, <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">True</span></code>, and <code class="docutils literal notranslate"><span class="pre">False</span></code> are all Python keywords. It is a good idea to try out the code above in Reeborg's World (you can use any world you like, perhaps Alone?). You might also want to interchange the True and False, then run the program again to see what happens.</p>
+<p>In the code above, <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">True</span></code>, and <code class="docutils literal notranslate"><span class="pre">False</span></code> are all Python keywords. It is a good idea to try out the code above in Reeborg’s World (you can use any world you like, perhaps Alone?). You might also want to interchange the True and False, then run the program again to see what happens.</p>
 <p>When we introduced functions, we explained how we could think of a
 function <strong>call</strong> as being somewhat equivalent to inserting the code block for
 the function definition at that point in the program. Thus:</p>

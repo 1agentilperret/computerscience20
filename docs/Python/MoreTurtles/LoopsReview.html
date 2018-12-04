@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="2. Turtle Races" href="TurtleRace.html" />
     <link rel="prev" title="12. The Time Module and Using a Micro:bit" href="../Overview/Microbit.html" />
 <meta charset='utf-8'>
@@ -262,13 +262,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="loops-review-and-turtle-drawing">
-<h1>1. Loops Review and Turtle Drawing<a class="headerlink" href="#loops-review-and-turtle-drawing" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>1. Loops Review and Turtle Drawing<a class="headerlink" href="#loops-review-and-turtle-drawing" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Review <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops. Work on a Python turtle graphics assignment, focused on repetition and conditionals.</p>
 </div>
 <div class="section" id="what-does-this-program-do">
-<h2>1.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>1.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
@@ -334,25 +334,25 @@ for aColor in ["blue", "red", "orange"]:
 </div>
 </div>
 <div class="section" id="extra-information-about-turtles">
-<h2>1.2. Extra Information About Turtles<a class="headerlink" href="#extra-information-about-turtles" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>1.2. Extra Information About Turtles<a class="headerlink" href="#extra-information-about-turtles" title="Permalink to this headline">¶</a></h2>
 <p>Here are a few more things that you might find useful as you write programs that use turtles.</p>
 <ul>
 <li><p class="first">Turtle methods can use negative angles or distances.  So <code class="docutils literal notranslate"><span class="pre">tess.forward(-100)</span></code>
 will move tess backwards, and <code class="docutils literal notranslate"><span class="pre">tess.left(-30)</span></code> turns her to the right.
 Additionally, because there are 360 degrees in a circle, turning 30 to the
 left will leave you facing in the same direction as turning 330 to the right!
-(The on-screen animation will differ, though --- you will be able to tell if
+(The on-screen animation will differ, though — you will be able to tell if
 tess is turning clockwise or counter-clockwise!)</p>
-<p>This suggests that we don't need both a left and a right turn method --- we
+<p>This suggests that we don’t need both a left and a right turn method — we
 could be minimalists, and just have one method.  There is also a <em>backward</em>
 method.  (If you want to do things the hard way, you might enjoy saying
 <code class="docutils literal notranslate"><span class="pre">alex.backward(-100)</span></code> to move alex forward!)</p>
 <p>Part of <em>thinking like a scientist</em> is to understand more of the structure
 and rich relationships in your field.  So reviewing a few basic facts about
-geometry and number lines, like we've done here is a good start if we're
+geometry and number lines, like we’ve done here is a good start if we’re
 going to play with turtles.</p>
 </li>
-<li><p class="first">A turtle's pen can be picked up or put down.  This allows us to move a turtle
+<li><p class="first">A turtle’s pen can be picked up or put down.  This allows us to move a turtle
 to a different place without drawing a line.   The methods are <code class="docutils literal notranslate"><span class="pre">penup</span></code> and <code class="docutils literal notranslate"><span class="pre">pendown</span></code>.  Note that the methods <code class="docutils literal notranslate"><span class="pre">up</span></code> and <code class="docutils literal notranslate"><span class="pre">down</span></code> do the same thing.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">alex</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
 <span class="n">alex</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>     <span class="c1"># this moves alex, but no line is drawn</span>
@@ -360,7 +360,7 @@ to a different place without drawing a line.   The methods are <code class="docu
 </pre></div>
 </div>
 </li>
-<li><p class="first">Every turtle can have its own shape.  The ones available &quot;out of the box&quot;
+<li><p class="first">Every turtle can have its own shape.  The ones available “out of the box”
 are <code class="docutils literal notranslate"><span class="pre">arrow</span></code>, <code class="docutils literal notranslate"><span class="pre">blank</span></code>, <code class="docutils literal notranslate"><span class="pre">circle</span></code>, <code class="docutils literal notranslate"><span class="pre">classic</span></code>, <code class="docutils literal notranslate"><span class="pre">square</span></code>, <code class="docutils literal notranslate"><span class="pre">triangle</span></code>,
 <code class="docutils literal notranslate"><span class="pre">turtle</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
@@ -369,20 +369,20 @@ are <code class="docutils literal notranslate"><span class="pre">arrow</span></c
 </pre></div>
 </div>
 </li>
-<li><p class="first">You can speed up or slow down the turtle's animation speed. (Animation
+<li><p class="first">You can speed up or slow down the turtle’s animation speed. (Animation
 controls how quickly the turtle turns and moves forward).  Speed settings can
 be set between 1 (slowest) to 10 (fastest).  But if you set the speed to 0,
-it has a special meaning --- turn off animation and go as fast as possible.</p>
+it has a special meaning — turn off animation and go as fast as possible.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">alex</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">A turtle can &quot;stamp&quot; its footprint onto the canvas, and this will remain
+<li><p class="first">A turtle can “stamp” its footprint onto the canvas, and this will remain
 after the turtle has moved somewhere else.  Stamping works even when the pen
 is up.</p>
 </li>
 </ul>
-<p>Let's do an example that shows off some of these new features.</p>
+<p>Let’s do an example that shows off some of these new features.</p>
 
 <div data-childcomponent="ch03_7" class="runestone explainer ac_section alert alert-warning">
 
@@ -416,11 +416,11 @@ wn.exitonclick()
 </div>
 <p>One more thing to be careful about.  All except one of the shapes you see on the screen here are
 footprints created by <code class="docutils literal notranslate"><span class="pre">stamp</span></code>.  But the program still only has <em>one</em> turtle
-instance --- can you figure out which one is the real tess?  (Hint: if you're
-not sure, write a new line of code after the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to change tess'
+instance — can you figure out which one is the real tess?  (Hint: if you’re
+not sure, write a new line of code after the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to change tess’
 color, or to put her pen down and draw a line, or to change her shape, etc.)</p>
 <div class="section" id="mixed-up-programs">
-<h3>1.2.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>1.2.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Permalink to this headline">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="wdtpd_turtle_assn_parsons_1"      >
@@ -467,7 +467,7 @@ wn.exitonclick()
     </div>
 </div>
 <div class="section" id="summary-of-turtle-methods">
-<span id="turtle-methods-list"></span><span id="index-0"></span><h2>1.3. Summary of Turtle Methods<a class="headerlink" href="#summary-of-turtle-methods" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="turtle-methods-list"></span><span id="index-0"></span><h2>1.3. Summary of Turtle Methods<a class="headerlink" href="#summary-of-turtle-methods" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="12%" />
@@ -511,7 +511,7 @@ wn.exitonclick()
 </tr>
 <tr class="row-odd"><td>color</td>
 <td>color name</td>
-<td>Changes the color of the turtle's tail</td>
+<td>Changes the color of the turtle’s tail</td>
 </tr>
 <tr class="row-even"><td>fillcolor</td>
 <td>color name</td>
@@ -555,18 +555,18 @@ wn.exitonclick()
 </tr>
 <tr class="row-even"><td>shape</td>
 <td>shape name</td>
-<td>Should be 'arrow', 'classic', 'turtle', 'circle' or 'square'</td>
+<td>Should be ‘arrow’, ‘classic’, ‘turtle’, ‘circle’ or ‘square’</td>
 </tr>
 </tbody>
 </table>
 <p>As we have seen previously, you can read about even more options on the <a class="reference external" href="http://docs.python.org/dev/py3k/library/turtle.html">Python Docs Website</a>.</p>
 </div>
 <div class="section" id="practice-problems">
-<h2>1.4. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>1.4. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="hollow-c">
-<h3>1.4.1. Hollow C<a class="headerlink" href="#hollow-c" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>1.4.1. Hollow C<a class="headerlink" href="#hollow-c" title="Permalink to this headline">¶</a></h3>
 <img alt="../../_images/confusion-4.png" src="../../_images/confusion-4.png" />
-<p>Let's draw the image three different ways:</p>
+<p>Let’s draw the image three different ways:</p>
 <ul class="simple">
 <li>using any commands that you like</li>
 <li>using only the <code class="docutils literal notranslate"><span class="pre">.forward()</span></code> and <code class="docutils literal notranslate"><span class="pre">.right()</span></code> commands</li>
@@ -588,7 +588,7 @@ import turtle
 </div>
 </div>
 <div class="section" id="open-ended-drawing">
-<h3>1.4.2. Open Ended Drawing<a class="headerlink" href="#open-ended-drawing" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>1.4.2. Open Ended Drawing<a class="headerlink" href="#open-ended-drawing" title="Permalink to this headline">¶</a></h3>
 <p>Create a Python program that uses the turtle module, and draws something cool. The sky is the limit on what you can draw. There are a couple things you need to make sure you do, though:</p>
 <ul class="simple">
 <li>use at least two for or while loops</li>

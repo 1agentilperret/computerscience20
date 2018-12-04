@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="7. Which Quotes to Use When Creating Strings" href="StringQuotes.html" />
     <link rel="prev" title="5. String Operators and Assignment Work Time" href="StringOperations.html" />
 <meta charset='utf-8'>
@@ -264,13 +264,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="other-input-methods-easygui-qt">
-<h1>6. Other Input Methods (easygui_qt)<a class="headerlink" href="#other-input-methods-easygui-qt" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>6. Other Input Methods (easygui_qt)<a class="headerlink" href="#other-input-methods-easygui-qt" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Getting user input with a pop-up window using the easygui_qt module. Work on a Python assignment, focused on input/output of strings, and conditionals.</p>
 </div>
 <div class="section" id="what-does-this-program-do">
-<h2>6.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>6.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
@@ -326,24 +326,24 @@ if age > 15:
 </div>
 </div>
 <div class="section" id="getting-user-input-with-easygui-qt">
-<span id="index-0"></span><h2>6.2. Getting User Input With easygui_qt<a class="headerlink" href="#getting-user-input-with-easygui-qt" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="index-0"></span><h2>6.2. Getting User Input With easygui_qt<a class="headerlink" href="#getting-user-input-with-easygui-qt" title="Permalink to this headline">¶</a></h2>
 <p>One of the great things about Thonny is how easy it is to add additional modules to the standard Python installation. You can think of a module as being similar to the <strong>library</strong> tab that we used in Reeborg. It gives us the ability to use extra functionality that another programmer has created. When we were programming Reeborg, we would often put functions into the library tab, like this:</p>
 <img alt="../../_images/reeborg_library.png" src="../../_images/reeborg_library.png" />
 <p>In Reeborg, we would often import that code using <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">turn_right</span></code>, so that we could simply call the <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> function in the same way that we could call <code class="docutils literal notranslate"><span class="pre">turn_left()</span></code>. However, it was also possible to import the library as follows:</p>
 <img alt="../../_images/reeborg_code_calling_library.png" src="../../_images/reeborg_code_calling_library.png" />
-<p>You can think of this code as saying &quot;Look into the <code class="docutils literal notranslate"><span class="pre">library</span></code>, and find something called <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code>&quot;. For many Python modules, this is equivalent to saying, &quot;Look into the library.py file, and find a function called turn_right()&quot;.</p>
+<p>You can think of this code as saying “Look into the <code class="docutils literal notranslate"><span class="pre">library</span></code>, and find something called <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code>”. For many Python modules, this is equivalent to saying, “Look into the library.py file, and find a function called turn_right()”.</p>
 <p>Another method of importing the library allows us give the module a nickname that is faster to type. Consider the following:</p>
 <img alt="../../_images/reeborg_import_as.png" src="../../_images/reeborg_import_as.png" />
-<p>When using Python outside Reeborg, if you'd like to get user input through a graphical pop-up box instead of just through the console, we can just install a module <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code>. In Thonny, open <em>Tools -&gt; Manage packages...</em>.</p>
+<p>When using Python outside Reeborg, if you’d like to get user input through a graphical pop-up box instead of just through the console, we can just install a module <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code>. In Thonny, open <em>Tools -&gt; Manage packages…</em>.</p>
 <img alt="../../_images/thonny_manage_packages_menu_item.png" src="../../_images/thonny_manage_packages_menu_item.png" />
 <p>Now type in <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> into the Search box (be sure to spell it <em>exactly</em>). Now click the Install button.</p>
 <img alt="../../_images/thonny_add_easygui_module.png" src="../../_images/thonny_add_easygui_module.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> package attempts to install <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>, along with it's prerequisites. If you prefer (or if you run into installation problems), you can also just install each module on their own. The order you install them should be <code class="docutils literal notranslate"><span class="pre">sip</span></code>, then <code class="docutils literal notranslate"><span class="pre">PyQt5</span></code>, then <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>.</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> package attempts to install <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>, along with it’s prerequisites. If you prefer (or if you run into installation problems), you can also just install each module on their own. The order you install them should be <code class="docutils literal notranslate"><span class="pre">sip</span></code>, then <code class="docutils literal notranslate"><span class="pre">PyQt5</span></code>, then <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>.</p>
 </div>
 <div class="section" id="get-string-from-user">
-<h3>6.2.1. Get String From User<a class="headerlink" href="#get-string-from-user" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.2.1. Get String From User<a class="headerlink" href="#get-string-from-user" title="Permalink to this headline">¶</a></h3>
 <p>You will now be able to use the easygui_qt module in the same way you can use any other module. Here is a simple program that will use pop-up boxes to get the first and last names of the user, then print out the result to the console.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
@@ -358,7 +358,7 @@ if age > 15:
 </div>
 </div>
 <div class="section" id="display-graphical-message">
-<h3>6.2.2. Display Graphical Message<a class="headerlink" href="#display-graphical-message" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.2.2. Display Graphical Message<a class="headerlink" href="#display-graphical-message" title="Permalink to this headline">¶</a></h3>
 <p>If you would like to output the message to a graphical window (instead of the console), you can call the <code class="docutils literal notranslate"><span class="pre">show_message()</span></code> function, as shown below.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
@@ -375,7 +375,7 @@ if age > 15:
 </div>
 </div>
 <div class="section" id="lists">
-<h3>6.2.3. Lists<a class="headerlink" href="#lists" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.2.3. Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
 <p>In the next example, we need to provide a <strong>list</strong> of options for the user to pick from. As we saw in the quick Python overview, a list can be created using square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, with each elemnt inside the square brackets separated with a comma. Consider the example below, in which we create a list of ski hills, then print out some elements from it. <em>Note that lists begin counting at 0, so the first element in the list is accessed using list_name[0].</em></p>
 
 <div data-childcomponent="lists_overview_ski_hills" class="runestone explainer ac_section alert alert-warning">
@@ -392,7 +392,7 @@ print(ski_hills[8])     # IndexError: list index out of range
 </div>
 </div>
 <div class="section" id="get-choice-from-user">
-<h3>6.2.4. Get Choice From User<a class="headerlink" href="#get-choice-from-user" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.2.4. Get Choice From User<a class="headerlink" href="#get-choice-from-user" title="Permalink to this headline">¶</a></h3>
 <p>To give the user a list of options to choose from, we can create a <strong>list</strong> of all the choices they can choose from. Imagine that you were creating a program that would allow the user to select which school subject was their favourite. You might include a list of options, as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
@@ -424,7 +424,7 @@ print(ski_hills[8])     # IndexError: list index out of range
 </div>
 </div>
 <div class="section" id="other-methods">
-<h3>6.2.5. Other Methods<a class="headerlink" href="#other-methods" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.2.5. Other Methods<a class="headerlink" href="#other-methods" title="Permalink to this headline">¶</a></h3>
 <p>There are many more methods you can use with easygui_qt. You may want to look in the appendices for the <a class="reference internal" href="../EasyGUI/Reference.html#easygui-reference"><span class="std std-ref">EasyGUI_Qt Reference</span></a> for a more comprehensive list of what is available. For quick reference, here are a few of them (each of the following assumes you have already called <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">easygui_qt</span> <span class="pre">as</span> <span class="pre">easy</span></code>):</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -450,10 +450,10 @@ print(ski_hills[8])     # IndexError: list index out of range
 <td>returns a <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> (or None if cancelled)</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">easy.show_message(&quot;Some</span> <span class="pre">message.&quot;)</span></code></td>
-<td>doesn't return anything</td>
+<td>doesn’t return anything</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">easy.show_text(&quot;A</span> <span class="pre">large</span> <span class="pre">chunk</span> <span class="pre">of</span> <span class="pre">text.&quot;)</span></code></td>
-<td>doesn't return anything</td>
+<td>doesn’t return anything</td>
 </tr>
 </tbody>
 </table>
@@ -465,10 +465,10 @@ print(ski_hills[8])     # IndexError: list index out of range
 </div>
 </div>
 <div class="section" id="mad-libs-practice-problem">
-<h2>6.3. Mad Libs Practice Problem<a class="headerlink" href="#mad-libs-practice-problem" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>6.3. Mad Libs Practice Problem<a class="headerlink" href="#mad-libs-practice-problem" title="Permalink to this headline">¶</a></h2>
 <p>You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish for the day! <em>If you work in Thonny, you will be able to use easygui_qt in your program.</em></p>
 <p>To practice input/output in Python, you will make two Mad Libs. At the start of the program, you should ask the user which MadLib they want. Once the user has selected a MadLib, your program should take in input from the user, then use that input when outputting a story or poem.</p>
-<p>If you are not familiar with madlibs, you may want to investigate what they are by searching the web for a &quot;madlibs website&quot;. In essence, you want to take a familiar story and make it funny by randomly placing your users words into the story. For example, you might start with the classic Humpty Dumpty rhyme:</p>
+<p>If you are not familiar with madlibs, you may want to investigate what they are by searching the web for a “madlibs website”. In essence, you want to take a familiar story and make it funny by randomly placing your users words into the story. For example, you might start with the classic Humpty Dumpty rhyme:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Humpty Dumpty sat on a wall,
 Humpty Dumpty had a great fall.
 All the king&#39;s horses and all the king&#39;s men
@@ -507,11 +507,11 @@ Couldn&#39;t put Bree together again.
 </textarea>
 </div>
 <div class="section" id="extra-for-experts">
-<h3>6.3.1. Extra for Experts<a class="headerlink" href="#extra-for-experts" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>6.3.1. Extra for Experts<a class="headerlink" href="#extra-for-experts" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>instead of having the user enter in all of the parts of speech, have the computer choose some of the words at random. You can do this in one of two ways:</li>
 <li>easier: create a list of possible words, and have Python choose one of these words <a class="reference external" href="http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from-a-list-using-python">at random</a>.</li>
-<li>harder: create text files for each of the parts of speech that you will require (ie. nouns.txt, adjectives.txt, etc) and have the computer randomly choose one of the words from the appropriate text file to complete the madlib. Hint: To simplify things, I'd recommend that you generate the text file with one word per line.</li>
+<li>harder: create text files for each of the parts of speech that you will require (ie. nouns.txt, adjectives.txt, etc) and have the computer randomly choose one of the words from the appropriate text file to complete the madlib. Hint: To simplify things, I’d recommend that you generate the text file with one word per line.</li>
 </ul>
 </div>
 </div>

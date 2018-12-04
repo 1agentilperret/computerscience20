@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Step 4: Comments" href="Step4.html" />
     <link rel="prev" title="Step 2: Taking and Putting Down Objects" href="Step2.html" />
 <meta charset='utf-8'>
@@ -205,7 +205,7 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Step 3: Turning Left and Stepping Through Code</a><ul>
 <li><a class="reference internal" href="#tutorial">Tutorial</a><ul>
-<li><a class="reference internal" href="#reeborg-s-bugs">Reeborg's Bugs</a></li>
+<li><a class="reference internal" href="#reeborg-s-bugs">Reeborg’s Bugs</a></li>
 <li><a class="reference internal" href="#stepping-through-code">Stepping Through Code</a></li>
 </ul>
 </li>
@@ -257,27 +257,27 @@
 <div class="container" id="main-content">
   
   <div class="section" id="step-3-turning-left-and-stepping-through-code">
-<h1>Step 3: Turning Left and Stepping Through Code<a class="headerlink" href="#step-3-turning-left-and-stepping-through-code" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>Step 3: Turning Left and Stepping Through Code<a class="headerlink" href="#step-3-turning-left-and-stepping-through-code" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="tutorial">
-<h2>Tutorial<a class="headerlink" href="#tutorial" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="reeborg-s-bugs">
-<h3>Reeborg's Bugs<a class="headerlink" href="#reeborg-s-bugs" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Reeborg’s Bugs<a class="headerlink" href="#reeborg-s-bugs" title="Permalink to this headline">¶</a></h3>
 <p>In computer jargon, a bug is an error that causes a program to behave in
 an unexpected way. If you are writing computer programs, you are going
 to have bugs in them sooner or later - everybody does. Good programmers
-seek to &quot;remove&quot; bugs or &quot;fix&quot; them as soon as they find that their
+seek to “remove” bugs or “fix” them as soon as they find that their
 program behaves unexpectedly.</p>
-<p>Not so good programmers state that &quot;bugs&quot; are not really bugs but that
-they are &quot;features&quot; of their programs. <strong>You</strong> are going to be a good
+<p>Not so good programmers state that “bugs” are not really bugs but that
+they are “features” of their programs. <strong>You</strong> are going to be a good
 programmer, unlike the maker of Reeborg, whose program is littered with
 bugs. Some of the problems with Reeborg are:</p>
 <ol class="arabic simple">
 <li>Reeborg has an oil leak. Oil leaks are damaging for the environment
 and inconvenient for Reeborg who must replenish its supplies when
-it's not busy accomplishing tasks. The maker of Reeborg claims that
-it is a feature, as it enables you to follow Reeborg's path, just
-like any programmer can learn to &quot;trace&quot; a program.</li>
-<li>Reeborg's steering mechanism is not handled properly by Reeborg's
+it’s not busy accomplishing tasks. The maker of Reeborg claims that
+it is a feature, as it enables you to follow Reeborg’s path, just
+like any programmer can learn to “trace” a program.</li>
+<li>Reeborg’s steering mechanism is not handled properly by Reeborg’s
 program: it can only turn left. The maker of Reeborg, once again,
 claims that this is a feature as it present you with an opportunity
 to learn about <strong>functions</strong>. You will soon learn how
@@ -286,18 +286,18 @@ although in a wasteful fashion.</li>
 <li>Reeborg has a compass, enabling it to determine which direction it
 is facing. Unfortunately, yet again, the program that enables Reeborg
 to get the information from the compass has a bug: it only tells
-Reeborg if it is facing North ... or not. Once again, you will
+Reeborg if it is facing North … or not. Once again, you will
 learn how to implement a workaround solution soon.</li>
 <li>Reeborg can see if a wall is in front of it, and can also turn its
 head to the right to see if there is a wall there. However, a
-software &quot;glitch&quot; (which is another weasel term that software
+software “glitch” (which is another weasel term that software
 manufacturers use to avoid having to say that their product has a
-bug) prevents Reeborg's program from properly registering a wall when
+bug) prevents Reeborg’s program from properly registering a wall when
 it turns its head left.</li>
 </ol>
 </div>
 <div class="section" id="stepping-through-code">
-<span id="index-0"></span><h3>Stepping Through Code<a class="headerlink" href="#stepping-through-code" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="index-0"></span><h3>Stepping Through Code<a class="headerlink" href="#stepping-through-code" title="Permalink to this headline">¶</a></h3>
 <p>Sometimes to find the cause of bugs, it can help to break the normal
 flow of the program. To this end you may do one or more of the
 following:</p>
@@ -319,7 +319,7 @@ the highlighting by clicking on a button above the code editor.</p>
 </li>
 <li><p class="first">You can stop a program at any point by pressing the <strong>stop</strong>
 button; this unfortunately may not work if you create
-what is known as an infinite loop, outside of Reeborg's control. If
+what is known as an infinite loop, outside of Reeborg’s control. If
 worse comes to worst, you can always just reload the web page.</p>
 <p><img alt="stopButton" src="../_images/stop_button.png" /></p>
 </li>
@@ -327,14 +327,14 @@ worse comes to worst, you can always just reload the web page.</p>
 </div>
 </div>
 <div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
 <p>Open Step 3 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%203" target="_blank">Reeborg environment</a>.</p>
 <p>As mentioned above, Reeborg can only turn in one direction: left. To tell Reeborg to turn, you can use the <code class="docutils literal notranslate"><span class="pre">turn_left()</span></code> function.</p>
 <img alt="../_images/step3.gif" src="../_images/step3.gif" />
 <p>Use the <code class="docutils literal notranslate"><span class="pre">move()</span></code> function and the <code class="docutils literal notranslate"><span class="pre">turn_left()</span></code> function to make Reeborg walk around the lake.</p>
 <div class="topic">
 <p class="topic-title first">Try this!</p>
-<p>To see what happens, let's do some things intentionally wrong. For example, make Reeborg walk into the lake. You might also want to try not walking all the way around the lake to see what the error message will be.</p>
+<p>To see what happens, let’s do some things intentionally wrong. For example, make Reeborg walk into the lake. You might also want to try not walking all the way around the lake to see what the error message will be.</p>
 </div>
 </div>
 </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="4. Turtle Drawing and Strings (L-Systems)" href="LSystems.html" />
     <link rel="prev" title="2. String Traversal (by index), and the Accumulator Pattern with Strings" href="MoreAboutStrings.html" />
 <meta charset='utf-8'>
@@ -260,13 +260,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="string-methods">
-<h1>3. String Methods<a class="headerlink" href="#string-methods" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>3. String Methods<a class="headerlink" href="#string-methods" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>WDTPD string questions. Practice problems with string manipulation. Introduction to additional string methods. Time to catch up on any string practice problems not completed on previous days.</p>
 </div>
 <div class="section" id="what-does-this-program-do">
-<h2>3.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>3.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
@@ -333,9 +333,9 @@ print(foo("banana"))
 </div>
 </div>
 <div class="section" id="letter-counting">
-<h2>3.2. Letter Counting<a class="headerlink" href="#letter-counting" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>3.2. Letter Counting<a class="headerlink" href="#letter-counting" title="Permalink to this headline">¶</a></h2>
 <p>By looking at each letter of a peice of text, you can create a <a class="reference external" href="https://en.wikipedia.org/wiki/Frequency_analysis">frequency analysis</a>, which tells you how often you should expect certain letters to appear in a passage of text. This gives you hints if you are trying to solve a cryptoquip in your local newspaper, or attempting to crack a message that is encrypted using a classical cipher (such as the Caesar cipher).</p>
-<p>The code below assigns a variable <code class="docutils literal notranslate"><span class="pre">paragraph</span></code> in the program a triple-quoted string that contains a paragraph of text. The function <code class="docutils literal notranslate"><span class="pre">count</span></code> determines the number of alphabetic characters (a through z, or A through Z) in the text and then keeps track of how many are the letter 'e'.  Finally, the function prints an analysis of the text like this:</p>
+<p>The code below assigns a variable <code class="docutils literal notranslate"><span class="pre">paragraph</span></code> in the program a triple-quoted string that contains a paragraph of text. The function <code class="docutils literal notranslate"><span class="pre">count</span></code> determines the number of alphabetic characters (a through z, or A through Z) in the text and then keeps track of how many are the letter ‘e’.  Finally, the function prints an analysis of the text like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Your</span> <span class="n">text</span> <span class="n">contains</span> <span class="mi">243</span> <span class="n">alphabetic</span> <span class="n">characters</span><span class="p">,</span> <span class="n">of</span> <span class="n">which</span> <span class="mi">109</span> <span class="p">(</span><span class="mf">44.8</span><span class="o">%</span><span class="p">)</span> <span class="n">are</span> <span class="s1">&#39;e&#39;</span><span class="o">.</span>
 </pre></div>
 </div>
@@ -397,8 +397,8 @@ count(paragraph)
 </div>
 </div>
 <div class="section" id="id1">
-<h2>3.3. String Methods<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h2>
-<p>We previously saw that each turtle instance has its own attributes and a number of methods that can be applied to the instance.  For example, we wrote <code class="docutils literal notranslate"><span class="pre">tess.right(90)</span></code> when we wanted the turtle object <code class="docutils literal notranslate"><span class="pre">tess</span></code> to perform the <code class="docutils literal notranslate"><span class="pre">right</span></code> method to turn to the right 90 degrees.  The &quot;dot notation&quot; is the way we connect the name of an object to the name of a method it can perform.</p>
+<h2>3.3. String Methods<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>We previously saw that each turtle instance has its own attributes and a number of methods that can be applied to the instance.  For example, we wrote <code class="docutils literal notranslate"><span class="pre">tess.right(90)</span></code> when we wanted the turtle object <code class="docutils literal notranslate"><span class="pre">tess</span></code> to perform the <code class="docutils literal notranslate"><span class="pre">right</span></code> method to turn to the right 90 degrees.  The “dot notation” is the way we connect the name of an object to the name of a method it can perform.</p>
 <p>Strings are also objects.  Each string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There are a wide variety of methods.  Try the following program.</p>
 
 <div data-childcomponent="string_methods_example1" class="runestone explainer ac_section alert alert-warning">
@@ -539,7 +539,7 @@ print(food.index("e"))
 </textarea>
 </div>
 <div class="section" id="check-your-understanding">
-<h3>3.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>3.3.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string_methods_check_understanding1">
@@ -582,7 +582,7 @@ print(food.index("e"))
 </div>
 </div>
 <div class="section" id="substitution-cipher">
-<h2>3.4. Substitution Cipher<a class="headerlink" href="#substitution-cipher" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>3.4. Substitution Cipher<a class="headerlink" href="#substitution-cipher" title="Permalink to this headline">¶</a></h2>
 <p>In a substitution cipher one letter is substituted for another to garble a message. For example, you might use the following table to convert the original (plaintext) message into the encrypted (ciphertext) message:</p>
 <img alt="../../_images/substitution-cipher.png" src="../../_images/substitution-cipher.png" />
 <p>Using this cipher, the plaintext message <em>hello world</em> would turn into the ciphertext message <em>nxqqg tgcqb</em>.</p>
@@ -671,12 +671,12 @@ print(decrypted)
     </div>
     </div>
 <div class="section" id="practice-problems">
-<h2>3.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>3.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <p>Keep working on the practice problems from the previous two days. If you complete these ahead of your classmates, ask your teacher what you should work on.</p>
 </div>
 <div class="section" id="extra-challenge">
-<h2>3.6. Extra Challenge<a class="headerlink" href="#extra-challenge" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Hidden in the source code for this page is an encrypted message, created using the same substitution cipher shown above. To find and decrypt it, you need to look through the source code of this page, and analyze the text between the words <code class="docutils literal notranslate"><span class="pre">MSGBEGINS:</span></code> and <code class="docutils literal notranslate"><span class="pre">MSGENDS</span></code>. To automate this completely in Python, you can use the requests module, as described earlier on this page. You then need to use string methods to determine the location of where the hidden message begins and ends, so that you know what text to decrypt. To make this a bit more challenging, I've added random gibberish throughout the message. To get rid of the gibberish, you need to know that between <code class="docutils literal notranslate"><span class="pre">MSGBEGINS:</span></code> and <code class="docutils literal notranslate"><span class="pre">MSGENDS</span></code>, only every 5th letter is part of the actual hidden message.</p>
+<h2>3.6. Extra Challenge<a class="headerlink" href="#extra-challenge" title="Permalink to this headline">¶</a></h2>
+<p>Hidden in the source code for this page is an encrypted message, created using the same substitution cipher shown above. To find and decrypt it, you need to look through the source code of this page, and analyze the text between the words <code class="docutils literal notranslate"><span class="pre">MSGBEGINS:</span></code> and <code class="docutils literal notranslate"><span class="pre">MSGENDS</span></code>. To automate this completely in Python, you can use the requests module, as described earlier on this page. You then need to use string methods to determine the location of where the hidden message begins and ends, so that you know what text to decrypt. To make this a bit more challenging, I’ve added random gibberish throughout the message. To get rid of the gibberish, you need to know that between <code class="docutils literal notranslate"><span class="pre">MSGBEGINS:</span></code> and <code class="docutils literal notranslate"><span class="pre">MSGENDS</span></code>, only every 5th letter is part of the actual hidden message.</p>
 
         <div class="runestone">
         <div data-component="fillintheblank" id="extra_challenge_verification">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Nested Loops and Image Processing" href="../MoreAboutIteration/NestedLoops.html" />
     <link rel="prev" title="4. Animating a Micro:bit LED Image with a for Loop" href="AnimatingImagesForLoop.html" />
 <meta charset='utf-8'>
@@ -257,13 +257,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="reaction-game-with-micro-bit">
-<h1>5. Reaction Game with Micro:bit<a class="headerlink" href="#reaction-game-with-micro-bit" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>5. Reaction Game with Micro:bit<a class="headerlink" href="#reaction-game-with-micro-bit" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Play Micro:bit reaction game, and discuss how the code works. Add features to the game, if time.</p>
 </div>
 <div class="section" id="micro-bit-reaction-game">
-<h2>5.1. Micro:bit Reaction Game<a class="headerlink" href="#micro-bit-reaction-game" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>5.1. Micro:bit Reaction Game<a class="headerlink" href="#micro-bit-reaction-game" title="Permalink to this headline">¶</a></h2>
 <p>In this game, you and a friend will compete to see who has faster reactions. After clicking Run, your Micro:bit will wait between 1 and 5 seconds, then display a happy face image. Whichever player presses their button (A or B) first gets one point. <em>Be careful! If you click your button too soon, you will lose 2 points!</em></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mico:bit Reaction Game</span>
 <span class="c1"># Computer Science 20</span>
@@ -358,7 +358,7 @@
 </div>
 </div>
 <div class="section" id="new-ideas-used-in-the-reaction-game">
-<h2>5.2. New Ideas Used in the Reaction Game<a class="headerlink" href="#new-ideas-used-in-the-reaction-game" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>5.2. New Ideas Used in the Reaction Game<a class="headerlink" href="#new-ideas-used-in-the-reaction-game" title="Permalink to this headline">¶</a></h2>
 <p>As you read through the reaction game code, there are a number of things that may deserve some explanation. Notice that the structure of the code is generally:</p>
 <ul class="simple">
 <li>comment header</li>
@@ -369,22 +369,22 @@
 </ul>
 <p>Although you do not have to follow the structure given above exactly, it does provide a reasonable way to organize your code.</p>
 <p id="index-0">Another thing you likely noticed is that I used ALL_CAPS when creating a <em>constant</em>. In Python, a constant is just a regular variable (so it behaves the exact same way as any other variable). However, a common convention is to use ALL_CAPITAL_LETTERS_IN_THE_VARIABLE_NAME, which simply reminds us as programmers that this is a variable whose value should never be changed within our code.</p>
-<p id="index-1">I also used a new function from the <code class="docutils literal notranslate"><span class="pre">time</span></code> module in this program. <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> returns the number of seconds that have elapsed since the <em>epoch</em>, which is how your computer keeps track of what the current time is. To understand what this means, call <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> in Thonny's shell a few times. Notice that the number you get back from the function is a really large number, and that it has increased each time you call the function. It is important to realize that the unit of this number is <strong>seconds</strong>. You might find it helpful to uncomment the line containing <code class="docutils literal notranslate"><span class="pre">print(time_since_start)</span></code> to help you understand the <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> function.</p>
+<p id="index-1">I also used a new function from the <code class="docutils literal notranslate"><span class="pre">time</span></code> module in this program. <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> returns the number of seconds that have elapsed since the <em>epoch</em>, which is how your computer keeps track of what the current time is. To understand what this means, call <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> in Thonny’s shell a few times. Notice that the number you get back from the function is a really large number, and that it has increased each time you call the function. It is important to realize that the unit of this number is <strong>seconds</strong>. You might find it helpful to uncomment the line containing <code class="docutils literal notranslate"><span class="pre">print(time_since_start)</span></code> to help you understand the <code class="docutils literal notranslate"><span class="pre">time.time()</span></code> function.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference external" href="https://docs.python.org/3/library/time.html#epoch">Python docs section on time</a> define the epoch as &quot;the point where the time starts, and is platform dependent. For Unix, the epoch is January 1, 1970, 00:00:00 (UTC). To find out what the epoch is on a given platform, look at <code class="docutils literal notranslate"><span class="pre">time.gmtime(0)</span></code>.&quot;</p>
+<p class="last">The <a class="reference external" href="https://docs.python.org/3/library/time.html#epoch">Python docs section on time</a> define the epoch as “the point where the time starts, and is platform dependent. For Unix, the epoch is January 1, 1970, 00:00:00 (UTC). To find out what the epoch is on a given platform, look at <code class="docutils literal notranslate"><span class="pre">time.gmtime(0)</span></code>.”</p>
 </div>
 <p id="index-2">The <code class="docutils literal notranslate"><span class="pre">break</span></code> command forces the nearest enclosing loop to terminate. In this case, it allows us to exit the <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> infinite loop when one of the players has earned enough points to win the game.</p>
 </div>
 <div class="section" id="adapt-the-code">
-<h2>5.3. Adapt the Code<a class="headerlink" href="#adapt-the-code" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>5.3. Adapt the Code<a class="headerlink" href="#adapt-the-code" title="Permalink to this headline">¶</a></h2>
 <p>Try the following with a partner (the person you were playing the game with):</p>
 <ul class="simple">
 <li>change the game so that you need only 3 points to win the game</li>
 <li>change the game so that a click at the wrong time makes you only lose 1 point instead of 2</li>
 </ul>
 <div class="section" id="extra-for-experts">
-<h3>5.3.1. Extra for Experts<a class="headerlink" href="#extra-for-experts" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>5.3.1. Extra for Experts<a class="headerlink" href="#extra-for-experts" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>change the game so that either a HAPPY face or a SKULL can be displayed. If it is a HAPPY face and a user clicks, they should get a point. However, if it is a SKULL and the user clicks, they should lose a point.</li>
 </ul>

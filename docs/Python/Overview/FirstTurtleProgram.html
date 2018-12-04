@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="10. Multiple Turtles and for Loops" href="MultipleTurtlesAndForLoops.html" />
     <link rel="prev" title="8. The while Statement" href="WhileLoopsIntro.html" />
 <meta charset='utf-8'>
@@ -263,7 +263,7 @@
 <div class="container" id="main-content">
   
   <div class="section" id="our-first-turtle-program">
-<h1>9. Our First Turtle Program<a class="headerlink" href="#our-first-turtle-program" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>9. Our First Turtle Program<a class="headerlink" href="#our-first-turtle-program" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Learn how to do basic drawing in Python using the turtle module.</p>
@@ -276,7 +276,7 @@ tell your turtle to do simple commands such as go forward and turn right.  As th
 moves around, if its tail is down touching the ground, it will
 draw a line (leave a trail behind) as it moves.  If you tell your turtle to lift up its tail it can still move around but will not leave a trail.  As you will see, you can make
 some pretty amazing drawings with this simple capability.</p>
-<p>Let's try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name <code class="docutils literal notranslate"><span class="pre">alex</span></code>, but remember that you can choose any name you wish as long as you follow the naming rules from the previous chapter.</p>
+<p>Let’s try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name <code class="docutils literal notranslate"><span class="pre">alex</span></code>, but remember that you can choose any name you wish as long as you follow the naming rules from the previous chapter.</p>
 <p>The program as shown will only draw the first two sides of the rectangle.
 After line 4 you will have a straight line going from the center of the
 drawing canvas towards the right.  After line 6, you will have a canvas with a
@@ -301,12 +301,12 @@ alex.forward(75)            # complete the second side of a rectangle
 <p class="last">Modify the program above by adding the commands necessary to have <em>alex</em> complete the rectangle.</p>
 </div>
 <div class="section" id="understanding-a-turtle-program">
-<h2>9.1. Understanding a Turtle Program<a class="headerlink" href="#understanding-a-turtle-program" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Here are a couple of things you'll need to understand about the turtle program we wrote above.</p>
+<h2>9.1. Understanding a Turtle Program<a class="headerlink" href="#understanding-a-turtle-program" title="Permalink to this headline">¶</a></h2>
+<p>Here are a couple of things you’ll need to understand about the turtle program we wrote above.</p>
 <p>The first line tells Python to load a <strong>module</strong> named <code class="docutils literal notranslate"><span class="pre">turtle</span></code>.  That module
 brings us two new types that we can use: the <code class="docutils literal notranslate"><span class="pre">Turtle</span></code> type, and the
-<code class="docutils literal notranslate"><span class="pre">Screen</span></code> type.  The dot notation <code class="docutils literal notranslate"><span class="pre">turtle.Turtle</span></code> means <em>&quot;The Turtle type
-that is defined within the turtle module&quot;</em>.   (Remember that Python is case
+<code class="docutils literal notranslate"><span class="pre">Screen</span></code> type.  The dot notation <code class="docutils literal notranslate"><span class="pre">turtle.Turtle</span></code> means <em>“The Turtle type
+that is defined within the turtle module”</em>.   (Remember that Python is case
 sensitive, so the module name, <code class="docutils literal notranslate"><span class="pre">turtle</span></code>, with a lowercase <cite>t</cite>, is different from the type
 <code class="docutils literal notranslate"><span class="pre">Turtle</span></code> because of the uppercase <cite>T</cite>.)</p>
 <p>We then create and open what the turtle module calls a screen (we would
@@ -316,7 +316,7 @@ contains a <strong>canvas</strong>, which is the area inside the window on which
 <p>In line 3 we create a turtle. The variable <code class="docutils literal notranslate"><span class="pre">alex</span></code> is made to refer to this
 turtle.   These first three lines set us up so that we are ready to do some drawing.</p>
 <p>In lines 4-6, we instruct the <strong>object</strong> <code class="docutils literal notranslate"><span class="pre">alex</span></code> to move and to turn. We do this
-by <strong>invoking</strong> or activating alex's <strong>methods</strong> --- these are the
+by <strong>invoking</strong> or activating alex’s <strong>methods</strong> — these are the
 instructions that all turtles know how to respond to.  Here the dot indicates that
 the methods invoked belong to and refer to the object <code class="docutils literal notranslate"><span class="pre">alex</span></code>.</p>
 <p><strong>Check your understanding</strong></p>
@@ -336,7 +336,7 @@ the methods invoked belong to and refer to the object <code class="docutils lite
             </ul>
             </div>
             <div class="section" id="mixed-up-programs">
-<h3>9.1.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>9.1.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Permalink to this headline">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="turtle_intro_parsons_1"      >
@@ -380,7 +380,7 @@ jamal.forward(75)
     </div>
 </div>
 <div class="section" id="turtle-methods">
-<h2>9.2. Turtle Methods<a class="headerlink" href="#turtle-methods" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>9.2. Turtle Methods<a class="headerlink" href="#turtle-methods" title="Permalink to this headline">¶</a></h2>
 <p>An object can have various methods (things it can do), and it can also
 have <strong>attributes</strong> (sometimes called <em>properties</em>).  For example, each
 turtle has a <em>color</em> attribute.  The method invocation  <code class="docutils literal notranslate"><span class="pre">alex.color(&quot;red&quot;)</span></code>
@@ -422,7 +422,7 @@ exit (stop execution of) the Python program.</p>
 screen until we click on it.</p>
 </div>
 <div class="section" id="check-your-understanding">
-<h2>9.3. Check your understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>9.3. Check your understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="turtle_intro_check_2">
@@ -435,7 +435,7 @@ screen until we click on it.</p>
 <span class="n">alex</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">75</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>What does the line &quot;import turtle&quot; do?</p>
+<p>What does the line “import turtle” do?</p>
 
             <li data-component="answer"  id="turtle_intro_check_2_opt_a">It creates a new turtle object that can be used for drawing.</li><li data-component="feedback" id="turtle_intro_check_2_opt_a">The line &quotalex = turtle.Turtle()&quot is what actually creates the turtle object.</li>
             
@@ -493,7 +493,7 @@ screen until we click on it.</p>
             </div>
             </div>
 <div class="section" id="more-mixed-up-programs">
-<h2>9.4. More Mixed Up Programs!<a class="headerlink" href="#more-mixed-up-programs" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>9.4. More Mixed Up Programs!<a class="headerlink" href="#more-mixed-up-programs" title="Permalink to this headline">¶</a></h2>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="turtle_intro_parsons_4"      >
@@ -538,17 +538,17 @@ wn.exitonclick()
         </div>
     </div>
 <div class="section" id="practice-problems">
-<h2>9.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>9.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
 <p>Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
 <p>You might find the Python Documentation for the turtle module to be helpful: <a class="reference external" href="https://docs.python.org/3/library/turtle.html">https://docs.python.org/3/library/turtle.html</a></p>
 <div class="admonition caution">
-<p class="first admonition-title">Prudence</p>
+<p class="first admonition-title">Caution</p>
 <p class="last">Be sure that you DO NOT save any file as <code class="docutils literal notranslate"><span class="pre">turtle.py</span></code>. If you do, when you call <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code>, Python looks for a file called turtle.py, which means that it will import the turtle.py file you just saved. You will get an error when attempting to create a Screen() or Turtle() object, as these will not actually be defined.</p>
 </div>
 <div class="section" id="color-selection">
-<h3>9.5.1. Color Selection<a class="headerlink" href="#color-selection" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Modify the program given below so that before it creates the window, it prompts the user to enter the desired background color. It should store the user's response in a variable, and modify the color of the window according to the user's wishes. Do similar changes to allow the user to set the turtle bree's color as well.</p>
-<p>(Hint: you can find a list of permitted color names at <a class="reference external" href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a> .  It includes some quite unusual ones, like &quot;PeachPuff&quot; and &quot;HotPink&quot;.)</p>
+<h3>9.5.1. Color Selection<a class="headerlink" href="#color-selection" title="Permalink to this headline">¶</a></h3>
+<p>Modify the program given below so that before it creates the window, it prompts the user to enter the desired background color. It should store the user’s response in a variable, and modify the color of the window according to the user’s wishes. Do similar changes to allow the user to set the turtle bree’s color as well.</p>
+<p>(Hint: you can find a list of permitted color names at <a class="reference external" href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a> .  It includes some quite unusual ones, like “PeachPuff” and “HotPink”.)</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>If you are running your code in Thonny, the order of your instructions matters a lot, since a window will open up in front of the main Thonny window (whereas in the browser, the window is just a canvas on the webpage). You might want to ask the user questions <em>before</em> creating a Screen() to draw on. Although you can use something like <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code> to ask the questions with pop-up windows, there is also a <code class="docutils literal notranslate"><span class="pre">screen.textinput(&quot;Window</span> <span class="pre">name&quot;,</span> <span class="pre">&quot;Question</span> <span class="pre">to</span> <span class="pre">ask&quot;)</span></code> function built into the turtle module that will cause a pop-up window to appear. You need to use the name of your turtle.Screen() instance when calling the <code class="docutils literal notranslate"><span class="pre">textinput</span></code> function. For example:</p>
@@ -635,7 +635,7 @@ bree.forward(100)
     </div>
     </div>
 <div class="section" id="drawing-any-size-of-square">
-<h3>9.5.2. Drawing any Size of Square<a class="headerlink" href="#drawing-any-size-of-square" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>9.5.2. Drawing any Size of Square<a class="headerlink" href="#drawing-any-size-of-square" title="Permalink to this headline">¶</a></h3>
 <p>Create a program that uses the turtle module to draw a square. The user should be able to set a number of options each time the code runs, so the program should ask the user for:</p>
 <ul class="simple">
 <li>the width of the turtles pen</li>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="French">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Micro:bit Controlled Turtle Race" href="MicrobitControlledTurtleRace.html" />
     <link rel="prev" title="3. The Accumulator Pattern" href="TheAccumulatorPattern.html" />
 <meta charset='utf-8'>
@@ -257,13 +257,13 @@
 <div class="container" id="main-content">
   
   <div class="section" id="boolean-functions-and-randomly-walking-turtles">
-<h1>4. Boolean Functions and Randomly Walking Turtles<a class="headerlink" href="#boolean-functions-and-randomly-walking-turtles" title="Lien permanent vers ce titre">¶</a></h1>
+<h1>4. Boolean Functions and Randomly Walking Turtles<a class="headerlink" href="#boolean-functions-and-randomly-walking-turtles" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Quick Overview of Day</p>
 <p>Introduce the idea of Boolean functions (which return either True or False). Demonstrate two Boolean functions relating to turtle graphics.</p>
 </div>
 <div class="section" id="boolean-functions">
-<span id="index-0"></span><h2>4.1. Boolean Functions<a class="headerlink" href="#boolean-functions" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="index-0"></span><h2>4.1. Boolean Functions<a class="headerlink" href="#boolean-functions" title="Permalink to this headline">¶</a></h2>
 <p>We have already seen that boolean values result from the evaluation of boolean expressions.  Since the result of any expression evaluation can be returned by a function (using the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement), functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
 
 <div data-childcomponent="boolean_functions_1" class="runestone explainer ac_section alert alert-warning">
@@ -373,7 +373,7 @@ $(window).resize(function() {
 </script>
 </div>
 <div class="section" id="check-your-understanding">
-<h3>4.1.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>4.1.1. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h3>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="boolean_function_check_1">
@@ -405,20 +405,20 @@ $(window).resize(function() {
             </div>
 </div>
 <div class="section" id="randomly-walking-turtles">
-<h2>4.2. Randomly Walking Turtles<a class="headerlink" href="#randomly-walking-turtles" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>4.2. Randomly Walking Turtles<a class="headerlink" href="#randomly-walking-turtles" title="Permalink to this headline">¶</a></h2>
 <p>Suppose we want to entertain ourselves by watching a turtle wander around
 randomly inside the screen.  When we run the program we want the turtle and
 program to behave in the following way:</p>
 <ol class="arabic simple">
 <li>The turtle begins in the center of the screen.</li>
-<li>Flip a coin. If it's heads then turn to the left 90 degrees. If it's tails
+<li>Flip a coin. If it’s heads then turn to the left 90 degrees. If it’s tails
 then turn to the right 90 degrees.</li>
 <li>Take 50 steps forward.</li>
 <li>If the turtle has moved outside the screen then stop, otherwise go back to
 step 2 and repeat.</li>
 </ol>
 <p>Notice that we cannot predict how many times the turtle will need to flip the
-coin before it wanders out of the screen, so we can't use a for loop in this
+coin before it wanders out of the screen, so we can’t use a for loop in this
 case. In fact, although very unlikely, this program might never end;
 that is why we call this indefinite iteration.</p>
 <p>So based on the problem description above, we can outline a program as follows:</p>
@@ -438,7 +438,7 @@ about whether or not the turtle is still in the screen.  But this is the nice
 thing about programming, we can delay the tough stuff and get <em>something</em> in
 our program working right away.  The way we are going to do this is to
 delegate the work of deciding whether the turtle is still in the screen or
-not to a boolean function.  Let's call this boolean function <code class="docutils literal notranslate"><span class="pre">is_in_screen</span></code> We
+not to a boolean function.  Let’s call this boolean function <code class="docutils literal notranslate"><span class="pre">is_in_screen</span></code> We
 can write a very simple version of this boolean function by having
 it always return <code class="docutils literal notranslate"><span class="pre">True</span></code>, or by having it decide randomly.
 The point is to have it do something simple so that we can focus on the parts
@@ -477,7 +477,7 @@ canvas.exitonclick()
 </div>
 <p>Now we have a working program that draws a random walk of our turtle, with the obvious problem that the turtle will never stop moving.  We are in a good position,
 because a large part of our program is working and we can focus on the next
-bit of work -- deciding whether the turtle is inside the screen boundaries or
+bit of work – deciding whether the turtle is inside the screen boundaries or
 not.</p>
 <p>We can find out the width and the height of the screen using the
 <code class="docutils literal notranslate"><span class="pre">window_width</span></code> and <code class="docutils literal notranslate"><span class="pre">window_height</span></code> methods of the screen object.
@@ -573,8 +573,8 @@ with confidence the next time you need it.  Breaking up this
 program into a couple of parts is an example of <strong>functional decomposition</strong> (in which a problem is broken down into smaller parts, in order to make solving each part of the problem easier).</p>
 </div>
 <div class="section" id="detecting-if-turtles-are-touching">
-<h2>4.3. Detecting If Turtles are Touching<a class="headerlink" href="#detecting-if-turtles-are-touching" title="Lien permanent vers ce titre">¶</a></h2>
-<p>When trying to create a visualization with turtles, it can be helpful to be able to ask if two turtles are &quot;touching&quot; each other. One fairly simple way to test this is to create a boolean function that determines if the turtles are within some distance of each other. To do this, we will use the distance equation that you have likely learned in math class.</p>
+<h2>4.3. Detecting If Turtles are Touching<a class="headerlink" href="#detecting-if-turtles-are-touching" title="Permalink to this headline">¶</a></h2>
+<p>When trying to create a visualization with turtles, it can be helpful to be able to ask if two turtles are “touching” each other. One fairly simple way to test this is to create a boolean function that determines if the turtles are within some distance of each other. To do this, we will use the distance equation that you have likely learned in math class.</p>
 <p>Assume that we want to find the distance between the two turtles (represented by circles) below. The turtle locations are (x1, y1) and (x2, y2), respectively.</p>
 <img alt="../../_images/turtle_distance.png" src="../../_images/turtle_distance.png" />
 <p>In order to calculate the distance between these two points, we construct a right triangle, then calculate the distance between the two turtles as the hypotenuse of that triangle.</p>
@@ -594,7 +594,7 @@ program into a couple of parts is an example of <strong>functional decomposition
         <span class="k">return</span> <span class="bp">False</span>
 </pre></div>
 </div>
-<p>To make sure that this function is working the way we want it to, we can create a simple testing program. In this program, we will have two turtles start on opposite sides of the screen, face each other, then continue to move towards each other until they are &quot;close enough&quot; to be touching.</p>
+<p>To make sure that this function is working the way we want it to, we can create a simple testing program. In this program, we will have two turtles start on opposite sides of the screen, face each other, then continue to move towards each other until they are “close enough” to be touching.</p>
 
 <div data-childcomponent="distance_formula_testing_program" class="runestone explainer ac_section alert alert-warning">
 
@@ -642,7 +642,7 @@ while not turtles_are_touching(charlie, musawer, 20):
 print("That's close enough!")
 </textarea>
 </div>
-<p>Experiment with the program above by changing the &quot;close enough&quot; argument being passed into the <code class="docutils literal notranslate"><span class="pre">turtles_are_touching</span></code> function.</p>
+<p>Experiment with the program above by changing the “close enough” argument being passed into the <code class="docutils literal notranslate"><span class="pre">turtles_are_touching</span></code> function.</p>
 </div>
 </div>
 
