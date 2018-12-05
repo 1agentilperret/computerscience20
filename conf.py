@@ -102,7 +102,7 @@ html_theme = 'sphinx_bootstrap'
 #html_theme_options = {'nosidebar': 'true'}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Computer Science 20 - Saskatchewan",
+    'navbar_title': "Informatique 20 - Saskatchewan",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "CS20",

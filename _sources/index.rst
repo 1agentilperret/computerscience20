@@ -14,11 +14,12 @@ Preface
 Scratch  
 :::::::::::
 
+|Scratch|
+
 .. toctree::
    :maxdepth: 1
    :numbered:
 
-   |Scratch|
    VisualProgrammingEnv/FirstProgram.rst
    VisualProgrammingEnv/CharacterControl.rst
    VisualProgrammingEnv/ExperimentWithRepeat.rst
@@ -33,8 +34,10 @@ Scratch
    VisualProgrammingEnv/StudentDirectedProject.rst
 
 
-|Reeborg|
+Reeborg
 ::::::::::
+
+|Reeborg|
 
 .. toctree::
    :maxdepth: 1
@@ -224,8 +227,8 @@ Appendices
 
 .. |Scratch| raw:: html
 
-   <a href="https://scratch.mit.edu/" target="_blank";">Ouvrir Scratch Dans Un Nouvel Onglet</a>
+   <a href="https://scratch.mit.edu/" target="_blank" style="color:purple;">Ouvrir Scratch dans un nouvel onglet</a>
 
 .. |Reeborg| raw:: html
 
-   <a href="https://reeborg.cs20.ca" target="_blank" style="color:black;">Reeborg</a>
+   <a href="https://reeborg.cs20.ca" target="_blank" style="color:purple;">Ouvrir l'environnement Reeborg dans un nouvel onglet</a>

@@ -3,11 +3,13 @@
    :start: 1
 
 
-Controlling a Character with WASD (Repetition and Conditionals)
-===============================================================
+Contrôle d'un caractère avec les clés “W,A,S,D” (répétition et conditionnalités)
+==================================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
+    Introduire le bloc de **répétition** en faisant rétrécir (*faire plus petit*) un sprite avant de disparaître. Faites la démonstration d'une programmation simple basée sur les événements en déplaçant un sprite avec WASD en utilisant le bloc **"Quand "touche" est cliqué pressé"** (*when key is pressed*). Utilisez le bloc **"répéter indéfiniment"** (*forever*), combiné avec le bloc **"si-alors"** (*if-then*) pour améliorer le mouvement du sprite.
+    
     Introduce the **repeat** block by having a sprite shrink before disappearing. Demonstrate simple event-driven programming by moving a sprite with WASD using the **when key pressed** block. Use the **forever** block, combined with the **if-then** block to improve the motion of the sprite.
 
 
