@@ -3,22 +3,21 @@
    :start: 1
 
 
-Chase the Mouse and Drawing Polygons (Repeat and If/Else)
-===========================================================
+Suivre la souris et dessiner des polygones (répéter et si/alors (*if-else*))
+===============================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Use a **forever** block combined with an **if/else** block to make a character follow the mouse, then make a sound when it reaches the mouse cursor. Introduce the pen in Scratch, and use it to draw regular polygons with the **repeat** block.
-
+    Utilisez un bloc **Répéter indéfiniment** associé à un bloc **si/sinon** pour faire  un personnage suivre la souris, puis faire un son quand il atteint le curseur de la souris. Présenter le stylo dans Scratch et l'utilisez pour dessiner des polygones réguliers avec le bloc de **répétition**.
 
 .. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+    :showtitle: Résultats du programme d'études traités dans cette section.
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-FP2** Investigate how control structures affect program flow.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme. 
 
 
-If you'd prefer to watch a video, `the following video <https://www.youtube.com/watch?v=AJ1elMM7CwY>`_ demonstrates the same ideas I've described in text below.
+Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watch?v=AJ1elMM7CwY>`_ suivante montre les mêmes idées que celles que j'ai décrites dans le texte ci-dessous.
 
 .. youtube:: AJ1elMM7CwY
     :height: 315
@@ -26,98 +25,97 @@ If you'd prefer to watch a video, `the following video <https://www.youtube.com/
     :align: left
     :http: https
 
-Character Following the Mouse
------------------------------
+Personnage qui suit la souris
+------------------------------
 
-Let's make a program that has a cat following the mouse cursor around the stage, then meowing when it touches the mouse cursor. To start, hook up a **forever** block to a **when key is pressed** event block. Now put a **point towards mouse-pointer** block inside the forever block. Your program should look like this:
+Faisons un programme qui a un chat qui suit le curseur de la souris autour de la scène, qui miaule quand il touche le curseur de la souris. Pour commencer, connectez un bloc bloc **"répéter indéfiniment"** à un bloc **"Quand "touche" est cliqué pressé"** sous l'onglet événements. Maintenant, mettez un bloc **"s'orienter vers (pointeur de souris)"** (*point to mouse-pointer*) l'intérieur du bloc de répétition. Votre programme devrait ressembler à ceci:
 
 .. image:: images/scratch_point_to_mouse.png
 
-When you press the space key, you should see the cat continue to turn and face the direction of the mouse cursor. To make the cat move, connect a **move 10 steps** block as the last part of the forever block, as follows:
+Lorsque vous appuyez sur la touche espace, vous devriez voir le chat continuer à tourner et faire face à la direction du curseur de la souris. Pour faire bouger le chat, connectez un bloc de **"avancer de 10"** à la dernière partie du bloc de répétition, comme suit: 
 
 .. image:: images/scratch_cat_chasing_mouse.png
 
-When you press the space key now, the cat should be following your mouse cursor around the screen. There is an obvious problem, however, when the cat actually *catches* the mouse. The cat overshoots the mouse, gets to the other side of it, turns around, then does the same thing all over again. Let's fix this situation by having the cat stop moving when it gets close to the mouse, and make a meowing sound instead.
-
-We learned in the previous lesson that anytime you want to ask the computer a question, you can do it using an **if-then** block. Although we could use an **if-then** block to ask whether the cat is close to the mouse, in this situation we want to do one thing if the cat is far away, and a different thing when the cat is close. For situations like this, we can use a **if/else** block. The question we want to ask the computer is whether or not the cat is currently touching the mouse pointer. If it is, we want to have the cat make a meow sound. If it isn't, the cat should move closer to the mouse. To do this in Scratch, hook up an **if/else** block inside your forever block as follows:
+Lorsque vous appuyez sur la touche espace maintenant, le chat devrait suivre le curseur de votre souris sur l'écran. Il y a un problème évident, cependant, quand le chat **attrape** réellement la souris. Le chat dépasse la souris, passe de l'autre côté, se retourne, fait la même chose encore une fois. Corrigeons cette situation en demandant au chat d'arrêter de bouger quand il se rapproche de la souris, et de faire un miaulement à la place. 
+ 
+Nous avons appris dans la leçon précédente que chaque fois que vous voulez poser une question à l'ordinateur, vous pouvez le faire en utilisant un bloc **si-alors**. Bien que nous puissions utiliser un bloc **si-alors** pour demander si le chat est proche de la souris, dans cette situation nous voulons faire quelque chose si le chat est loin, et une chose différente quand le chat est proche. Pour des situations comme celle-ci, nous pouvons utiliser un bloc **si/sinon**. La question que nous voulons poser à l'ordinateur est de savoir si le chat touche ou non le pointeur de la souris. Si c'est le cas, nous voulons que le chat fasse un miaulement. Si ce n'est pas le cas, le chat devrait se rapprocher de la souris. Pour faire cela dans Scratch, connectez un bloc **si/sinon** à l'intérieur de votre bloc **répéter indéfiniment** comme l'exemple suivant:
 
 .. image:: images/scratch_if_else.png
 
-.. note:: Notice that when the cat touches the mouse cursor, the entire script pauses and waits until the sound has finished playing. If this isn't the behaviour you want, you can use the **play sound** block instead of the **play sound until done** block.
+.. note:: Notez que lorsque le chat touche le curseur de la souris, le script entier s'arrête et attend que le son soit fini. Si ce n'est pas le comportement que vous souhaitez, vous pouvez utiliser le bloc **jouer le son** au lieu bloc **jouer le son jusqu'au bout**.
 
-
-Check Your Understanding
+Vérifie ta compréhension 
 --------------------------
 
 .. fillintheblank:: scratch_sound_check_1
 
-    Given the code below, how many times would you hear a meow sound when you click the green flag?
+    Compte tenu du code ci-dessous, combien de fois entendrez-vous un miaulement quand vous cliquez sur le drapeau vert?
 
     .. image:: images/scratch_play_sound_check_1.png
 
-    - :1: Yes! Scratch will start playing each sound, then move on to the next block BEFORE the sound has completed. This means that although each sound did start, only the last block completely played, so it will sound as though only one sound block occurred.
-      :5: No. Even though the play sound block is there 5 times, Scratch will start playing each sound, then move on to the next block BEFORE the sound has completed.
-      :.*: Try again!
+    - :1: Oui! On entendrait le miaulement 1 fois. Scratch commencera à jouer chaque son, puis passera au bloc suivant AVANT que le son soit terminé. Cela signifie que bien que chaque son ait démarré, seul le dernier bloc a été joué complètement, de sorte que le son est émis comme si un seul bloc sonore s'était produit. 
+      :5: Non. Même si le bloc de lecture est présent 5 fois, Scratch commence à jouer chaque son, puis passe au bloc suivant AVANT que le son soit terminé.
+      :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_sound_check_2
 
-    Given the code below, how many times would you hear a meow sound when you click the green flag?
+    Compte tenu du code ci-dessous, combien de fois entendrez-vous un miaulement quand vous cliquez sur le drapeau vert?
 
     .. image:: images/scratch_sound_check_2.png
 
-    - :5: Yes! Because we are using the play sound until done block, Scratch will finish playing each sound before moving on to the next block.
-      :1: No. Because we are using the play sound until done block, Scratch will finish playing each sound before moving on to the next block.
-      :.*: Try again!
+    - :5: Oui! On entendrait le miaulement 5 fois parce que nous utilisons le bloc jouer le son jusqu'au bout, Scratch finira de jouer chaque son avant de passer au bloc suivant.
+      :1: Non. Parce que nous utilisons le son joué jusqu'à la fin du bloc, Scratch termine la lecture de chaque son avant de passer au bloc suivant.
+      :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_sound_check_3
 
-    Given the code below, how many times would you hear a meow sound when you click the green flag?
+    Compte tenu du code ci-dessous, combien de fois entendrez-vous un miaulement quand vous cliquez sur le drapeau vert? 
 
     .. image:: images/scratch_sound_check_3.png
 
-    - :2: Yes! The first sound you will hear completely is the play sound until done block. The second sound you will hear is the final play sound block.
-      :1: No. The first sound you will hear completely is the play sound until done block. The second sound you will hear is the final play sound block.
-      :3: No. The first sound you will hear completely is the play sound until done block. The second sound you will hear is the final play sound block.
-      :.*: Try again!
+    - :2: Oui! On entendrait le miaulement 2 fois. Le premier son que vous entendrez complètement est le son du bloc jouer le son jusqu'au bout. Le deuxième son que vous entendrez est le dernier bloc jouer le son. 
+      :1: Non. Le premier son que vous entendez complètement est le son de la lecture tant que vous n’avez pas terminé. Le deuxième son que vous entendrez est le bloc de son final.
+      :3: Non. Le premier son que vous entendez complètement est le son de la lecture tant que vous n’avez pas terminé. Le deuxième son que vous entendrez est le bloc de son final.
+      :.*: Réessayer!
 
 
-Drawing Regular Polygons
-------------------------
+Dessiner des polygones réguliers
+---------------------------------
 
 .. note::
 
-	To allow your Scratch character to access the Pen tab, you may need to click on the "Add Extensions" button (on the bottom left of the screen), then click on the Pen button.
-
+	Pour permettre à votre personnage de Scratch d'accéder à l'onglet Stylo, vous devrez peut-être cliquer sur le bouton "Ajouter des extensions" (en bas à gauche de l'écran) avant de cliquer sur le bouton Stylo.
+    
   .. image:: images/scratch_add_extension.png
 
 
-Every sprite in Scratch has the ability to draw with a virtual pen that they are holding at all times. This allows each sprite to leave a trail that shows where they have walked. In order to do this, you need to use the **pen down** block from the Pen tab, then have your sprite move. Explore this by trying the following:
+Chaque sprite dans Scratch a la capacité de dessiner avec un stylo virtuel qu'ils tiennent en tout temps. Cela permet à chaque sprite de laisser une trace qui indique où ils ont marché. Pour ce faire, vous devez utiliser le bloc **stylo en position d'écriture** (*pen down*) de l'onglet Sytlo, puis faire bouger votre sprite. Explorez ceci en essayant ce qui suit: 
 
 .. image:: images/scratch_pen_down.png
 
-To remove the path you have drawn, double click on the **clear** block in the Pen tab.
+Pour supprimer la trace que vous avez dessiné, double-cliquez sur le bloc **effacer tout** (*clear*) l'onglet **Stylo**.
 
-.. topic:: Your Turn 1
+.. topic:: À ton tour 1
 
-    Now that you know how to draw on the stage, see if you can draw a square using only the **pen down**, **move __ steps** and **turn __ degrees** blocks.
+    Maintenant que vous savez dessiner sur la scène, voyez si vous pouvez dessiner un carré en utilisant seulement le stylo, utiliser les blocs **avancer de __** et **tourne de __ degrés**
 
-For many students, the first square they draw would be with code that looks like this:
+Pour beaucoup d'élèves, le premier carré qu'ils dessinent serait avec du code qui ressemble à ceci:
 
 .. image:: images/scratch_first_square.png
 
-Although this does create a square, notice that there is code that is repeated multiple times. Any time you notice identical code being repeated, it should trigger a warning bell in your head saying "There's got to be a better way!". Think back to when we made a sprite shrink. We used a **repeat** block. We can improve the drawing a square code above by putting the code that shows up over and over into a **repeat** block, as follows:
+Bien que cela crée un carré, notez qu'il y a du code répété plusieurs fois. Chaque fois que vous remarquez qu'un code identique est répété, cela devrait déclencher une cloche d'avertissement dans votre tête disant "Il doit y avoir une meilleure façon!". Repensez à quand nous avons fait rapetisser un sprite. Nous avons utilisé un **bloc de répétition**. Nous pouvons améliorer le dessin d'un code carré ci-dessus en mettant le code qui apparaît à plusieurs reprises dans un **bloc de répétition**, comme l'exemple suivant: 
 
 .. image:: images/scratch_better_square.png
 
-.. topic:: Your Turn 2
+.. topic:: À ton tour 2
 
-    Adapt the code above to allow you to draw the following regular polygon shapes: triangle (3 sides), pentagon (5 sides), hexagon (6 sides), octagon (8 sides). Set up your project so that pressing the *t* key draws a triangle, *s* draws a square, *p* draws a pentagon, etc.
+    Adaptez le code ci-dessus pour dessiner les polygones réguliers suivants: **triangle** (3 côtés), **pentagone** (5 côtés), **hexagone** (6 côtés), **octogone** (8 côtés). Configurez votre projet de sorte que l'appui sur la touche **t** dessine un **triangle**, **c** dessine un **carré**, **p** dessine un **pentagone**, etc. 
 
     |regularPolygonImages|
 
-    If you complete the regular polygons before the rest of your classmates, try to draw a circle and a five sided star.
+    Si vous complétez les polygones réguliers avant le reste de vos paires, essayez de dessiner un **cercle** et une **étoile à cinq côtés**.
 
     |extraShapes|
 
@@ -125,30 +123,30 @@ Although this does create a square, notice that there is code that is repeated m
 
 .. |extraShapes| image:: images/scratch_extra_shapes.png
 
-Although you may have used a guess and check method to determine the angles used to draw the shapes above, there is a pattern we can use to draw these shapes. Notice the angles that you used in order to draw the shapes:
+Bien que vous avez peut-être utilisé une méthode d'essayer et de vérifier pour déterminer les angles utilisés pour dessiner les formes ci-dessus, il existe un modèle que nous pouvons utiliser pour dessiner ces formes. Notez les angles que vous avez utilisés pour dessiner les formes:
 
 +------------+---------+-------------+
-| Shape      | Sides   | Angle Used  |
+| Forme      | Côté   | Angle Utilisé  |
 +============+=========+=============+
 | triangle   | 3       | 120         |
 +------------+---------+-------------+
-| square     | 4       | 90          |
+| carré      | 4       | 90          |
 +------------+---------+-------------+
-| pentagon   | 5       | 72          |
+| pentagone  | 5       | 72          |
 +------------+---------+-------------+
-| hexagon    | 6       | 60          |
+| hexagone   | 6       | 60          |
 +------------+---------+-------------+
-| octagon    | 8       | 45          |
+| octagone   | 8       | 45          |
 +------------+---------+-------------+
-| polygon    | n       | 360/n       |
+| polygone   | n       | 360/n       |
 +------------+---------+-------------+
 
-.. note:: This lesson draws on ideas from the `Beauty and Joy of Computing Curriculum <http://bjc.edc.org/>`_ .
+.. note:: Cette leçon s'inspire des idées du programme `Beauté et joie de l'informatique <http://bjc.edc.org/>`_ .
 
 
-Practice Problem
-------------------
+Problème de pratique
+---------------------
 
-Work on your first Scratch assignment, for any remaining time.
+Travaillez sur votre premier projet Scratch, pour tout le temps qui reste.
 
-.. note:: If your teacher did not assign you a project, you may want to consider making a short story to practice your Scratch skills. Be sure to utilize broadcasts, repeat blocks, and if-then blocks.
+.. note:: Si votre enseignant ne vous a pas assigné un projet, vous pouvez envisager de faire une courte histoire pour pratiquer vos compétences Scratch. Assurez-vous d'utiliser les **diffusions**, les blocs de **répétition** et les blocs **si-alors**. 
