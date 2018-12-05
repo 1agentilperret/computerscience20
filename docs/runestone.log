@@ -29554,3 +29554,21 @@ Aborted!
 127.0.0.1 - - [04/Dec/2018 21:03:57] "GET /_static/documentation_options.js HTTP/1.1" 200 -
 
 Aborted!
+127.0.0.1 - - [04/Dec/2018 21:13:41] "GET /About/ForStudents.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:41] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:41] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:41] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:41] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:44] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:44] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:44] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:44] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:44] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /VisualProgrammingEnv/FirstProgram.html HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2018 21:13:48] "GET /_images/scratch_goTo_andGlide.png HTTP/1.1" 200 -
+
+Aborted!

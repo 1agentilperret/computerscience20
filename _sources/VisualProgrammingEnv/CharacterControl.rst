@@ -9,18 +9,16 @@ Contrôle d'un caractère avec les clés “W,A,S,D” (répétition et conditio
 .. topic:: Aperçu rapide de la journée
 
     Introduire le bloc de **répétition** en faisant rétrécir (*faire plus petit*) un sprite avant de disparaître. Faites la démonstration d'une programmation simple basée sur les événements en déplaçant un sprite avec WASD en utilisant le bloc **"Quand "touche" est cliqué pressé"** (*when key is pressed*). Utilisez le bloc **"répéter indéfiniment"** (*forever*), combiné avec le bloc **"si-alors"** (*if-then*) pour améliorer le mouvement du sprite.
-    
-    Introduce the **repeat** block by having a sprite shrink before disappearing. Demonstrate simple event-driven programming by moving a sprite with WASD using the **when key pressed** block. Use the **forever** block, combined with the **if-then** block to improve the motion of the sprite.
 
 
 .. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+    :showtitle: Résultats du programme d'études traités dans cette section.
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-FP2** Investigate how control structures affect program flow.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
 
 
-If you'd prefer to watch a video, `the following video <https://www.youtube.com/watch?v=cvGC6Sr6rvU>`_ demonstrates the same ideas I've described in text below.
+Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watch?v=cvGC6Sr6rvU>`_ suivante montre les mêmes idées que celles que j'ai décrites dans le texte ci-dessous.
 
 .. youtube:: cvGC6Sr6rvU
     :height: 315
@@ -29,98 +27,98 @@ If you'd prefer to watch a video, `the following video <https://www.youtube.com/
     :http: https
 
 
-Changing the Size of a Character
----------------------------------
+Changer la taille d'un personnage
+----------------------------------
 
-To begin today, we are going to adapt the example created yesterday. To open projects you have made previously, log into `Scratch <https://scratch.mit.edu>`_ and look for the "My Stuff" folder icon on the top right hand side of the page.
+Pour commencer aujourd'hui, nous allons modifier l'exemple créé hier. Pour ouvrir les projets que vous avez déjà réalisés, connectez-vous à `Scratch <https://scratch.mit.edu>`_ et cherchez l'icône du dossier "Mes projets" ou "*My Stuff*" en haut à droite de la page.
 
 .. image:: images/scratch_my_stuff.png
 
-If we want to have a sprite appear larger or smaller than the default size, we can use the **change size by 10** block, which you can find in the **Looks** tab.
+Si nous souhaitons que l'image d'un sprite sois plus grande ou plus petite que la taille par défaut, nous pouvons utiliser le bloc "**ajouter 10 à la taille**", vous pouvez le trouver dans l'onglet **Apparence** ou *looks*.
 
 .. image:: images/scratch_change_size_block.png
 
-Drag the block shown above onto the scripts area, and double click it. You should see the current sprite get a bit larger. Experiment by changing the number 10 to different values. *Be sure to try both positive and negative values!*
+Faites glisser le bloc ci-dessus dans la zone des scripts et double-cliquez dessus. Vous devriez voir le sprite sélectionné devenir un peu plus grand. Expérimentez en changeant le nombre 10 à différentes valeurs. **Assurez-vous d'essayer les valeurs positives et négatives!**
 
 .. index:: repeat
 
-Repetition
+Répétition
 -------------------------------
 
-We would like to adapt our previous project to have the characters shrink before they disappear. In order to accomplish this, we need to use the **change size by #** block multiple times. One way to do this would be to put a large number of blocks one after another, like this:
+Nous aimerions modifier notre projet précédent pour que les caractères rétrécissent avant qu'ils ne disparaissent. Pour ce faire, nous devons utiliser le bloc **"ajouter # à la taille"** plusieurs fois. Une façon de le faire serait de mettre plusieurs blocs les uns après les autres, comme ceci:
 
 .. image:: images/scratch_change_size_many_times.png
 
-Although this begins to do what we want, to have this shrink our character completely, we would need to have 50 of these blocks. There must be a better way.
+Bien que cela fait plus ou moins ce que nous voulons, pour que cela rétrécit complètement notre personnage, nous devrions avoir 50 de ces blocs. Il doit y avoir une meilleure façon de faire cela.
 
-As it turns out, one thing that computers are really good at is repeating commands over and over again. Rather than duplicating the exact same command over and over, we can enclose the command inside a **repeat** block, and just tell the computer how many times it should repeat the command. You can find the repeat block under the **Control** tab.
+En fin de compte, une chose que les ordinateurs peuvent bien faire c'est de répéter des commandes. Plutôt que de dupliquer la même commande plusieurs fois, nous pouvons placer la commande dans un bloc de **répétition** et indiquer à l'ordinateur combien de fois il doit répéter la commande. Vous pouvez trouver le bloc de répétition sous l'onglet **Contrôle**.
 
 .. image:: images/scratch_repeat_block.png
 
-To make a character shrink, we simply change it's size by some negative amount. If we were to change the size of the character by -50, however, the character would make a sudden jump from being quite large to being half as large as before. Using the repeat block with a smaller number in the change size block allows us to make the shrinking process appear much smoother. Adapt the previous code to make it look like the following (note that the changes are circled in red):
+Pour faire rétrécir un personnage, nous changeons simplement sa taille d'un montant négatif. Cependant, si nous devions modifier la taille du personnage de -50, le personnage deviendrait soudainement la moitié de sa grandeur originale. L'utilisation du bloc de répétition avec un plus petit nombre dans le bloc de taille de changement nous permet de rendre le processus de rétrécissement beaucoup plus lisse. Adaptez le code précédent pour qu'il ressemble à ce qui suit (notez que les changements sont encerclés): 
 
 .. image:: images/scratch_shrinking_characters.png
 
 
 
-Movement Using WASD - Version 1
+Mouvement utilisant WASD - Version 1
 ------------------------------------------
 
-If we want to control the motion of a sprite on the screen, one way we can do it is using the classic WASD controls on a keyboard, where
+Si nous voulons contrôler le mouvement d'un sprite sur l'écran, une façon de le faire est d'utiliser les commandes WASD classiques sur un clavier, où 
 
-- **w** moves the character **up**
-- **a** moves the character **left**
-- **s** moves the character **down**
-- **d** moves the character **right**
+- **w** déplace le personnage vers le **haut**
+- **a** déplace le personnage vers la **gauche**
+- **s** déplace le personnage vers le **bas**
+- **d** déplace le personnage vers la **droite**
 
-Under the **Events** tab, there's a **when key pressed** block. We can use this to have a sprite react to keyboard input. 
+Sous l'onglet **Événements**, il y a une touche **"lorsque la touche est pressé"** ou *when key pressed*. Nous pouvons l'utiliser pour faire réagir un sprite à l'entrée du clavier. 
 
 .. image:: images/scratch_key_pressed_block.png
 
-In order to control the motion of a sprite, we need to recall the coordinate system that Scratch uses. Remember that the coordinate plane in Scratch is set up in the same way as the coordinate plane you are used to in math class, as shown in the image below.
+Afin de contrôler le mouvement d'un sprite, nous devons se rappeler du système de coordonnées utilisé par Scratch. Rappelez-vous que le plan de coordonnées dans Scratch est configuré de la même manière que le plan de coordonnées que vous êtes habitué en mathématique, comme indiqué dans l'image ci-dessous.
 
 .. image:: images/scratch_coordinate_plane.png
 
-In order for a sprite to move up on the screen, we need to increase the y value of coordinate. To move it down, we need to decrease the y value. To move right, we would increase the x value. Finally, to move left, we would decrease the x value. To make this happen, we can use the **change x by** and **change y by** blocks found in the **Motion** tab. To move in the correct direction, we just need to put in positive/negative *change by* values for x and y, depending on which direction we want the sprite to move. Recreate the following:
+Pour qu'un sprite puisse se monter sur l'écran, nous devons augmenter la valeur y de la coordonnée. Pour le descendre, nous devons diminuer la valeur y. Pour avancer, nous augmenterions la valeur x. Finalement, pour aller à gauche, nous diminuerions la valeur x. Pour que cela se produise, nous pouvons utiliser le bloc **"ajouter # à x"** (*change x by*) et **"ajouter # à y"** (*change y by*) trouvés dans l'onglet **Mouvement** (*Motion*). Pour se déplacer dans la bonne direction, il suffit de changer la valeur de x et y par une valeur positif/négatif selon la direction dans laquelle nous voulons que le sprite se déplace. Recréez les éléments suivants:
 
 .. image:: images/scratch_wasd_basic.png
 
-Take a minute to experiment with this first attempt at WASD motion. You will quickly notice that there are a few issues with the way the motion is happening. The most obvious problem is that the motion is quite jittery. To see this, hold down one of the WASD keys. The sprite begins to move, hesitates for a moment, then continues to move. 
-
-The hesitation in the sprite movement happens because the operating system on your computer has a built in delay  before it accepts multiples of the same character being sent from your keyboard. This is a very important feature of the operating system, and is not something we can (or would want to) override. If the delay did not exist, when you were typing anything on your computer, you would need to be incredibly careful about how long you held down each key, or multiple copies of the current letter would show up. 
-
-If we cannot override this feature of your operating system, how can we improve the WASD movement that we created above? The answer is to use some new blocks that allow us to repeatedly ask the computer whether a particular key is pressed, as described below.
+Prenez une minute pour expérimenter avec cette première tentative de mouvement WASD. Vous remarquerez rapidement qu'il y a quelques problèmes avec la façon dont le mouvement du sprite se produit. Le problème le plus évident est que la motion est assez agité. Pour voir cela, pressez l'une des touches WASD sans le relâcher. Le sprite commence à se déplacer, hésite un instant, puis continue. 
+ 
+L'hésitation dans le mouvement des sprites se produit parce que le système d'exploitation de votre ordinateur a un délai intégré avant d'accepter des multiples du même caractère envoyé à partir de votre clavier. C'est une caractéristique très importante du système d'exploitation, et ce n'est pas quelque chose que nous pouvons (ou voudrions) annuler. Si le délai n'existait pas, lorsque vous tapiez quoi que ce soit sur votre ordinateur, vous devez faire extrêmement attention à la durée de chaque touche sinon plusieurs copies de la lettre en cours apparaitrait à l'écran. 
+ 
+Si nous ne pouvons pas remplacer cette fonctionnalité de votre système d'exploitation, comment pouvons-nous améliorer le mouvement WASD que nous avons créé ci-dessus? La réponse est d'utiliser de nouveaux blocs qui nous permettent de continuellement demander à l'ordinateur si une touche particulière est pressée, comme décrit ci-dessous.
 
 .. index:: if
 
-Movement Using WASD - Version 2
+Mouvement utilisant WASD - Version 2
 ------------------------------------------
 
-When we made a character shrink in the code above, we used a **repeat 50** block to have the computer do a particular instruction (change size) multiple times. Another block that allows us to repeat something multiple times is the forever block:
+Pour rapetisser un personnage dans le code ci-dessus, nous avons utilisé un bloc de **répétition 50** pour que l'ordinateur fasse une instruction particulière (changer la taille) plusieurs fois. Un autre bloc qui nous permet de répéter quelque chose plusieurs fois est le bloc **répéter indéfiniment** (*repeat forever*): 
 
 .. image:: images/scratch_forever_block.png
 
-As you have guessed, anything inside the forever block will continue to be repeated over and over, until the program ends (or you tell the computer to stop the loop). In this case, the thing that we want to have repeated over and over is asking the computer whether a specific key is currently being pressed. 
+Comme vous l'avez deviné, tout ce qui se trouve dans le bloc répéter indéfiniment continuera à être répété sans cesse, jusqu'à ce que le programme se termine (ou que vous dites à l'ordinateur d'arrêter la boucle). Dans ce cas, la chose que nous voulons répéter est de demander à l'ordinateur si une touche spécifique est en cours de pressage. 
 
-Whenever we want to ask the computer a question, we use an **if-then** block:
+Lorsque nous voulons poser une question à l'ordinateur, nous utilisons un bloc **si-alors** (*if-then*): 
 
 .. image:: images/scratch_if_block.png
 
-The blank inside the if-then block can be filled in by any question that gives a True or False answer. Consider the following question (the question *key space pressed* is from the Sensing tab):
+La case vide à l'intérieur du bloc si-alors peut être rempli par n'importe quelle question qui donne une réponse Vrai ou Faux. Considérez la question suivante (le bloc **"touche "espace" pressé?"** est dans l'onglet **Capteurs** (*sensing tab*)): 
 
 .. image:: images/scratch_if_space_pressed.png
 
-This question will be True if the spacebar is pressed when the question is asked, and False if the spacebar is not pressed when the question is asked. Any code that you put inside the if-then block will only be executed if the question evaluates to True.
-
-If we put a number of these questions inside a forever block, we can ask the questions many times each second. This allows us to create a much smoother version of WASD motion, as shown below.
+Cette question sera vraie si la barre d'espace est pressée lorsque la question est posée, et Faux si la barre d'espace n'est pas pressée lorsque la question est posée. Tout code que vous mettez dans le bloc si-alors ne sera exécuté que si la réponse à la question est vraie. 
+ 
+Si nous mettons plusieurs de ces questions dans un bloc répéter indéfiniment, nous pouvons poser les questions plusieurs fois par seconde. Cela nous permet de créer une version beaucoup plus lisse du mouvement WASD, comme indiqué ci-dessous.
 
 .. image:: images/scratch_better_wasd.png
 
 
-Practice Problem
-------------------
+Problème de pratique
+----------------------
 
-Work on your first Scratch assignment, for any remaining time. 
+Travaillez sur votre premier projet Scratch, pour tout le temps qui reste. 
 
-.. note:: If your teacher did not assign you a project, you may want to consider making a short story to practice your Scratch skills. Be sure to utilize broadcasts, repeat blocks, and if-then blocks.
+.. note:: Si votre enseignant ne vous a pas assigné un projet, vous pouvez envisager de faire une courte histoire pour pratiquer vos compétences Scratch. Assurez-vous d'utiliser les diffusions, les blocs de répétition et les blocs si-alors.
 
