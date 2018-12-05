@@ -11,13 +11,14 @@ Preface
    About/ForTeachers.rst
    About/Acknowledgments.rst
 
-|Scratch|  
+Scratch  
 :::::::::::
 
 .. toctree::
    :maxdepth: 1
    :numbered:
 
+   |Scratch|
    VisualProgrammingEnv/FirstProgram.rst
    VisualProgrammingEnv/CharacterControl.rst
    VisualProgrammingEnv/ExperimentWithRepeat.rst
@@ -223,7 +224,7 @@ Appendices
 
 .. |Scratch| raw:: html
 
-   <a href="https://scratch.mit.edu/" target="_blank" style="color:black;">Scratch</a>
+   <a href="https://scratch.mit.edu/" target="_blank";">Ouvrir Scratch Dans Un Nouvel Onglet</a>
 
 .. |Reeborg| raw:: html
 
