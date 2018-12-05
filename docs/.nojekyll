@@ -1,1 +1,6 @@
+Delete all files and folders but 
 
+.nojekyll
+CNAME
+
+then rebuild with runestone build
