@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>4. Drawing Polygons - Part 2 (Variables and Nested Repeat) &#8212; Computer Science 20 Saskatchewan</title>
+    <title>4. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼ &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="5. Tracing Code and Cannonball Motion (Repeat Until)" href="RepeatUntil.html" />
-    <link rel="prev" title="3. Chase the Mouse and Drawing Polygons (Repeat and If/Else)" href="ExperimentWithRepeat.html" />
+    <link rel="prev" title="3. Suivre la souris et dessiner des polygones (répéter et si/alors (if-else))" href="ExperimentWithRepeat.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">4. Drawing Polygons - Part 2 (Variables and Nested Repeat)</a><ul>
+<li><a class="reference internal" href="#">4. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a><ul>
 <li><a class="reference internal" href="#variables">4.1. Variables</a></li>
-<li><a class="reference internal" href="#nested-repeat-blocks">4.2. Nested Repeat Blocks</a></li>
+<li><a class="reference internal" href="#les-blocs-de-boucles-imbriques">4.2. Les blocs de boucles imbriqués</a></li>
 <li><a class="reference internal" href="#check-your-understanding">4.3. Check Your Understanding</a></li>
 <li><a class="reference internal" href="#practice-problem">4.4. Practice Problem</a></li>
 </ul>
@@ -217,7 +217,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 3. Chase the Mouse and Drawing Polygons (Repeat and If/Else)" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - 3. Suivre la souris et dessiner des polygones (répéter et si/alors (<em>if-else</em>))" data-toggle="tooltip">
     <a href="ExperimentWithRepeat.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -254,62 +254,52 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="drawing-polygons-part-2-variables-and-nested-repeat">
-<h1>4. Drawing Polygons - Part 2 (Variables and Nested Repeat)<a class="headerlink" href="#drawing-polygons-part-2-variables-and-nested-repeat" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="dessiner-des-polygones-partie-2-variables-et-boucles-imbriquee">
+<h1>4. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼<a class="headerlink" href="#dessiner-des-polygones-partie-2-variables-et-boucles-imbriquee" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Use <strong>variables</strong> to improve the polygon drawing from last lesson. Refactor the code from yesterday so a regular polygon with any number of sides can be drawn with the same code. Explore interesting shapes using <strong>nested loops</strong> (a loop inside another loop).</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Utilisez des <strong>variables</strong> pour améliorer le dessin des polygones de la dernière leçon. Refactorisez le code d’hier afin qu’un polygone régulier avec n’importe quel nombre de côtés puisse être dessiné avec le même code. Explorez des formes intéressantes en utilisant des <strong>boucles imbriquées</strong> (“<em>nested loops</em>”) (une boucle à l’intérieur d’une autre boucle).</p>
 </div>
-
-    <div data-component="reveal" id="curriculum_addressed4"   data-showtitle="Curriculum Outcomes Addressed In This Section" data-hidetitle="Hide" >
-    <ul class="simple">
-<li><strong>CS20-CP1</strong> Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.</li>
-<li><strong>CS20-CP2</strong> Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.</li>
-<li><strong>CS20-FP1</strong> Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.</li>
-<li><strong>CS20-FP2</strong> Investigate how control structures affect program flow.</li>
-</ul>
-
-    </div>
-    <p>If you’d prefer to watch a video, <a class="reference external" href="https://www.youtube.com/watch?v=yV9GjD7-dg8">the following video</a> demonstrates the same ideas I’ve described in text below.</p>
+<p>Si vous préférez regarder une vidéo, la <a class="reference external" href="https://www.youtube.com/watch?v=yV9GjD7-dg8">vidéo</a> suivante montre les mêmes idées que celles que j’ai décrites dans le texte ci-dessous.</p>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="yV9GjD7-dg8_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="yV9GjD7-dg8" data-video-divid="yV9GjD7-dg8_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
     <span class="target" id="scratch-variables"></span><div class="section" id="variables">
 <span id="index-0"></span><h2>4.1. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
-<p>When we drew a variety of regular polygons in the last section, we found that there was a pattern we could use, as shown in the image below:</p>
+<p>Lorsque nous avons dessiné une variété de polygones réguliers dans la dernière section, nous avons trouvé qu’il y avait un motif que nous pouvions utiliser, comme le montre l’image ci-dessous:</p>
 <img alt="../_images/scratch_polygon_repeat.png" src="../_images/scratch_polygon_repeat.png" />
-<p>The code above will draw a triangle, and as we discovered previously, if we were to change the two circled 3’s into 4’s, the code would draw a square (4-sided polygon) instead. In this situation, it would be really nice to have some way to easily set the value of both circled numbers to be the same thing. In other words, it would be great to be able to change the value of one to be a 5, and have the other automatically be a 5 as well. If we could do this, we would be able to draw any regular polygon by simply changing one number.</p>
-<p>In order to create code that behaves in the manner described above, we need to introduce the idea of a <strong>variable</strong>. You have learned about variables in math class. In mathematics, they are just a symbol that can hold any number. In computer science, a variable is a container that can hold any number, but can also hold any other type of information (words, lists of numbers, video, sound, etc). In this situation, all we need a variable to hold is a number.</p>
-<p>To create a variable in Scratch, click on the Variables tab, then click Make a Variable. Be sure to use useful names for your variables. For example, <em>Number of Sides</em> would be a useful, descriptive variable name for this example.</p>
+<p>Le code ci-dessus va dessiner un triangle, et comme nous l’avons découvert précédemment, si nous changeons les deux 3 encerclés en 4, le code dessinerait un carré (polygone à 4 côtés) à la place. Dans cette situation, il serait vraiment agréable d’avoir un moyen de définir facilement la valeur des deux nombres encerclés pour être la même chose. En d’autres termes, il serait bon de pouvoir changer la valeur de 1 pour être 5 et l’autre automatiquement 5. Si nous pouvions le faire, nous pourrions dessiner n’importe quel polygone régulier en changeant simplement un nombre.</p>
+<p>Afin de créer un code qui se comporte de la manière décrite ci-dessus, nous devons introduire l’idée d’une <strong>variable</strong>. Vous avez appris sur les variables en classe de mathématiques. En mathématiques, les variables sont juste des symboles qui peuvent contenir n’importe quel nombre. En informatique, une variable est un contenant qui peut contenir n’importe quel nombre, mais peut également contenir tout autre type d’information (mots, listes de nombres, vidéo, son, etc.). Dans cette situation, tout ce dont nous avons besoin d’une variable à retenir est un nombre.</p>
+<p>Pour créer une variable dans Scratch, cliquez sur l’onglet Données, puis sur Créer une variable. Assurez-vous d’utiliser des noms descriptif précis pour vos variables. Par exemple, nombres de côtés serait un nom de variable descriptive utile pour cet exemple.</p>
 <img alt="../_images/scratch_make_a_variable.png" src="../_images/scratch_make_a_variable.png" />
-<p>After creating a variable, you will now see a number of blocks appear in the Data tab. To make use of the variable, simply drag and drop the variable name into the locations you want to use it (in this case, the two circled locations from above).</p>
+<p>Après avoir créé une variable, vous verrez maintenant apparaître des blocs dans l’onglet Données. Pour utiliser la variable, faites simplement glisser le nom de la variable dans les emplacements que vous voulez utiliser (dans ce cas, les deux emplacements entourés ci-dessus).</p>
 <img alt="../_images/scratch_use_variable.gif" src="../_images/scratch_use_variable.gif" />
-<p>If you press the space key, nothing will happen. This is because the default value of the variable you created is 0 (which you can see in the upper left corner of the stage). We need to set the value of the variable to something useful, as shown below:</p>
+<p>Si vous appuyez sur la touche espace, rien ne se passera. C’est parce que la valeur par défaut de la variable que vous avez créée est 0 (que vous pouvez voir dans le coin supérieur gauche de la scène). Nous devons définir la valeur de la variable comme un nombre utile, comme indiqué ci-dessous:</p>
 <img alt="../_images/scratch_set_variable.png" src="../_images/scratch_set_variable.png" />
-<p>Now click the flag, then press the space key. You should see the sprite draw a square. Although we have successfully made our script use variables, it might not yet seem like this is much better than our previous version of the code.</p>
-<p>To demonstrate how using variables really does improve our code, let’s add two more events to our program, as shown below:</p>
+<p>Maintenant, cliquez sur le drapeau, puis appuyez sur la touche espace. Vous devriez voir le lutin dessiner un carré. Bien que nous ayons réussi à faire en sorte que nos scripts utilisent des variables, il semblerait que cela ne soit pas encore beaucoup mieux que notre version précédente du code.</p>
+<p>Pour montrer comment l’utilisation de variables améliore réellement notre code, ajoutons deux autres événements à notre programme, comme indiqué ci-dessous:</p>
 <img alt="../_images/scratch_up_down_variables.png" src="../_images/scratch_up_down_variables.png" />
-<p>Notice that we are using the <strong>change variable by ** block, instead of the **set variable to</strong> block. This allows us to increase or decrease the value of the variable by some amount, regardless of what the value was before. You should now be able to press the space key to draw a polygon, press the up/down arrows a number of times, then press the space key to draw a different polygon.</p>
+<p>Notez que nous utilisons le bloc <strong>“ajouté à (variable) x”</strong>  au lieu de <strong>“mettre la (variable) à x”</strong>. Cela nous permet d’augmenter ou de diminuer la valeur de la variable, peu importe la valeur précédente. Vous devriez maintenant pouvoir appuyer sur la touche espace pour dessiner un polygone, appuyer plusieurs fois sur les flèches haut/bas, puis appuyer sur la touche espace pour dessiner un polygone différent.</p>
 </div>
-<div class="section" id="nested-repeat-blocks">
-<span id="index-1"></span><h2>4.2. Nested Repeat Blocks<a class="headerlink" href="#nested-repeat-blocks" title="Permalink to this headline">¶</a></h2>
-<p>Let’s add one more thing to our program. Say we wanted to repeat drawing the polygon multiple times. We can simply enclose the portion of our code that draws the polygon in <em>another</em> repeat block. The following code would draw the same polygon 10 times:</p>
+<div class="section" id="les-blocs-de-boucles-imbriques">
+<span id="index-1"></span><h2>4.2. Les blocs de boucles imbriqués<a class="headerlink" href="#les-blocs-de-boucles-imbriques" title="Permalink to this headline">¶</a></h2>
+<p>Ajoutons encore une chose à notre programme. Supposons que nous voulions répéter plusieurs fois le polygone. Nous pouvons simplement entourer la partie de notre code qui dessine le polygone dans un autre bloc de répétition. Le code suivant dessinerait le même polygone 10 fois:</p>
 <img alt="../_images/scratch_nested_repeat.png" src="../_images/scratch_nested_repeat.png" />
-<p>Although this does repeat the polygon drawing, it is really boring. The polygon is simply drawn on top of it’s previous location, so it looks just like it did before!</p>
-<p>By adding one block, however, we can make this drawing a lot more interesting. Let’s add another turn block, <em>inside</em> the repeat 10, but <em>outside</em> the polygon drawing code.</p>
+<p>Bien que cela répète le dessin du polygone, c’est vraiment ennuyeux. Le polygone est simplement dessiné au-dessus de son emplacement précédent, donc il ressemble à ce qu’il était avant!</p>
+<p>En ajoutant un bloc, cependant, nous pouvons rendre ce dessin beaucoup plus intéressant. Ajoutons un autre bloc tournant, à l’intérieur de la répétition 10, mais en dehors du code de dessin polygonal.</p>
 <img alt="../_images/scratch_nested_repeat_with_turn.png" src="../_images/scratch_nested_repeat_with_turn.png" />
-<p>The code above will draw something like the following (assuming that the Number of Sides variable is set to 4):</p>
+<p>Le code ci-dessus va dessiner quelque chose comme le suivant (en supposant que la variable <strong>Numbre de côté</strong> est 4):</p>
 <img alt="../_images/scratch_nested_loops_image.png" src="../_images/scratch_nested_loops_image.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Experiment with the numbers in the outer repeat (shown as a 10), and the outer turn (shown as a 36). What combinations of numbers allow the sprite to end facing the same direction it was facing when it started drawing? Why?</p>
+<p class="last">Expérimentez avec les nombres dans la répétition externe (montrée comme un 10), et l’angle de rotation (montré comme un 36). Quelles combinaisons de nombres permettent au lutin de terminer face à la même direction que celle à laquelle il était confronté quand il a commencé à dessiner? Pourquoi?</p>
 </div>
-<p>You might find it interesting to make one more variable in your sketch (perhaps named <em>Number of Shapes</em>), and change the pen color at different places in your drawing. Adapt your code to look like the following:</p>
+<p>Vous pourriez trouver intéressant de faire une variable de plus dans votre croquis (<em>peut-être nommé Nombre de formes</em>), et de changer la couleur du stylo à différents endroits dans votre dessin. Adaptez votre code pour ressembler à ceci:</p>
 <img alt="../_images/scratch_nested_loops_multiple_variables.png" src="../_images/scratch_nested_loops_multiple_variables.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Try moving the <strong>change pen color</strong> block so that it is right after the <strong>move 100 steps</strong> block. What do you expect the resulting image to look like?</p>
+<p class="last">Essayez de déplacer le bloc <strong>ajoute __ à la couleur du stylo</strong> de sorte qu’il se trouve juste après le bloc <strong>avance de 100 pas</strong>. À quoi vous attendez-vous que l’image résultante ressemble?</p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
@@ -317,11 +307,12 @@
 
         <div class="runestone">
         <div data-component="fillintheblank" id="scratch_nested_repeat_check_1">
-            <p>scratch-nested-loops1: Given the code below, how many times would the script below say “Hip” when you click the green flag?</p>
+            <p>scratch-nested-loops1: Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il “Hip” lorsque vous cliquez sur le drapeau vert?</p>
+<p>Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous?</p>
 <img alt="../_images/scratch_nested_loops_check1.png" src="../_images/scratch_nested_loops_check1.png" />
 <input type="text">
         <script type="application/json">
-            [[{"number": [8, 8], "feedback": "Yes! Since the repeat 2 is inside a repeat 4 block, you can multiply them together to find the total number of times it will repeat."}, {"number": [2, 2], "feedback": "No. Notice that the repeat 2 block is INSIDE a repeat 4 block."}, {"number": [4, 4], "feedback": "No. Even though the say Hip block is inside the repeat 4, it is ALSO inside a repeat 2 block."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "Try again!"}]]
+            [[{"number": [8, 8], "feedback": "Oui! \u00c9tant donn\u00e9 que le bloc r\u00e9p\u00e9ter 2 fois se trouve dans un bloc r\u00e9p\u00e9ter 4 fois, vous pouvez les multiplier pour trouver le nombre total de r\u00e9p\u00e9titions."}, {"number": [2, 2], "feedback": "Remarquez que le bloc r\u00e9p\u00e9ter 2 fois est \u00c0 L\u2019INT\u00c9RIEUR d\u2019un bloc r\u00e9p\u00e9ter 4 fois."}, {"number": [4, 4], "feedback": "Non. M\u00eame si le bloc dire \u201cHip\u201d se trouve \u00e0 l\u2019int\u00e9rieur du bloc r\u00e9p\u00e9ter 4 fois, il se trouve \u00c9GALEMENT dans un bloc r\u00e9p\u00e9ter 2 fois."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "R\u00e9essayer!"}]]
         </script>
 
         </div>
@@ -364,7 +355,7 @@
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 3. Chase the Mouse and Drawing Polygons (Repeat and If/Else)' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - 3. Suivre la souris et dessiner des polygones (répéter et si/alors (<em>if-else</em>))' data-toggle="tooltip">
     <a href="ExperimentWithRepeat.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

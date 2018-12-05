@@ -8,7 +8,7 @@ Introduction à Scratch (envoyer à tous)
 
 .. topic:: Aperçu rapide de la journée
 
-    Introduction au cours, et à l'environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l'idée d'utiliser le bloc de diffusion pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.
+    Introduction au cours, et à l'environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l'idée d'utiliser le bloc de **envoyer à tous** (*diffusion*) dans l'onglet **Événement** pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.
 
 
 .. reveal:: curriculum_addressed
@@ -91,30 +91,30 @@ Le personnage sur le côté droit de la scène devrait avoir un script similaire
   .. image:: images/scratch_coordinate_plane.png
      :align: center
 
-Faites glisser les deux sprites vers les emplacements que vous souhaitez qu'ils soient quand ils vont avoir la conversation avec le bloc **"aller à x: y:"**. Notez que les valeurs x et y dans le bloc Atteindre dans la palette de blocs sont mises à jour avec les emplacements x et y du sprite lorsque vous relâchez la souris. Maintenant, accrochez **"glisser en 1 secondes à x: y:"** au bas du script du personnage venant du côté gauche de la scène. Ensuite, faites glisser   "dire "Bonjour" pendant 2 secondes" pour que le personnage commence la conversation. Enfin, faites glisser un bloc de diffusion (envoyer ou broadcast) de l'onglet **"Evénements"** et accrochez-le au bas du script. Il devrait maintenant ressembler à ceci:
+Faites glisser les deux sprites vers les emplacements que vous souhaitez qu'ils soient quand ils vont avoir la conversation avec le bloc **"aller à x: y:"**. Notez que les valeurs x et y dans le bloc Atteindre dans la palette de blocs sont mises à jour avec les emplacements x et y du sprite lorsque vous relâchez la souris. Maintenant, accrochez **"glisser en 1 secondes à x: y:"** au bas du script du personnage venant du côté gauche de la scène. Ensuite, faites glisser   "dire "Bonjour" pendant 2 secondes" pour que le personnage commence la conversation. Enfin, faites glisser un bloc envoyer à tous (*broadcast*) de l'onglet **"Evénements"** et accrochez-le au bas du script. Il devrait maintenant ressembler à ceci:
 
 .. image:: images/scratch_goTo_andGlide.png
 
-Diffusion *Broadcasts*
+Envoyer à tous *Broadcasts*
 -----------------------
 
-Quel est le but de ce bloc de diffusion que nous avons ajouté au script? Dans cette situation, nous voulions que le deuxième sprite (celui qui vient du côté droit de l'écran) fasse quelque chose **une fois qu'une action effectuée par un autre sprite sera terminée.** Les diffusions nous permettent d'envoyer des messages, et tout sprite (y compris le sprite qui a envoyé le message) dans notre projet peut écouter ce message et répondre en conséquence. Cette fois, nous aimerions que le deuxième sprite entre dans l'écran après que le premier sprite se soit déplacé au milieu de l'écran et ait dit quelque chose.
+Quel est le but de ce bloc envoyer à tous que nous avons ajouté au script? Dans cette situation, nous voulions que le deuxième sprite (celui qui vient du côté droit de l'écran) fasse quelque chose **une fois qu'une action effectuée par un autre sprite sera terminée.** Les blocs de *diffusion* nous permettent d'envoyer des messages, et tout sprite (y compris le sprite qui a envoyé le message) dans notre projet peut écouter ce message et répondre en conséquence. Cette fois, nous aimerions que le deuxième sprite entre dans l'écran après que le premier sprite se soit déplacé au milieu de l'écran et ait dit quelque chose.
 
-.. note:: Les diffusions sont un moyen simple d'introduire l'idée du paradigme de la programmation événementielle. Bien qu'une grande partie de ce cours utilisera le paradigme de la programmation procédurale, il est vraiment utile de comprendre le concept de base de la réponse aux événements de l'utilisateur!
+.. note:: Les blocs envoyer à tous sont un moyen simple d'introduire l'idée du paradigme de la programmation événementielle. Bien qu'une grande partie de ce cours utilisera le paradigme de la programmation procédurale, il est vraiment utile de comprendre le concept de base de la réponse aux événements de l'utilisateur!
 
-Pour qu'un autre sprite écoute une diffusion, cliquez sur le sprite à laquelle vous souhaitez réagir, puis faites glisser un bloc **"quand je reçois"** de l'onglet **"Evénements"** de la palette de blocs vers la zone des scripts. Nous pourrions faire en sorte que le personnage fasse ce que nous voulons, mais pour cet exemple, faisons en sorte que nos personnages aient une conversation simple. Recréez les éléments suivants et cliquez sur le drapeau vert. 
+Pour qu'un autre sprite écoute à la diffusion du bloc envoyer à tous, cliquez sur le sprite à laquelle vous souhaitez réagir, puis faites glisser un bloc **"quand je reçois"** de l'onglet **"Evénements"** de la palette de blocs vers la zone des scripts. Nous pourrions faire en sorte que le personnage fasse ce que nous voulons, mais pour cet exemple, faisons en sorte que nos personnages aient une conversation simple. Recréez les éléments suivants et cliquez sur le drapeau vert. 
 
 .. image:: images/scratch_when_i_receive.png
 
-Nous pouvons brancher autant de diffusion enchaînées que nous le voulons. Par exemple, dans l'exemple ci-dessous, les deux caractères réagissent au drapeau sur lequel ils cliquent en se rendant à leurs emplacements de départ. Après cela, la chaîne d'événements est contrôlée par les diffusions suivantes:
+Nous pouvons brancher autant de blocs envoyer à tous enchaînées que nous le voulons. Par exemple, dans l'exemple ci-dessous, les deux caractères réagissent au drapeau sur lequel ils cliquent en se rendant à leurs emplacements de départ. Après cela, la chaîne d'événements est contrôlée par blocs envoyer à tous suivantes:
 
 - Giga entre
-- Réponse de chat
-- Au revoir
+- Cat réplique
+- Au revoir!
 
 .. image:: images/scratch_conversation_complete.png
 
-Notez également que n'importe quel nombre de sprites peut réagir à la même diffusion. Dans l'exemple ci-dessus, un seul sprite réagit aux diffusions "Giga entre" et "Réponse de chat". Pour l'émission "Au revoir", cependant, Cat et Giga réagissent en se cachant.
+Notez également que n'importe quel nombre de sprites peut réagir à la même bloc envoyer à tous. Dans l'exemple ci-dessus, un seul sprite réagit aux blocs envoyer à tous "Giga entre" et "Réponse de chat". Pour la diffusion "Au revoir", cependant, Cat et Giga réagissent en se cachant.
 
 Vérifie ta compréhension
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,7 +125,7 @@ Vérifie ta compréhension
    :answer_c: Le sprite actuel dirait "Vert!", Ensuite "Aller" 
    :answer_d: Le sprite actuel dirait "Vert!" 
    :correct: b
-   :feedback_a: Bien que cela se produise, ce n'est pas la seule chose qui se produise! Considérez ce qui se passe lorsque la diffusion est envoyée.
+   :feedback_a: Bien que cela se produise, ce n'est pas la seule chose qui se produise! Considérez ce qui se passe lorsque la envoyer à tous est envoyée.
    :feedback_b: Oui! Le sprite dirait "Aller" pendant 1 seconde, puis diffusera <em>premier</em>, auquel il répondra en disant "Vert!" pendant 1 seconde.
    :feedback_c: Non, il dira d'abord "Aller" (puisque c'est la première partie du code qui s'exécute lorsque l'utilisateur clique sur le drapeau).
    :feedback_d: Bien que cela se produise, il dira d'abord "aller" (puisqu'il s'agit de la première chose dans le code qui s'exécute lorsque l'utilisateur clique sur le drapeau).
@@ -135,16 +135,13 @@ Vérifie ta compréhension
    .. image:: images/scratch_broadcast_check_1.png
 
 
-A.  
-B. 
-C.  
 
 .. mchoice:: scratch_broadcast_check_2
    :answer_a: Le sprite actuel dit "Allez" pendant 1 seconde, ensuite "Vert!" pendant 1 seconde, puis se déplace de 10 pas. 
    :answer_b: Le sprite actuel dirait "Go" pendant 1 seconde, se déplace de 10 pas, puis dirait "Vert!" pendant 1 seconde après l'arrêt du sprite.
-   :answer_c: Le sprite actuel dirait "Go" pendant 1 seconde, puis déplacez simultanément 10 étapes et dites "Vert!" pendant 1 seconde.
+   :answer_c: Le sprite actuel dirait "Go" pendant 1 seconde, puis déplacez simultanément 10 étapes et dirait "Vert!" pendant 1 seconde.
    :correct: c
-   :feedback_a: Non, l'envoi de la diffusion entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter. C.À.D., Scratch n'attendra pas que la diffusion soit résolue avant de terminer le reste du groupe de code (dans ce cas, le bloc de déplacement de 10 pas).
+   :feedback_a: Non, l'envoi de la diffusion (*bloc envoyer à tous*) entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter. C.À.D., Scratch n'attendra pas que la diffusion soit résolue avant de terminer le reste du groupe de code (dans ce cas, le bloc de déplacement de 10 pas).
    :feedback_b: Non, le bloc dit "vert et le bloc de déplacement de 10 pas auront lieu simultanément.
    :feedback_c: Oui, l'envoi de la diffusion entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter.
 
@@ -159,9 +156,9 @@ C.
    :answer_b: Le sprite actuel dirait "Aller" pendant 1 seconde, se déplace de 10 pas, ensuite dit "Vert!" pendant 1 seconde après l'arrêt du sprite. 
    :answer_c: Le sprite actuel dirait "Aller" pendant 1 seconde, se déplace simultanément de 10 pas et dit "Vert!" pendant 1 seconde.
    :correct: a
-   :feedback_a: Oui! Puisque nous utilisons maintenant un bloc de diffusion et de attendre, Scratch mettra en pause l'exécution du groupe de code qui a envoyé la diffusion jusqu'à ce que tous les scripts ayant réagi à la diffusion soient terminés.
+   :feedback_a: Oui! Puisque nous utilisons maintenant un bloc envoyer à tous **et attendre**, Scratch mettra en pause l'exécution du groupe de code qui a envoyé la diffusion jusqu'à ce que tous les scripts ayant réagi à la diffusion soient terminés.
    :feedback_b: Non, la diffusion a lieu avant le déplacement, ainsi le sprite dira "Vert" avant de se déplacer.
-   :feedback_c: Non, puisque nous utilisons un bloc de diffusion et attendre, les deux scripts ne seront pas exécutés simultanément cette fois-ci.
+   :feedback_c: Non, puisque nous utilisons un bloc de envoyer à tous **et attendre**, les deux scripts ne seront pas exécutés simultanément cette fois-ci.
 
    Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, compte tenu du code ci-dessous?
 
@@ -172,6 +169,6 @@ C.
 Problème de pratique
 ---------------------
 
-Faites un nouveau projet Scratch. Enregistrez-le en tant que Conversation et ajouté le lien dans votre dossier de travail sous "Scratch-1-converstion". Choisissez au moins deux sprites, et faites-leur une petite conversation. Assurez-vous d'utiliser des **diffusions** pour contrôler le déroulement de votre programme! 
+Faites un nouveau projet Scratch. Enregistrez-le en tant que Conversation et ajouté le lien dans votre dossier de travail sous "Scratch-1-converstion". Choisissez au moins deux sprites, et faites-leur une petite conversation. Assurez-vous d'utiliser des **envoyer à touss** pour contrôler le déroulement de votre programme! 
  
 Si vous voulez un peu plus d'un défi, explorez la palette de blocs et incorporez d'autres blocs qui n'ont pas encore été discutés!

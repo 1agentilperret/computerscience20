@@ -120,5 +120,5 @@ Problème de pratique
 
 Travaillez sur votre premier projet Scratch, pour tout le temps qui reste. 
 
-.. note:: Si votre enseignant ne vous a pas assigné un projet, vous pouvez envisager de faire une courte histoire pour pratiquer vos compétences Scratch. Assurez-vous d'utiliser les diffusions, les blocs de répétition et les blocs si-alors.
+.. note:: Si votre enseignant ne vous a pas assigné un projet, vous pouvez envisager de faire une courte histoire pour pratiquer vos compétences Scratch. Assurez-vous d'utiliser les **diffusions**, les blocs de **répétition** et les blocs **si-alors**.
 

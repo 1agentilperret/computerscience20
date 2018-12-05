@@ -3,24 +3,26 @@
    :start: 1
 
 
-Drawing Polygons - Part 2 (Variables and Nested Repeat)
-=======================================================
+Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼
+===================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Use **variables** to improve the polygon drawing from last lesson. Refactor the code from yesterday so a regular polygon with any number of sides can be drawn with the same code. Explore interesting shapes using **nested loops** (a loop inside another loop).
-
-
-.. reveal:: curriculum_addressed4
-    :showtitle: Curriculum Outcomes Addressed In This Section
-
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
-    - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.
-    - **CS20-FP2** Investigate how control structures affect program flow.
+    Utilisez des **variables** pour améliorer le dessin des polygones de la dernière leçon. Refactorisez le code d'hier afin qu'un polygone régulier avec n'importe quel nombre de côtés puisse être dessiné avec le même code. Explorez des formes intéressantes en utilisant des **boucles imbriquées** ("*nested loops*") (une boucle à l'intérieur d'une autre boucle).
 
 
-If you'd prefer to watch a video, `the following video <https://www.youtube.com/watch?v=yV9GjD7-dg8>`_ demonstrates the same ideas I've described in text below.
+.. reveal:: curriculum_addressed
+    :showtitle: Résultats du programme d'études traités dans cette section.
+
+    **Principes et techniques fondamentaux (PT)**
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+    - **20IN-PT.2** Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
+    **Fondements de la programmation (FP)**
+    - **20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
+
+
+Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watch?v=yV9GjD7-dg8>`_ suivante montre les mêmes idées que celles que j'ai décrites dans le texte ci-dessous.
 
 .. youtube:: yV9GjD7-dg8
     :height: 315
@@ -32,78 +34,80 @@ If you'd prefer to watch a video, `the following video <https://www.youtube.com/
 
 .. index:: variables
 
-Variables
+Variables 
 ---------
 
-When we drew a variety of regular polygons in the last section, we found that there was a pattern we could use, as shown in the image below:
+Lorsque nous avons dessiné une variété de polygones réguliers dans la dernière section, nous avons trouvé qu'il y avait un motif que nous pouvions utiliser, comme le montre l'image ci-dessous:
 
 .. image:: images/scratch_polygon_repeat.png
 
-The code above will draw a triangle, and as we discovered previously, if we were to change the two circled 3's into 4's, the code would draw a square (4-sided polygon) instead. In this situation, it would be really nice to have some way to easily set the value of both circled numbers to be the same thing. In other words, it would be great to be able to change the value of one to be a 5, and have the other automatically be a 5 as well. If we could do this, we would be able to draw any regular polygon by simply changing one number.
-
-In order to create code that behaves in the manner described above, we need to introduce the idea of a **variable**. You have learned about variables in math class. In mathematics, they are just a symbol that can hold any number. In computer science, a variable is a container that can hold any number, but can also hold any other type of information (words, lists of numbers, video, sound, etc). In this situation, all we need a variable to hold is a number.
-
-To create a variable in Scratch, click on the Variables tab, then click Make a Variable. Be sure to use useful names for your variables. For example, *Number of Sides* would be a useful, descriptive variable name for this example.
+Le code ci-dessus va dessiner un triangle, et comme nous l'avons découvert précédemment, si nous changeons les deux 3 encerclés en 4, le code dessinerait un carré (polygone à 4 côtés) à la place. Dans cette situation, il serait vraiment agréable d'avoir un moyen de définir facilement la valeur des deux nombres encerclés pour être la même chose. En d'autres termes, il serait bon de pouvoir changer la valeur de 1 pour être 5 et l'autre automatiquement 5. Si nous pouvions le faire, nous pourrions dessiner n'importe quel polygone régulier en changeant simplement un nombre. 
+ 
+Afin de créer un code qui se comporte de la manière décrite ci-dessus, nous devons introduire l'idée d'une **variable**. Vous avez appris sur les variables en classe de mathématiques. En mathématiques, les variables sont juste des symboles qui peuvent contenir n'importe quel nombre. En informatique, une variable est un contenant qui peut contenir n'importe quel nombre, mais peut également contenir tout autre type d'information (mots, listes de nombres, vidéo, son, etc.). Dans cette situation, tout ce dont nous avons besoin d'une variable à retenir est un nombre. 
+ 
+Pour créer une variable dans Scratch, cliquez sur l'onglet Données, puis sur Créer une variable. Assurez-vous d'utiliser des noms descriptif précis pour vos variables. Par exemple, nombres de côtés serait un nom de variable descriptive utile pour cet exemple.
 
 .. image:: images/scratch_make_a_variable.png
 
-After creating a variable, you will now see a number of blocks appear in the Data tab. To make use of the variable, simply drag and drop the variable name into the locations you want to use it (in this case, the two circled locations from above).
+Après avoir créé une variable, vous verrez maintenant apparaître des blocs dans l'onglet Données. Pour utiliser la variable, faites simplement glisser le nom de la variable dans les emplacements que vous voulez utiliser (dans ce cas, les deux emplacements entourés ci-dessus).
 
 .. image:: images/scratch_use_variable.gif
 
-If you press the space key, nothing will happen. This is because the default value of the variable you created is 0 (which you can see in the upper left corner of the stage). We need to set the value of the variable to something useful, as shown below:
+Si vous appuyez sur la touche espace, rien ne se passera. C'est parce que la valeur par défaut de la variable que vous avez créée est 0 (que vous pouvez voir dans le coin supérieur gauche de la scène). Nous devons définir la valeur de la variable comme un nombre utile, comme indiqué ci-dessous:
 
 .. image:: images/scratch_set_variable.png
 
-Now click the flag, then press the space key. You should see the sprite draw a square. Although we have successfully made our script use variables, it might not yet seem like this is much better than our previous version of the code.
-
-To demonstrate how using variables really does improve our code, let's add two more events to our program, as shown below:
+Maintenant, cliquez sur le drapeau, puis appuyez sur la touche espace. Vous devriez voir le lutin dessiner un carré. Bien que nous ayons réussi à faire en sorte que nos scripts utilisent des variables, il semblerait que cela ne soit pas encore beaucoup mieux que notre version précédente du code. 
+  
+Pour montrer comment l'utilisation de variables améliore réellement notre code, ajoutons deux autres événements à notre programme, comme indiqué ci-dessous:
 
 .. image:: images/scratch_up_down_variables.png
 
-Notice that we are using the **change variable by ** block, instead of the **set variable to** block. This allows us to increase or decrease the value of the variable by some amount, regardless of what the value was before. You should now be able to press the space key to draw a polygon, press the up/down arrows a number of times, then press the space key to draw a different polygon.
+Notez que nous utilisons le bloc **"ajouté à (variable) x"**  au lieu de **"mettre la (variable) à x"**. Cela nous permet d'augmenter ou de diminuer la valeur de la variable, peu importe la valeur précédente. Vous devriez maintenant pouvoir appuyer sur la touche espace pour dessiner un polygone, appuyer plusieurs fois sur les flèches haut/bas, puis appuyer sur la touche espace pour dessiner un polygone différent.
 
 .. index:: nested repeat
 
-Nested Repeat Blocks
---------------------
+Les blocs de boucles imbriqués
+-------------------------------
 
-Let's add one more thing to our program. Say we wanted to repeat drawing the polygon multiple times. We can simply enclose the portion of our code that draws the polygon in *another* repeat block. The following code would draw the same polygon 10 times:
+Ajoutons encore une chose à notre programme. Supposons que nous voulions répéter plusieurs fois le polygone. Nous pouvons simplement entourer la partie de notre code qui dessine le polygone dans un autre bloc de répétition. Le code suivant dessinerait le même polygone 10 fois:
 
 .. image:: images/scratch_nested_repeat.png
 
-Although this does repeat the polygon drawing, it is really boring. The polygon is simply drawn on top of it's previous location, so it looks just like it did before!
-
-By adding one block, however, we can make this drawing a lot more interesting. Let's add another turn block, *inside* the repeat 10, but *outside* the polygon drawing code.
+Bien que cela répète le dessin du polygone, c'est vraiment ennuyeux. Le polygone est simplement dessiné au-dessus de son emplacement précédent, donc il ressemble à ce qu'il était avant! 
+  
+En ajoutant un bloc, cependant, nous pouvons rendre ce dessin beaucoup plus intéressant. Ajoutons un autre bloc tournant, à l'intérieur de la répétition 10, mais en dehors du code de dessin polygonal.
 
 .. image:: images/scratch_nested_repeat_with_turn.png
 
-The code above will draw something like the following (assuming that the Number of Sides variable is set to 4):
+Le code ci-dessus va dessiner quelque chose comme le suivant (en supposant que la variable **Numbre de côté** est 4):
 
 .. image:: images/scratch_nested_loops_image.png
 
-.. note:: Experiment with the numbers in the outer repeat (shown as a 10), and the outer turn (shown as a 36). What combinations of numbers allow the sprite to end facing the same direction it was facing when it started drawing? Why?
+.. note:: Expérimentez avec les nombres dans la répétition externe (montrée comme un 10), et l'angle de rotation (montré comme un 36). Quelles combinaisons de nombres permettent au lutin de terminer face à la même direction que celle à laquelle il était confronté quand il a commencé à dessiner? Pourquoi?
 
 
-You might find it interesting to make one more variable in your sketch (perhaps named *Number of Shapes*), and change the pen color at different places in your drawing. Adapt your code to look like the following:
+Vous pourriez trouver intéressant de faire une variable de plus dans votre croquis (*peut-être nommé Nombre de formes*), et de changer la couleur du stylo à différents endroits dans votre dessin. Adaptez votre code pour ressembler à ceci:
 
 .. image:: images/scratch_nested_loops_multiple_variables.png
 
-.. note:: Try moving the **change pen color** block so that it is right after the **move 100 steps** block. What do you expect the resulting image to look like?
+.. note:: Essayez de déplacer le bloc **ajoute __ à la couleur du stylo** de sorte qu'il se trouve juste après le bloc **avance de 100 pas**. À quoi vous attendez-vous que l'image résultante ressemble?
 
 Check Your Understanding
 -------------------------
 
 .. fillintheblank:: scratch_nested_repeat_check_1
 
-    Given the code below, how many times would the script below say "Hip" when you click the green flag?
+    Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il "Hip" lorsque vous cliquez sur le drapeau vert?
+
+    Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous? 
 
     .. image:: images/scratch_nested_loops_check1.png
 
-    - :8: Yes! Since the repeat 2 is inside a repeat 4 block, you can multiply them together to find the total number of times it will repeat.
-      :2: No. Notice that the repeat 2 block is INSIDE a repeat 4 block.
-      :4: No. Even though the say Hip block is inside the repeat 4, it is ALSO inside a repeat 2 block.
-      :.*: Try again!
+    - :8: Oui! Étant donné que le bloc répéter 2 fois se trouve dans un bloc répéter 4 fois, vous pouvez les multiplier pour trouver le nombre total de répétitions.
+      :2: Remarquez que le bloc répéter 2 fois est À L'INTÉRIEUR d'un bloc répéter 4 fois.
+      :4: Non. Même si le bloc dire "Hip" se trouve à l'intérieur du bloc répéter 4 fois, il se trouve ÉGALEMENT dans un bloc répéter 2 fois.
+      :.*: Réessayer!
 
 .. fillintheblank:: scratch_nested_repeat_check_2
 
