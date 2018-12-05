@@ -100,8 +100,6 @@ Check Your Understanding
 
     Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il "Hip" lorsque vous cliquez sur le drapeau vert?
 
-    Que se passerait-il lorsque vous cliqueriez sur le drapeau vert, étant donné le code ci-dessous? 
-
     .. image:: images/scratch_nested_loops_check1.png
 
     - :8: Oui! Étant donné que le bloc répéter 2 fois se trouve dans un bloc répéter 4 fois, vous pouvez les multiplier pour trouver le nombre total de répétitions.
@@ -111,7 +109,7 @@ Check Your Understanding
 
 .. fillintheblank:: scratch_nested_repeat_check_2
 
-    Given the code below, how many times would the script below say "Hooray" when you click the green flag?
+    Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il "Hourra" lorsque vous cliquez sur le drapeau vert?
 
     .. image:: images/scratch_nested_loops_check1.png
 
