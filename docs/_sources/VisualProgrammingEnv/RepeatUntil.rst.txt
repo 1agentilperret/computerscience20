@@ -167,7 +167,7 @@ Encore une fois, avant d'entrer dans la boucle, nous devons vérifier si la cond
 Activité en classe: Répéter jusqu'à 
 ------------------------------------
 
-Votre enseignant vous remettra une copie imprimée du document de pratique suivant. :download:`Practice with Repeat Until Practice handout <handouts/scratch_repeat_until_practice.pdf>`.
+Votre enseignant vous remettra une copie imprimée du document de pratique suivant. :download:`Scratch répèter jusqu'à pratique <handouts/scratch_repeter_jusqu'a_pratique.pdf>`.
 
 Now that you have seen how to trace the the code contained in a repeat until block, take a few minutes to try to fill in the practice sheet linked to above. After you have completed each question, you may double check your work by recreating the question in Scratch.
 
