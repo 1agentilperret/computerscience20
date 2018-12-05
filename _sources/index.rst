@@ -1,4 +1,4 @@
-Computer Science 20 - Saskatchewan
+Informatique 20 - Saskatchewan
 ----------------------------------
 
 Preface
