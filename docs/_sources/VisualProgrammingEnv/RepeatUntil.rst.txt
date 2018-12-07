@@ -169,93 +169,95 @@ Activité en classe: Répéter jusqu'à
 
 Votre enseignant vous remettra une copie imprimée du document de pratique suivant. :download:`Scratch répèter jusqu'à pratique <handouts/scratch_repeter_jusqu'a_pratique.pdf>`.
 
-Now that you have seen how to trace the the code contained in a repeat until block, take a few minutes to try to fill in the practice sheet linked to above. After you have completed each question, you may double check your work by recreating the question in Scratch.
+Maintenant que vous avez vu comment tracer le code contenu dans une répétition jusqu'au blocage, prenez quelques minutes pour essayer de remplir la fiche de pratique ci-dessus. Après avoir rempli chaque question, vous pouvez vérifier votre travail en recréant la question dans Scratch.
 
 .. note::
-	**Teacher Note:** Instead of having students recreate the problems in Scratch to check their work, it can be very useful to trace the code together as a class. Writing down a t-chart on a whiteboard is a nice way to talk through problems like these ones.
+	**Remarque pour l'enseignant:** Au lieu de demander aux élèves de recréer les problèmes dans Scratch pour vérifier leur travail, il peut être très utile de tracer le code ensemble en tant que classe. Écrire un tableau sur un tableau blanc est un bon moyen de parler de ces problèmes.
 
-	If you would like to edit the Repeat Until Practice handout, you can download the :download:`editable Word document <handouts/scratch_repeat_until_practice.docx>`.
+	Si vous souhaitez modifier le document *Scratch répèter jusqu'à pratique*, vous pouvez télécharger le :download:`document word à modifier <handouts/scratch_repeter_jusqu'a_pratique.docx>`.
 
 
-Cannonball Motion Using Repeat Until
--------------------------------------
+Déplacement d'un boulet de canon en utilisant un bloc de répétition
+---------------------------------------------------------------------
 
-Let's use the repeat until block to create a simulation of a cannonball being shot. First, we need to make a cannonball. To do this, click on the paintbrush beside New sprite (under the stage):
+Utilisons le bloc "répété jusqu'à" pour créer une simulation d'un boulet de canon en cours de tir. Premièrement, nous devons faire un boulet de canon. Pour ce faire, cliquez sur le pinceau à côté de Nouveau sprite (sous la scène): 
 
 .. image:: images/scratch_paint_new_sprite.gif
 
-The process of creating the cannonball sprite is shown in the short animation below. There are a few things you should be aware of:
+Le processus de création du sprite de boulet de canon est illustré en étapes ci-dessous. Il y a quelques choses que vous devez savoir:
 
-- when drawing the circle, you can hold down the shift key to force the ellipse to remain circular.
-- be sure that your cannonball is **directly** above the center point marker on the canvas (this is easier to see if you zoom in once or twice)
+- Lorsque vous tracez le cercle, vous pouvez appuyer la touche Maj (*shift*) pour forcer l'ellipse à rester circulaire.
+-assurez-vous que votre boulet de canon se trouve **directement** au-dessus du point central sur la toile (ceci est plus facile à voir si vous zoomez une ou deux fois)
 
 .. image:: images/scratch_paint_cannonball_sprite.gif
 
 .. note::
 
-	In the previous version of Scratch (Scratch 2), you would have needed to:
+	Dans la version précédente de Scratch (Scratch 2), il vous aurait fallu:
 
-  - use "Convert to vector" before doing any drawing. *Your teacher might decide to go into more depth about the difference between vector and bitmap graphics.*
-  - set the costume center (since the calculations about the x and y coordinates of the sprite are based on the costume center point).
+  - Cliquer "vectoriser" avant de faire un dessin! Il à fallu faire cela chaque fois pour vous assurer que la qualité de vos graphiques soit le plus élevée que possible. *Votre enseignant peut décider d'approfondir la différence entre les graphiques vectoriels et bitmap*.
+  -Lorsque vous dessinez le cercle, vous pouvez maintenir la touche Maj (*shift*) enfoncée pour forcer l'ellipse à rester circulaire.  -Identifier le centre du costume (puisque les calculs relatifs aux coordonnées x et y du sprite sont basés sur le point central du costume).
 
-To create the cannonball simulation, we need some variables to represent the speed at which the cannonball is traveling. Click on the Data tab, and make two variables: **xSpeed** and **ySpeed**. Then create a script that looks like the following:
+Pour créer la simulation de boulet de canon, nous avons besoin de quelques variables représentant la vitesse à laquelle le boulet de canon se déplace. Cliquez sur l'onglet **Données** et créez deux variables: **vitesseX** et **vitesseY**. Ensuite, créez un script qui ressemble à ceci:
 
 .. image:: images/scratch_cannonball_motion.png
+  
+  Lorsque vous appuyez sur la touche espace, le boulet de canon reviendra à sa position initiale (à gauche de l'écran) et les variables *vitesseX* et *vitesseY* seront toutes deux définies comme 4. Le bloc **répéter jusqu'à ce que** constate que la répétition va countinuer jusqu'à ce que la position y du sprite soit inférieure à -159. *Le bloc **mettre y à ""** se trouve au bas de l'onglet **Mouvement***. Pour résumer, tout ce qui se trouve à l'intérieur du bloc de répétition continuera jusqu'à ce que le boulet de canon atteigne le niveau du sol virtuel (défini comme étant -159). 
+  
+  Enfin, nous modifions les coordonnées x et y du sprite par les variables vitesseX ​​et vitesseY. Le dernier bloc de code dans le répéter jusqu'à correspond à la façon dont nous simulons la gravité. À chaque itération (*cicle complet de la répétition*) de la boucle la valeur de la variable vitesseY ​​diminue. Parce que nous commençons avec une vitesse y positive, le boulet de canon se déplace vers le haut lorsque la touche espace est enfoncée. Au fil du temps, cependant, la vitesse à laquelle le boulet monte diminue, puis finit par devenir négatif (ce qui signifie qu'il commence à tomber). Cela nous permet de créer une simple simulation de mouvement parabolique.
 
-When the space key is pressed, the cannonball will be reset to it's original position (on the left hand side of the screen), and the *xSpeed* and *ySpeed* variables will both be set to 4. The repeat until block condition states that the repeat block should continue until the y position of the sprite is less than -159. *The y position block can be found at the bottom of the Motion tab.* In other words, whatever is inside the repeat block will continue until the cannonball hits the virtual ground level (which we have set to be -159). Finally, we change the x and y coordinates of the sprite by the xSpeed and ySpeed variables. The last block of code in the repeat until is how we simulate gravity. Every iteration of the repeat until loop causes the ySpeed variable to decrease in value. Because we start with a positive ySpeed, the cannonball moves upward when the space key is pressed. Over time, however, the amount that the cannonball is moving up decreases, and then eventually becomes negative (meaning that the ball begins to fall). This allows us to create a simple simulation of parabolic motion.
+.. note:: Expérimentez en modifiant les valeurs initiales données pour les variables vitesseX et vitesseY. Vous pouvez également vouloir ajuster la valeur de "gravité" (initialement définie à -0,1).
 
-.. note:: Experiment by changing the initial values given for the xSpeed and ySpeed variables. You may also want to adjust the "gravity" value (initially set at -0.1).
-
-Check Your Understanding
+Vérifie ta compréhension
 -------------------------
 
 .. fillintheblank:: scratch_repeat_until_check_1
 
-    What would the value of the Some Number variable be after the following code has executed?
+    Quelle serait la valeur de la variable **Un Number** après l'exécution du code suivant?
 
     .. image:: images/scratch_repeat_until_test_yourself1.png
 
-    - :28: Yes! Way to go!
-      :30: No. Remember that 30 is not less than, but equal to, 30.
-      :.*: Try again!
-
+    -: 28: Oui! Félicitation!
+    : 30: Non. N'oubliez pas que 30 n'est pas inférieur, mais égal à, 30.
+    :.*: Réessayer!
 
 .. fillintheblank:: scratch_repeat_until_check_2
 
-    How many iterations would the following code take to finish it's execution? In other words, how many times would the repeat until block occur?
+    Combien d'itérations le code suivant prend-il pour terminer son exécution? C'est-à-dire, combien de fois le bloc *répéter jusqu'à ce que ""* se produirait-elle?
 
     .. image:: images/scratch_repeat_until_test_yourself1.png
 
-    - :4: Yes! Way to go!
-      :3: No. Remember that 30 is not less than, but equal to, 30.
-      :.*: Try again!
+    -: 4: Oui! Félicitation!
+    : 3: Rappelez-vous que 30 n'est pas inférieur, mais égal à, 30.
+    :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_repeat_until_check_3
 
-    How many iterations would the following code take to finish it's execution? In other words, how many times would the repeat until block occur?
+    Combien d'itérations le code suivant prend-il pour terminer son exécution? C'est-à-dire, combien de fois le bloc *répéter jusqu'à ce que ""* se produirait-elle?
 
     .. image:: images/scratch_repeat_until_test_yourself2.png
 
-    - :3: Yes! Way to go!
-      :4: No. Notice that the "Change Some Number by 3" block is NOT inside an if/else block, so it will happen EVERY iteration.
-      :.*: Try again!
+    - :3: Oui! Félicitation!
+      :4: Non. Remarquez que le bloc "Ajouter 3 à Un Nombre" n'est **PAS** à l'intérieur d'un bloc **si/alors**, cela se produira donc à **CHAQUE** itération.
+      :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_repeat_until_check_4
 
-    What would the value of the Some Number variable be after the following code has executed?
+    Quelle serait la valeur de la variable **Un Number** après l'exécution du code suivant?
 
     .. image:: images/scratch_repeat_until_test_yourself2.png
 
-    - :13: Yes! Way to go!
-      :.*: Try again!
+    - :13: Oui! Félicitation!
+      :.*: Réessayer!
 
 
 
-Practice Problem
------------------
+Problème de pratique
+---------------------
 
-Work on your second Scratch assignment, for any remaining time.
+Travaillez sur votre deuxième affectation Scratch, pour le temps restant.
 
-.. note:: If your teacher did not assign you a project, you may want to consider making a Rock Paper Scissors simulator to practice your Scratch skills. You will need to use variables, if-else blocks, and broadcasts. A nice extension to the basic version of this project is to allow the user to choose either a player versus computer game, or a computer versus computer game.
+.. note:: Si votre enseignant ne vous a pas assigné de projet, vous pouvez envisager de créer un simulateur Roche Paper Ciseaux pour mettre en pratique vos compétences Scratch. Vous devrez utiliser des **variables**, des blocs **si-alor** et des **diffusions** (envoyer à tous). Une extension intéressante de la version de base de ce projet est de permettre à l’utilisateur de choisir de jouer contre un autre joueur ou contre l'ordinateur; ou même l'ordinateur peut jouer contre soi-même.
+

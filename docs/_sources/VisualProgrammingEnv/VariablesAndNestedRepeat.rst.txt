@@ -120,19 +120,16 @@ Check Your Understanding
 
 .. fillintheblank:: scratch_nested_repeat_check_3
 
-    Given the code below, how many times would the script below say "Hooray" when you click the green flag?
+    Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il "Hourra" lorsque vous cliquez sur le drapeau vert?
 
     .. image:: images/scratch_nested_loops_check2.png
 
-    - :0: Yes! Since everything is inside a repeat 0 block, it will not happen at all.
-      :8: No. What is the block that encloses everything?
-      :.*: Try again! Hint: What is the block that encloses everything?
+    -: 0: oui! Puisque tout est dans un bloc de répétition 0, cela n'arrivera pas du tout. : 8: Non. Quel est le bloc qui renferme tout?:.*: Réessayer! Indice: Quel est le bloc qui contient tout?
 
 
+Problème de pratique
+---------------------
 
-Practice Problem
-------------------
+Travaillez sur votre première affectation Scratch, pour le temps restant.
 
-Work on your first Scratch assignment, for any remaining time.
-
-.. note:: If your teacher did not assign you a project, you may want to consider making a short story to practice your Scratch skills. Be sure to utilize broadcasts, repeat blocks, and if-then blocks.
+.. note:: Si votre enseignant ne vous a pas assigné de projet, vous pouvez envisager de créer une nouvelle histoire pour mettre en pratique vos compétences Scratch. Veillez à utiliser des **émissions**, des blocs de **répétition** et des blocs **si-alors**.
