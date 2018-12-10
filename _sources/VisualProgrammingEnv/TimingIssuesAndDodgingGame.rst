@@ -3,13 +3,12 @@
    :start: 1
 
 
-Timing Issues and Dodging Game (Broadcasts and Variables)
-=========================================================
+Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)
+==========================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Explore issues that arise when more than one script is triggered by the same event, and solve them by setting up ordered broadcasts. Create an object dodging game, using variables to allow both the object and character to increase in speed as the game progresses.
-
+    Explorez les problèmes qui surviennent lorsque plusieurs scripts sont déclenchés par le même événement et les résoudre en configurant des diffusions *ordonnées*. Créez un jeu d'esquive d'objet, en utilisant des variables permettant à l'objet et au personnage d'augmenter en vitesse à mesure que le jeu avance.
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -18,8 +17,7 @@ Timing Issues and Dodging Game (Broadcasts and Variables)
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
     - **CS20-FP2** Investigate how control structures affect program flow.
 
-
-If you'd prefer to watch a video, `the following video <https://www.youtube.com/watch?v=1vPKlqxNloc>`_ demonstrates the same ideas I've described in text below.
+Si vous préférez regarder une vidéo, la `vidéo suivante <https://www.youtube.com/watch?v=1vPKlqxNloc>`_ illustre les mêmes idées que celles décrites dans le texte ci-dessous.
 
 .. youtube:: 1vPKlqxNloc
     :height: 315
@@ -28,78 +26,75 @@ If you'd prefer to watch a video, `the following video <https://www.youtube.com/
     :http: https
 
 
-Timing Issues
--------------
+Problème de Timing
+-------------------
 
-When you begin creating more complicated projects in Scratch, it is possible to run into problems that we will call *timing issues*. This can happen when you respond to one event with multiple sprites. Although you can certainly respond to an event with many different sprites, there is no guarantee as to the order in which those responses will occur. If the response of one sprite depends on another sprite already taking an action, this can cause difficult to find problems in your project.
+Lorsque vous commencez à créer des projets plus complexes dans Scratch, il est possible de rencontrer des problèmes que nous appellerons *problèmes de timinmg*. Cela peut arriver lorsque vous répondez à un événement avec plusieurs sprites. Bien que vous puissiez certainement réagir à un événement avec de nombreux sprites, il n’y a aucune garantie quant à l’ordre dans lequel ces réponses vont se produire. Si la réponse d'un sprite dépend du fait qu'un autre sprite effectue déjà une action, cela peut poser des problèmes qui sont difficiles à trouver dans votre projet.
 
-To demonstrate this problem, we will create a very simple "game" that intentionally exposes this problem. First, create three sprites and position them on the stage as follows:
+Pour illustrer ce problème, nous allons créer un "jeu" très simple qui expose intentionnellement ce problème. Tout d’abord, créez trois sprites et positionnez-les sur la scène comme ceci:
 
 .. image:: images/scratch_timing_issues_sprite_setup.png
 
-For our game, we will the dinosaur and reindeer sprites each choose a random number from 1 to 100. The duck sprite will then determine which sprite is the winner (by checking which number is larger), and announce the winner. This would obviously be a terrible game to play with humans, but it will serve nicely to illustrate possible timing issues.
+Pour notre jeu, les sprites de dinosaures et de rennes choisiront chacun un nombre aléatoire  entre 1 et 100. Le sprite de canard déterminera alors quelle sprite sera gagnante (en vérifiant quel est le plus grand nombre) et annoncera le gagnant. Ce serait évidemment un jeu terrible à jouer avec des humains, mais cela servira joliment à illustrer des problèmes de timing possibles.
 
-We need to create two variables, one to hold the number chosen by the dinosaur and one to hold the number chosen by the reindeer. Go to the Data tab to create these, making sure you provide descriptive names for the variables.
+Nous devons créer deux variables, une pour contenir le nombre choisi par le dinosaure et l'autre pour contenir le nombre choisi par le renne. Accédez à l'onglet *Variables* pour les créer, en vous assurant de fournir des noms descriptifs pour les variables.
 
 .. note:: 
-	When creating your variables, you should leave the **For all sprites** button selected (instead of switching it to **For this sprite only**) unless you have a very good reason for declaring the variable to only be accessible by the current sprite. If you create a variable for this sprite only, no other sprites are able to see what the value of that variable is (even if you drag the variable onto another sprite). You can tell that you have created a variable for a single sprite if, prior to the name of the variable, Scratch displays the name of the sprite followed by a colon:
+	Lors de la création de vos variables, vous devez laisser le bouton **Pour tous les sprites** sélectionné (au lieu de le basculer sur **Pour ce sprite uniquement**) sauf si vous avez une très bonne raison de déclarer la variable uniquement accessible par ce sprite. Si vous créez une variable pour ce sprite uniquement, aucune autre sprite ne peut voir quelle est la valeur de cette variable (même si vous faites glisser la variable sur une autre sprite). Vous pouvez dire que vous avez créé une variable pour une seule sprite si, avant le nom de la variable, Scratch affiche le nom de l'sprite suivi de deux points:
 
 	.. image:: images/scratch_variable_scope.png
 	
-Set up the basic version of the game by creating the following scripts for your sprites:
+Configurez la version de base du jeu en créant les scripts suivants pour vos sprites:
 
 .. image:: images/scratch_timing_issue_game_1.png
 
-To make the variables a bit nicer to look at, you can right click on the variable (as shown on the stage), and select the "large readout" option. Now drag that variable so that it is over the appropriate sprite.
+Pour que les variables soient un peu plus agréables à regarder, vous pouvez cliquer avec le bouton droit de la souris sur la variable (comme indiqué sur la scène) et sélectionner l'option "Grande lecture". Maintenant, faites glisser cette variable afin qu'elle soit par dessus le sprite approprié.
 
-You should now test out your sketch by pressing the green flag a few times. You should notice that your program will occasionally select the correct winner, but will often make an error about who has won. Why is this happening? The logic of the duck sprite is correct, and yet we are encountering an error...
+Vous devriez maintenant tester votre programme en appuyant plusieurs fois sur le drapeau vert. Vous remarquerez que votre programme sélectionnera parfois le bon gagnant, mais fera souvent une erreur pour déterminer qui a gagné. Pourquoi cela arrive-t-il? La logique du sprite de canard est correcte, et pourtant nous rencontrons une erreur ...
 
 .. image:: images/scratch_broadcast_issues_animation.gif
 
-Although the individual logic of each of our sprites is correct, **they are all reacting to the same event** (in this case, the flag being clicked). We are therefore unable to guarantee the order the code will run. When the flag is clicked, we do not know whether the dinosaur, reindeer or duck will have their code executed first. If the duck code happens before both of the other sprites select their new numbers, the duck may be making a decision based on the numbers selected the last time the flag was clicked (or one old number and one new number). 
+Bien que la logique individuelle de chacun de nos sprites soit correcte, **ils réagissent tous au même événement** (dans ce cas, quand l'utilisateur clique sur le drapeau). Nous ne pouvons donc pas garantir l'ordre dans laquelle ces trois commmende seront exécutée. Lorsque le drapeau est cliqué, nous ne savons pas si le code du dinosaure, du renne ou du canard sera exécuté en premier. Si le code de canard arrive avant que les deux autres sprites ne sélectionnent leur nouveau numéro, le canard peut prendre une décision en fonction des numéros sélectionnés lors du dernier clic sur le drapeau (ou d'un ancien et d'un nouveau numéro).
 
-Since we need to guarantee the order in which these scripts run, we can remake the script so that dinosaur picks a number when the flag is clicked, then broadcasts a message telling the reindeer to pick a number. The reindeer can react to that message by picking a number, then broadcast a message telling the duck to determine the winner. With this setup, we are guaranteed to have both numbers chosen before the duck attempts to decide which sprite is the winner.
+Comme nous devons garantir l'ordre d'exécution de ces scripts, nous pouvons le refaire de sorte que le dinosaure choisisse un numéro lorsque le drapeau est cliqué, puis diffuse un message invitant le renne à choisir un numéro. Le renne peut réagir à ce message en choisissant un numéro, puis diffuser un message invitant le canard à déterminer le vainqueur. Avec cette configuration, nous sommes assurés d'avoir les deux numéros choisis avant que le canard ne tente de décider quel sprite est le gagnant.
 
 .. image:: images/scratch_timing_issue_game_2.png
 
 
-Dodging Game
-------------
+Jeu d'esquive
+--------------
 
-Let's try something totally different. This example will not require us to think about the timing issues that can crop up when we are responding to the same event with multiple sprites, but it will allow us to use quite a few of the ideas that we've learned so far. We will create a dodging game, in which there is a ball bouncing around the screen, and a second object that follows our mouse around the screen. As soon as the bouncing ball contacts the object following our mouse, the game will end.
+Essayons quelque chose de totalement différent. Cet exemple ne nécessitera pas que nous réfléchissions aux problèmes de synchronisation qui peuvent surgir lorsque nous répondons au même événement avec plusieurs sprites, mais cela nous permettra d'utiliser un bon nombre des idées que nous avons apprises jusqu'à présent. Nous allons créer un jeu d’esquive dans lequel une balle rebondit autour de l’écran et un deuxième objet qui suit notre souris autour de l’écran. Dès que la balle qui rebondit entre en contact avec l'objet suivant notre souris, le jeu se termine.
 
-To begin, select a ball to add to your project. I'm going with a basketball. Drag the ball to some location on the left side of the screen, so that we can avoid a collision right at the start of the game. We then need to choose a random direction that we should be moving, then forever move in that direction, and bounce if we hit the edge of the stage. Add the following script to your ball:
+Pour commencer, sélectionnez une balle et ajoute-la à votre projet. Je vais avec un ballon de basket. Faites glisser la balle vers la gauche de l’écran afin d’éviter les collisions dès le début de la partie. Nous devons ensuite choisir une direction aléatoire que le ballont devrait se déplacer, puis toujours continuer dans cette direction, et rebondir si il touche le bord de la scène. Ajoutez le script suivant à votre ballon:
 
 .. image:: images/scratch_dodging_game_bball_1.png
 
-Although the version above does work, the game would always have the same difficulty level, since the ball is moving at a constant speed. To make the game more interesting, we'd like to have the ball start by moving relatively slowly, and speed up throughout the game. Whenever we need a value to change during our project, we should be thinking about adding a variable. Create a variable called Ball Speed (in the Data tab), then change the ball script to the following:
+Bien que la version ci-dessus fonctionne, le jeu aura toujours le même niveau de difficulté, car le ballon se déplace à une vitesse constante. Pour rendre le jeu plus intéressant, nous aimerions que le ballon commence par un mouvement relativement lent et qu’il accélère tout au long du match. Chaque fois que nous avons besoin d’une valeur à modifier au cours de notre projet, nous devrions envisager l’ajout d'une variable. Créez une variable appelée **Vitesse de la balle** (dans l'onglet Variables), puis modifiez le script de la balle comme ceci:
 
 .. image:: images/scratch_dodging_game_bball_2.png
 
-Note that in the script above, we have created a maximum value of 50 that the ball speed can increase up to. If we didn't have the 'if Ball Speed < 50' block, the ball would continue to increase speed throughout the game, and eventually be moving so fast that graphical problems would occur (since the ball would be moving by more steps/pixels than the screen contains).
+Notez que dans le script ci-dessus, nous avons créé une valeur maximale de 50 que la vitesse de la balle peut augmenter jusqu'à. Si nous n'avions pas le bloc "si la vitesse de la balle est <50", la balle continuerait à augmenter sa vitesse tout au long du jeu et finirait par se déplacer si vite que des problèmes graphiques se produiraient (puisque la balle se déplacerait de plus "de pixels/de pas" que l’écran contient).
 
-Now we need to create a sprite that will follow our mouse around the screen while trying to dodge the bouncing ball. I'm going with a watermelon, but you can choose any sprite. Drag the watermelon somewhere on the right hand side of the stage to avoid a collision right at the start of the game. We now want the watermelon to always move in the direction of the mouse. Try adding a script like the following to your sprite, and test it out:
+Nous devons maintenant créer un sprite qui suivra notre souris autour de l'écran tout en essayant d'esquiver la balle qui rebondit. Je vais avec un melon d'eau, mais vous pouvez choisir n'importe quel sprite. Faites glisser le melon quelque part sur le côté droit de la scène pour éviter une collision dès le début de la partie. Nous voulons maintenant que le melon se déplace toujours dans le sens de la souris. Essayez d’ajouter un script semblable à celui-ci à votre sprite et testez-le:
 
 .. image:: images/scratch_dodging_game_watermelon_1.png
 
-When you run the script given above, you can see that although the watermelon does follow the mouse, there are a few problems. One problem is that the watermelon moves at the same speed for the entire game. To solve this problem, we need to create another variable (something like "Watermelon Speed") that increases at the same rate as the bouncing ball. 
+Lorsque vous exécutez le script indiqué ci-dessus, vous pouvez voir que, bien que le melon suive la souris, il existe quelques problèmes. Un problème est que le melon se déplace à la même vitesse pour tout le jeu. Pour résoudre ce problème, nous devons créer une autre variable (quelque chose comme "**Vitesse du melon**") qui augmente au même rythme que le ballon qui rebondit.
 
-Another problem is that when the watermelon "catches" the mouse, it has incredibly jittery movement. This happens because the watermelon points toward the mouse, moves past the mouse, turns around and then does it all again. A nice way to solve this issue is to first ask if the distance to the mouse is greater than the speed the watermelon is moving, and only move toward the mouse if we won't overshoot the goal.
+Un autre problème est que lorsque le melon "attrape" la souris, elle a un mouvement incroyablement nerveux (presqu'une vibration du sprite). Cela se produit parce que le melon pointe vers la souris, la dépasse, se retourne puis recommence. Un bon moyen de résoudre ce problème est d’abord de demander si la distance par rapport à la souris est supérieure à la vitesse de déplacement de le melon; et de seulement se déplacer vers la souris si le melon ne la dépassera pas.
 
-The final problem is that we have not actually checked to see if the the watermelon is touching the basketball. We need to add that question to the script, and stop everything that is happening when the two sprites touch.
+Le dernier problème est que nous n’avons pas vérifié si le melon d’eau touchait le ballon de basket. Nous devons ajouter cette question au script et arrêter tout ce qui se passe lorsque les deux sprites se touchent.
 
-To solve each of these problems, adapt your previous code as follows:
+Pour résoudre chacun de ces problèmes, adaptez votre code précédent comme ceci:
 
 .. image:: images/scratch_dodging_game.png
 
-.. note:: An interesting extension to the dodging game is having the a sound play when the sprites collide. You may have to use a broadcast, and explore the 'stop other scripts in sprite' block to make it work.
+.. note:: Une extension intéressante du jeu d'esquive consiste à jouer un jeu sonore lorsque les sprites se rencontrent. Vous devrez peut-être utiliser une diffusion et explorer le bloc **Stop "autres scripts dans sprite"** (dans l'onglet **Contrôle**) pour le faire fonctionner.
 
+Problème de pratique
+----------------------
 
-Practice Problem
-------------------
-
-Work on your second Scratch assignment, for any remaining time.
-
-.. note:: If your teacher did not assign you a project, you may want to consider making a Rock Paper Scissors simulator to practice your Scratch skills. You will need to use variables, if-else blocks, and broadcasts. A nice extension to the basic version of this project is to allow the user to choose either a player versus computer game, or a computer versus computer game. You could use a start screen to allow the user to choose which type of game to play.
-
-
+Travaillez sur votre deuxième affectation Scratch, pour le temps restant.
+ 
+.. note:: Si votre enseignant ne vous a pas assigné de projet, vous pouvez envisager de créer un simulateur Roche Papier Ciseaux afin de vous exercer à maîtriser Scratch. Vous devrez utiliser des **variables**, des blocs **si-sinon** et des **diffusions**. Une extension intéressante de la version de base de ce projet est de permettre à l’utilisateur de choisir entre un jeu contre un autre joueur et un jeu contre l'ordinateur, ou un jeu ordinateur contre ordinateur. Vous pouvez utiliser un écran de démarrage pour permettre à l'utilisateur de choisir le type de jeu à jouer.

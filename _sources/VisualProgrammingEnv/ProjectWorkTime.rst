@@ -3,12 +3,12 @@
    :start: 1
 
 
-Project Work Period
-===================
+Période de travail des projets
+===============================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Work period to put the concepts learned so far into practice. Your teacher will have you create a project that uses most of the ideas seen so far -- a Rock Paper Scissors game is a nice option.
+    Période de travail pour mettre en pratique les concepts appris jusqu'à présent. Votre professeur vous demandera de créer un projet qui utilise la plupart des idées vues jusqu'à présent: un jeu Roch Papier Ciseau est une option intéressante.
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -19,35 +19,35 @@ Project Work Period
 
 
 
-We won't be learning anything new today. Instead, you will be given time to work on a project that puts to use many of the ideas that we've seen so far. Before you begin working on your project, however, you should try the practice quiz below to confirm that you understand the ideas we've seen so far.
+Nous n'apprendrons rien de nouveau aujourd'hui. Au lieu de cela, vous aurez le temps de travailler sur un projet qui exploite un bon nombre des idées que nous avons vues jusqu'à présent. Avant de commencer à travailler sur votre projet, cependant, vous devriez essayer le questionnaire de pratique ci-dessous pour confirmer que vous comprenez les idées que nous avons vues jusqu'à présent.
 
-Check Your Understanding
+Vérifie ta compréhension
 -------------------------
 
 .. mchoice:: scratch_practice_quiz_1
-    :answer_a: The current sprite would say "Hi" for 1 second, then say "there" for 1 second, then say "everyone" for 1 second.
-    :answer_b: The current sprite would say "Hi" for 1 second, then say "everyone" for 1 second, then say "there" for 1 second.
-    :answer_c: The current sprite would say "Hi" for 1 second, then say "there" for 1 second.
+    :answer_a: Le sprite actuel dirait "**Bonjour**" pendant 1 seconde, puis "**tout**" pendant 1 seconde, puis "**le monde**" pendant 1 seconde.
+    :answer_b: Le sprite actuel dirait "**Bonjour**" pendant 1 seconde, puis "**le monde**" pendant 1 seconde, puis "**tout**" pendant 1 seconde.
+    :answer_c: Le sprite actuel dirait "**Bonjour**" pendant 1 seconde, puis dites "**tout**" pendant 1 seconde.
     :correct: b
-    :feedback_a: No. Be sure to look very carefully at the names of the broadcasts!
-    :feedback_b: Yes! The order is controlled by the names of the broadcasts, not which is higher or lower in your script.
-    :feedback_c: No. Be sure to look very carefully at the names of the broadcasts!
+    :feedback_a: Non. Assurez-vous de regarder très attentivement les noms des diffusions!
+    :feedback_b: Oui! L'ordre est contrôlé par les noms des diffusions, et non par ce qui est supérieur ou inférieur dans votre script.
+    :feedback_c: Non. Assurez-vous de regarder très attentivement les noms des diffusions!
 
-    What would happen when you click the green flag, given the code below?
+    Que se passerait-il lorsque vous cliquez sur le drapeau vert, étant donné le code ci-dessous?
 
     .. image:: images/scratch_practice_quiz_1.png
 
 
 .. mchoice:: scratch_practice_quiz_2
-    :answer_a: The current sprite would say "Hi" for 1 second, then say "there" for 1 second, then say "everyone" for 1 second.
-    :answer_b: The current sprite would say "Hi" for 1 second, then say "everyone" for 1 second, then say "there" for 1 second.
-    :answer_c: The current sprite would say "Hi" for 1 second, then say "everyone" forever.
+    :answer_a: Le sprite actuel dirait "**Bonjour**" pendant 1 seconde, puis "**tout**" pendant 1 seconde, puis "**le monde**" pendant 1 seconde.
+    :answer_b: Le sprite actuel dirait "**Bonjour**" pendant 1 seconde, puis "**le monde**" pendant 1 seconde, puis "**tout**" pendant 1 seconde.
+    :answer_c: Le sprite actuel dira "**Bonjour**" pendant 1 seconde, puis dira "**le monde**" pour toujours.
     :correct: c
-    :feedback_a: No. Be sure to look very carefully at the names of the broadcasts!
-    :feedback_b: No. Be sure to look very carefully at the names of the broadcasts!
-    :feedback_c: Yes! Since the 'when I receive alpha' block of code calls itself, it will never stop repeating.
+    :feedback_a: Non. Assurez-vous de regarder très attentivement les noms des diffusions!
+    :feedback_b: Non. Assurez-vous de regarder très attentivement les noms des diffusions!
+    :feedback_c: Oui! Etant donné que le bloc de code «**quand je reçois un alpha**» appelle soi-même, il ne cessera jamais de se répéter.
 
-    What would happen when you click the green flag, given the code below?
+    Que se passerait-il lorsque vous cliquez sur le drapeau vert, étant donné le code ci-dessous?
 
     .. image:: images/scratch_practice_quiz_2.png
 
@@ -58,102 +58,99 @@ Check Your Understanding
 
     .. image:: images/scratch_practice_quiz_3.png
 
-    - :50: Yes! Since we repeat the 'move 10 steps' block 5 times, it is the equivalent of executing the move 10 steps block 5 times.
-      :5: No. Although there is a repeat 5 block, for each repetition the sprite will move 10 steps.
-      :10: No. Since we repeat the 'move 10 steps' block 5 times, it is the equivalent of executing the move 10 steps block 5 times.
-      :.*: Try again!
+    - :50: Oui! Etant donné que nous répétons le bloc 'avancer de 10 pas' 5 fois, cela égale à l'exécution du bloc 10 pas 5 fois.
+      :5: Non. Bien qu'il y ait un bloc de répétition 5, le sprite se déplacera de **10** pas pour **chaque** répétition.
+      :10: Non, puisque nous répétons le bloc 'avancer de 10 pas' 5 fois, cela éguale à l'exécution du bloc 10 pas 5 fois.
+      :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_practice_quiz_4
 
-    Given the code below, how many times will you hear the meow sound when you click the green flag?
+    Étant donné le code ci-dessous, combien de fois entendrez-vous le miaulement lorsque vous cliquerez sur le drapeau vert?
 
     .. image:: images/scratch_practice_quiz_4.png
 
-    - :3: Yes! Since the execution of the script will only pause until the sound is completed for the 'until done' blocks, you will only hear the two 'until done' blocks and the final play sound block.
-      :6: No. Since the execution of the script will only pause until the sound is completed for the 'until done' blocks, you will only hear the two 'until done' blocks and the final play sound block.
-      :2: No. Since the execution of the script will only pause until the sound is completed for the 'until done' blocks, you will only hear the two 'until done' blocks and the final play sound block.
-      :.*: Try again!
-
+    - :3: Oui! Etant donné que l'exécution du script attend seulment les blocs "jusqu'au bout" avant de commencer le prochain son, vous n'entendrez que les deux blocs qui demande d'attendre "Jusqu'au bout" et le dernier bloc de sons son.
+      :6: Non. L'exécution du script attend seulment les blocs "jusqu'au bout" avant de commencer le prochain son, vous n'entendrez que les deux blocs qui demande d'attendre "Jusqu'au bout" et le dernier bloc de sons son.
+      :2: Non. L'exécution du script attend seulment les blocs "jusqu'au bout" avant de commencer le prochain son, vous n'entendrez que les deux blocs qui demande d'attendre "Jusqu'au bout" et le dernier bloc de sons son.
+      :.*: Réessayer!
 
 
 .. fillintheblank:: scratch_practice_quiz_5
 
-    Given the code below, how far will the current sprite move when you click the green flag?
+    Étant donné le code ci-dessous, jusqu'où le sprite actuel se déplacera-t-il lorsque vous cliquez sur le drapeau vert?
 
     .. image:: images/scratch_practice_quiz_5.png
 
-    - :60: Yes! Since the 'move 10 steps' is inside a nested loop, there will be 2 times that it is repeated 3 times. You can think of this as multiplying the nested loop values.
-      :30: No. Since the 'move 10 steps' is inside a nested loop, there will be 2 times that it is repeated 3 times. You can think of this as multiplying the nested loop values.
-      :5: No. Since the 'move 10 steps' is inside a nested loop, there will be 2 times that it is repeated 3 times. You can think of this as multiplying the nested loop values.
-      :.*: Try again! Since the 'move 10 steps' is inside a nested loop, there will be 2 times that it is repeated 3 times.
-
+    - :60: Oui! Étant donné que le bloc «avance de 10 pas» se trouve dans une boucle imbriquée, il sera répété 2 fois 3 fois. Vous pouvez penser à cela comme un multiplication des valeurs de la boucle imbriquées.
+      :30: Non. Étant donné que le bloc «avance de 10 pas» se trouve dans une boucle imbriquée, il sera répété 2 fois 3 fois. Vous pouvez penser à cela comme un multiplication des valeurs de la boucle imbriquées.
+      :5: Non. Étant donné que le bloc «avance de 10 pas» se trouve dans une boucle imbriquée, il sera répété 2 fois 3 fois. Vous pouvez penser à cela comme un multiplication des valeurs de la boucle imbriquées.
+      :.*: Réessayer! Étant donné que le «avance de 10 pas» se trouve dans une boucle imbriquée, il sera répété 2 fois 3 fois.
 
 
 .. fillintheblank:: scratch_practice_quiz_6
 
-    Given the code below, what would be the value of x after the following code is executed?
+    Étant donné le code ci-dessous, quelle serait la valeur de x après l'exécution du code suivant?
 
     .. image:: images/scratch_practice_quiz_6.png
 
-    - :20: Yes! Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
-      :17: No. Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
-      :.*: Try again! Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
-
+    - :20: Oui! Puisque «mettre x à x + 3» se situe en dehors du bloc if si/sinon, il se produira si la valeur de «x» est inférieure ou égale à 10.
+      :17: Non. Puisque «mettre x à x + 3» se situe en dehors du bloc if si/sinon, il se produira si la valeur de «x» est inférieure ou égale à 10.
+      :.*: Réessayer! 
 
 
 .. fillintheblank:: scratch_practice_quiz_7
 
-    Given the code below, how many iterations would occur when the following code is executed?
-
+    Étant donné le code ci-dessous, combien d'itérations se produiraient lorsque le code suivant est exécuté?
+    
     .. image:: images/scratch_practice_quiz_6.png
 
-    - :3: Yes! Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
-      :5: No. Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
-      :.*: Try again! Since the 'set x to x + 3' is outside the if/else block, it will occur regardless of whether 'x' is less than or 10.
+    - :3: Oui! Puisque «mettre x à x + 3» se situe en dehors du bloc if si/sinon, il se produira si la valeur de «x» est inférieure ou égale à 10..
+      :5: Non. Puisque «mettre x à x + 3» se situe en dehors du bloc if si/sinon, il se produira si la valeur de «x» est inférieure ou égale à 10.
+      :.*: Réessayer! Puisque «mettre x à x + 3» se situe en dehors du bloc if si/sinon, il se produira si la valeur de «x» est inférieure ou égale à 10.
 
 
 .. fillintheblank:: scratch_practice_quiz_8
 
-    Given the code below, what would be the value of the "My Number" variable after this code has executed?
-
+    Étant donné le code ci-dessous, quelle serait la valeur de la variable "Mon numéro" après l'exécution de ce code?
+    
     .. image:: images/set_change_test_yourself1.png
 
-    - :99: Yes! Remember that "change" simply adds some amount to the current value of the variable.
-      :.*: Try again! Remember that "change" simply adds some amount to the current value of the variable.
+    - :99: Oui! Rappelez-vous que bloc "ajoute" ajoute simplement un montant à la valeur actuelle de la variable.
+      :.*: Réessayer! Rappelez-vous que bloc "ajoute" ajoute simplement un montant à la valeur actuelle de la variable.
 
 .. fillintheblank:: scratch_practice_quiz_9
 
-    Given the code below, what would be the value of the "My Number" variable after this code has executed?
+    Étant donné le code ci-dessous, quelle serait la valeur de la variable "Mon numéro" après l'exécution de ce code?
 
     .. image:: images/set_change_test_yourself2.png
 
-    - :50: Yes! Remember that "set" makes the current value of the variable into a specific value, regardless of what it was previously.
-      :.*: Try again! Remember that "set" makes the current value of the variable into a specific value, regardless of what it was previously.
+    - :50: Oui! N'oubliez pas que le bloc "mettre" remplace la valeur actuelle de la variable avec une valeur spécifique, peut importe ce qu'elle était avant.
+      :.*: Réessayer! N'oubliez pas que le bloc "mettre" remplace la valeur actuelle de la variable avec une valeur spécifique, peut importe ce qu'elle était avant.
 
 .. fillintheblank:: scratch_practice_quiz_10
 
-    Given the code below, what would be the value of the "My Number" variable after this code has executed?
+    Étant donné le code ci-dessous, quelle serait la valeur de la variable "Mon numéro" après l'exécution de ce code?
 
     .. image:: images/set_change_test_yourself3.png
 
-    - :30: Yes! Remember that "set" makes the current value of the variable into a specific value, regardless of what it was previously.
-      :.*: Try again! Remember that "set" makes the current value of the variable into a specific value, regardless of what it was previously.
+    - :30: Oui! N'oubliez pas que le bloc "mettre" remplace la valeur actuelle de la variable avec une valeur spécifique, peut importe ce qu'elle était avant.
+      :.*: Réessayer! N'oubliez pas que le bloc "mettre" remplace la valeur actuelle de la variable avec une valeur spécifique, peut importe ce qu'elle était avant.
 
 .. fillintheblank:: scratch_practice_quiz_11
 
-    Given the code below, what would be the value of the "My Number" variable after this code has executed?
+    Étant donné le code ci-dessous, quelle serait la valeur de la variable "Mon numéro" après l'exécution de ce code?
 
     .. image:: images/set_change_test_yourself4.png
 
-    - :96: Yes! Remember that if you use a variable within a new set/change statement, the variable contains it's previous value (in this case, 88).
-      :.*: Try again! Remember that if you use a variable within a new set/change statement, the variable contains it's previous value (in this case, 88).
+    - :96: Oui! N'oubliez pas que si vous utilisez une variable dans une nouvelle instruction mettre à/ajoute à, la variable contient la valeur précédente (dans ce cas, 88).
+      :.*: Réessayer! N'oubliez pas que si vous utilisez une variable dans une nouvelle instruction mettre à/ajoute à, la variable contient la valeur précédente (dans ce cas, 88).
 
 .. fillintheblank:: scratch_practice_quiz_12
 
-    Given the code below, what would be the value of the "My Number" variable after this code has executed?
+    Étant donné le code ci-dessous, quelle serait la valeur de la variable "Mon numéro" après l'exécution de ce code?
 
     .. image:: images/set_change_test_yourself5.png
 
-    - :12: Yes! Remember that only one branch of an if/else block can occur, but statements outside the if/else will execute no matter what.
-      :.*: Try again! Remember that only one branch of an if/else block can occur, but statements outside the if/else will execute no matter what.
+    - :12: Yes! Rappelez-vous qu’une seule branche d’un bloc si/sinon peut se produire, mais que les instructions extérieures de si/sinon s’exécutent malgré tout.
+      :.*: Réessayer! Rappelez-vous qu’une seule branche d’un bloc si/sinon peut se produire, mais que les instructions extérieures de si/sinon s’exécutent malgré tout.

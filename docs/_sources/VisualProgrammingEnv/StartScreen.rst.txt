@@ -3,12 +3,12 @@
    :start: 1
 
 
-Making a Start Screen (Repeat, If/Else, Broadcast)
-==================================================
+Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser "*envoyer à tous")
+============================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Use a combination of the **forever**, **broadcast**, and **if/else** blocks to make a simple start screen. Make multiple costumes for the button sprites to provide visual feedback when the user is hovering over the button.
+    Utilisez une combinaison des blocs **répéter indéfiniment**, **diffusion/evoyer à tous**, et **si/sinon** pour créer un simple écran de démarrage. Créez plusieurs costumes pour les sprites du bouton afin de fournir un retour visuel lorsque l'utilisateur survole le bouton.
 
 
 .. reveal:: curriculum_addressed
@@ -18,7 +18,7 @@ Making a Start Screen (Repeat, If/Else, Broadcast)
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-If you'd prefer to watch a video, `the following video <https://www.youtube.com/watch?v=mrLWnxC07DU>`_ demonstrates the same ideas I've described in text below.
+Si vous préférez regarder une vidéo, la `vidéo suivante <https://www.youtube.com/watch?v=mrLWnxC07DU>`_ illustre les mêmes idées que celles décrites dans le texte ci-dessous.
 
 .. youtube:: mrLWnxC07DU
     :height: 315
@@ -27,65 +27,64 @@ If you'd prefer to watch a video, `the following video <https://www.youtube.com/
     :http: https
 
 
-Overview
----------
+Vue de l'ensemble
+------------------
 
-In some programs, we would like to present the user with a choice about what they want to do. For example, many games have a start screen with buttons to start the game, configure options, see highscores, etc. We can accomplish this in Scratch using a combination of the **broadcast**, **forever** and **if/else** blocks. Although there aren't any new concepts presented in this section, it does how you can create something useful with the blocks we have seen so far.
+Dans certains programmes, nous souhaitons proposer à l'utilisateur un choix quant à ce qu'il souhaite faire. Par exemple, beaucoup de jeux ont un écran de démarrage avec des boutons pour démarrer le jeu, configurer les options, voir les meilleurs scores, etc. Nous pouvons accomplir cela dans Scratch en utilisant une combinaison des blocs répéter **indéfiniment**, **diffusion/envoyer à tous**, et **si/sinon**. Bien qu’il n’y ait pas de nouveaux concepts présentés dans cette section, cela explique comment vous pouvez créer quelque chose d’utile avec les blocs que nous avons vus jusqu’à présent.
 
 .. image:: images/scratch_start_screen_animation.gif
 
 
-Creating A Button Sprite
+Créer un bouton Sprite
 -------------------------
 
-The first step in creating a start screen is to create buttons. To do this, we will once again paint a new sprite. Begin by clicking the "Paint New Sprite" button:
+La première étape dans la création d’un écran de démarrage consiste à créer des boutons. Pour ce faire, nous allons peindre à nouveau un nouveau sprite. Commencez par cliquer sur le bouton **peindre** un nouveau sprite:
 
 .. image:: images/scratch_paint_new_sprite.gif
 
-Follow the steps below to create your button sprite (if these instructions are not enough for you to understand the process, you should watch the video above):
+Suivez les étapes ci-dessous pour créer votre sprite de bouton (si ces instructions ne vous suffisent pas pour comprendre le processus, vous devriez regarder la vidéo ci-dessus):
 
-- convert to vector mode
-- select the rectangle tool, and draw a rectangle on the screen
-- fill in rectangle with a color (paint bucket tool) -- even if you decide to have a white background, you *need* to do this step, or clicking inside the rectangle will not select it, since there will be a transparent background
-- pick a contrasting color, which will be used for your font
-- select the text tool, and add the button label (something like "Begin Situation 1")
-- name the costume something descriptive (like "Not Hovering Over")
-- right click the costume, and select Duplicate
-- rename this second costume as "Hovering Over"
-- select different colors for this second costume, and apply the new colors to the background and font using the paint bucket tool
+- convertir en mode vecteur
+- sélectionnez l'outil rectangle et dessinez un rectangle à l'écran
+- Remplissez un rectangle avec une couleur (outil de remplissage) - même si vous décidez de créer un arrière-plan blanc, vous devez suivre cette étape ou cliquer sur l'intérieur du rectangle ne le sélectionnera pas car il y aura un arrière-plan transparent.
+- choisissez une couleur contrastante qui sera utilisée pour votre police
+- sélectionnez l'outil de texte et ajoutez l'étiquette du bouton (quelque chose comme «commencer la situation 1»)
+- nommer le costume quelque chose de descriptif (comme "Ne survol pas")
+- faites un clic droit sur le costume et sélectionnez Dupliquer
+- renommer ce deuxième costume comme "survol"
+- sélectionnez différentes couleurs pour ce second costume et appliquez les nouvelles couleurs à l'arrière-plan et à la police à l'aide de l'outil remplissage
 
 
-Set Up Button to React to Mouse
-----------------------------------
+Configurer le bouton pour réagir à la souris
+----------------------------------------------
 
-Now that you have a sprite painted, we want to make the sprite behave like an actual button. There are two parts to this: we want the sprite to react to the mouse hovering over the button, and we want to broadcast a message when the button is pressed. You can accomplish this by creating code similar to the following:
+Maintenant que vous avez peint un sprite, nous voulons le faire se comporter comme un bouton. Il y a deux parties à cela: nous voulons que le sprite réagisse au survol de la souris par-dessus le bouton et nous souhaitons diffuser un message lorsque le bouton est enfoncé. Vous pouvez accomplir cela en créant un code similaire à celui-ci:
 
 .. image:: images/scratch_button_sprite_code.png
 
-Be sure you create message names that are descriptive. Broadcasts are *much* easier to keep track of if they are properly named.
+Assurez-vous de créer des noms de message descriptifs. Les émissions sont **beaucoup** plus faciles à suivre si elles sont nommées *correctement*.
 
-.. note:: You can save yourself some time by totally completing the first button, then right clicking on the button sprite in the sprite list, and selecting duplicate. This will copy all of the costumes and code associated with the sprite, which means there are just a few changes to make.
+.. note:: Vous pouvez gagner du temps en complétant totalement le premier bouton, en cliquant avec le bouton droit de la souris sur le sprite du bouton dans la liste des sprites et en sélectionnant dupliquer. Cela copiera tous les costumes et le code associés au sprite, ce qui signifie qu'il ne reste que quelques modifications à apporter.
 
 
-Add Characters to Situation
------------------------------
+Ajouter des personnages à la situation
+---------------------------------------
 
-You could use a start screen like this in any way you choose, but to complete this simple example, we will simply have different sprites appear on the screen when one button or the other is pressed.
+Vous pouvez utiliser un écran de démarrage comme vous le souhaitez, mais pour compléter cet exemple simple, différents sprites apparaîtront à l’écran lorsque vous appuierez sur un bouton ou l’autre.
 
-Pick a sprite or two from the library, position them somewhere on the screen, and add the following code to them:
+Choisissez un ou deux sprites dans la bibliothèque, positionnez-les quelque part à l'écran et ajoutez-leur le code suivant:
 
 .. image:: images/scratch_start_screen_characters_1.png
 
-Pick another sprite or two from the library, position them somewhere on the screen, and apply the following code to them:
+Choisissez un ou deux autres sprites de la bibliothèque, positionnez-les quelque part à l'écran et appliquez-leur le code suivant:
 
 .. image:: images/scratch_start_screen_characters_2.png
 
-You should now be able to click on the green flag to reset your start screen. Clicking each button should cause different sprites to appear on the screen. Of course, in your own projects, you can have anything happen when the button is pressed!
+Vous devriez maintenant pouvoir cliquer sur le drapeau vert pour réinitialiser votre écran de démarrage. En cliquant sur chaque bouton, différentes sprites doivent apparaître à l'écran. Bien sûr, dans vos propres projets, vous pouvez faire faire n’importe quoi quand vous appuyez sur le bouton!
 
+Problème de pratique
+---------------------
 
-Practice Problem
-------------------
+Travaillez sur votre deuxième affectation Scratch, pour le temps restant.
 
-Work on your second Scratch assignment, for any remaining time.
-
-.. note:: If your teacher did not assign you a project, you may want to consider making a Rock Paper Scissors simulator to practice your Scratch skills. You will need to use variables, if-else blocks, and broadcasts. A nice extension to the basic version of this project is to allow the user to choose either a player versus computer game, or a computer versus computer game. You could use a start screen to allow the user to choose which type of game to play.
+.. note:: Si votre professeur ne vous a pas assigné de projet, vous pouvez envisager de créer un simulateur Roche Paper Scissors afin de vous exercer à maîtriser Scratch. Vous devrez utiliser des variables, des blocs **si-sinon** et des **diffusions**. Une extension intéressante de la version de base de ce projet est de permettre à l’utilisateur de choisir de jouer contre un autre joueur ou contre l’ordinateur. *Vous pouvez utiliser un écran de démarrage* pour permettre à l'utilisateur de choisir le type de jeu qu’il veut jouer.
