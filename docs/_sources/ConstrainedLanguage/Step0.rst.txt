@@ -1,9 +1,9 @@
-Step 0: Transitioning To Text
-==============================
+Étape 0: Transition vers le texte
+===================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Explore the |reeborg_environment|, and the basic commands available to Reeborg. Introduce the steps the students will be following. Unlike the rest of the pages in this textbook, the steps that follow do not map easily to a single class period. Some early steps will take the students very little time, and some later steps will take them quite a long time. The intended use of these steps is to give the students approximately two weeks of class time to work on the steps at their own pace.
+    Explorez |reeborg_environment| et les commandes de base disponibles pour Reeborg. Présentez les étapes que les étudiants suivront. Contrairement au reste des pages de ce manuel, les étapes qui suivent ne correspondent pas facilement à une seule période de classe. Certaines premières étapes prendront très peu de temps aux étudiants, et certaines étapes ultérieures leur prendront beaucoup de temps. L’utilisation prévue de ces étapes est de donner aux étudiants environ deux semaines de temps en classe pour travailler sur les étapes à leur propre rythme.
 
 
 .. reveal:: curriculum_addressed
@@ -11,7 +11,7 @@ Step 0: Transitioning To Text
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
 
-If you'd prefer to watch a video introducing Reeborg, `the following video <https://www.youtube.com/watch?v=GSszijgTFxU>`_ demonstrates the same ideas as what I've described in text below.
+Si vous préférez regarder une vidéo présentant Reeborg, la `vidéo suivante <https://www.youtube.com/watch?v=GSszijgTFxU>`_ illustre les mêmes idées que celles décrites dans le texte ci-dessous.
 
 .. youtube:: GSszijgTFxU
     :height: 315
@@ -23,17 +23,17 @@ If you'd prefer to watch a video introducing Reeborg, `the following video <http
 Introduction
 ------------
 
-Although there is a lot you can learn using an environment like Scratch, we'd like to reinforce that what you have learned works using a more traditional programming language as well. In this course, the traditional programming language we will use is called `Python <https://www.python.org/>`_. Instead of jumping straight into working with Python, however, we are going to continue our journey in exploring programming by using an environment called Reeborg. Using Reeborg, we will begin to type in Python commands, rather than simply dragging them into place as we did with Scratch. This lets you start to make syntax errors (in other words, if you type something the computer doesn't understand, it will not work), but still gives you visual feedback about your programs.
+Bien que vous puissiez apprendre beaucoup en utilisant un environnement comme Scratch, nous souhaitons insister sur le fait que ce que vous avez appris fonctionne également avec un langage de programmation plus traditionnel. Dans ce cours, le langage de programmation traditionnel que nous utiliserons s'appelle `Python <https://www.python.org/>`_. Au lieu de nous lancer directement dans l’utilisation de Python, nous allons continuer à explorer la programmation en utilisant un environnement appelé Reeborg. En utilisant Reeborg, nous allons commencer à taper des commandes Python, plutôt que de simplement les faire glisser comme nous l’avons fait avec Scratch. Cela vous permet de commencer à faire des erreurs de syntaxe (en d’autres termes, si vous tapez quelque chose que l’ordinateur ne comprend pas, cela ne fonctionnera pas), tout en vous donnant un retour visuel sur vos programmes.
 
-Reeborg's First Step
---------------------
+La première étape de Reeborg
+------------------------------
 
-Open the |reeborg_environment|. If the Step 0 world does not open by default, select it in the world menu:
+Ouvrez |reeborg_environment|. Si le monde de l'étape 0 ne s'ouvre pas par défaut, sélectionnez-le dans le menu du monde:
 
 .. figure:: images/step0.png
    :align: center
 
-You should now see the robot, Reeborg, alone in an empty world. Unfortunately, Reeborg is a used robot, and so it is only capable of doing a few basic commands. One thing Reeborg can do is move forward, as follows:
+Vous devriez maintenant voir le robot, Reeborg, seul dans un monde vide. Malheureusement, Reeborg est un robot usagé et ne peut donc exécuter que quelques commandes de base. Une chose que Reeborg peut faire est d’avancer, comme ceci:
 
 .. figure:: images/move.png
    :align: center
@@ -41,81 +41,64 @@ You should now see the robot, Reeborg, alone in an empty world. Unfortunately, R
 .. figure:: images/move_one_step.gif
    :align: center    
 
-In the editor panel, there is a single instruction::
+Dans le panneau d'édition, il n'y a qu'une seule instruction:
 
     move()
 
-``move()`` is an example of a Python **function**.
-A function has a name; in this case, it is ``move``. Valid names must start with either a letter or the underscore character "_" and may contain letters, numbers or the underscore character "_". The name of the function is followed by ``()``. This tells Reeborg (Python) that the function must be *executed* or *called* (which are two synonyms). This function must be on a line of its own. [We will see exception to this rule later on.]
+``move()`` est un exemple de **fonction** Python. Une fonction a un nom; dans ce cas, c'est ``move``. Les noms valides doivent commencer par une lettre ou par le caractère de soulignement «_» et peuvent contenir des lettres, des chiffres ou le caractère de soulignement «_». Le nom de la fonction est suivi de ``()``. Cela indique à Reeborg (Python) que la fonction doit être *exécutée* ou *appelée* (deux synonymes). Cette fonction doit être sur une ligne à part. [Nous verrons une exception à cette règle plus tard.]
 
-Occasionally we will make **flowcharts** which are graphical representations of a program. In a flowchart, a single instruction like ``move()`` might be represented
-as follows:
+Parfois, nous ferons des **organigrammes** qui sont des représentations graphiques d'un programme. Dans un organigramme, une instruction unique telle que ``move()`` peut être représentée comme ceci:
 
 .. figure:: images/flowcharts/move1.jpg
    :align: center
 
-and a complete program containing this single instruction would be represented
-as follows:
+et un programme complet contenant une seule instruction serait représenté comme ceci:
 
 .. figure:: images/flowcharts/move.jpg
    :align: center
 
-In a flowchart, the sequence of instructions follows the arrows, starting at "Start"
-and ending at "Stop".
+Dans un organigramme, la séquence d'instructions suit les flèches, commençant par «Démarrer» et se terminant par «Arrêter».
 
-.. topic:: Try this!
+.. topic:: Essaye ça!
 
-    Add a second ``move()`` instruction so that Reeborg takes two steps instead
-    of only one.
+    Ajoutez une deuxième instruction ``move()`` pour que Reeborg effectue deux étapes au lieu d’une seule.
 
 .. hint::
 
-   Each instruction must appear on its own line, with no extra space
-   at the beginning of the line.
+   Chaque instruction doit apparaître sur sa propre ligne, sans espace supplémentaire au début de la ligne.
 
 
-Dealing with eRRoRs
+Faire face aux eRRoRs
+----------------------
+
+En écrivant des programmes informatiques, vous ferez probablement de nombreuses erreurs. Pour voir comment Reeborg réagit à certaines erreurs, je vous demanderai d'introduire intentionnellement une erreur dans le programme.
+
+.. topic:: Essaye ça!
+
+    Changez ``move()`` à ``Move()`` (avec un M majuscule) et essayez d’exécuter le programme.
+
+
+Python, le langage compris par Reeborg, est «sensible à la casse»; c'est-à-dire que les lettres minuscules ont une signification différente de celle des majuscules. Maintenant que vous voyez comment Reeborg traite les erreurs, revenez en arrière, corrigez le programme et exécutez la version corrigée.
+
+
+Un outil spécial pour vous aider
+----------------------------------
+
+Au sommet du monde de Reeborg, vous trouverez un bouton intitulé **Clavier de Reeborg** “*Reeborg’s keyboard*”. Si vous cliquez dessus, un clavier spécial apparaîtra. En cliquant sur chaque bouton, l'instruction correspondante, le mot-clé Python, etc., seront automatiquement insérés dans l'éditeur. Cela peut être utile pour s'assurer que les noms sont épelés correctement et que les parenthèses requises ne sont pas oubliées.
+
+
+Prochaines étapes
 -------------------
 
-When writing computer programs, you will likely make many errors. To see how Reeborg reacts to some errors, I will ask you to intentionally introduce one error in the program.
+Les leçons suivantes vous fourniront des défis à relever. Bien que vous puissiez les compléter dans n'importe quel ordre, l'ordre dans lequel elles sont présentées révélera les capacités de Reeborg dans un ordre logique. Lorsque vous avez terminé une étape, il est judicieux de montrer votre solution à votre enseignant afin de confirmer que vous avez créé une solution appropriée au problème. Bien que les mondes aient été créés pour vous donner une rétroaction instantanée, il peut être très utile de demander à un humain expérimenté de vous donner des conseils!
 
 
-.. topic:: Try this!
-
-    Change ``move()`` to ``Move()`` (with an uppercase M) and try to
-    execute the program.
-
-
-Python, the language that Reeborg understands, is "case sensitive";
-that is, lowercase letters have a different meanings than uppercase
-ones. Now that you see how Reeborg deals with errors, go back,
-fix the program and run the corrected version.
-
-
-A special tool to help you
----------------------------
-
-At the very top of Reeborg's World, you will find a button
-titled **Reeborg's keyboard**.  If you click on it, a special
-keyboard will appear.  By clicking on a each button, the corresponding
-instruction, Python keyword, etc., will be inserted in the editor
-automatically.   This can be useful to ensure that names are
-spelled out correctly and that required parentheses are not forgotten.
-
-
-Next steps
------------
-
-The following pages will provide you with challenges for you to complete. Although you could complete them in any order, the order they are presented will reveal the capabilities of Reeborg in a logical order. When you finish a step, it is a good idea to show your solution to your teacher to confirm you have created an appropriate solution to the problem. Although the worlds have been created to give you instant feedback, it can be really helpful to have an experienced human give you tips as well!
-
-
-Acknowledgments
+Remerciements
 -------------------
 
-Reeborg is a modern adaptation of an environment called Karel the Robot, created by Richard Pattis at Stanford University in 1981. The version we will use was created by André Roberge. The tutorials you will be using are an adaptation of tutorials made by Roger Frank, Jeffrey Elkner, André Roberge and Dan Schellenberg.
-
+Reeborg est une adaptation moderne d'un environnement appelé Karel the Robot, créé par Richard Pattis à l'Université de Stanford en 1981. La version que nous allons utiliser a été créée par André Roberge. Les tutoriels que vous utiliserez sont une adaptation de tutoriels réalisés par Roger Frank, Jeffrey Elkner, André Roberge et Dan Schellenberg.
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">l'environnement Reeborg</a>
 

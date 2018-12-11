@@ -1,5 +1,5 @@
-Step 1: Move Reeborg Home and Saving Your Work
-==============================================
+Étape 1: Envoie Reeborg chez lui et enregistrez votre travail
+==============================================================
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -7,44 +7,44 @@ Step 1: Move Reeborg Home and Saving Your Work
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
 
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-In some worlds, Reeborg may have a specific place it needs to get to. For example, when you open the Step 1 world, you will see an image of Reeborg's home. 
+Dans certains mondes, Reeborg peut avoir un endroit spécifique à atteindre. Par exemple, lorsque vous ouvrez le monde Step 1, vous verrez une image de la maison de Reeborg.
 
 .. image:: images/step1.png
 
-Reeborg's world is a simple grid, and we can refer to any part of the grid using an x and y coordinate. This is the same as a Cartesian plane from math class! In this world, Reeborg needs to get back home, which is at x=5 and y=1, or (5,1).
+Le monde de Reeborg est une grille simple, et nous pouvons faire référence à n’importe quelle partie de la grille en utilisant une coordonnée x et y. C'est pareil qu'un plan cartésien en maths! Dans ce monde, Reeborg doit rentrer chez lui, ce qui correspond à x = 5 et à y = 1 ou (5,1).
 
 
-Saving Your Work
-----------------
+Sauvegarder votre travail
+---------------------------
 
-Although the code you are creating for this first few worlds is quite simple, as you progress to the more difficult steps, you will want to save your code. 
+Bien que le code que vous créez pour ces premiers mondes soit relativement simple, vous voudrez enregistrer votre code au fur et à mesure de votre progression.
 
-To save your code to your computer, you can click on the Save button. To open code that you have saved to your computer, use the Open button.
+Pour enregistrer votre code sur votre ordinateur, vous pouvez cliquer sur le bouton Enregistrer. Pour ouvrir le code que vous avez enregistré sur votre ordinateur, utilisez le bouton Ouvrir.
 
 .. image:: images/save_open_buttons.png
 
-If you cannot see the Save and Open buttons, you may need to press the Reload button, as shown below:
+Si vous ne voyez pas les boutons Enregistrer et Ouvrir, vous devrez peut-être appuyer sur le bouton Recharger, comme indiqué ci-dessous:
 
 .. image:: images/reveal_save_and_open.gif
 
 
-If you would prefer to use a keyboard shortcut, you can save the code you have created using the **Ctrl-S** keyboard shortcut (**Cmd-S** on a Mac). To load code you have saved previously, use the **Ctrl-O** keyboard shortcut (**Cmd-O** on a Mac).
+Si vous préférez utiliser un raccourci clavier, vous pouvez enregistrer le code que vous avez créé à l'aide du raccourci clavier **Ctrl-S** (**Cmd-S** sur un Mac). Pour charger le code que vous avez précédemment enregistré, utilisez le raccourci clavier **Ctrl-O** (**Cmd-O** sur Mac).
 
 
-.. note:: If your teacher has asked you to show them your code as you progress through the steps, you may find it helpful to open a new tab when you have completed a step, but are waiting for your teacher. That way, you can have a number of steps easily available for your teacher to look at when they get to you.
+.. note:: Si votre enseignant vous a demandé de lui montrer votre code au fur et à mesure que vous avancez, vous pouvez trouver utile d'ouvrir un nouvel onglet lorsque vous avez terminé une étape en attendant votre enseignant. De cette façon, votre professeur pourra facilement examiner plusieurs étapes lorsqu'il est près à vous voir.
 
 
 
-Your Turn
----------
+À ton tour
+-----------
 
-Open Step 1 on the |reeborg_environment|.
+Ouvrez l’étape 1 sur  |reeborg_environment|.
 
-Give Reeborg the appropriate instructions to make it return home!
+Donnez à Reeborg les instructions appropriées pour le ramener à la maison!
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%201" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%201" target="_blank">l’environnement Reeborg</a>

@@ -1,5 +1,5 @@
-Step 3: Turning Left and Stepping Through Code
-==============================================
+Etape 3: tourner à gauche et passer à travers le code en étapes
+=================================================================
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -8,78 +8,41 @@ Step 3: Turning Left and Stepping Through Code
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
 
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-Reeborg's Bugs
-~~~~~~~~~~~~~~
+Les Bug de Reeborg
+~~~~~~~~~~~~~~~~~~~
 
-In computer jargon, a bug is an error that causes a program to behave in
-an unexpected way. If you are writing computer programs, you are going
-to have bugs in them sooner or later - everybody does. Good programmers
-seek to "remove" bugs or "fix" them as soon as they find that their
-program behaves unexpectedly.
+Dans le jargon informatique, un Bug est une erreur qui provoque le comportement d'un programme de manière inattendue. Si vous écrivez des programmes informatiques, c’est garantie vous allez avoir des Bugs à un moment ou un autre. Les bons programmeurs cherchent à "supprimer" les bugs ou les "corriger" dès qu'ils trouvent que leur programme se composent de façon inattendue.
 
-Not so good programmers state that "bugs" are not really bugs but that
-they are "features" of their programs. **You** are going to be a good
-programmer, unlike the maker of Reeborg, whose program is littered with
-bugs. Some of the problems with Reeborg are:
+de moins bon programmeurs affirment que des «Bugs» ne sont pas vraiment des Bugs, mais qu'ils sont des «caractéristiques» de leurs programmes. **Vous** allez être un bon programmeur, contrairement au fabricant de Reeborg, dont le programme est jonché de bugs. Certains des problèmes avec Reeborg sont:
 
-   
-#. Reeborg has an oil leak. Oil leaks are damaging for the environment
-   and inconvenient for Reeborg who must replenish its supplies when
-   it's not busy accomplishing tasks. The maker of Reeborg claims that
-   it is a feature, as it enables you to follow Reeborg's path, just
-   like any programmer can learn to "trace" a program.
-#. Reeborg's steering mechanism is not handled properly by Reeborg's
-   program: it can only turn left. The maker of Reeborg, once again,
-   claims that this is a feature as it present you with an opportunity
-   to learn about **functions**. You will soon learn how
-   to program a *workaround solution*, enabling Reeborg to turn right,
-   although in a wasteful fashion. 
-#. Reeborg has a compass, enabling it to determine which direction it
-   is facing. Unfortunately, yet again, the program that enables Reeborg
-   to get the information from the compass has a bug: it only tells
-   Reeborg if it is facing North ... or not. Once again, you will 
-   learn how to implement a workaround solution soon.
-#. Reeborg can see if a wall is in front of it, and can also turn its
-   head to the right to see if there is a wall there. However, a
-   software "glitch" (which is another weasel term that software
-   manufacturers use to avoid having to say that their product has a
-   bug) prevents Reeborg's program from properly registering a wall when
-   it turns its head left.
+#. Reeborg a une fuite d'huile. Les fuites d'huile sont nuisibles pour l'environnement et incommode pour Reeborg qui doit reconstituer ses approvisionnements quand il n'est pas occupé à accomplir des tâches. Le fabricant de Reeborg prétend que c'est une caractéristique, car il vous permet de suivre le chemin de Reeborg, comme tout programmeur peut apprendre à «tracer» un programme.
+#. Le mécanisme de contrôle de direction de Reeborg n'est pas manipulé correctement par le programme de Reeborg: il  peut seulement tourner à gauche. Le fabricant de Reeborg, une fois de plus, prétend que c'est une caractéristique car il vous présente une occasion d'apprendre sur les **fonctions**. Vous apprendrez bientôt comment programmer une solution de contournement, permettant à Reeborg de tourner à droite, bien que d'une manière gaspilleuse.
+#. Reeborg a une boussole, lui permettant de déterminer dans quelle direction elle est orientée. Malheureusement, encore une fois, le programme qui permet à Reeborg d'obtenir les informations de la boussole a un Bug: il vérifie seulement si Reeborg fait face au nord... ou non. Une fois de plus, vous apprendrez bientôt comment implémenter une solution de contournement.
+#. Reeborg peut voir si un mur est en face de lui, et peut aussi tourner sa tête vers la droite pour voir s'il ya un mur là-bas. Cependant, un "glitch" (qui est un autre terme que les fabricants de logiciels utilisent pour éviter d'avoir à dire que leur produit a un Bug) empêche le programme de reeborg d'enregistrer correctement un mur quand il tourne sa tête à gauche.
+
 
 
 .. index:: debugging
 
-Stepping Through Code
-~~~~~~~~~~~~~~~~~~~~~
+Passer à travers le code en étapes-*Stepping Through Code*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes to find the cause of bugs, it can help to break the normal
-flow of the program. To this end you may do one or more of the
-following:
+Parfois, pour trouver la cause des bugs, il peut briser le flux normal du programme. À cette fin, vous pouvez effectuer une ou plusieurs des opérations suivantes:
 
-#. You can *pause* a program as it is running by pressing the **pause**
-   button. This is similar to what people refer to as
-   setting a *breakpoint* in a computer program
+#. Vous pouvez *suspendre* un programme en cours d'exécution en appuyant sur le bouton **pause**. Ceci est similaire à ce que les gens appellent “breakpoint” dans un programme d'ordinateur
 
    |pauseButton|
 
-#. Instead of actually pressing the pause button, you can type in the
-   instruction ``pause()`` at any point inside a program and Reeborg
-   will pause, awaiting your permission to continue.
+#. Au lieu d'appuyer sur le bouton pause, vous pouvez taper l'instruction ``pause()`` à n'importe quel point à l'intérieur d'un programme et Reeborg s'arrête, en attendant votre permission de continuer.
 
-#. You can *step through* a program, one instruction at a time, by
-   pressing the *execute one instruction and pause*, or **step** button.
-   By default, the line about to be executed is highlighted; you can turn off
-   the highlighting by clicking on a button above the code editor.
+#. Vous pouvez parcourir un programme, *une instruction à la fois*, en appuyant sur le bouton *exécuter une instruction et pause* ou le bouton **étape**. Par défaut, la prochaine ligne à exécuter est surligné; vous pouvez désactiver la mise en surbrillance en cliquant sur un bouton au-dessus de l'éditeur de code.
 
    |stepButton|
 
-#. You can stop a program at any point by pressing the **stop**
-   button; this unfortunately may not work if you create
-   what is known as an infinite loop, outside of Reeborg's control. If
-   worse comes to worst, you can always just reload the web page.
+#. Vous pouvez arrêter un programme à tout moment en appuyant sur le bouton **Stop**; cela peut malheureusement ne pas fonctionner si vous créez ce qui est connu comme une boucle infinie, en dehors du contrôle de Reeborg. Au pire, vous pouvez toujours juste actualiser la page web
 
    |stopButton|
 
@@ -91,21 +54,21 @@ following:
 .. |stopButton| image:: images/stop_button.png
 
 
-Your Turn
----------
+À ton tour
+------------
 
-Open Step 3 on the |reeborg_environment|.
+Ouvrez l'étape 3 sur |reeborg_environment|.
 
-As mentioned above, Reeborg can only turn in one direction: left. To tell Reeborg to turn, you can use the ``turn_left()`` function.
+Comme mentionné ci-dessus, Reeborg peut seulement tourner dans une direction: à gauche. Pour dire à Reeborg de tourner, vous pouvez utiliser la commande ``turn_left()``.
 
 .. image:: images/step3.gif
 
-Use the ``move()`` function and the ``turn_left()`` function to make Reeborg walk around the lake.
+Utilisez la fonction  ``move()`` et la fonction ``turn_left()`` pour faire Reeborg marcher autour du lac.
 
-.. topic:: Try this!
+.. topic:: Essaie ça!
 
-    To see what happens, let's do some things intentionally wrong. For example, make Reeborg walk into the lake. You might also want to try not walking all the way around the lake to see what the error message will be.
+    Pour voir ce qui se passe, faisons certaines choses intentionnellement mal. Par exemple, faire Reeborg marcher dans le lac. Vous pourriez également vouloir essayer de ne pas marcher tout le chemin autour du lac pour voir ce que le message d'erreur sera.
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%203" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%203" target="_blank">l'environnement Reeborg</a>

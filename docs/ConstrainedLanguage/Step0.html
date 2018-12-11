@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 0: Transitioning To Text &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 0: Transition vers le texte &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,7 +109,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Step 1: Move Reeborg Home and Saving Your Work" href="Step1.html" />
+    <link rel="next" title="Étape 1: Envoie Reeborg chez lui et enregistrez votre travail" href="Step1.html" />
     <link rel="prev" title="12. Student Directed Project" href="../VisualProgrammingEnv/StudentDirectedProject.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -203,13 +203,13 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 0: Transitioning To Text</a><ul>
+<li><a class="reference internal" href="#">Étape 0: Transition vers le texte</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#reeborg-s-first-step">Reeborg’s First Step</a></li>
-<li><a class="reference internal" href="#dealing-with-errors">Dealing with eRRoRs</a></li>
-<li><a class="reference internal" href="#a-special-tool-to-help-you">A special tool to help you</a></li>
-<li><a class="reference internal" href="#next-steps">Next steps</a></li>
-<li><a class="reference internal" href="#acknowledgments">Acknowledgments</a></li>
+<li><a class="reference internal" href="#la-premiere-etape-de-reeborg">La première étape de Reeborg</a></li>
+<li><a class="reference internal" href="#faire-face-aux-errors">Faire face aux eRRoRs</a></li>
+<li><a class="reference internal" href="#un-outil-special-pour-vous-aider">Un outil spécial pour vous aider</a></li>
+<li><a class="reference internal" href="#prochaines-etapes">Prochaines étapes</a></li>
+<li><a class="reference internal" href="#remerciements">Remerciements</a></li>
 </ul>
 </li>
 </ul>
@@ -225,7 +225,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Step 1: Move Reeborg Home and Saving Your Work' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Étape 1: Envoie Reeborg chez lui et enregistrez votre travail' data-toggle="tooltip" >
     <a href="Step1.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -256,92 +256,76 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-0-transitioning-to-text">
-<h1>Step 0: Transitioning To Text<a class="headerlink" href="#step-0-transitioning-to-text" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="etape-0-transition-vers-le-texte">
+<h1>Étape 0: Transition vers le texte<a class="headerlink" href="#etape-0-transition-vers-le-texte" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Explore the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">Reeborg environment</a>, and the basic commands available to Reeborg. Introduce the steps the students will be following. Unlike the rest of the pages in this textbook, the steps that follow do not map easily to a single class period. Some early steps will take the students very little time, and some later steps will take them quite a long time. The intended use of these steps is to give the students approximately two weeks of class time to work on the steps at their own pace.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Explorez <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">l'environnement Reeborg</a> et les commandes de base disponibles pour Reeborg. Présentez les étapes que les étudiants suivront. Contrairement au reste des pages de ce manuel, les étapes qui suivent ne correspondent pas facilement à une seule période de classe. Certaines premières étapes prendront très peu de temps aux étudiants, et certaines étapes ultérieures leur prendront beaucoup de temps. L’utilisation prévue de ces étapes est de donner aux étudiants environ deux semaines de temps en classe pour travailler sur les étapes à leur propre rythme.</p>
 </div>
-<p>If you’d prefer to watch a video introducing Reeborg, <a class="reference external" href="https://www.youtube.com/watch?v=GSszijgTFxU">the following video</a> demonstrates the same ideas as what I’ve described in text below.</p>
+<p>Si vous préférez regarder une vidéo présentant Reeborg, la <a class="reference external" href="https://www.youtube.com/watch?v=GSszijgTFxU">vidéo suivante</a> illustre les mêmes idées que celles décrites dans le texte ci-dessous.</p>
 
     <div class="runestone" style="margin-left: auto; margin-right:auto">
         <div id="GSszijgTFxU_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="GSszijgTFxU" data-video-divid="GSszijgTFxU_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
     <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Although there is a lot you can learn using an environment like Scratch, we’d like to reinforce that what you have learned works using a more traditional programming language as well. In this course, the traditional programming language we will use is called <a class="reference external" href="https://www.python.org/">Python</a>. Instead of jumping straight into working with Python, however, we are going to continue our journey in exploring programming by using an environment called Reeborg. Using Reeborg, we will begin to type in Python commands, rather than simply dragging them into place as we did with Scratch. This lets you start to make syntax errors (in other words, if you type something the computer doesn’t understand, it will not work), but still gives you visual feedback about your programs.</p>
+<p>Bien que vous puissiez apprendre beaucoup en utilisant un environnement comme Scratch, nous souhaitons insister sur le fait que ce que vous avez appris fonctionne également avec un langage de programmation plus traditionnel. Dans ce cours, le langage de programmation traditionnel que nous utiliserons s’appelle <a class="reference external" href="https://www.python.org/">Python</a>. Au lieu de nous lancer directement dans l’utilisation de Python, nous allons continuer à explorer la programmation en utilisant un environnement appelé Reeborg. En utilisant Reeborg, nous allons commencer à taper des commandes Python, plutôt que de simplement les faire glisser comme nous l’avons fait avec Scratch. Cela vous permet de commencer à faire des erreurs de syntaxe (en d’autres termes, si vous tapez quelque chose que l’ordinateur ne comprend pas, cela ne fonctionnera pas), tout en vous donnant un retour visuel sur vos programmes.</p>
 </div>
-<div class="section" id="reeborg-s-first-step">
-<h2>Reeborg’s First Step<a class="headerlink" href="#reeborg-s-first-step" title="Permalink to this headline">¶</a></h2>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">Reeborg environment</a>. If the Step 0 world does not open by default, select it in the world menu:</p>
+<div class="section" id="la-premiere-etape-de-reeborg">
+<h2>La première étape de Reeborg<a class="headerlink" href="#la-premiere-etape-de-reeborg" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%200" target="_blank">l'environnement Reeborg</a>. Si le monde de l’étape 0 ne s’ouvre pas par défaut, sélectionnez-le dans le menu du monde:</p>
 <div class="figure align-center">
 <img alt="../_images/step0.png" src="../_images/step0.png" />
 </div>
-<p>You should now see the robot, Reeborg, alone in an empty world. Unfortunately, Reeborg is a used robot, and so it is only capable of doing a few basic commands. One thing Reeborg can do is move forward, as follows:</p>
+<p>Vous devriez maintenant voir le robot, Reeborg, seul dans un monde vide. Malheureusement, Reeborg est un robot usagé et ne peut donc exécuter que quelques commandes de base. Une chose que Reeborg peut faire est d’avancer, comme ceci:</p>
 <div class="figure align-center">
 <img alt="../_images/move.png" src="../_images/move.png" />
 </div>
 <div class="figure align-center">
 <img alt="../_images/move_one_step.gif" src="../_images/move_one_step.gif" />
 </div>
-<p>In the editor panel, there is a single instruction:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">move()</span></code> is an example of a Python <strong>function</strong>.
-A function has a name; in this case, it is <code class="docutils literal notranslate"><span class="pre">move</span></code>. Valid names must start with either a letter or the underscore character “_” and may contain letters, numbers or the underscore character “_”. The name of the function is followed by <code class="docutils literal notranslate"><span class="pre">()</span></code>. This tells Reeborg (Python) that the function must be <em>executed</em> or <em>called</em> (which are two synonyms). This function must be on a line of its own. [We will see exception to this rule later on.]</p>
-<p>Occasionally we will make <strong>flowcharts</strong> which are graphical representations of a program. In a flowchart, a single instruction like <code class="docutils literal notranslate"><span class="pre">move()</span></code> might be represented
-as follows:</p>
+<p>Dans le panneau d’édition, il n’y a qu’une seule instruction:</p>
+<blockquote>
+<div>move()</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">move()</span></code> est un exemple de <strong>fonction</strong> Python. Une fonction a un nom; dans ce cas, c’est <code class="docutils literal notranslate"><span class="pre">move</span></code>. Les noms valides doivent commencer par une lettre ou par le caractère de soulignement «_» et peuvent contenir des lettres, des chiffres ou le caractère de soulignement «_». Le nom de la fonction est suivi de <code class="docutils literal notranslate"><span class="pre">()</span></code>. Cela indique à Reeborg (Python) que la fonction doit être <em>exécutée</em> ou <em>appelée</em> (deux synonymes). Cette fonction doit être sur une ligne à part. [Nous verrons une exception à cette règle plus tard.]</p>
+<p>Parfois, nous ferons des <strong>organigrammes</strong> qui sont des représentations graphiques d’un programme. Dans un organigramme, une instruction unique telle que <code class="docutils literal notranslate"><span class="pre">move()</span></code> peut être représentée comme ceci:</p>
 <div class="figure align-center">
 <img alt="../_images/move1.jpg" src="../_images/move1.jpg" />
 </div>
-<p>and a complete program containing this single instruction would be represented
-as follows:</p>
+<p>et un programme complet contenant une seule instruction serait représenté comme ceci:</p>
 <div class="figure align-center">
 <img alt="../_images/move.jpg" src="../_images/move.jpg" />
 </div>
-<p>In a flowchart, the sequence of instructions follows the arrows, starting at “Start”
-and ending at “Stop”.</p>
+<p>Dans un organigramme, la séquence d’instructions suit les flèches, commençant par «Démarrer» et se terminant par «Arrêter».</p>
 <div class="topic">
-<p class="topic-title first">Try this!</p>
-<p>Add a second <code class="docutils literal notranslate"><span class="pre">move()</span></code> instruction so that Reeborg takes two steps instead
-of only one.</p>
+<p class="topic-title first">Essaye ça!</p>
+<p>Ajoutez une deuxième instruction <code class="docutils literal notranslate"><span class="pre">move()</span></code> pour que Reeborg effectue deux étapes au lieu d’une seule.</p>
 </div>
 <div class="admonition hint">
 <p class="first admonition-title">Hint</p>
-<p class="last">Each instruction must appear on its own line, with no extra space
-at the beginning of the line.</p>
+<p class="last">Chaque instruction doit apparaître sur sa propre ligne, sans espace supplémentaire au début de la ligne.</p>
 </div>
 </div>
-<div class="section" id="dealing-with-errors">
-<h2>Dealing with eRRoRs<a class="headerlink" href="#dealing-with-errors" title="Permalink to this headline">¶</a></h2>
-<p>When writing computer programs, you will likely make many errors. To see how Reeborg reacts to some errors, I will ask you to intentionally introduce one error in the program.</p>
+<div class="section" id="faire-face-aux-errors">
+<h2>Faire face aux eRRoRs<a class="headerlink" href="#faire-face-aux-errors" title="Permalink to this headline">¶</a></h2>
+<p>En écrivant des programmes informatiques, vous ferez probablement de nombreuses erreurs. Pour voir comment Reeborg réagit à certaines erreurs, je vous demanderai d’introduire intentionnellement une erreur dans le programme.</p>
 <div class="topic">
-<p class="topic-title first">Try this!</p>
-<p>Change <code class="docutils literal notranslate"><span class="pre">move()</span></code> to <code class="docutils literal notranslate"><span class="pre">Move()</span></code> (with an uppercase M) and try to
-execute the program.</p>
+<p class="topic-title first">Essaye ça!</p>
+<p>Changez <code class="docutils literal notranslate"><span class="pre">move()</span></code> à <code class="docutils literal notranslate"><span class="pre">Move()</span></code> (avec un M majuscule) et essayez d’exécuter le programme.</p>
 </div>
-<p>Python, the language that Reeborg understands, is “case sensitive”;
-that is, lowercase letters have a different meanings than uppercase
-ones. Now that you see how Reeborg deals with errors, go back,
-fix the program and run the corrected version.</p>
+<p>Python, le langage compris par Reeborg, est «sensible à la casse»; c’est-à-dire que les lettres minuscules ont une signification différente de celle des majuscules. Maintenant que vous voyez comment Reeborg traite les erreurs, revenez en arrière, corrigez le programme et exécutez la version corrigée.</p>
 </div>
-<div class="section" id="a-special-tool-to-help-you">
-<h2>A special tool to help you<a class="headerlink" href="#a-special-tool-to-help-you" title="Permalink to this headline">¶</a></h2>
-<p>At the very top of Reeborg’s World, you will find a button
-titled <strong>Reeborg’s keyboard</strong>.  If you click on it, a special
-keyboard will appear.  By clicking on a each button, the corresponding
-instruction, Python keyword, etc., will be inserted in the editor
-automatically.   This can be useful to ensure that names are
-spelled out correctly and that required parentheses are not forgotten.</p>
+<div class="section" id="un-outil-special-pour-vous-aider">
+<h2>Un outil spécial pour vous aider<a class="headerlink" href="#un-outil-special-pour-vous-aider" title="Permalink to this headline">¶</a></h2>
+<p>Au sommet du monde de Reeborg, vous trouverez un bouton intitulé <strong>Clavier de Reeborg</strong> “<em>Reeborg’s keyboard</em>”. Si vous cliquez dessus, un clavier spécial apparaîtra. En cliquant sur chaque bouton, l’instruction correspondante, le mot-clé Python, etc., seront automatiquement insérés dans l’éditeur. Cela peut être utile pour s’assurer que les noms sont épelés correctement et que les parenthèses requises ne sont pas oubliées.</p>
 </div>
-<div class="section" id="next-steps">
-<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
-<p>The following pages will provide you with challenges for you to complete. Although you could complete them in any order, the order they are presented will reveal the capabilities of Reeborg in a logical order. When you finish a step, it is a good idea to show your solution to your teacher to confirm you have created an appropriate solution to the problem. Although the worlds have been created to give you instant feedback, it can be really helpful to have an experienced human give you tips as well!</p>
+<div class="section" id="prochaines-etapes">
+<h2>Prochaines étapes<a class="headerlink" href="#prochaines-etapes" title="Permalink to this headline">¶</a></h2>
+<p>Les leçons suivantes vous fourniront des défis à relever. Bien que vous puissiez les compléter dans n’importe quel ordre, l’ordre dans lequel elles sont présentées révélera les capacités de Reeborg dans un ordre logique. Lorsque vous avez terminé une étape, il est judicieux de montrer votre solution à votre enseignant afin de confirmer que vous avez créé une solution appropriée au problème. Bien que les mondes aient été créés pour vous donner une rétroaction instantanée, il peut être très utile de demander à un humain expérimenté de vous donner des conseils!</p>
 </div>
-<div class="section" id="acknowledgments">
-<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
-<p>Reeborg is a modern adaptation of an environment called Karel the Robot, created by Richard Pattis at Stanford University in 1981. The version we will use was created by André Roberge. The tutorials you will be using are an adaptation of tutorials made by Roger Frank, Jeffrey Elkner, André Roberge and Dan Schellenberg.</p>
+<div class="section" id="remerciements">
+<h2>Remerciements<a class="headerlink" href="#remerciements" title="Permalink to this headline">¶</a></h2>
+<p>Reeborg est une adaptation moderne d’un environnement appelé Karel the Robot, créé par Richard Pattis à l’Université de Stanford en 1981. La version que nous allons utiliser a été créée par André Roberge. Les tutoriels que vous utiliserez sont une adaptation de tutoriels réalisés par Roger Frank, Jeffrey Elkner, André Roberge et Dan Schellenberg.</p>
 </div>
 </div>
 
@@ -355,12 +339,12 @@ spelled out correctly and that required parentheses are not forgotten.</p>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../VisualProgrammingEnv/StudentDirectedProject.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Step 1: Move Reeborg Home and Saving Your Work' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Étape 1: Envoie Reeborg chez lui et enregistrez votre travail' data-toggle="tooltip" >
     <a href="Step1.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step1.html" >Next Section - Step 1: Move Reeborg Home and Saving Your Work</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step1.html" >Next Section - Étape 1: Envoie Reeborg chez lui et enregistrez votre travail</a>
 
 <script type="text/javascript">
 

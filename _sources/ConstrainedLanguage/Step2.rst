@@ -1,4 +1,4 @@
-Step 2: Taking and Putting Down Objects
+Étape 2: Prendre et déposer des objets
 =======================================
 
 .. reveal:: curriculum_addressed
@@ -7,31 +7,31 @@ Step 2: Taking and Putting Down Objects
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
 
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-Sometimes Reeborg may need to take an object that is on the ground, or put down an object that it is carrying. You can use the ``take()`` function to tell Reeborg to pick up an object that is on the ground. To put an object that Reeborg is carrying back down on the ground, use the ``put()`` function.
+Parfois, Reeborg peut avoir besoin de prendre un objet qui se trouve sur le sol ou de poser un objet qu’il transporte. Vous pouvez utiliser la fonction ``take()`` pour indiquer à Reeborg de ramasser un objet qui se trouve sur le sol. Pour poser un objet que Reeborg est en train de porter au sol, utilisez la fonction ``put()``.
 
-In the Step 2 world, there are three dandelions on the ground between Reeborg and its house. Your job is to pick them up, then put them in the garbage can, which is directly in front of the house at (5, 1).
+Dans l'univers Étape 2, il y a trois pissenlits sur le sol entre Reeborg et sa maison. Votre travail consiste à les ramasser, puis à les mettre à la poubelle, qui se trouve juste devant la maison, à l'adresse (5, 1).
 
 .. image:: images/step2.png
 
-When there is an object on the ground, it is represented using a colorful image, and the red number on the left-hand side of the image tells you how many of those objects there are. For example, in location (2, 1), there is one dandelion.
+Lorsqu'il y a un objet sur le sol, il est représenté à l'aide d'une image colorée. Le chiffre rouge situé à gauche de l'image indique le nombre d'objets de ce type. Par exemple, à l'emplacement (2, 1), il y a un pissenlit.
 
 .. image:: images/object_on_ground.png
 
-If there is a specific place that objects should be put down (also known as a goal), it is represented using a grayscale image, and the blue number on the right-hand side of the image tells you how many objects are expected to be put down in that location. For example, in location (5,1), Reeborg needs to put down 3 dandelions.
+S'il existe un endroit spécifique où les objets doivent être déposés (également appelé objectif), il est représenté à l'aide d'une image en gris et le nombre bleu situé à droite de l'image indique le nombre d'objets que l'on s'attend à ce qu'ils soient posé à cet endroit. Par exemple, à l'emplacement (5,1), Reeborg doit poser 3 pissenlits
 
 .. image:: images/objects_required_here.png
 
 
-Your Turn
----------
+À ton tour
+------------
 
-Open Step 2 on the |reeborg_environment|.
+Ouvrez l'étape 2 sur |reeborg_environment|.
 
 Give Reeborg the appropriate instructions to make it pick up the dandelions, put them in the garbage, and return home!
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%202" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%202" target="_blank">l'environnement Reeborg</a>

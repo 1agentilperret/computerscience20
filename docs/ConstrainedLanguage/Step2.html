@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 2: Taking and Putting Down Objects &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 2: Prendre et déposer des objets &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Step 3: Turning Left and Stepping Through Code" href="Step3.html" />
-    <link rel="prev" title="Step 1: Move Reeborg Home and Saving Your Work" href="Step1.html" />
+    <link rel="next" title="Etape 3: tourner à gauche et passer à travers le code en étapes" href="Step3.html" />
+    <link rel="prev" title="Étape 1: Envoie Reeborg chez lui et enregistrez votre travail" href="Step1.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 2: Taking and Putting Down Objects</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 2: Prendre et déposer des objets</a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -215,13 +215,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Step 1: Move Reeborg Home and Saving Your Work" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Étape 1: Envoie Reeborg chez lui et enregistrez votre travail" data-toggle="tooltip">
     <a href="Step1.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Step 3: Turning Left and Stepping Through Code' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Etape 3: tourner à gauche et passer à travers le code en étapes' data-toggle="tooltip" >
     <a href="Step3.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -252,21 +252,21 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-2-taking-and-putting-down-objects">
-<h1>Step 2: Taking and Putting Down Objects<a class="headerlink" href="#step-2-taking-and-putting-down-objects" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="tutorial">
-<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes Reeborg may need to take an object that is on the ground, or put down an object that it is carrying. You can use the <code class="docutils literal notranslate"><span class="pre">take()</span></code> function to tell Reeborg to pick up an object that is on the ground. To put an object that Reeborg is carrying back down on the ground, use the <code class="docutils literal notranslate"><span class="pre">put()</span></code> function.</p>
-<p>In the Step 2 world, there are three dandelions on the ground between Reeborg and its house. Your job is to pick them up, then put them in the garbage can, which is directly in front of the house at (5, 1).</p>
+  <div class="section" id="etape-2-prendre-et-deposer-des-objets">
+<h1>Étape 2: Prendre et déposer des objets<a class="headerlink" href="#etape-2-prendre-et-deposer-des-objets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="didacticiel-tutorial">
+<h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Parfois, Reeborg peut avoir besoin de prendre un objet qui se trouve sur le sol ou de poser un objet qu’il transporte. Vous pouvez utiliser la fonction <code class="docutils literal notranslate"><span class="pre">take()</span></code> pour indiquer à Reeborg de ramasser un objet qui se trouve sur le sol. Pour poser un objet que Reeborg est en train de porter au sol, utilisez la fonction <code class="docutils literal notranslate"><span class="pre">put()</span></code>.</p>
+<p>Dans l’univers Étape 2, il y a trois pissenlits sur le sol entre Reeborg et sa maison. Votre travail consiste à les ramasser, puis à les mettre à la poubelle, qui se trouve juste devant la maison, à l’adresse (5, 1).</p>
 <img alt="../_images/step2.png" src="../_images/step2.png" />
-<p>When there is an object on the ground, it is represented using a colorful image, and the red number on the left-hand side of the image tells you how many of those objects there are. For example, in location (2, 1), there is one dandelion.</p>
+<p>Lorsqu’il y a un objet sur le sol, il est représenté à l’aide d’une image colorée. Le chiffre rouge situé à gauche de l’image indique le nombre d’objets de ce type. Par exemple, à l’emplacement (2, 1), il y a un pissenlit.</p>
 <img alt="../_images/object_on_ground.png" src="../_images/object_on_ground.png" />
-<p>If there is a specific place that objects should be put down (also known as a goal), it is represented using a grayscale image, and the blue number on the right-hand side of the image tells you how many objects are expected to be put down in that location. For example, in location (5,1), Reeborg needs to put down 3 dandelions.</p>
+<p>S’il existe un endroit spécifique où les objets doivent être déposés (également appelé objectif), il est représenté à l’aide d’une image en gris et le nombre bleu situé à droite de l’image indique le nombre d’objets que l’on s’attend à ce qu’ils soient posé à cet endroit. Par exemple, à l’emplacement (5,1), Reeborg doit poser 3 pissenlits</p>
 <img alt="../_images/objects_required_here.png" src="../_images/objects_required_here.png" />
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 2 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%202" target="_blank">Reeborg environment</a>.</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 2 sur <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%202" target="_blank">l'environnement Reeborg</a>.</p>
 <p>Give Reeborg the appropriate instructions to make it pick up the dandelions, put them in the garbage, and return home!</p>
 </div>
 </div>
@@ -274,19 +274,19 @@
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Step 1: Move Reeborg Home and Saving Your Work' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Étape 1: Envoie Reeborg chez lui et enregistrez votre travail' data-toggle="tooltip">
     <a href="Step1.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Step1.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Step 3: Turning Left and Stepping Through Code' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Etape 3: tourner à gauche et passer à travers le code en étapes' data-toggle="tooltip" >
     <a href="Step3.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step3.html" >Next Section - Step 3: Turning Left and Stepping Through Code</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step3.html" >Next Section - Etape 3: tourner à gauche et passer à travers le code en étapes</a>
 
 <script type="text/javascript">
 
