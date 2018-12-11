@@ -1,5 +1,5 @@
-Step 5: Defining New Functions
-==============================
+Étape 5: Définir de nouvelles fonctions
+=======================================
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -10,107 +10,86 @@ Step 5: Defining New Functions
 
 .. index:: functions
 
-Tutorial
----------
+Didacticiel-*Tutorial*
+-----------------------
 
-After completing the last step, you have realized that having Reeborg make
-three left turns in a row gives the same final result as if it were to
-make a single right turn. It was probably becoming quite
-tedious to have to write three ``turn_left()`` instructions each time
-you want to have Reeborg turn right. Wouldn't it be nicer if you could
-simply write ``turn_right()``?
+Après avoir terminé la dernière étape, vous vous êtes rendu compte qu’avoir Reeborg tourner à gauche trois fois donnait le même résultat final que s'il tourne tou simplement à droite. Il devenait probablement assez ennuyant de devoir écrire trois instructions ``turn_left ()`` chaque fois que vous voulez que Reeborg tourne à droite. Ne serait-il pas plus agréable de pouvoir simplement écrire «*turn_right ()*»?
 
-Just as we can call built-in functions like ``turn_left()`` and ``move()``, we can create our own functions as well. We can define a new Python function as follows:
+Tout comme nous pouvons appeler des fonctions intégrées telles que ``turn_left ()`` et ``move ()``, nous pouvons également créer nos propres fonctions. Nous pouvons définir une nouvelle fonction Python comme ceci:
 
 .. code-block:: python
 
-    def some_well_chosen_name():
-        # some lines of code
-        # indented at the same level
+    def un_nom_super_pertinant():
+        # une ligne de code
+        # en retrait au même niveau
 
 
-``def`` is the first Python **keyword** we have encountered. Keywords are words that
-have a special meaning in a given programming language.
-Notice how a colon ``:`` precedes what
-is known as a *block of code*, and the indented portion that follows is the  *body* of the
-function. It is **required** in Python to *indent* such blocks of code
-with the same number of spaces at the beginning of each line which, as a side-effect, makes it easy to identify the function body for a human reader.
+`` def`` est le premier mot clé Python ** que nous avons appris. Les mots-clés sont des mots qui ont une signification particulière dans un langage de programmation donné. Notez que deux points ``: `` précèdent ce que l'on appelle un *bloc de code*, et que la partie en retrait qui suit est le *corps/body* de la fonction. Il est **nécessaire** en Python de *mettre en retrait* ces blocs de code avec le même nombre d'espaces au début de chaque ligne, ce qui, en conséquence, facilite l'identification du corps de fonction pour un lecteur humain.
 
-Let's write our first Python function::
+
+Ecrivons notre première fonction Python::
 
     def turn_right():
         turn_left()
         turn_left()
         turn_left()
 
-That's it! You will now be able to avoid having to write three
-``turn_left()`` functions in a row to simulate a right turn!
+C'est tout! Vous pourrez maintenant éviter d'écrire trois fonctions ``turn_left ()`` pour simuler un virage à droite!
 
-
-How to think about ``def``
+Comment penser à ``def``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
-   Please note that this simplified explanation does not take into account what is known
-   as *variable scope* which is something that we will cover later.
+   Veuillez noter que cette explication simplifiée ne tien pas compte de ce que nous appelons la *portée variable/variable scope*, que nous aborderons plus tard.
+   
+Vous venez de voir comment définir une fonction en Python. Il est fort probable que vous ayez tout de suite compris comment y penser mais, juste au cas où, voici une explication plus détaillée qui vous aidera non seulement à comprendre le fonctionnement des fonctions, mais également à toute autre construction Python impliquant des blocs de code.
 
-You have just seen how to define a function in Python. Chances are,
-you understood right away how to think about them but, just in case,
-here's a more detailed explanation which will help you to not only
-understand how functions work, but also other Python construct that
-involve blocks of code.
-
-Suppose we have the following:
+Supposons que nous ayons les éléments suivants:
 
 .. code-block:: python
    :emphasize-lines: 7
 
-    def turn_right():  # begin of code block follows
+    def turn_right():  # le début du bloc de code suit
         turn_left()
         turn_left()
-        turn_left()   # end of code block
+        turn_left()   # fin du bloc de code
 
     move()
     turn_right()
     move()
 
-This is equivalent to the following:
+Ceci est équivalent à ce qui suit:
 
 .. code-block:: python
    :emphasize-lines: 9, 10, 11
 
-    # define a function
+    # définir un fonction
     def turn_right():
         turn_left()
         turn_left()
         turn_left()
 
     move()
-    # begin of code block inside turn_right()
+    # début du bloc de code dans turn_right()
     turn_left()
     turn_left()
     turn_left()
-    # end of code block
+    # fin du bloc de code
     move()
 
-In other words, ``def`` defines a name that we can use as a synonym
-for all the code that appears inside the code block, and whenever we see
-the synonym being **called** [that is, the name appears followed by
-``()``], we can think of it as being equivalent to inserting the code
-block *as is* at that location.
+C'est-à-dire, ``def`` définit un nom que nous pouvons utiliser comme synonyme pour tout le code qui apparaît à l'intérieur du bloc de code, et chaque fois que le synonyme est **appelé** [c'est-à-dire, le nom apparaît suivi par ``()``], on peut dire que cela équivaut l'insertion du bloc de code *tel quel* à cet endroit.
 
 
-Your Turn
-----------
+À ton tour
+------------
 
-Open Step 5 on the |reeborg_environment|.
+Ouvrez l'étape 5 sur |reeborg_environment|.
 
 .. image:: images/step5.png
 
-Reeborg wants to pick some strawberries in its garden. Reeborg's garden has a very strange shape, as you've seen above. Define a ``pick_two_berries()`` function that picks up two strawberries and puts them on the ground. Use it four times as part of your solution. As always, be sure to use comments and whitespace to increase the readability of your solution!
-
+Reeborg veut cueillir des fraises dans son jardin. Le jardin de Reeborg a une forme très étrange, comme vous l'avez vu ci-dessus. Définissez une fonction ``prend_deux_baies()`` qui ramasse deux fraises et les pose par terre. Utilisez-le quatre fois dans le cadre de votre solution. Comme toujours, veillez utiliser les commentaires et les espaces vide pour augmenter la lisibilité de votre solution!
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%205" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%205" target="_blank">l'environnement Reeborg</a>
