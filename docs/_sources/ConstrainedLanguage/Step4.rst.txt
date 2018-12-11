@@ -1,10 +1,9 @@
-Step 4: Comments
+Étape 4: Commentaires
 ==================================
 
 .. important::
 
-     Write your computer programs to make them easy for **people** to
-     read and understand.
+     Ecrivez vos programmes informatiques pour les rendre faciles pour **autres personnes** à lire et comprendre.
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -14,30 +13,20 @@ Step 4: Comments
 
 .. index:: comments
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-When writing programs, you should write them so that other people, just
-like you, would find them easy to read, and be able to figure out what
-they do. Yes, computer languages are designed to allow you to
-communicate with computers, just as human languages have evolved to
-allow humans to communicate with each other. But computer languages,
-which are much simpler than human languages, are often used by
-programmers to share their work with other programmers.
+Lorsque vous écrivez des programmes, vous devez les écrire de sorte que d’autres personnes, tout comme vous, les trouvent faciles à lire et puissent comprendre ce qu’elles font. Oui, les langages informatiques sont conçus pour vous permettre de communiquer avec des ordinateurs, tout comme les langages humains ont évolué pour permettre aux humains de communiquer les uns avec les autres. Mais les langages informatiques, beaucoup plus simples que les langages humains, sont souvent utilisés par les programmeurs pour partager leur travail avec d’autres programmeurs.
 
-Comments are notes made by a programmer which are ignored by the
-computer; they are meant to be read and understood only by humans. They allow programmers to write programs that are easier to understand for other people.
+Les commentaires sont des notes prises par un programmeur qui sont ignorées par l'ordinateur. Ils sont destinés à être lus et compris uniquement par les humains. Ils permettent aux programmeurs d’écrire des programmes plus faciles à comprendre pour d’autres personnes.
 
-When using Python, one can write comments in one of two ways:
+Lorsque vous utilisez Python, vous pouvez écrire des commentaires de deux manières:
 
--  By putting a ``#`` before a comment on any given line.
--  By enclosing any amount of text (even if it takes up more than one line) between triple-quotes like ``""" ... """`` or ``''' ... '''``.
+- En mettant un ``#`` avant un commentaire sur une ligne donnée.
+- En mettant toute quantité de texte (même s’il occupe plus d’une ligne) entre guillemets tels que ``""" ... """`` ou ``''' ... '''``.
 
+Je vais d’abord écrire un programme simple sans aucun commentaire suivi d’une deuxième version avec commentaires ajoutés; Cependant, je ferai la même erreur dans les deux programmes. Pouvez-vous le repérer plus facilement dans le premier programme ou le second?
 
-I will first write a simple program without any comments followed by a
-second version with comments added and a third version ... slightly less
-readable; however, I will make the same error in all three programs. Can
-you spot it more easily in the first program or the second?
 
 .. code-block:: python
 
@@ -57,56 +46,49 @@ you spot it more easily in the first program or the second?
     turn_left()
     put()
 
-Contrast the above program with the same one, from Reeborg's point of
-view, but with comments added for humans; you will be able to recognize
-comments as they appear in a different colour and font style.
+Comparez le programme ci-dessus au même programme, du point de vue de Reeborg, mais avec des commentaires ajoutés pour les humains; vous pourrez reconnaître les commentaires tels qu’ils apparaissent dans une couleur et un style de police différents.
 
 .. code-block:: python
 
-    '''  This is an example of
-    a simple program where Reeborg draws a square,
-    leaving an object behind at each corner. '''
+    '''  Voici un exemple d'un
+    programme simple dans lequel Reeborg dessine un carré,
+    il laisse également un objet dans chaque coins. '''
 
-    move()  # Python commands are on separate lines
+    move()  # les commandes Python sont sur des lignes séparées
     move()
-    turn_left() # Reeborg only knows to turn left
-    put()  # we assume that Reeborg carries enough objects
+    turn_left() # Reeborg sais seulement tourner à gauche
+    put()  # nous présumons que Reeborge a assez d'objet pour mettre dans chaque coins
 
-    # we repeat the above three more times to complete the square
-    move()
-    move()
-    turn_left()
-    put()
-
-    move()
-    turn_left()
-    put()
-
+    # nous répétons le code ci-dessus trois autres fois pour compléter le carré.
     move()
     move()
     turn_left()
     put()
 
-The above are not particularly good comments, but at least one of them
-should have helped you find what was wrong with the program. You might
-think this is cheating; however, how can you guess the intent behind
-some lines of code in a program on their own? The addition of comments
-explaining what a given program should do can be very helpful in finding
-mistakes.
+    move()
+    turn_left()
+    put()
 
-Note that in addition to comments, I have used blank lines (often called whitespace) to separate some "logical" blocks of code, to help see the pattern better. Together, the use of comments and insertion of blank lines can make a program much easier to read.
+    move()
+    move()
+    turn_left()
+    put()
+
+Les commentaires ci-dessus ne sont pas particulièrement pertinants, mais au moins un d’eux aurait dû vous aider à trouver ce qui clochait dans le programme. Vous pourriez penser que c'est tricher; cependant, comment pouvez-vous deviner l’intention qui se cache derrière certaines lignes de code dans un programme? L'ajout de commentaires expliquant ce qu'un programme donné devrait faire peut être très utile pour rechercher des erreurs.
+
+Notez qu'en plus des commentaires, j'ai utilisé des lignes vides (souvent appelées *whitespace*) pour séparer certains blocs de code "logiques", afin de mieux voir le patron. Ensemble, l'utilisation de commentaires et l'insertion de lignes vides peuvent faciliter la lecture d'un programme.
 
 
-Your Turn
-----------
+À ton tour
+------------
 
-Open Step 4 on the |reeborg_environment|.
+Ouvrez l'étape 3 sur |reeborg_environment|.
 
 .. image:: images/step4.png
 
-Use the functions we've learned about so far to make Reeborg walk down the gravel path, picking up dandelions as it finds them, and depositing them in the conveniently placed garbage cans (represented by greyscale dandelion images). Use the ``pause`` function to have Reeborg wait at each location it finds a dandelion to pick. Be sure to use comments and whitespace to increase the readability of your solution!
+Utilisez les fonctions que nous avons apprises jusqu'à maintenant pour que Reeborg marche sur le chemin du gravier, qu'il saisisse les pissenlits à mesure qu'il les trouve et les dépose dans des poubelles bien placées (*représentées par des images de pissenlits gris*). Utilisez la fonction ``pause`` pour que Reeborg attende à chaque endroit où il trouve un pissenlit à rammasser. Veillez à utiliser les commentaires et les espaces vide pour augmenter la lisibilité de votre solution!
 
-Recall that the functions discussed so far include:
+Rappelons que les fonctions discutées jusqu’à présent incluent:
 
 -  ``move()``
 -  ``turn_left()``
@@ -117,4 +99,4 @@ Recall that the functions discussed so far include:
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%204" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%204" target="_blank">l'environnement Reeborg</a>
