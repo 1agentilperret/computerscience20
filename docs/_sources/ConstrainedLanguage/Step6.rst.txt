@@ -1,5 +1,5 @@
-Step 6: Saving Functions in the Library
-=======================================
+Étape 6: Enregistrez des fonctions dans la bibliothèque
+=========================================================
 
 .. reveal:: curriculum_addressed
     :showtitle: Curriculum Outcomes Addressed In This Section
@@ -11,57 +11,42 @@ Step 6: Saving Functions in the Library
 
 .. index:: import
 
-Tutorial
----------
+Didacticiel-*Tutorial*
+-----------------------
 
-In addition to having Reeborg making right turns, you *might* have had
-it turn around a few times; by turning around, I mean changing
-direction so that Reeborg is heading back to where it was coming from.
-We can define a function ``turn_around()`` as follows::
+En plus d'avoir l'option de faire Reeborg tourner à droite, vous l'avez peut-être déjà fait tourner deux fois; en le retournant, je veux dire changer de direction pour que Reeborg retourne à l'endroit d'où il venait. Nous pouvons définir une fonction ``turn_around ()`` comme ceci::
 
     def turn_around():
         turn_left()
         turn_left()
 
-When programmer make use of a given function in different programs,
-rather than redefining it in each program they write, they put them in
-special programs called **libraries** and they have a way to ensure that
-their other programs can use the functions that are found in the
-library.
+Lorsque les programmeurs utilisent une fonction donnée dans différents programmes plutôt que de la redéfinir dans chaque programme écrit, ils les placent dans des programmes spéciaux appelés **bibliothèques/libraries** et ils s'assurent que leurs autres programmes peuvent utiliser les fonctions qui se trouvent dans la bibliothèque.
 
-You are going to use the function ``turn_right()`` **a lot!** Instead of
-rewriting it each time, what you are going to do is
-to write it **once** (more) but, this time, instead of writing it in the
-editor with the **Python Code** tab, you will click on the **library** tab and
-write it there. Oh, and you should also define ``turn_around()`` there as
-well.
+Vous allez utiliser la fonction ``turn_right ()`` **beaucoup!** Au lieu de la réécrire à chaque fois, vous allez l'écrire **une (autre) fois** mais cette fois , au lieu de l'écrire dans l'éditeur avec l'onglet **Code Python**, vous allez cliquer sur l'onglet **bibliothèque** et vous allez l'écrire là. Oh, et vous devriez aussi définir ``turn_around ()`` là en plus.
 
 .. image:: images/library.png
 
 
-Then, when you want to use the functions defined in your library, you will
-simply type ``from library import`` (followed by the function names, separated
-by commas) on its own line in the Python Code editor. For example, if you have defined ``turn_right()`` in the library, you could type ``from library import turn_right``, and you would now be able to use the ``turn_right()`` function anywhere in your code.
+Ensuite, lorsque vous souhaitez utiliser les fonctions définies dans votre bibliothèque, vous devez simplement taper ``from library import`` (suivi du nom des fonctions, séparés par des virgules) sur sa propre ligne dans l'éditeur de code Python. Par exemple, si vous avez défini ``turn_right ()`` dans la bibliothèque, vous pouvez taper à partir de la bibliothèque ``import turn_right``, et vous pourrez maintenant utiliser la fonction ``turn_right ()`` n'importe où dans votre code.
 
-If you end up saving a large number of functions in the library, you will want to know that you can use ``from library import *`` to import **all** of the functions in the library. The `*` is called a wildcard character, and in this case tells Python to import all functions it can find in the library.
+Si vous enregistrez un grand nombre de fonctions dans la bibliothèque, sachez que vous pouvez utiliser ``from library import *`` pour importer **toutes** les fonctions de la bibliothèque. Le `*` est appelé un caractère générique (*wildcard character*), et dans ce cas indique à Python d'importer toutes les fonctions qu'il peut trouver dans la bibliothèque.
 
 .. note:: 
 
-    We use the ``from library import`` command during our Reeborg explorations, which allows you to simply type in ``turn_right()``. Later in the course, we will switch to using the ``import library`` command, which will require you to type ``library.turn_right()`` to call the function.
+    Nous utilisons la commande ``from library import`` lors de nos explorations avec Reeborg, ce qui vous permet de simplement taper ``turn_right ()``. Plus tard dans le cours, nous utiliserons la commande ``import library``, qui vous demandera de taper ``library.turn_right ()`` pour appeler la fonction.
 
 
 
+À ton tour
+-----------
 
-Your Turn
-----------
-
-Open Step 6 on the |reeborg_environment|.
+Ouvrez l'étape 6 sur |reeborg_environment|.
 
 .. image:: images/step6.png
 
-Reeborg needs to go pick up the newspaper (The **Star** Phoenix) that is sitting outside his house. If you haven't done it yet, define both the ``turn_right()`` and ``turn_around()`` functions in the library tab. Now use the functions defined in the library to have Reeborg pick up the newspaper, walk back into the house, and put the newspaper down. Once again, be sure to use comments and whitespace to increase the readability of your solution!
+Reeborg doit aller chercher le journal (Le **Star** Phoenix) qui se trouve devant sa maison. Si vous ne l'avez pas encore fait, définissez les fonctions ``turn_right ()`` et ``turn_around ()`` dans l'onglet de la bibliothèque. Utilisez maintenant les fonctions définies dans la bibliothèque pour que Reeborg prenne le journal, revienne dans la maison et pose le journal. Encore une fois, veillez utiliser les commentaires et les espaces vide pour augmenter la lisibilité de votre solution!
 
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">l'environnemetn Reeborg</a>

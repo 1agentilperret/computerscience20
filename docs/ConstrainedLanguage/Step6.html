@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 6: Saving Functions in the Library &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 6: Enregistrez des fonctions dans la bibliothèque &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Step 7: Thinking and Birthday Message" href="Step7.html" />
-    <link rel="prev" title="Step 5: Defining New Functions" href="Step5.html" />
+    <link rel="prev" title="Étape 5: Définir de nouvelles fonctions" href="Step5.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 6: Saving Functions in the Library</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 6: Enregistrez des fonctions dans la bibliothèque</a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -215,7 +215,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Step 5: Defining New Functions" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Étape 5: Définir de nouvelles fonctions" data-toggle="tooltip">
     <a href="Step5.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -252,52 +252,38 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-6-saving-functions-in-the-library">
-<h1>Step 6: Saving Functions in the Library<a class="headerlink" href="#step-6-saving-functions-in-the-library" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>In addition to having Reeborg making right turns, you <em>might</em> have had
-it turn around a few times; by turning around, I mean changing
-direction so that Reeborg is heading back to where it was coming from.
-We can define a function <code class="docutils literal notranslate"><span class="pre">turn_around()</span></code> as follows:</p>
+  <div class="section" id="etape-6-enregistrez-des-fonctions-dans-la-bibliotheque">
+<h1>Étape 6: Enregistrez des fonctions dans la bibliothèque<a class="headerlink" href="#etape-6-enregistrez-des-fonctions-dans-la-bibliotheque" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="didacticiel-tutorial">
+<span id="index-0"></span><h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>En plus d’avoir l’option de faire Reeborg tourner à droite, vous l’avez peut-être déjà fait tourner deux fois; en le retournant, je veux dire changer de direction pour que Reeborg retourne à l’endroit d’où il venait. Nous pouvons définir une fonction <code class="docutils literal notranslate"><span class="pre">turn_around</span> <span class="pre">()</span></code> comme ceci:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">turn_around</span><span class="p">():</span>
     <span class="n">turn_left</span><span class="p">()</span>
     <span class="n">turn_left</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>When programmer make use of a given function in different programs,
-rather than redefining it in each program they write, they put them in
-special programs called <strong>libraries</strong> and they have a way to ensure that
-their other programs can use the functions that are found in the
-library.</p>
-<p>You are going to use the function <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> <strong>a lot!</strong> Instead of
-rewriting it each time, what you are going to do is
-to write it <strong>once</strong> (more) but, this time, instead of writing it in the
-editor with the <strong>Python Code</strong> tab, you will click on the <strong>library</strong> tab and
-write it there. Oh, and you should also define <code class="docutils literal notranslate"><span class="pre">turn_around()</span></code> there as
-well.</p>
+<p>Lorsque les programmeurs utilisent une fonction donnée dans différents programmes plutôt que de la redéfinir dans chaque programme écrit, ils les placent dans des programmes spéciaux appelés <strong>bibliothèques/libraries</strong> et ils s’assurent que leurs autres programmes peuvent utiliser les fonctions qui se trouvent dans la bibliothèque.</p>
+<p>Vous allez utiliser la fonction <code class="docutils literal notranslate"><span class="pre">turn_right</span> <span class="pre">()</span></code> <strong>beaucoup!</strong> Au lieu de la réécrire à chaque fois, vous allez l’écrire <strong>une (autre) fois</strong> mais cette fois , au lieu de l’écrire dans l’éditeur avec l’onglet <strong>Code Python</strong>, vous allez cliquer sur l’onglet <strong>bibliothèque</strong> et vous allez l’écrire là. Oh, et vous devriez aussi définir <code class="docutils literal notranslate"><span class="pre">turn_around</span> <span class="pre">()</span></code> là en plus.</p>
 <img alt="../_images/library.png" src="../_images/library.png" />
-<p>Then, when you want to use the functions defined in your library, you will
-simply type <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span></code> (followed by the function names, separated
-by commas) on its own line in the Python Code editor. For example, if you have defined <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> in the library, you could type <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">turn_right</span></code>, and you would now be able to use the <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> function anywhere in your code.</p>
-<p>If you end up saving a large number of functions in the library, you will want to know that you can use <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">*</span></code> to import <strong>all</strong> of the functions in the library. The <cite>*</cite> is called a wildcard character, and in this case tells Python to import all functions it can find in the library.</p>
+<p>Ensuite, lorsque vous souhaitez utiliser les fonctions définies dans votre bibliothèque, vous devez simplement taper <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span></code> (suivi du nom des fonctions, séparés par des virgules) sur sa propre ligne dans l’éditeur de code Python. Par exemple, si vous avez défini <code class="docutils literal notranslate"><span class="pre">turn_right</span> <span class="pre">()</span></code> dans la bibliothèque, vous pouvez taper à partir de la bibliothèque <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turn_right</span></code>, et vous pourrez maintenant utiliser la fonction <code class="docutils literal notranslate"><span class="pre">turn_right</span> <span class="pre">()</span></code> n’importe où dans votre code.</p>
+<p>Si vous enregistrez un grand nombre de fonctions dans la bibliothèque, sachez que vous pouvez utiliser <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">*</span></code> pour importer <strong>toutes</strong> les fonctions de la bibliothèque. Le <cite>*</cite> est appelé un caractère générique (<em>wildcard character</em>), et dans ce cas indique à Python d’importer toutes les fonctions qu’il peut trouver dans la bibliothèque.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">We use the <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span></code> command during our Reeborg explorations, which allows you to simply type in <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code>. Later in the course, we will switch to using the <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">library</span></code> command, which will require you to type <code class="docutils literal notranslate"><span class="pre">library.turn_right()</span></code> to call the function.</p>
+<p class="last">Nous utilisons la commande <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span></code> lors de nos explorations avec Reeborg, ce qui vous permet de simplement taper <code class="docutils literal notranslate"><span class="pre">turn_right</span> <span class="pre">()</span></code>. Plus tard dans le cours, nous utiliserons la commande <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">library</span></code>, qui vous demandera de taper <code class="docutils literal notranslate"><span class="pre">library.turn_right</span> <span class="pre">()</span></code> pour appeler la fonction.</p>
 </div>
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 6 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">Reeborg environment</a>.</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 6 sur <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">l'environnemetn Reeborg</a>.</p>
 <img alt="../_images/step6.png" src="../_images/step6.png" />
-<p>Reeborg needs to go pick up the newspaper (The <strong>Star</strong> Phoenix) that is sitting outside his house. If you haven’t done it yet, define both the <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> and <code class="docutils literal notranslate"><span class="pre">turn_around()</span></code> functions in the library tab. Now use the functions defined in the library to have Reeborg pick up the newspaper, walk back into the house, and put the newspaper down. Once again, be sure to use comments and whitespace to increase the readability of your solution!</p>
+<p>Reeborg doit aller chercher le journal (Le <strong>Star</strong> Phoenix) qui se trouve devant sa maison. Si vous ne l’avez pas encore fait, définissez les fonctions <code class="docutils literal notranslate"><span class="pre">turn_right</span> <span class="pre">()</span></code> et <code class="docutils literal notranslate"><span class="pre">turn_around</span> <span class="pre">()</span></code> dans l’onglet de la bibliothèque. Utilisez maintenant les fonctions définies dans la bibliothèque pour que Reeborg prenne le journal, revienne dans la maison et pose le journal. Encore une fois, veillez utiliser les commentaires et les espaces vide pour augmenter la lisibilité de votre solution!</p>
 </div>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Step 5: Defining New Functions' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Étape 5: Définir de nouvelles fonctions' data-toggle="tooltip">
     <a href="Step5.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

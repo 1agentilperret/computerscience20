@@ -11,8 +11,9 @@ Introduction à Scratch (envoyer à tous)
     Introduction au cours, et à l'environnement Scratch. Explique le plan de coordonnées utilisé dans Scratch et les blocs de mouvement de base. Présentez l'idée d'utiliser le bloc de **envoyer à tous** (*diffusion*) dans l'onglet **Événement** pour envoyer des messages, qui est utilisé pour contrôler le déroulement du programme.
 
 
-.. reveal:: curriculum_addressed
+.. reveal:: curriculum_addressed_introduction_scratch
     :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultats du programme
 
     - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
     - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
@@ -96,7 +97,7 @@ Faites glisser les deux sprites vers les emplacements que vous souhaitez qu'ils 
 .. image:: images/scratch_goTo_andGlide.png
 
 Envoyer à tous *Broadcasts*
------------------------
+----------------------------
 
 Quel est le but de ce bloc envoyer à tous que nous avons ajouté au script? Dans cette situation, nous voulions que le deuxième sprite (celui qui vient du côté droit de l'écran) fasse quelque chose **une fois qu'une action effectuée par un autre sprite sera terminée.** Les blocs de *diffusion* nous permettent d'envoyer des messages, et tout sprite (y compris le sprite qui a envoyé le message) dans notre projet peut écouter ce message et répondre en conséquence. Cette fois, nous aimerions que le deuxième sprite entre dans l'écran après que le premier sprite se soit déplacé au milieu de l'écran et ait dit quelque chose.
 

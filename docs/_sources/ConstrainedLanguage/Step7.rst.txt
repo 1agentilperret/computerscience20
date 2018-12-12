@@ -1,15 +1,16 @@
-Step 7: Thinking and Birthday Message
-=======================================
+Étape 7: Bonne fête Reeborg et la fonction think()
+======================================================
 
 .. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
     - **CS20-FP3** Construct and utilize functions to create reusable pieces of code.
 
-Tutorial
-------------
+Didacticiel-*Tutorial*
+-----------------------
 
 You may have noticed that Reeborg takes a bit of time
 between each command; that is because it must "think"

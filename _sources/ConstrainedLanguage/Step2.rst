@@ -1,8 +1,9 @@
 Étape 2: Prendre et déposer des objets
 =======================================
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_step_2
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
 
@@ -30,7 +31,7 @@ S'il existe un endroit spécifique où les objets doivent être déposés (égal
 
 Ouvrez l'étape 2 sur |reeborg_environment|.
 
-Give Reeborg the appropriate instructions to make it pick up the dandelions, put them in the garbage, and return home!
+Donnez à Reeborg les instructions appropriées pour qu’il ramasse les pissenlits, les jette à la poubelle et revienne à la maison!
 
 .. |reeborg_environment| raw:: html
 
