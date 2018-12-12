@@ -1,8 +1,9 @@
 Étape 6: Enregistrez des fonctions dans la bibliothèque
 =========================================================
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_step_six
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
@@ -49,4 +50,4 @@ Reeborg doit aller chercher le journal (Le **Star** Phoenix) qui se trouve devan
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">l'environnemetn Reeborg</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%206" target="_blank">l'environnement Reeborg</a>

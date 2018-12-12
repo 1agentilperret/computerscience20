@@ -11,8 +11,9 @@ Contrôle d'un caractère avec les clés “W,A,S,D” (répétition et conditio
     Introduire le bloc de **répétition** en faisant rétrécir (*faire plus petit*) un sprite avant de disparaître. Faites la démonstration d'une programmation simple basée sur les événements en déplaçant un sprite avec WASD en utilisant le bloc **"Quand "touche" est cliqué pressé"** (*when key is pressed*). Utilisez le bloc **"répéter indéfiniment"** (*forever*), combiné avec le bloc **"si-alors"** (*if-then*) pour améliorer le mouvement du sprite.
 
 
-.. reveal:: curriculum_addressed
-    :showtitle: Résultats du programme d'études traités dans cette section.
+.. reveal:: curriculum_addressed_wasd
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
     - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.

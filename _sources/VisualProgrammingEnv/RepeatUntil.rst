@@ -10,12 +10,13 @@ Code de traçage (*tracing code*) et Mouvement en parabole (Répéter jusqu'à (
 
     Introduisez le bloc **répéter jusqu'à** en traçant le code avec des variables simples et des conditionnelles. Utilisez le bouton Répéter jusqu’au bloc pour simuler le mouvement d’un boulet de canon (le mouvement se répète jusqu’à ce que le boulet atteigne le sol). 
 
-.. reveal:: curriculum_addressed
-    :showtitle: Résultats du programme d'études traités dans cette section.
-
-**Principes et techniques fondamentaux (PT)**
+.. reveal:: curriculum_addressed_repeat_until
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
+    
+    **Principes et techniques fondamentaux (PT)**
     - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
-**Fondements de la programmation (FP)**
+    **Fondements de la programmation (FP)**
     - **20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
     - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme. 
 

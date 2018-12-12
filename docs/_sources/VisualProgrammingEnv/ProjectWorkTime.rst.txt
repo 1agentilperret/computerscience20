@@ -10,8 +10,9 @@ Période de travail des projets
 
     Période de travail pour mettre en pratique les concepts appris jusqu'à présent. Votre professeur vous demandera de créer un projet qui utilise la plupart des idées vues jusqu'à présent: un jeu Roch Papier Ciseau est une option intéressante.
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_work_period
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.

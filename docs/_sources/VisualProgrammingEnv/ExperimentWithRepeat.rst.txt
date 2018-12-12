@@ -10,8 +10,9 @@ Suivre la souris et dessiner des polygones (répéter et si/alors (*if-else*))
 
     Utilisez un bloc **Répéter indéfiniment** associé à un bloc **si/sinon** pour faire  un personnage suivre la souris, puis faire un son quand il atteint le curseur de la souris. Présenter le stylo dans Scratch et l'utilisez pour dessiner des polygones réguliers avec le bloc de **répétition**.
 
-.. reveal:: curriculum_addressed
-    :showtitle: Résultats du programme d'études traités dans cette section.
+.. reveal:: curriculum_addressed_suivre_souris
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours Informatique 20.
     - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme. 

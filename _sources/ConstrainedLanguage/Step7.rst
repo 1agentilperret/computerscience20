@@ -1,7 +1,7 @@
 Étape 7: Bonne fête Reeborg et la fonction think()
 ======================================================
 
-.. reveal:: curriculum_addressed
+.. reveal:: curriculum_addressed_step_seven
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
@@ -12,43 +12,34 @@
 Didacticiel-*Tutorial*
 -----------------------
 
-You may have noticed that Reeborg takes a bit of time
-between each command; that is because it must "think"
-about what you are asking it to do.  However, one can
-change the amount of time Reeborg takes to think by using
-the ``think()`` function with an argument, like
-this:
+Vous avez peut-être remarqué que Reeborg prends du temps entre chaque commande; c'est parce qu'il doit "réfléchir" à ce que vous lui demandez de faire. Cependant, on peut changer le temps que Reeborg met à réfléchir en utilisant la fonction ``think ()`` avec un argument (quelque chose entre les ``()``), comme ceci:
+
 
 .. code-block:: python
 
     think(500)
 
-The number ``500`` which appears between the parentheses
-is what we call an *argument* of a function. The smaller
-the number, the less time Reeborg will take before
-considering each action.  A value of 1000 means that
-Reeborg takes about 1 second to think.  Sometimes, Reeborg has something to think about that you are not aware of, so it may sometimes seem to think
-for longer than you'd expect it to. Calling ``think(0)`` tells Reeborg to move as quickly as it can.
+Le nombre ``500`` qui apparaît entre les parenthèses est ce que nous appelons un *argument* d'une fonction. Plus le nombre est petit, moins Reeborg prendra de temps avant de considérer chaque action. Une valeur de 1000 signifie que Reeborg met environ 1 seconde à réfléchir. Parfois, Reeborg a quelque chose à penser dont vous n'êtes pas au courant, alors il peut parfois sembler penser plus longtemps que prévu. L'appel de ``think (0)`` dit à Reeborg d'agir aussi vite que possible.
 
 .. image:: images/think.gif
 
-Your Turn
----------
+À ton tour
+-----------
 
-Open Step 7 on the |reeborg_environment|.
+Ouvrez l'étape 7 sur |reeborg_environment|.
 
 .. image:: images/step7.png
 
-Reeborg has just turned 18 and wants to let everyone in the universe to know it. Reeborg thinks it would be a funny joke to plant daisies on the front yard to celebrate. Reeborg is a robot and only knows binary, and 18 in decimal is represented as 10010 in binary.
+Reeborg vient d'avoir 18 ans et veut que tout le monde dans l'univers le sache. Reeborg pense que ce serait une blague amusante de planter des fleurs devant sa maison pour célébrer. Reeborg est un robot et ne connaît que le binaire, et 18 est représenté par 10010 en binaire.
 
-Define these new functions:
+Définissez ces nouvelles fonctions:
 
-- ``draw_one()`` to plant the number 1 with daisies
-- ``draw_zero()`` to plant the number 0 with daisies
+- ``draw_one()`` planter les fleurs en forme de 1
+- ``draw_zero()`` planter les fleurs en forme de 0
 
-Use the functions you have created to plant Reeborg's birthday message. Each instruction should properly position and orient Reeborg for the next digit. Be sure to use comments and whitespace to increase the readability of your solution!
+Utilisez les fonctions que vous avez créées pour planter le message d'anniversaire de Reeborg. Chaque instruction doit positionner et orienter correctement Reeborg pour le chiffre suivant. Veillez utiliser les commentaires et les espaces vide pour augmenter la lisibilité de votre solution!
 
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%207" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%207" target="_blank">l'environnement Reeborg</a>

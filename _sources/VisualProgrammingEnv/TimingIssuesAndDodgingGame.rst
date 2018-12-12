@@ -10,8 +10,9 @@ Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)
 
     Explorez les problèmes qui surviennent lorsque plusieurs scripts sont déclenchés par le même événement et les résoudre en configurant des diffusions *ordonnées*. Créez un jeu d'esquive d'objet, en utilisant des variables permettant à l'objet et au personnage d'augmenter en vitesse à mesure que le jeu avance.
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_timing_issues
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.

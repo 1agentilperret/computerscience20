@@ -6,8 +6,9 @@
 First Practice Quiz - ``repeat``, ``if``, ``def``
 ==================================================
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_first_practice_quiz
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-FP2** Investigate how control structures affect program flow.

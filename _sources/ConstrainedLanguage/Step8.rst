@@ -1,8 +1,9 @@
-Step 8: Asking Questions
+Étape 8: poser des questions
 =======================================
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_step_eight
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
     - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
@@ -11,52 +12,48 @@ Step 8: Asking Questions
 
 .. index:: if
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
+
+Parfois, nous ne savons pas à l'avance ce à quoi ressemblera le monde dans lequel Reeborg se trouvera. Heureusement, Reeborg peut percevoir le monde qui l’entoure et nous pouvons lui poser des questions. Pour poser une question à l'ordinateur, nous utilisons une instruction ``if`` ou *si*. Cette **déclaration/*statement*** ``if`` ou *si* suit un schéma similaire à celui de ``function``\ s :
 
 Sometimes, we don't know ahead of time exactly what the world that Reeborg is going to be faced with will look like. Thankfully, Reeborg can sense the world around it, and we can ask Reeborg questions about it. To ask the computer a question, we use an ``if`` statement. The so-called ``if`` **statement** follows a pattern somewhat similar to that of ``function``\ s :
 
 .. code-block:: python
 
-    def some_name():
-        # block of code
+    def un_nom():
+        # bloc de code
 
-    if some_condition:
-        # block of code
+    if une_condition:
+        # bloc de code
 
 
 .. note::
 
-    The general term used to describe a function that gives a result
-    equivalent to ``True`` or ``False`` in an ``if`` statement is **condition**::
+    Le terme général utilisé pour décrire une fonction qui donne un résultat équivalent à ``Vrai`` ou ``Faux`` dans une instruction ``if`` (*si*) est **condition**::
 
        if condition:
            ...
 
 
-Having to specify ``True`` or ``False`` does not help Reeborg decide on
-its own. However, there are special functions that Reeborg recognizes
-that allow Reeborg to make decisions. The first of these is
-``object_here()`` which tells Reeborg if there is at least one object at
-the grid position where it is located. For example, if we want to ask
-Reeborg to collect objects (dandelions, carrots, etc), one part of the code could be::
+Devoir spécifier ``Vrai`` ou `` Faux`` n'aide pas Reeborg à décider par lui-même. Cependant, il existe des fonctions spéciales reconnues par Reeborg qui lui permettent de prendre des décisions. Le premier d'entre eux est ``object_here ()`` qui indique à Reeborg s'il y a au moins un objet à la position de la grille où il se trouve. Par exemple, si nous voulons demander à Reeborg de rammasser des objets (pissenlits, carottes, etc.), une partie du code pourrait être::
 
     if object_here():
         take()
 
-The complete list of functions (questions) that Reeborg can answer is as follows:
+La liste complète des fonctions (*questions*) auxquelles Reeborg peut répondre est la suivante:
 
 =================   ============
-Question/Function   Explanation
+Question/Function   Explication
 =================   ============
-at_goal()           Returns True if Reeborg is on a goal tile (flag, home, or green tile), False otherwise.
-front_is_clear()    Returns True if there is no obstacle (wall, etc) in front of Reeborg, False otherwise.
-right_is_clear()    Returns True if there is no obstacle (wall, etc) to the right of Reeborg, False otherwise.
-wall_in_front()     Returns True if there is a wall in front of Reeborg, False otherwise.
-wall_on_right()     Returns True if there is a wall on the right side of Reeborg, False otherwise.
-object_here()       Returns True if there is an object (star, dandelion, etc) on the same tile as Reeborg is standing on, False otherwise.
-carries_object()    Returns True if Reeborg is currently carrying at least one object (star, dandelion, etc). Returns False if Reeborg is carrying nothing.
-is_facing_north()   Returns True if Reeborg is currently facing north, False otherwise.
+at_goal ()          Renvoie la valeur Vrai si Reeborg se trouve sur une tuile de but (drapeau, maison ou case verte), Faux sinon.
+front_is_clear ()   Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) devant Reeborg, Faux sinon.
+right_is_clear ()   Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) à droite de Reeborg, Faux sinon.
+wall_in_front ()    Renvoie Vrai s'il y a un mur devant Reeborg, Faux sinon.
+wall_on_right ()    Renvoie Vrai s'il y a un mur du côté droit de Reeborg, Faux sinon.
+object_here ()      Renvoie Vrai s'il y a un objet (étoile, pissenlit, etc.) sur la même tuile sur laquelle Reeborg est debout, Faux sinon.
+carry_object ()     Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.
+is_facing_north ()  Renvoie Vrai si Reeborg fait actuellement face au nord, Faux sinon.
 =================   ============
 
 .. .. admonition:: For educators
@@ -80,38 +77,36 @@ is_facing_north()   Returns True if Reeborg is currently facing north, False oth
 ..     ``["dandelion"]``.
 
 
-Your Turn
----------
+À ton tour
+-----------
 
-Open Step 8 on the |reeborg_environment|.
+Ouvrez l'étape 8 sur |reeborg_environment|.
 
 .. image:: images/step8.png
 
-Reeborg's friend Bree loves to pick dandelions and blow the seeds as far as she can. Because of this, Reeborg often finds dandelions growing in the front yard. The dandelions aren't always in the same spot, though. To see this, press the play button on the Step 8 world, and notice that dandelions appear in different places each time. *You can tell that this is going to happen because of the black question mark underneath the image of the dandelion.*
+L'ami de Reeborg, Bree, aime cueillir les pissenlits et souffler les graines aussi loin qu'elle peut. Pour cette raison, Reeborg trouve souvent des pissenlits qui poussent dans la cour avant. Les pissenlits ne sont pas toujours au même endroit, cependant. Pour voir cela, appuyez sur le bouton de lecture du monde Étape 8 et remarquez que les pissenlits apparaissent à des endroits différents à chaque fois. *Vous pouvez déduire que cela va arriver à cause du point d'interrogation noir sous l'image du pissenlit*.
 
-Create a program to have Reeborg walk across the front yard, picking up a dandelion whenever it finds one. There might be a dandelion in any of the locations that have a dandelion image with a question mark underneath (you can see this again if you press the reload button). You will need to ask Reeborg questions as it moves across the front yard. Once every possible dandelion is picked up, have Reeborg put down all the dandelions it has picked up at (2,3), then return to the flag (1,3). Remember to use comments and whitespace to increase the readability of your solution!
+Créez un programme pour que Reeborg traverse la cour avant, ramassant un pissenlit chaque fois qu'il en trouve un. Il peut y avoir un pissenlit dans n'importe quels cases avec une image de pissenlit avec un point d’interrogation en dessous (*vous pouvez le voir à nouveau si vous appuyez sur le bouton de rechargement*). Vous devrez poser des questions à Reeborg lorsqu’il se déplace dans le jardin. Une fois que tous les pissenlits sont ramassés, demandez à Reeborg de poser tous les pissenlits ramassés à (2,3), puis de revenir au drapeau (1,3). N'oubliez pas d'utiliser les commentaires et les espaces pour augmenter la lisibilité de votre solution!
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">l'environnement Reeborg</a>
 
 
-If You're Having Trouble (a more detailed explanation)
-------------------------------------------------------
+Si vous avez des problèmes (voici une explication plus détaillée)
+------------------------------------------------------------------
 
 .. code-block:: python
 
-    if True:
+    if Vrai:
         move()
 
-    if False:
+    if Faux:
         turn_left()
 
-In the code above, ``if``, ``True``, and ``False`` are all Python keywords. It is a good idea to try out the code above in Reeborg's World (you can use any world you like, perhaps Alone?). You might also want to interchange the True and False, then run the program again to see what happens.
+Dans le code ci-dessus, ``if``, ``Vrai`` et ``Faux`` sont tous des mots-clés Python. C'est une bonne idée d'essayer le code ci-dessus dans le monde de Reeborg (vous pouvez utiliser n'importe quel monde, peut-être tout seul?). Vous pouvez également vouloir échanger les valeurs Vrai et Faux, puis réexécutez le programme pour voir ce qui se passe.
 
-When we introduced functions, we explained how we could think of a
-function **call** as being somewhat equivalent to inserting the code block for
-the function definition at that point in the program. Thus::
+Lorsqu'on a présenté les fonctions, on a expliqué que **l’appel** à une fonction était équivalent à l’insertion du bloc de code correspondant à la définition de la fonction dans le programme. Donc::
 
     move()
     turn_right()  # function call
@@ -127,8 +122,7 @@ is equivalent to::
     # end of code block
     move()
 
-``if`` statements can be thought in similar terms, except that we have a
-*conditional* insertion (or rather **deletion**!). Thus::
+On peut voir les déclarations ``if`` de façon similaires, sauf que nous avons une insertion *conditionnelle* (ou plutôt **suppression**!). Donc::
 
     move()
     if True:
@@ -136,14 +130,14 @@ is equivalent to::
         turn_left()
     move()
 
-is equivalent to::
+est équivalent à::
 
     move()
     turn_left()
     turn_left()
     move()
 
-whereas::
+tandis que::
 
     move()
     if False:
@@ -151,18 +145,14 @@ whereas::
         turn_left()
     move()
 
-is equivalent to::
+est équivalent à::
 
     move()
     move()
 
-Note that thinking of it this way does not mean that such a deletion
-would be done permanently: if, somehow, our program *looped back* and
-repeated this part of the code again, the ``if`` statement would be
-reevaluated each time to decide whether or not to execute the lines of
-code inside the code block.
+Notez que penser de cette façon ne signifie pas qu'une telle suppression serait faite de manière permanente: si, d'une manière ou d'une autre, notre programme *revenait dans une boucle* et répétait cette partie du code à nouveau, l'instruction ``if`` serait réévaluée à chaque fois pour décider d'exécuter ou non les lignes de code à l’intérieur du bloc de code.
 
-We can represent the above using a flowchart:
+Nous pouvons représenter ce qui précède à l'aide d'un organigramme/*flowchart*:
 
 .. figure:: images/flowcharts/if.jpg
    :align: center

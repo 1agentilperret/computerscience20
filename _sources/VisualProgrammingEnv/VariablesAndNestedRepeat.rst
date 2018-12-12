@@ -11,13 +11,14 @@ Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼
     Utilisez des **variables** pour améliorer le dessin des polygones de la dernière leçon. Refactorisez le code d'hier afin qu'un polygone régulier avec n'importe quel nombre de côtés puisse être dessiné avec le même code. Explorez des formes intéressantes en utilisant des **boucles imbriquées** ("*nested loops*") (une boucle à l'intérieur d'une autre boucle).
 
 
-.. reveal:: curriculum_addressed
-    :showtitle: Résultats du programme d'études traités dans cette section.
+.. reveal:: curriculum_addressed_nested_loops
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
-    **Principes et techniques fondamentaux (PT)**
+    -**Principes et techniques fondamentaux (PT)**
     - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
     - **20IN-PT.2** Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
-    **Fondements de la programmation (FP)**
+    -**Fondements de la programmation (FP)**
     - **20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
     - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
 

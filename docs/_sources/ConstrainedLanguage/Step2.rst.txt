@@ -1,7 +1,7 @@
 Étape 2: Prendre et déposer des objets
 =======================================
 
-.. reveal:: curriculum_addressed_step_2
+.. reveal:: curriculum_addressed_step_two
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
