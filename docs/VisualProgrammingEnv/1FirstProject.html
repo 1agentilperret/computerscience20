@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Étape 8: poser des questions &#8212; Computer Science 20 Saskatchewan</title>
+    <title>13. Première mission: attraper le scarabée (the beetle) &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Step 9: Repeating Instructions" href="Step9.html" />
-    <link rel="prev" title="Étape 7: Bonne fête Reeborg et la fonction think()" href="Step7.html" />
+    <link rel="next" title="14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼" href="2SecondProject.html" />
+    <link rel="prev" title="12. Student Directed Project" href="StudentDirectedProject.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,10 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Étape 8: poser des questions</a><ul>
-<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
-<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
-<li><a class="reference internal" href="#si-vous-avez-des-problemes-voici-une-explication-plus-detaillee">Si vous avez des problèmes (voici une explication plus détaillée)</a></li>
+<li><a class="reference internal" href="#">13. Première mission: attraper le scarabée (<em>the beetle</em>)</a><ul>
+<li><a class="reference internal" href="#directives">13.1. Directives</a></li>
+<li><a class="reference internal" href="#evaluation">13.2. Évaluation</a></li>
 </ul>
 </li>
 </ul>
@@ -216,14 +215,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Étape 7: Bonne fête Reeborg et la fonction think()" data-toggle="tooltip">
-    <a href="Step7.html" >
+  <li id="relations-prev" title="Previous Chapter - 12. Student Directed Project" data-toggle="tooltip">
+    <a href="StudentDirectedProject.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Step 9: Repeating Instructions' data-toggle="tooltip" >
-    <a href="Step9.html" >
+  <li id="relations-next" title='Next Chapter - 14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
+    <a href="2SecondProject.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -253,168 +252,161 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="etape-8-poser-des-questions">
-<h1>Étape 8: poser des questions<a class="headerlink" href="#etape-8-poser-des-questions" title="Permalink to this headline">¶</a></h1>
-
-    <div data-component="reveal" id="curriculum_addressed_step_eight"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
-    <ul class="simple">
-<li><strong>CS20-CP1</strong> Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.</li>
-<li><strong>CS20-CP2</strong> Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.</li>
-<li><strong>CS20-FP2</strong> Investigate how control structures affect program flow.</li>
-<li><strong>CS20-FP3</strong> Construct and utilize functions to create reusable pieces of code.</li>
-</ul>
-
-    </div>
-    <div class="section" id="didacticiel-tutorial">
-<span id="index-0"></span><h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Parfois, nous ne savons pas à l’avance ce à quoi ressemblera le monde dans lequel Reeborg se trouvera. Heureusement, Reeborg peut percevoir le monde qui l’entoure et nous pouvons lui poser des questions. Pour poser une question à l’ordinateur, nous utilisons une instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> ou <em>si</em>. Cette <strong>déclaration/*statement*</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> ou <em>si</em> suit un schéma similaire à celui de <code class="docutils literal notranslate"><span class="pre">function</span></code>s :</p>
-<p>Sometimes, we don’t know ahead of time exactly what the world that Reeborg is going to be faced with will look like. Thankfully, Reeborg can sense the world around it, and we can ask Reeborg questions about it. To ask the computer a question, we use an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. The so-called <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>statement</strong> follows a pattern somewhat similar to that of <code class="docutils literal notranslate"><span class="pre">function</span></code>s :</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">un_nom</span><span class="p">():</span>
-    <span class="c1"># bloc de code</span>
-
-<span class="k">if</span> <span class="n">une_condition</span><span class="p">:</span>
-    <span class="c1"># bloc de code</span>
-</pre></div>
+  <div class="section" id="premiere-mission-attraper-le-scarabee-the-beetle">
+<h1>13. Première mission: attraper le scarabée (<em>the beetle</em>)<a class="headerlink" href="#premiere-mission-attraper-le-scarabee-the-beetle" title="Permalink to this headline">¶</a></h1>
+<div class="topic">
+<p class="topic-title first">Aperçu rapide du projet</p>
+<p>Vous avez options pour le premier projet qui vous accordera une note par rapport à la difficulter de l’option et de la qualité de votre programme.</p>
 </div>
+<div class="section" id="directives">
+<h2>13.1. Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<p>Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.</p>
+<p>Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continuellement sur la scène. Le but de ce petit jeu sera de déplacer Scratch pour que le chat touche le second sprite. Les fonctionnalités suivantes doivent être implémentées pour obtenir les notes maximales:</p>
+<blockquote>
+<div><ul class="simple">
+<li>La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé)</li>
+<li>Chaque fois que le scarabée frappe le côté de la scène, un effet sonore doit être joué.</li>
+<li><dl class="first docutils">
+<dt>Lorsque Scratch atteint le scarabée:</dt>
+<dd><ul class="first last">
+<li>Scratch devrait dire “je vous ai eu!”</li>
+<li>Le scarabé devrait être placée au hasard à un nouvel emplacement et dire “Pas cette fois!”, Puis reprendre son mouvement.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Une touche de barre d’espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d’espace, le coléoptère doit se déplacer plus rapidement et se voir appliquer un effet d’image / couleur. Lorsque la barre d’espace est relâchée, son mouvement et son apparence devraient revenir à la normale.</li>
+</ul>
+</div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Le terme général utilisé pour décrire une fonction qui donne un résultat équivalent à <code class="docutils literal notranslate"><span class="pre">Vrai</span></code> ou <code class="docutils literal notranslate"><span class="pre">Faux</span></code> dans une instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> (<em>si</em>) est <strong>condition</strong>:</p>
-<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
-    <span class="o">...</span>
-</pre></div>
+<p class="last">le bloc de détection de cyan TOUCHING peut faire référence à un autre sprite sur la scène ou au bord de la scène.</p>
 </div>
-</div>
-<p>Devoir spécifier <code class="docutils literal notranslate"><span class="pre">Vrai</span></code> ou `` Faux`` n’aide pas Reeborg à décider par lui-même. Cependant, il existe des fonctions spéciales reconnues par Reeborg qui lui permettent de prendre des décisions. Le premier d’entre eux est <code class="docutils literal notranslate"><span class="pre">object_here</span> <span class="pre">()</span></code> qui indique à Reeborg s’il y a au moins un objet à la position de la grille où il se trouve. Par exemple, si nous voulons demander à Reeborg de rammasser des objets (pissenlits, carottes, etc.), une partie du code pourrait être:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">object_here</span><span class="p">():</span>
-    <span class="n">take</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>La liste complète des fonctions (<em>questions</em>) auxquelles Reeborg peut répondre est la suivante:</p>
-<blockquote>
-<div><table border="1" class="docutils">
+<p>Lorsque vous avez terminé, appuyez sur le bouton PARTAGER de l’éditeur et soumettez l’URL de ce projet.</p>
+
+    <div data-component="reveal" id="extra_for_experts"   data-showtitle="Dirrectives pour avoir 100%" data-hidetitle="Cacher dirrectives pour avoir 100%" >
+    <dl class="docutils">
+<dt>Modifiez le script du scarabée pour que son mouvement soit plus complexe:</dt>
+<dd><ul class="first last simple">
+<li>Il devrait se déplacer en utilisant un algorithme de “randonneur aléatoire”:</li>
+<li><dl class="first docutils">
+<dt>Chaque fois que le scarabée se déplace, il doit choisir l’une des trois options suivantes:</dt>
+<dd><ul class="first last">
+<li>Tourner à droite (~ 15) et aller de l’avant</li>
+<li>Tourner à gauche (~ 15) et aller de l’avant</li>
+<li>Simplement avancer</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Ne craignez pas de rebondir sur les bords de la scène.</li>
+<li>Ajouter une fonctionnalité où l’utilisateur peut appuyer sur une touche pour retourner instantanément les scarabées à l’origine.</li>
+<li>Créez 3 sprites Beetle distinctes qui commencent à des emplacements différents. Quand Scratch attrape un scarabée, il devrait dire “Tu m’as eu!” et disparaissent.</li>
+</ul>
+</dd>
+</dl>
+
+    </div>
+    </div>
+<div class="section" id="evaluation">
+<h2>13.2. Évaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h2>
+
+    <div data-component="reveal" id="eval_eighty_five"   data-showtitle="Évaluation pour avoir 85%" data-hidetitle="Cacher dirrectives pour avoir 85%" >
+    <table border="1" class="docutils">
 <colgroup>
-<col width="13%" />
-<col width="87%" />
+<col width="80%" />
+<col width="4%" />
+<col width="8%" />
+<col width="8%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Question/Function</th>
-<th class="head">Explication</th>
+<tr class="row-odd"><th class="head">Critère</th>
+<th class="head">oui</th>
+<th class="head">non (-10%)</th>
+<th class="head">un peu (-5%)</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>at_goal ()</td>
-<td>Renvoie la valeur Vrai si Reeborg se trouve sur une tuile de but (drapeau, maison ou case verte), Faux sinon.</td>
+<tr class="row-even"><td>La musique de fond jouer pendant que le jeu est actif</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>front_is_clear ()</td>
-<td>Renvoie Vrai s’il n’y a pas d’obstacle (mur, etc.) devant Reeborg, Faux sinon.</td>
+<tr class="row-odd"><td>Scratch dit “je vous ai eu!” et le scarabé saute et dit “Pas cette fois!” quand ils se touchent</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 </tr>
-<tr class="row-even"><td>right_is_clear ()</td>
-<td>Renvoie Vrai s’il n’y a pas d’obstacle (mur, etc.) à droite de Reeborg, Faux sinon.</td>
+<tr class="row-even"><td>Le “Mode Pepsi” est fonctionnelle lorsqu’on presse la barre d’espace et retourne à la norme quand la barre d’espace est pressé.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>wall_in_front ()</td>
-<td>Renvoie Vrai s’il y a un mur devant Reeborg, Faux sinon.</td>
-</tr>
-<tr class="row-even"><td>wall_on_right ()</td>
-<td>Renvoie Vrai s’il y a un mur du côté droit de Reeborg, Faux sinon.</td>
-</tr>
-<tr class="row-odd"><td>object_here ()</td>
-<td>Renvoie Vrai s’il y a un objet (étoile, pissenlit, etc.) sur la même tuile sur laquelle Reeborg est debout, Faux sinon.</td>
-</tr>
-<tr class="row-even"><td>carry_object ()</td>
-<td>Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.</td>
-</tr>
-<tr class="row-odd"><td>is_facing_north ()</td>
-<td>Renvoie Vrai si Reeborg fait actuellement face au nord, Faux sinon.</td>
+<tr class="row-odd"><td>le scarabée rebondis et fait un son quand il touche le côté de l’écran</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
-</div>
-<div class="section" id="a-ton-tour">
-<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
-<p>Ouvrez l’étape 8 sur <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">l'environnement Reeborg</a>.</p>
-<img alt="../_images/step8.png" src="../_images/step8.png" />
-<p>L’ami de Reeborg, Bree, aime cueillir les pissenlits et souffler les graines aussi loin qu’elle peut. Pour cette raison, Reeborg trouve souvent des pissenlits qui poussent dans la cour avant. Les pissenlits ne sont pas toujours au même endroit, cependant. Pour voir cela, appuyez sur le bouton de lecture du monde Étape 8 et remarquez que les pissenlits apparaissent à des endroits différents à chaque fois. <em>Vous pouvez déduire que cela va arriver à cause du point d’interrogation noir sous l’image du pissenlit</em>.</p>
-<p>Créez un programme pour que Reeborg traverse la cour avant, ramassant un pissenlit chaque fois qu’il en trouve un. Il peut y avoir un pissenlit dans n’importe quels cases avec une image de pissenlit avec un point d’interrogation en dessous (<em>vous pouvez le voir à nouveau si vous appuyez sur le bouton de rechargement</em>). Vous devrez poser des questions à Reeborg lorsqu’il se déplace dans le jardin. Une fois que tous les pissenlits sont ramassés, demandez à Reeborg de poser tous les pissenlits ramassés à (2,3), puis de revenir au drapeau (1,3). N’oubliez pas d’utiliser les commentaires et les espaces pour augmenter la lisibilité de votre solution!</p>
-</div>
-<div class="section" id="si-vous-avez-des-problemes-voici-une-explication-plus-detaillee">
-<h2>Si vous avez des problèmes (voici une explication plus détaillée)<a class="headerlink" href="#si-vous-avez-des-problemes-voici-une-explication-plus-detaillee" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">Vrai</span><span class="p">:</span>
-    <span class="n">move</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="n">Faux</span><span class="p">:</span>
-    <span class="n">turn_left</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Dans le code ci-dessus, <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">Vrai</span></code> et <code class="docutils literal notranslate"><span class="pre">Faux</span></code> sont tous des mots-clés Python. C’est une bonne idée d’essayer le code ci-dessus dans le monde de Reeborg (vous pouvez utiliser n’importe quel monde, peut-être tout seul?). Vous pouvez également vouloir échanger les valeurs Vrai et Faux, puis réexécutez le programme pour voir ce qui se passe.</p>
-<p>Lorsqu’on a présenté les fonctions, on a expliqué que <strong>l’appel</strong> à une fonction était équivalent à l’insertion du bloc de code correspondant à la définition de la fonction dans le programme. Donc:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="n">turn_right</span><span class="p">()</span>  <span class="c1"># function call</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>is equivalent to:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="c1"># begin of code block inside turn_right()</span>
-<span class="n">turn_left</span><span class="p">()</span>
-<span class="n">turn_left</span><span class="p">()</span>
-<span class="n">turn_left</span><span class="p">()</span>
-<span class="c1"># end of code block</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>On peut voir les déclarations <code class="docutils literal notranslate"><span class="pre">if</span></code> de façon similaires, sauf que nous avons une insertion <em>conditionnelle</em> (ou plutôt <strong>suppression</strong>!). Donc:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">turn_left</span><span class="p">()</span>
-    <span class="n">turn_left</span><span class="p">()</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>est équivalent à:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="n">turn_left</span><span class="p">()</span>
-<span class="n">turn_left</span><span class="p">()</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>tandis que:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-    <span class="n">turn_left</span><span class="p">()</span>
-    <span class="n">turn_left</span><span class="p">()</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>est équivalent à:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">move</span><span class="p">()</span>
-<span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Notez que penser de cette façon ne signifie pas qu’une telle suppression serait faite de manière permanente: si, d’une manière ou d’une autre, notre programme <em>revenait dans une boucle</em> et répétait cette partie du code à nouveau, l’instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> serait réévaluée à chaque fois pour décider d’exécuter ou non les lignes de code à l’intérieur du bloc de code.</p>
-<p>Nous pouvons représenter ce qui précède à l’aide d’un organigramme/<em>flowchart</em>:</p>
-<div class="figure align-center">
-<img alt="../_images/if.jpg" src="../_images/if.jpg" />
-</div>
+    </div>
+    <table border="1" class="docutils">
+<colgroup>
+<col width="80%" />
+<col width="4%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Critère</th>
+<th class="head">oui</th>
+<th class="head">non (-10%)</th>
+<th class="head">un peu (-5%)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>La musique de fond jouer pendant que le jeu est actif</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Scratch dit “je vous ai eu!” et le scarabé saute et dit “Pas cette fois!” quand ils se touchent</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Le “Mode Pepsi” est fonctionnelle lorsqu’on presse la barre d’espace et retourne à la norme quand la barre d’espace est pressé.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>le scarabée rebondis et fait un son quand il touche le côté de l’écran</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Étape 7: Bonne fête Reeborg et la fonction think()' data-toggle="tooltip">
-    <a href="Step7.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - 12. Student Directed Project' data-toggle="tooltip">
+    <a href="StudentDirectedProject.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="Step7.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="StudentDirectedProject.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Step 9: Repeating Instructions' data-toggle="tooltip" >
-    <a href="Step9.html" >
+  <li id="relations-next" class="navLink" title='Next Section - 14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
+    <a href="2SecondProject.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step9.html" >Next Section - Step 9: Repeating Instructions</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="2SecondProject.html" >Next Section - 14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a>
 
 <script type="text/javascript">
 

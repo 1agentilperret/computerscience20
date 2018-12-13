@@ -42,19 +42,19 @@ Devoir spécifier ``Vrai`` ou `` Faux`` n'aide pas Reeborg à décider par lui-m
         take()
 
 La liste complète des fonctions (*questions*) auxquelles Reeborg peut répondre est la suivante:
-
-=================   ============
-Question/Function   Explication
-=================   ============
-at_goal ()          Renvoie la valeur Vrai si Reeborg se trouve sur une tuile de but (drapeau, maison ou case verte), Faux sinon.
-front_is_clear ()   Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) devant Reeborg, Faux sinon.
-right_is_clear ()   Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) à droite de Reeborg, Faux sinon.
-wall_in_front ()    Renvoie Vrai s'il y a un mur devant Reeborg, Faux sinon.
-wall_on_right ()    Renvoie Vrai s'il y a un mur du côté droit de Reeborg, Faux sinon.
-object_here ()      Renvoie Vrai s'il y a un objet (étoile, pissenlit, etc.) sur la même tuile sur laquelle Reeborg est debout, Faux sinon.
-carry_object ()     Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.
-is_facing_north ()  Renvoie Vrai si Reeborg fait actuellement face au nord, Faux sinon.
-=================   ============
+    
+    ===================  ============
+    Question/Function    Explication
+    ===================  ============
+    at_goal ()           Renvoie la valeur Vrai si Reeborg se trouve sur une tuile de but (drapeau, maison ou case verte), Faux sinon.
+    front_is_clear ()    Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) devant Reeborg, Faux sinon.
+    right_is_clear ()    Renvoie Vrai s'il n'y a pas d'obstacle (mur, etc.) à droite de Reeborg, Faux sinon.
+    wall_in_front ()     Renvoie Vrai s'il y a un mur devant Reeborg, Faux sinon.
+    wall_on_right ()     Renvoie Vrai s'il y a un mur du côté droit de Reeborg, Faux sinon.
+    object_here ()       Renvoie Vrai s'il y a un objet (étoile, pissenlit, etc.) sur la même tuile sur laquelle Reeborg est debout, Faux sinon.
+    carry_object ()      Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.
+    is_facing_north ()   Renvoie Vrai si Reeborg fait actuellement face au nord, Faux sinon.
+    ===================  ============
 
 .. .. admonition:: For educators
 ..
@@ -75,7 +75,6 @@ is_facing_north ()  Renvoie Vrai si Reeborg fait actuellement face au nord, Faux
 ..
 ..     ``object_here("dandelion")`` will either return an empty list or the list
 ..     ``["dandelion"]``.
-
 
 À ton tour
 -----------

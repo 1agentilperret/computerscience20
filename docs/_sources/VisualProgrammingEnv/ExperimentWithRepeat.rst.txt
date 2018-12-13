@@ -127,7 +127,7 @@ Bien que cela crée un carré, notez qu'il y a du code répété plusieurs fois.
 Bien que vous avez peut-être utilisé une méthode d'essayer et de vérifier pour déterminer les angles utilisés pour dessiner les formes ci-dessus, il existe un modèle que nous pouvons utiliser pour dessiner ces formes. Notez les angles que vous avez utilisés pour dessiner les formes:
 
 +------------+---------+-------------+
-| Forme      | Côté   | Angle Utilisé  |
+| Forme      | Côté   | Angle Utilisé|
 +============+=========+=============+
 | triangle   | 3       | 120         |
 +------------+---------+-------------+
