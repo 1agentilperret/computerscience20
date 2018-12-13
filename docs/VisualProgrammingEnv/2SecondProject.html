@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼ &#8212; Computer Science 20 Saskatchewan</title>
+    <title>15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼ &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼" href="3ThirdProject.html" />
-    <link rel="prev" title="13. Première mission: attraper le scarabée (the beetle)" href="1FirstProject.html" />
+    <link rel="next" title="16. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼" href="3ThirdProject.html" />
+    <link rel="prev" title="14. Première mission: attraper le scarabée (the beetle)" href="1FirstProjectold.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,11 +203,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a><ul>
-<li><a class="reference internal" href="#variables">14.1. Variables</a></li>
-<li><a class="reference internal" href="#les-blocs-de-boucles-imbriques">14.2. Les blocs de boucles imbriqués</a></li>
-<li><a class="reference internal" href="#check-your-understanding">14.3. Check Your Understanding</a></li>
-<li><a class="reference internal" href="#probleme-de-pratique">14.4. Problème de pratique</a></li>
+<li><a class="reference internal" href="#">15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a><ul>
+<li><a class="reference internal" href="#variables">15.1. Variables</a></li>
+<li><a class="reference internal" href="#les-blocs-de-boucles-imbriques">15.2. Les blocs de boucles imbriqués</a></li>
+<li><a class="reference internal" href="#check-your-understanding">15.3. Check Your Understanding</a></li>
+<li><a class="reference internal" href="#probleme-de-pratique">15.4. Problème de pratique</a></li>
 </ul>
 </li>
 </ul>
@@ -217,13 +217,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 13. Première mission: attraper le scarabée (<em>the beetle</em>)" data-toggle="tooltip">
-    <a href="1FirstProject.html" >
+  <li id="relations-prev" title="Previous Chapter - 14. Première mission: attraper le scarabée (<em>the beetle</em>)" data-toggle="tooltip">
+    <a href="1FirstProjectold.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - 15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - 16. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
     <a href="3ThirdProject.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -255,14 +255,27 @@
 <div class="container" id="main-content">
   
   <div class="section" id="dessiner-des-polygones-partie-2-variables-et-boucles-imbriquee">
-<h1>14. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼<a class="headerlink" href="#dessiner-des-polygones-partie-2-variables-et-boucles-imbriquee" title="Permalink to this headline">¶</a></h1>
+<h1>15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼<a class="headerlink" href="#dessiner-des-polygones-partie-2-variables-et-boucles-imbriquee" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Aperçu rapide de la journée</p>
 <p>Utilisez des <strong>variables</strong> pour améliorer le dessin des polygones de la dernière leçon. Refactorisez le code d’hier afin qu’un polygone régulier avec n’importe quel nombre de côtés puisse être dessiné avec le même code. Explorez des formes intéressantes en utilisant des <strong>boucles imbriquées</strong> (“<em>nested loops</em>”) (une boucle à l’intérieur d’une autre boucle).</p>
 </div>
-<p>Si vous préférez regarder une vidéo, la <a class="reference external" href="https://www.youtube.com/watch?v=yV9GjD7-dg8">vidéo</a> suivante montre les mêmes idées que celles que j’ai décrites dans le texte ci-dessous.</p>
-<span class="target" id="scratch-variables"></span><div class="section" id="variables">
-<span id="index-0"></span><h2>14.1. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+
+    <div data-component="reveal" id="curriculum_addressed_nested_loops"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
+    -<strong>Principes et techniques fondamentaux (PT)</strong>
+- <strong>20IN-PT.1</strong> Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+- <strong>20IN-PT.2</strong> Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
+-<strong>Fondements de la programmation (FP)</strong>
+- <strong>20IN-FP.1</strong> Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
+- <strong>20IN-FP.2</strong> Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
+    </div>
+    <p>Si vous préférez regarder une vidéo, la <a class="reference external" href="https://www.youtube.com/watch?v=yV9GjD7-dg8">vidéo</a> suivante montre les mêmes idées que celles que j’ai décrites dans le texte ci-dessous.</p>
+
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+        <div id="yV9GjD7-dg8_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="yV9GjD7-dg8" data-video-divid="yV9GjD7-dg8_vid" data-video-start="0" data-video-end="-1" ></div>
+    </div>
+    <span class="target" id="scratch-variables"></span><div class="section" id="variables">
+<span id="index-0"></span><h2>15.1. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <p>Lorsque nous avons dessiné une variété de polygones réguliers dans la dernière section, nous avons trouvé qu’il y avait un motif que nous pouvions utiliser, comme le montre l’image ci-dessous:</p>
 <img alt="../_images/scratch_polygon_repeat.png" src="../_images/scratch_polygon_repeat.png" />
 <p>Le code ci-dessus va dessiner un triangle, et comme nous l’avons découvert précédemment, si nous changeons les deux 3 encerclés en 4, le code dessinerait un carré (polygone à 4 côtés) à la place. Dans cette situation, il serait vraiment agréable d’avoir un moyen de définir facilement la valeur des deux nombres encerclés pour être la même chose. En d’autres termes, il serait bon de pouvoir changer la valeur de 1 pour être 5 et l’autre automatiquement 5. Si nous pouvions le faire, nous pourrions dessiner n’importe quel polygone régulier en changeant simplement un nombre.</p>
@@ -279,7 +292,7 @@
 <p>Notez que nous utilisons le bloc <strong>“ajouté à (variable) x”</strong>  au lieu de <strong>“mettre la (variable) à x”</strong>. Cela nous permet d’augmenter ou de diminuer la valeur de la variable, peu importe la valeur précédente. Vous devriez maintenant pouvoir appuyer sur la touche espace pour dessiner un polygone, appuyer plusieurs fois sur les flèches haut/bas, puis appuyer sur la touche espace pour dessiner un polygone différent.</p>
 </div>
 <div class="section" id="les-blocs-de-boucles-imbriques">
-<span id="index-1"></span><h2>14.2. Les blocs de boucles imbriqués<a class="headerlink" href="#les-blocs-de-boucles-imbriques" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>15.2. Les blocs de boucles imbriqués<a class="headerlink" href="#les-blocs-de-boucles-imbriques" title="Permalink to this headline">¶</a></h2>
 <p>Ajoutons encore une chose à notre programme. Supposons que nous voulions répéter plusieurs fois le polygone. Nous pouvons simplement entourer la partie de notre code qui dessine le polygone dans un autre bloc de répétition. Le code suivant dessinerait le même polygone 10 fois:</p>
 <img alt="../_images/scratch_nested_repeat.png" src="../_images/scratch_nested_repeat.png" />
 <p>Bien que cela répète le dessin du polygone, c’est vraiment ennuyeux. Le polygone est simplement dessiné au-dessus de son emplacement précédent, donc il ressemble à ce qu’il était avant!</p>
@@ -299,10 +312,34 @@
 </div>
 </div>
 <div class="section" id="check-your-understanding">
-<h2>14.3. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
-</div>
+<h2>15.3. Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+
+        <div class="runestone">
+        <div data-component="fillintheblank" id="scratch_nested_repeat_check_1">
+            <p>project-two1: Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il “Hip” lorsque vous cliquez sur le drapeau vert?</p>
+<img alt="../_images/scratch_nested_loops_check1.png" src="../_images/scratch_nested_loops_check1.png" />
+<input type="text">
+        <script type="application/json">
+            [[{"number": [8, 8], "feedback": "Oui! \u00c9tant donn\u00e9 que le bloc r\u00e9p\u00e9ter 2 fois se trouve dans un bloc r\u00e9p\u00e9ter 4 fois, vous pouvez les multiplier pour trouver le nombre total de r\u00e9p\u00e9titions."}, {"number": [2, 2], "feedback": "Remarquez que le bloc r\u00e9p\u00e9ter 2 fois est \u00c0 L\u2019INT\u00c9RIEUR d\u2019un bloc r\u00e9p\u00e9ter 4 fois."}, {"number": [4, 4], "feedback": "Non. M\u00eame si le bloc dire \u201cHip\u201d se trouve \u00e0 l\u2019int\u00e9rieur du bloc r\u00e9p\u00e9ter 4 fois, il se trouve \u00c9GALEMENT dans un bloc r\u00e9p\u00e9ter 2 fois."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "R\u00e9essayer!"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="runestone">
+        <div data-component="fillintheblank" id="scratch_nested_repeat_check_2">
+            <p>project-two2: Étant donné le code ci-dessous, combien de fois le script ci-dessous indique-t-il “Hourra” lorsque vous cliquez sur le drapeau vert?</p>
+<img alt="../_images/scratch_nested_loops_check1.png" src="../_images/scratch_nested_loops_check1.png" />
+<input type="text">
+        <script type="application/json">
+            [[{"number": [4, 4], "feedback": "Yes! Since the say Hooray block is inside the repeat 4 block, but OUTSIDE the repeat 2 block, it will only happen 4 times."}, {"number": [8, 8], "feedback": "No. Even though the say Hip block is inside the repeat 4, it is OUTSIDE the repeat 2 block."}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "Try again!"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
 <div class="section" id="probleme-de-pratique">
-<h2>14.4. Problème de pratique<a class="headerlink" href="#probleme-de-pratique" title="Permalink to this headline">¶</a></h2>
+<h2>15.4. Problème de pratique<a class="headerlink" href="#probleme-de-pratique" title="Permalink to this headline">¶</a></h2>
 <p>Travaillez sur votre première affectation Scratch, pour le temps restant.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -314,19 +351,19 @@
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 13. Première mission: attraper le scarabée (<em>the beetle</em>)' data-toggle="tooltip">
-    <a href="1FirstProject.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - 14. Première mission: attraper le scarabée (<em>the beetle</em>)' data-toggle="tooltip">
+    <a href="1FirstProjectold.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="1FirstProject.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="1FirstProjectold.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - 15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - 16. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼' data-toggle="tooltip" >
     <a href="3ThirdProject.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="3ThirdProject.html" >Next Section - 15. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="3ThirdProject.html" >Next Section - 16. Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼</a>
 
 <script type="text/javascript">
 
