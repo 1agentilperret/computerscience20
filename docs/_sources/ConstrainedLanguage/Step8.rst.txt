@@ -17,8 +17,6 @@ Didacticiel-*Tutorial*
 
 Parfois, nous ne savons pas à l'avance ce à quoi ressemblera le monde dans lequel Reeborg se trouvera. Heureusement, Reeborg peut percevoir le monde qui l’entoure et nous pouvons lui poser des questions. Pour poser une question à l'ordinateur, nous utilisons une instruction ``if`` ou *si*. Cette **déclaration/*statement*** ``if`` ou *si* suit un schéma similaire à celui de ``function``\ s :
 
-Sometimes, we don't know ahead of time exactly what the world that Reeborg is going to be faced with will look like. Thankfully, Reeborg can sense the world around it, and we can ask Reeborg questions about it. To ask the computer a question, we use an ``if`` statement. The so-called ``if`` **statement** follows a pattern somewhat similar to that of ``function``\ s :
-
 .. code-block:: python
 
     def un_nom():
@@ -111,7 +109,7 @@ Lorsqu'on a présenté les fonctions, on a expliqué que **l’appel** à une fo
     turn_right()  # function call
     move()
 
-is equivalent to::
+est équivalent à::
 
     move()
     # begin of code block inside turn_right()

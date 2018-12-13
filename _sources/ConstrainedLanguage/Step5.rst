@@ -24,7 +24,7 @@ Tout comme nous pouvons appeler des fonctions intégrées telles que ``turn_left
         # en retrait au même niveau
 
 
-`` def`` est le premier mot clé Python ** que nous avons appris. Les mots-clés sont des mots qui ont une signification particulière dans un langage de programmation donné. Notez que deux points ``: `` précèdent ce que l'on appelle un *bloc de code*, et que la partie en retrait qui suit est le *corps/body* de la fonction. Il est **nécessaire** en Python de *mettre en retrait* ces blocs de code avec le même nombre d'espaces au début de chaque ligne, ce qui, en conséquence, facilite l'identification du corps de fonction pour un lecteur humain.
+``def`` est le premier mot clé Python ** que nous avons appris. Les mots-clés sont des mots qui ont une signification particulière dans un langage de programmation donné. Notez que deux points ``: `` précèdent ce que l'on appelle un *bloc de code*, et que la partie en retrait qui suit est le *corps/body* de la fonction. Il est **nécessaire** en Python de *mettre en retrait* ces blocs de code avec le même nombre d'espaces au début de chaque ligne, ce qui, en conséquence, facilite l'identification du corps de fonction pour un lecteur humain.
 
 
 Ecrivons notre première fonction Python::
