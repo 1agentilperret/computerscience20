@@ -3,34 +3,33 @@
    :start: 1
 
 
-Deuxième mission: attraper le scarabée (*the beetle*)
-======================================================
+Mission 2: Créer une histoire interactive
+===========================================
 
 .. topic:: Aperçu rapide du projet
 
-    Vous avez options pour le premier projet qui vous accordera une note par rapport à la difficulter de l'option et de la qualité de votre programme.
+    Encore une fois, vous avez options pour le deuxième projet qui vous accordera une note par rapport à la difficulter de l'option et de la qualité de votre programme.
 
-Directives 
------------
+    Dans cette activité, vous ferez une histoire courte ou une pièce de théâtre.
 
-.. reveal:: Instructions_for project
-    :showtitle: Dirrectives pour avoir 85%
-    :hidetitle: Cacher dirrectives pour avoir 85%
+Instructions 
+-------------
+
+.. reveal:: Instructions_for_project_two
+    :showtitle: Instructions
+    :hidetitle: Cacher Instructions
     
-    **Directives pour avoir 85%**
+    **Instructions voire Évaluation pour différence entre 85% et 100%**
     
-    Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.
-    Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continuellement sur la scène. Le but de ce petit jeu sera de déplacer Scratch pour que le chat touche le second sprite. Les fonctionnalités suivantes doivent être implémentées pour obtenir les notes maximales:
+    
+    En général, votre film devrait avoir au moins:
+    - Une image de fond
+    - Deux personnages
+    - Au moins cinq diffusion au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")
+    - Une entrée utilisateur utilisée dans une condition (SI)
 
-        - La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé)
-        - Chaque fois que le scarabée frappe le côté de la scène, un effet sonore doit être joué.
-        - Lorsque Scratch atteint le scarabée:
-            - Scratch devrait dire "je vous ai eu!"
-            - Le scarabé devrait être placée au hasard à un nouvel emplacement et dire "Pas cette fois!", Puis reprendre son mouvement.
-        - Une touche de barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le coléoptère doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
-        
-    .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
-
+    L'activité est ouverte à votre créativité: raconter une histoire, créer des personnages, expérimenter avec des lutins (“sprites”) en mouvement sur scène… à vous de choisir.
+    
 .. this is the gif to show what the program should do.
 .. enlève les .. devant ceci et remplace le 'source path' par celui de la bonne photo
 
@@ -38,92 +37,50 @@ Directives
 
 .. .. image:: images/scratch_catch_the_beetle_expert.gif
 
-.. reveal:: extra_for_experts
-    :showtitle: Dirrectives pour avoir 100%
-    :hidetitle: Cacher dirrectives pour avoir 100%
-    
-    **Directives pour avoir 100%**
-    
-    Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.
-    Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continuellement sur la scène. Le but de ce petit jeu sera de déplacer Scratch pour que le chat touche le second sprite. Les fonctionnalités suivantes doivent être implémentées pour obtenir les notes maximales:
-
-        - La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé)
-        - Chaque fois que le scarabée frappe le côté de la scène, un effet sonore doit être joué.
-        - Lorsque Scratch atteint le scarabée:
-            - Scratch devrait dire "je vous ai eu!"
-            - Le scarabé devrait être placée au hasard à un nouvel emplacement et dire "Pas cette fois!", Puis reprendre son mouvement.
-        - Une touche de barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le coléoptère doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
-        
-        .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
-    
-    .. reveal:: difference_between_eighty_five_and_one_hundy
-        :showtitle: Voici la différence entre 85% et 100%
-        :hidetitle: Cacher la différence entre 85% et 100%    
-
-        **Voici la différence entre les directive pour 85% et 100%**
-        
-        Modifiez le script du scarabée pour que son mouvement soit plus complexe:
-        - Il devrait se déplacer en utilisant un algorithme de "randonneur aléatoire":
-        - Chaque fois que le scarabée se déplace, il doit choisir l'une des trois options suivantes:
-            - Tourner à droite (~ 15) et aller de l'avant
-            - Tourner à gauche (~ 15) et aller de l'avant
-            - Simplement avancer
-    
-        - Ne craignez pas de rebondir sur les bords de la scène.
-        - Ajouter une fonctionnalité où l'utilisateur peut appuyer sur une touche pour retourner instantanément les scarabées à l'origine.
-        - Créez 3 sprites Beetle distinctes qui commencent à des emplacements différents. Quand Scratch attrape un scarabée, il devrait dire "Tu m’as eu!" et disparaissent.
-
 
 .. this is the gif to show what the program should do.
 
-Votre programme pour avoir 100% devrait ressembler à ceci:
+.. Votre programme pour avoir 100% devrait ressembler à ceci:
 
-.. image:: images/scratch_catch_the_beetle_expert.gif
+.. .. image:: images/scratch_catch_the_beetle_expert.gif
 
 Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
 Évaluation
 -----------
-Hello:
 
-.. reveal:: eval_eighty_five
+.. reveal:: eval_eighty_five_two
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%
 
-    +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Critère                                                                                                                        | oui  | non (-10%)  | un peu (-5%) |
-    +================================================================================================================================+======+=============+==============+
-    | La musique de fond jouer pendant que le jeu est actif                                                                          |      |             |              |
-    +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Scratch dit "je vous ai eu!" et le scarabé saute et dit "Pas cette fois!" quand ils se touchent                                |      |             |              |
-    +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Le “Mode Pepsi” est fonctionnelle lorsqu’on presse la barre d’espace et retourne à la norme quand la barre d’espace est pressé.|      |             |              |
-    +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | le scarabée rebondis et fait un son quand il touche le côté de l’écran                                                         |      |             |              |
-    +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Critère                                                                                                                                       | oui  | non (-10%)  | un peu (-5%) |
+    +===============================================================================================================================================+======+=============+==============+
+    | Votre histoire a une image de fond                                                                                                            |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre histoire a deux personnages                                                                                                             |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Au moins cinq émissions au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")  |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Une entrée utilisateur utilisée dans une condition (SI)                                                                                       |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
     
 
-.. reveal:: eval_one_hundy
+
+.. reveal:: eval_one_hundy_two
     :showtitle: Évaluation pour avoir 100%
     :hidetitle: Cacher l'évaluation pour avoir 100%
 
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Critère                                                                                                                                               | oui  | non (-10%)  | un peu (-5%)|
-    +=======================================================================================================================================================+======+=============+=============+
-    | La musique de fond jouer pendant que le jeu est actif                                                                                                 |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Il y a 3 scarabées qui commence à de différentes endroits                                                                                             |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | L’algorithme de "randonneur aléatoire" fonctionne pour les trois scarabée                                                                             |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | L’utilisateur appuis sur le “r” pour remettre les scarabées à l’origine.                                                                              |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Scratch dit "je vous ai eu!" et le scarabée dit “tu m’as eu” et disparaît quand ils se touchent                                                       |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Le “Mode Pepsi” est fonctionnelle pour les 3 scarabées lorsqu’on presse la barre d’espace et retourne à la norme quand la barre d’espace est relâché  |      |             |             |
-    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    
-
-
-
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Critère                                                                                                                                                             | oui  | non (-10%)  | un peu (-5%)|
+    +=====================================================================================================================================================================+======+=============+=============+
+    | Votre histoire a plusieurs images de fonds                                                                                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Deux ou plus personnages bien développés                                                                                                                            |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Au moins dix émissions au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")                         |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Deux ou plus entrée utilisateur utilisée dans une condition (SI) qui affecte l’histoire                                                                             |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
 

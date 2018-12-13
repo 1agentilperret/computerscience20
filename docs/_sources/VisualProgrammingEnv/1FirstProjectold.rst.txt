@@ -10,7 +10,7 @@ Première mission: attraper le scarabée (*the beetle*)
 
     Vous avez options pour le premier projet qui vous accordera une note par rapport à la difficulter de l'option et de la qualité de votre programme.
 
-Directives
+Instructions
 -----------
 
 Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.
@@ -29,8 +29,8 @@ Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continu
 Lorsque vous avez terminé, appuyez sur le bouton PARTAGER de l'éditeur et soumettez l'URL de ce projet.
 
 .. reveal:: extra_for_experts
-    :showtitle: Dirrectives pour avoir 100%
-    :hidetitle: Cacher dirrectives pour avoir 100%
+    :showtitle: Instructions pour avoir 100%
+    :hidetitle: Cacher instructions pour avoir 100%
     
     Modifiez le script du scarabée pour que son mouvement soit plus complexe:
         - Il devrait se déplacer en utilisant un algorithme de "randonneur aléatoire":
@@ -47,7 +47,7 @@ Lorsque vous avez terminé, appuyez sur le bouton PARTAGER de l'éditeur et soum
 
 .. reveal:: eval_eighty_five
     :showtitle: Évaluation pour avoir 85%
-    :hidetitle: Cacher dirrectives pour avoir 85%
+    :hidetitle: Cacher instructions pour avoir 85%
 
     +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
     | Critère                                                                                                                        | oui  | non (-10%)  | un peu (-5%)|
@@ -78,7 +78,7 @@ Lorsque vous avez terminé, appuyez sur le bouton PARTAGER de l'éditeur et soum
 
 .. reveal:: eval_one_hundred
     :showtitle: Évaluation pour avoir 100%
-    :hidetitle: Cacher dirrectives pour avoir 100%  
+    :hidetitle: Cacher instructions pour avoir 100%  
     
     
 .. enlève les .. devant ceci et remplace la vidéo pour mettre la vidéo du projet dans le site

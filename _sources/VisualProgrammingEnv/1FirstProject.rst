@@ -10,24 +10,25 @@ Première mission: attraper le scarabée (*the beetle*)
 
     Vous avez options pour le premier projet qui vous accordera une note par rapport à la difficulter de l'option et de la qualité de votre programme.
 
-Directives 
------------
+Instructions 
+-------------
 
-.. reveal:: Instructions_for project
-    :showtitle: Dirrectives pour avoir 85%
-    :hidetitle: Cacher dirrectives pour avoir 85%
+.. reveal:: Instructions_for_project_one
+    :showtitle: Instructions pour avoir 85%
+    :hidetitle: Cacher instructions pour avoir 85%
     
-    **Directives pour avoir 85%**
+    **Instructions pour avoir 85%**
     
     Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.
     Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continuellement sur la scène. Le but de ce petit jeu sera de déplacer Scratch pour que le chat touche le second sprite. Les fonctionnalités suivantes doivent être implémentées pour obtenir les notes maximales:
 
+        - Scratch le Chat se déplace autour de la scène en appuyant sur les touches fléchées.
         - La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé)
         - Chaque fois que le scarabée frappe le côté de la scène, un effet sonore doit être joué.
         - Lorsque Scratch atteint le scarabée:
             - Scratch devrait dire "je vous ai eu!"
             - Le scarabé devrait être placée au hasard à un nouvel emplacement et dire "Pas cette fois!", Puis reprendre son mouvement.
-        - Une touche de barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le coléoptère doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
+        - Une touche de la barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le scarabée doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
         
     .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
 
@@ -38,38 +39,34 @@ Directives
 
 .. .. image:: images/scratch_catch_the_beetle_expert.gif
 
-.. reveal:: extra_for_experts
-    :showtitle: Dirrectives pour avoir 100%
-    :hidetitle: Cacher dirrectives pour avoir 100%
+.. reveal:: extra_for_experts_one
+    :showtitle: Instructions pour avoir 100%
+    :hidetitle: Cacher instructions pour avoir 100%
     
-    **Directives pour avoir 100%**
+    **Instructions pour avoir 100%**
+
+    Les différences entre les premières instructions sont en **gras**
     
     Créez un programme où vous pouvez déplacer Scratch le Chat autour de la scène avec les touches fléchées.
     Un deuxième sprite (le scarabée) devrait être inclus et doit rebondir continuellement sur la scène. Le but de ce petit jeu sera de déplacer Scratch pour que le chat touche le second sprite. Les fonctionnalités suivantes doivent être implémentées pour obtenir les notes maximales:
 
-        - La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé)
+        - Scratch le Chat se déplace autour de la scène en appuyant sur les touches fléchées.
+        - La musique de fond doit jouer pendant que le jeu est actif (une fois le drapeau vert enfoncé).
         - Chaque fois que le scarabée frappe le côté de la scène, un effet sonore doit être joué.
+        - **Le scarabé devrait se déplacer en utilisant un algorithme de "randonneur aléatoire":**
+        - **Chaque fois que le scarabée se déplace, il doit choisir l'une des trois options suivantes:**
+            - **Tourner à droite (~ 15) et aller de l'avant**
+            - **Tourner à gauche (~ 15) et aller de l'avant**
+            - **Simplement avancer**
         - Lorsque Scratch atteint le scarabée:
             - Scratch devrait dire "je vous ai eu!"
-            - Le scarabé devrait être placée au hasard à un nouvel emplacement et dire "Pas cette fois!", Puis reprendre son mouvement.
-        - Une touche de barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le coléoptère doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
+            - **Le scarabée devrait dire "Tu m’as eu!" et disparaitre.**
+        - Une touche de la barre d'espace devrait mettre le scarabée dans «Mode Pepsi». Lorsque vous appuyez sur la barre d'espace, le scarabée doit se déplacer plus rapidement et se voir appliquer un effet d'image / couleur. Lorsque la barre d'espace est relâchée, son mouvement et son apparence devraient revenir à la normale.
+        - **Ajouter une fonctionnalité où l'utilisateur peut appuyer sur la touche "r" pour retourner instantanément le scarabée à l'origine.**
+        - **Une fois que votre scarabé fonctionne comme il devrait, dupliquez-le pour avoir 3 sprites de scarabées distinctes qui commencent à des emplacements différents. Quand Scratch attrape un scarabée, Scratch dit "je vous ai eu!" et le scarabée devrait dire "Tu m’as eu!" et disparaissent.**
         
-        .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
+    .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
     
-    .. reveal:: difference_between_eighty_five_and_one_hundy
-        :showtitle: Voici la différence entre 85% et 100%
-        :hidetitle: Cacher la différence entre 85% et 100%    
-    
-        Modifiez le script du scarabée pour que son mouvement soit plus complexe:
-        - Il devrait se déplacer en utilisant un algorithme de "randonneur aléatoire":
-        - Chaque fois que le scarabée se déplace, il doit choisir l'une des trois options suivantes:
-            - Tourner à droite (~ 15) et aller de l'avant
-            - Tourner à gauche (~ 15) et aller de l'avant
-            - Simplement avancer
-    
-        - Ne craignez pas de rebondir sur les bords de la scène.
-        - Ajouter une fonctionnalité où l'utilisateur peut appuyer sur une touche pour retourner instantanément les scarabées à l'origine.
-        - Créez 3 sprites Beetle distinctes qui commencent à des emplacements différents. Quand Scratch attrape un scarabée, il devrait dire "Tu m’as eu!" et disparaissent.
 
 
 .. this is the gif to show what the program should do.
@@ -82,12 +79,12 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
 
 Évaluation
 -----------
-Hello:
 
 .. reveal:: eval_eighty_five
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%
 
+Scratch le Chat se déplace autour de la scène en appuyant sur les touches fléchées.
     +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
     | Critère                                                                                                                        | oui  | non (-10%)  | un peu (-5%) |
     +================================================================================================================================+======+=============+==============+
@@ -109,6 +106,8 @@ Hello:
     | Critère                                                                                                                                               | oui  | non (-10%)  | un peu (-5%)|
     +=======================================================================================================================================================+======+=============+=============+
     | La musique de fond jouer pendant que le jeu est actif                                                                                                 |      |             |             |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Scratch le Chat se déplace autour de la scène en appuyant sur les touches fléchées.                                                                   |      |             |             |
     +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
     | Il y a 3 scarabées qui commence à de différentes endroits                                                                                             |      |             |             |
     +-------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
