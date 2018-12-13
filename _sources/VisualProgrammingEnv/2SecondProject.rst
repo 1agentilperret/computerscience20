@@ -59,7 +59,9 @@ Directives
     .. reveal:: difference_between_eighty_five_and_one_hundy
         :showtitle: Voici la différence entre 85% et 100%
         :hidetitle: Cacher la différence entre 85% et 100%    
-    
+
+        **Voici la différence entre les directive pour 85% et 100%**
+        
         Modifiez le script du scarabée pour que son mouvement soit plus complexe:
         - Il devrait se déplacer en utilisant un algorithme de "randonneur aléatoire":
         - Chaque fois que le scarabée se déplace, il doit choisir l'une des trois options suivantes:
