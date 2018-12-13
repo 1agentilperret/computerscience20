@@ -33,7 +33,6 @@ Scratch
    VisualProgrammingEnv/MakingOwnBlocks.rst
    VisualProgrammingEnv/StudentDirectedProject.rst
    VisualProgrammingEnv/1FirstProject.rst
-   VisualProgrammingEnv/1FirstProjectold.rst
    VisualProgrammingEnv/2SecondProject.rst
    VisualProgrammingEnv/3ThirdProject.rst
    VisualProgrammingEnv/4FourthProject.rst

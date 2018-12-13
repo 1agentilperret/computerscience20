@@ -31,19 +31,12 @@ Directives
         
     .. note:: le bloc de l'onglet *Capteurs* ``TOUCHÉ?`` peut faire référence à un autre sprite sur la scène ou au bord de la scène.
 
-.. enlève les .. devant ceci et remplace le lien http de la vidéo pour mettre la vidéo du projet dans le site
+.. this is the gif to show what the program should do.
+.. enlève les .. devant ceci et remplace le 'source path' par celui de la bonne photo
 
-.. Votre programme pour avoir 85% devrait ressembler à `ceci. <https://www.youtube.com/watch?v=yV9GjD7-dg8>`_ 
+.. Votre programme pour avoir 85% devrait ressembler à ceci:
 
-.. .. youtube:: yV9GjD7-dg8
-    :height: 315
-    :width: 560
-    :align: left
-    :http: https
-
-.. si c'est une image met l'image source dans le dossier image de la section et remplace le 'source path' par celui de la bonne photo
-
-.. .. image:: images/scratch_better_square.png
+.. .. image:: images/scratch_catch_the_beetle_expert.gif
 
 .. reveal:: extra_for_experts
     :showtitle: Dirrectives pour avoir 100%
@@ -78,7 +71,8 @@ Directives
         - Ajouter une fonctionnalité où l'utilisateur peut appuyer sur une touche pour retourner instantanément les scarabées à l'origine.
         - Créez 3 sprites Beetle distinctes qui commencent à des emplacements différents. Quand Scratch attrape un scarabée, il devrait dire "Tu m’as eu!" et disparaissent.
 
-.. enlève les .. devant ceci et remplace le lien http de la vidéo pour mettre la vidéo du projet dans le site
+
+.. this is the gif to show what the program should do.
 
 Votre programme pour avoir 100% devrait ressembler à ceci:
 
@@ -88,6 +82,7 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
 
 Évaluation
 -----------
+Hello:
 
 .. reveal:: eval_eighty_five
     :showtitle: Évaluation pour avoir 85%
