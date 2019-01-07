@@ -3,7 +3,7 @@
    :start: 1
 
 
-Mission 2: Créer une histoire interactive
+Projet 2: Créer une histoire interactive
 ===========================================
 
 .. topic:: Aperçu rapide du projet

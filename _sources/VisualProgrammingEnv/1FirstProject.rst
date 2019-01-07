@@ -3,7 +3,7 @@
    :start: 1
 
 
-Première mission: attraper le scarabée (*the beetle*)
+Projet 1: attraper le scarabée (*the beetle*)
 ======================================================
 
 .. topic:: Aperçu rapide du projet
