@@ -75,6 +75,7 @@ FITB.prototype.renderFITBInput = function () {
     // Set the class for the text inputs, then store references to them.
     let ba = $(this.containerDiv).find(':input');
     ba.attr('class', 'form form-control selectwidthauto');
+    ba.attr("aria-label", "input area");
     this.blankArray = ba.toArray();
 };
 
@@ -124,7 +125,7 @@ FITB.prototype.renderFITBFeedbackDiv = function () {
 
 FITB.prototype.restoreAnswers = function (data) {
     // Restore answers from storage retrieval done in RunestoneBase
-    var arr = data.answer.split(",");
+    var arr = JSON.parse(data.answer)
     for (var i = 0; i < this.blankArray.length; i++) {
         $(this.blankArray[i]).attr("value", arr[i]);
     }
@@ -135,7 +136,7 @@ FITB.prototype.checkLocalStorage = function () {
     // Loads previous answers from local storage if they exist
     var len = localStorage.length;
     if (len > 0) {
-        var ex = localStorage.getItem(eBookConfig.email + ":" + this.divid + "-given");
+        var ex = localStorage.getItem(this.localStorageKey());
         if (ex !== null) {
             try {
                 var storedData = JSON.parse(ex);
@@ -143,7 +144,7 @@ FITB.prototype.checkLocalStorage = function () {
             } catch (err) {
                 // error while parsing; likely due to bad value stored in storage
                 console.log(err.message);
-                localStorage.removeItem(eBookConfig.email + ":" + this.divid + "-given");
+                localStorage.removeItem(this.localStorageKey());
                 return;
             }
 
@@ -151,7 +152,7 @@ FITB.prototype.checkLocalStorage = function () {
                 $(this.blankArray[i]).attr("value", arr[i]);
             }
             if (this.useRunestoneServices) {
-                var answer = storedData.answer.join(",")
+                var answer = JSON.stringify(storedData.answer)
                 this.logBookEvent({"event": "fillb", "act": answer, "answer": answer, "correct": storedData.correct, "div_id": this.divid});
                 this.enableCompareButton();
             }
@@ -168,7 +169,7 @@ FITB.prototype.setLocalStorage = function (data) {
     var now = new Date();
     var correct = data.correct;
     var storageObject = {"answer": this.given_arr, "correct": correct, "timestamp": now};
-    localStorage.setItem(eBookConfig.email + ":" + this.divid + "-given", JSON.stringify(storageObject));
+    localStorage.setItem(this.localStorageKey(), JSON.stringify(storageObject));
 };
 
 /*==============================

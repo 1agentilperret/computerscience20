@@ -3,12 +3,13 @@
    :start: 1
 
 
-Quick Python Overview
-==========================
 
-.. note:: In today's quick exploration of Python, you will see some things that you do not understand. That is okay. We will go into each of the ideas in much more detail as the semester progresses, but it is really helpful to see a large overview before we get into the details of each section.
+Aperçu rapide de Python
+=========================
 
-If you'd prefer to watch a video describing some important features of Python, `the following video <https://www.youtube.com/watch?v=d97kS830e-c>`_ demonstrates the same ideas as what I've described in text below.
+.. note:: Dans l'exploration rapide de Python, vous verrez certaines choses que vous ne comprenez pas. Cela est bien et ne vous inquiétez pas. Nous aborderons chacune des idées de manière beaucoup plus détaillée au fur et à mesure que le semestre avance, mais il est vraiment utile de voir un aperçu général avant d'entrer dans les détails de chaque section.
+
+Si vous préférez regarder cette `vidéo <https://www.youtube.com/watch?v=d97kS830e-c>`_ décrivant certaines fonctionnalités importantes de Python.
 
 .. youtube:: d97kS830e-c
     :height: 315
@@ -17,10 +18,10 @@ If you'd prefer to watch a video describing some important features of Python, `
     :http: https
 
 
-What is Python?
----------------
+Qu'est ce que Python?
+----------------------
 
-Python is a programming language that lets you teach the computer to do what you want. You've already been writing Python programs using Reeborg. Everything you have already learned (with the exception of `repeat`), works in regular Python. Using regular Python allows us to start exploring other ways our programs can produce output, and take input.
+Python est un langage de programmation qui vous permet d’apprendre à l’ordinateur à faire ce que vous voulez. Vous avez déjà écrit des programmes Python avec Reeborg. Tout ce que vous avez déjà appris (à l'exception de `repeat`) fonctionne en Python normal. L’utilisation régulière de Python nous permet de commencer à explorer d’autres manières dont nos programmes peuvent produire des sorties et prendre des entrées.
 
 .. index:: Thonny
 

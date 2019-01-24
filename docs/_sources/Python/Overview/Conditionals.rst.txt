@@ -3,12 +3,12 @@
    :start: 1
 
 
-Conditionals
-=============
+Conditionnelles
+================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Go over practice problems from last day. Give more details about boolean expressions. Practice some Python problems with input/output and conditionals.
+    Révisez les problèmes de pratique du dernier jour. Donnez plus de détails sur les expressions booléennes. Pratiquez certains problèmes Python avec les entrées/sorties (*input/output*) et les conditions.
 
 
 .. reveal:: curriculum_addressed
@@ -19,7 +19,7 @@ Conditionals
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-What Does This Program Do?
+Que fait ce programme?
 ---------------------------
 
 Remember that in our quick Python overview, we saw that a single equal sign ``=`` is used to **assign** a value. Two equal signs ``==`` are used when **comparing** a value.
