@@ -68,7 +68,6 @@ Check Your Understanding
 
     .. image:: images/scratch_tempo_variable_2.png
 
-    - :100: Yes! Since we repeat the 'change tempo by 20' block 2 times, we need to add 40 bpm to the original value.
       -: 100: Oui! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.
       : 180: Non. Le bloc 'ajouter 20 au tempo' ne se trouve pas dans la boucle imbriquée, nous ne le répétons donc que 2 fois
       :.*: Réessayer! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.

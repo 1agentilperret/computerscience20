@@ -141,7 +141,7 @@ Vérifie ta compréhension
    :answer_a: Le sprite actuel dit "Allez" pendant 1 seconde, ensuite "Vert!" pendant 1 seconde, puis se déplace de 10 pas. 
    :answer_b: Le sprite actuel dirait "Go" pendant 1 seconde, se déplace de 10 pas, puis dirait "Vert!" pendant 1 seconde après l'arrêt du sprite.
    :answer_c: Le sprite actuel dirait "Go" pendant 1 seconde, puis déplacez simultanément 10 étapes et dirait "Vert!" pendant 1 seconde.
-   :correct: c
+   :correct: a
    :feedback_a: Non, l'envoi de la diffusion (*bloc envoyer à tous*) entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter. C.À.D., Scratch n'attendra pas que la diffusion soit résolue avant de terminer le reste du groupe de code (dans ce cas, le bloc de déplacement de 10 pas).
    :feedback_b: Non, le bloc dit "vert et le bloc de déplacement de 10 pas auront lieu simultanément.
    :feedback_c: Oui, l'envoi de la diffusion entraînera l'exécution du deuxième groupe de blocs, mais n'empêchera pas le premier groupe de code de continuer à s'exécuter.

@@ -3,12 +3,12 @@
    :start: 1
 
 
-Number Guessing Game (Pair Programming)
-=======================================
+Jeu de devinette numérique (programmation en binôme)
+=====================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    In this pair programming activity, you will create a number guessing game that uses many of the concepts we've learned.
+    Dans cette activité de programmation en paires, vous allez créer un jeu de devinettes qui utilise plusieurs des concepts que nous avons appris.
 
 
 .. reveal:: curriculum_addressed_number_game
@@ -19,26 +19,27 @@ Number Guessing Game (Pair Programming)
     - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.
     - **CS20-FP2** Investigate how control structures affect program flow.
 
-This will be your first foray into pair programming. One of you should be at the keyboard and mouse, while the other partner is helping discuss the ideas. Switch roles every 10 minutes.
+Ce sera votre première essai dans la programmation en binôme. L'un de vous devrait être au clavier et à la souris, tandis que l'autre partenaire aide à discuter des idées. Changez de rôle toutes les 10 minutes.
 
 .. sidebar:: Teacher Note
 
-    Before having the students attempt to create the game, you may want to model the game. The teacher can act as the computer (picking a random number between 1-100, providing too high/low feedback, and ending with "You got it in 8 tries!"), and one of the students can be the user who is attempting to guess the number.
+    Avant de demander aux élèves de créer le jeu, vous souhaiterez peut-être modéliser le jeu. L’enseignant peut jouer le rôle d’ordinateur (en choisissant un nombre aléatoire compris entre 1 et 100, en fournissant un retour trop haut / bas, et en terminant par «Vous l’avez eu en 8 essai!»), Et l’un des étudiants peut être l’utilisateur qui tente deviner le nombre.
+    
 
-Basic Game
------------
+Jeu de base
+-------------
 
-For this assignment, you will create a game that does the following:
+Pour ce projet, vous allez créer un jeu qui effectue les tâches suivantes:
 
-- generates a random number from 1 to 100 and stores it in a variable
-- repeats the following until the user guesses the number
-- gets the user to guess the number (using the **ask** block)
-- tells the user if the number is too high or too low
-- congratulates the user when they guess the correct number with a message such as "Way to go! You guessed the right number in 9 tries!"
+- génère un nombre aléatoire de 1 à 100 et le sauver dans une variable
+- répète ce qui suit jusqu'à ce que l'utilisateur devine le numéro
+- oblige l'utilisateur à deviner le nombre (en utilisant le bloc **demande**)
+- indique à l'utilisateur si le nombre est trop élevé ou trop bas
+- félicite l'utilisateur lorsqu'il trouve le bon numéro avec un message du type "Bravo! Vous avez deviné le bon numéro en 9 essais!"
 
-When you complete the basic functionality, put up your hand and I'll tell you how you can make it even better!
+Lorsque vous avez terminé la fonctionnalité de base, levez la main et je vous dirai comment vous pouvez encore l'améliorer !
 
-If the description above doesn't make sense to you, here's a `short video <https://www.youtube.com/watch?v=BoSNTdrd24I>`_  of what the basic number guessing game might look like:
+Si la description ci-dessus n’a pas de sens, voici une courte `vidéo <https://www.youtube.com/watch?v=BoSNTdrd24I>`_  de ce à quoi pourrait ressembler le jeu de devinettes de base:
 
 .. youtube:: BoSNTdrd24I
     :height: 315
@@ -47,13 +48,13 @@ If the description above doesn't make sense to you, here's a `short video <https
     :http: https
 
 
-Extensions
------------
+Les Extensions
+----------------
 
-Extras that can be added to the basic game:
+Voici des extras qui peuvent être ajoutés au jeu de base:
 
-- WAY too high/low, if the guess is dramatically far away from the actual number
-- very close, but it's too high/low, if the guess is really close the actual number
-- STILL too high/low, if the guess is above/below the actual number multiple times in a row
-- only allow specific number of attempts before ending the game
-- CPU/human reverse roles
+- Bien trop haute/trop basse, si la devinette est très loin du nombre réel
+- très proche, mais trop haut/bas, si l’on suppose que le nombre réel est vraiment proche
+- Encore trop haut/bas, si la supposition est supérieure/inférieure au nombre réel plusieurs fois de suite
+- Permettre seulement un certain nombre de tentatives avant terminer le jeu
+- Rôles inversés CPU/humain
