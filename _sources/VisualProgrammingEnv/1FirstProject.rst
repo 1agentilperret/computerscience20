@@ -44,7 +44,7 @@ Instructions
 
 .. .. image:: images/scratch_catch_the_beetle_expert.gif
 
-Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
+Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet. Si tu ne vois pas le boutton **PARTAGER** tu dois confirmer le courriel de ton compte Scratch dans tes |GMAIL|.
 
 Évaluation
 -----------
@@ -84,3 +84,6 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
     | Deux ou plus entrée utilisateur utilisée dans une condition (SI) qui affecte l’histoire                                                                             |      |             |             |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
 
+.. |GMAIL| raw:: html
+
+   <a href="https://www.gmail.com" target="_blank" style="color:blue;">courriel</a>
