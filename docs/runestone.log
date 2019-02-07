@@ -2473,3 +2473,10 @@ Aborted!
 127.0.0.1 - - [07/Feb/2019 10:59:32] "GET /_images/scratch_adding_parameters_to_block_fr.gif HTTP/1.1" 200 -
 
 Aborted!
+127.0.0.1 - - [07/Feb/2019 11:10:01] code 404, message File not found
+127.0.0.1 - - [07/Feb/2019 11:10:01] "GET /runestone/static/favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Feb/2019 11:10:03] "GET /VisualProgrammingEnv/MakingOwnBlocks.html HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 11:10:03] code 404, message File not found
+127.0.0.1 - - [07/Feb/2019 11:10:03] "GET /VisualProgrammingEnv/VisualProgrammingEnv/images/scratch_define_square_fr.png HTTP/1.1" 404 -
+
+Aborted!
