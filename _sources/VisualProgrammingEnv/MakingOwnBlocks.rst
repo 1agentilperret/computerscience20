@@ -61,7 +61,7 @@ Il y a 8 salutations différentes énumérées ci-dessus. Afin de choisir entre 
 
 .. image:: images/scratch_random_greeting.png
 
-Si nous voulions que notre sprite dise une salutation aléatoire dans plusieurs situations? Peut-être souhaitons-nous toujours que le sprite prononce un message d'accueil lorsque l'utilisateur clique sur le drapeau, mais nous souhaitons également qu'il le dise lorsque l'utilisateur clique dessus le sprite, lorsque la touche d'espacement est enfoncée ou lorsque le niveau de bruit de la salle avec notre ordinateur devient particulièrement bruyant. Jusqu'à présent, nous devions dupliquer le code que nous venons de créer et le joindre à plusieurs événements. Un meilleur moyen consiste à créer un nouveau bloc, appelé «dit bonjour dans un langage aléatoire». Pour ce faire, sélectionnez l'onglet *Mes blocs*, puis cliquez sur **Créer un bloc**. Dans le bloc vide qui apparaît maintenant, tapez le nom que vous souhaitez donner à votre nouveau bloc:
+Si nous voulions que notre sprite dise une salutation aléatoire dans plusieurs situations? Peut-être souhaitons-nous toujours que le sprite prononce un message d'accueil lorsque l'utilisateur clique sur le drapeau, mais nous souhaitons également qu'il le dise lorsque l'utilisateur clique dessus le sprite, lorsque la touche d'espacement est enfoncée ou lorsque le niveau de bruit de la salle avec notre ordinateur devient particulièrement bruyant. Jusqu'à présent, nous devions dupliquer le code que nous venons de créer et le joindre à plusieurs événements. Un meilleur moyen consiste à créer un nouveau bloc, appelé «Dire bonjour dans une langue aléatoire». Pour ce faire, sélectionnez l'onglet *Mes blocs*, puis cliquez sur **Créer un bloc**. Dans le bloc vide qui apparaît maintenant, tapez le nom que vous souhaitez donner à votre nouveau bloc:
 
 .. image:: images/scratch_define_new_block_fr.gif
 
@@ -87,19 +87,17 @@ Lorsque nous avons commencé à explorer :ref:`scratch_variables`, nous avons tr
 
 .. image:: images/scratch_polygon_block.png
 
-Pour créer un bloc qui prend des arguments, sélectionnez d'abord «Créer un bloc» dans l'onglet **Mes blocs**. Tapez Draw a, puis cliquez sur Options et sélectionnez «Ajouter un numéro». Étiquetez le nombre de côtés du nombre saisi, puis ajoutez un polygone à texte libellé à chaque côté. Ajoutez une autre entrée numérique appelée side long, puis identifiez les étapes de texte.
-
-In order to create a block that takes arguments, first select "Make a Block" from the More Blocks tab. Type in ``draw a``, then click Options, and select "Add number input". Label the number input ``number of sides``, then add label text ``sided polygon, with each side``. Add another number input called ``side length``, then finally label text ``steps long``.
+Pour créer un bloc qui prend des arguments, sélectionnez d'abord «Créer un bloc» dans l'onglet **Mes blocs**. Tapez ``Dessine un polygone à`` puis cliquez sur l'option «Ajouter une entrée». Étiquetez le nombre comme ``# de côtés``, puis «Ajouter une étiquette» nommé ``côtés pour lesquels chaque côté mesure``. «Ajouter une autre entrée» numérique appelée ``longueur de côtés``, puis identifiez les ``pas`` avec un autre «étiquette».
 
 .. image:: images/scratch_create_block_with_arguments_fr.gif
 
-Now that you have a block definition in your scripts area, recall the pattern that we used to draw regular polygon. If we only wanted to draw a square, our code would look like this:
+Maintenant que vous avez une définition du bloc dans votre zone de scripts, rappelez l'algorithme utilisé pour dessiner un polygone régulier. Si nous voulions seulement dessiner un carré, notre code ressemblerait à ceci:
 
 .. image:: images/scratch_define_square.png
 
-We obviously do not want to have the block always draw a square. To allow the arguments that we pass to the block to be used, we simply drag them from the block definition into the code. For this code, drag the ``number of sides`` number input onto both the repeat block, as well as the turn block. Then drag the ``side length`` number input onto the move block.
+Nous voulons évidemment pas que le bloc dessine toujours un carré. Pour permettre aux arguments que nous transmettons au bloc d'être utilisés, nous les faisons simplement glisser de la définition du bloc vers le code. Pour ce code, faites glisser le nombre de côtés entré sur le bloc *rététer _ fois* ainsi que sur le bloc *tourner de _ degrés*. Ensuite, faites glisser la variable de longueur de côté entré sur le bloc *avancer de _ pas*.
 
-.. image:: images/scratch_adding_parameters_to_block.gif
+.. image:: images/scratch_adding_parameters_to_block_fr.gif
 
 Now that we have set up our drawing polygon block, you can use it like any other scratch block. For example, if you wanted to have a pentagon drawn when the user presses the space key, you would simply choose a 5 sided polygon, and pick a side length for the drawing.
 
