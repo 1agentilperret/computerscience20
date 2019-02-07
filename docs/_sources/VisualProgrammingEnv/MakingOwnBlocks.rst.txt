@@ -85,7 +85,7 @@ Pour certains blocs, tels que le bloc "rebondir si le bord est atteint" dans l'o
 
 Lorsque nous avons commencé à explorer :ref:`scratch_variables`, nous avons trouvé un bon modèle pour nous aider à dessiner des polygones réguliers. Nous voulons utiliser ce modèle à nouveau, cette fois pour créer un bloc semblable au suivant:
 
-.. image:: images/scratch_polygon_block.png
+.. image:: images/scratch_polygon_block_fr.png
 
 Pour créer un bloc qui prend des arguments, sélectionnez d'abord «Créer un bloc» dans l'onglet **Mes blocs**. Tapez ``Dessine un polygone à`` puis cliquez sur l'option «Ajouter une entrée». Étiquetez le nombre comme ``# de côtés``, puis «Ajouter une étiquette» nommé ``côtés pour lesquels chaque côté mesure``. «Ajouter une autre entrée» numérique appelée ``longueur de côtés``, puis identifiez les ``pas`` avec un autre «étiquette».
 
