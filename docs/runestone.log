@@ -2456,3 +2456,20 @@ Aborted!
 127.0.0.1 - - [06/Feb/2019 20:56:21] "GET /runestone/static/favicon.ico HTTP/1.1" 404 -
 
 Aborted!
+127.0.0.1 - - [07/Feb/2019 10:59:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:21] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:21] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:22] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:22] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:26] "GET /VisualProgrammingEnv/2SecondProject.html HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /VisualProgrammingEnv/MakingOwnBlocks.html HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] code 404, message File not found
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /VisualProgrammingEnv/VisualProgrammingEnv/images/scratch_define_new_block_fr.gif HTTP/1.1" 404 -
+127.0.0.1 - - [07/Feb/2019 10:59:31] "GET /_images/scratch_create_block_with_arguments_fr.gif HTTP/1.1" 200 -
+127.0.0.1 - - [07/Feb/2019 10:59:32] "GET /_images/scratch_adding_parameters_to_block_fr.gif HTTP/1.1" 200 -
+
+Aborted!

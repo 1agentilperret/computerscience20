@@ -93,7 +93,7 @@ Pour créer un bloc qui prend des arguments, sélectionnez d'abord «Créer un b
 
 Maintenant que vous avez une définition du bloc dans votre zone de scripts, rappelez l'algorithme utilisé pour dessiner un polygone régulier. Si nous voulions seulement dessiner un carré, notre code ressemblerait à ceci:
 
-.. image:: images/scratch_define_square.png
+.. image:: images/scratch_define_square_fr.png
 
 Nous voulons évidemment pas que le bloc dessine toujours un carré. Pour permettre aux arguments que nous transmettons au bloc d'être utilisés, nous les faisons simplement glisser de la définition du bloc vers le code. Pour ce code, faites glisser le nombre de côtés entré sur le bloc *rététer _ fois* ainsi que sur le bloc *tourner de _ degrés*. Ensuite, faites glisser la variable de longueur de côté entré sur le bloc *avancer de _ pas*.
 
