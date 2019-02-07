@@ -99,14 +99,14 @@ Nous voulons évidemment pas que le bloc dessine toujours un carré. Pour permet
 
 .. image:: images/scratch_adding_parameters_to_block_fr.gif
 
-Now that we have set up our drawing polygon block, you can use it like any other scratch block. For example, if you wanted to have a pentagon drawn when the user presses the space key, you would simply choose a 5 sided polygon, and pick a side length for the drawing.
+Maintenant que nous avons configuré notre bloc de dessin de polygones, vous pouvez l’utiliser comme tout autre bloc de travail. Par exemple, si vous souhaitez dessiner un pentagone lorsque l'utilisateur appuie sur la touche d'espacement, vous devez simplement choisir un polygone à 5 côtés et choisir une longueur de côté pour le dessin.
 
-.. image:: images/scrach_using_polygon_block.png
+.. image:: images/scrach_using_polygon_block_fr.png
 
 
-Practice Problem
------------------
+Problème de pratique
+----------------------
 
-Work on your current Scratch assignment, for any remaining time.
+Travaillez sur votre projet de Scratch actuelle pour le temps restant.
 
-.. note:: If your teacher did not assign you a project, you should explore the Scratch website to discover what types of projects are possible. Now try to create the most impressive project you can, making sure you demonstrate your understanding of the main topics shown so far (broadcasts, repetition, if/else, and variables).
+.. note:: Si votre professeur ne vous a pas assigné de projet, vous devriez explorer le site Web Scratch pour découvrir quels types de projets sont possibles. Essayez maintenant de créer le projet le plus impressionnant possible en vous assurant de démontrer votre compréhension des principaux sujets abordés jusqu'à présent (**émissions, répétitions, si/alors et variables**).
