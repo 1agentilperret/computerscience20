@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>7. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables) &#8212; Computer Science 20 Saskatchewan</title>
+    <title>8. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables) &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="8. Période de travail des projets" href="ProjectWorkTime.html" />
-    <link rel="prev" title="6. Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser “*envoyer à tous”)" href="StartScreen.html" />
+    <link rel="next" title="9. Projet 2: attraper le scarabée (the beetle)" href="2SecondProject.html" />
+    <link rel="prev" title="7. Projet 1: Créer une histoire interactive" href="1FirstProject.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,10 +203,10 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">7. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)</a><ul>
-<li><a class="reference internal" href="#probleme-de-timing">7.1. Problème de Timing</a></li>
-<li><a class="reference internal" href="#jeu-d-esquive">7.2. Jeu d’esquive</a></li>
-<li><a class="reference internal" href="#probleme-de-pratique">7.3. Problème de pratique</a></li>
+<li><a class="reference internal" href="#">8. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)</a><ul>
+<li><a class="reference internal" href="#probleme-de-timing">8.1. Problème de Timing</a></li>
+<li><a class="reference internal" href="#jeu-d-esquive">8.2. Jeu d’esquive</a></li>
+<li><a class="reference internal" href="#probleme-de-pratique">8.3. Problème de pratique</a></li>
 </ul>
 </li>
 </ul>
@@ -216,14 +216,14 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 6. Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser “*envoyer à tous”)" data-toggle="tooltip">
-    <a href="StartScreen.html" >
+  <li id="relations-prev" title="Previous Chapter - 7. Projet 1: Créer une histoire interactive" data-toggle="tooltip">
+    <a href="1FirstProject.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - 8. Période de travail des projets' data-toggle="tooltip" >
-    <a href="ProjectWorkTime.html" >
+  <li id="relations-next" title='Next Chapter - 9. Projet 2: attraper le scarabée (<em>the beetle</em>)' data-toggle="tooltip" >
+    <a href="2SecondProject.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -254,7 +254,7 @@
 <div class="container" id="main-content">
   
   <div class="section" id="problemes-de-chronometrage-et-jeu-desquive-envoyer-a-tous-et-variables">
-<h1>7. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)<a class="headerlink" href="#problemes-de-chronometrage-et-jeu-desquive-envoyer-a-tous-et-variables" title="Permalink to this headline">¶</a></h1>
+<h1>8. Problèmes de chronométrage et jeu d’esquive (envoyer à tous et variables)<a class="headerlink" href="#problemes-de-chronometrage-et-jeu-desquive-envoyer-a-tous-et-variables" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Aperçu rapide de la journée</p>
 <p>Explorez les problèmes qui surviennent lorsque plusieurs scripts sont déclenchés par le même événement et les résoudre en configurant des diffusions <em>ordonnées</em>. Créez un jeu d’esquive d’objet, en utilisant des variables permettant à l’objet et au personnage d’augmenter en vitesse à mesure que le jeu avance.</p>
@@ -274,7 +274,7 @@
         <div id="1vPKlqxNloc_vid" class="align-left youtube-video" data-video-height="315" data-video-width="560" data-video-videoid="1vPKlqxNloc" data-video-divid="1vPKlqxNloc_vid" data-video-start="0" data-video-end="-1" ></div>
     </div>
     <div class="section" id="probleme-de-timing">
-<h2>7.1. Problème de Timing<a class="headerlink" href="#probleme-de-timing" title="Permalink to this headline">¶</a></h2>
+<h2>8.1. Problème de Timing<a class="headerlink" href="#probleme-de-timing" title="Permalink to this headline">¶</a></h2>
 <p>Lorsque vous commencez à créer des projets plus complexes dans Scratch, il est possible de rencontrer des problèmes que nous appellerons <em>problèmes de timinmg</em>. Cela peut arriver lorsque vous répondez à un événement avec plusieurs sprites. Bien que vous puissiez certainement réagir à un événement avec de nombreux sprites, il n’y a aucune garantie quant à l’ordre dans lequel ces réponses vont se produire. Si la réponse d’un sprite dépend du fait qu’un autre sprite effectue déjà une action, cela peut poser des problèmes qui sont difficiles à trouver dans votre projet.</p>
 <p>Pour illustrer ce problème, nous allons créer un “jeu” très simple qui expose intentionnellement ce problème. Tout d’abord, créez trois sprites et positionnez-les sur la scène comme ceci:</p>
 <img alt="../_images/scratch_timing_issues_sprite_setup.png" src="../_images/scratch_timing_issues_sprite_setup.png" />
@@ -295,7 +295,7 @@
 <img alt="../_images/scratch_timing_issue_game_2.png" src="../_images/scratch_timing_issue_game_2.png" />
 </div>
 <div class="section" id="jeu-d-esquive">
-<h2>7.2. Jeu d’esquive<a class="headerlink" href="#jeu-d-esquive" title="Permalink to this headline">¶</a></h2>
+<h2>8.2. Jeu d’esquive<a class="headerlink" href="#jeu-d-esquive" title="Permalink to this headline">¶</a></h2>
 <p>Essayons quelque chose de totalement différent. Cet exemple ne nécessitera pas que nous réfléchissions aux problèmes de synchronisation qui peuvent surgir lorsque nous répondons au même événement avec plusieurs sprites, mais cela nous permettra d’utiliser un bon nombre des idées que nous avons apprises jusqu’à présent. Nous allons créer un jeu d’esquive dans lequel une balle rebondit autour de l’écran et un deuxième objet qui suit notre souris autour de l’écran. Dès que la balle qui rebondit entre en contact avec l’objet suivant notre souris, le jeu se termine.</p>
 <p>Pour commencer, sélectionnez une balle et ajoute-la à votre projet. Je vais avec un ballon de basket. Faites glisser la balle vers la gauche de l’écran afin d’éviter les collisions dès le début de la partie. Nous devons ensuite choisir une direction aléatoire que le ballont devrait se déplacer, puis toujours continuer dans cette direction, et rebondir si il touche le bord de la scène. Ajoutez le script suivant à votre ballon:</p>
 <img alt="../_images/scratch_dodging_game_bball_1.png" src="../_images/scratch_dodging_game_bball_1.png" />
@@ -315,7 +315,7 @@
 </div>
 </div>
 <div class="section" id="probleme-de-pratique">
-<h2>7.3. Problème de pratique<a class="headerlink" href="#probleme-de-pratique" title="Permalink to this headline">¶</a></h2>
+<h2>8.3. Problème de pratique<a class="headerlink" href="#probleme-de-pratique" title="Permalink to this headline">¶</a></h2>
 <p>Travaillez sur votre deuxième affectation Scratch, pour le temps restant.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -327,19 +327,19 @@
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 6. Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser “*envoyer à tous”)' data-toggle="tooltip">
-    <a href="StartScreen.html" >
+  <li id="relations-prev" class="navLink" title='Previous Section - 7. Projet 1: Créer une histoire interactive' data-toggle="tooltip">
+    <a href="1FirstProject.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="StartScreen.html" ></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="1FirstProject.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - 8. Période de travail des projets' data-toggle="tooltip" >
-    <a href="ProjectWorkTime.html" >
+  <li id="relations-next" class="navLink" title='Next Section - 9. Projet 2: attraper le scarabée (<em>the beetle</em>)' data-toggle="tooltip" >
+    <a href="2SecondProject.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="ProjectWorkTime.html" >Next Section - 8. Période de travail des projets</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="2SecondProject.html" >Next Section - 9. Projet 2: attraper le scarabée (<em>the beetle</em>)</a>
 
 <script type="text/javascript">
 

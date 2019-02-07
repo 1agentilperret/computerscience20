@@ -3,8 +3,10 @@
    :start: 1
 
 
-Mission 2: Créer une histoire interactive
+Projet 4: Recrér le jeu de Flappy bird
 ===========================================
+
+À RETRAVAILLER: ce qui suis est un modèle copier du projet 2 pour guarder le même format dans le site.
 
 .. topic:: Aperçu rapide du projet
 
