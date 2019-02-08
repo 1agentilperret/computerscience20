@@ -1,4 +1,4 @@
-Step 14: The ``not`` Keyword
+Étape 14: Le mot-clé ``not``
 ===============================================
 
 .. reveal:: curriculum_addressed_step_fourteen
@@ -11,95 +11,86 @@ Step 14: The ``not`` Keyword
 
 .. index:: not
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-In Python, we can indicate that something is not true by writing ``not True``
-which is the same as  ``False``. Likewise, ``not False`` is equivalent to ``True``.
+En Python, nous pouvons indiquer que quelque chose n'est pas vrai en écrivant ``not True`` qui est identique à ``False``. De même, ``not False`` est équivalent à ``True``.
 
-When you solved Step 10, you created a program to have Reeborg jump hurdles.
+Lorsque vous avez résolu l'étape 10, vous avez créé un programme pour qui permet à Reeborg de sauter des obstacles.
 
 .. image:: images/hurdles2.png
 
-As part of your solution for the above world, you may have created a function similar to the following:
+Dans le cadre de votre solution pour le monde ci-dessus, vous avez peut-être créé une fonction similaire à celle-ci:
 
 .. code-block:: python
 
-   def run_jump_or_finish():
+   def cour_saute_ou_fini():
         if at_goal():
-            # something
+            # quelque chose
         elif front_is_clear():
-            # something
+            # quelque chose
         else:
-            # something
+            # quelque chose
 
-This program fragment can be rewritten, by choosing different combinations of the negation keyword ``not`` **and** different combinations of ``if/elif/else``.
+Ce fragment de programme peut être réécrit en choisissant différentes combinaisons du mot clé de négation ``not`` **et** différentes combinaisons de ``if/elif/else``.
 
-Consider the three code samples below, paying close attention to where the ``not`` keyword occur **and** to what is actually included in each code block.
+Examinez les trois exemples de code ci-dessous, en portant une attention particulière au lieu où le mot clé ``not`` se trouve **et** à ce qui est vraiment inclus dans chaque bloc de code.
 
 .. code-block:: python
 
-   # first choice:
+   # premier choix:
 
-   def run_jump_or_finish():
+   def cour_saute_ou_fini():
         if at_goal():
-            # something
+            # quelque chose
         elif not front_is_clear():
-            # something
+            # quelque chose
         else:
-            # something
+            # quelque chose
 
-   # second choice ... trickier
+   # deuxième choix ... plus compliqué
 
-   def run_jump_or_finish():
+   def cour_saute_ou_fini():
         if not at_goal():
             if front_is_clear():
-                # something
+                # quelque chose
             else:
-                # something
+                # quelque chose
         else:
-            # something
+            # quelque chose
 
-   # third choice:
+   # troisième choix:
 
-   def run_jump_or_finish():
+   def cour_saute_ou_fini():
         if not at_goal():
             if not front_is_clear():
-                # something
+                # quelque chose
             else:
-                # something
+                # quelque chose
         else:
-            # something
-
-
-You have just seen how it is possible to change the order
-in which the conditions appear in an ``if/elif/else`` code block while
-still accomplishing the same goal.  Two different programmers will often
-use different strategies to get the same final result.  There are other
-ways in which different programmers will write different but equivalent
-programs: by using different functions.
-
-The function ``front_is_clear()`` will tell Reeborg whether or not a
-wall is blocking its way.  It will do the same for **water**, **brick walls**,
-**fences**, etc., which we have not seen yet but likely will in future worlds.
-There is a function that is more specific to wall called
-``wall_in_front()``; I leave it up to you to guess what it does.
+            # quelque chose
 
 
 
-Your Turn
----------
+Vous venez de voir comment il est possible de changer l'ordre
+dans lequel les conditions apparaissent dans un bloc de code ``if/elif/else`` et toujours atteindre le même objectif. Deux programmeurs différents vont souvent utilisez différentes stratégies pour obtenir le même résultat final. Il y a d'autres façons dont différents programmeurs vont écrire des programmes différents mais équivalents: en utilisant différentes fonctions.
 
-Open Step 14 on the |reeborg_environment|.
+La fonction ``front_is_clear()`` indiquera à Reeborg si un mur bloque son chemin. Il en sera de même pour **l'eau**, **les murs en briques**, **les clôtures**, etc., que nous n'avons pas encore vues, mais que nous verrons probablement dans les mondes futurs. Il existe une fonction plus spécifique au mur appelée ``wall_in_front()``; Je vous laisse deviner ce que ça fait ;).
+
+
+À ton tour
+------------
+
+Ouvrez l’étape 14 de |reeborg_environment|.
 
 .. image:: images/step14.gif
 
-Reeborg loves going for walks, especially when it is around a lake. The lakes in Reeborg's neighborhood are all different sizes of rectangles, so Reeborg does not know how many steps it will take to get back to the start of walk. Thankfully, Reeborg happens to be carrying a banana, which you can tell Reeborg to ``put()`` down at the start of it's walk. Reeborg knows it's done walking when it reaches the banana again.
+Reeborg aime aller se promener, surtout quand il se trouve autour d'un lac. Les lacs dans le voisinage de Reeborg sont tous de tailles différentes, donc Reeborg ne sait pas combien de pas il faudra pour revenir au début de la promenade. Heureusement, il arrive que Reeborg porte une banane, que vous pouvez dire à Reeborg de ``put()`` au début de la marche. Reeborg sait que la marche est finie quand il atteint à nouveau la banane.
 
-Use a ``while`` statement (looking for the banana object) and an ``if/else`` to have Reeborg complete his walking adventure.
+Utilisez une déclaration ``while`` (*qui cherche la banane*) et un ``if/else`` pour que Reeborg complète sa marche autour des lacs.
 
-.. note:: Reeborg cannot use a ``repeat`` statement, since it has no idea of the dimensions of the lake it is walking around.
+.. note:: Reeborg ne peut pas utiliser une déclaration ``repeat``, car il n'a aucune idée des dimensions du lac autour de lequel il se promène.
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2014" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2014" target="_blank">l'environnement Reeborg</a>

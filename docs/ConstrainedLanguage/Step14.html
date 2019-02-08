@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 14: The not Keyword &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 14: Le mot-clé not &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Step 15: It’s Going to Rain" href="Step15.html" />
-    <link rel="prev" title="Step 13: If/Elif/Else" href="Step13.html" />
+    <link rel="prev" title="Étape 13: If/Elif/Else si/si alors/sinon" href="Step13.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 14: The <code class="docutils literal notranslate"><span class="pre">not</span></code> Keyword</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 14: Le mot-clé <code class="docutils literal notranslate"><span class="pre">not</span></code></a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -215,7 +215,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Step 13: If/Elif/Else" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Étape 13: If/Elif/Else <em>si/si alors/sinon</em>" data-toggle="tooltip">
     <a href="Step13.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -252,8 +252,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-14-the-not-keyword">
-<h1>Step 14: The <code class="docutils literal notranslate"><span class="pre">not</span></code> Keyword<a class="headerlink" href="#step-14-the-not-keyword" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="etape-14-le-mot-cle-not">
+<h1>Étape 14: Le mot-clé <code class="docutils literal notranslate"><span class="pre">not</span></code><a class="headerlink" href="#etape-14-le-mot-cle-not" title="Permalink to this headline">¶</a></h1>
 
     <div data-component="reveal" id="curriculum_addressed_step_fourteen"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
@@ -263,78 +263,69 @@
 </ul>
 
     </div>
-    <div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>In Python, we can indicate that something is not true by writing <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">True</span></code>
-which is the same as  <code class="docutils literal notranslate"><span class="pre">False</span></code>. Likewise, <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">False</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
-<p>When you solved Step 10, you created a program to have Reeborg jump hurdles.</p>
+    <div class="section" id="didacticiel-tutorial">
+<span id="index-0"></span><h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>En Python, nous pouvons indiquer que quelque chose n’est pas vrai en écrivant <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">True</span></code> qui est identique à <code class="docutils literal notranslate"><span class="pre">False</span></code>. De même, <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">False</span></code> est équivalent à <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Lorsque vous avez résolu l’étape 10, vous avez créé un programme pour qui permet à Reeborg de sauter des obstacles.</p>
 <img alt="../_images/hurdles2.png" src="../_images/hurdles2.png" />
-<p>As part of your solution for the above world, you may have created a function similar to the following:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_jump_or_finish</span><span class="p">():</span>
+<p>Dans le cadre de votre solution pour le monde ci-dessus, vous avez peut-être créé une fonction similaire à celle-ci:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cour_saute_ou_fini</span><span class="p">():</span>
      <span class="k">if</span> <span class="n">at_goal</span><span class="p">():</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
      <span class="k">elif</span> <span class="n">front_is_clear</span><span class="p">():</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
      <span class="k">else</span><span class="p">:</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
 </pre></div>
 </div>
-<p>This program fragment can be rewritten, by choosing different combinations of the negation keyword <code class="docutils literal notranslate"><span class="pre">not</span></code> <strong>and</strong> different combinations of <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>.</p>
-<p>Consider the three code samples below, paying close attention to where the <code class="docutils literal notranslate"><span class="pre">not</span></code> keyword occur <strong>and</strong> to what is actually included in each code block.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># first choice:</span>
+<p>Ce fragment de programme peut être réécrit en choisissant différentes combinaisons du mot clé de négation <code class="docutils literal notranslate"><span class="pre">not</span></code> <strong>et</strong> différentes combinaisons de <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>.</p>
+<p>Examinez les trois exemples de code ci-dessous, en portant une attention particulière au lieu où le mot clé <code class="docutils literal notranslate"><span class="pre">not</span></code> se trouve <strong>et</strong> à ce qui est vraiment inclus dans chaque bloc de code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># premier choix:</span>
 
-<span class="k">def</span> <span class="nf">run_jump_or_finish</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">cour_saute_ou_fini</span><span class="p">():</span>
      <span class="k">if</span> <span class="n">at_goal</span><span class="p">():</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
      <span class="k">elif</span> <span class="ow">not</span> <span class="n">front_is_clear</span><span class="p">():</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
      <span class="k">else</span><span class="p">:</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
 
-<span class="c1"># second choice ... trickier</span>
+<span class="c1"># deuxième choix ... plus compliqué</span>
 
-<span class="k">def</span> <span class="nf">run_jump_or_finish</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">cour_saute_ou_fini</span><span class="p">():</span>
      <span class="k">if</span> <span class="ow">not</span> <span class="n">at_goal</span><span class="p">():</span>
          <span class="k">if</span> <span class="n">front_is_clear</span><span class="p">():</span>
-             <span class="c1"># something</span>
+             <span class="c1"># quelque chose</span>
          <span class="k">else</span><span class="p">:</span>
-             <span class="c1"># something</span>
+             <span class="c1"># quelque chose</span>
      <span class="k">else</span><span class="p">:</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
 
-<span class="c1"># third choice:</span>
+<span class="c1"># troisième choix:</span>
 
-<span class="k">def</span> <span class="nf">run_jump_or_finish</span><span class="p">():</span>
+<span class="k">def</span> <span class="nf">cour_saute_ou_fini</span><span class="p">():</span>
      <span class="k">if</span> <span class="ow">not</span> <span class="n">at_goal</span><span class="p">():</span>
          <span class="k">if</span> <span class="ow">not</span> <span class="n">front_is_clear</span><span class="p">():</span>
-             <span class="c1"># something</span>
+             <span class="c1"># quelque chose</span>
          <span class="k">else</span><span class="p">:</span>
-             <span class="c1"># something</span>
+             <span class="c1"># quelque chose</span>
      <span class="k">else</span><span class="p">:</span>
-         <span class="c1"># something</span>
+         <span class="c1"># quelque chose</span>
 </pre></div>
 </div>
-<p>You have just seen how it is possible to change the order
-in which the conditions appear in an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> code block while
-still accomplishing the same goal.  Two different programmers will often
-use different strategies to get the same final result.  There are other
-ways in which different programmers will write different but equivalent
-programs: by using different functions.</p>
-<p>The function <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code> will tell Reeborg whether or not a
-wall is blocking its way.  It will do the same for <strong>water</strong>, <strong>brick walls</strong>,
-<strong>fences</strong>, etc., which we have not seen yet but likely will in future worlds.
-There is a function that is more specific to wall called
-<code class="docutils literal notranslate"><span class="pre">wall_in_front()</span></code>; I leave it up to you to guess what it does.</p>
+<p>Vous venez de voir comment il est possible de changer l’ordre
+dans lequel les conditions apparaissent dans un bloc de code <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> et toujours atteindre le même objectif. Deux programmeurs différents vont souvent utilisez différentes stratégies pour obtenir le même résultat final. Il y a d’autres façons dont différents programmeurs vont écrire des programmes différents mais équivalents: en utilisant différentes fonctions.</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code> indiquera à Reeborg si un mur bloque son chemin. Il en sera de même pour <strong>l’eau</strong>, <strong>les murs en briques</strong>, <strong>les clôtures</strong>, etc., que nous n’avons pas encore vues, mais que nous verrons probablement dans les mondes futurs. Il existe une fonction plus spécifique au mur appelée <code class="docutils literal notranslate"><span class="pre">wall_in_front()</span></code>; Je vous laisse deviner ce que ça fait ;).</p>
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 14 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2014" target="_blank">Reeborg environment</a>.</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 14 de <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2014" target="_blank">l'environnement Reeborg</a>.</p>
 <img alt="../_images/step14.gif" src="../_images/step14.gif" />
-<p>Reeborg loves going for walks, especially when it is around a lake. The lakes in Reeborg’s neighborhood are all different sizes of rectangles, so Reeborg does not know how many steps it will take to get back to the start of walk. Thankfully, Reeborg happens to be carrying a banana, which you can tell Reeborg to <code class="docutils literal notranslate"><span class="pre">put()</span></code> down at the start of it’s walk. Reeborg knows it’s done walking when it reaches the banana again.</p>
-<p>Use a <code class="docutils literal notranslate"><span class="pre">while</span></code> statement (looking for the banana object) and an <code class="docutils literal notranslate"><span class="pre">if/else</span></code> to have Reeborg complete his walking adventure.</p>
+<p>Reeborg aime aller se promener, surtout quand il se trouve autour d’un lac. Les lacs dans le voisinage de Reeborg sont tous de tailles différentes, donc Reeborg ne sait pas combien de pas il faudra pour revenir au début de la promenade. Heureusement, il arrive que Reeborg porte une banane, que vous pouvez dire à Reeborg de <code class="docutils literal notranslate"><span class="pre">put()</span></code> au début de la marche. Reeborg sait que la marche est finie quand il atteint à nouveau la banane.</p>
+<p>Utilisez une déclaration <code class="docutils literal notranslate"><span class="pre">while</span></code> (<em>qui cherche la banane</em>) et un <code class="docutils literal notranslate"><span class="pre">if/else</span></code> pour que Reeborg complète sa marche autour des lacs.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Reeborg cannot use a <code class="docutils literal notranslate"><span class="pre">repeat</span></code> statement, since it has no idea of the dimensions of the lake it is walking around.</p>
+<p class="last">Reeborg ne peut pas utiliser une déclaration <code class="docutils literal notranslate"><span class="pre">repeat</span></code>, car il n’a aucune idée des dimensions du lac autour de lequel il se promène.</p>
 </div>
 </div>
 </div>
@@ -342,7 +333,7 @@ There is a function that is more specific to wall called
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Step 13: If/Elif/Else' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Étape 13: If/Elif/Else <em>si/si alors/sinon</em>' data-toggle="tooltip">
     <a href="Step13.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
