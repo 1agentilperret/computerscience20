@@ -73,7 +73,6 @@ Une fois ce nouveau bloc défini, nous pouvons l'appeler comme n'importe quel au
 
 .. image:: images/scratch_calling_new_block.png
 
-
 Dessiner un bloc polygonal
 ----------------------------
 
@@ -83,7 +82,7 @@ Si vous inspectez les blocs intégrés disponibles dans Scratch, vous remarquere
 
 Pour certains blocs, tels que le bloc "rebondir si le bord est atteint" dans l'onglet *Mouvement*, nous ne fournissons aucune information supplémentaire au bloc. Avec le bloc “avancer de 10 pas”, cependant, nous pouvons contrôler le comportement du bloc en modifiant la valeur de l'**argument** du bloc (défini à l'origine sur 10). Le bloc d'accueil que nous avons présenté ci-dessus ne contenait aucun argument. Essayons de créer un bloc qui prend des arguments.
 
-Lorsque nous avons commencé à explorer :ref:`scratch_variables`, nous avons trouvé un bon modèle pour nous aider à dessiner des polygones réguliers. Nous voulons utiliser ce modèle à nouveau, cette fois pour créer un bloc semblable au suivant:
+Lorsque nous avons commencé à explorer `scratch_variables`_, nous avons trouvé un bon modèle pour nous aider à dessiner des polygones réguliers. Nous voulons utiliser ce modèle à nouveau, cette fois pour créer un bloc semblable au suivant:
 
 .. image:: images/scratch_polygon_block_fr.png
 

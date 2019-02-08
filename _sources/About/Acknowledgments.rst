@@ -1,15 +1,17 @@
-Acknowledgments
-============================================
+Remerciements
+=========================
 
-About This Project
-------------------
+À propos de ce projet
+-------------------------
 
-This book was created by Dan Schellenberg, who was relieved of teaching duties with Saskatoon Public Schools for one period a day during the 2017/2018 school year to create something useful for the impending release of the Saskatchewan Computer Science 20 curriculum. This is hopefully the first of many open textbook projects for Saskatoon Public Schools, which is an initiative spearheaded by Wendy James.
+Ce livre a été traduit par Arman Gentil-Perret avec l'appui de Daniel  en 2018-2019, nous sommes enseignants dans le Conseil des Écoles Fransaskoises et nous travaillons avec Dan, celui qui a créé ce livre pour améliorer les ressources disponibles pour les enseignants Francophones en Saskatchewan.
 
-Much of the content of this book is remixed from work others have done in the past, and would never have been completed otherwise.
+Le livre original a été créé par Dan Schellenberg, qui a été libéré de ses fonctions d'enseignant auprès des écoles publiques de Saskatoon pour un cour par jours pendant l'année scolaire 2017-2018 afin de créer quelque chose d'utile pour la prochaine publication du programme d'études d'informatique 20 en Saskatchewan. J'espère que c'est le premier de nombreux projets de manuels ouverts pour les écoles publiques de Saskatoon, une initiative dirigée par Wendy James.
+
+Une grande partie du contenu de ce livre a été retravaillé à partir du travail que d'autres ont fait dans le passé et n'aurait jamais été complétée autrement.
 
 Scratch
--------
+--------
 
 Some of the ideas and progressions in the Scratch unit come from the `Beauty and Joy of Computing <http://bjc.edc.org/>`_, although they use the Snap! environment.  `Scratch <https://scratch.mit.edu/info/credits>`_ itself is a project of the Lifelong Kindergarten Group at the MIT Media Lab.
 

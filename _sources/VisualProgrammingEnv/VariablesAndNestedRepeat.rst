@@ -31,7 +31,7 @@ Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watc
     :align: left
     :http: https
 
-.. _scratch_variables:
+.. _`scratch_variables`:
 
 .. index:: variables
 

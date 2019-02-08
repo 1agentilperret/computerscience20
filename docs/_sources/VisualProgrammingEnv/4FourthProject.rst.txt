@@ -17,7 +17,9 @@ Projet 4: Recrér le jeu de Flappy bird
 Instructions 
 -------------
 
-.. reveal:: Instructions_for_project_two
+https://docs.google.com/document/d/1NI-xjfz9SINjMJh5qYww-6IrBbeTt5-D_Fd-uY9tfkA/edit?usp=sharing
+
+.. .. reveal:: Instructions_for_project_two
     :showtitle: Instructions
     :hidetitle: Cacher Instructions
     
@@ -42,16 +44,16 @@ Instructions
 
 .. this is the gif to show what the program should do.
 
-.. Votre programme pour avoir 100% devrait ressembler à ceci:
+Votre programme devrait ressembler à ceci:
 
-.. .. image:: images/scratch_catch_the_beetle_expert.gif
+.. image:: images/scratch_flappy_bird_game_fr.gif
 
 Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
 Évaluation
 -----------
 
-.. reveal:: eval_eighty_five_two
+.. .. reveal:: eval_eighty_five_two
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%
 
@@ -70,7 +72,7 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
     
 
 
-.. reveal:: eval_one_hundy_two
+.. .. reveal:: eval_one_hundy_two
     :showtitle: Évaluation pour avoir 100%
     :hidetitle: Cacher l'évaluation pour avoir 100%
 
