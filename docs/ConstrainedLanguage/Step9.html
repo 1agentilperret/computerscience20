@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 9: Repeating Instructions &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 9: Répéter ees instructions &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 9: Repeating Instructions</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 9: Répéter ees instructions</a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -252,8 +252,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-9-repeating-instructions">
-<h1>Step 9: Repeating Instructions<a class="headerlink" href="#step-9-repeating-instructions" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="etape-9-repeter-ees-instructions">
+<h1>Étape 9: Répéter ees instructions<a class="headerlink" href="#etape-9-repeter-ees-instructions" title="Permalink to this headline">¶</a></h1>
 
     <div data-component="reveal" id="curriculum_addressed_step_nine"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
@@ -263,65 +263,53 @@
 </ul>
 
     </div>
-    <div class="section" id="tutorial">
-<span id="index-0"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Often, we will find that we want to repeat a series of instructions a
-fixed number of times. For example, in Step 8, you had to tell Reeborg to do the same thing over and over again. There is a way in Python to do this … but it
-has too many new concepts to explain right now. I will just show you
-the code, and immediately introduce <code class="docutils literal notranslate"><span class="pre">repeat</span></code>, a simpler replacement
-for it, unique to Reeborg’s World.  The standard way
-is known as a <strong>for loop</strong> (which we will use later in the course) and is written as follows:</p>
+    <div class="section" id="didacticiel-tutorial">
+<span id="index-0"></span><h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Nous constatons souvent que nous souhaitons répéter une série d’instructions un nombre de fois déterminé. Par exemple, à l’étape 8, vous deviez demander à Reeborg de faire la même chose plusieurs fois. Il existe un moyen de faire cela en Python … mais il a trop de nouveaux concepts à expliquer pour le moment. Je vais simplement vous montrer le code python et vous présenter immédiatement la commande <code class="docutils literal notranslate"><span class="pre">repeat</span></code>, un remplacement plus simple, unique au monde de Reeborg. La méthode standard est connue sous le nom de boucle <em>for loop</em> (que nous utiliserons plus tard dans le cours) et s’écrit comme suit:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="c1"># some</span>
+    <span class="c1"># mettre</span>
     <span class="c1"># instructions</span>
-    <span class="c1"># here</span>
+    <span class="c1"># ici</span>
 </pre></div>
 </div>
-<p>In Reeborg’s World, we can write a <code class="docutils literal notranslate"><span class="pre">repeat</span></code> <em>loop</em> as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repeat</span> <span class="n">n</span><span class="p">:</span>    <span class="c1"># where n is a natural number, like 3 or 7</span>
-    <span class="c1"># some</span>
-    <span class="c1"># instructions</span>
-    <span class="c1"># here</span>
-</pre></div>
-</div>
+<p>Dans le monde de Reeborg, nous pouvons écrire une <em>boucle</em> <code class="docutils literal notranslate"><span class="pre">repeat</span></code> comme ceci:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>repeat n:    # où n est un nombre naturel, comme 3 ou 7</dt>
+<dd># mettre
+# instructions
+# ici</dd>
+</dl>
+</div></blockquote>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Using <code class="docutils literal notranslate"><span class="pre">repeat</span></code> will not work in Python programs meant to be
-run outside of Reeborg’s World.</p>
+<p class="last">L’utilisation de <code class="docutils literal notranslate"><span class="pre">repeat</span></code> ne fonctionnera pas dans les programmes Python destinés à être exécutés en dehors du monde de Reeborg.</p>
 </div>
-<p>A <strong>loop</strong> is a block of instructions that is repeated. Each time the loop is repeated is called an iteration, so the code below would have 4 iterations.</p>
-<p>The following code will make Reeborg trace a square:</p>
+<p>Une <strong>boucle</strong> est un bloc d’instructions qui est répété. Chaque fois que la boucle est répétée est appelée une itération, le code ci-dessous aurait donc 4 itérations.</p>
+<p>Le code suivant fera que Reeborg trace un carré:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repeat</span> <span class="mi">4</span><span class="p">:</span>
     <span class="n">move</span><span class="p">()</span>
     <span class="n">turn_left</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>By using <code class="docutils literal notranslate"><span class="pre">repeat</span></code>, we can rewrite some function definitions without
-having to repeat instructions:</p>
+<p>En utilisant <code class="docutils literal notranslate"><span class="pre">repeat</span></code>, nous pouvons réécrire certaines définitions de fonctions sans avoir à répéter les instructions:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">turn_right</span><span class="p">():</span>
     <span class="n">repeat</span> <span class="mi">3</span><span class="p">:</span>
         <span class="n">turn_left</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>You might want to adjust the code that you have saved in the library tab to use the repeat block.</p>
-<div class="admonition-for-educators admonition">
-<p class="first admonition-title">For educators</p>
-<p>The rationale for having <code class="docutils literal notranslate"><span class="pre">repeat</span></code> as an addition to Python’s
-standard notation is to avoid having to introduce 4 concepts
-at the same time (loops, variables as in <code class="docutils literal notranslate"><span class="pre">_</span></code> in <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">_</span> <span class="pre">in</span> <span class="pre">range(n)</span></code>,
-builtin functions like <code class="docutils literal notranslate"><span class="pre">range</span></code> as well as the concept of
-function arguments).</p>
-<p class="last">By design the <code class="docutils literal notranslate"><span class="pre">n</span></code> in <code class="docutils literal notranslate"><span class="pre">repeat</span> <span class="pre">n</span></code> <strong>must</strong> be an integer literal;
-it cannot be a variable.  When students learn about variables, they
-should learn the proper Python syntax to do loops and forget about
-the non-standard <code class="docutils literal notranslate"><span class="pre">repeat</span></code>.</p>
+<p>Vous pouvez aussi ajuster le code que vous avez enregistré dans l’onglet <strong>Bibliothèque</strong> pour utiliser le bloc de répétition.</p>
+<div class="admonition-pour-les-educateurs admonition">
+<p class="first admonition-title">Pour les éducateurs</p>
+<p>La raison que nous présentons <code class="docutils literal notranslate"><span class="pre">repeat</span></code> en même temps et au lieu de la notation standard de Python et d’évite avoir à introduire 4 concepts en même temps (boucles, variables comme dans <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(n):</span></code>, des fonctions intégrées telles que <code class="docutils literal notranslate"><span class="pre">range</span></code> ainsi que le concept d’<code class="docutils literal notranslate"><span class="pre">arguments</span> <span class="pre">de</span> <span class="pre">fonctions</span></code>).</p>
+<p class="last">De par sa conception, le <code class="docutils literal notranslate"><span class="pre">n</span></code> dans le <code class="docutils literal notranslate"><span class="pre">repeat</span> <span class="pre">n</span></code> <strong>doit</strong> être un entier; cela ne peut pas être une variable. Lorsque les étudiants étudient les variables, ils doivent apprendre la syntaxe Python appropriée pour faire des boucles et oublier la répétition non standard.</p>
 </div>
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 9 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%209" target="_blank">Reeborg environment</a>.</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 9 sur <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%209" target="_blank">l'environnement Reeborg</a>.</p>
 <img alt="../_images/step9.png" src="../_images/step9.png" />
-<p>Adjust the solution you created for Step 8, this time making use of two repeat loops. The world doesn’t change from Step 8, but your solution should be much nicer. Remember to use comments and whitespace to increase the readability of your solution!</p>
+<p>Ajustez la solution que vous avez créée pour l’étape 8 en utilisant deux boucles de répétition cette fois. Le monde n’a pas changé depuis l’étape 8, mais votre solution devrait être beaucoup plus éléguante. N’oubliez pas d’utiliser des commentaires et des espaces pour augmenter la lisibilité de votre solution!</p>
 </div>
 </div>
 

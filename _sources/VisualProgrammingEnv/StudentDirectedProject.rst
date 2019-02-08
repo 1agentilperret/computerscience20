@@ -40,7 +40,7 @@ Projets possibles
 
 |FlappyBird|
 
-Votre programme devrait ressembler à ceci:
+Votre programme de flappy bird devrait ressembler à ceci:
 
 .. image:: images/scratch_flappy_bird_game_fr.gif
 

@@ -1,5 +1,4 @@
-Step 10: Jumping Hurdles (repeat and functions)
-===============================================
+Étape 10: Saut d'obstacles/*jumping hurdles* (répétition et fonctions)======================================================
 
 .. reveal:: curriculum_addressed_step_ten
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -10,21 +9,22 @@ Step 10: Jumping Hurdles (repeat and functions)
     - **CS20-FP2** Investigate how control structures affect program flow.
     - **CS20-FP3** Construct and utilize functions to create reusable pieces of code.
 
-Project
+Projet
 ---------
 
-Open Step 10 on the |reeborg_environment|.
+Ouvrez l’étape 10 de |reeborg_environment|.
 
 .. image:: images/step10.png
 
-Reeborg has been running tests on it's physical abilities lately. One of the things it has been practicing is jumping small hurdles. In this world, Reeborg needs to jump the hurdles, which are always the same height, and always spaced the same distance apart. You need to define a function such as::
+Reeborg effectue des tests sur ses capacités physiques dernièrement. L’une des choses qu’il a pratiquées est de sauter de petits obstacles. Dans ce monde, Reeborg doit surmonter les obstacles, qui sont toujours à la même hauteur et toujours espacés de la même distance. Vous devez définir une fonction telle que ::
 
-    def jump_hurdle():
-        # your code goes here
 
-You should use a ``repeat`` loop to have Reeborg jump the hurdles, and end at the goal (12, 1). The path to follow is shown with the black dashed line with arrows.
+    def saut_obstacle():
+        # votre code va ici
+
+Vous devez utiliser une boucle `` repeat`` pour que Reeborg franchisse les obstacles et termine au *but* (12, 1). Le chemin à suivre est indiqué par la ligne pointillée noire avec des flèches.
 
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2010" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2010" target="_blank">l'environnement Reeborg</a>

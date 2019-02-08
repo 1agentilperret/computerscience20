@@ -1,4 +1,4 @@
-Step 9: Repeating Instructions
+Étape 9: Répéter ees instructions
 =======================================
 
 .. reveal:: curriculum_addressed_step_nine
@@ -12,76 +12,60 @@ Step 9: Repeating Instructions
 
 .. index:: repeat
 
-Tutorial
---------
+Didacticiel-*Tutorial*
+-----------------------
 
-Often, we will find that we want to repeat a series of instructions a
-fixed number of times. For example, in Step 8, you had to tell Reeborg to do the same thing over and over again. There is a way in Python to do this ... but it
-has too many new concepts to explain right now. I will just show you
-the code, and immediately introduce ``repeat``, a simpler replacement
-for it, unique to Reeborg's World.  The standard way
-is known as a **for loop** (which we will use later in the course) and is written as follows:
+Nous constatons souvent que nous souhaitons répéter une série d'instructions un nombre de fois déterminé. Par exemple, à l'étape 8, vous deviez demander à Reeborg de faire la même chose plusieurs fois. Il existe un moyen de faire cela en Python ... mais il a trop de nouveaux concepts à expliquer pour le moment. Je vais simplement vous montrer le code python et vous présenter immédiatement la commande ``repeat``, un remplacement plus simple, unique au monde de Reeborg. La méthode standard est connue sous le nom de boucle *for loop* (que nous utiliserons plus tard dans le cours) et s’écrit comme suit:
 
 .. code-block:: python
 
     for i in range(n):
-        # some
+        # mettre
         # instructions
-        # here
+        # ici
 
-In Reeborg's World, we can write a ``repeat`` *loop* as follows::
+Dans le monde de Reeborg, nous pouvons écrire une *boucle* ``repeat`` comme ceci:
 
-    repeat n:    # where n is a natural number, like 3 or 7
-        # some
+    repeat n:    # où n est un nombre naturel, comme 3 ou 7
+        # mettre
         # instructions
-        # here
+        # ici
 
 .. note::
 
-   Using ``repeat`` will not work in Python programs meant to be
-   run outside of Reeborg's World. 
+   L’utilisation de ``repeat`` ne fonctionnera pas dans les programmes Python destinés à être exécutés en dehors du monde de Reeborg.
 
-A **loop** is a block of instructions that is repeated. Each time the loop is repeated is called an iteration, so the code below would have 4 iterations.
+Une **boucle** est un bloc d'instructions qui est répété. Chaque fois que la boucle est répétée est appelée une itération, le code ci-dessous aurait donc 4 itérations.
 
-The following code will make Reeborg trace a square::
+Le code suivant fera que Reeborg trace un carré::
 
     repeat 4:
         move()
         turn_left()
 
-By using ``repeat``, we can rewrite some function definitions without
-having to repeat instructions::
+En utilisant ``repeat``, nous pouvons réécrire certaines définitions de fonctions sans avoir à répéter les instructions::
 
     def turn_right():
         repeat 3:
             turn_left()
 
-You might want to adjust the code that you have saved in the library tab to use the repeat block.
+Vous pouvez aussi ajuster le code que vous avez enregistré dans l'onglet **Bibliothèque** pour utiliser le bloc de répétition.
 
-.. admonition:: For educators
+.. admonition:: Pour les éducateurs
 
-    The rationale for having ``repeat`` as an addition to Python's
-    standard notation is to avoid having to introduce 4 concepts
-    at the same time (loops, variables as in ``_`` in ``for _ in range(n)``,
-    builtin functions like ``range`` as well as the concept of
-    function arguments).
+    La raison que nous présentons ``repeat`` en même temps et au lieu de la notation standard de Python et d'évite avoir à introduire 4 concepts en même temps (boucles, variables comme dans ``for i in range(n):``, des fonctions intégrées telles que ``range`` ainsi que le concept d'``arguments de fonctions``).
 
-    By design the ``n`` in ``repeat n`` **must** be an integer literal;
-    it cannot be a variable.  When students learn about variables, they
-    should learn the proper Python syntax to do loops and forget about
-    the non-standard ``repeat``.
+    De par sa conception, le ``n`` dans le ``repeat n`` **doit** être un entier; cela ne peut pas être une variable. Lorsque les étudiants étudient les variables, ils doivent apprendre la syntaxe Python appropriée pour faire des boucles et oublier la répétition non standard.
 
+À ton tour
+------------
 
-Your Turn
----------
-
-Open Step 9 on the |reeborg_environment|.
+Ouvrez l'étape 9 sur |reeborg_environment|.
 
 .. image:: images/step9.png
 
-Adjust the solution you created for Step 8, this time making use of two repeat loops. The world doesn't change from Step 8, but your solution should be much nicer. Remember to use comments and whitespace to increase the readability of your solution!
-
+Ajustez la solution que vous avez créée pour l’étape 8 en utilisant deux boucles de répétition cette fois. Le monde n’a pas changé depuis l’étape 8, mais votre solution devrait être beaucoup plus éléguante. N'oubliez pas d'utiliser des commentaires et des espaces pour augmenter la lisibilité de votre solution!
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%209" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%209" target="_blank">l'environnement Reeborg</a>
