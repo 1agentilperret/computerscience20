@@ -3,7 +3,7 @@
    :start: 1
 
 
-Projet 4: Recrér le jeu de Flappy bird
+Projet 4: Recréer le jeu de Flappy bird
 ===========================================
 
 À RETRAVAILLER: ce qui suis est un modèle copier du projet 2 pour guarder le même format dans le site.

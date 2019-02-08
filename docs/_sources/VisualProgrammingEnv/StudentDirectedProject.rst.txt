@@ -40,6 +40,10 @@ Projets possibles
 
 |FlappyBird|
 
+Votre programme devrait ressembler à ceci:
+
+.. image:: images/scratch_flappy_bird_game_fr.gif
+
 .. Projet 4: Recrér le jeu de Flappy bird
 ---------------------------------------
 
@@ -49,7 +53,7 @@ Projets possibles
 
     Dans cette activité, vous ferez une histoire courte ou une pièce de théâtre.
 
-Instructions 
+.. Instructions 
 -------------
 
 .. .. reveal:: Instructions_for_project_two
@@ -77,13 +81,13 @@ Instructions
 
 .. this is the gif to show what the program should do.
 
-Votre programme devrait ressembler à ceci:
+.. Votre programme devrait ressembler à ceci:
 
-.. image:: images/scratch_flappy_bird_game_fr.gif
+.. .. image:: images/scratch_flappy_bird_game_fr.gif
 
-Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
+.. Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
-Évaluation
+.. Évaluation
 -----------
 
 .. .. reveal:: eval_eighty_five_two
