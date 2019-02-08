@@ -1,4 +1,4 @@
-Step 15: It's Going to Rain
+Étape 15: Il va pleuvoir
 ===============================================
 
 .. reveal:: curriculum_addressed_step_fifteen
@@ -10,21 +10,21 @@ Step 15: It's Going to Rain
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-Project
+Projet
 --------
 
-Open Step 15 on the |reeborg_environment|.
+Ouvrez l’étape 15 de |reeborg_environment|.
 
 .. image:: images/step15.png
 
-It's raining hard.  Water is going to come in through the open windows unless Reeborg closes them. Open windows look like this:
+Il pleut beaucoup. L'eau entrera par les fenêtres ouvertes à moins que Reeborg ne les ferme. Les fenêtres ouvertes ressemblent à ceci:
 
 .. image:: images/open_window.png
 
-Have Reeborg move around the room and close the windows by using the ``build_wall()`` function. The size of the room and the location of the windows are always changing.
+Demandez à Reeborg de se déplacer dans la pièce et de fermer les fenêtres à l’aide de la fonction ``build_wall()``. La taille de la pièce et l'emplacement des fenêtres changent constamment.
 
-.. note:: Since the windows are in different places in each world, be sure that your solution does not *hard code* a number of steps to get to a window. Instead, Reeborg must check for an open window as it walks around the inside of the house.
+.. note:: Etant donné que les fenêtres se trouvent à des endroits différents dans chaque monde, assurez-vous que votre solution ne *hard code* pas un certain nombre de pas pour accéder à une fenêtre. Au lieu de cela, Reeborg doit rechercher une fenêtre ouverte alors qu’il se promène dans la maison.
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2015" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2015" target="_blank">l'environnement Reeborg</a>
