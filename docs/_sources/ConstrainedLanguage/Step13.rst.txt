@@ -15,29 +15,24 @@
 Didacticiel-*Tutorial*
 -----------------------
 
-Reeborg lives in Canada where it not only can rain or be sunny, but snow
-can also be falling. Let's suppose that only one of those can happen at a time. Then,
-Reeborg could be faced with the following choices::
+Reeborg vit au Canada où il peut pleuvoir ou être ensoleillé, mais où la neige peut aussi tomber. Supposons qu'un seul d'entre eux puisse se produire à la fois. Donc, Reeborg pourrait être confronté par les choix suivants::
 
-    if it_rains():
-        play_indoors()
-    elif it_snows():
-        go_skiing()
+    if il_pleut():
+        jouer_à_l_intérieur()
+    elif il_neige():
+        aller_skier()
     else:
-        go_swimming() # assuming it is warm!
+        aller_nager() # supposant qu'il fait chaud!
 
-Notice the use of ``elif`` (which means "else if") for choice 2. If we took into account other
-possible weather phenomena, like hail, thunder, fog, drizzle, etc., we
-could add other choices using additional ``elif: ...`` code blocks.
+Notez l’utilisation de ``elif`` (qui signifie «sinon si» *"else if"*) pour le choix 2. Si nous prenions en compte d’autres phénomènes météorologiques possibles, tels que grêle, tonnerre, brouillard, la pluie fine, etc., nous pourrions ajouter d’autres choix en utilisant le blocs de code ``elif: ...``.
 
-Here is a graphical representation of the choices that Reeborg faces:
+Voici une représentation graphique des choix auxquels Reeborg est confrontée:
 
 .. figure:: images/flowcharts/elif.jpg
    :align: center
 
 
-In Step 10, you wrote a program to make Reeborg jump hurdles. Your program was likely
-something like this:
+À l'étape 10, vous avez écrit un programme pour faire sauter Reeborg. Votre programme ressemblait probablement à ceci:
 
 .. code-block:: python
 
@@ -45,102 +40,99 @@ something like this:
         repeat 3:
             turn_left()
 
-    def jump_hurdle():
-        #code to make Reeborg jump the hurdle
+    def saute_obstacle():
+        #code pour faire sauter Reeborg
 
     repeat 5:
         move()
-        jump_hurdle()
+        saute_obstacle()
 
-Although this code works fine for the hurdle world you were given, **it would fail if the hurdles were not spaced evenly apart**.
+Bien que ce code fonctionne bien pour le monde des obstacles que vous avez reçu, **il échouerait si les obstacles n'étaient pas espacés de manière égale**.
 
-Here's a program skeleton that should work for the world we mentioned above,
-provided you fill in the missing pieces. *Note: You may find the `done` function (which tells Reeborg to stop doing anything) helpful here.*
-
-.. code-block:: python
-
-   def jump_over_hurdle():
-        # suitable definition
-
-   def run_jump_or_finish ():
-        if at_goal():
-            # something
-        elif front_is_clear():
-            # something
-        else:
-            # something
-
-    repeat 42:  #we can replace this with a while after the next step...
-        run_jump_or_finish()
-
-Note the structure of the ``if/elif/else`` statements; as is mentioned above,
-you should see that it gives three independent choices: **only one of them
-will be executed**.
-
-
-Your Turn
----------
-
-Open Step 13 on the |reeborg_environment|, and copy/paste the following code to begin your solution:
+Voici un squelette de programme qui devrait fonctionner pour le monde mentionné ci-dessus, à condition que vous remplissiez les parties manquantes. *Remarque: Vous pouvez trouver la fonction `fini` (qui demande à Reeborg de ne plus rien faire) utile ici.*
 
 .. code-block:: python
 
-   def jump_over_hurdle():
-        # suitable definition
+   def cour_saute_ou_fini():
+        # définition appropriée
 
-   def run_jump_or_finish ():
+   def cour_saute_ou_fini ():
         if at_goal():
-            done()  #tells Reeborg to stop
+            # quelque chose
         elif front_is_clear():
-            # something
+            # quelque chose
         else:
-            # something
+            # quelque chose
 
-    repeat 42:  #we can replace this with a while after the next step...
-        run_jump_or_finish()
+    repeat 42:  #nous pouvons remplacer cela par une boucle 'while' après la prochaine étape ...
+        cour_saute_ou_fini()
+
+Notez la structure des instructions ``if/elif/else``; comme mentionné ci-dessus, vous voyez que cela donne trois choix indépendants: **un seul d'entre eux sera exécuté**.
+
+À ton tour
+------------
+
+Ouvrez l'étape 13 sur |reeborg_environment|, et copiez/collez le code suivant pour commencer votre solution:
+
+.. code-block:: python
+
+   def saute_obstacle():
+        # définition appropriée
+
+   def cour_saute_ou_fini ():
+        if at_goal():
+            fini()  #dit à Reeborg d'arrêter
+        elif front_is_clear():
+            # quelque chose
+        else:
+            # quelque chose
+
+    repeat 42:  #nous pouvons remplacer cela par une boucle 'while' après la prochaine étape ...
+
+        cour_saute_ou_fini()
 
 .. image:: images/step13.png
 
-Reeborg is jumping hurdles again. This time, however, the hurdles may not all be the same distance apart. You should use a ``repeat`` loop to have Reeborg jump the hurdles, and end at the goal (12, 1). You **must** use an ``if/elif/else`` structure in your program. 
+Reeborg saute à nouveau des obstacles. Cette fois, cependant, les obstacles ne seront peut-être pas tous à la même distance. Vous devez utiliser une boucle ``repeat`` pour que Reeborg franchisse les obstacles et termine au but (12, 1). Vous **devez** utiliser une structure ``if / elif / else`` dans votre programme.
 
 .. |reeborg_environment| raw:: html
 
    <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2013" target="_blank">l'environnement Reeborg</a>
 
 
-If You're Having Trouble (a more detailed explanation)
-------------------------------------------------------
+Si vous avez des problèmes (voici une explication plus détaillée
+------------------------------------------------------------------
 
-A series of ``if/elif/ ... /else`` statements is equivalent to
-inserting the **first** code block that evaluates to ``True``. Thus::
-
-    if False:
-        do_1()
-    elif True:
-        do_2()
-    elif True:
-        do_3()
-    else:
-        do_4()
-
-is equivalent to::
-
-    do_2()
-
-whereas::
+Une série d'instructions ``if/elif/.../else`` est équivalente à
+l'insertion du **premier** bloc de code qui renvoi un ``True``. Ainsi::
 
     if False:
-        do_1()
-    elif False:
-        do_2()
-    elif False:
-        do_3()
+        fait_1()
+    elif True:
+        fait_2()
+    elif True:
+        fait_3()
     else:
-        do_4()
+        fait_4()
 
-is equivalent to::
+est équivalent à::
 
-    do_4()
+    fait_2()
+
+tandis que::
+
+    if False:
+        fait_1()
+    elif False:
+        fait_2()
+    elif False:
+        fait_3()
+    else:
+        fait_4()
+
+est équivalent à::
+
+    fait_4()
 
 etc.
 

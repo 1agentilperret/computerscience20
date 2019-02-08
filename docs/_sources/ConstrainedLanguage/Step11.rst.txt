@@ -19,7 +19,7 @@ Bien qu’apprendre à programmer soit amusant, vous ne devriez pas dépenser to
 
 Réécrivons la phrase qui commence par ``si`` ci-dessus ::
 
-    si it rains,
+    si il pleut,
         continue de lire,
     sinon,
         aller jouer dehors
