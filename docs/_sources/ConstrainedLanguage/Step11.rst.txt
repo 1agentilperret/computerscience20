@@ -68,7 +68,8 @@ Créez un programme pour que Reeborg se promène à l'extérieur de la cour, ram
    <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2011" target="_blank">l'environnement Reeborg</a>
 
 
-Si vous avez des problèmes (voici une explication plus détaillée)-------------------------------------------------------------------
+Si vous avez des problèmes (voici une explication plus détaillée)
+-------------------------------------------------------------------
 
 Nous avons vu comment on peut voir les déclarations ``def`` et ``if`` comme étant (parfois) équivalent à l’insertion d’un bloc de code; l'exception était lorsque la condition de l'instruction ``if`` était ``False``, dans ce cas, nous avons ignoré le bloc de code, ce qui équivaut à la suppression de ce dernier. Les instructions ``if/else`` peuvent être considérées comme insérant l'un ou l'autre bloc de code. Ainsi
 
