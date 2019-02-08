@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 17: Solving a Maze &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 17: Résoudre un labyrinthe &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Step 18: Harvest Time Revisited" href="Step18.html" />
-    <link rel="prev" title="Step 16: Pseudocode" href="Step16.html" />
+    <link rel="next" title="Étape 18: Le temps de la récolte revisité" href="Step18.html" />
+    <link rel="prev" title="Étape 16: Pseudocode" href="Step16.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 17: Solving a Maze</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 17: Résoudre un labyrinthe</a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -215,13 +215,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Step 16: Pseudocode" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Étape 16: Pseudocode" data-toggle="tooltip">
     <a href="Step16.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Step 18: Harvest Time Revisited' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Étape 18: Le temps de la récolte revisité' data-toggle="tooltip" >
     <a href="Step18.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -252,8 +252,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-17-solving-a-maze">
-<h1>Step 17: Solving a Maze<a class="headerlink" href="#step-17-solving-a-maze" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="etape-17-resoudre-un-labyrinthe">
+<h1>Étape 17: Résoudre un labyrinthe<a class="headerlink" href="#etape-17-resoudre-un-labyrinthe" title="Permalink to this headline">¶</a></h1>
 
     <div data-component="reveal" id="curriculum_addressed_step_seventeen"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
@@ -263,36 +263,36 @@
 </ul>
 
     </div>
-    <div class="section" id="tutorial">
-<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>As you begin to think through the following problem, I once again <strong>highly recommend</strong> that you begin by writing <strong>pseudocode</strong> with paper and pencil.</p>
-<p>Your challenge is to see if you can refine the pseudocode solution you come up with well enough that when you actually write the Reeborg solution, it works on the first try. To accomplish this, you should spend much more time with paper and pencil than with your keyboard on this step! If you don’t have any scrap paper with you, ask your teacher for some.</p>
+    <div class="section" id="didacticiel-tutorial">
+<h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Alors que vous commencez à réfléchir au problème suivant, je vous <strong>recommande à nouveau</strong> de commencer par écrire votre <strong>pseudocode</strong> avec du papier et un crayon.</p>
+<p>Votre défi est de voir si vous pouvez affiner la solution de votre pseudocode pour que, lorsque vous écrivez réellement la solution Reeborg, celle-ci fonctionne du premier coup. Pour ce faire, vous devriez passer plus de temps avec le papier et le crayon qu’avec votre clavier lors de cette étape! Si vous n’avez pas de papier avec vous, demandez-en à votre enseignant.</p>
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 17 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2017" target="_blank">Reeborg environment</a>.</p>
-<p>Reeborg has lost it’s lunchbox. Reeborg was playing in a maze and set it down and then wandered around. Now Reeborg is hungry. The lunchbox is represented by the flag. Each time you press play, both the flag and Reeborg will begin in a random location. Reeborg’s situation looks like this:</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 17 de <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2017" target="_blank">l'environnement Reeborg</a>.</p>
+<p>Reeborg a perdu sa boîte à lunch. Reeborg jouait dans un labyrinthe et le posa avant de continuer sa promenade. Maintenant, Reeborg a faim. La boîte à lunch est représentée par le drapeau. Chaque fois que vous appuyez sur <em>play</em>, le drapeau et Reeborg commencent à un endroit aléatoire. La situation de Reeborg est la suivante:</p>
 <img alt="../_images/step17.gif" src="../_images/step17.gif" />
-<p>Write a program to help Reeborg find the lunchbox. The secret is to have Reeborg follow along the right edge of the maze, turning and moving right if it can, going straight ahead if it can’t turn right, or turning left as a last resort. Write a program using an if..elif..else statement so Reeborg can have lunch.</p>
+<p>Ecrivez un programme pour aider Reeborg à trouver la boîte à lunch. Le secret consiste à laisser Reeborg suivre le bord droit du labyrinthe, en tournant et en se déplaçant à droite s’il le peut, en passant tout droit s’il ne peut pas tourner à droite, ou en tournant à gauche en dernier recours. Ecrivez un programme en utilisant une déclaration <code class="docutils literal notranslate"><span class="pre">if..elif..else</span></code> afin que Reeborg puisse manger.</p>
 </div>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Step 16: Pseudocode' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Étape 16: Pseudocode' data-toggle="tooltip">
     <a href="Step16.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Step16.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Step 18: Harvest Time Revisited' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Étape 18: Le temps de la récolte revisité' data-toggle="tooltip" >
     <a href="Step18.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step18.html" >Next Section - Step 18: Harvest Time Revisited</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step18.html" >Next Section - Étape 18: Le temps de la récolte revisité</a>
 
 <script type="text/javascript">
 

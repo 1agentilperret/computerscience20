@@ -1,5 +1,5 @@
-Step 19: Second Lake Walk
-===========================
+Étape 19: Deuxième promenade autour du lac
+===========================================
 
 .. reveal:: curriculum_addressed_step_nineteen
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -10,23 +10,24 @@ Step 19: Second Lake Walk
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-Project
+Projet
 --------
 
-For the following challenge, you will need to put to use much of the knowledge you have gained in the previous steps. You may find that it is helpful to look back to your solution for Step 14.
+Pour le défi suivant, vous devrez utiliser une grande partie des connaissances acquises au cours des étapes précédentes. Vous trouverez peut-être utile de revenir à votre solution de l'étape 14.
 
-Open Step 19 on the |reeborg_environment_extra|.
+Ouvrez l’étape 19 sur |reeborg_environment_extra|.
 
-Reeborg has found a much more interesting lake to walk around.
+Reeborg a trouvé un lac beaucoup plus intéressant autour de lequel se promener.
 
 .. image:: images/step19.gif
 
-Try to adapt the solution you made for Step 14 to make it work with this new lake. Reeborg should once again put down the banana at the starting position and continue walking along the border of the lake (this time, a gravel path) until it finds the banana again. Staying along the wall will be trickier this time, but that's the challenge!
+Essayez d’adapter la solution que vous avez faite pour l’étape 14 pour que cela fonctionne avec ce nouveau lac. Reeborg devrait encore une fois poser la banane à la position de départ et continuer à marcher le long du bord du lac (*cette fois-ci sur un chemin en gravier*) jusqu'à ce qu'elle retrouve la banane. Rester le long du mur sera plus difficile cette fois, mais c'est ça le défi!
 
-.. note:: Your solution for this world should also work in the Step 14 world!
+
+.. note:: Votre solution pour ce monde devrait également fonctionner dans le monde Step 14!
 
 .. |reeborg_environment_extra| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2019" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2019" target="_blank">l'environnement Reeborg</a>
 
 

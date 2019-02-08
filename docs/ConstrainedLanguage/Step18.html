@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Step 18: Harvest Time Revisited &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Étape 18: Le temps de la récolte revisité &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -109,8 +109,8 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Step 19: Second Lake Walk" href="Step19.html" />
-    <link rel="prev" title="Step 17: Solving a Maze" href="Step17.html" />
+    <link rel="next" title="Étape 19: Deuxième promenade autour du lac" href="Step19.html" />
+    <link rel="prev" title="Étape 17: Résoudre un labyrinthe" href="Step17.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,9 +203,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Step 18: Harvest Time Revisited</a><ul>
-<li><a class="reference internal" href="#tutorial">Tutorial</a></li>
-<li><a class="reference internal" href="#your-turn">Your Turn</a></li>
+<li><a class="reference internal" href="#">Étape 18: Le temps de la récolte revisité</a><ul>
+<li><a class="reference internal" href="#didacticiel-tutorial">Didacticiel-<em>Tutorial</em></a></li>
+<li><a class="reference internal" href="#a-ton-tour">À ton tour</a></li>
 </ul>
 </li>
 </ul>
@@ -215,13 +215,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Step 17: Solving a Maze" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Étape 17: Résoudre un labyrinthe" data-toggle="tooltip">
     <a href="Step17.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Step 19: Second Lake Walk' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Étape 19: Deuxième promenade autour du lac' data-toggle="tooltip" >
     <a href="Step19.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -252,8 +252,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="step-18-harvest-time-revisited">
-<h1>Step 18: Harvest Time Revisited<a class="headerlink" href="#step-18-harvest-time-revisited" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="etape-18-le-temps-de-la-recolte-revisite">
+<h1>Étape 18: Le temps de la récolte revisité<a class="headerlink" href="#etape-18-le-temps-de-la-recolte-revisite" title="Permalink to this headline">¶</a></h1>
 
     <div data-component="reveal" id="curriculum_addressed_step_eighteen"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
@@ -264,40 +264,40 @@
 </ul>
 
     </div>
-    <div class="section" id="tutorial">
-<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>As you consider how you will write a solution for the following situation, be sure to consider:</p>
+    <div class="section" id="didacticiel-tutorial">
+<h2>Didacticiel-<em>Tutorial</em><a class="headerlink" href="#didacticiel-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Lorsque vous envisagez de rédiger une solution pour la situation suivante, veillez concidérer:</p>
 <ul class="simple">
-<li>writing pseudocode with paper/pencil before you begin to code</li>
-<li>use the library to store functions you might use again (such as <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">go_to_start</span></code>)</li>
-<li>use comments and whitespace (blank lines) to keep your code as readable as possible for other humans</li>
+<li>écrire un pseudocode avec du papier et un crayon avant de commencer à coder</li>
+<li>utilise la bibliothèque pour stocker des fonctions que vous pourriez utiliser à nouveau (comme <code class="docutils literal notranslate"><span class="pre">depuis</span> <span class="pre">la</span> <span class="pre">bibliothèque</span> <span class="pre">import</span> <span class="pre">va_au_debut</span></code>)</li>
+<li>utilisez des commentaires et des espaces (lignes vides) pour que votre code soit aussi lisible que possible par d’autres humains</li>
 </ul>
 </div>
-<div class="section" id="your-turn">
-<h2>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h2>
-<p>Open Step 18 on the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2018" target="_blank">Reeborg environment</a>.</p>
-<p>Reeborg is harvesting carrots again. This time, however, the gardens are all different sizes. The carrots grow really well in some areas (so there are more than one in some spots), and not well at all in some spots (so there are places where no carrots grow). Reeborg can start anywhere in the garden, and can be facing in any direction. One possible garden looks like this:</p>
+<div class="section" id="a-ton-tour">
+<h2>À ton tour<a class="headerlink" href="#a-ton-tour" title="Permalink to this headline">¶</a></h2>
+<p>Ouvrez l’étape 18 de <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2018" target="_blank">l'environnement Reeborg</a>.</p>
+<p>Reeborg récolte encore des carottes. Cette fois, cependant, les jardins sont tous de tailles différentes. Les carottes poussent très bien dans certaines régions (<em>il y en a donc plus d’une à certains endroits</em>) et pas du tout à certains endroits (<em>il y a donc des endroits où aucune carotte ne pousse</em>). Reeborg peut commencer n’importe où dans le jardin et peut être orienté dans n’importe quelle direction. Un jardin possible ressemble à ceci:</p>
 <img alt="../_images/step18.png" src="../_images/step18.png" />
-<p>Reeborg’s job is to pick all the carrots, put them down in the big carrot bin at the north-east corner of the garden, then head back to the south-west corner of the garden for a well deserved rest.</p>
+<p>La tâche de Reeborg consiste à ramasser toutes les carottes, à les déposer dans la grande corbeille à carottes au coin nord-est du jardin, puis à retourner au coin sud-ouest du jardin pour un repos bien mérité.</p>
 </div>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Step 17: Solving a Maze' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Étape 17: Résoudre un labyrinthe' data-toggle="tooltip">
     <a href="Step17.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="Step17.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Step 19: Second Lake Walk' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Étape 19: Deuxième promenade autour du lac' data-toggle="tooltip" >
     <a href="Step19.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step19.html" >Next Section - Step 19: Second Lake Walk</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="Step19.html" >Next Section - Étape 19: Deuxième promenade autour du lac</a>
 
 <script type="text/javascript">
 

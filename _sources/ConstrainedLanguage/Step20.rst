@@ -1,5 +1,5 @@
-Step 20: Another Rainy Day
-===========================
+Étape 20: Une autre journée de pluie
+========================================
 
 .. reveal:: curriculum_addressed_step_twenty
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -10,20 +10,20 @@ Step 20: Another Rainy Day
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-Project
+Projet
 --------
 
-For the following challenge, you will need to put to use much of the knowledge you have gained in the previous steps. You may find that it is helpful to look back to your solution for Step 15.
+Pour le défi suivant, vous devrez utiliser une grande partie des connaissances acquises au cours des étapes précédentes. Vous trouverez peut-être utile de revenir à votre solution pour l'étape 15.
 
-Open Step 20 on the |reeborg_environment_extra|.
+Ouvrez l’étape 20 sur |reeborg_environment_extra|.
 
 .. image:: images/step20.png
 
-Reeborg needs to move around the room and close the windows by using the ``build_wall()`` function, but this time the room will not be rectangular. The shape of the room, size of the room, and the location of the windows are always changing.
+Reeborg doit se déplacer dans la pièce et fermer les fenêtres en utilisant la fonction ``build_wall()``, mais cette fois, la pièce ne sera pas rectangulaire. La forme de la pièce, la taille de la pièce et l'emplacement des fenêtres changent constamment.
 
-To help you get started with this problem, consider the following question. Imagine that Reeborg is standing next to a wall, takes a single step, and finds that there is no longer a wall next to him. What can happen if Reeborg takes another step? *Hint: there are two possible cases.*
+Pour vous aider à résoudre ce problème, posez-vous la question suivante. Imaginez que Reeborg se tient près d'un mur, fasse un pas en avant et constate qu'il n'y a plus de mur à côté de lui. Que peut-il arriver si Reeborg fait un pas de plus? **Indice: il y a deux possibilités.**
 
 .. |reeborg_environment_extra| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2020" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2020" target="_blank">l'environnement Reeborg</a>
 

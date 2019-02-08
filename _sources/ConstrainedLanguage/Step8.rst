@@ -85,10 +85,6 @@ L'ami de Reeborg, Bree, aime cueillir les pissenlits et souffler les graines aus
 
 Créez un programme pour que Reeborg traverse la cour avant, ramassant un pissenlit chaque fois qu'il en trouve un. Il peut y avoir un pissenlit dans n'importe quels cases avec une image de pissenlit avec un point d’interrogation en dessous (*vous pouvez le voir à nouveau si vous appuyez sur le bouton de rechargement*). Vous devrez poser des questions à Reeborg lorsqu’il se déplace dans le jardin. Une fois que tous les pissenlits sont ramassés, demandez à Reeborg de poser tous les pissenlits ramassés à (2,3), puis de revenir au drapeau (1,3). N'oubliez pas d'utiliser les commentaires et les espaces pour augmenter la lisibilité de votre solution!
 
-.. |reeborg_environment| raw:: html
-
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">l'environnement Reeborg</a>
-
 
 Si vous avez des problèmes (voici une explication plus détaillée)
 ------------------------------------------------------------------
@@ -153,3 +149,8 @@ Nous pouvons représenter ce qui précède à l'aide d'un organigramme/*flowchar
 
 .. figure:: images/flowcharts/if.jpg
    :align: center
+
+
+.. |reeborg_environment| raw:: html
+
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%208" target="_blank">l'environnement Reeborg</a>
