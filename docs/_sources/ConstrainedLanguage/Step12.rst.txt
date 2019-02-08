@@ -1,5 +1,5 @@
-Step 12: While
-=================
+Étape 12: Les boucles *while*
+==============================
 
 .. reveal:: curriculum_addressed_step_twelve
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -11,99 +11,87 @@ Step 12: While
 
 .. index:: while
 
-Tutorial
----------
+Didacticiel-*Tutorial*
+-----------------------
 
-When we want to repeat some instructions until a certain condition is
-satisfied, Python gives us a simpler way to write this using a new
-keyword: ``while``. For example, suppose we want to have Reeborg keep
-moving until it reaches a wall. Previously, we might have done something
-like the following:
+Lorsque nous voulons répéter certaines instructions jusqu'à ce qu'une certaine condition soit terminé, Python nous donne un moyen plus simple d’écrire cela en utilisant un nouveau mot-clé: ``while``. Par exemple, supposons que nous voulions que Reeborg se déplaçe jusqu'à ce qu'il atteind un mur. Auparavant, nous aurions pu faire quelque chose comme ce qui suit:
+
 
 .. code-block:: python
 
-    def move_until_wall():
+    def avance_au_mur():
         if front_is_clear():
             move()
 
     repeat 42:
-        move_until_wall()
+        avance_au_mur()
 
-and hoped that 42 would have been a number of repetitions sufficient to
-reach a wall. Using ``while``, we can write the following::
+et espérer que 42 soit un nombre de répétitions suffisant pour atteindre un mur. En utilisant ``while``, nous pouvons écrire ce qui suit::
 
     while front_is_clear():
         move()
 
-That's it! No more guessing and asking something to be performed a large
-number of time just to ensure that it will be enough.
+C'est tout! Plus besoin de deviner et de faire répéter quelque chose une grande nombre de fois juste pour s'assurer que ce sera suffisant.
 
-Here's a flowchart for this simple program:
+Voici un organigramme pour ce programme simple:
 
 .. figure:: images/flowcharts/while.jpg
    :align: center
 
 
-Your Turn
----------
+À ton tour
+-------------
 
 Open Step 12 on the |reeborg_environment|.
 
 .. image:: images/step12.png
 
-One of Reeborg's household jobs is to take out the compost. There is, however, a different amount of compost in the container in the house every time Reeborg needs to bring it outside.
+L'une des tâches de Reeborg consiste à sortir le compost. Il y a cependant une quantité différente de compost dans la boîte à compost de la maison chaque fois que Reeborg doit le sortir.
 
-Create a program to have Reeborg take out the compost, then return to the house. Reeborg needs to pick up as many rotten apples as are in the compost pail, bring them to the compost container outside, then return to the goal (7, 8). You will need to use ``while`` loops in your solution.
+Créez un programme qui permet à Reeborg de retirer le compost, puis de revenir à la maison. Reeborg doit ramasser autant de pommes pourries qu'il y a dans la boite à compost, les apporter au compost à l'extérieur, puis revenir au but (7, 8). Vous devrez utiliser des boucles ``while`` dans votre solution.
+
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2012" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2012" target="_blank">l'environnement Reeborg</a>
 
 
-If You're Having Trouble (a more detailed explanation)
-------------------------------------------------------
+Si vous avez des problèmes (voici une explication plus détaillée
+------------------------------------------------------------------
 
-Suppose we have the following::
+Supposons que nous ayons::
 
     while condition():
-        do_1()
-        do_2()
-        do_3()
+        fait_1()
+        fait_2()
+        fait_3()
 
-You can think of this as being equivalent to::
+Vous pouvez penser que cela équivaut à::
 
     if condition():
-        do_1()
-        do_2()
-        do_3()
+        fait_1()
+        fait_2()
+        fait_3()
     if condition():
-        do_1()
-        do_2()
-        do_3()
+        fait_1()
+        fait_2()
+        fait_3()
     if condition():
-        do_1()
-        do_2()
-        do_3()
+        fait_1()
+        fait_2()
+        fait_3()
     if condition():
-        do_1()
-        do_2()
-        do_3()
+        fait_1()
+        fait_2()
+        fait_3()
     ....
 
-which is to say that the block of code is repeated as long as the
-condition remains ``True``. So, what happens if the condition is always
-``True``? The block of code is repeated for ever and the program never
-ends.
+ce qui revient à dire que le bloc de code est répété aussi longtemps que la condition reste ``True``. Alors, que se passe-t-il si la condition est toujours ``True``? Le bloc de code est répété infiniment et le programme prend jamais fin.
 
-This is bad.
+Cela serait une mauvaise expérience.
 
-Instead of using this description of repeated blocks of code,
-programmers describe this as a **loop**: that is, you start with the
-first instruction (``do_1()``) inside the code block, continue with all
-the others until you reach the last instruction (``do_3()``), then
-***loop* back**, or go back, to the test just before the beginning of
-the block and see if the condition is satisfied; if not, you repeat the cycle once again. If the condition never becomes ``False``, you keep
-repeating and end up with an **infinite loop**.
+Au lieu d'utiliser cette description de blocs de code répétés,
+les programmeurs décrivent cela comme une **boucle**: vous commencez par le remière instruction (``fait_1 ()``) à l'intérieur du bloc de code, continue avec tout les autres jusqu'à la dernière instruction (``fai_3()``), puis **loop back**, ou retournez à la condition juste avant le début de le bloc et voir si la condition est remplie; sinon, vous répétez le cycle. Si la condition ne devient jamais ``False``, vous continuez de répéter et finissez avec une **boucle infinie**.
 
-Conclusion: you want to make sure that the condition will become
-``False`` at some point.
+Conclusion: vous voulez vous assurer que la condition deviendra
+``False`` à un moment donné.

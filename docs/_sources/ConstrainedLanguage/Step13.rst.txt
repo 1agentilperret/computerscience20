@@ -1,5 +1,5 @@
-Step 13: If/Elif/Else
-=====================
+Étape 13: If/Elif/Else *si/si alors/sinon*
+===========================================
 
 .. reveal:: curriculum_addressed_step_thirteen
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -12,8 +12,8 @@ Step 13: If/Elif/Else
 
 .. index:: if-elif-else
 
-Tutorial
----------
+Didacticiel-*Tutorial*
+-----------------------
 
 Reeborg lives in Canada where it not only can rain or be sunny, but snow
 can also be falling. Let's suppose that only one of those can happen at a time. Then,
@@ -105,7 +105,7 @@ Reeborg is jumping hurdles again. This time, however, the hurdles may not all be
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2013" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2013" target="_blank">l'environnement Reeborg</a>
 
 
 If You're Having Trouble (a more detailed explanation)

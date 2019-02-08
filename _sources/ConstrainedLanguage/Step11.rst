@@ -1,5 +1,5 @@
-Step 11: If/Else
-=================
+Étape 11: Si / Sinon
+======================
 
 .. reveal:: curriculum_addressed_step_eleven
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -12,72 +12,67 @@ Step 11: If/Else
 
 .. index:: if-else
 
-Tutorial
----------
+Didacticiel-*Tutorial*
+-----------------------
 
-While learning how to program is fun, you should not spend all your
-time in front of the computer. When you are at home, ``if`` it rains, keep reading, otherwise, go outside and play!
+Bien qu’apprendre à programmer soit amusant, vous ne devriez pas dépenser tout votre temps devant l'ordinateur. Quand vous êtes à la maison, ``si`` il pleut, continuez à lire, ``sinon``, allez dehors et jouez!
 
-Let's rewrite the sentence that starts with ``if`` above::
+Réécrivons la phrase qui commence par ``si`` ci-dessus ::
 
-    if it rains,
-        keep reading,
-    otherwise,
-        go outside and play
+    si il pleut,
+        continue de lire,
+    sinon,
+        aller jouer dehors
 
-If this were Python, we might have written it like this instead:
+S'il s'agissait de Python, nous l'aurions peut-être écrit comme ceci:
 
 .. code-block:: python
 
-    if it_rains():
-        keep_reading()
+    if il_pleut():
+        continue_de_lire()
     else:
-        go_outside_and_play()
+        aller_jouer_dehors()
 
-Yes, Python includes the possibility of more than one choice with
-the keyword ``else``. Let's use it with another example. Reeborg can see
-if there's a wall right in front him, using the function ``front_is_clear()``. This can be used with ``if/else`` to write a program that will guide Reeborg around a rectangular world. Something like the following should do the trick:
+Oui, Python inclut la possibilité de choisir plus d’un choix avec le mot-clé ``else``. Utilisons-le avec un autre exemple. Reeborg peut voir s'il y a un mur juste devant lui, en utilisant la fonction ``front_is_clear ()``. Ceci peut être utilisé avec ``if/else`` pour écrire un programme qui guidera Reeborg dans un monde rectangulaire. Quelque chose comme ce qui suit devrait fonctionner:
+
 
 .. code-block:: python
 
-    def move_or_turn():
+    def avance_ou_tourne():
         if front_is_clear():
-            # something
+            # quelque chose
         else:
-            # something else
+            # autre chose
 
     repeat 40:
-        move_or_turn()
+        avance_ou_tourne()
 
 
-Your Turn
----------
+À ton tour
+-------------
 
-Open Step 11 on the |reeborg_environment|.
+Ouvrez l’étape 11 de |reeborg_environment|.
 
 .. image:: images/step11.png
 
-Reeborg wants to make some bouquets of flowers for it's friends, Zoe and Eli. Reeborg has permission to ``take()`` tulips from some of his neighbor's yards. Unfortunately for Reeborg, each of the yards is different. Reeborg does know that the yard will be rectangular, that it will take 23 steps to get around the yard, and that there will be a tulip in each corner of the yard. 
+Reeborg veut faire des bouquets de fleurs pour ses amis, Zoe et Eli. Reeborg a la permission de prendre ``take()`` des tulipes dans les verges de ses voisins. Malheureusement pour Reeborg, chacun des cours est différent. Reeborg sait que la cour sera rectangulaire, qu’il faudra 20 pas pour se déplacer dans la cour et qu’il y aura une tulipe à chaque coin de la cour.
 
-Create a program to have Reeborg walk around the outside of the yard, picking up a tulip if it can, and moving ahead if it cannot. You **must** use a ``repeat 23:`` and ``if/else``.
+Créez un programme pour que Reeborg se promène à l'extérieur de la cour, ramasse une tulipe s'il le peut et avance s'il ne le peut pas. Vous **devez** utiliser un ``repeat 20`` et ``if/else``.
 
-.. note:: For this step, the world will be different each time you press the *Play* button. Each time you run your code, new dimensions for the world will be used. You may assume the starting location will always be in the lower left hand corner of the world.
+ 
 
+.. note:: Pour cette étape, le monde sera différent chaque fois que vous appuierez sur la touche *Play*. Chaque fois que vous exécutez votre code, de nouvelles dimensions pour le monde seront utilisées. Vous pouvez aussi supposer que l'emplacement de départ sera toujours dans le coin inférieur gauche du monde.
 
 .. |reeborg_environment| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2011" target="_blank">Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&menu=worlds/menus/sk_menu.json&name=Step%2011" target="_blank">l'environnement Reeborg</a>
 
 
-If You're Having Trouble (a more detailed explanation)
-------------------------------------------------------
+Si vous avez des problèmes (voici une explication plus détaillée)-------------------------------------------------------------------
 
-We have seen how ``def``\ s and ``if`` statements could be thought
-of as being (sometimes) equivalent to inserting a code block; the
-exception was when the condition of the ``if`` statement was ``False``,
-in which case we ignored the code block which is equivalent to deleting
-it. ``if/else`` statements can be thought as inserting one or the other
-code block. Thus
+Nous avons vu comment on peut voir les déclarations ``def`` et ``if`` comme étant (parfois) équivalent à l’insertion d’un bloc de code; l'exception était lorsque la condition de l'instruction ``if`` était ``False``, dans ce cas, nous avons ignoré le bloc de code, ce qui équivaut à la suppression de ce dernier. Les instructions ``if/else`` peuvent être considérées comme insérant l'un ou l'autre bloc de code. Ainsi
+
+We have seen how ``def``\ s and ``if`` statements could be thought of as being (sometimes) equivalent to inserting a code block; the exception was when the condition of the ``if`` statement was ``False``, in which case we ignored the code block which is equivalent to deleting it. ``if/else`` statements can be thought as inserting one or the other code block. Thus
 
 .. code-block:: python
 
@@ -88,7 +83,7 @@ code block. Thus
         turn_left()
     move()
 
-is equivalent to
+est équivalent à
 
 .. code-block:: python
 
@@ -96,7 +91,7 @@ is equivalent to
     turn_right()
     move()
 
-whereas
+tandis que
 
 .. code-block:: python
 
@@ -107,7 +102,7 @@ whereas
         turn_left()
     move()
 
-is equivalent to
+est équivalent à
 
 .. code-block:: python
 
@@ -115,7 +110,7 @@ is equivalent to
     turn_left()
     move()
 
-We can represent this as a flowchart:
+Nous pouvons le représenter sous forme d'organigramme/*flowchart*:
 
 .. figure:: images/flowcharts/else.jpg
    :align: center

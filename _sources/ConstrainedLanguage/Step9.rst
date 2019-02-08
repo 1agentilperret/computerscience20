@@ -1,4 +1,4 @@
-Étape 9: Répéter ees instructions
+Étape 9: Répéter des instructions
 =======================================
 
 .. reveal:: curriculum_addressed_step_nine
@@ -25,6 +25,8 @@ Nous constatons souvent que nous souhaitons répéter une série d'instructions 
         # ici
 
 Dans le monde de Reeborg, nous pouvons écrire une *boucle* ``repeat`` comme ceci:
+
+.. code-block:: python
 
     repeat n:    # où n est un nombre naturel, comme 3 ou 7
         # mettre
