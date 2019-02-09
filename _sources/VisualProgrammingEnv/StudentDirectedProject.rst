@@ -6,7 +6,7 @@
 Projet dirigé par les étudiants
 ================================
 
-.. topic:: Aperçu rapide de la journée
+.. topic:: Aperçu
 
     Périodes de travail pour mettre en pratique les concepts appris jusqu'à présent. Vous pouvez choisir de créer ce que vous voulez, à condition que le projet choisi montre que vous comprenez les idées que nous avons étudiées.
 
