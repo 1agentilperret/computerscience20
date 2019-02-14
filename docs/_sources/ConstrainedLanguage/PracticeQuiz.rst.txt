@@ -3,7 +3,7 @@
    :start: 1
 
 
-Second Practice Quiz
+Deuxième test de pratique
 ================================
 
 .. reveal:: curriculum_addressed_practice_quiz_reeborg
@@ -15,64 +15,64 @@ Second Practice Quiz
     - **CS20-FP2** Investigate how control structures affect program flow.
     - **CS20-FP3** Construct and utilize functions to create reusable pieces of code.
 
-To confirm that you understand the major concepts you've seen with Reeborg, try to answer the first 4 questions **without opening the Reeborg environment**.
+Pour confirmer que vous comprenez les concepts majeurs que vous avez vus avec Reeborg, essayez de répondre aux 4 premières questions **sans ouvrir l'environnement Reeborg**.
 
-Question 1 - While Loops
-------------------------
+Question 1 - Boucle ``While`` 
+------------------------------
 
 .. mchoice:: reeborg_while_loops
-    :answer_a: east
-    :answer_b: south
-    :answer_c: west
-    :answer_d: north
+    :answer_a: est
+    :answer_b: sud
+    :answer_c: ouest
+    :answer_d: nord
     :correct: d
-    :feedback_a: Try again!
-    :feedback_b: Try again!
-    :feedback_c: Try again!
-    :feedback_d: Great!
+    :feedback_a: réessayez!
+    :feedback_b: réessayez!
+    :feedback_c: réessayez!
+    :feedback_d: Génial!
 
-    Reeborg is facing east. The following code is then executed::
+    Reeborg est face à l'est. Le code suivant est ensuite exécuté::
 
         while not is_facing_north():
             turn_left()
 
-    What direction is the robot is facing now?
+    À quelle direction le robot fait-il face maintenant?
 
 
-Question 2 - While and Repeat Loops
------------------------------------
+Question 2 - Boucles ``While`` et ``Repeat``
+----------------------------------------------
 
 .. mchoice:: reeborg_while_and_repeat
-    :answer_a: east
-    :answer_b: south
-    :answer_c: west
-    :answer_d: north
+    :answer_a: est
+    :answer_b: sud
+    :answer_c: ouest
+    :answer_d: nord
     :correct: c
-    :feedback_a: Try again!
-    :feedback_b: Try again!
-    :feedback_c: Great!
-    :feedback_d: Try again!
+    :feedback_a: réessayez!
+    :feedback_b: réessayez!
+    :feedback_c: Génial!
+    :feedback_d: réessayez!
 
-    Reeborg is facing east. The following code is then executed::
+    Reeborg est face à l'est. Le code suivant est ensuite exécuté::
 
         while not is_facing_north():
             turn_left()
         repeat 5:
             turn_left()
 
-    What direction is the robot is facing now?
+    À quelle direction le robot fait-il face maintenant?
 
 
-Question 3 - Loops and If
--------------------------
+Question 3 - ``Boucles`` et ``if``
+------------------------------------
 
 .. fillintheblank:: reeborg_while_repeat_if
 
-    Reeborg is standing in a world in which every location square has 3 carrots, which looks like this:
+    Reeborg se situe dans un monde où chaque carré a 3 carottes, qui ressemble à ceci:
 
     .. image:: images/practice_quiz_start.png
 
-    The following code is then executed::
+    Le code suivant est ensuite exécuté::
 
         repeat 8:
             if object_here():
@@ -80,33 +80,34 @@ Question 3 - Loops and If
                     take()
             move()
 
-    How many carrots is Reeborg holding now?
+    Combien de carottes a-t-il Reeborg maintenant?
 
-    - :16: Great!
-      :8: Remember there is a repeat 2 inside the repeat 8.
-      :.*: Try again!
+    - :16: Génial!
+      :8: N'oubliez pas qu'il y a un ``repeat 2`` à l'intérieur de le ``repeat 8``.
+      :.*: réessayez!
 
 
 .. reveal:: reveal_practice_quiz_q3
-    :showtitle: Tracing Help
-    :hidetitle: Hide Help
+    :showtitle: Aide sur le traçage
+    :hidetitle: Masquer l'aide
 
-    If you have spent time tracing this code on your own, and still cannot come up with the correct solution, you may find it helpful to |reeborgq3|. You can copy/paste the code above into the world, and step through the code one line at a time.
+    Si vous avez passé du temps à travailler ce code par vous-même et que vous ne parvenez toujours pas à trouver la solution appropriée, il peut être utile |reeborgq3|. Vous pouvez copier/coller le code ci-dessus dans le monde et parcourir le code ligne par ligne.
+
 
 .. |reeborgq3| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/second-practice-quiz-q3.json&name=PracticeQuizQ3" target="_blank">open this world in the Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/second-practice-quiz-q3.json&name=PracticeQuizQ3" target="_blank">d'ouvrir ce monde dans l'environnement Reeborg</a>
 
-Question 4 - Loops and If/Else
-------------------------------
+Question 4 - ``Boucles`` et ``If/Else``
+-----------------------------------------
 
 .. fillintheblank:: reeborg_while_repeat_if_else
 
-    Reeborg is holding a large handful of carrots, and is planning to plant them as he walks around a world that looks like this:
+    Reeborg tient une grande poignée de carottes et envisage de les planter alors qu'il se promène dans un monde qui ressemble à ceci:
 
     .. image:: images/quiz_if_else_start.png
 
-    The following code is then executed::
+    Le code suivant est ensuite exécuté::
 
         repeat 7:
             if front_is_clear():
@@ -115,38 +116,39 @@ Question 4 - Loops and If/Else
                 turn_left()
                 put()
 
-    How many carrots has Reeborg planted when the code has finished?
+    Combien de carottes Reeborg a-t-il plantées lorsque le code est terminé?
 
-    - :1: Great!
-      :2: Careful! Remember that the `else` does not include `move`.
-      :.*: Try again!
+    - :1: Génial!
+      :2: Attention! Rappelez-vous que le ``else`` n'inclut pas le ``move``.
+      :.*: réessayez!
 
 .. reveal:: reveal_practice_quiz_q4
-    :showtitle: Tracing Help
-    :hidetitle: Hide Help
+    :showtitle: Aide sur le traçage
+    :hidetitle: Masquer l'aide
 
-    If you have spent time tracing this code on your own, and still cannot come up with the correct solution, you may find it helpful to |reeborgq4|. You can copy/paste the code above into the world, and step through the code one line at a time.
+    Si vous avez passé du temps à travailler ce code par vous-même et que vous ne parvenez toujours pas à trouver la solution appropriée, il peut être utile |reeborgq4|. Vous pouvez copier/coller le code ci-dessus dans le monde et parcourir le code ligne par ligne.
 
 .. |reeborgq4| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/second-practice-quiz-q4.json&name=PracticeQuizQ4" target="_blank">open this world in the Reeborg environment</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/second-practice-quiz-q4.json&name=PracticeQuizQ4" target="_blank">d'ouvrir ce monde dans l'environnement Reeborg</a>
 
-Question 5 - Mirror Image
--------------------------
+Question 5 - Image de réflexion
+--------------------------------
 
-The room (shown below) has alcoves on the left and the right. Some of the alcoves contain daisies. For each alcove on the left side that contains a daisy, make Reeborg move the daisy to the opposite alcove on the right hand side. One possible starting world could look like the following:
+La pièce (ci-dessous) a des alcôves à gauche et à droite. Certaines des alcôves contiennent des fleurs. Pour chaque alcôve sur le côté gauche contenant une fleur, amenez Reeborg à déplacer la fleur vers l'alcôve opposée du côté droit. Un monde de départ possible pourrait ressembler à ceci:
 
-Open the |alcove1| and create a solution to this problem!
+Ouvrez le |alcove1| et créer une solution à ce problème!
 
 .. image:: images/practice_quiz_alcove_start.png
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** à cet exemple de solution à moins que vous avez déjà fini de créer votre propre solution! 
 
 .. reveal:: reveal_practice_quiz_solution
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir la Solution
+    :hidetitle: Masquer la Solution
 
-    Since all of the distances in the world stay exactly the same each time, this problem can be solved using only `repeat` loops. Please note that there are many possible solutions to this problem. This is one::
+    Puisque toutes les distances dans le monde restent exactement les mêmes à chaque fois, ce problème peut être résolu en utilisant uniquement des boucles ``repeat``. Veuillez noter qu'il existe de nombreuses solutions possibles à ce problème. En voici une::
+    
 
         think(0)
 
@@ -185,26 +187,23 @@ Open the |alcove1| and create a solution to this problem!
 
 .. |alcove1| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/practice-quiz-alcove.json&name=PracticeQuizAlcove" target="_blank">Mirror Image Practice Quiz world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/practice-quiz-alcove.json&name=PracticeQuizAlcove" target="_blank">monde de pratique de l'image de réflexion</a>
 
+Question 6 - Image de réflexion - 2e partie
+---------------------------------------------
 
+Cette fois, la distance entre l'alcôve à droite et à gauche n'est pas cohérente (C.À.D., les alcôves peuvent être différentes les unes des autres). Encore une fois, pour chaque alcôve contenant une fleur du côté gauche, amenez Reeborg à déplacer la fleur dans l'alcôve opposée du côté droit. Un monde de départ possible pourrait ressembler à ceci:
 
-Question 6 - Mirror Image - Part 2
-----------------------------------
-
-This time, the distance between the alcove on the right and left is not consistent (in other words, the alcoves can be different distances apart). Once again, for each alcove on the left side that contains a daisy, make Reeborg move the daisy to the opposite alcove on the right hand side. One possible starting world could look like the following:
-
-Open the |alcove2| and create a solution to this problem!
-
+Ouvrez le |alcove2| et créer une solution à ce problème!
 .. image:: images/practice_quiz_alcove2_start.png
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+** Ne regardez pas ** cet exemple de solution à moins que vous avez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_practice_quiz_solution2
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir la Solution
+    :hidetitle: Masquer la Solution
 
-    Since there is an unknown distance to travel, you will need to use a `while` loop, instead of just a `repeat` loop. This is one possible solution::
+    Comme il y a une distance inconnue à parcourir, vous devrez utiliser une boucle `while`, au lieu de simplement une boucle `repeat`. Voici une solution possible ::
 
         think(0)
 
@@ -249,4 +248,4 @@ Open the |alcove2| and create a solution to this problem!
 
 .. |alcove2| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/practice-quiz-alcove2.json&name=PracticeQuizAlcove2" target="_blank">Mirror Image Practice Quiz world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/practice-quiz-alcove2.json&name=PracticeQuizAlcove2" target="_blank">Monde de la pratique de l'image de réflection</a>
