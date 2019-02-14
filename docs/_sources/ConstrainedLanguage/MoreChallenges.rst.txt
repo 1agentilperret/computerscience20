@@ -3,7 +3,7 @@
    :start: 1
 
 
-More Challenges
+Plus de défis
 ================
 
 .. reveal:: curriculum_addressed_extra_challenges
@@ -15,122 +15,118 @@ More Challenges
     - **CS20-FP2** Investigate how control structures affect program flow.
     - **CS20-FP3** Construct and utilize functions to create reusable pieces of code.
 
-If you have finished off all of steps 1 - 20, and are waiting for your classmates to catch up, take a look at the following challenges. Some of them will require you to do a fair bit of thinking before you begin to code! You will likely find it helpful to think them through with paper/pencil before attempting to write out a solution on the computer.
+Si vous avez terminé toutes les étapes de 1 à 20 et attendez que vos camarades de classe se rattrapent, jetez un coup d'œil aux défis suivants. Certaines d'entre elles vous demanderont de réfléchir avant de commencer à coder! Vous trouverez probablement utile de les analyser avec du papier ou un crayon avant d’essayer d’écrire une solution sur votre ordinateur.
 
+Tours d'étoiles - Version 1
+-----------------------------
 
-Star Towers - Version 1
-------------------------
+Reeborg aime construire - aujourd'hui, il construit tours d'étoiles. Il a beaucoup d'étoiles et veut faire des tours qui ont 3 étoiles. Ecrivez un programme qui crée une tour d’étoile à la position de départ de Reeborg, puis toutes les deux positions x par la suite (valeurs x = impaires).
 
-Reeborg loves to build - today it is making Star Towers. It has plenty of stars, and wants to make towers that are 3 stars high. Write a program that creates a Star Tower at Reeborg's starting position, and every other x-position after that (odd x-values).
-
-Open the |star_tower1| to implement your solution!
+Ouvrez le |star_tower1| pour mettre en œuvre votre solution!
 
 .. |star_tower1| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower1.json&name=StarTower1" target="_blank">Star Tower 1 world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower1.json&name=StarTower1" target="_blank">monde de Tours d'étoiles 1</a>
 
-The world will look something like this at the start:
+Le monde de départ ressemblera à quelque chose comme ceci:
 
 .. image:: images/star_tower1_start.png
 
-When your program is done, the ending world should look like this:
+Lorsque votre programme est terminé, le monde final devrait ressembler à ceci:
 
 .. image:: images/star_tower1_end.png
 
 
-Star Towers - Version 2
-------------------------
+Tours d'étoiles - Version 2
+-----------------------------
 
-This time Reeborg wants to build star towers in a cave. There are stalactites on the roof of the cave of differing length, so Reeborg wants to make its towers as tall as it can without bumping into them. Like last time, write a program that creates a Star Tower at Reeborg’s starting position, and every other x-position after that (odd x-values). The height of each Star Tower should allow for one empty square beneath the stalactites.
+Cette fois, Reeborg veut construire des tours d'étoiles dans une grotte/*cave*. Il y a des stalactites sur le toit de la grotte de différentes longueurs, donc Reeborg veut faire ses tours aussi hautes que possible sans rentrer dans les stalactites. Comme la dernière fois, écrivez un programme qui crée une tour d’étoile à la position de départ de Reeborg, puis toutes les deux positions x par la suite (valeurs x impaires). La hauteur de chaque étoile doit laisser un carré vide sous les stalactites.
 
-Open the |star_tower2| to implement your solution!
+Ouvrez le |star_tower2| pour mettre en œuvre votre solution!
 
 .. |star_tower2| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower2.json&name=StarTower2" target="_blank">Star Tower 2 world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower2.json&name=StarTower2" target="_blank">monde de Tours d'étoiles 2</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/star_tower2_start.png
 
+Pratique de précision
+------------------------
 
+Reeborg décide de passer la journée à exercer ses talents de tir à l'arc. Quelque part dans le monde se trouve un objet triangulaire. Ecrivez un programme qui permette à Reeborg de trouver cet objet, puis demandez-lui de tracer un "+" qui couvrent le monde entier et se centrent sur cet objet.
 
-Target Practice
-----------------
-
-Reeborg decides to spend the day practicing its archery skills. Somewhere in the world is a triangular object. Write a program so that allows Reeborg to find this object, and then have it create cross hairs that span the whole world and centre on that target.
-
-Open the |target_practice| to implement your solution!
+Ouvrez le |target_practice| pour mettre en œuvre votre solution!
 
 .. |target_practice| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/target-practice.json&name=TargetPractice" target="_blank">Target Practice world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/target-practice.json&name=TargetPractice" target="_blank">Monde de la pratique de précision</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/target_start.png
 
 
-Line Follower
---------------
+Suivre la ligne
+-----------------
 
-Reeborg loves to hike in the backcounty, but one challenge is that it's sometimes easy to get lost. Write a program to help Reeborg carefully follow the hiking trail and eventually reach the end of the hiking path.
+Reeborg adore marcher dans la nature, mais l’un des problèmes est qu’il est parfois facile de se perdre. Ecrivez un programme pour aider Reeborg à suivre le sentier de randonnée avec soin et à atteindre le bout du chemin de randonnée.
 
-Open the |line_follower| to implement your solution!
+Ouvrez le |line_follower| pour mettre en œuvre votre solution!
 
 .. |line_follower| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/line-follower.json&name=LineFollower" target="_blank">Line Follower world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/line-follower.json&name=LineFollower" target="_blank">monde de suivre la ligne</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/line_follower_start.png
 
 
-Double the Pile
----------------
+Doubler la pile
+------------------
 
-Reeborg has a pile of squares somewhere in front of it, but wants more! Two times more, to be precise. Reeborg is carrying a large number of squares, which you can use to help build the larger pile it wants. Create a pile of squares with exactly two times as many squares. You will always build the new, bigger pile one square to the right of where you find the initial pile.
+Reeborg a devant lui une pile de carrés, mais il en veut plus! Deux fois plus, pour être précis. Reeborg propose un grand nombre de carrés que vous pouvez utiliser pour construire le plus gros tas qu’il veut. Créez une pile de carrés avec exactement deux fois plus de carrés. Veuillez construire la nouvelle pile plus grande un carré à droite de l'emplacement de la pile initiale.
 
-Open the |doubler| to implement your solution!
+Ouvrez le |doubler| pour mettre en œuvre votre solution!
 
 .. |doubler| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/doubler.json&name=Doubler" target="_blank">Double the Pile world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/doubler.json&name=Doubler" target="_blank">monde doubler des piles</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/doubler_start.png
 
 
-Find the Center - Version 1
-----------------------------
+Trouver le centre - Version 1
+-------------------------------
 
-Put down a token in the geometrical center of the following world. You are guaranteed that the **width** of the world will be an odd number, and that it will only be one unit tall. Note that when your program is complete, there should only be one token down in the world.
+Déposez un jeton au centre géométrique du monde suivant. Vous avez la garantie que la **largeur** du monde sera un nombre impair et qu’elle ne fera qu’une unité de hauteur. Notez que lorsque votre programme est terminé, il ne devrait y avoir qu’un seul jeton dans le monde.
 
-Open the |find_center_1| to implement your solution!
-
+Ouvrez le |find_center_1| mettre en œuvre votre solution!
 
 .. |find_center_1| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center1.json&name=FindCenter1" target="_blank">Find Center 1 world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center1.json&name=FindCenter1" target="_blank">monde trouver le centre 1</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/center_start.png
 
 
-Find the Center - Version 2
-----------------------------
+Trouver le centre - Version 2
+-------------------------------
 
-Put down a token in the geometrical center of the following world. You are guaranteed that the **width and height** of the world will be odd numbers. Note that when your program is complete, there should only be one token down in the world.
+Déposez un jeton au centre géométrique du monde suivant. Vous avez la garantie que les **largeur et hauteur** du monde seront des nombres impairs. Notez que lorsque votre programme est terminé, il ne devrait y avoir qu’un seul jeton dans le monde.
 
-Open the |find_center_2| to implement your solution!
+Ouvrez le |find_center_2| pour mettre en œuvre votre solution!
 
 .. |find_center_2| raw:: html
 
-   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center2.json&name=FindCenter2" target="_blank">Find Center 2 world</a>
+   <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center2.json&name=FindCenter2" target="_blank">monde trouver le centre 2</a>
 
-The world will look something like this at the start:
+Le monde ressemblera à quelque chose comme ça au début:
 
 .. image:: images/center2_start.png

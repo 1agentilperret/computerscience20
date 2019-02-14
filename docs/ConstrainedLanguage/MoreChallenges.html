@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>More Challenges &#8212; Computer Science 20 Saskatchewan</title>
+    <title>Plus de défis &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,14 +203,14 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">More Challenges</a><ul>
-<li><a class="reference internal" href="#star-towers-version-1">Star Towers - Version 1</a></li>
-<li><a class="reference internal" href="#star-towers-version-2">Star Towers - Version 2</a></li>
-<li><a class="reference internal" href="#target-practice">Target Practice</a></li>
-<li><a class="reference internal" href="#line-follower">Line Follower</a></li>
-<li><a class="reference internal" href="#double-the-pile">Double the Pile</a></li>
-<li><a class="reference internal" href="#find-the-center-version-1">Find the Center - Version 1</a></li>
-<li><a class="reference internal" href="#find-the-center-version-2">Find the Center - Version 2</a></li>
+<li><a class="reference internal" href="#">Plus de défis</a><ul>
+<li><a class="reference internal" href="#tours-d-etoiles-version-1">Tours d’étoiles - Version 1</a></li>
+<li><a class="reference internal" href="#tours-d-etoiles-version-2">Tours d’étoiles - Version 2</a></li>
+<li><a class="reference internal" href="#pratique-de-precision">Pratique de précision</a></li>
+<li><a class="reference internal" href="#suivre-la-ligne">Suivre la ligne</a></li>
+<li><a class="reference internal" href="#doubler-la-pile">Doubler la pile</a></li>
+<li><a class="reference internal" href="#trouver-le-centre-version-1">Trouver le centre - Version 1</a></li>
+<li><a class="reference internal" href="#trouver-le-centre-version-2">Trouver le centre - Version 2</a></li>
 </ul>
 </li>
 </ul>
@@ -257,8 +257,8 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="more-challenges">
-<h1>More Challenges<a class="headerlink" href="#more-challenges" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="plus-de-defis">
+<h1>Plus de défis<a class="headerlink" href="#plus-de-defis" title="Permalink to this headline">¶</a></h1>
 
     <div data-component="reveal" id="curriculum_addressed_extra_challenges"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
@@ -269,56 +269,56 @@
 </ul>
 
     </div>
-    <p>If you have finished off all of steps 1 - 20, and are waiting for your classmates to catch up, take a look at the following challenges. Some of them will require you to do a fair bit of thinking before you begin to code! You will likely find it helpful to think them through with paper/pencil before attempting to write out a solution on the computer.</p>
-<div class="section" id="star-towers-version-1">
-<h2>Star Towers - Version 1<a class="headerlink" href="#star-towers-version-1" title="Permalink to this headline">¶</a></h2>
-<p>Reeborg loves to build - today it is making Star Towers. It has plenty of stars, and wants to make towers that are 3 stars high. Write a program that creates a Star Tower at Reeborg’s starting position, and every other x-position after that (odd x-values).</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower1.json&name=StarTower1" target="_blank">Star Tower 1 world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+    <p>Si vous avez terminé toutes les étapes de 1 à 20 et attendez que vos camarades de classe se rattrapent, jetez un coup d’œil aux défis suivants. Certaines d’entre elles vous demanderont de réfléchir avant de commencer à coder! Vous trouverez probablement utile de les analyser avec du papier ou un crayon avant d’essayer d’écrire une solution sur votre ordinateur.</p>
+<div class="section" id="tours-d-etoiles-version-1">
+<h2>Tours d’étoiles - Version 1<a class="headerlink" href="#tours-d-etoiles-version-1" title="Permalink to this headline">¶</a></h2>
+<p>Reeborg aime construire - aujourd’hui, il construit tours d’étoiles. Il a beaucoup d’étoiles et veut faire des tours qui ont 3 étoiles. Ecrivez un programme qui crée une tour d’étoile à la position de départ de Reeborg, puis toutes les deux positions x par la suite (valeurs x = impaires).</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower1.json&name=StarTower1" target="_blank">monde de Tours d'étoiles 1</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde de départ ressemblera à quelque chose comme ceci:</p>
 <img alt="../_images/star_tower1_start.png" src="../_images/star_tower1_start.png" />
-<p>When your program is done, the ending world should look like this:</p>
+<p>Lorsque votre programme est terminé, le monde final devrait ressembler à ceci:</p>
 <img alt="../_images/star_tower1_end.png" src="../_images/star_tower1_end.png" />
 </div>
-<div class="section" id="star-towers-version-2">
-<h2>Star Towers - Version 2<a class="headerlink" href="#star-towers-version-2" title="Permalink to this headline">¶</a></h2>
-<p>This time Reeborg wants to build star towers in a cave. There are stalactites on the roof of the cave of differing length, so Reeborg wants to make its towers as tall as it can without bumping into them. Like last time, write a program that creates a Star Tower at Reeborg’s starting position, and every other x-position after that (odd x-values). The height of each Star Tower should allow for one empty square beneath the stalactites.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower2.json&name=StarTower2" target="_blank">Star Tower 2 world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="tours-d-etoiles-version-2">
+<h2>Tours d’étoiles - Version 2<a class="headerlink" href="#tours-d-etoiles-version-2" title="Permalink to this headline">¶</a></h2>
+<p>Cette fois, Reeborg veut construire des tours d’étoiles dans une grotte/<em>cave</em>. Il y a des stalactites sur le toit de la grotte de différentes longueurs, donc Reeborg veut faire ses tours aussi hautes que possible sans rentrer dans les stalactites. Comme la dernière fois, écrivez un programme qui crée une tour d’étoile à la position de départ de Reeborg, puis toutes les deux positions x par la suite (valeurs x impaires). La hauteur de chaque étoile doit laisser un carré vide sous les stalactites.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/star-tower2.json&name=StarTower2" target="_blank">monde de Tours d'étoiles 2</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/star_tower2_start.png" src="../_images/star_tower2_start.png" />
 </div>
-<div class="section" id="target-practice">
-<h2>Target Practice<a class="headerlink" href="#target-practice" title="Permalink to this headline">¶</a></h2>
-<p>Reeborg decides to spend the day practicing its archery skills. Somewhere in the world is a triangular object. Write a program so that allows Reeborg to find this object, and then have it create cross hairs that span the whole world and centre on that target.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/target-practice.json&name=TargetPractice" target="_blank">Target Practice world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="pratique-de-precision">
+<h2>Pratique de précision<a class="headerlink" href="#pratique-de-precision" title="Permalink to this headline">¶</a></h2>
+<p>Reeborg décide de passer la journée à exercer ses talents de tir à l’arc. Quelque part dans le monde se trouve un objet triangulaire. Ecrivez un programme qui permette à Reeborg de trouver cet objet, puis demandez-lui de tracer un “+” qui couvrent le monde entier et se centrent sur cet objet.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/target-practice.json&name=TargetPractice" target="_blank">Monde de la pratique de précision</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/target_start.png" src="../_images/target_start.png" />
 </div>
-<div class="section" id="line-follower">
-<h2>Line Follower<a class="headerlink" href="#line-follower" title="Permalink to this headline">¶</a></h2>
-<p>Reeborg loves to hike in the backcounty, but one challenge is that it’s sometimes easy to get lost. Write a program to help Reeborg carefully follow the hiking trail and eventually reach the end of the hiking path.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/line-follower.json&name=LineFollower" target="_blank">Line Follower world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="suivre-la-ligne">
+<h2>Suivre la ligne<a class="headerlink" href="#suivre-la-ligne" title="Permalink to this headline">¶</a></h2>
+<p>Reeborg adore marcher dans la nature, mais l’un des problèmes est qu’il est parfois facile de se perdre. Ecrivez un programme pour aider Reeborg à suivre le sentier de randonnée avec soin et à atteindre le bout du chemin de randonnée.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/line-follower.json&name=LineFollower" target="_blank">monde de suivre la ligne</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/line_follower_start.png" src="../_images/line_follower_start.png" />
 </div>
-<div class="section" id="double-the-pile">
-<h2>Double the Pile<a class="headerlink" href="#double-the-pile" title="Permalink to this headline">¶</a></h2>
-<p>Reeborg has a pile of squares somewhere in front of it, but wants more! Two times more, to be precise. Reeborg is carrying a large number of squares, which you can use to help build the larger pile it wants. Create a pile of squares with exactly two times as many squares. You will always build the new, bigger pile one square to the right of where you find the initial pile.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/doubler.json&name=Doubler" target="_blank">Double the Pile world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="doubler-la-pile">
+<h2>Doubler la pile<a class="headerlink" href="#doubler-la-pile" title="Permalink to this headline">¶</a></h2>
+<p>Reeborg a devant lui une pile de carrés, mais il en veut plus! Deux fois plus, pour être précis. Reeborg propose un grand nombre de carrés que vous pouvez utiliser pour construire le plus gros tas qu’il veut. Créez une pile de carrés avec exactement deux fois plus de carrés. Veuillez construire la nouvelle pile plus grande un carré à droite de l’emplacement de la pile initiale.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/doubler.json&name=Doubler" target="_blank">monde doubler des piles</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/doubler_start.png" src="../_images/doubler_start.png" />
 </div>
-<div class="section" id="find-the-center-version-1">
-<h2>Find the Center - Version 1<a class="headerlink" href="#find-the-center-version-1" title="Permalink to this headline">¶</a></h2>
-<p>Put down a token in the geometrical center of the following world. You are guaranteed that the <strong>width</strong> of the world will be an odd number, and that it will only be one unit tall. Note that when your program is complete, there should only be one token down in the world.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center1.json&name=FindCenter1" target="_blank">Find Center 1 world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="trouver-le-centre-version-1">
+<h2>Trouver le centre - Version 1<a class="headerlink" href="#trouver-le-centre-version-1" title="Permalink to this headline">¶</a></h2>
+<p>Déposez un jeton au centre géométrique du monde suivant. Vous avez la garantie que la <strong>largeur</strong> du monde sera un nombre impair et qu’elle ne fera qu’une unité de hauteur. Notez que lorsque votre programme est terminé, il ne devrait y avoir qu’un seul jeton dans le monde.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center1.json&name=FindCenter1" target="_blank">monde trouver le centre 1</a> mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/center_start.png" src="../_images/center_start.png" />
 </div>
-<div class="section" id="find-the-center-version-2">
-<h2>Find the Center - Version 2<a class="headerlink" href="#find-the-center-version-2" title="Permalink to this headline">¶</a></h2>
-<p>Put down a token in the geometrical center of the following world. You are guaranteed that the <strong>width and height</strong> of the world will be odd numbers. Note that when your program is complete, there should only be one token down in the world.</p>
-<p>Open the <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center2.json&name=FindCenter2" target="_blank">Find Center 2 world</a> to implement your solution!</p>
-<p>The world will look something like this at the start:</p>
+<div class="section" id="trouver-le-centre-version-2">
+<h2>Trouver le centre - Version 2<a class="headerlink" href="#trouver-le-centre-version-2" title="Permalink to this headline">¶</a></h2>
+<p>Déposez un jeton au centre géométrique du monde suivant. Vous avez la garantie que les <strong>largeur et hauteur</strong> du monde seront des nombres impairs. Notez que lorsque votre programme est terminé, il ne devrait y avoir qu’un seul jeton dans le monde.</p>
+<p>Ouvrez le <a href="https://reeborg.cs20.ca/?lang=en&mode=python&url=worlds/sk/center2.json&name=FindCenter2" target="_blank">monde trouver le centre 2</a> pour mettre en œuvre votre solution!</p>
+<p>Le monde ressemblera à quelque chose comme ça au début:</p>
 <img alt="../_images/center2_start.png" src="../_images/center2_start.png" />
 </div>
 </div>

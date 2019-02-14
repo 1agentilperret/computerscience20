@@ -76,9 +76,6 @@ Question 2 - Boucles de répétitions
     **Note: Cette question est très similaire à la dernière, mais il y a un léger différence. Lire attentivement!**
     Considérez le monde suivant, dans lequel Reeborg tient 4 pâquerettes:
 
-This question is very similar to the last one, but there is a slight change. Read carefully!**
-    Consider the following world, in which Reeborg is holding 4 daisies:
-
     .. image:: images/quiz-starting-world.png
     
     Supposons que le code suivant est exécuté::
