@@ -3,8 +3,8 @@
    :start: 1
 
 
-First Practice Quiz - ``repeat``, ``if``, ``def``
-==================================================
+Premier test de pratique - ``repeat``, ``if``, ``def``
+========================================================
 
 .. reveal:: curriculum_addressed_first_practice_quiz
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -14,10 +14,10 @@ First Practice Quiz - ``repeat``, ``if``, ``def``
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-To confirm that you understand the major concepts you've seen with Reeborg, try to answer the following questions **without opening the Reeborg environment**.
+Pour confirmer que vous comprenez les concepts majeurs que vous avez vus avec Reeborg, essayez de répondre aux questions suivantes **sans ouvrir l'environnement Reeborg**.
 
-Question 1 - Repeat Loops
---------------------------
+Question 1 - Boucles de répétitions
+-------------------------------------
 
 .. mchoice:: reeborg_repeat_loops
     :answer_a: Option 1
@@ -25,22 +25,22 @@ Question 1 - Repeat Loops
     :answer_c: Option 3
     :answer_d: Option 4
     :correct: c
-    :feedback_a: Notice that move() is not in the repeat loop. Try again!
-    :feedback_b: Careful! There should be more than one daisy down...
-    :feedback_c: Great!
-    :feedback_d: Careful! move() will only happen once. Try again!
+    :feedback_a: Notez que ``move ()`` n'est pas dans la boucle de répétition. Réessayer!
+    :feedback_b: Attention! Il devrait y avoir plus qu'une fleur...
+    :feedback_c: Génial!
+    :feedback_d: Attention! ``move ()`` ne se produira qu'une seule fois. Réessayer!
 
-    Consider the following world, in which Reeborg is holding 4 daisies:
+    Considérez le monde suivant, dans lequel Reeborg tient 4 fleurs:
 
     .. image:: images/quiz-starting-world.png
     
-    Assume the following code is executed::
+    Supposons que le code suivant est exécuté::
 
         repeat 4:
             put()
         move()
 
-    Which of the following images shows what the world would look like after the code is finished running?
+    Laquelle des images suivantes montre à quoi ressemblerait le monde une fois le code exécuté?
 
     **Option 1:**
 
@@ -58,10 +58,9 @@ Question 1 - Repeat Loops
 
     .. image:: images/quiz-optiond.png
     
-    
 
-Question 2 - Repeat Loops
---------------------------
+Question 2 - Boucles de répétitions
+-------------------------------------
 
 .. mchoice:: reeborg_repeat_loops2
     :answer_a: Option 1
@@ -69,23 +68,26 @@ Question 2 - Repeat Loops
     :answer_c: Option 3
     :answer_d: Option 4
     :correct: a
-    :feedback_a: Great!
-    :feedback_b: Careful! There should be more than one daisy down...
-    :feedback_c: Notice that move() is inside repeat. Try again!
-    :feedback_d: Careful! Both commands inside repeat will happen, in order. Try again!
+    :feedback_a: Génial!
+    :feedback_b: Attention! Il devrait y avoir plus d'une fleur...
+    :feedback_c: Notez que ``move ()`` est à l'intérieur de la répétition. Réessayer!
+    :feedback_d: Attention! Les deux commandes à l'intérieur se répèteront dans l'ordre. Réessayer!
+    
+    **Note: Cette question est très similaire à la dernière, mais il y a un léger différence. Lire attentivement!**
+    Considérez le monde suivant, dans lequel Reeborg tient 4 pâquerettes:
 
-    **Note: This question is very similar to the last one, but there is a slight change. Read carefully!**
+This question is very similar to the last one, but there is a slight change. Read carefully!**
     Consider the following world, in which Reeborg is holding 4 daisies:
 
     .. image:: images/quiz-starting-world.png
     
-    Assume the following code is executed::
+    Supposons que le code suivant est exécuté::
 
         repeat 4:
             put()
             move()
 
-    Which of the following images shows what the world would look like after the code is finished running?
+    Laquelle des images suivantes montre à quoi ressemblerait le monde une fois le code exécuté?
 
     **Option 1:**
 
@@ -104,48 +106,48 @@ Question 2 - Repeat Loops
     .. image:: images/quiz-optiond.png
 
 
-Question 3 - Repeat and If
+Question 3 - ``Repeat`` et ``if``
 ----------------------------
 
 .. fillintheblank:: reeborg_repeat_if
 
-    Assume the starting world looks like this:
+    Supposons que le monde de départ ressemble à ceci::
 
     .. image:: images/quiz-starting-world2.png
     
-    The following code is then executed::
+    Le code suivant est ensuite exécuté::
 
         repeat 10:
             move()
             if object_here():
                 take()
 
-    How many dandelions has Reeborg picked up when the code has finished?
+    Combien de pissenlits Reeborg at-il ramassé lorsque le code est terminé?
 
-    - :6: Great!
-      :10: Reeborg will only take one dandelion per location, due to the move() before the if object_here().
-      :.*: Try again!
+    - :6: génial!
+      :10: Reeborg ne prendra qu'un pissenlit par emplacement, en raison de la fonction ``move ()`` avant le if ``object_here ()``.
+      :.*: Réessayer!
 
 
-Question 4 - Repeat and Def
-----------------------------
+Question 4 - ``Repeat`` et ``Def``
+-----------------------------------
 
 .. mchoice:: reeborg_repeat_with_functions
     :answer_a: 0
     :answer_b: 4
     :answer_c: 7
-    :answer_d: An error will occur
+    :answer_d: Une erreur va se produire
     :correct: b
-    :feedback_a: Try again!
-    :feedback_b: Great!
-    :feedback_c: Try again!
-    :feedback_d: Try again!
+    :feedback_a: Réessayer!
+    :feedback_b: Génial!
+    :feedback_c: Réessayer!
+    :feedback_d: Réessayer!
     
-    Assume the starting world looks like this:
+    Supposons que le monde de départ ressemble à ceci:
 
     .. image:: images/quiz-starting-world3.png
     
-    The following code is then executed::
+    Le code suivant est ensuite exécuté::
 
         def turn_right():
             repeat 3:
@@ -178,5 +180,5 @@ Question 4 - Repeat and Def
         weeding_time()
         move()
 
-    How many dandelions has Reeborg picked up when the code has finished?
+    Combien de pissenlits Reeborg at-il ramassé lorsque le code est terminé?
 

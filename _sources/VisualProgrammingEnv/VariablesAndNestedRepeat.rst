@@ -15,12 +15,15 @@ Dessiner des polygones - Partie 2 (Variables et boucles imbriquée)￼
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
-    -**Principes et techniques fondamentaux (PT)**
-    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
-    - **20IN-PT.2** Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
-    -**Fondements de la programmation (FP)**
-    - **20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
-    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
+    -**Principes et techniques fondamentaux (PT):**
+    
+    -**20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+    -**20IN-PT.2** Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
+    
+    -**Fondements de la programmation (FP):**
+    
+    -**20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
+    -**20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
 
 
 Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watch?v=yV9GjD7-dg8>`_ suivante montre les mêmes idées que celles que j'ai décrites dans le texte ci-dessous.
