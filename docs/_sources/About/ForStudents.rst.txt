@@ -1,3 +1,7 @@
+.. qnum::
+   :prefix: for-students
+   :start: 1
+   
 Comment utiliser ce manuel - Pour les étudiants
 ================================================
 

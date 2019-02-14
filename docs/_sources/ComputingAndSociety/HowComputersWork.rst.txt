@@ -3,21 +3,22 @@
    :start: 1
 
 
-How Computers Work Videos
-==============================
+Comment les ordinateurs fonctionnent-ils? Vidéos - *How computers work. Videos.*
+=================================================================================
 
-The following videos were created by Code.org, and are released under a Creative Commons BY-NC-ND license. Showing these videos at the start of class (one per day) for a number of days can be a really nice way to start some conversations about the technology of the devices we use every day.
+Les vidéos suivantes ont été créées par Code.org et sont publiées sous une licence *Creative Commons BY-NC-ND*. Afficher ces vidéos au début du cours (une par jour) pendant plusieurs jours en but de commencer des conversations sur la technologie des appareils que nous utilisons quotidiennement.
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_how_comp_work
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CS1** Explore the underlying technology of computing devices and the Internet, and their impacts on society.
 
 
 .. index:: computers
 
-Introducing How Computers Work
---------------------------------
+Présentation du fonctionnement des ordinateurs - *Introducing How Computers Work*
+---------------------------------------------------------------------------------------
 
 .. youtube:: OAx_6-wdslM
     :height: 315
@@ -26,8 +27,8 @@ Introducing How Computers Work
     :http: https
 
 
-What Makes a Computer, a Computer?
------------------------------------
+Qu'est-ce qui fait un ordinateur, un ordinateur? - *What Makes a Computer, a Computer?*
+------------------------------------------------------------------------------------------
 
 .. youtube:: mCq8-xTH7jA
     :height: 315
@@ -36,8 +37,8 @@ What Makes a Computer, a Computer?
     :http: https
 
 
-Binary and Data
---------------------------------
+Binaire et données - *Binary and Data*
+---------------------------------------------------------------------------------------
 
 .. youtube:: USCBCmwMCDA
     :height: 315
@@ -46,8 +47,8 @@ Binary and Data
     :http: https
 
 
-Circuits and Logic
---------------------------------
+Circuits et Logique - *Circuits and Logic*
+---------------------------------------------------------------------------------------
 
 .. youtube:: ZoqMiFKspAA
     :height: 315
@@ -56,8 +57,8 @@ Circuits and Logic
     :http: https
 
 
-CPU, Memory, Input and Output
---------------------------------
+CPU, mémoire, entrée et sortie - *CPU, Memory, Input and Output*
+---------------------------------------------------------------------------------------
 
 .. youtube:: DKGZlaPlVLY
     :height: 315
@@ -66,8 +67,8 @@ CPU, Memory, Input and Output
     :http: https
 
 
-Hardware and Software
---------------------------------
+Matériel et logiciel - *Hardware and Software*
+---------------------------------------------------------------------------------------
 
 .. youtube:: xnyFYiK2rSY
     :height: 315

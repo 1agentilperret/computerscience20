@@ -12,8 +12,9 @@ The HyperText Markup Language
     Experiment with HTML (HyperText Markup Language).
 
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_html
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CS1** Explore the underlying technology of computing devices and the Internet, and their impacts on society.
 

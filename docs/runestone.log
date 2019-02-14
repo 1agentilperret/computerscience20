@@ -1,0 +1,28 @@
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/timedparsons.js?v=2EEA9E5A HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:17] "GET /_static/jquery-fix.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:18] "GET /_static/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:18] "GET /_static/img/logo_small.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:18] "GET /_static/images/ui-icons_222222_256x240.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:18] code 404, message File not found
+127.0.0.1 - - [14/Feb/2019 13:13:18] "GET /runestone/static/favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /VisualProgrammingEnv/TimingIssuesAndDodgingGame.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_images/scratch_timing_issues_sprite_setup.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:40] "GET /_images/scratch_variable_scope.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_timing_issue_game_1.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_broadcast_issues_animation.gif HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_timing_issue_game_2.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_dodging_game_bball_1.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_dodging_game_bball_2.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_dodging_game_watermelon_1.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 13:13:41] "GET /_images/scratch_dodging_game.png HTTP/1.1" 200 -
+
+Aborted!

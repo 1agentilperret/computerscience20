@@ -3,13 +3,15 @@
    :start: 1
 
 
-How the Internet Works Videos
-==============================
+Comment Internet fonctionne les vidéos - *How the Internet Works Videos*
+==============================================================================
 
-The following videos were created by Code.org, and are released under a Creative Commons BY-NC-ND license. Showing these videos at the start of class (one per day) for a number of days can be a really nice way to start some conversations about the technology that powers the Internet.
+Les vidéos suivantes ont été créées par Code.org et sont publiées sous une licence *Creative Commons BY-NC-ND*. 
+Afficher ces vidéos au début du cours (une par jour) pendant plusieurs jours en but de commencer des conversations sur la technologie qui alimente Internet.
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_how_internet_works
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CS1** Explore the underlying technology of computing devices and the Internet, and their impacts on society.
 

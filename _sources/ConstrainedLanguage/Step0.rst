@@ -6,8 +6,9 @@
     Explorez |reeborg_environment| et les commandes de base disponibles pour Reeborg. Présentez les étapes que les étudiants suivront. Contrairement au reste des pages de ce manuel, les étapes qui suivent ne correspondent pas facilement à une seule période de classe. Certaines premières étapes prendront très peu de temps aux étudiants, et certaines étapes ultérieures leur prendront beaucoup de temps. L’utilisation prévue de ces étapes est de donner aux étudiants environ deux semaines de temps en classe pour travailler sur les étapes à leur propre rythme.
 
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
+.. reveal:: curriculum_addressed_etape_0
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
 
     - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
 

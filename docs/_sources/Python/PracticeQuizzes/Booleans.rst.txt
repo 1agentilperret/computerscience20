@@ -6,9 +6,10 @@
 Booleans Practice Quiz
 ================================
 
-.. reveal:: curriculum_addressed
-    :showtitle: Curriculum Outcomes Addressed In This Section
-
+.. reveal:: curriculum_addressed_booleans_quiz
+    :showtitle: Résultats du programme d'études traités dans cette section. 
+    :hidetitle: Cacher les résultat du programme
+    
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 To confirm that you understand the major concepts you've seen in Python, try to answer the following questions **without opening Python**.
