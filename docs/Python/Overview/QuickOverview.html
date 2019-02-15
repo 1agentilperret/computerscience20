@@ -205,22 +205,22 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">1. Aperçu rapide de Python</a><ul>
 <li><a class="reference internal" href="#qu-est-ce-que-python">1.1. Qu’est ce que Python?</a></li>
-<li><a class="reference internal" href="#running-python-on-your-computer">1.2. Running Python on Your Computer</a></li>
-<li><a class="reference internal" href="#whitespace">1.3. Whitespace</a></li>
-<li><a class="reference internal" href="#printing-output">1.4. Printing Output</a></li>
-<li><a class="reference internal" href="#variables-and-data-types">1.5. Variables and Data Types</a></li>
-<li><a class="reference internal" href="#checking-data-types">1.6. Checking Data Types</a></li>
-<li><a class="reference internal" href="#converting-between-data-types">1.7. Converting Between Data Types</a></li>
-<li><a class="reference internal" href="#math-operators">1.8. Math Operators</a></li>
-<li><a class="reference internal" href="#if">1.9. <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
-<li><a class="reference internal" href="#if-elif-else">1.10. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code></a></li>
+<li><a class="reference internal" href="#executer-python-sur-votre-ordinateur">1.2. Exécuter Python sur votre ordinateur</a></li>
+<li><a class="reference internal" href="#espace-blanc-whitespace">1.3. Espace blanc/<em>Whitespace</em></a></li>
+<li><a class="reference internal" href="#impression-de-donnees-sorties-printing-output">1.4. Impression de données sorties/<em>Printing Output</em></a></li>
+<li><a class="reference internal" href="#variables-et-types-de-donnees-variables-and-data-types">1.5. Variables et types de données/<em>Variables and Data Types</em></a></li>
+<li><a class="reference internal" href="#verifier-les-types-de-donnees">1.6. Vérifier les types de données</a></li>
+<li><a class="reference internal" href="#conversion-des-types-de-donnees">1.7. Conversion des types de données</a></li>
+<li><a class="reference internal" href="#operateurs-mathematiques">1.8. Opérateurs mathématiques</a></li>
+<li><a class="reference internal" href="#if-si">1.9. <code class="docutils literal notranslate"><span class="pre">if</span></code>/<code class="docutils literal notranslate"><span class="pre">si</span></code></a></li>
+<li><a class="reference internal" href="#if-elif-else-si-alors-sinon">1.10. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>/<em>si/alors/sinon</em></a></li>
 <li><a class="reference internal" href="#while-loop">1.11. <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</a></li>
 <li><a class="reference internal" href="#for-loop">1.12. <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</a></li>
 <li><a class="reference internal" href="#lists">1.13. Lists</a></li>
 <li><a class="reference internal" href="#functions">1.14. Functions</a></li>
 <li><a class="reference internal" href="#taking-input-from-user">1.15. Taking Input from User</a></li>
 <li><a class="reference internal" href="#python-modules">1.16. Python Modules</a></li>
-<li><a class="reference internal" href="#number-guessing-game">1.17. Number Guessing Game</a></li>
+<li><a class="reference internal" href="#nombre-guessing-game">1.17. nombre Guessing Game</a></li>
 </ul>
 </li>
 </ul>
@@ -282,60 +282,60 @@
 <h2>1.1. Qu’est ce que Python?<a class="headerlink" href="#qu-est-ce-que-python" title="Permalink to this headline">¶</a></h2>
 <p>Python est un langage de programmation qui vous permet d’apprendre à l’ordinateur à faire ce que vous voulez. Vous avez déjà écrit des programmes Python avec Reeborg. Tout ce que vous avez déjà appris (à l’exception de <cite>repeat</cite>) fonctionne en Python normal. L’utilisation régulière de Python nous permet de commencer à explorer d’autres manières dont nos programmes peuvent produire des sorties et prendre des entrées.</p>
 </div>
-<div class="section" id="running-python-on-your-computer">
-<span id="index-0"></span><h2>1.2. Running Python on Your Computer<a class="headerlink" href="#running-python-on-your-computer" title="Permalink to this headline">¶</a></h2>
-<p>There are many different ways to install Python on your computer (in fact, some version of Python might already be installed on your computer). However, one of the easiest ways to get Python working on your computer (Windows, Mac or Linux) is to <a class="reference external" href="http://thonny.org/">download Thonny</a>. Go download Thonny now. It doesn’t require administrative rights to install, so you should be able to install it in your school computer lab (double check with your teacher that they are okay with this first!). You may want to install Thonny at home as well.</p>
-<p>For each of the code segments that you see on this page, you can either run them directly in your web browser <strong>OR</strong> you can copy/paste the code into Thonny to run it.</p>
-<p>When using Thonny, you need to understand the difference between the <strong>text editor</strong> and the <strong>shell</strong> (also known as the interpreter). If you want to save your code to use again later, you should type your code into the text editor, which will prompt you to save your file somewhere on disk when you press the Run Current Script button (or press F5). The output of your code will show up in the shell (underneath the text editor). You can also type in any Python code you’d like into the shell, which is a handy way to try out new things in Python.</p>
+<div class="section" id="executer-python-sur-votre-ordinateur">
+<span id="index-0"></span><h2>1.2. Exécuter Python sur votre ordinateur<a class="headerlink" href="#executer-python-sur-votre-ordinateur" title="Permalink to this headline">¶</a></h2>
+<p>Il existe de nombreuses façons d’installer Python sur votre ordinateur (en fait, une version de Python est peut-être déjà installée sur votre ordinateur). Cependant, l’un des moyens les plus simples de faire fonctionner Python sur votre ordinateur (Windows, Mac ou Linux) consiste à <a class="reference external" href="http://thonny.org/">download Thonny</a>. Allez télécharger Thonny maintenant. L’installation ne nécessite pas de droits d’administrateur. Vous devriez donc pouvoir l’installer dans le laboratoire informatique de votre école (vérifiez bien auprès de votre enseignant qu’il accepte cette tâche en premier!). Vous voudrez peut-être également installer Thonny à la maison.</p>
+<p>Pour chacun des segments de code que vous voyez sur cette page, vous pouvez les exécuter directement dans votre navigateur Web <strong>OU</strong> vous pouvez copier/coller le code dans <strong>Thonny</strong> pour l’exécuter.</p>
+<p>Lorsque vous utilisez Thonny, vous devez comprendre la différence entre l’éditeur <strong>de texte</strong> et le <strong>shell</strong> (également appelé l’interprèteur/<em>interpreter</em>). Si vous souhaitez enregistrer votre code pour l’utiliser ultérieurement, vous devez le saisir dans l’éditeur de texte, ce qui vous invitera à enregistrer votre fichier quelque part sur le disque lorsque vous appuierez sur le bouton Exécuter (<em>ou sur F5</em>). La sortie de votre code apparaîtra dans le shell (sous l’éditeur de texte). Vous pouvez également saisir le code Python de votre choix dans le shell, ce qui constitue un moyen pratique d’essayer de nouvelles choses en Python.</p>
 <img alt="../../_images/thonny_window.png" src="../../_images/thonny_window.png" />
 </div>
-<div class="section" id="whitespace">
-<span id="index-1"></span><h2>1.3. Whitespace<a class="headerlink" href="#whitespace" title="Permalink to this headline">¶</a></h2>
-<p>Just like when you were programming Reeborg, it is <strong>really important to indent your code correctly</strong> in Python. For example, the code given below will cause a <strong>syntax error</strong> when you click the Run button. Click the Run button to see the error. Now, can you figure out how to fix it? Edit the code, then click Run again to see if you’ve fixed it!</p>
+<div class="section" id="espace-blanc-whitespace">
+<span id="index-1"></span><h2>1.3. Espace blanc/<em>Whitespace</em><a class="headerlink" href="#espace-blanc-whitespace" title="Permalink to this headline">¶</a></h2>
+<p>Comme lors de la programmation de Reeborg, il est très important <strong>d’indenter votre code correctement</strong> en Python. Par exemple, le code ci-dessous provoquera une <strong>erreur de syntaxe</strong> lorsque vous cliquerez sur le bouton Exécuter. Cliquez sur le bouton Exécuter pour voir l’erreur. Maintenant, pouvez-vous comprendre comment résoudre ce problème? Modifiez le code, puis cliquez à nouveau sur Exécuter pour voir si vous l’avez corrigé!</p>
 
 <div data-childcomponent="syntax_error_indentation" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=syntax_error_indentation data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='Fix the syntax error by indenting the code properly.' >
-some_number = 5
-if some_number > 3:
-print("Yeah, the number is bigger.")
+         data-caption='corrige l'erreur de syntaxe en mettant correctement le code en retrait.' >
+un_nombre = 5
+if un_nombre > 3:
+print("Oui, le nombre est plus grand.")
 </textarea>
 </div>
 </div>
-<div class="section" id="printing-output">
-<span id="index-2"></span><h2>1.4. Printing Output<a class="headerlink" href="#printing-output" title="Permalink to this headline">¶</a></h2>
-<p>As you saw in the example above, you can <code class="docutils literal notranslate"><span class="pre">print()</span></code> things to standard output (usually the Python console/interpreter). The <code class="docutils literal notranslate"><span class="pre">print()</span></code> function will be used in many of the examples that follow. Note that <code class="docutils literal notranslate"><span class="pre">print()</span></code> can take any number of arguments, separated by commas. So you could print something like this: <code class="docutils literal notranslate"><span class="pre">print(&quot;Monday&quot;,</span> <span class="pre">&quot;Tuesday&quot;,</span> <span class="pre">&quot;Wednesday&quot;)</span></code>, which would print <code class="docutils literal notranslate"><span class="pre">Monday</span> <span class="pre">Tuesday</span> <span class="pre">Wednesday</span></code>, with each argument separated by a space.</p>
+<div class="section" id="impression-de-donnees-sorties-printing-output">
+<span id="index-2"></span><h2>1.4. Impression de données sorties/<em>Printing Output</em><a class="headerlink" href="#impression-de-donnees-sorties-printing-output" title="Permalink to this headline">¶</a></h2>
+<p>Comme vous l’avez vu dans l’exemple ci-dessus, vous pouvez <code class="docutils literal notranslate"><span class="pre">print()</span></code> /<em>imprimer</em> des choses sur la sortie standard (généralement la console/interpréteur Python). La fonction <code class="docutils literal notranslate"><span class="pre">print()</span></code> sera utilisée dans beaucoup des exemples suivants. Notez que <code class="docutils literal notranslate"><span class="pre">print()</span></code> peut prendre autant d’arguments qu’on veut, séparés par des virgules. Ainsi, vous pouvez imprimer quelque chose comme ceci: <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">(&quot;lundi&quot;,</span> <span class="pre">&quot;mardi&quot;,</span> <span class="pre">&quot;mercredi&quot;)</span></code>, qui afficherait <code class="docutils literal notranslate"><span class="pre">lundi</span> <span class="pre">mardi</span> <span class="pre">mercredi</span></code>, chaque argument étant séparé par un espace.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">There are lots of other ways that a program can produce output, like drawing, turning on LEDs, etc. We will investigate some of these later in the course.</p>
+<p class="last">Il y a beaucoup d’autres façons pour un programme de produire une sortie, comme dessiner, allumer des LED, etc. Nous étudierons certaines de celles-ci plus tard dans le cours.</p>
 </div>
 </div>
-<div class="section" id="variables-and-data-types">
-<span id="index-3"></span><h2>1.5. Variables and Data Types<a class="headerlink" href="#variables-and-data-types" title="Permalink to this headline">¶</a></h2>
-<p>You hopefully remember using variables to keep track of things when we were using Scratch. For example, we used a variable called <cite>number of sides</cite> when we began to draw regular polygons. In Python, we can create variables as well. In the example above, we made a variable called <cite>some_number</cite>. We have to be careful how we name variables, since they can’t be keywords like <cite>if</cite>, <cite>not</cite>, etc. A keyword is a word that already has a special meaning in Python. Variables should start with a letter, and if they contain more than one word, you should put an underscore between the words (like <cite>helpful_variable</cite> or <cite>something_else</cite>).</p>
-<p>The fundamental data types that we are concerned about in Python include:</p>
+<div class="section" id="variables-et-types-de-donnees-variables-and-data-types">
+<span id="index-3"></span><h2>1.5. Variables et types de données/<em>Variables and Data Types</em><a class="headerlink" href="#variables-et-types-de-donnees-variables-and-data-types" title="Permalink to this headline">¶</a></h2>
+<p>Espérons que vous vous souveniez d’utiliser des variables pour garder une trace des choses lorsque nous utilisions Scratch. Par exemple, nous avons utilisé une variable appelée «nombre de côtés» lorsque nous avons commencé à dessiner des polygones réguliers. En Python, nous pouvons également créer des variables. Dans l’exemple ci-dessus, nous avons créé une variable appelée <cite>un_numbre</cite>. Nous devons faire attention à la façon dont nous nommons les variables, car elles ne peuvent pas être des mots-clés tels que <cite>if</cite>,`not`, etc. Un mot-clé est un mot qui a déjà une signification spéciale en Python. Les variables doivent commencer par une lettre et si elles contiennent plus d’un mot, vous devez mettre un trait de soulignement entre les mots (comme <cite>variable_utile</cite> ou <cite>quelque_chose_d_autre</cite>).</p>
+<p>Les types de données fondamentaux qui nous préoccupent en Python incluent:</p>
 <ul class="simple">
-<li><strong>int</strong> (integer, such as <code class="docutils literal notranslate"><span class="pre">3</span></code> or <code class="docutils literal notranslate"><span class="pre">-5</span></code>)</li>
-<li><strong>float</strong> (floating point number, such as <code class="docutils literal notranslate"><span class="pre">1.2</span></code> or <code class="docutils literal notranslate"><span class="pre">-4.75</span></code>)</li>
-<li><strong>str</strong> (string, such as <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">'Friday'</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;5&quot;</span></code>)</li>
-<li><strong>bool</strong> (boolean, such as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>)</li>
+<li><strong>int</strong> (entier/<em>integer</em>, tel que <code class="docutils literal notranslate"><span class="pre">3</span></code> ou <code class="docutils literal notranslate"><span class="pre">-5</span></code>)</li>
+<li><strong>float</strong> (nombre à virgule flottante/<em>floating point nombre</em>, tel que <code class="docutils literal notranslate"><span class="pre">1.2</span></code> ou <code class="docutils literal notranslate"><span class="pre">-4.75</span></code>)</li>
+<li><strong>str</strong> (chaîne/<em>string</em>, telle que <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> ou <code class="docutils literal notranslate"><span class="pre">'Friday'</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;5&quot;</span></code>)</li>
+<li><strong>bool</strong> (booléen/<em>boolean</em>, telle que <code class="docutils literal notranslate"><span class="pre">True</span></code> ou <code class="docutils literal notranslate"><span class="pre">False</span></code>)</li>
 </ul>
-<p>We will use each of the data types given above throughout the course, and it is <strong>really important</strong> that you understand the differences between them. Take a moment now to try the following questions.</p>
-<p><strong>Check Your Understanding</strong></p>
+<p>Nous utiliserons chacun des types de données indiqués ci-dessus tout au long du cours, et il est <strong>vraiment important</strong> que vous compreniez les différences qui existent entre eux. Prenez un moment pour répondre aux questions suivantes.</p>
+<p><strong>Vérifie ta compréhension</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="data_types_1_1">
-            quick-overview1: What is the data type of <code class="docutils literal notranslate"><span class="pre">'this</span> <span class="pre">is</span> <span class="pre">what</span> <span class="pre">kind</span> <span class="pre">of</span> <span class="pre">data'</span></code>?
-            <li data-component="answer"  id="data_types_1_1_opt_a">boolean</li><li data-component="feedback" id="data_types_1_1_opt_a">It is not True or False.</li>
+            quick-overview1: Quel est le type de données de <code class="docutils literal notranslate"><span class="pre">&quot;c'est</span> <span class="pre">quel</span> <span class="pre">type</span> <span class="pre">de</span> <span class="pre">données&quot;</span></code>?
+            <li data-component="answer"  id="data_types_1_1_opt_a">booléen</li><li data-component="feedback" id="data_types_1_1_opt_a">Ce n'est pas ``True`` ou ``False``.</li>
             
-            <li data-component="answer"  id="data_types_1_1_opt_b">integer</li><li data-component="feedback" id="data_types_1_1_opt_b">The data is not numeric.</li>
+            <li data-component="answer"  id="data_types_1_1_opt_b">nombre</li><li data-component="feedback" id="data_types_1_1_opt_b">Les données ne sont pas numériques.</li>
             
-            <li data-component="answer"  id="data_types_1_1_opt_c">float</li><li data-component="feedback" id="data_types_1_1_opt_c">The value is not numeric with a decimal point.</li>
+            <li data-component="answer"  id="data_types_1_1_opt_c">float</li><li data-component="feedback" id="data_types_1_1_opt_c">La valeur n'est pas numérique avec un point décimal.</li>
             
-            <li data-component="answer" data-correct id="data_types_1_1_opt_d">string</li><li data-component="feedback" id="data_types_1_1_opt_d">Great! Strings are enclosed in quotes.</li>
+            <li data-component="answer" data-correct id="data_types_1_1_opt_d">chaîne</li><li data-component="feedback" id="data_types_1_1_opt_d">Génial! Les chaînes sont toujours entre guillemets.</li>
             
 
             </ul>
@@ -343,14 +343,14 @@ print("Yeah, the number is bigger.")
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="data_types_1_2">
-            quick-overview2: What is the data type of <code class="docutils literal notranslate"><span class="pre">3</span></code>?
-            <li data-component="answer"  id="data_types_1_2_opt_a">boolean</li><li data-component="feedback" id="data_types_1_2_opt_a">It is not True or False.</li>
+            quick-overview2: Quel est le type de données de <code class="docutils literal notranslate"><span class="pre">3</span></code>?
+            <li data-component="answer"  id="data_types_1_2_opt_a">booléen</li><li data-component="feedback" id="data_types_1_2_opt_a">Ce n'est pas ``True`` ou ``False``.</li>
             
-            <li data-component="answer" data-correct id="data_types_1_2_opt_b">integer</li><li data-component="feedback" id="data_types_1_2_opt_b">Great! The data is numeric, without a decimal point.</li>
+            <li data-component="answer" data-correct id="data_types_1_2_opt_b">nombre</li><li data-component="feedback" id="data_types_1_2_opt_b">Génial! Les données sont numériques, sans point décimal.</li>
             
-            <li data-component="answer"  id="data_types_1_2_opt_c">float</li><li data-component="feedback" id="data_types_1_2_opt_c">The value is not numeric with a decimal point.</li>
+            <li data-component="answer"  id="data_types_1_2_opt_c">float</li><li data-component="feedback" id="data_types_1_2_opt_c">La valeur n'est pas numérique avec un point décimal.</li>
             
-            <li data-component="answer"  id="data_types_1_2_opt_d">string</li><li data-component="feedback" id="data_types_1_2_opt_d">Strings are enclosed in quotes.</li>
+            <li data-component="answer"  id="data_types_1_2_opt_d">chaîne</li><li data-component="feedback" id="data_types_1_2_opt_d">Les chaînes sont **toujours** entre guillemets.</li>
             
 
             </ul>
@@ -358,14 +358,14 @@ print("Yeah, the number is bigger.")
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="data_types_1_3">
-            quick-overview3: What is the data type of <code class="docutils literal notranslate"><span class="pre">True</span></code>?
-            <li data-component="answer" data-correct id="data_types_1_3_opt_a">boolean</li><li data-component="feedback" id="data_types_1_3_opt_a">Great! Boolean is either True or False.</li>
+            quick-overview3: Quel est le type de données de <code class="docutils literal notranslate"><span class="pre">True</span></code>?
+            <li data-component="answer" data-correct id="data_types_1_3_opt_a">booléen</li><li data-component="feedback" id="data_types_1_3_opt_a">Génial! Le booléen est ``True`` ou ``False``.</li>
             
-            <li data-component="answer"  id="data_types_1_3_opt_b">integer</li><li data-component="feedback" id="data_types_1_3_opt_b">The data is not numeric.</li>
+            <li data-component="answer"  id="data_types_1_3_opt_b">nombre</li><li data-component="feedback" id="data_types_1_3_opt_b">Les données ne sont pas numériques.</li>
             
-            <li data-component="answer"  id="data_types_1_3_opt_c">float</li><li data-component="feedback" id="data_types_1_3_opt_c">The value is not numeric with a decimal point.</li>
+            <li data-component="answer"  id="data_types_1_3_opt_c">float</li><li data-component="feedback" id="data_types_1_3_opt_c">La valeur n'est pas numérique avec un point décimal.</li>
             
-            <li data-component="answer"  id="data_types_1_3_opt_d">string</li><li data-component="feedback" id="data_types_1_3_opt_d">Strings are enclosed in quotes.</li>
+            <li data-component="answer"  id="data_types_1_3_opt_d">chaîne</li><li data-component="feedback" id="data_types_1_3_opt_d">Les chaînes sont **toujours** entre guillemets.</li>
             
 
             </ul>
@@ -373,22 +373,22 @@ print("Yeah, the number is bigger.")
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="data_types_1_4">
-            quick-overview4: What is the data type of <code class="docutils literal notranslate"><span class="pre">1.5</span></code>?
-            <li data-component="answer"  id="data_types_1_4_opt_a">boolean</li><li data-component="feedback" id="data_types_1_4_opt_a">It is not True or False.</li>
+            quick-overview4: Quel est le type de données de <code class="docutils literal notranslate"><span class="pre">1.5</span></code>?
+            <li data-component="answer"  id="data_types_1_4_opt_a">booléen</li><li data-component="feedback" id="data_types_1_4_opt_a">Ce n'est pas ``True`` ou ``False``.</li>
             
-            <li data-component="answer"  id="data_types_1_4_opt_b">integer</li><li data-component="feedback" id="data_types_1_4_opt_b">The data is not numeric.</li>
+            <li data-component="answer"  id="data_types_1_4_opt_b">nombre</li><li data-component="feedback" id="data_types_1_4_opt_b">Les données ne sont pas numériques.</li>
             
-            <li data-component="answer" data-correct id="data_types_1_4_opt_c">float</li><li data-component="feedback" id="data_types_1_4_opt_c">Great! The value is numeric with a decimal point.</li>
+            <li data-component="answer" data-correct id="data_types_1_4_opt_c">float</li><li data-component="feedback" id="data_types_1_4_opt_c">Génial! La valeur est numérique avec un point décimal.</li>
             
-            <li data-component="answer"  id="data_types_1_4_opt_d">string</li><li data-component="feedback" id="data_types_1_4_opt_d">Strings are enclosed in quotes.</li>
+            <li data-component="answer"  id="data_types_1_4_opt_d">chaîne</li><li data-component="feedback" id="data_types_1_4_opt_d">Les chaînes sont **toujours** entre guillemets.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="checking-data-types">
-<h2>1.6. Checking Data Types<a class="headerlink" href="#checking-data-types" title="Permalink to this headline">¶</a></h2>
-<p>If you aren’t sure what the data type of something is, you can check it using the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function. This works on both values (a piece of data) and variables (a container that holds a value). What will the code below do? After you have pressed Run below, change the value inside the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function to make sure you really understand what it is doing. Replace the <code class="docutils literal notranslate"><span class="pre">5</span></code> with <code class="docutils literal notranslate"><span class="pre">5.3</span></code>. What do you get? How about <code class="docutils literal notranslate"><span class="pre">&quot;5.3&quot;</span></code>?</p>
+<div class="section" id="verifier-les-types-de-donnees">
+<h2>1.6. Vérifier les types de données<a class="headerlink" href="#verifier-les-types-de-donnees" title="Permalink to this headline">¶</a></h2>
+<p>Si vous n’êtes pas sûr du type de données, vous pouvez le vérifier en utilisant la fonction <code class="docutils literal notranslate"><span class="pre">type()</span></code>. Cela fonctionne à la fois sur les valeurs (un élément de données) et sur les variables (un contenant qui contient une valeur). Que fera le code ci-dessous? Après avoir appuyé sur Exécuter ci-dessous, modifiez la valeur dans la fonction <code class="docutils literal notranslate"><span class="pre">type()</span></code> pour vous assurer que vous comprenez vraiment ce qu’elle fait. Remplacez le <code class="docutils literal notranslate"><span class="pre">5</span></code> par le <code class="docutils literal notranslate"><span class="pre">5.3</span></code>. Qu’est ce que tu obtiens? Que serait le résultat si on le change à <code class="docutils literal notranslate"><span class="pre">&quot;5.3&quot;</span></code>?</p>
 
 <div data-childcomponent="checking_data_types" class="runestone explainer ac_section alert alert-warning">
 
@@ -396,17 +396,17 @@ print("Yeah, the number is bigger.")
       data-timelimit=25000    
     data-audio=''    
           >
-print( type(5) )
+print(type(5))
 </textarea>
 </div>
 </div>
-<div class="section" id="converting-between-data-types">
-<span id="type-casting-functions"></span><span id="index-4"></span><h2>1.7. Converting Between Data Types<a class="headerlink" href="#converting-between-data-types" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes you might need to convert from one data type to another. You can use the following functions to <strong>type cast</strong> data:</p>
+<div class="section" id="conversion-des-types-de-donnees">
+<span id="type-casting-functions"></span><span id="index-4"></span><h2>1.7. Conversion des types de données<a class="headerlink" href="#conversion-des-types-de-donnees" title="Permalink to this headline">¶</a></h2>
+<p>Parfois, vous devrez peut-être convertir un type de données en un autre. Vous pouvez utiliser les fonctions suivantes pour <strong>type cast</strong>/<strong>saisir</strong> des données:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">str(x)</span></code> to convert <em>x</em> to a string</li>
-<li><code class="docutils literal notranslate"><span class="pre">int(x)</span></code> to convert <em>x</em> to an integer</li>
-<li><code class="docutils literal notranslate"><span class="pre">float(x)</span></code> to convert <em>x</em> to a floating point number</li>
+<li><code class="docutils literal notranslate"><span class="pre">str(x)</span></code> pour convertir <strong>x</strong> en chaîne</li>
+<li><code class="docutils literal notranslate"><span class="pre">int(x)</span></code> pour convertir <strong>x</strong> en nombre</li>
+<li><code class="docutils literal notranslate"><span class="pre">float(x)</span></code> pour convertir <strong>x</strong> en nombre à virgule flottante</li>
 </ul>
 
 <div data-childcomponent="casting_data_types" class="runestone explainer ac_section alert alert-warning">
@@ -415,32 +415,32 @@ print( type(5) )
       data-timelimit=25000    
     data-audio=''    
           >
-a = 4         #a is an int
+a = 4         #a est un int
 print( type(a) )
 
-b = str(a)    #b is the string '4'
+b = str(a)    #b devient la chaîne de a: '4'
 print( type(b) )
 
-c = float(b)  #c is the float 4.0
+c = float(b)  #c devient le float de a: 4.0
 print( type(c) )
 </textarea>
 </div>
 </div>
-<div class="section" id="math-operators">
-<span id="math-operator-list"></span><span id="index-5"></span><h2>1.8. Math Operators<a class="headerlink" href="#math-operators" title="Permalink to this headline">¶</a></h2>
-<p>We can do math with Python, but we need to know the operators to use. The following table shows the most frequently used math operators in Python.</p>
+<div class="section" id="operateurs-mathematiques">
+<span id="math-operator-list"></span><span id="index-5"></span><h2>1.8. Opérateurs mathématiques<a class="headerlink" href="#operateurs-mathematiques" title="Permalink to this headline">¶</a></h2>
+<p>Nous pouvons faire des calculs avec Python, mais nous devons connaître les opérateurs à utiliser. Le tableau suivant démontre les opérateurs mathématiques les plus fréquemment utilisés dans Python.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="12%" />
-<col width="52%" />
-<col width="26%" />
+<col width="15%" />
+<col width="50%" />
+<col width="25%" />
 <col width="10%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Symbols</th>
+<tr class="row-odd"><th class="head">Symboles</th>
 <th class="head">Operations</th>
 <th class="head">Example</th>
-<th class="head">Output</th>
+<th class="head">Sortie</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -450,7 +450,7 @@ print( type(c) )
 <td>3</td>
 </tr>
 <tr class="row-odd"><td>-</td>
-<td>Subtraction</td>
+<td>Soustraction</td>
 <td><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">-</span> <span class="pre">1</span></code></td>
 <td>1</td>
 </tr>
@@ -465,29 +465,29 @@ print( type(c) )
 <td>2.5</td>
 </tr>
 <tr class="row-even"><td>//</td>
-<td>Truncating Division (quotient)</td>
+<td>Division Tronquée (quotient)</td>
 <td><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">//</span> <span class="pre">2</span></code></td>
 <td>2</td>
 </tr>
 <tr class="row-odd"><td>%</td>
-<td>Modulo (remainder)</td>
+<td>Modulo (reste)</td>
 <td><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">%</span> <span class="pre">2</span></code></td>
 <td>1</td>
 </tr>
 <tr class="row-even"><td>**</td>
-<td>Power</td>
+<td>Puissance</td>
 <td><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">**</span> <span class="pre">2</span></code></td>
 <td>25</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="if">
-<span id="index-6"></span><h2>1.9. <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> control structure works the same way it did with Reeborg. Run the example given below. What happens if you change it to <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">23</span></code>. How about <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">10</span></code>?</p>
+<div class="section" id="if-si">
+<span id="index-6"></span><h2>1.9. <code class="docutils literal notranslate"><span class="pre">if</span></code>/<code class="docutils literal notranslate"><span class="pre">si</span></code><a class="headerlink" href="#if-si" title="Permalink to this headline">¶</a></h2>
+<p>La structure de contrôle <code class="docutils literal notranslate"><span class="pre">if</span></code> fonctionne comme elle le faisait avec Reeborg. Exécutez l’exemple donné ci-dessous. Que se passe-t-il si vous le changez à <code class="docutils literal notranslate"><span class="pre">nombre</span> <span class="pre">=</span> <span class="pre">23</span></code>. Et si vous le changez à <code class="docutils literal notranslate"><span class="pre">nombre</span> <span class="pre">=</span> <span class="pre">10</span></code>?</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">A single equal sign <code class="docutils literal notranslate"><span class="pre">=</span></code> is used to <strong>assign</strong> a value. Two equal signs <code class="docutils literal notranslate"><span class="pre">==</span></code> are used when <strong>comparing</strong> a value.</p>
+<p class="last">Un seul signe égal <code class="docutils literal notranslate"><span class="pre">=</span></code> est utilisé pour <strong>assigner</strong> une valeur. Deux signes égaux <code class="docutils literal notranslate"><span class="pre">==</span></code> sont utilisés pour <strong>comparer</strong> une valeur.</p>
 </div>
 
 <div data-childcomponent="if_intro_1" class="runestone explainer ac_section alert alert-warning">
@@ -496,19 +496,19 @@ print( type(c) )
       data-timelimit=25000    
     data-audio=''    
           >
-number = 42
+nombre = 900
 
-if number == 42:
-    print("So long and thanks for all the fish.")
+if nombre == 900:
+    print("Freddy Krueger est au téléphone.")
 
-if number == 23:
-    print("Michael Jordan is the GOAT (Greatest of All Time)")
+if nombre == 23:
+    print("Michael Jordan est le GOAT (Greatest of All Time)")
 </textarea>
 </div>
 </div>
-<div class="section" id="if-elif-else">
-<span id="index-7"></span><h2>1.10. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code><a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> control structure works in the exact same way it did when you were programming Reeborg. The important thing to remember is that <strong>only one of the branches can execute</strong>. Read the code below, and predict what you think the output will be. Then change it to <code class="docutils literal notranslate"><span class="pre">temp</span> <span class="pre">=</span> <span class="pre">25</span></code>. What will the output be now? How about if you change it to <code class="docutils literal notranslate"><span class="pre">temp</span> <span class="pre">=</span> <span class="pre">5</span></code>? What about <code class="docutils literal notranslate"><span class="pre">temp</span> <span class="pre">=</span> <span class="pre">15</span></code>?</p>
+<div class="section" id="if-elif-else-si-alors-sinon">
+<span id="index-7"></span><h2>1.10. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>/<em>si/alors/sinon</em><a class="headerlink" href="#if-elif-else-si-alors-sinon" title="Permalink to this headline">¶</a></h2>
+<p>La structure de contrôle <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> fonctionne exactement de la même manière que lors de la programmation de Reeborg. La chose importante à retenir est que <strong>seulement une des branches peut exécuter</strong>. Lisez le code ci-dessous et prédisez ce que vous pensez sera la sortie. Puis changez-le en <code class="docutils literal notranslate"><span class="pre">température</span> <span class="pre">=</span> <span class="pre">25</span></code>. Quelle sera la sortie maintenant? Et si vous le changiez en <code class="docutils literal notranslate"><span class="pre">température</span> <span class="pre">=</span> <span class="pre">5</span></code>? Ensuite <code class="docutils literal notranslate"><span class="pre">température</span> <span class="pre">=</span> <span class="pre">15</span></code>?</p>
 
 <div data-childcomponent="if_elif_else_intro" class="runestone explainer ac_section alert alert-warning">
 
@@ -516,20 +516,20 @@ if number == 23:
       data-timelimit=25000    
     data-audio=''    
           >
-temp = -3
+température = -3
 
-if temp < -10:
-    print("wear winter jacket")
-elif temp < 15:
-    print("wear long sleeve shirt")
+if température < -10:
+    print("porter une manteau d'hiver")
+elif température < 15:
+    print("porter une chemise à manches longues")
 else:
-    print("wear t-shirt")
+    print("porter un t-shirt")
 </textarea>
 </div>
 </div>
 <div class="section" id="while-loop">
 <span id="index-8"></span><h2>1.11. <code class="docutils literal notranslate"><span class="pre">while</span></code> loop<a class="headerlink" href="#while-loop" title="Permalink to this headline">¶</a></h2>
-<p>Recall that we used a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop in Reeborg when we didn’t know the number of iterations ahead of time. In other words, the body of while will be repeated as long as the controlling boolean expression evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. Run the code below. Can you change the code so that it counts <strong>up</strong> from 1 to 10, then says “Here I come!”?</p>
+<p>Recall that we used a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop in Reeborg when we didn’t know the nombre of iterations ahead of time. In other words, the body of while will be repeated as long as the controlling boolean expression evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. Run the code below. Can you change the code so that it counts <strong>up</strong> from 1 to 10, then says “Here I come!”?</p>
 
 <div data-childcomponent="while_loop_intro" class="runestone explainer ac_section alert alert-warning">
 
@@ -549,7 +549,7 @@ print("Blastoff!")
 </div>
 <div class="section" id="for-loop">
 <span id="index-9"></span><h2>1.12. <code class="docutils literal notranslate"><span class="pre">for</span></code> loop<a class="headerlink" href="#for-loop" title="Permalink to this headline">¶</a></h2>
-<p>When we knew the exact number of iterations required in Reeborg, we used the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> command. That command was not part of regular Python – it was added to keep Reeborg coding as simple as possible. Although I won’t explain all the details about it yet, I will introduce you to the Python version of a repeat loop. If we want something to repeat 10 times, we could do the following: (after running the code, change the <code class="docutils literal notranslate"><span class="pre">10</span></code> to some other number and try it again)</p>
+<p>When we knew the exact nombre of iterations required in Reeborg, we used the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> command. That command was not part of regular Python – it was added to keep Reeborg coding as simple as possible. Although I won’t explain all the details about it yet, I will introduce you to the Python version of a repeat loop. If we want something to repeat 10 times, we could do the following: (after running the code, change the <code class="docutils literal notranslate"><span class="pre">10</span></code> to some other nombre and try it again)</p>
 
 <div data-childcomponent="for_loop_intro_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -561,7 +561,7 @@ for counter in range(10):
     print(counter)
 </textarea>
 </div>
-<p>Notice that the loop above repeats 10 times, but begins counting at 0, so the last number is a 9. We can control the for loop even more by passing two arguments, like this:</p>
+<p>Notice that the loop above repeats 10 times, but begins counting at 0, so the last nombre is a 9. We can control the for loop even more by passing two arguments, like this:</p>
 
 <div data-childcomponent="for_loop_intro_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -576,12 +576,12 @@ for counter in range(5, 11):
 </div>
 <div class="section" id="lists">
 <span id="index-10"></span><h2>1.13. Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<p>How does the range function above work? What it does is create a <strong>list</strong> of numbers, which allows us to save more than one value into the same variable. For example, when we called <code class="docutils literal notranslate"><span class="pre">range(5,</span> <span class="pre">11)</span></code> above, Python created a list with the numbers 5, 6, 7, 8, 9, 10. If we had wanted to create that list ourselves, we could have done something like this:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">number_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<p>How does the range function above work? What it does is create a <strong>list</strong> of nombres, which allows us to save more than one value into the same variable. For example, when we called <code class="docutils literal notranslate"><span class="pre">range(5,</span> <span class="pre">11)</span></code> above, Python created a list with the nombres 5, 6, 7, 8, 9, 10. If we had wanted to create that list ourselves, we could have done something like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>We can put any data type inside of the list, so it would also be okay to make a list like:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">number_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nombre_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>If we create our own list, we can still iterate through it using a for loop. For example, if you were keeping track of which groceries you wanted to buy at the store, you might put all the items you want to buy into a list, then print out each of them.</p>
@@ -645,7 +645,7 @@ say_hello("Eli")
 <p>If you want the user to type something, you can use the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function. Here are a couple examples:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><code class="docutils literal notranslate"><span class="pre">input()</span></code> will always return a string. You will need to convert it to an int or a float if you are expecting a number.</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">input()</span></code> will always return a string. You will need to convert it to an int or a float if you are expecting a nombre.</p>
 </div>
 
 <div data-childcomponent="input_intro_1" class="runestone explainer ac_section alert alert-warning">
@@ -731,31 +731,31 @@ print( random.randrange(1, 10) )
 </textarea>
 </div>
 </div>
-<div class="section" id="number-guessing-game">
-<h2>1.17. Number Guessing Game<a class="headerlink" href="#number-guessing-game" title="Permalink to this headline">¶</a></h2>
-<p>Remember the number guessing game we created in Scratch? The basic premise was as follows:</p>
+<div class="section" id="nombre-guessing-game">
+<h2>1.17. nombre Guessing Game<a class="headerlink" href="#nombre-guessing-game" title="Permalink to this headline">¶</a></h2>
+<p>Remember the nombre guessing game we created in Scratch? The basic premise was as follows:</p>
 <ul class="simple">
-<li>generates a random number from 1 to 100 and stores it in a variable</li>
-<li>repeats the following until the user guesses the number</li>
-<li>gets the user to guess the number (using the <strong>ask</strong> block)</li>
-<li>tells the user if the number is too high or too low</li>
-<li>congratulates the user when they guess the correct number with a message such as “Way to go! You guessed the right number in 9 tries!”</li>
+<li>generates a random nombre from 1 to 100 and stores it in a variable</li>
+<li>repeats the following until the user guesses the nombre</li>
+<li>gets the user to guess the nombre (using the <strong>ask</strong> block)</li>
+<li>tells the user if the nombre is too high or too low</li>
+<li>congratulates the user when they guess the correct nombre with a message such as “Way to go! You guessed the right nombre in 9 tries!”</li>
 </ul>
 <p>We are going to try to implement this game in Python. <strong>Please note: you will likely run into many problems trying to create this game in Python.</strong> However, it can be really helpful to try problems that feel like they are above your skill level. Soon, you will be able to create programs like this on your own! Your teacher might choose to give you some time to try this on your own, then demonstrate a possible solution to the problem, or perhaps come back to this game in a couple of weeks.</p>
 
-<div data-childcomponent="number_guessing_game_attempt" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="nombre_guessing_game_attempératuret" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=number_guessing_game_attempt data-lang="python" 
+<textarea data-component="activecode" id=nombre_guessing_game_attempératuret data-lang="python" 
       data-timelimit=25000  data-codelens="true"  
     data-audio=''    
-         data-caption='Create a number guessing game here!' >
+         data-caption='Create a nombre guessing game here!' >
 # the algorithm for the game can be described as follows
 # your job is to try to convert the comments into real Python code!
 
-# have the computer pick a random number between 1 to 100
+# have the computer pick a random nombre between 1 to 100
 
 
-# create a variable to keep track of the number of guesses taken
+# create a variable to keep track of the nombre of guesses taken
 
 
 # set a variable with an initial value for the users guess, like this:
@@ -766,7 +766,7 @@ user_guess = -1
     # ask the user for their guess
 
 
-    # update the number of guesses variable
+    # update the nombre of guesses variable
 
 
     # if they guess high, tell them
