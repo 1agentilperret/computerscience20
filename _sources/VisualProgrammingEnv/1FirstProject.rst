@@ -23,6 +23,7 @@ Instructions
     
     
     En général, votre film devrait avoir au moins:
+    
     - Une image de fond
     - Deux personnages
     - Au moins cinq diffusion au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")

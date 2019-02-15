@@ -14,22 +14,35 @@ Projet 3: Le labyrinthe!
 
 Instructions 
 -------------
+**Instructions voire Évaluation pour différence entre 85% et 100%**
 
-.. reveal:: Instructions_for_project_three
-    :showtitle: Instructions
-    :hidetitle: Cacher Instructions
-    
-    **Instructions voire Évaluation pour différence entre 85% et 100%**
+.. reveal:: debuter_for_project_three
+    :showtitle: Débuter la mission
+    :hidetitle: Cacher Débuter la mission
     
     
-    En général, votre film devrait avoir au moins:
-    - Une image de fond
-    - Deux personnages
-    - Au moins cinq diffusion au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")
-    - Une entrée utilisateur utilisée dans une condition (SI)
+    Débuter la mission:
+    --------------------
 
-    L'activité est ouverte à votre créativité: raconter une histoire, créer des personnages, expérimenter avec des lutins (“sprites”) en mouvement sur scène… à vous de choisir.
+    1. Téléchargez l'image du :download:`labyrinthe <images/scrach_labyrinthe_background.jpg>`. Chargez-la dans Scratch comme arrière-plan d'un nouveau projet et centrez-le sur la scène.
+    2. Créez les blocs de départ suivants pour vous assurer que votre chat scratch commence au même endroit à chaque fois:
     
+    .. image:: images/scratch_labyrinthe_start_block.png
+
+    3. Aidez à déplacer le chat à l'emplacement final sans croiser aucun des murs du labyrinthe. Pour recevoir un crédit complet pour cette affectation, vous devez être en mesure d’accomplir la tâche ci-haut en utilisant un maximum de 40 blocs (y compris les 6 blocs d’installation illustrés au point 2).
+    
+.. reveal:: regles_for_project_three
+    :showtitle: Quelques Règles
+    :hidetitle: Cacher Quelques Règles
+        
+    Quelques Règles:
+    -----------------
+    
+    Il existe plusieurs blocs bleus de déplacement qui vous permettent de résoudre ce problème en utilisant des emplacements de coordonnées. L'un des objectifs de ce défi est de proposer une solution élégante grâce à l'utilisation de boucles. Pour faciliter cela, les seuls blocs de mouvement bleus autorisés sont:
+    
+    ``Avancer de (-)		Tourner de (-) degrés		s’orienter à (-)``
+
+
 .. this is the gif to show what the program should do.
 .. enlève les .. devant ceci et remplace le 'source path' par celui de la bonne photo
 
