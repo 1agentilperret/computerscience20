@@ -438,8 +438,8 @@ Nous allons essayer d'implémenter ce jeu en Python. **Remarque: vous rencontrer
     # crée une variable pour suivre le nombre de suppositions prises
 
 
-    # définit une variable avec une valeur initiale pour les utilisateurs, comme ceci:
-    devinette_utilisateur = -1
+    # définit une variable avec une valeur initiale pour les utilisateurs, comme ceci: 
+    # devinette_utilisateur = -1
 
     # répéter ce qui suit jusqu'à ce que l'utilisateur devine correctement
 
