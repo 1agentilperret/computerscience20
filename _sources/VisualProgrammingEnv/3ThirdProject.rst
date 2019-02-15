@@ -12,6 +12,8 @@ Projet 3: Le labyrinthe!
 
     Dans cette mission, vous devez concevoir un algorithme pour aider le chat Scratch à sortir d'un labyrinthe automatiquement. Rappelez-vous ce que vous avez appris sur l’utilisation de boucles (blocs de répétition) - elles peuvent nettoyer les sections de code répétées et rendre nos programmes beaucoup plus faciles à comprendre.
 
+.. image:: images/scrach_labyrinthe_background.jpg
+
 Instructions 
 -------------
 **Instructions voire Évaluation pour différence entre 85% et 100%**
@@ -42,13 +44,24 @@ Instructions
     
     ``Avancer de (-)		Tourner de (-) degrés		s’orienter à (-)``
 
+.. reveal:: regles_for_project_three
+    :showtitle: Extras pour les experts
+    :hidetitle: Cacher Extras pour les experts
+        
+    Extra pour les experts:
+    ------------------------
+    
+    Est-ce que finir avec 40 blocs était trop facile? Examinez de plus près votre algorithme et le labyrinthe pour voyez si vous pouvez optimiser votre solution. Pour gagner le défi supplémentaire des experts de cette tâche, concevez un algorithme complet qui utilise moins de 32 blocs.
+    
+    Quelle est la solution la plus concise que vous puissiez imaginer? La solution actuellement la plus courte pour les étudiants est de 26 blocs.
+
 
 .. this is the gif to show what the program should do.
 .. enlève les .. devant ceci et remplace le 'source path' par celui de la bonne photo
 
 .. Votre programme pour avoir 85% devrait ressembler à ceci:
 
-.. image:: images/Média1.gif
+.. .. image:: images/Média1.gif
 
 
 .. this is the gif to show what the program should do.
@@ -66,17 +79,16 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%
 
-
     +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
     | Critère                                                                                                                                       | oui  | non (-10%)  | un peu (-5%) |
     +===============================================================================================================================================+======+=============+==============+
-    | Votre histoire a une image de fond                                                                                                            |      |             |              |
+    | Quand on appuis le drapeau vert le chat résout le labyrinthe seul                                                                             |      |             |              |
     +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Votre histoire a deux personnages                                                                                                             |      |             |              |
+    | Vous avez moins de **40** blocs de code pour résoudre le labyrinth                                                                            |      |             |              |
     +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Au moins cinq émissions au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")  |      |             |              |
+    | Les blocs bleu utilisé sont les blocs autorisé pour cette mission:Avancer de ``(-); Tourner de (-) degrés; s’orienter à (-)``                 |      |             |              |
     +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
-    | Une entrée utilisateur utilisée dans une condition (SI)                                                                                       |      |             |              |
+    | Votre code inclut des blocs de boucles                                                                                                        |      |             |              |
     +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
     
 
@@ -85,15 +97,14 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
     :showtitle: Évaluation pour avoir 100%
     :hidetitle: Cacher l'évaluation pour avoir 100%
 
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Critère                                                                                                                                                             | oui  | non (-10%)  | un peu (-5%)|
-    +=====================================================================================================================================================================+======+=============+=============+
-    | Votre histoire a plusieurs images de fonds                                                                                                                          |      |             |             |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Deux ou plus personnages bien développés                                                                                                                            |      |             |             |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Au moins dix émissions au total, en les nommant de manière appropriée (c'est-à-dire "le tour de son chien de parler" au lieu de "message1")                         |      |             |             |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-    | Deux ou plus entrée utilisateur utilisée dans une condition (SI) qui affecte l’histoire                                                                             |      |             |             |
-    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
-
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Critère                                                                                                                                       | oui  | non (-10%)  | un peu (-5%) |
+    +===============================================================================================================================================+======+=============+==============+
+    | Quand on appuis le drapeau vert le chat résout le labyrinthe seul                                                                             |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Vous avez moins de **32** blocs de code pour résoudre le labyrinth                                                                            |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Les blocs bleu utilisé sont les blocs autorisé pour cette mission:Avancer de ``(-); Tourner de (-) degrés; s’orienter à (-)``                 |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre code inclut des blocs de boucles                                                                                                        |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
