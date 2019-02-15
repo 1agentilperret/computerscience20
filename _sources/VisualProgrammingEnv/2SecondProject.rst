@@ -83,8 +83,6 @@ Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et 
 .. reveal:: eval_eighty_five_project_two
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%
-
-Scratch le Chat se déplace autour de la scène en appuyant sur les touches fléchées.
     +--------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
     | Critère                                                                                                                        | oui  | non (-10%)  | un peu (-5%) |
     +================================================================================================================================+======+=============+==============+
