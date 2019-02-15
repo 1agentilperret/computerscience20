@@ -21,7 +21,7 @@ Si vous préférez regarder cette `vidéo <https://www.youtube.com/watch?v=d97kS
 Qu'est ce que Python?
 ----------------------
 
-Python est un langage de programmation qui vous permet d’apprendre à l’ordinateur à faire ce que vous voulez. Vous avez déjà écrit des programmes Python avec Reeborg. Tout ce que vous avez déjà appris (à l'exception de `repeat`) fonctionne en Python normal. L’utilisation régulière de Python nous permet de commencer à explorer d’autres manières dont nos programmes peuvent produire des sorties et prendre des entrées.
+Python est un langâge de programmation qui vous permet d’apprendre à l’ordinateur à faire ce que vous voulez. Vous avez déjà écrit des programmes Python avec Reeborg. Tout ce que vous avez déjà appris (à l'exception de `repeat`) fonctionne en Python normal. L’utilisation régulière de Python nous permet de commencer à explorer d’autres manières dont nos programmes peuvent produire des sorties et prendre des entrées.
 
 .. index:: Thonny
 
@@ -30,11 +30,11 @@ Exécuter Python sur votre ordinateur
 
 Il existe de nombreuses façons d’installer Python sur votre ordinateur (en fait, une version de Python est peut-être déjà installée sur votre ordinateur). Cependant, l’un des moyens les plus simples de faire fonctionner Python sur votre ordinateur (Windows, Mac ou Linux) consiste à `download Thonny <http://thonny.org/>`_. Allez télécharger Thonny maintenant. L'installation ne nécessite pas de droits d'administrateur. Vous devriez donc pouvoir l'installer dans le laboratoire informatique de votre école (vérifiez bien auprès de votre enseignant qu'il accepte cette tâche en premier!). Vous voudrez peut-être également installer Thonny à la maison.
 
-Pour chacun des segments de code que vous voyez sur cette page, vous pouvez les exécuter directement dans votre navigateur Web **OU** vous pouvez copier/coller le code dans **Thonny** pour l'exécuter.
+Pour chacun des segments de code que vous voyez sur cette pâge, vous pouvez les exécuter directement dans votre navigateur Web **OU** vous pouvez copier/coller le code dans **Thonny** pour l'exécuter.
 
 Lorsque vous utilisez Thonny, vous devez comprendre la différence entre l'éditeur **de texte** et le **shell** (également appelé l'interprèteur/*interpreter*). Si vous souhaitez enregistrer votre code pour l'utiliser ultérieurement, vous devez le saisir dans l'éditeur de texte, ce qui vous invitera à enregistrer votre fichier quelque part sur le disque lorsque vous appuierez sur le bouton Exécuter (*ou sur F5*). La sortie de votre code apparaîtra dans le shell (sous l'éditeur de texte). Vous pouvez également saisir le code Python de votre choix dans le shell, ce qui constitue un moyen pratique d'essayer de nouvelles choses en Python.
 
-.. image:: images/thonny_window.png
+.. imâge:: imâges/thonny_window.png
 
 
 .. index:: whitespace, syntax error
@@ -196,7 +196,7 @@ Symboles    Operations                        Example               Sortie
 .. index:: if
 
 
-``if``/``si``
+``if`` - ``si``
 ----------------
 
 La structure de contrôle ``if`` fonctionne comme elle le faisait avec Reeborg. Exécutez l'exemple donné ci-dessous. Que se passe-t-il si vous le changez à ``nombre = 23``. Et si vous le changez à ``nombre = 10``?
@@ -217,8 +217,8 @@ La structure de contrôle ``if`` fonctionne comme elle le faisait avec Reeborg. 
 
 .. index:: if-elif-else
 
-``if/elif/else``/*si/alors/sinon*
------------------------------------
+``if/elif/else`` - *si/alors/sinon*
+-------------------------------------
 
 La structure de contrôle ``if/elif/else`` fonctionne exactement de la même manière que lors de la programmation de Reeborg. La chose importante à retenir est que **seulement une des branches peut exécuter**. Lisez le code ci-dessous et prédisez ce que vous pensez sera la sortie. Puis changez-le en ``température = 25``. Quelle sera la sortie maintenant? Et si vous le changiez en ``température = 5``? Ensuite ``température = 15``?
 
@@ -237,156 +237,157 @@ La structure de contrôle ``if/elif/else`` fonctionne exactement de la même man
 
 .. index:: while
 
-``while`` loop
---------------
+Boucle ``while`` *loop*
+-----------------------------------
 
-Recall that we used a ``while`` loop in Reeborg when we didn't know the nombre of iterations ahead of time. In other words, the body of while will be repeated as long as the controlling boolean expression evaluates to ``True``. Run the code below. Can you change the code so that it counts **up** from 1 to 10, then says "Here I come!"?
+Rappelez-vous que nous avons utilisé une boucle ``while`` dans Reeborg quand on ne connaît pas le nombre d’itérations à l’avance. En d'autres termes, le *corps* de while sera répété tant que l'expression booléenne de contrôle renvois ``True``. Exécutez le code ci-dessous. Pouvez-vous changer le code pour qu'il **compte** de 1 à 10 au lieu de compter à rebour de 10, puis indique "J'arrive!"?
+
 
 .. activecode:: while_loop_intro
     :nocodelens:
 
-    counter = 10
+    conteur = 10
 
-    while counter > 0:
-        print(counter)
-        counter = counter - 1   #decrease the counter each iteration
+    while conteur > 0:
+        print(conteur)
+        conteur = conteur - 1   #diminue le compteur à chaque itération
 
     print("Blastoff!")
 
 
 .. index:: for
 
-``for`` loop
-------------
+boucle ``for`` *loop*
+-----------------------
 
-When we knew the exact nombre of iterations required in Reeborg, we used the ``repeat`` command. That command was not part of regular Python -- it was added to keep Reeborg coding as simple as possible. Although I won't explain all the details about it yet, I will introduce you to the Python version of a repeat loop. If we want something to repeat 10 times, we could do the following: (after running the code, change the ``10`` to some other nombre and try it again)
+Lorsque nous avons connu le nombre exact d'itérations nécessaires dans Reeborg, nous avons utilisé la commande ``repeat``. Cette commande ne faisait pas partie de la norme Python. Elle a été ajoutée pour que le codâge de Reeborg soit aussi simple que possible. Bien que je n’explique pas encore tous les détails à ce sujet, je vais vous présenter la version Python d’une boucle de répétition ``for``. Si nous voulons que quelque chose se répète 10 fois, nous pourrions faire ce qui suit: (après avoir exécuté le code, changez le ``10`` en un autre nombre et essayez à nouveau)
+
 
 .. activecode:: for_loop_intro_1
     :nocodelens:
 
-    for counter in range(10):
-        print(counter)
+    for conteur in range(10):
+        print(conteur)
 
-Notice that the loop above repeats 10 times, but begins counting at 0, so the last nombre is a 9. We can control the for loop even more by passing two arguments, like this:
+Notez que la boucle ci-dessus se répète 10 fois, mais commence à compter depuis 0. Le dernier nombre est donc un 9. Nous pouvons contrôler la boucle ``for`` encore plus en passant entre deux arguments, comme ceci:
 
 .. activecode:: for_loop_intro_2
     :nocodelens:
 
-    for counter in range(5, 11):
-        print(counter)
+    for conteur in range(5, 11):
+        print(conteur)
 
 
 .. index:: lists
 
-Lists
-------
+Des listes
+------------
 
-How does the range function above work? What it does is create a **list** of nombres, which allows us to save more than one value into the same variable. For example, when we called ``range(5, 11)`` above, Python created a list with the nombres 5, 6, 7, 8, 9, 10. If we had wanted to create that list ourselves, we could have done something like this:
-
-.. code-block:: python
-
-    nombre_list = [5, 6, 7, 8, 9, 10]
-
-We can put any data type inside of the list, so it would also be okay to make a list like:
+Comment fonctionne le **range** ci-dessus? Cela crée une **liste** de nombres, ce qui nous permet d’enregistrer plus d’une valeur dans la même variable. Par exemple, lorsque nous avons appelé ``range(5, 11)`` ci-dessus, Python a créé une liste avec les nombres 5, 6, 7, 8, 9, 10. Si nous avions voulu créer cette liste nous-mêmes, nous aurions pu fait quelque chose comme ça:
 
 .. code-block:: python
 
-    nombre_list = [5, "happy", 2.5, True]
+    liste_de_nombres = [5, 6, 7, 8, 9, 10]
 
-If we create our own list, we can still iterate through it using a for loop. For example, if you were keeping track of which groceries you wanted to buy at the store, you might put all the items you want to buy into a list, then print out each of them.
+Nous pouvons insérer n'importe quel type de données dans une liste, il serait donc possible de créer une liste comme celle-ci:
+
+.. code-block:: python
+
+    liste_de_nombres = [5, "heureux", 2.5, True]
+
+Si nous créons notre propre liste, nous pouvons toujours y parcourir à l'aide d'une boucle ``for``. Par exemple, si vous tenez comptes des achats que vous vouliez chercher au magasin, vous pourriez mettre tous les articles que vous voulez acheter dans une liste, puis les *imprimer*/*print*.
 
 .. activecode:: list_intro_3
     :nocodelens:
 
-    grocery_list = ["apples", "carrots", "milk", "yogurt"]
-    for item in grocery_list:
-        print("Don't forget to buy the", item)
+    liste_epiceries = ["des pommes", "des carottes", "du lait", "du yogourt"]
+    for article in liste_epiceries:
+        print("N'oubliez pas d'acheter", article)
 
-If you want to access just one element inside a list, you can specify the location of the element you want. For example, if we wanted to access the *carrots* from the grocery_list above, we could ask for the 1th element (since we start counting from 0). We enclose the location inside square brackets, so to access the carrots we would call ``grocery_list[1]``.
+Si vous souhaitez accéder à un seul élément dans une liste, vous pouvez spécifier l'emplacement de l'élément souhaité. Par exemple, si nous voulions accéder aux *carottes* de la liste d'épicerie ci-dessus, nous pourrions demander le 1er élément (puisque nous commençons à compter à partir de 0). Nous plaçons l'emplacement entre crochets/*brackets*. Pour accéder aux carottes, nous appellerions ``liste_epiceries[1]``.
 
 .. activecode:: list_intro_4
     :nocodelens:
 
-    grocery_list = ["apples", "carrots", "milk", "yogurt"]
-    print("Don't forget to buy some", grocery_list[1])
+    liste_epiceries = ["des pommes", "des carottes", "du lait", "du yogourt"]
+    print("N'oubliez pas d'acheter", liste_epiceries[1])
 
 
 .. index:: functions
 
-Functions
-----------
+Les fonctions
+--------------
 
-Just like you were able to teach Reeborg to do new things by creating a new function, we can create new functions in Python as well. Here are a couple examples:
+Tout comme vous avez pu apprendre à Reeborg à faire de nouvelles choses en créant une nouvelle fonction, nous pouvons également créer de nouvelles fonctions en Python. Voici quelques exemples:
 
 .. activecode:: functions_overview_intro_1
     :nocodelens:
 
-    def say_hello():
-        print("Hello there!")
+    def dit_bonjour():
+        print("Bonjour!")
 
-    say_hello()
+    dit_bonjour()
 
 
 .. activecode:: functions_overview_intro_2
     :nocodelens:
 
-    def say_hello(some_name):
-        print("Hello there,", some_name)
+    def dit_bonjour(un_nom):
+        print("Bonjour,", un_nom)
 
-    say_hello("Eli")
+    dit_bonjour("Jérémie")
 
 
 .. index:: input
 
-Taking Input from User
--------------------------
+Saisir des données de l'utilisateur/*Taking Input from User*
+---------------------------------------------------------------------
 
-If you want the user to type something, you can use the ``input()`` function. Here are a couple examples:
+Si vous voulez que l'utilisateur tape quelque chose, vous pouvez utiliser la fonction ``input()``. Voici quelques exemples:
 
-.. note:: ``input()`` will always return a string. You will need to convert it to an int or a float if you are expecting a nombre.
+.. note:: ``input()`` retournera toujours une **chaîne**. Vous devrez le convertir en **int** ou **float** si vous voulez un nombre.
 
 
 .. activecode:: input_intro_1
     :nocodelens:
 
-    your_name = input("What is your name?")
-    print(your_name)
+    ton_nom = input("Quel est votre nom?")
+    print(ton_nom)
 
 
 .. activecode:: input_intro_2
     :nocodelens:
 
-    def say_hello(some_name):
-        print("Hello there, ", some_name)
+    def dit_bonjour(un_nom):
+        print("Bonjour, ", un_nom)
 
-    your_name = input("What is your name?")
-    say_hello(your_name)
+    ton_nom = input("Quel est votre nom?")
+    dit_bonjour(ton_nom)
 
-
-The following example is not going to work when you try to run it. Try entering in ``16``, then ``15``. Notice that nothing is printed either time, even though it looks like the conditional should be causing it to print. Can you figure out what is wrong and fix it? *Hint: think about data types!*
+L'exemple suivant ne fonctionnera pas lorsque vous essayez de l'exécuter. Essayez d'entrer ``16``, puis ``15``. Notez que rien n’est imprimé, même s’il semble que le conditionnel devrait l’imprimer. Pouvez-vous comprendre ce qui ne va pas et le réparer? **Astuce: pensez aux types de données!**
 
 .. activecode:: input_intro_3
     :nocodelens:
-    :caption: Can you figure out what is wrong?
+    :caption: Pouvez-vous comprendre ce qui ne va pas?
 
-    age = input("How old are you?")
+    âge = input("Quel âge avez-vous?")
 
-    if age == 16:
-        print("You can get your driver's license!")
-    elif age == 15:
-        print("You can get your learner driver's license.")
+    if âge == 16:
+        print("Vous pouvez obtenir votre permis de conduire!")
+    elif âge == 15:
+        print("Vous pouvez obtenir votre permis de conduire d'apprenti.")
 
 
 .. index:: import
 
-Python Modules
+Modules Python
 ---------------
 
-One of the great things about Python is that there are a lot of modules that extend the basic functionality of Python. A module is simply a file (or folder) containing Python functions and variables. You have created your own module when you were exploring Reeborg. When you typed ``from library import *```, you made all of the functions in the library tab available to your program. Please note that although we could use the ``from library import *`` syntax, it can cause problems if you accidentally create a function that has the same name as something you have imported. See the second example below for the recommended way to import.
+Un des avantages de Python est qu’il existe de nombreux modules qui augmanter les fonctionnalités de base de Python. Un module est simplement un fichier (ou dossier) contenant des fonctions et des variables Python. Vous avez créé votre propre module lorsque vous exploriez Reeborg. Lorsque vous avez tapé ``from library import *``, vous avez mis toutes les fonctions de l'onglet Library à la disposition de votre programme. Veuillez noter que bien que nous puissions utiliser la syntaxe ``from library import *``, cela peut poser problème si vous créez accidentellement une fonction portant le même nom que quelque chose que vous avez importé. Voir le deuxième exemple ci-dessous pour la méthode d'importation recommandée.
 
 .. activecode:: module_intro_1
     :nocodelens:
-    :caption: This works, but is not recommended.
+    :caption: Cela fonctionne, mais n'est pas recommandé.
 
     from math import *
 
@@ -395,7 +396,7 @@ One of the great things about Python is that there are a lot of modules that ext
 
 .. activecode:: module_intro_2
     :nocodelens:
-    :caption: This is the better way to import a module.
+    :caption: C’est le meilleur moyen d’importer un module.
 
     import math
 
@@ -410,47 +411,48 @@ One of the great things about Python is that there are a lot of modules that ext
     print( random.randrange(1, 10) )
 
 
-nombre Guessing Game
---------------------
+Jeu de devinettes de nombre
+-----------------------------
 
-Remember the nombre guessing game we created in Scratch? The basic premise was as follows:
+Rappelez-vous le jeu de devinettes que nous avons créé dans Scratch? Le principe de base était le suivant:
 
-- generates a random nombre from 1 to 100 and stores it in a variable
-- repeats the following until the user guesses the nombre
-- gets the user to guess the nombre (using the **ask** block)
-- tells the user if the nombre is too high or too low
-- congratulates the user when they guess the correct nombre with a message such as "Way to go! You guessed the right nombre in 9 tries!"
+- génère un nombre aléatoire de 1 à 100 et le garder dans une variable
+- répète ce qui suit jusqu'à ce que l'utilisateur devine le nombre
+- oblige l'utilisateur à deviner le nombre (en utilisant le bloc **demander__et attendre**)
+- indique à l'utilisateur si le nombre est trop élevé ou trop bas
+- félicite l’utilisateur quand il trouve le nombre exact avec un message du type "Bravo! Vous avez deviné le nombre exact en 9 essais!"
 
-We are going to try to implement this game in Python. **Please note: you will likely run into many problems trying to create this game in Python.** However, it can be really helpful to try problems that feel like they are above your skill level. Soon, you will be able to create programs like this on your own! Your teacher might choose to give you some time to try this on your own, then demonstrate a possible solution to the problem, or perhaps come back to this game in a couple of weeks.
+Nous allons essayer d'implémenter ce jeu en Python. **Remarque: vous rencontrerez probablement de nombreux problèmes lors de la création de ce jeu en Python.** Toutefois, il peut être très utile d’essayer des problèmes qui donnent l’impression d’être supérieurs à votre niveau. Bientôt, vous pourrez créer vous-même des programmes comme celui-ci! Votre enseignant peut choisir de vous donner un peu de temps pour essayer cela par vous-même, puis de démontrer une solution possible au problème, ou peut-être de revenir à ce jeu dans quelques semaines.
 
 
 .. activecode:: nombre_guessing_game_attempératuret
-    :caption: Create a nombre guessing game here!
+    :caption: Créez un jeu de devinettes ici!
 
-    # the algorithm for the game can be described as follows
-    # your job is to try to convert the comments into real Python code!
+    
+    # l'algorithme du jeu peut être décrit comme suit
+    # votre travail consiste à essayer de convertir les commentaires en vrai code Python!
 
-    # have the computer pick a random nombre between 1 to 100
-
-
-    # create a variable to keep track of the nombre of guesses taken
+    # demande à l’ordinateur de choisir un nombre aléatoire compris entre 1 et 100
 
 
-    # set a variable with an initial value for the users guess, like this:
-    user_guess = -1
-
-    # repeat the following until the user guesses correctly
-
-        # ask the user for their guess
+    # crée une variable pour suivre le nombre de suppositions prises
 
 
-        # update the nombre of guesses variable
+    # définit une variable avec une valeur initiale pour les utilisateurs, comme ceci:
+    devinette_utilisateur = -1
+
+    # répéter ce qui suit jusqu'à ce que l'utilisateur devine correctement
+
+        # demander à l'utilisateur de deviner
 
 
-        # if they guess high, tell them
+        # met à jour la variable devinette_utilisateur
 
 
-        # if they guess low, tell them
+        # si ils devinent haut, dites-leur
 
 
-    # congratulate the user, telling them how many guesses it took
+        # si ils devinent bas, dites-leur
+
+
+    # félicite l'utilisateur en lui disant combien de chance il lui a fallu pour deviner
