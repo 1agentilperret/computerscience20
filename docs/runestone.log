@@ -325,3 +325,44 @@ Aborted!
 127.0.0.1 - - [14/Feb/2019 15:00:01] "GET /_static/documentation_options.js HTTP/1.1" 200 -
 
 Aborted!
+127.0.0.1 - - [14/Feb/2019 15:34:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:51] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:52] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:52] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:52] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:59] "GET /ConstrainedLanguage/PracticeQuiz.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:34:59] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_images/practice_quiz_start.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_images/quiz_if_else_start.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:35:00] "GET /_images/practice_quiz_alcove_start.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:10] "GET /Python/Overview/QuickOverview.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:10] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:10] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:11] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:11] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:11] "GET /_images/thonny_window.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /Python/Overview/VariablesAndDataTypes.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /_images/thonny_shell.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /_images/thonny_editor.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /_images/refdiagram1.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /_static/images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.1" 200 -
+127.0.0.1 - - [14/Feb/2019 15:36:12] "GET /_static/images/ui-bg_glass_75_e6e6e6_1x400.png HTTP/1.1" 200 -
+
+Aborted!
+127.0.0.1 - - [15/Feb/2019 12:45:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:33] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:33] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:33] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:33] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:34] code 404, message File not found
+127.0.0.1 - - [15/Feb/2019 12:45:34] "GET /runestone/static/favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [15/Feb/2019 12:45:37] "GET /VisualProgrammingEnv/1FirstProject.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:37] "GET /_static/basic.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:37] "GET /_static/pygments.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:37] "GET /_static/bootstrap-sphinx.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Feb/2019 12:45:37] "GET /_static/documentation_options.js HTTP/1.1" 200 -
+
+Aborted!
