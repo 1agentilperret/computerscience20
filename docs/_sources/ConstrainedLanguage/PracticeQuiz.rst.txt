@@ -3,8 +3,8 @@
    :start: 1
 
 
-Deuxième test de pratique
-================================
+Deuxième test de pratique - ``while repeat if if/else`` et image de réflextion
+===========================================================================================
 
 .. reveal:: curriculum_addressed_practice_quiz_reeborg
     :showtitle: Résultats du programme d'études traités dans cette section. 
