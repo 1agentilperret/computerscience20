@@ -63,7 +63,7 @@ Il y a 8 salutations différentes énumérées ci-dessus. Afin de choisir entre 
 
 Si nous voulions que notre sprite dise une salutation aléatoire dans plusieurs situations? Peut-être souhaitons-nous toujours que le sprite prononce un message d'accueil lorsque l'utilisateur clique sur le drapeau, mais nous souhaitons également qu'il le dise lorsque l'utilisateur clique dessus le sprite, lorsque la touche d'espacement est enfoncée ou lorsque le niveau de bruit de la salle avec notre ordinateur devient particulièrement bruyant. Jusqu'à présent, nous devions dupliquer le code que nous venons de créer et le joindre à plusieurs événements. Un meilleur moyen consiste à créer un nouveau bloc, appelé «Dire bonjour dans une langue aléatoire». Pour ce faire, sélectionnez l'onglet *Mes blocs*, puis cliquez sur **Créer un bloc**. Dans le bloc vide qui apparaît maintenant, tapez le nom que vous souhaitez donner à votre nouveau bloc:
 
-.. image:: images/scratch_define_new_block_fr.gif
+.. image:: images/scratch_define_new_block.gif
 
 Vous verrez maintenant apparaître un nouveau bloc de style d’événement dans votre zone de script, appelé «définir dit bonjour dans un langage aléatoire». Vous devez faire glisser le code précédemment associé au bloc «Quand le drapeau est cliqué» et le joindre à ce nouveau bloc de définition.
 
