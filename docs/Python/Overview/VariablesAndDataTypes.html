@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>2. Variables, Data Types, and User Input &#8212; Computer Science 20 Saskatchewan</title>
+    <title>2. Variables, types de données et entrée par utilisateur &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,18 +203,18 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">2. Variables, Data Types, and User Input</a><ul>
-<li><a class="reference internal" href="#what-does-this-program-do">2.1. What Does This Program Do?</a></li>
-<li><a class="reference internal" href="#using-thonny">2.2. Using Thonny</a></li>
-<li><a class="reference internal" href="#comments">2.3. Comments</a></li>
+<li><a class="reference internal" href="#">2. Variables, types de données et entrée par utilisateur</a><ul>
+<li><a class="reference internal" href="#que-fait-ce-programme">2.1. Que fait ce programme?</a></li>
+<li><a class="reference internal" href="#comment-utiliser-thonny">2.2. Comment utiliser Thonny</a></li>
+<li><a class="reference internal" href="#commentaires">2.3. Commentaires</a></li>
 <li><a class="reference internal" href="#variables">2.4. Variables</a></li>
-<li><a class="reference internal" href="#variable-names-and-keywords">2.5. Variable Names and Keywords</a></li>
-<li><a class="reference internal" href="#user-input">2.6. User Input</a></li>
-<li><a class="reference internal" href="#practice-problems">2.7. Practice Problems</a><ul>
-<li><a class="reference internal" href="#area-of-a-circle">2.7.1. Area of a Circle</a></li>
-<li><a class="reference internal" href="#area-of-a-rectangle">2.7.2. Area of a Rectangle</a></li>
-<li><a class="reference internal" href="#car-gas-usage">2.7.3. Car Gas Usage</a></li>
-<li><a class="reference internal" href="#if-you-finish-early">2.7.4. If You Finish Early</a></li>
+<li><a class="reference internal" href="#noms-de-variables-et-mots-cles">2.5. Noms de variables et mots-clés</a></li>
+<li><a class="reference internal" href="#entree-de-l-utilisateur">2.6. Entrée de l’utilisateur</a></li>
+<li><a class="reference internal" href="#problemes-de-pratique">2.7. Problèmes de pratique</a><ul>
+<li><a class="reference internal" href="#aire-de-surface-d-un-cercle">2.7.1. Aire de surface d’un cercle</a></li>
+<li><a class="reference internal" href="#aire-d-un-rectangle">2.7.2. aire d’un rectangle</a></li>
+<li><a class="reference internal" href="#consommation-de-gaz-de-voiture">2.7.3. Consommation de gaz de voiture</a></li>
+<li><a class="reference internal" href="#si-vous-finissez-tot">2.7.4. Si vous finissez tôt</a></li>
 </ul>
 </li>
 </ul>
@@ -263,11 +263,11 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="variables-data-types-and-user-input">
-<h1>2. Variables, Data Types, and User Input<a class="headerlink" href="#variables-data-types-and-user-input" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="variables-types-de-donnees-et-entree-par-utilisateur">
+<h1>2. Variables, types de données et entrée par utilisateur<a class="headerlink" href="#variables-types-de-donnees-et-entree-par-utilisateur" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Give more details about variables. Reinforce the idea of data types. Practice some Python problems with simple input/output.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Donnez plus de détails sur les <strong>variables</strong>. Renforcer l’idée de <strong>types de données</strong>. Pratiquez certains problèmes de Python avec des <strong>entrées/sorties</strong> simples.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_python_variables"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -277,9 +277,9 @@
 </ul>
 
     </div>
-    <div class="section" id="what-does-this-program-do">
-<h2>2.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
-<p>Remember the we learned four primitive data types in our overview of Python. They are:</p>
+    <div class="section" id="que-fait-ce-programme">
+<h2>2.1. Que fait ce programme?<a class="headerlink" href="#que-fait-ce-programme" title="Permalink to this headline">¶</a></h2>
+<p>N’oubliez pas que nous avons appris quatre types de données de base dans notre vue d’ensemble de Python. Elles sont:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">int</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">float</span></code></li>
@@ -288,16 +288,16 @@
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
+<p class="last">Votre enseignant peut choisir d’utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun va faire avant d’exécuter le code.</p>
 </div>
-<p>For the following examples, consider the data type of each variable. What will the program output? Why?</p>
+<p>Pour les exemples suivants, considérons le type de données de chaque variable. Quelle sera la sortie du programme? Pourquoi?</p>
 
 <div data-childcomponent="wdtpd_variable_assignment_1" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_variable_assignment_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 x = 4
 y = 3 + x
 print(x + y)
@@ -309,10 +309,10 @@ print(x + y)
 <textarea data-component="activecode" id=wdtpd_variable_assignment_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 x = 4
 y = 3
-z = "five"
+z = "cinq"
 x = 2
 print(x + y)
 </textarea>
@@ -323,66 +323,48 @@ print(x + y)
 <textarea data-component="activecode" id=wdtpd_variable_assignment_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 x = 4
 y = 3
-z = "five"
+z = "cinq"
 print(y + z)
 </textarea>
 </div>
 </div>
-<div class="section" id="using-thonny">
-<h2>2.2. Using Thonny<a class="headerlink" href="#using-thonny" title="Permalink to this headline">¶</a></h2>
-<p>There are two ways to use Thonny: <em>shell mode</em> and <em>program
-mode</em>. In shell mode, you type Python expressions into the <strong>Python shell</strong>,
-and the interpreter immediately shows the result.  The example below shows the Python shell at work.</p>
+<div class="section" id="comment-utiliser-thonny">
+<h2>2.2. Comment utiliser Thonny<a class="headerlink" href="#comment-utiliser-thonny" title="Permalink to this headline">¶</a></h2>
+<p>Thonny peut être utilisé de deux manières: en <em>mode shell</em> et en <em>mode programme</em>. En mode shell, vous tapez des expressions Python dans le <strong>shell de Python</strong>, et l’interprèteur montre immédiatement le résultat. L’exemple ci-dessous montre le shell de Python en utilisation.</p>
 <img alt="../../_images/thonny_shell.png" src="../../_images/thonny_shell.png" />
-<p>The <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> is called the <strong>Python prompt</strong>. The interpreter uses the prompt to
-indicate that it is ready for instructions. We typed <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">3</span></code>, then pressed Enter.  The
-interpreter evaluated our expression and replied <code class="docutils literal notranslate"><span class="pre">5</span></code>. On the next line
-it gave a new prompt indicating that it is ready for more input.</p>
-<p>Working directly in the interpreter is convenient for testing short bits of
-code because you get immediate feedback. Think of it as scratch paper used to
-help you work out problems.</p>
-<p>Alternatively, you can write an entire program by placing lines of Python instructions
-in a file and then use the interpreter to
-execute the contents of the file as a whole. Such a file is often referred to as <strong>source code</strong>.  For
-example, we used Thonny to create a source code file named <code class="docutils literal notranslate"><span class="pre">firstprogram.py</span></code> with
-the following contents:</p>
+<p>Le <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> est appelé <strong>Python prompt</strong> qui est l’interprète qui indique à l’utilisateur qu’il est prêt à recevoir des instructions. Nous avons tapé <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">+</span> <span class="pre">3</span></code>, puis appuyé sur <strong>Entrée</strong>. L’interprète a évalué notre expression et a répondu <code class="docutils literal notranslate"><span class="pre">5</span></code>. À la ligne suivante il a donné une nouvelle invitation indiquant qu’il est prêt à recevoir plus d’<em>entrées</em>.</p>
+<p>Travailler directement dans l’interprète est pratique pour tester de courts morceaux de code parce que vous obtenez une rétroaction immédiate. Voyez-le comme un papier brouillon qui vous aide à résoudre vos problèmes.</p>
+<p>Alternativement, vous pouvez écrire un programme entier en plaçant des lignes d’instructions Python dans un fichier, ensuite utiliser l’interprète pour exécuter le contenu du fichier dans son ensemble. Un tel fichier est souvent appelé <strong>code source</strong>. Par exemple, nous avons utilisé Thonny pour créer un fichier de code source nommé <code class="docutils literal notranslate"><span class="pre">firstprogram.py</span></code> avec le contenu suivant:</p>
 <img alt="../../_images/thonny_editor.png" src="../../_images/thonny_editor.png" />
-<p>By convention, files that contain Python programs have names that end with
-<code class="docutils literal notranslate"><span class="pre">.py</span></code> .  Thonny will save your files with a .py extension automatically, and you should be able to open them in Thonny by double clicking them in File Explorer (or Finder).</p>
+<p>Par convention, les fichiers contenant des programmes Python ont un nom qui se termine par <code class="docutils literal notranslate"><span class="pre">.py</span></code>. Thonny enregistre automatiquement vos fichiers avec une extension .py. Vous devriez pouvoir les ouvrir dans Thonny en double-cliquant dessus dans l’explorateur de fichiers (ou dans Finder pour mac).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Notice that when we were using the <strong>shell</strong>, we didn’t have to worry about using <code class="docutils literal notranslate"><span class="pre">print()</span></code> to see the value of a statement. The shell does that automatically. However, if we are using the <strong>code editor</strong>, we need to call <strong>print()</strong> any time we want to see output.</p>
+<p class="last">Notez que lorsque nous utilisions le <strong>shell</strong>, nous n’avions pas à nous soucier d’utiliser <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">()</span></code> pour voir la valeur d’une instruction. Le shell le fait automatiquement. Cependant, si nous utilisons <strong>l’éditeur de code</strong>, nous devons appeler <strong>print ()</strong> à chaque fois que nous voulons afficher le résultat.</p>
 </div>
-<p><strong>Check your understanding</strong></p>
+<p><strong>Vérifie ta compréhension</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="source_code_check">
-            python-variables1: Source code is another name for:
-            <li data-component="answer" data-correct id="source_code_check_opt_a">the instructions in a program, stored in a file.</li><li data-component="feedback" id="source_code_check_opt_a">The file that contains the instructions written in the high level language is called the source code file.</li>
+            python-variables1: Le code source est un autre nom pour:
+            <li data-component="answer" data-correct id="source_code_check_opt_a">les instructions d'un programme, enregistré dans un fichier.</li><li data-component="feedback" id="source_code_check_opt_a">Le fichier contenant les instructions écrites dans le langage évolué s'appelle le fichier de code source.</li>
             
-            <li data-component="answer"  id="source_code_check_opt_b">the language that you are programming in (e.g., Python).</li><li data-component="feedback" id="source_code_check_opt_b">This language is simply called the programming language, or simply the language.</li>
+            <li data-component="answer"  id="source_code_check_opt_b">le langage que vous utilisez pour programmer (ie: Python).</li><li data-component="feedback" id="source_code_check_opt_b">Ce langage s'appelle le langage de programmation ou simplement le langage.</li>
             
-            <li data-component="answer"  id="source_code_check_opt_c">the environment/tool in which you are programming.</li><li data-component="feedback" id="source_code_check_opt_c">The environment may be called the IDE, or integrated development environment, though not always.</li>
+            <li data-component="answer"  id="source_code_check_opt_c">l'environnement/l'outil dans lequel vous programmez.</li><li data-component="feedback" id="source_code_check_opt_c">L'environnement peut être appelé IDE ou environnement de développement intégré, mais pas toujours.</li>
             
-            <li data-component="answer"  id="source_code_check_opt_d">the number (or "code") that you must input at the top of each program to tell the computer how to execute your program.</li><li data-component="feedback" id="source_code_check_opt_d">There is no such number that you must type in at the start of your program.</li>
+            <li data-component="answer"  id="source_code_check_opt_d">le numéro (ou "code") que vous devez entrer en haut de chaque programme pour indiquer à l'ordinateur comment exécuter votre programme</li><li data-component="feedback" id="source_code_check_opt_d">Il n’existe pas un numéro de ce type que vous devez taper au début de votre programme.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="comments">
-<span id="index-0"></span><h2>2.3. Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
-<p>As programs get bigger and more complicated, they get more difficult to read.
-Formal languages (e.g. programming languages) are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
-For this reason, it is a good idea to add notes to your programs to explain in
-natural language what the program is doing.  These notes are called comments.</p>
-<p>A <strong>comment</strong> in a computer program is text that is intended only for the human
-reader - it is completely ignored by the interpreter.
-In Python, the <code class="docutils literal notranslate"><span class="pre">#</span></code> token starts a comment.  The rest of the line is ignored.
-<strong>Every program you write should start with a comment header</strong>, which could look something like this:</p>
+<div class="section" id="commentaires">
+<span id="index-0"></span><h2>2.3. Commentaires<a class="headerlink" href="#commentaires" title="Permalink to this headline">¶</a></h2>
+<p>À mesure que les programmes deviennent plus grands et plus compliqués, ils deviennent plus difficiles à lire. Les langages formels (ie: les langages de programmation) sont denses et il est souvent difficile de regarder un morceau de code et de comprendre ce qu’il fait ou pourquoi. Pour cette raison, il est judicieux d’ajouter des notes à vos programmes pour expliquer en langage naturel ce qu’il fait. Ces notes s’appellent des commentaires.</p>
+<p>Un <strong>commentaire</strong> dans un programme informatique est un texte destiné uniquement au lecteur humain. Il est complètement ignoré par l’interprète. En Python, le jeton <code class="docutils literal notranslate"><span class="pre">#</span></code> commence un commentaire. Le reste de la ligne est ignoré. <strong>Chaque programme que vous écrivez devrait commencer par un en-tête de commentaire</strong>, qui pourrait ressembler à ceci:</p>
 
 <div data-childcomponent="comment_header_example" class="runestone explainer ac_section alert alert-warning">
 
@@ -391,33 +373,31 @@ In Python, the <code class="docutils literal notranslate"><span class="pre">#</s
     data-audio=''    
           >
 #---------------------------------------------------
-# First Python Program
-# Dan Schellenberg
-# Oct 16, 2017
+# Premier programme Python
+# Arman Gentil-Perret
+# le 20 jan, 2019
 #---------------------------------------------------
 
-print("Hello, World!")
+print("Bonjour tout le monde!")
 </textarea>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Create a folder (call it Computer Science 20) on your computer to hold all of the code you will write in Python this semester. Save the file you created above as <code class="docutils literal notranslate"><span class="pre">template.py</span></code>, and save it in that folder.</p>
+<p class="last">Créez un dossier (appelez-le Informatique 20) sur votre ordinateur pour contenir tout le code que vous écrirez en Python ce semestre. Enregistrez le fichier que vous avez créé ci-dessus en tant que <code class="docutils literal notranslate"><span class="pre">template.py</span></code> et enregistrez-le dans ce dossier.</p>
 </div>
-<p>Notice that when you run this program, it only prints the phrase Hello, World!  None of the comments appear. You’ll also notice that we’ve left a blank line in the program.  Blank lines
-are also ignored by the interpreter, but comments and blank lines can make your
-programs much easier for humans to parse.  Use them liberally!</p>
-<p><strong>Check your understanding</strong></p>
+<p>Notez que lorsque vous exécutez ce programme, il n’affiche que la phrase Bonjour tout le monde! Aucun des commentaires n’apparaissent. Vous remarquerez également que nous avons laissé une ligne vide dans le programme. Les lignes vides sont également ignorées par l’interprète, mais les commentaires et les lignes vides peuvent rendre vos programmes beaucoup plus faciles à analyser. Utilisez-les généreusement!</p>
+<p><strong>Vérifie ta compréhension</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="comment_check">
-            python-variables2: What are comments for?
-            <li data-component="answer"  id="comment_check_opt_a">To tell the computer what you mean in your program.</li><li data-component="feedback" id="comment_check_opt_a">Comments are ignored by the computer.</li>
+            python-variables2: A quoi servent les commentaires?
+            <li data-component="answer"  id="comment_check_opt_a">Pour dire à l’ordinateur ce que vous voulez dire dans votre programme.</li><li data-component="feedback" id="comment_check_opt_a">Les commentaires sont ignorés par l'ordinateur.</li>
             
-            <li data-component="answer" data-correct id="comment_check_opt_b">For the people who are reading your code to know, in natural language, what the program is doing.</li><li data-component="feedback" id="comment_check_opt_b">The computer ignores comments.  It's for the humans that will "consume" your program.</li>
+            <li data-component="answer" data-correct id="comment_check_opt_b">Pour que les personnes qui lisent votre code sachent, en langage naturel, ce que fait le programme.</li><li data-component="feedback" id="comment_check_opt_b">L'ordinateur ignore les commentaires. C'est pour les humains qui "utiliser" votre programme.</li>
             
-            <li data-component="answer"  id="comment_check_opt_c">Nothing, they are extraneous information that is not needed.</li><li data-component="feedback" id="comment_check_opt_c">Comments can provide much needed information for anyone reading the program.</li>
+            <li data-component="answer"  id="comment_check_opt_c">Rien, ce sont des informations superflues qui ne sont pas nécessaires.</li><li data-component="feedback" id="comment_check_opt_c">Les commentaires peuvent fournir des informations indispensables à la personne qui lit le programme.</li>
             
-            <li data-component="answer"  id="comment_check_opt_d">Nothing in a short program.  They are only needed for really large programs.</li><li data-component="feedback" id="comment_check_opt_d">Even small programs benefit from comments.</li>
+            <li data-component="answer"  id="comment_check_opt_d">Rien dans un programme court. Ils ne sont nécessaires que pour les très gros programmes.</li><li data-component="feedback" id="comment_check_opt_d">Même les petits programmes bénéficient de commentaires.</li>
             
 
             </ul>
@@ -425,39 +405,25 @@ programs much easier for humans to parse.  Use them liberally!</p>
             </div>
 <div class="section" id="variables">
 <span id="index-1"></span><h2>2.4. Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
-<p>One of the most powerful features of a programming language is the ability to
-manipulate <strong>variables</strong>. A variable is a name that refers to a value.</p>
-<p><strong>Assignment statements</strong> create new variables and also give them values to refer to.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;What&#39;s up, Doc?&quot;</span>
+<p>L’une des fonctionnalités les plus puissantes d’un langage de programmation est la possibilité de manipuler des <strong>variables</strong>. Une variable est un nom qui fait référence à une valeur.</p>
+<p><strong>Les instructions d’affectation</strong>/<strong>Assignment statements</strong> créent de nouvelles variables et leur donnent également des valeurs auxquelles se référer.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Quoi de neuf, Doc?&quot;</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">17</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
 </pre></div>
 </div>
-<p>This example makes three assignments. The first assigns the string value
-<code class="docutils literal notranslate"><span class="pre">&quot;What's</span> <span class="pre">up,</span> <span class="pre">Doc?&quot;</span></code> to a new variable named <code class="docutils literal notranslate"><span class="pre">message</span></code>. The second gives the
-integer <code class="docutils literal notranslate"><span class="pre">17</span></code> to <code class="docutils literal notranslate"><span class="pre">n</span></code>, and the third assigns the floating-point number
-<code class="docutils literal notranslate"><span class="pre">3.14159</span></code> to a variable called <code class="docutils literal notranslate"><span class="pre">pi</span></code>.</p>
-<p>The <strong>assignment token</strong>, <code class="docutils literal notranslate"><span class="pre">=</span></code>, should not be confused with <em>equality</em> (we will see later that equality uses the
-<code class="docutils literal notranslate"><span class="pre">==</span></code> token).  The assignment statement links a <em>name</em>, on the left hand
-side of the operator, with a <em>value</em>, on the right hand side.  This is why you
-will get an error if you enter:</p>
+<p>Cet exemple fait trois affectations. La première attribue la valeur d’une <strong>chaîne</strong> <code class="docutils literal notranslate"><span class="pre">&quot;Quoi</span> <span class="pre">de</span> <span class="pre">neuf,</span> <span class="pre">Doc?&quot;</span></code> À une nouvelle variable nommée `` message``. La seconde donne l’<strong>entier</strong> <code class="docutils literal notranslate"><span class="pre">17</span></code> à <code class="docutils literal notranslate"><span class="pre">n</span></code> et la troisième assigne le nombre à <strong>virgule flottante</strong> <code class="docutils literal notranslate"><span class="pre">3.14159</span></code> à une variable appelée <code class="docutils literal notranslate"><span class="pre">pi</span></code>.</p>
+<p>Le jeton <strong>d’affectation</strong>, <code class="docutils literal notranslate"><span class="pre">=</span></code>, ne doit pas être confondu avec <em>égalité</em> (nous verrons plus tard que l’égalité utilise le jeton <code class="docutils literal notranslate"><span class="pre">==</span></code>). La déclaration d’affectation lie un <em>nom</em>, à la gauche de <code class="docutils literal notranslate"><span class="pre">=</span></code> avec une <em>valeur</em>. C’est pourquoi vous obtiendrez une erreur si vous entrez:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">17</span> <span class="o">=</span> <span class="n">n</span>
 </pre></div>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">When reading or writing code, say to yourself “n is assigned 17” or “n gets
-the value 17” or “n is a reference to the object 17” or “n refers to the object 17”.  Don’t say “n equals 17”.</p>
+<p class="last">Lorsque vous lisez ou écrivez du code, dites-vous que “n est affecté à 17” ou “n obtient la valeur 17” ou “n est une référence à l’objet 17” ou “n correspond à l’objet 17”. Ne dites pas “n est égal à 17”.</p>
 </div>
-<p>A common way to represent variables on paper is to write the name with an arrow
-pointing to the variable’s value. This kind of figure, known as a <strong>reference diagram</strong>, is often called a <strong>state
-snapshot</strong> because it shows what state each of the variables is in at a
-particular instant in time.  (Think of it as the variable’s state of mind).
-This diagram shows the result of executing the assignment statements shown above.</p>
+<p>Une manière courante de représenter des variables sur du papier consiste à écrire le nom avec une flèche pointant vers la valeur de la variable. Ce type de figure, appelé <strong>diagramme de référence</strong>, est souvent appelé un <strong>instantané d’état</strong>/<strong>state snapshot</strong> car il indique l’état dans lequel se trouve chacune des variables à un instant donné. (Pensez-y comme à l’état d’esprit de la variable). Ce diagramme montre le résultat de l’exécution des instructions d’affectation présentées ci-dessus.</p>
 <img alt="Reference Diagram" src="../../_images/refdiagram1.png" />
-<p>If you ask Python to evaluate a variable, it will produce the value
-that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
-by the variable.</p>
+<p>Si vous demandez à Python d’évaluer une variable, cela produira la valeur qui est actuellement liée à la variable. En d’autres termes, l’évaluation d’une variable vous donnera la valeur à laquelle cette variable se réfère.</p>
 
 <div data-childcomponent="variables_example_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -465,7 +431,7 @@ by the variable.</p>
       data-timelimit=25000  data-codelens="true"  
     data-audio=''    
           >
-message = "What's up, Doc?"
+message = "Quoi de neuf, Doc?"
 n = 17
 pi = 3.14159
 
@@ -474,8 +440,8 @@ print(n)
 print(pi)
 </textarea>
 </div>
-<p>In each case the result is the value of the variable.</p>
-<p>Variables also have types; again, we can ask the interpreter what they are.</p>
+<p>Dans chaque cas, le résultat est la valeur de la variable.</p>
+<p>Les variables ont aussi des types; encore une fois, nous pouvons demander à l’interprète ce qu’ils sont.</p>
 
 <div data-childcomponent="variables_example_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -483,7 +449,7 @@ print(pi)
       data-timelimit=25000  data-codelens="true"  
     data-audio=''    
           >
-message = "What's up, Doc?"
+message = "Quoi de neuf, Doc?"
 n = 17
 pi = 3.14159
 
@@ -492,20 +458,13 @@ print(type(n))
 print(type(pi))
 </textarea>
 </div>
-<p>The type of a variable is the type of the object it currently refers to.</p>
-<p>We use variables in a program to “remember” things, like the current score at
-the basketball game.  But variables are <em>variable</em>. This means they can change
-over time, just like the scoreboard at a basketball game.  You can assign a value
-to a variable, and later assign a different value to the same variable.</p>
+<p>Le type d’une variable est le type de l’objet auquel elle fait présentement référence.</p>
+<p>Nous utilisons des variables dans un programme pour “mémoriser” des choses, comme le pointage actuel au match de basket. Mais les variables sont <em>variable</em>. Cela signifie qu’ils peuvent changer avec le temps, tout comme le tableau d’affichage d’un match de basket. Vous pouvez affecter une valeur à une variable, puis affecter une valeur différente à la même variable.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This is different from math. In math, if you give <code class="docutils literal notranslate"><span class="pre">x</span></code> the value 3, it
-cannot change to refer to a different value half-way through your
-calculations!</p>
+<p class="last">Ceci est différent des mathématiques. En maths, si vous donnez <code class="docutils literal notranslate"><span class="pre">x</span></code> la valeur 3, il ne peut pas changer pour faire référence à une valeur différente en plein milieu de vos calculs!</p>
 </div>
-<p>To see this, read and then run the following program.
-You’ll notice we change the value of <code class="docutils literal notranslate"><span class="pre">day</span></code> three times, and on the third
-assignment we even give it a value that is of a different type.</p>
+<p>Pour voir cela, lisez et ensuite exécutez le programme suivant. Vous remarquerez que nous modifions la valeur de <code class="docutils literal notranslate"><span class="pre">journée</span></code> trois fois, et lors de la troisième affectation, nous lui attribuons une valeur d’un type différent.</p>
 
 <div class="runestone" style="max-width: none;">
 <div class="alert alert-warning cd_section">
@@ -513,7 +472,7 @@ assignment we even give it a value that is of a different type.</p>
 <p class="cl_caption"><span class="cl_caption_text"> (variables_example_3)</span> </p>
 </div>
 <script type="text/javascript">
-var variables_example_3_trace = {"code": "day = \"Thursday\"\nprint(day)\nday = \"Friday\"\nprint(day)\nday = 21\nprint(day)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"day": "Thursday"}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"day": "Thursday"}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": "Thursday\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"day": "Friday"}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": "Thursday\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"day": "Friday"}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": "Thursday\nFriday\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"day": 21}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": "Thursday\nFriday\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"day": 21}, "ordered_globals": ["day"], "stack_to_render": [], "heap": {}, "stdout": "Thursday\nFriday\n21\n"}]};
+var variables_example_3_trace = {"code": "journ\u00e9e = \"Jeudi\"\nprint(journ\u00e9e)\njourn\u00e9e = \"Vendredi\"\nprint(journ\u00e9e)\njourn\u00e9e = 21\nprint(journ\u00e9e)", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"journ\u00e9e": "Jeudi"}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"journ\u00e9e": "Jeudi"}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": "Jeudi\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"journ\u00e9e": "Vendredi"}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": "Jeudi\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"journ\u00e9e": "Vendredi"}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": "Jeudi\nVendredi\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"journ\u00e9e": 21}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": "Jeudi\nVendredi\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"journ\u00e9e": 21}, "ordered_globals": ["journ\u00e9e"], "stack_to_render": [], "heap": {}, "stdout": "Jeudi\nVendredi\n21\n"}]};
 var variables_example_3_vis;
 
 $(document).ready(function() {
@@ -553,63 +512,52 @@ $(window).resize(function() {
 });
 </script>
 </div>
-<p><strong>Check your understanding</strong></p>
+<p><strong>Vérifie ta compréhension</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="variables_check_1">
-            <p>python-variables3: What is printed when the following statements execute?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">day</span> <span class="o">=</span> <span class="s2">&quot;Thursday&quot;</span>
-<span class="n">day</span> <span class="o">=</span> <span class="mf">32.5</span>
-<span class="n">day</span> <span class="o">=</span> <span class="mi">19</span>
-<span class="k">print</span><span class="p">(</span><span class="n">day</span><span class="p">)</span>
+            <p>python-variables3: Qu’est-ce qui est imprimé lorsque les instructions suivantes sont exécutées?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">journée</span> <span class="o">=</span> <span class="s2">&quot;Jeudi&quot;</span>
+<span class="n">journée</span> <span class="o">=</span> <span class="mf">32.5</span>
+<span class="n">journée</span> <span class="o">=</span> <span class="mi">19</span>
+<span class="k">print</span><span class="p">(</span><span class="n">journée</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="variables_check_1_opt_a">Nothing is printed. A runtime error occurs.</li><li data-component="feedback" id="variables_check_1_opt_a">It is legal to change the type of data that a variable holds in Python.</li>
+            <li data-component="answer"  id="variables_check_1_opt_a">Rien n'est imprimé. Une erreur d'exécution se produit.</li><li data-component="feedback" id="variables_check_1_opt_a">Il est possible de changer le type de données qu'une variable détient en Python.</li>
             
-            <li data-component="answer"  id="variables_check_1_opt_b">Thursday</li><li data-component="feedback" id="variables_check_1_opt_b">This is the first value assigned to the variable day, but the next statements reassign that variable to new values.</li>
+            <li data-component="answer"  id="variables_check_1_opt_b">Jeudi</li><li data-component="feedback" id="variables_check_1_opt_b">Ceci est la première valeur attribuée à la variable journée, mais les instructions suivantes réaffectent cette variable à de nouvelles valeurs.</li>
             
-            <li data-component="answer"  id="variables_check_1_opt_c">32.5</li><li data-component="feedback" id="variables_check_1_opt_c">This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.</li>
+            <li data-component="answer"  id="variables_check_1_opt_c">32.5</li><li data-component="feedback" id="variables_check_1_opt_c">Il s'agit de la deuxième valeur attribuée à la variable journée, mais l'instruction suivante réaffecte cette variable à une nouvelle valeur.</li>
             
-            <li data-component="answer" data-correct id="variables_check_1_opt_d">19</li><li data-component="feedback" id="variables_check_1_opt_d">The variable day will contain the last value assigned to it when it is printed.</li>
+            <li data-component="answer" data-correct id="variables_check_1_opt_d">19</li><li data-component="feedback" id="variables_check_1_opt_d">La variable journée représentera la dernière valeur qui lui est assignée lors de son impression.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="variable-names-and-keywords">
-<span id="index-2"></span><h2>2.5. Variable Names and Keywords<a class="headerlink" href="#variable-names-and-keywords" title="Permalink to this headline">¶</a></h2>
-<p><strong>Variable names</strong> can be arbitrarily long. They can contain both letters and
-digits, but they have to begin with a letter or an underscore. You should use long, descriptive variable names. For example, if you were creating a program to calculate how much gas a car uses, a good variable name might be <code class="docutils literal notranslate"><span class="pre">litres_per_100_kms</span></code>. A bad variable name in that case would be <code class="docutils literal notranslate"><span class="pre">l</span></code>. Using a single letter as the variable name usually makes your program harder to understand for other people. Although that can be a bit annoying to type out a long variable name the first time, once you have typed it once in Thonny, you should be able to simply type the first few letters of the variable name, then press <strong>Ctrl-Space</strong> to have the rest of the variable name auto-complete for you. <em>If that doesn’t work for you, check Thonny’s preferences.</em></p>
-<p>The underscore character ( <code class="docutils literal notranslate"><span class="pre">_</span></code>) can also appear in a name. It is often used in
-names with multiple words, such as <code class="docutils literal notranslate"><span class="pre">my_name</span></code> or <code class="docutils literal notranslate"><span class="pre">price_of_tea_in_china</span></code>. <strong>This is the preferred way to write long variable names in Python, and you should use this style!</strong></p>
-<div class="admonition caution">
-<p class="first admonition-title">Caution</p>
-<p class="last">Variable names can never contain spaces.</p>
+<div class="section" id="noms-de-variables-et-mots-cles">
+<span id="index-2"></span><h2>2.5. Noms de variables et mots-clés<a class="headerlink" href="#noms-de-variables-et-mots-cles" title="Permalink to this headline">¶</a></h2>
+<p><strong>Les noms de variables</strong> peuvent être arbitrairement longs. Ils peuvent contenir à la fois des lettres et des chiffres, mais ils doivent commencer par une lettre ou un trait de soulignement. Vous devez utiliser des noms de variable descriptifs et possiblement longs. Par exemple, si vous créez un programme pour calculer la quantité d’essence consommée par une voiture, un bon nom de variable pourrait être <code class="docutils literal notranslate"><span class="pre">litres_par_100_kms</span></code>. Un mauvais nom de variable dans ce cas serait <code class="docutils literal notranslate"><span class="pre">l</span></code>. Utiliser une seule lettre comme nom de variable rend généralement votre programme plus difficile à comprendre pour les autres. Bien que cela puisse être un peu ennuyeux de taper un nom de variable long la première fois, une fois que vous l’avez tapé une fois dans Thonny, vous devriez pouvoir taper simplement les premières lettres du nom de la variable, puis appuyer sur <strong>Ctrl-Espace</strong> pour que le reste du nom de variable soit rempli automatiquement pour vous. <em>Si cela ne fonctionne pas pour vous, vérifiez les préférences de Thonny.</em></p>
+<p>Le trait de soulignement (<code class="docutils literal notranslate"><span class="pre">_</span></code>) peut également apparaître dans un nom. Il est souvent utilisé dans les noms avec plusieurs mots, tels que <code class="docutils literal notranslate"><span class="pre">mon_nom</span></code> ou <code class="docutils literal notranslate"><span class="pre">prix_du_caffee_en_chine</span></code>. <strong>C’est le moyen préféré d’écrire des noms de variables longs en Python, et vous devriez utiliser ce style!</strong></p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">Les noms de variables ne peuvent jamais contenir d’espaces.</p>
 </div>
-<p>There are some situations in which names beginning with an underscore have
-special meaning, so a safe rule for beginners is to start all names with a
-letter.</p>
-<p>Although it is legal to use uppercase letters, by convention we don’t. If you choose to use uppercase letters, remember that case matters. <code class="docutils literal notranslate"><span class="pre">Bruce</span></code> and <code class="docutils literal notranslate"><span class="pre">bruce</span></code> are different variables.</p>
+<p>Il existe certaines situations dans lesquelles les noms commençant par un trait de soulignement ont une signification particulière. Il est donc recommandé aux débutants de commencer par une lettre.</p>
+<p>Bien qu’il soit possible d’utiliser des majuscules, par convention, nous ne le faisons pas. Si vous choisissez d’utiliser des lettres majuscules, rappelez-vous que majuscule et minuscule sont différents. <code class="docutils literal notranslate"><span class="pre">Bruce</span></code> et <code class="docutils literal notranslate"><span class="pre">bruce</span></code> sont des variables différentes.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Conventions about variable names differ from one language to another. Another common variable naming pattern is to use a lowercase letter for the first word, and to capitalize the starting letter of each word that follows. For example, you might use <code class="docutils literal notranslate"><span class="pre">myName</span></code> or <code class="docutils literal notranslate"><span class="pre">priceOfTeaInChina</span></code>. This is often called camelCaps (think of the humps of a camel).</p>
+<p class="last">Les conventions concernant les noms de variable diffèrent d’une langue à l’autre. Un autre modèle d’appellation de variable courant consiste à utiliser une lettre minuscule pour le premier mot et à mettre en majuscule la lettre de départ de chaque mot qui suit. Par exemple, vous pouvez utiliser <code class="docutils literal notranslate"><span class="pre">monNom</span></code> ou <code class="docutils literal notranslate"><span class="pre">prixDuCaffeeEnChine</span></code>. Ceci est souvent appelé camelCaps (pensez aux bosses d’un chameau).</p>
 </div>
-<p>If you give a variable an illegal name, you get a syntax error.  In the example below, each
-of the variable names is illegal.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>76trombones = &quot;big parade&quot;
-more$ = 1000000
-class = &quot;Computer Science 101&quot;
+<p>Si vous attribuez un nom <em>illégal</em> à une variable, vous obtenez une erreur de syntaxe. Dans l’exemple ci-dessous, les noms de variable sont illégaux.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>76trombones = &quot;grande parade&quot;
+plus$ = 1000000
+class = &quot;Informatique 101&quot;
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">76trombones</span></code> is illegal because it does not begin with a letter.  <code class="docutils literal notranslate"><span class="pre">more$</span></code>
-is illegal because it contains an illegal character, the dollar sign. But
-what’s wrong with <code class="docutils literal notranslate"><span class="pre">class</span></code>?</p>
-<p id="index-3">It turns out that <code class="docutils literal notranslate"><span class="pre">class</span></code> is one of the Python <strong>keywords</strong>. Keywords define
-the language’s syntax rules and structure, and they cannot be used as variable
-names.
-Python has thirty-something keywords (and every now and again improvements to
-Python introduce or eliminate one or two):</p>
+<p><code class="docutils literal notranslate"><span class="pre">76trombones</span></code> est illégal car il ne commence pas par une lettre. “plus$” est illégal car il contient un caractère illégal, le signe de dollar. Mais qu’est-ce qui ne va pas avec <code class="docutils literal notranslate"><span class="pre">class</span></code>?</p>
+<p id="index-3">En effet, <code class="docutils literal notranslate"><span class="pre">class</span></code> est l’un des <strong>mots-clés</strong> de Python. Les mots-clés définissent les règles de syntaxe et la structure du langage. Ils ne peuvent pas être utilisés en tant que noms de variables. Python a une trentaine de mots-clés (et de temps en temps, des améliorations de Python introduisent ou éliminent un ou deux):</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -664,15 +612,12 @@ Python introduce or eliminate one or two):</p>
 </tr>
 </tbody>
 </table>
-<p>You might want to keep this list handy. If the interpreter complains about one
-of your variable names and you don’t know why, see if it is on this list.</p>
-<p><strong>Programmers generally choose names for their variables that are meaningful to
-the human readers of the program — they help the programmer document, or
-remember, what the variable is used for.</strong></p>
+<p>Vous voudrez probablement garder cette liste à portée de main. Si l’interprète se plaint de l’un de vos noms de variable et que vous ne savez pas pourquoi, vérifier s’il se trouve dans cette liste.</p>
+<p><strong>Les programmeurs choisissent généralement des noms pour leurs variables qui ont un sens pour les lecteurs humains du programme - ils aident le programmeur à documenter, ou à se rappeler, à quoi sert la variable.</strong></p>
 </div>
-<div class="section" id="user-input">
-<h2>2.6. User Input<a class="headerlink" href="#user-input" title="Permalink to this headline">¶</a></h2>
-<p>If you want the user to type something, you can use the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function. <code class="docutils literal notranslate"><span class="pre">input()</span></code> will <strong>always return a string</strong>. You will need to convert it to an int or a float if you are expecting a number.</p>
+<div class="section" id="entree-de-l-utilisateur">
+<h2>2.6. Entrée de l’utilisateur<a class="headerlink" href="#entree-de-l-utilisateur" title="Permalink to this headline">¶</a></h2>
+<p>Si vous voulez que l’utilisateur tape quelque chose, vous pouvez utiliser la fonction <code class="docutils literal notranslate"><span class="pre">input()</span></code>. <code class="docutils literal notranslate"><span class="pre">input()</span></code> <strong>retournera toujours une chaîne</strong>. Vous devrez le convertir en <strong>int</strong> ou <strong>float</strong> si vous attendez un nombre.</p>
 
 <div data-childcomponent="input_demo_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -680,11 +625,11 @@ remember, what the variable is used for.</strong></p>
       data-timelimit=25000    
     data-audio=''    
           >
-your_school = input("What school do you attend?")
-print(your_school)
+ton_ecole = input("Quelle école fréquentez-vous?")
+print(ton_ecole)
 </textarea>
 </div>
-<p>The following example is not going to work when you try to run it. Can you figure out what is wrong and fix it? <em>Hint: think about data types!</em></p>
+<p>L’exemple suivant ne fonctionnera pas lorsque vous essayez de l’exécuter. Pouvez-vous comprendre ce qui ne va pas et le réparer? <em>Conceil: pensez aux types de données!</em></p>
 
 <div data-childcomponent="input_demo_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -692,43 +637,43 @@ print(your_school)
       data-timelimit=25000    
     data-audio=''    
           >
-current_year = input("What is the current year?")
-grad_year = input("What year will you graduate from high school?")
+annee_presente = input("Quelle est l'année en cours?")
+annee_diplome = input("Quelle année obtiendrez-vous votre diplôme d'études secondaires?")
 
-year_difference = grad_year - current_year
+annee_difference = annee_diplome - annee_presente
 
-print("You will graduate in", year_difference, "years.")
+print("Vous obtiendrez votre diplôme en", annee_difference, "ans.")
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have spent time attempting to create your own solution!</p>
+<p><strong>Ne regardez pas</strong> à la solution possible suivante jusqu’à ce qu vous avez passé du temps à essayer de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_input_demo_2"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>This is one possible solution:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">current_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the current year?&quot;</span><span class="p">)</span>
-<span class="n">grad_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What year will you graduate from high school?&quot;</span><span class="p">)</span>
+    <div data-component="reveal" id="reveal_solution_input_demo_2"   data-showtitle="Voir Solution" data-hidetitle="Masquer Solution" >
+    <p>Voici une solution possible:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">annee_presente</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quelle est l&#39;année en cours?&quot;</span><span class="p">)</span>
+<span class="n">annee_diplome</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quelle année obtiendrez-vous votre diplôme d&#39;études secondaires?&quot;</span><span class="p">)</span>
 
-<span class="c1"># convert user input to be integers, so we can subtract</span>
-<span class="n">current_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">current_year</span><span class="p">)</span>
-<span class="n">grad_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">grad_year</span><span class="p">)</span>
+<span class="c1"># convertir les entrées utilisateur en entiers, afin que nous puissions soustraire</span>
+<span class="n">annee_presente</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">annee_presente</span><span class="p">)</span>
+<span class="n">annee_diplome</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">annee_diplome</span><span class="p">)</span>
 
-<span class="n">year_difference</span> <span class="o">=</span> <span class="n">grad_year</span> <span class="o">-</span> <span class="n">current_year</span>
+<span class="n">annee_difference</span> <span class="o">=</span> <span class="n">annee_diplome</span> <span class="o">-</span> <span class="n">annee_presente</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You will graduate in&quot;</span><span class="p">,</span> <span class="n">year_difference</span><span class="p">,</span> <span class="s2">&quot;years.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous obtiendrez votre diplôme en&quot;</span><span class="p">,</span> <span class="n">annee_difference</span><span class="p">,</span> <span class="s2">&quot;ans.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 
     </div>
     </div>
-<div class="section" id="practice-problems">
-<h2>2.7. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
-<p>Try the following practice problems. Be sure that you know how to do the question with paper/pencil before you attempt to write a solution in Python! You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
+<div class="section" id="problemes-de-pratique">
+<h2>2.7. Problèmes de pratique<a class="headerlink" href="#problemes-de-pratique" title="Permalink to this headline">¶</a></h2>
+<p>Essayez les problèmes de pratique suivants. Assurez-vous de savoir comment résoudre le problème avec du papier et un crayon avant d’essayer d’écrire une solution en Python! Vous pouvez travailler directement dans le manuel ou utiliser Thonny. Dans tous les cas, veillez <strong>enregistrer votre solution</strong> dans votre dossier Informatique 20 lorsque vous avez terminé!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Remember that every time you take <code class="docutils literal notranslate"><span class="pre">input()</span></code> from the user, the data type of that input will be a string! You might want to look back at <a class="reference internal" href="QuickOverview.html#type-casting-functions"><span class="std std-ref">Converting Between Data Types</span></a>.</p>
+<p class="last">N’oubliez pas que chaque fois que vous prenez <code class="docutils literal notranslate"><span class="pre">input()</span></code> de l’utilisateur, le type de données de cette entrée sera une chaîne! Vous voudrez peut-être revenir sur <a class="reference internal" href="QuickOverview.html#type-casting-functions"><span class="std std-ref">Conversion des types de données</span></a>.</p>
 </div>
-<div class="section" id="area-of-a-circle">
-<h3>2.7.1. Area of a Circle<a class="headerlink" href="#area-of-a-circle" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message back to the user with the answer.</p>
+<div class="section" id="aire-de-surface-d-un-cercle">
+<h3>2.7.1. Aire de surface d’un cercle<a class="headerlink" href="#aire-de-surface-d-un-cercle" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui calculera l’aire d’un cercle. Invitez l’utilisateur à entrer le rayon. Imprimer un beau message pour présenter à l’utilisateur la réponse.</p>
 
 <div data-childcomponent="practice_problem_variables_data_types_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -736,37 +681,37 @@ print("You will graduate in", year_difference, "years.")
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Area of a Circle Calculator
-# Put Your Name Here
-# Put the Date Here
+# Calculateur de l'aire de la surface de cercle
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have already finished creating your own solution!</p>
+<p><strong>Ne regardez pas</strong> à la solution possible suivante jusqu’à ce qu vous avez déjà fini de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_1"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>This is one possible solution:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Area of a Circle Calculator</span>
-<span class="c1"># Dan Schellenberg</span>
-<span class="c1"># Oct 18, 2017</span>
+    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_1"   data-showtitle="Voir Solution" data-hidetitle="Masquer Solution" >
+    <p>Voici une solution possible:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculateur de l&#39;aire de la surface de cercle</span>
+<span class="c1"># Arman Gentil-Perret</span>
+<span class="c1"># le 22 janvier, 2019</span>
 
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span>
 
-<span class="n">radius</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the radius: &quot;</span><span class="p">)</span>
-<span class="n">radius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>  <span class="c1">#convert input into a number</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;S&#39;il vous plaît entrer le rayon du cercle: &quot;</span><span class="p">)</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>  <span class="c1"># convertir l&#39;entrée en un nombre</span>
 
-<span class="n">area</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">aire</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="n">radius</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The area of the circle is&quot;</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;aire du cercle est&quot;</span><span class="p">,</span> <span class="n">aire</span><span class="p">)</span>
 </pre></div>
 </div>
 
     </div>
     </div>
-<div class="section" id="area-of-a-rectangle">
-<h3>2.7.2. Area of a Rectangle<a class="headerlink" href="#area-of-a-rectangle" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle. Print a nice message with the answer.</p>
+<div class="section" id="aire-d-un-rectangle">
+<h3>2.7.2. aire d’un rectangle<a class="headerlink" href="#aire-d-un-rectangle" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui calculera l’aire d’un rectangle. Invitez l’utilisateur à inscrire la largeur et la hauteur du rectangle. Imprimer un beau message pour présenter à l’utilisateur la réponse.</p>
 
 <div data-childcomponent="practice_problem_variables_data_types_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -774,38 +719,38 @@ print("You will graduate in", year_difference, "years.")
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Area of a Rectangle Calculator
-# Put Your Name Here
-# Put the Date Here
+# Calculateur de l'aire de la surface d'un rectangle
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have already finished creating your own solution!</p>
+<p><strong>Ne regardez pas</strong> à la solution possible suivante jusqu’à ce qu vous avez déjà fini de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_2"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>This is one possible solution:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Area of a Rectangle Calculator</span>
-<span class="c1"># Dan Schellenberg</span>
-<span class="c1"># Oct 19, 2017</span>
+    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_2"   data-showtitle="Voir Solution" data-hidetitle="Masquer Solution" >
+    <p>Voici une solution possible:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculateur de l&#39;aire de la surface d&#39;un rectangle</span>
+<span class="c1"># Arman Gentil-Perret</span>
+<span class="c1"># le 23 janvier, 2019</span>
 
-<span class="n">length</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the length of the rectangle: &quot;</span><span class="p">)</span>
-<span class="n">width</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the width of the rectangle: &quot;</span><span class="p">)</span>
+<span class="n">longeur</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez la longueur du rectangle: &quot;</span><span class="p">)</span>
+<span class="n">largeur</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez la largeur du rectangle: &quot;</span><span class="p">)</span>
 
-<span class="c1">#convert user input into numbers</span>
-<span class="n">length</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
-<span class="n">width</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">width</span><span class="p">)</span>
+<span class="c1"># convertir l&#39;entrée utilisateur en nombres</span>
+<span class="n">longeur</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">longeur</span><span class="p">)</span>
+<span class="n">largeur</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">largeur</span><span class="p">)</span>
 
-<span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The area of the rectangle is&quot;</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
+<span class="n">aire</span> <span class="o">=</span> <span class="n">longeur</span> <span class="o">*</span> <span class="n">largeur</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;aire du rectangle est&quot;</span><span class="p">,</span> <span class="n">aire</span><span class="p">)</span>
 </pre></div>
 </div>
 
     </div>
     </div>
-<div class="section" id="car-gas-usage">
-<h3>2.7.3. Car Gas Usage<a class="headerlink" href="#car-gas-usage" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that will compute the Litres per Kilometers (l/100km) that a car uses. Promp the user to enter the number of kilometers driven, and the number of litres used. Print a nice message with the answer in liters/100kms. <em>Note: If you aren’t sure how to calculate L/100km, you should try to calculate it by hand before writing a program. To help you check your work, if you drove 500km, and used 35L of gas, you should calculate using 7 L/100km</em>.</p>
+<div class="section" id="consommation-de-gaz-de-voiture">
+<h3>2.7.3. Consommation de gaz de voiture<a class="headerlink" href="#consommation-de-gaz-de-voiture" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui calculera les litres par kilomètre (l/100km) utilisés par une voiture. Invitez l’utilisateur à entrer le nombre de kilomètres parcourus et le nombre de litres utilisés. Imprimez un beau message avec la réponse en litres/100km. <em>Remarque: si vous ne savez pas comment calculer L/100km, vous devriez essayer de le calculer à la main avant d’écrire un programme. Pour vous aider à vérifier votre travail, si vous avez parcouru 500km et utilisé 35L d’essence, vous devez obtenir 7L/100km</em>.</p>
 
 <div data-childcomponent="practice_problem_variables_data_types_3" class="runestone explainer ac_section alert alert-warning">
 
@@ -813,42 +758,42 @@ print("You will graduate in", year_difference, "years.")
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Gas Mileage Calculator
-# Put Your Name Here
-# Put the Date Here
+# Calculateur kilométrage
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have already finished creating your own solution!</p>
+<p><strong>Ne regardez pas</strong> à la solution possible suivante jusqu’à ce qu vous avez déjà fini de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_3"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>This is one possible solution:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gas Mileage Calculator</span>
-<span class="c1"># Dan Schellenberg</span>
-<span class="c1"># Oct 19, 2017</span>
+    <div data-component="reveal" id="reveal_solution_practice_problem_variables_data_types_3"   data-showtitle="Voir Solution" data-hidetitle="Masquer Solution" >
+    <p>Voici une solution possible:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculateur kilométrage</span>
+<span class="c1"># Arman Gentil-Perret</span>
+<span class="c1"># le 22 janvier, 2019</span>
 
-<span class="n">kilometers_driven</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many kilometers did you drive? &quot;</span><span class="p">)</span>
-<span class="n">litres_used</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many litres of gas did it take? &quot;</span><span class="p">)</span>
+<span class="n">kilometres_conduit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many kilometers did you drive? &quot;</span><span class="p">)</span>
+<span class="n">litres_utilise</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Combien de kilometres avez-vous parcourues? &quot;</span><span class="p">)</span>
 
-<span class="c1">#convert user input to numbers</span>
-<span class="n">kilometers_driven</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">kilometers_driven</span><span class="p">)</span>
-<span class="n">litres_used</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">litres_used</span><span class="p">)</span>
+<span class="c1"># convertir l&#39;entrée utilisateur en nombres</span>
+<span class="n">kilometres_conduit</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">kilometres_conduit</span><span class="p">)</span>
+<span class="n">litres_utilise</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">litres_utilise</span><span class="p">)</span>
 
-<span class="n">gas_usage</span> <span class="o">=</span> <span class="n">litres_used</span> <span class="o">/</span> <span class="n">kilometers_driven</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">consommation_gas</span> <span class="o">=</span> <span class="n">litres_utilise</span> <span class="o">/</span> <span class="n">kilometres_conduit</span> <span class="o">*</span> <span class="mi">100</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your car is using&quot;</span><span class="p">,</span> <span class="n">gas_usage</span><span class="p">,</span> <span class="s2">&quot;L/100km&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Votre voiture utilise&quot;</span><span class="p">,</span> <span class="n">consommation_gas</span><span class="p">,</span> <span class="s2">&quot;L/100km&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 
     </div>
     </div>
-<div class="section" id="if-you-finish-early">
-<h3>2.7.4. If You Finish Early<a class="headerlink" href="#if-you-finish-early" title="Permalink to this headline">¶</a></h3>
-<p>If you completed all the questions above before the end of class, you might want to try one of the following extra challenges:</p>
+<div class="section" id="si-vous-finissez-tot">
+<h3>2.7.4. Si vous finissez tôt<a class="headerlink" href="#si-vous-finissez-tot" title="Permalink to this headline">¶</a></h3>
+<p>Si vous avez répondu à toutes les questions ci-dessus avant la fin du cours, essayez l’un des défis supplémentaires suivants:</p>
 <ul class="simple">
-<li>making a calculator for a more complicated math problem.</li>
-<li>you look at the clock and it is exactly 2pm. You set an alarm to go off in 51 hours. At what time does the alarm go off? Write a Python program to solve the general version of this problem. Ask the user for the time now (in hours), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off. Note: You might want to look back at <a class="reference internal" href="QuickOverview.html#math-operator-list"><span class="std std-ref">Math Operators</span></a>.</li>
+<li>faire une calculatrice pour un problème mathématique plus compliqué.</li>
+<li>Vous regardez l’horloge et il est exactement 14 heures. Vous configurez une alarme pour qu’elle se déclenche dans 51 heures. À quelle heure l’alarme se déclenche? Ecrivez un programme Python pour résoudre la version générale de ce problème. Demandez à l’utilisateur l’heure actuelle (en heures) et demandez le nombre d’heures d’attente. Votre programme doit indiquer l’heure à laquelle le réveil se déclenche. Note: Vous voudrez peut-être revenir en arrière sur: <a class="reference internal" href="QuickOverview.html#math-operator-list"><span class="std std-ref">Opérateurs mathématiques</span></a>.</li>
 </ul>
 </div>
 </div>

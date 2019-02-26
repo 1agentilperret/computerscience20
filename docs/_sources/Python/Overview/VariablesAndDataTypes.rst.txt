@@ -3,12 +3,12 @@
    :start: 1
 
 
-Variables, Data Types, and User Input
-======================================
+Variables, types de données et entrée par utilisateur
+=======================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Give more details about variables. Reinforce the idea of data types. Practice some Python problems with simple input/output.
+    Donnez plus de détails sur les **variables**. Renforcer l'idée de **types de données**. Pratiquez certains problèmes de Python avec des **entrées/sorties** simples.
 
 
 .. reveal:: curriculum_addressed_python_variables
@@ -19,10 +19,10 @@ Variables, Data Types, and User Input
     - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.
 
 
-What Does This Program Do?
+Que fait ce programme?
 ---------------------------
 
-Remember the we learned four primitive data types in our overview of Python. They are:
+N'oubliez pas que nous avons appris quatre types de données de base dans notre vue d'ensemble de Python. Elles sont:
 
 - ``int``
 - ``float``
@@ -30,12 +30,13 @@ Remember the we learned four primitive data types in our overview of Python. The
 - ``bool``
 
 
-.. note:: Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code. 
+.. note:: Votre enseignant peut choisir d'utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun va faire avant d'exécuter le code.
 
-For the following examples, consider the data type of each variable. What will the program output? Why?
+Pour les exemples suivants, considérons le type de données de chaque variable. Quelle sera la sortie du programme? Pourquoi?
+
 
 .. activecode:: wdtpd_variable_assignment_1
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     x = 4
@@ -43,118 +44,98 @@ For the following examples, consider the data type of each variable. What will t
     print(x + y)
 
 .. activecode:: wdtpd_variable_assignment_3
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     x = 4
     y = 3
-    z = "five"
+    z = "cinq"
     x = 2
     print(x + y)
 
 .. activecode:: wdtpd_variable_assignment_2
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     x = 4
     y = 3
-    z = "five"
+    z = "cinq"
     print(y + z)
 
 
-Using Thonny
--------------
-
-There are two ways to use Thonny: *shell mode* and *program
-mode*. In shell mode, you type Python expressions into the **Python shell**,
-and the interpreter immediately shows the result.  The example below shows the Python shell at work.
+Comment utiliser Thonny
+-------------------------
+ 
+Thonny peut être utilisé de deux manières: en *mode shell* et en *mode programme*. En mode shell, vous tapez des expressions Python dans le **shell de Python**, et l'interprèteur montre immédiatement le résultat. L'exemple ci-dessous montre le shell de Python en utilisation.
 
 .. image:: images/thonny_shell.png
 
-The ``>>>`` is called the **Python prompt**. The interpreter uses the prompt to
-indicate that it is ready for instructions. We typed ``2 + 3``, then pressed Enter.  The
-interpreter evaluated our expression and replied ``5``. On the next line
-it gave a new prompt indicating that it is ready for more input.
+Le ``>>>`` est appelé **Python prompt** qui est l'interprète qui indique à l'utilisateur qu'il est prêt à recevoir des instructions. Nous avons tapé ``2 + 3``, puis appuyé sur **Entrée**. L'interprète a évalué notre expression et a répondu ``5``. À la ligne suivante il a donné une nouvelle invitation indiquant qu'il est prêt à recevoir plus d'*entrées*.
 
-Working directly in the interpreter is convenient for testing short bits of
-code because you get immediate feedback. Think of it as scratch paper used to
-help you work out problems.
+Travailler directement dans l’interprète est pratique pour tester de courts morceaux de code parce que vous obtenez une rétroaction immédiate. Voyez-le comme un papier brouillon qui vous aide à résoudre vos problèmes.
 
-Alternatively, you can write an entire program by placing lines of Python instructions
-in a file and then use the interpreter to
-execute the contents of the file as a whole. Such a file is often referred to as **source code**.  For
-example, we used Thonny to create a source code file named ``firstprogram.py`` with
-the following contents:
+Alternativement, vous pouvez écrire un programme entier en plaçant des lignes d'instructions Python dans un fichier, ensuite utiliser l'interprète pour exécuter le contenu du fichier dans son ensemble. Un tel fichier est souvent appelé **code source**. Par exemple, nous avons utilisé Thonny pour créer un fichier de code source nommé ``firstprogram.py`` avec le contenu suivant:
 
 .. image:: images/thonny_editor.png
 
-By convention, files that contain Python programs have names that end with
-``.py`` .  Thonny will save your files with a .py extension automatically, and you should be able to open them in Thonny by double clicking them in File Explorer (or Finder).
+Par convention, les fichiers contenant des programmes Python ont un nom qui se termine par ``.py``. Thonny enregistre automatiquement vos fichiers avec une extension .py. Vous devriez pouvoir les ouvrir dans Thonny en double-cliquant dessus dans l'explorateur de fichiers (ou dans Finder pour mac).
 
-.. note:: Notice that when we were using the **shell**, we didn't have to worry about using ``print()`` to see the value of a statement. The shell does that automatically. However, if we are using the **code editor**, we need to call **print()** any time we want to see output. 
+.. note:: Notez que lorsque nous utilisions le **shell**, nous n'avions pas à nous soucier d'utiliser ``print ()`` pour voir la valeur d'une instruction. Le shell le fait automatiquement. Cependant, si nous utilisons **l'éditeur de code**, nous devons appeler **print ()** à chaque fois que nous voulons afficher le résultat.
 
-
-**Check your understanding**
+**Vérifie ta compréhension**
 
 .. mchoice:: source_code_check
-   :answer_a: the instructions in a program, stored in a file.
-   :answer_b: the language that you are programming in (e.g., Python).
-   :answer_c: the environment/tool in which you are programming.
-   :answer_d: the number (or "code") that you must input at the top of each program to tell the computer how to execute your program.
+   :answer_a: les instructions d'un programme, enregistré dans un fichier.
+   :answer_b:  le langage que vous utilisez pour programmer (ie: Python).
+   :answer_c: l'environnement/l'outil dans lequel vous programmez.
+   :answer_d: le numéro (ou "code") que vous devez entrer en haut de chaque programme pour indiquer à l'ordinateur comment exécuter votre programme
    :correct: a
-   :feedback_a: The file that contains the instructions written in the high level language is called the source code file.
-   :feedback_b: This language is simply called the programming language, or simply the language.
-   :feedback_c: The environment may be called the IDE, or integrated development environment, though not always.
-   :feedback_d: There is no such number that you must type in at the start of your program.
+   :feedback_a: Le fichier contenant les instructions écrites dans le langage évolué s'appelle le fichier de code source.
+   :feedback_b: Ce langage s'appelle le langage de programmation ou simplement le langage.
+   :feedback_c: L'environnement peut être appelé IDE ou environnement de développement intégré, mais pas toujours.
+   :feedback_d: Il n’existe pas un numéro de ce type que vous devez taper au début de votre programme.
 
-   Source code is another name for:
+   Le code source est un autre nom pour:
 
 .. index:: comments
 
-Comments
---------
+Commentaires
+--------------
 
-As programs get bigger and more complicated, they get more difficult to read.
-Formal languages (e.g. programming languages) are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
-For this reason, it is a good idea to add notes to your programs to explain in
-natural language what the program is doing.  These notes are called comments.
+À mesure que les programmes deviennent plus grands et plus compliqués, ils deviennent plus difficiles à lire. Les langages formels (ie: les langages de programmation) sont denses et il est souvent difficile de regarder un morceau de code et de comprendre ce qu'il fait ou pourquoi. Pour cette raison, il est judicieux d’ajouter des notes à vos programmes pour expliquer en langage naturel ce qu’il fait. Ces notes s'appellent des commentaires.
 
-A **comment** in a computer program is text that is intended only for the human
-reader - it is completely ignored by the interpreter.
-In Python, the ``#`` token starts a comment.  The rest of the line is ignored.
-**Every program you write should start with a comment header**, which could look something like this:
+Un **commentaire** dans un programme informatique est un texte destiné uniquement au lecteur humain. Il est complètement ignoré par l'interprète. En Python, le jeton ``#`` commence un commentaire. Le reste de la ligne est ignoré. **Chaque programme que vous écrivez devrait commencer par un en-tête de commentaire**, qui pourrait ressembler à ceci:
 
 .. activecode:: comment_header_example
 
     #---------------------------------------------------
-    # First Python Program
-    # Dan Schellenberg
-    # Oct 16, 2017
+    # Premier programme Python
+    # Arman Gentil-Perret
+    # le 20 jan, 2019
     #---------------------------------------------------
 
-    print("Hello, World!")
+    print("Bonjour tout le monde!")
 
 
-.. note:: Create a folder (call it Computer Science 20) on your computer to hold all of the code you will write in Python this semester. Save the file you created above as ``template.py``, and save it in that folder.
+.. note:: Créez un dossier (appelez-le Informatique 20) sur votre ordinateur pour contenir tout le code que vous écrirez en Python ce semestre. Enregistrez le fichier que vous avez créé ci-dessus en tant que ``template.py`` et enregistrez-le dans ce dossier.
 
-Notice that when you run this program, it only prints the phrase Hello, World!  None of the comments appear. You'll also notice that we've left a blank line in the program.  Blank lines
-are also ignored by the interpreter, but comments and blank lines can make your
-programs much easier for humans to parse.  Use them liberally!
+Notez que lorsque vous exécutez ce programme, il n’affiche que la phrase Bonjour tout le monde! Aucun des commentaires n'apparaissent. Vous remarquerez également que nous avons laissé une ligne vide dans le programme. Les lignes vides sont également ignorées par l'interprète, mais les commentaires et les lignes vides peuvent rendre vos programmes beaucoup plus faciles à analyser. Utilisez-les généreusement!
 
-**Check your understanding**
+
+**Vérifie ta compréhension**
 
 .. mchoice:: comment_check
-   :answer_a: To tell the computer what you mean in your program.
-   :answer_b: For the people who are reading your code to know, in natural language, what the program is doing.
-   :answer_c: Nothing, they are extraneous information that is not needed.
-   :answer_d: Nothing in a short program.  They are only needed for really large programs.
+   :answer_a: Pour dire à l’ordinateur ce que vous voulez dire dans votre programme.
+   :answer_b: Pour que les personnes qui lisent votre code sachent, en langage naturel, ce que fait le programme.
+   :answer_c: Rien, ce sont des informations superflues qui ne sont pas nécessaires.
+   :answer_d: Rien dans un programme court. Ils ne sont nécessaires que pour les très gros programmes.
    :correct: b
-   :feedback_a: Comments are ignored by the computer.
-   :feedback_b: The computer ignores comments.  It's for the humans that will "consume" your program.
-   :feedback_c: Comments can provide much needed information for anyone reading the program.
-   :feedback_d: Even small programs benefit from comments.
+   :feedback_a: Les commentaires sont ignorés par l'ordinateur.
+   :feedback_b: L'ordinateur ignore les commentaires. C'est pour les humains qui "utiliser" votre programme.
+   :feedback_c:  Les commentaires peuvent fournir des informations indispensables à la personne qui lit le programme.
+   :feedback_d: Même les petits programmes bénéficient de commentaires.
 
-   What are comments for?
+   A quoi servent les commentaires?
 
 
 .. index:: variables
@@ -162,26 +143,20 @@ programs much easier for humans to parse.  Use them liberally!
 Variables
 ---------
 
-One of the most powerful features of a programming language is the ability to
-manipulate **variables**. A variable is a name that refers to a value.
+L'une des fonctionnalités les plus puissantes d'un langage de programmation est la possibilité de manipuler des **variables**. Une variable est un nom qui fait référence à une valeur.
 
-**Assignment statements** create new variables and also give them values to refer to.
+**Les instructions d'affectation**/**Assignment statements** créent de nouvelles variables et leur donnent également des valeurs auxquelles se référer.
 
 .. sourcecode:: python
 
-    message = "What's up, Doc?"
+    message = "Quoi de neuf, Doc?"
     n = 17
     pi = 3.14159
 
-This example makes three assignments. The first assigns the string value
-``"What's up, Doc?"`` to a new variable named ``message``. The second gives the
-integer ``17`` to ``n``, and the third assigns the floating-point number
-``3.14159`` to a variable called ``pi``.
+Cet exemple fait trois affectations. La première attribue la valeur d'une **chaîne** ``"Quoi de neuf, Doc?"`` À une nouvelle variable nommée `` message``. La seconde donne l'**entier** ``17`` à ``n`` et la troisième assigne le nombre à **virgule flottante** ``3.14159`` à une variable appelée ``pi``.
 
-The **assignment token**, ``=``, should not be confused with *equality* (we will see later that equality uses the
-``==`` token).  The assignment statement links a *name*, on the left hand
-side of the operator, with a *value*, on the right hand side.  This is why you
-will get an error if you enter:
+Le jeton **d'affectation**, ``=``, ne doit pas être confondu avec *égalité* (nous verrons plus tard que l'égalité utilise le jeton ``==``). La déclaration d'affectation lie un *nom*, à la gauche de ``=`` avec une *valeur*. C'est pourquoi vous obtiendrez une erreur si vous entrez:
+
 
 .. sourcecode:: python
 
@@ -189,26 +164,20 @@ will get an error if you enter:
 
 .. tip::
 
-   When reading or writing code, say to yourself "n is assigned 17" or "n gets
-   the value 17" or "n is a reference to the object 17" or "n refers to the object 17".  Don't say "n equals 17".
+   Lorsque vous lisez ou écrivez du code, dites-vous que "n est affecté à 17" ou "n obtient la valeur 17" ou "n est une référence à l'objet 17" ou "n correspond à l'objet 17". Ne dites pas "n est égal à 17".
 
-A common way to represent variables on paper is to write the name with an arrow
-pointing to the variable's value. This kind of figure, known as a **reference diagram**, is often called a **state
-snapshot** because it shows what state each of the variables is in at a
-particular instant in time.  (Think of it as the variable's state of mind).
-This diagram shows the result of executing the assignment statements shown above.
+Une manière courante de représenter des variables sur du papier consiste à écrire le nom avec une flèche pointant vers la valeur de la variable. Ce type de figure, appelé **diagramme de référence**, est souvent appelé un **instantané d'état**/**state snapshot** car il indique l'état dans lequel se trouve chacune des variables à un instant donné. (Pensez-y comme à l'état d'esprit de la variable). Ce diagramme montre le résultat de l'exécution des instructions d'affectation présentées ci-dessus.
 
 .. image:: images/refdiagram1.png
    :alt: Reference Diagram
 
-If you ask Python to evaluate a variable, it will produce the value
-that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
-by the variable.
+Si vous demandez à Python d'évaluer une variable, cela produira la valeur qui est actuellement liée à la variable. En d'autres termes, l'évaluation d'une variable vous donnera la valeur à laquelle cette variable se réfère.
+
 
 .. activecode:: variables_example_1
     :nocanvas:
 
-    message = "What's up, Doc?"
+    message = "Quoi de neuf, Doc?"
     n = 17
     pi = 3.14159
 
@@ -216,14 +185,14 @@ by the variable.
     print(n)
     print(pi)
 
-In each case the result is the value of the variable.
+Dans chaque cas, le résultat est la valeur de la variable.
 
-Variables also have types; again, we can ask the interpreter what they are.
+Les variables ont aussi des types; encore une fois, nous pouvons demander à l'interprète ce qu'ils sont.
 
 .. activecode:: variables_example_2
     :nocanvas:
 
-    message = "What's up, Doc?"
+    message = "Quoi de neuf, Doc?"
     n = 17
     pi = 3.14159
 
@@ -232,105 +201,83 @@ Variables also have types; again, we can ask the interpreter what they are.
     print(type(pi))
 
 
-The type of a variable is the type of the object it currently refers to.
+Le type d'une variable est le type de l'objet auquel elle fait présentement référence.
 
-
-We use variables in a program to "remember" things, like the current score at
-the basketball game.  But variables are *variable*. This means they can change
-over time, just like the scoreboard at a basketball game.  You can assign a value
-to a variable, and later assign a different value to the same variable.
-
+Nous utilisons des variables dans un programme pour "mémoriser" des choses, comme le pointage actuel au match de basket. Mais les variables sont *variable*. Cela signifie qu'ils peuvent changer avec le temps, tout comme le tableau d'affichage d'un match de basket. Vous pouvez affecter une valeur à une variable, puis affecter une valeur différente à la même variable.
+ 
 .. note::
 
-    This is different from math. In math, if you give ``x`` the value 3, it
-    cannot change to refer to a different value half-way through your
-    calculations!
+    Ceci est différent des mathématiques. En maths, si vous donnez ``x`` la valeur 3, il ne peut pas changer pour faire référence à une valeur différente en plein milieu de vos calculs!    
 
-To see this, read and then run the following program.
-You'll notice we change the value of ``day`` three times, and on the third
-assignment we even give it a value that is of a different type.
-
+Pour voir cela, lisez et ensuite exécutez le programme suivant. Vous remarquerez que nous modifions la valeur de ``journée`` trois fois, et lors de la troisième affectation, nous lui attribuons une valeur d'un type différent.
 
 .. codelens:: variables_example_3
     :showoutput:
 
-    day = "Thursday"
-    print(day)
-    day = "Friday"
-    print(day)
-    day = 21
-    print(day)
+    journée = "Jeudi"
+    print(journée)
+    journée = "Vendredi"
+    print(journée)
+    journée = 21
+    print(journée)
 
 
-**Check your understanding**
+**Vérifie ta compréhension**
 
 .. mchoice:: variables_check_1
-   :answer_a: Nothing is printed. A runtime error occurs.
-   :answer_b: Thursday
+   :answer_a: Rien n'est imprimé. Une erreur d'exécution se produit.
+   :answer_b: Jeudi
    :answer_c: 32.5
    :answer_d: 19
    :correct: d
-   :feedback_a: It is legal to change the type of data that a variable holds in Python.
-   :feedback_b: This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
-   :feedback_c: This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
-   :feedback_d: The variable day will contain the last value assigned to it when it is printed.
-
-   What is printed when the following statements execute?
+   :feedback_a: Il est possible de changer le type de données qu'une variable détient en Python.
+   :feedback_b: Ceci est la première valeur attribuée à la variable journée, mais les instructions suivantes réaffectent cette variable à de nouvelles valeurs.
+   :feedback_c: Il s'agit de la deuxième valeur attribuée à la variable journée, mais l'instruction suivante réaffecte cette variable à une nouvelle valeur.
+   :feedback_d: La variable journée représentera la dernière valeur qui lui est assignée lors de son impression.
+   
+   Qu'est-ce qui est imprimé lorsque les instructions suivantes sont exécutées?
 
    .. code-block:: python
 
-     day = "Thursday"
-     day = 32.5
-     day = 19
-     print(day)
+     journée = "Jeudi"
+     journée = 32.5
+     journée = 19
+     print(journée)
 
 
 .. index:: variable names
 
-Variable Names and Keywords
----------------------------
+Noms de variables et mots-clés
+-------------------------------
 
-**Variable names** can be arbitrarily long. They can contain both letters and
-digits, but they have to begin with a letter or an underscore. You should use long, descriptive variable names. For example, if you were creating a program to calculate how much gas a car uses, a good variable name might be ``litres_per_100_kms``. A bad variable name in that case would be ``l``. Using a single letter as the variable name usually makes your program harder to understand for other people. Although that can be a bit annoying to type out a long variable name the first time, once you have typed it once in Thonny, you should be able to simply type the first few letters of the variable name, then press **Ctrl-Space** to have the rest of the variable name auto-complete for you. *If that doesn't work for you, check Thonny's preferences.*
+**Les noms de variables** peuvent être arbitrairement longs. Ils peuvent contenir à la fois des lettres et des chiffres, mais ils doivent commencer par une lettre ou un trait de soulignement. Vous devez utiliser des noms de variable descriptifs et possiblement longs. Par exemple, si vous créez un programme pour calculer la quantité d’essence consommée par une voiture, un bon nom de variable pourrait être ``litres_par_100_kms``. Un mauvais nom de variable dans ce cas serait ``l``. Utiliser une seule lettre comme nom de variable rend généralement votre programme plus difficile à comprendre pour les autres. Bien que cela puisse être un peu ennuyeux de taper un nom de variable long la première fois, une fois que vous l'avez tapé une fois dans Thonny, vous devriez pouvoir taper simplement les premières lettres du nom de la variable, puis appuyer sur **Ctrl-Espace** pour que le reste du nom de variable soit rempli automatiquement pour vous. *Si cela ne fonctionne pas pour vous, vérifiez les préférences de Thonny.*
 
+Le trait de soulignement (``_``) peut également apparaître dans un nom. Il est souvent utilisé dans les noms avec plusieurs mots, tels que ``mon_nom`` ou ``prix_du_caffee_en_chine``. **C'est le moyen préféré d'écrire des noms de variables longs en Python, et vous devriez utiliser ce style!**
 
-The underscore character ( ``_``) can also appear in a name. It is often used in
-names with multiple words, such as ``my_name`` or ``price_of_tea_in_china``. **This is the preferred way to write long variable names in Python, and you should use this style!**
+.. attention::
 
-.. caution::
+   Les noms de variables ne peuvent jamais contenir d'espaces.
 
-   Variable names can never contain spaces.
+Il existe certaines situations dans lesquelles les noms commençant par un trait de soulignement ont une signification particulière. Il est donc recommandé aux débutants de commencer par une lettre.
 
-There are some situations in which names beginning with an underscore have
-special meaning, so a safe rule for beginners is to start all names with a
-letter.
+Bien qu'il soit possible d'utiliser des majuscules, par convention, nous ne le faisons pas. Si vous choisissez d'utiliser des lettres majuscules, rappelez-vous que majuscule et minuscule sont différents. ``Bruce`` et ``bruce`` sont des variables différentes.
 
-Although it is legal to use uppercase letters, by convention we don't. If you choose to use uppercase letters, remember that case matters. ``Bruce`` and ``bruce`` are different variables.
+.. note:: Les conventions concernant les noms de variable diffèrent d'une langue à l'autre. Un autre modèle d’appellation de variable courant consiste à utiliser une lettre minuscule pour le premier mot et à mettre en majuscule la lettre de départ de chaque mot qui suit. Par exemple, vous pouvez utiliser ``monNom`` ou ``prixDuCaffeeEnChine``. Ceci est souvent appelé camelCaps (pensez aux bosses d'un chameau).
 
-.. note:: Conventions about variable names differ from one language to another. Another common variable naming pattern is to use a lowercase letter for the first word, and to capitalize the starting letter of each word that follows. For example, you might use ``myName`` or ``priceOfTeaInChina``. This is often called camelCaps (think of the humps of a camel). 
-
-
-If you give a variable an illegal name, you get a syntax error.  In the example below, each
-of the variable names is illegal.
+Si vous attribuez un nom *illégal* à une variable, vous obtenez une erreur de syntaxe. Dans l'exemple ci-dessous, les noms de variable sont illégaux.
 
 ::
 
-    76trombones = "big parade"
-    more$ = 1000000
-    class = "Computer Science 101"
+    76trombones = "grande parade"
+    plus$ = 1000000
+    class = "Informatique 101"
 
 
-``76trombones`` is illegal because it does not begin with a letter.  ``more$``
-is illegal because it contains an illegal character, the dollar sign. But
-what's wrong with ``class``?
+``76trombones`` est illégal car il ne commence pas par une lettre. "plus$" est illégal car il contient un caractère illégal, le signe de dollar. Mais qu'est-ce qui ne va pas avec ``class``?
 
 .. index:: Python keywords
 
-It turns out that ``class`` is one of the Python **keywords**. Keywords define
-the language's syntax rules and structure, and they cannot be used as variable
-names.
-Python has thirty-something keywords (and every now and again improvements to
-Python introduce or eliminate one or two):
+En effet, ``class`` est l’un des **mots-clés** de Python. Les mots-clés définissent les règles de syntaxe et la structure du langage. Ils ne peuvent pas être utilisés en tant que noms de variables. Python a une trentaine de mots-clés (et de temps en temps, des améliorations de Python introduisent ou éliminent un ou deux):
 
 ======== ======== ======== ======== ======== ========
 and      as       assert   break    class    continue
@@ -341,192 +288,188 @@ pass     raise    return   try      while    with
 yield    True     False    None
 ======== ======== ======== ======== ======== ========
 
-You might want to keep this list handy. If the interpreter complains about one
-of your variable names and you don't know why, see if it is on this list.
+Vous voudrez probablement garder cette liste à portée de main. Si l'interprète se plaint de l'un de vos noms de variable et que vous ne savez pas pourquoi, vérifier s'il se trouve dans cette liste.
 
-**Programmers generally choose names for their variables that are meaningful to
-the human readers of the program --- they help the programmer document, or
-remember, what the variable is used for.**
+**Les programmeurs choisissent généralement des noms pour leurs variables qui ont un sens pour les lecteurs humains du programme - ils aident le programmeur à documenter, ou à se rappeler, à quoi sert la variable.**
 
 
-User Input
--------------
+Entrée de l'utilisateur
+-------------------------
 
-If you want the user to type something, you can use the ``input()`` function. ``input()`` will **always return a string**. You will need to convert it to an int or a float if you are expecting a number.
-
+Si vous voulez que l'utilisateur tape quelque chose, vous pouvez utiliser la fonction ``input()``. ``input()`` **retournera toujours une chaîne**. Vous devrez le convertir en **int** ou **float** si vous attendez un nombre.
 
 .. activecode:: input_demo_1
     :nocodelens:
     
-    your_school = input("What school do you attend?")
-    print(your_school)
+    ton_ecole = input("Quelle école fréquentez-vous?")
+    print(ton_ecole)
 
-The following example is not going to work when you try to run it. Can you figure out what is wrong and fix it? *Hint: think about data types!*
+L'exemple suivant ne fonctionnera pas lorsque vous essayez de l'exécuter. Pouvez-vous comprendre ce qui ne va pas et le réparer? *Conceil: pensez aux types de données!*
 
 .. activecode:: input_demo_2
     :nocodelens:
     
-    current_year = input("What is the current year?")
-    grad_year = input("What year will you graduate from high school?")
+    annee_presente = input("Quelle est l'année en cours?")
+    annee_diplome = input("Quelle année obtiendrez-vous votre diplôme d'études secondaires?")
 
-    year_difference = grad_year - current_year
+    annee_difference = annee_diplome - annee_presente
 
-    print("You will graduate in", year_difference, "years.")
+    print("Vous obtiendrez votre diplôme en", annee_difference, "ans.")
 
-
-
-**Do not look** at this sample solution unless you have spent time attempting to create your own solution!
+**Ne regardez pas** à la solution possible suivante jusqu'à ce qu vous avez passé du temps à essayer de créer votre propre solution!
 
 .. reveal:: reveal_solution_input_demo_2
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir Solution
+    :hidetitle: Masquer Solution
 
-    This is one possible solution::
+    Voici une solution possible::
 
-        current_year = input("What is the current year?")
-        grad_year = input("What year will you graduate from high school?")
+        annee_presente = input("Quelle est l'année en cours?")
+        annee_diplome = input("Quelle année obtiendrez-vous votre diplôme d'études secondaires?")
 
-        # convert user input to be integers, so we can subtract
-        current_year = int(current_year)
-        grad_year = int(grad_year)
+        # convertir les entrées utilisateur en entiers, afin que nous puissions soustraire
+        annee_presente = int(annee_presente)
+        annee_diplome = int(annee_diplome)
 
-        year_difference = grad_year - current_year
+        annee_difference = annee_diplome - annee_presente
 
-        print("You will graduate in", year_difference, "years.")
-
-
-
-Practice Problems
-------------------
-
-Try the following practice problems. Be sure that you know how to do the question with paper/pencil before you attempt to write a solution in Python! You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!
-
-.. note:: Remember that every time you take ``input()`` from the user, the data type of that input will be a string! You might want to look back at :ref:`type_casting_functions`.
+        print("Vous obtiendrez votre diplôme en", annee_difference, "ans.")
 
 
-Area of a Circle
-~~~~~~~~~~~~~~~~
 
-Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message back to the user with the answer.
-   
+Problèmes de pratique
+-----------------------
+
+Essayez les problèmes de pratique suivants. Assurez-vous de savoir comment résoudre le problème avec du papier et un crayon avant d’essayer d’écrire une solution en Python! Vous pouvez travailler directement dans le manuel ou utiliser Thonny. Dans tous les cas, veillez **enregistrer votre solution** dans votre dossier Informatique 20 lorsque vous avez terminé!
+
+.. note:: N'oubliez pas que chaque fois que vous prenez ``input()`` de l'utilisateur, le type de données de cette entrée sera une chaîne! Vous voudrez peut-être revenir sur :ref:`type_casting_functions`.
+
+
+Aire de surface d'un cercle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ecrivez un programme qui calculera l'aire d'un cercle. Invitez l'utilisateur à entrer le rayon. Imprimer un beau message pour présenter à l'utilisateur la réponse.
+
+ 
 .. activecode:: practice_problem_variables_data_types_1
     :nocodelens:
     :enabledownload:
 
-    # Area of a Circle Calculator
-    # Put Your Name Here
-    # Put the Date Here
+    # Calculateur de l'aire de la surface de cercle
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** à la solution possible suivante jusqu'à ce qu vous avez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_solution_practice_problem_variables_data_types_1
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir Solution
+    :hidetitle: Masquer Solution
 
-    This is one possible solution::
+    Voici une solution possible::
 
-        # Area of a Circle Calculator
-        # Dan Schellenberg
-        # Oct 18, 2017
+        # Calculateur de l'aire de la surface de cercle
+        # Arman Gentil-Perret
+        # le 22 janvier, 2019
 
         pi = 3.14
 
-        radius = input("Please enter the radius: ")
-        radius = float(radius)  #convert input into a number
+        radius = input("S'il vous plaît entrer le rayon du cercle: ")
+        radius = float(radius)  # convertir l'entrée en un nombre
 
-        area = pi*radius**2
+        aire = pi*radius**2
 
-        print("The area of the circle is", area)
+        print("L'aire du cercle est", aire)
 
 
 
-Area of a Rectangle
-~~~~~~~~~~~~~~~~~~~
+aire d'un rectangle
+~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle. Print a nice message with the answer.
+Ecrivez un programme qui calculera l'aire d'un rectangle. Invitez l'utilisateur à inscrire la largeur et la hauteur du rectangle. Imprimer un beau message pour présenter à l'utilisateur la réponse.
    
 .. activecode:: practice_problem_variables_data_types_2
     :nocodelens:
     :enabledownload:
 
-    # Area of a Rectangle Calculator
-    # Put Your Name Here
-    # Put the Date Here
+    # Calculateur de l'aire de la surface d'un rectangle
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** à la solution possible suivante jusqu'à ce qu vous avez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_solution_practice_problem_variables_data_types_2
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir Solution
+    :hidetitle: Masquer Solution
 
-    This is one possible solution::
+    Voici une solution possible::
 
-        # Area of a Rectangle Calculator
-        # Dan Schellenberg
-        # Oct 19, 2017
+        # Calculateur de l'aire de la surface d'un rectangle
+        # Arman Gentil-Perret
+        # le 23 janvier, 2019
 
-        length = input("Enter the length of the rectangle: ")
-        width = input("Enter the width of the rectangle: ")
+        longeur = input("Entrez la longueur du rectangle: ")
+        largeur = input("Entrez la largeur du rectangle: ")
 
-        #convert user input into numbers
-        length = float(length)
-        width = float(width)
+        # convertir l'entrée utilisateur en nombres
+        longeur = float(longeur)
+        largeur = float(largeur)
 
-        area = length * width
-        print("The area of the rectangle is", area)
+        aire = longeur * largeur
+        print("L'aire du rectangle est", aire)
 
 
 
-Car Gas Usage
-~~~~~~~~~~~~~
+Consommation de gaz de voiture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that will compute the Litres per Kilometers (l/100km) that a car uses. Promp the user to enter the number of kilometers driven, and the number of litres used. Print a nice message with the answer in liters/100kms. *Note: If you aren't sure how to calculate L/100km, you should try to calculate it by hand before writing a program. To help you check your work, if you drove 500km, and used 35L of gas, you should calculate using 7 L/100km*.
+Ecrivez un programme qui calculera les litres par kilomètre (l/100km) utilisés par une voiture. Invitez l'utilisateur à entrer le nombre de kilomètres parcourus et le nombre de litres utilisés. Imprimez un beau message avec la réponse en litres/100km. *Remarque: si vous ne savez pas comment calculer L/100km, vous devriez essayer de le calculer à la main avant d'écrire un programme. Pour vous aider à vérifier votre travail, si vous avez parcouru 500km et utilisé 35L d’essence, vous devez obtenir 7L/100km*.
+
 
 .. activecode:: practice_problem_variables_data_types_3
     :nocodelens:
     :enabledownload:
 
-    # Gas Mileage Calculator
-    # Put Your Name Here
-    # Put the Date Here
+    # Calculateur kilométrage
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** à la solution possible suivante jusqu'à ce qu vous avez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_solution_practice_problem_variables_data_types_3
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir Solution
+    :hidetitle: Masquer Solution
 
-    This is one possible solution::
+    Voici une solution possible::
 
-        # Gas Mileage Calculator
-        # Dan Schellenberg
-        # Oct 19, 2017
+        # Calculateur kilométrage
+        # Arman Gentil-Perret
+        # le 22 janvier, 2019
 
-        kilometers_driven = input("How many kilometers did you drive? ")
-        litres_used = input("How many litres of gas did it take? ")
+        kilometres_conduit = input("How many kilometers did you drive? ")
+        litres_utilise = input("Combien de kilometres avez-vous parcourues? ")
 
-        #convert user input to numbers
-        kilometers_driven = float(kilometers_driven)
-        litres_used = float(litres_used)
+        # convertir l'entrée utilisateur en nombres
+        kilometres_conduit = float(kilometres_conduit)
+        litres_utilise = float(litres_utilise)
 
-        gas_usage = litres_used / kilometers_driven * 100
+        consommation_gas = litres_utilise / kilometres_conduit * 100
 
-        print("Your car is using", gas_usage, "L/100km")
+        print("Votre voiture utilise", consommation_gas, "L/100km")
 
 
-If You Finish Early
-~~~~~~~~~~~~~~~~~~~~
+Si vous finissez tôt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you completed all the questions above before the end of class, you might want to try one of the following extra challenges:
+Si vous avez répondu à toutes les questions ci-dessus avant la fin du cours, essayez l'un des défis supplémentaires suivants:
 
-- making a calculator for a more complicated math problem. 
-- you look at the clock and it is exactly 2pm. You set an alarm to go off in 51 hours. At what time does the alarm go off? Write a Python program to solve the general version of this problem. Ask the user for the time now (in hours), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off. Note: You might want to look back at :ref:`math_operator_list`.
+- faire une calculatrice pour un problème mathématique plus compliqué.
+- Vous regardez l'horloge et il est exactement 14 heures. Vous configurez une alarme pour qu'elle se déclenche dans 51 heures. À quelle heure l'alarme se déclenche? Ecrivez un programme Python pour résoudre la version générale de ce problème. Demandez à l'utilisateur l'heure actuelle (en heures) et demandez le nombre d'heures d'attente. Votre programme doit indiquer l’heure à laquelle le réveil se déclenche. Note: Vous voudrez peut-être revenir en arrière sur: :ref:`math_operator_list`.
 
