@@ -8,7 +8,7 @@ Conditionnelles
 
 .. topic:: Aperçu rapide de la journée
 
-    Révisez les problèmes de pratique du dernier jour. Donnez plus de détails sur les expressions booléennes. Pratiquez certains problèmes Python avec les entrées/sorties (*input/output*) et les conditions.
+    Révisez les problèmes de pratique du dernier jour. Donnez plus de détails sur les expressions booléennes. Pratiquez certains problèmes Python avec les entrées/sorties (*input/Renvoi/output*) et les conditions.
 
 
 .. reveal:: curriculum_addressed_conditionals
@@ -23,90 +23,86 @@ Conditionnelles
 Que fait ce programme?
 ---------------------------
 
-Remember that in our quick Python overview, we saw that a single equal sign ``=`` is used to **assign** a value. Two equal signs ``==`` are used when **comparing** a value.
+Rappelez-vous que dans notre aperçu rapide de Python, nous avons vu dans la section :ref:`math_operator_list` qu'un seul signe égal ``=`` est utilisé pour **assigner** une valeur. Deux signes égaux ``==`` sont utilisés pour **comparer** une valeur.
 
-.. note:: Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code. 
+.. note:: Votre enseignant peut choisir d'utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun va faire avant d'exécuter le code.
 
-What will the following programs output? Why?
+Que vont produire les programmes suivants? Pourquoi?
 
 .. activecode:: wdtpd_conditionals_1
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
-    number = 20
-    number = number + 10
+    nombre  = 20
+    nombre  = nombre  + 10
 
-    if number == 10:
-      print("The number is assigned a value of 10")
+    if nombre  == 10:
+      print("La valeur 10 est affectée au numéro")
 
-    if number == 20:
-      print("The number is assigned a value of 20")
+    if nombre  == 20:
+      print("La valeur 20 est affectée au numéro")
 
-    if number == 30:
-      print("The number is assigned a value of 30")
+    if nombre  == 30:
+      print("La valeur 30 est affectée au numéro")
 
 
 .. activecode:: wdtpd_conditionals_2
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     age = 15
-    name = "Zoe"
+    nom = "Zoe"
 
     if age == 15:
-      print("Almost old enough to drive on your own.")
+      print("Vous avez presque l'âge de conduire par vous-même.")
     else:
-      print("Either older or younger than 15")
+      print("Sois plus âgé sois moins âgé de 15 ans.")
 
 
 .. activecode:: wdtpd_conditionals_3
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     age = 15
-    name = "Zoe"
+    nom = "Zoe"
 
     if age == 15:
-      print("Almost old enough to drive on your own.")
-    elif name == "Zoe":
-      print("Hi Zoe! Good to see you!")
+      print("Vous avez presque l'âge de conduire par vous-même.")
+    elif nom == "Zoe":
+      print("Bonjour Zoe! Ravi de te voir!")
     else:
-      print("Either older or younger than 15")
+      print("Sois plus âgé sois moins âgé de 15 ans.")
 
 
 .. activecode:: wdtpd_conditionals_4
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     age = 15
-    name = "Zoe"
+    nom = "Zoe"
 
-    if name == "Eli":
-      print("Good to see you again!")
+    if nom == "Eli":
+      print("Je suis content de vous revoir!")
     elif age == 16:
-      print("You can drive!")
+      print("Vous pouvez conduire!")
     else:
-      print("It's been awhile!")
+      print("Ca fait longtemps depuis notre dernière visite!")
 
-    print("I'm a little sleepy.")
+    print("Je suis un peu fatigué.")
 
 
 .. index:: booleans
 
-Booleans
----------
+Booléens/*booleans*
+---------------------
 
-The Python type for storing true and false values is called ``bool``, named
-after the British mathematician, George Boole. George Boole created *Boolean
-Algebra*, which is the basis of all modern computer arithmetic.
+Le type Python pour stocker les valeurs true et false est appelé ``bool``, nommé après le mathématicien britannique George Boole. George Boole a créé *L'Algèbre Booléennes*, qui est la base de toute arithmétique informatique moderne.
 
-There are only two **boolean values**.  They are ``True`` and ``False``.  Capitalization
-is important, since ``true`` and ``false`` are not boolean values (remember Python is case
-sensitive).
+Il n'y a que deux **valeurs booléennes**. Ils sont ``True`` et ``False``. La capitalisation est importante, puisque ``true`` et ``false`` ne sont pas des valeurs booléennes (rappelez-vous que Python est sensible à la différence entre majuscule et minuscule).
 
-.. note:: Boolean values are not strings!
+.. note:: Les valeurs booléennes ne sont pas des chaînes!
 
-    It is extremely important to realize that True and False are not strings.   They are not surrounded by quotes.  They are the only two values in the data type ``bool``.  Take a close look at the types shown below.
+    Il est extrêmement important de réaliser que True et False ne sont pas des chaînes. Ils ne sont pas entourés de guillemets. Ce sont les deux seules valeurs du type de données ``bool``. Examinez de près les types présentés ci-dessous.
 
 
 .. activecode:: boolean_1
@@ -115,8 +111,7 @@ sensitive).
     print(type(True))
     print(type("True"))
 
-A **boolean expression** is an expression that evaluates to a boolean value.
-The equality operator, ``==``, compares two values and produces a boolean value related to whether the two values are equal to one another.
+Une **expression booléenne** est une expression dont le résultat est une valeur booléenne. L'opérateur d'égalité, ``==``, compare deux valeurs et produit une valeur booléenne indiquant si les deux valeurs sont égales.
 
 .. activecode:: boolean_2
     :nocodelens:
@@ -126,20 +121,19 @@ The equality operator, ``==``, compares two values and produces a boolean value 
 
 .. index:: comparison operators
 
-In the first statement, the two operands are equal, so the expression evaluates
-to ``True``.  In the second statement, 5 is not equal to 6, so we get ``False``.
+Dans la première instruction, les deux opérandes sont égaux, ainsi l'expression est évaluée à ``True``. Dans la deuxième déclaration, 5 n'est pas égal à 6, nous obtenons donc ``False``.
 
-The ``==`` operator is one of six common **comparison operators**; the others are:
+L'opérateur ``==`` est l'un des six opérateurs de comparaison **comparison operators**; les autres sont:
 
 .. sourcecode:: python
 
-    x != y               # x is not equal to y
-    x > y                # x is greater than y
-    x < y                # x is less than y
-    x >= y               # x is greater than or equal to y
-    x <= y               # x is less than or equal to y
+    x != y               # x n'est pas égal à y
+    x > y                # x est supérieur à y
+    x < y                # x est inférieur à y
+    x >= y               # x est supérieur ou égal à y
+    x <= y               # x est inférieur ou égal à y
 
-We have already been using most of these, but ``!=`` is new to us. You should also remember that we used ``not`` with Reeborg, and that ``not`` switches the value of a boolean expression. Consider the following:
+Nous en avons déjà utilisé la plupart de ces dernier, mais ``!=`` Est nouveau pour nous. Vous devez également vous rappeler que nous avons utilisé ``not`` avec Reeborg et que ``not`` modifie la valeur d'une expression booléenne. Considérer ce qui suit:
 
 .. activecode:: boolean_3
     :nocodelens:
@@ -148,103 +142,104 @@ We have already been using most of these, but ``!=`` is new to us. You should al
     print(not 5 != 5)
 
 
-When asking the computer a question with a boolean expression, a common error is to use a single equal sign (``=``) instead of a double equal sign (``==``). Remember that ``=`` is an assignment operator and ``==`` is a comparison operator.
+Lorsqu'on demande à l'ordinateur une question avec une expression booléenne, une erreur courante consiste à utiliser un seul signe égal (``=``) au lieu d'un double signe égal (``==``). Rappelez-vous que ``=`` est un opérateur d'affectation et ``==`` est un opérateur de comparaison.
 
 
 
-Practice Problems
-------------------
+Problèmes de pratique
+-------------------------
 
-Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!
+Essayez les problèmes de pratique suivants. Vous pouvez travailler directement dans ce manuel ou utiliser Thonny. Dans tous les cas, veillez enregistrer votre solution dans votre dossier Informatique 20 lorsque vous avez terminé!
 
-.. note:: Remember that every time you take ``input()`` from the user, the data type of that input will be a string! Sometimes you need to convert what the user enters into a number.
+.. note:: N'oubliez pas que chaque fois que vous prenez une entrée ``input()`` de l'utilisateur, le type de données de cette entrée sera une chaîne! Parfois, vous devez convertir ce que l'utilisateur entre en nombre.
 
 
-Add/Subtract Two Numbers
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Ajouter / Soustraire Deux nombres
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that can either add or subtract two numbers. You should first ask the user whether they want to add or subtract, then take in the two numbers, then finally perform the required operation and print the result.
-   
+Ecrivez un programme qui peut additionner ou soustraire deux nombres. Vous devez d’abord demander à l’utilisateur s’il souhaite ajouter ou soustraire, puis prendre les deux nombres, puis enfin effectuer l’opération requise et imprimer le résultat.
+
+
 .. activecode:: practice_problem_conditionals_1
     :nocodelens:
     :enabledownload:
 
-    # Add/Subtract Two Numbers
-    # Put Your Name Here
-    # Put the Date Here
+    # Ajouter/Soustraire Deux nombres
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** cet exemple de solution à moins que vous n'ayez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_solution_practice_problem_conditionals_1
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir solution possible
+    :hidetitle: Masquer la solution possible
 
-    This is one possible solution. Note that it is not particularly efficient, as the same code appears in the ``if`` and ``elif`` blocks. This can be improved once variable scope and functions are understood.::
+    C'est une solution possible. Notez que ce n'est pas particulièrement efficace, car le même code apparaît dans les blocs ``if`` et ``elif``. Cela peut être amélioré une fois la *scope* et les fonctions des variables soit comprises.::
 
-      # Add/Subtract Two Numbers
-      # Dan Schellenberg
-      # Oct 23, 2017
+      # Ajouter/Soustraire Deux nombres
+      # Arman Gentil-Perret
+      # le 30 jan, 2019
 
-      operation_chosen = input("Would you like to add or subtract? ")
+      operateur_choisi = input("Voulez-vous ajouter (+) ou soustraire (-)? ")
 
-      if operation_chosen == "add":
-          #get user input
-          first_number = input("Please enter the first number: ")
-          second_number = input("Please enter the second number: ")
+      if operateur_choisi == "+":
+          #Cherche l'entré de l'utilisateur
+          premier_numero  = input("Veuillez entrer le premier nombre : ")
+          deuxieme_numero  = input("Veuillez entrer le deuxième nombre : ")
 
-          #convert input into numbers
-          first_number = float(first_number)
-          second_number = float(second_number)
+          #convertir l'entrée en nombres
+          premier_numero  = float(premier_numero)
+          deuxieme_numero  = float(deuxieme_numero)
           
-          the_answer = first_number + second_number
-          print("The answer when you add is", the_answer)
+          la_reponse = premier_numero + deuxieme_numero 
+          print("La réponse quand vous ajoutez est", la_reponse)
 
-      elif operation_chosen == "subtract":
-          #get user input
-          first_number = input("Please enter the first number: ")
-          second_number = input("Please enter the second number: ")
+      elif operateur_choisi == "subtract":
+          #Cherche l'entré de l'utilisateur
+          premier_numero  = input("Veuillez entrer le premier nombre : ")
+          deuxieme_numero  = input("Veuillez entrer le deuxième nombre : ")
 
-          #convert input into numbers
-          first_number = float(first_number)
-          second_number = float(second_number)
+          #convertir l'entrée en nombres
+          premier_numero  = float(premier_numero)
+          deuxieme_numero  = float(deuxieme_numero)
           
-          the_answer = first_number - second_number
-          print("The answer when you subtract is", the_answer)
+          la_reponse = premier_numero - deuxieme_numero 
+          print("La réponse lorsque vous soustrayez est", la_reponse)
 
       else:
-          #neither add or subtract was entered
-          print("Error. I don't know what that means. Please enter 'add' or 'subtract'.")
+          #ni "+" ni "-" a été entré 
+          print("Erreur. Je ne sais pas ce que cela signifie. Veuillez entrer '+' ou '-'.")
         
         
 
-Area Calculator
-~~~~~~~~~~~~~~~~
+Calculateur d'aire d'une surface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that asks the user if they want to find the area of a rectangle, circle, or triangle. Then have the user input the appropriate sizes (length and width, radius, or base and height) for the shape you will be calculating. Finally, perform the calculation and output the result with a nice message. *Note: You might want to use the code you created yesterday to help you create parts of this!*
-   
+Ecrivez un programme qui demande à l'utilisateur s'il souhaite trouver l'aire d'un rectangle, d'un cercle ou d'un triangle. Demandez ensuite à l'utilisateur de saisir les tailles appropriées (longueur et largeur, rayon ou base et hauteur) pour la forme à calculer. Enfin, effectuez le calcul et affichez le résultat avec un beau message. *Remarque: Vous voudrez peut-être utiliser le code que vous avez créé dans le programme Ajouter/Soustraire Deux nombres pour vous aider à créer des parties de ce code!*
+
+
 .. activecode:: practice_problem_conditionals_2
     :nocodelens:
     :enabledownload:
 
-    # Area Calculator
-    # Put Your Name Here
-    # Put the Date Here
+    # Calculateur d'aire d'une surface
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
 
-
-If You Are Having Trouble - More Details on Conditionals
----------------------------------------------------------
+Si vous avez des problèmes - Voici plus de détails sur les conditions
+-------------------------------------------------------------------------------
 
 
 ``if/else``
 ~~~~~~~~~~~~
 
-The ``if``, ``if/else`` and ``if/elif/else`` control structures are all referred to as conditional statements. Note that each time you ask the computer a question using one of these conditional statements, Python evaluates the question as a Boolean expression. 
+Les structures de contrôle ``if``, ``if/else`` et ``if/elif/else`` sont toutes appelées des instructions conditionnelles/*conditional statements*. Notez que chaque fois que vous posez une question à l'ordinateur à l'aide de l'une de ces instructions conditionnelles, Python l'évalue comme une expression booléenne.
 
 .. activecode:: conditionals_1
     :nocodelens:
@@ -252,43 +247,40 @@ The ``if``, ``if/else`` and ``if/elif/else`` control structures are all referred
     x = 15
 
     if x % 2 == 0:
-        print(x, "is even")
+        print(x, "est pair")
     else:
-        print(x, "is odd")
+        print(x, "est impair")
 
-.. sidebar::  Flowchart of a **if** statement with an **else**
+.. sidebar::  Organigramme d'une instruction **if** avec un **else**
 
    .. image:: images/flowchart_if_else.png
 
-Just like with Reeborg, the syntax for an ``if`` statement looks like this:
+Comme avec Reeborg, la syntaxe d'une instruction ``if`` ressemble à ceci:
 
 .. sourcecode:: python
 
-    if BOOLEAN EXPRESSION:
-        STATEMENTS_1        # executed if condition evaluates to True
+    if EXPRESSION BOOLÉENNE:
+        INSTRUCTION_1        # exécutée si la condition est évaluée à True
     else:
-        STATEMENTS_2        # executed if condition evaluates to False
+        INSTRUCTION_2        # exécuté si la condition est évaluée à False
 
-The boolean expression after the ``if`` statement is called the **condition**.
-If it is true, then the immediately following indented statements get executed. If not, then the statements
-indented under the ``else`` clause get executed.
+L'expression booléenne après l'instruction ``if`` est appelée **condition**. Si c'est le cas, les instructions qui suit qui sont indentée en tabulation sont exécutées. Si non, les instructions indentées sous la clause ``else`` sont exécutées.
 
-The more indented statements that follow are called a **block**. There is no limit on the number of statements that can appear under the two clauses of an
-``if`` statement, but there has to be at least one statement in each block.
+Les instructions indentée qui suivent l'instruction ``if`` sont appelées un **bloc**. Il n'y a pas de limite au nombre d'instructions pouvant apparaître sous les deux clauses d'une instruction ``if``, mais il doit y avoir au moins une instruction dans chaque bloc.
 
 
 .. mchoice:: conditionals_mc_1
    :answer_a: TRUE
    :answer_b: FALSE
-   :answer_c: TRUE on one line and FALSE on the next
-   :answer_d: Nothing will be printed
+   :answer_c: sur une ligne et FALSE sur la suivante
+   :answer_d: rien ne sera imprimé
    :correct: b
-   :feedback_a: TRUE is printed by the if-block, which only executes if the conditional (in this case, 4+5 == 10) is true.  In this case 5+4 is not equal to 10.
-   :feedback_b: Since 4+5==10 evaluates to False, Python will skip over the if block and execute the statement in the else block.
-   :feedback_c: Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.
-   :feedback_d: Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
+   :feedback_a: TRUE est imprimé par le bloc if, qui ne s’exécute que si le conditionnel (dans ce cas, 4 + 5 == 10) est vrai. Dans ce cas, 5 + 4 n'est pas égal à 10.
+   :feedback_b: Puisque 4 + 5 == 10 est évalué à False, Python ignorera le bloc if et exécutera l'instruction du bloc else.
+   :feedback_c: Python n'imprimera jamais les valeurs TRUE et FALSE car il n'exécutera seulement un des blocs if ou else, mais pas les deux.
+   :feedback_d: Python exécutera toujours soit le bloc if (si la condition est vraie), soit le bloc else (si la condition est fausse). Il ne sauterait jamais les deux blocs.
 
-   What does the following code print (choose from output a, b, c or nothing)?
+   Qu'est-ce que le code suivant imprime (choisissez parmi la sortie a, b, c ou rien)?
 
    .. code-block:: python
 
@@ -299,17 +291,17 @@ The more indented statements that follow are called a **block**. There is no lim
 
 
 .. mchoice:: conditionals_mc_2
-   :answer_a: Output a
-   :answer_b: Output b
-   :answer_c: Output c
-   :answer_d: Output d
+   :answer_a: Renvoi/Renvoi/output a
+   :answer_b: Renvoi/Renvoi/output b
+   :answer_c: Renvoi/Renvoi/output c
+   :answer_d: Renvoi/Renvoi/output d
    :correct: c
-   :feedback_a: Although TRUE is printed after the if-else statement completes, both blocks within the if-else statement print something too.  In this case, Python would have had to have skipped both blocks in the if-else statement, which it never would do.
-   :feedback_b: Because there is a TRUE printed after the if-else statement ends, Python will always print TRUE as the last statement.
-   :feedback_c: Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.
-   :feedback_d: To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.
+   :feedback_a: Bien que TRUE soit imprimé une fois l'instruction if-else terminée, les deux blocs de l'instruction if-else impriment également quelque chose. Dans ce cas, Python aurait dû ignorer les deux blocs de l'instruction if-else, ce qu'il ne ferait jamais.
+   :feedback_b: Comme il y a un TRUE imprimé après la fin de l'instruction if-else, Python imprimera toujours TRUE comme dernière instruction.
+   :feedback_c: Python imprimera FALSE à partir du bloc else (car 5 + 4 n’est pas égal à 10), puis affichera TRUE à la fin de l'instruction if-else
+   :feedback_d: Pour imprimer ces trois lignes, Python devrait exécuter les deux blocs de l'instruction if-else, ce qu'il ne peut jamais faire.
 
-   What does the following code print?
+   Qu'est-ce que le code suivant imprime?
 
    .. code-block:: python
 
@@ -339,14 +331,11 @@ The more indented statements that follow are called a **block**. There is no lim
 ``if``
 ~~~~~~~
 
-.. sidebar::  Flowchart of an **if** with no **else**
+.. sidebar::  Organigramme d'un **if** sans **else**
 
    .. image:: images/flowchart_if_only.png
 
-Another form of the ``if`` statement is one in which the ``else`` clause is omitted entirely.
-This creates what is sometimes called **unary selection**.
-In this case, when the condition evaluates to ``True``, the statements are
-executed.  Otherwise the flow of execution continues to the statement after the body of the ``if``.
+Une autre forme de l’instruction ``if`` est celle dans laquelle la clause ``else`` est entièrement omise. Cela crée ce qu'on appelle parfois **sélection unaire/unary selection**. Dans ce cas, lorsque la condition est évaluée à ``True``, les instructions sont exécutées. Sinon, le flux/*flow* d'exécution continue avec l'instruction après le corps du ``if``.
 
 
 .. activecode:: conditionals_if_1
@@ -354,62 +343,57 @@ executed.  Otherwise the flow of execution continues to the statement after the 
 
     x = 10
     if x < 0:
-        print("The negative number ",  x, " is not valid here.")
-    print("This is always printed")
+        print("Le nombre négatif  ",  x, " n'est pas valide ici.")
+    print("Ceci est toujours imprimé")
 
 
-What would be printed if the value of ``x`` is negative?  Try it.
+Que serait imprimé si la valeur de ``x`` est négative? Essayez-le
 
 
 **Check your understanding**
 
 .. mchoice:: conditionals_if_mc_1
-   :answer_a: Output a
-   :answer_b: Output b
-   :answer_c: Output c
-   :answer_d: It will cause an error because every if must have an else clause.
+   :answer_a: Renvoi/output a
+   :answer_b: Renvoi/output b
+   :answer_c: Renvoi/output c
+   :answer_d: Cela provoquera une erreur car chaque *if* doit avoir une clause *else*.
    :correct: b
-   :feedback_a: Because -10 is less than 0, Python will execute the body of the if-statement here.
-   :feedback_b: Python executes the body of the if-block as well as the statement that follows the if-block.
-   :feedback_c: Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
-   :feedback_d: It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
+   :feedback_a: Puisque -10 est inférieur à 0, Python exécutera le corps de l'instruction *if* ici.
+   :feedback_b: Python exécute le corps du bloc if ainsi que l’instruction qui suit le bloc *if*.
+   :feedback_c: Python exécutera également l'instruction qui suit le bloc if (car elle n'est pas incluse dans un bloc else, mais plutôt une instruction normale).
+   :feedback_d: Il est valide d'avoir un bloc *if* sans bloc *else* correspondant (mais vous ne puissiez pas avoir un bloc *else* sans un bloc *if* correspondant).
 
-   What does the following code print?
+
+   Qu'est-ce que le code suivant imprime?
 
    .. code-block:: python
      
      x = -10
      if x < 0:
-         print("The negative number ",  x, " is not valid here.")
-     print("This is always printed")
+         print("Le nombre négatif  ",  x, " n'est pas valide ici.")
+     print("Ceci est toujours imprimé")
 
    ::
 
      a.
-     This is always printed
+     Ceci est toujours imprimé
 
      b.
-     The negative number -10 is not valid here
-     This is always printed
+     Le nombre négatif  -10 n'est pas valide ici
+     Ceci est toujours imprimé
 
      c.
-     The negative number -10 is not valid here
+     Le nombre négatif  -10 n'est pas valide ici
 
 
 ``if/elif/else``
 ~~~~~~~~~~~~~~~~~
 
-``elif`` is an abbreviation of ``else if``. Remember that exactly one branch will be
-executed. There is no limit of the number of ``elif`` statements but only a
-single (and optional) final ``else`` statement is allowed and it must be the last
-branch in the statement.
+``elif`` est une abréviation de ``else if``. Rappelez-vous que seulement une branche sera exécutée. Il n'y a pas de limite au nombre d'instructions ``elif`` mais seulement une instruction unique (et facultative) finale ``else`` est autorisée et il sera la dernière branche de l'instruction.
 
 .. image:: images/flowchart_chained_conditional.png
 
-Each condition is checked in order. If the first is false, the next is checked,
-and so on. If one of them is true, the corresponding branch executes, and the
-statement ends. **Even if more than one condition is true, only the first true
-branch executes**.
+Chaque condition est vérifiée en ordre. Si le premier est faux, le suivant est vérifié, et ainsi de suite. Si l'une d'entre elles est vraie, la branche correspondante est exécutée et l'instruction se termine. **Même si plusieurs conditions sont vraies, seule la première branche vraie est exécutée**.
 
 
 .. activecode:: conditionals_if_elif_else_1
@@ -419,8 +403,8 @@ branch executes**.
     y = 10
 
     if x < y:
-        print("x is less than y")
+        print("x est inférieur à y")
     elif x > y:
-        print("x is greater than y")
+        print("x est supérieur à y")
     else:
-        print("x and y must be equal")
+        print("x et y doivent être égaux")

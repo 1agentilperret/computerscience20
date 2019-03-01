@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="4. Input/Output Assignment" href="InputOutputAssignment.html" />
-    <link rel="prev" title="2. Variables, Data Types, and User Input" href="VariablesAndDataTypes.html" />
+    <link rel="prev" title="2. Variables, types de données et entrée par utilisateur" href="VariablesAndDataTypes.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -205,13 +205,13 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">3. Conditionnelles</a><ul>
 <li><a class="reference internal" href="#que-fait-ce-programme">3.1. Que fait ce programme?</a></li>
-<li><a class="reference internal" href="#booleans">3.2. Booleans</a></li>
-<li><a class="reference internal" href="#practice-problems">3.3. Practice Problems</a><ul>
-<li><a class="reference internal" href="#add-subtract-two-numbers">3.3.1. Add/Subtract Two Numbers</a></li>
-<li><a class="reference internal" href="#area-calculator">3.3.2. Area Calculator</a></li>
+<li><a class="reference internal" href="#booleens-booleans">3.2. Booléens/<em>booleans</em></a></li>
+<li><a class="reference internal" href="#problemes-de-pratique">3.3. Problèmes de pratique</a><ul>
+<li><a class="reference internal" href="#ajouter-soustraire-deux-nombres">3.3.1. Ajouter / Soustraire Deux nombres</a></li>
+<li><a class="reference internal" href="#calculateur-d-aire-d-une-surface">3.3.2. Calculateur d’aire d’une surface</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#if-you-are-having-trouble-more-details-on-conditionals">3.4. If You Are Having Trouble - More Details on Conditionals</a><ul>
+<li><a class="reference internal" href="#si-vous-avez-des-problemes-voici-plus-de-details-sur-les-conditions">3.4. Si vous avez des problèmes - Voici plus de détails sur les conditions</a><ul>
 <li><a class="reference internal" href="#if-else">3.4.1. <code class="docutils literal notranslate"><span class="pre">if/else</span></code></a></li>
 <li><a class="reference internal" href="#if">3.4.2. <code class="docutils literal notranslate"><span class="pre">if</span></code></a></li>
 <li><a class="reference internal" href="#if-elif-else">3.4.3. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code></a></li>
@@ -226,7 +226,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 2. Variables, Data Types, and User Input" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - 2. Variables, types de données et entrée par utilisateur" data-toggle="tooltip">
     <a href="VariablesAndDataTypes.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -267,7 +267,7 @@
 <h1>3. Conditionnelles<a class="headerlink" href="#conditionnelles" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">Aperçu rapide de la journée</p>
-<p>Révisez les problèmes de pratique du dernier jour. Donnez plus de détails sur les expressions booléennes. Pratiquez certains problèmes Python avec les entrées/sorties (<em>input/output</em>) et les conditions.</p>
+<p>Révisez les problèmes de pratique du dernier jour. Donnez plus de détails sur les expressions booléennes. Pratiquez certains problèmes Python avec les entrées/sorties (<em>input/Renvoi/output</em>) et les conditions.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_conditionals"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -280,30 +280,30 @@
     </div>
     <div class="section" id="que-fait-ce-programme">
 <h2>3.1. Que fait ce programme?<a class="headerlink" href="#que-fait-ce-programme" title="Permalink to this headline">¶</a></h2>
-<p>Remember that in our quick Python overview, we saw that a single equal sign <code class="docutils literal notranslate"><span class="pre">=</span></code> is used to <strong>assign</strong> a value. Two equal signs <code class="docutils literal notranslate"><span class="pre">==</span></code> are used when <strong>comparing</strong> a value.</p>
+<p>Rappelez-vous que dans notre aperçu rapide de Python, nous avons vu dans la section <a class="reference internal" href="QuickOverview.html#math-operator-list"><span class="std std-ref">Opérateurs mathématiques</span></a> qu’un seul signe égal <code class="docutils literal notranslate"><span class="pre">=</span></code> est utilisé pour <strong>assigner</strong> une valeur. Deux signes égaux <code class="docutils literal notranslate"><span class="pre">==</span></code> sont utilisés pour <strong>comparer</strong> une valeur.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
+<p class="last">Votre enseignant peut choisir d’utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun va faire avant d’exécuter le code.</p>
 </div>
-<p>What will the following programs output? Why?</p>
+<p>Que vont produire les programmes suivants? Pourquoi?</p>
 
 <div data-childcomponent="wdtpd_conditionals_1" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_conditionals_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-number = 20
-number = number + 10
+         data-caption='Que va imprimer ce programme?' >
+nombre  = 20
+nombre  = nombre  + 10
 
-if number == 10:
-  print("The number is assigned a value of 10")
+if nombre  == 10:
+  print("La valeur 10 est affectée au numéro")
 
-if number == 20:
-  print("The number is assigned a value of 20")
+if nombre  == 20:
+  print("La valeur 20 est affectée au numéro")
 
-if number == 30:
-  print("The number is assigned a value of 30")
+if nombre  == 30:
+  print("La valeur 30 est affectée au numéro")
 </textarea>
 </div>
 
@@ -312,14 +312,14 @@ if number == 30:
 <textarea data-component="activecode" id=wdtpd_conditionals_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 age = 15
-name = "Zoe"
+nom = "Zoe"
 
 if age == 15:
-  print("Almost old enough to drive on your own.")
+  print("Vous avez presque l'âge de conduire par vous-même.")
 else:
-  print("Either older or younger than 15")
+  print("Sois plus âgé sois moins âgé de 15 ans.")
 </textarea>
 </div>
 
@@ -328,16 +328,16 @@ else:
 <textarea data-component="activecode" id=wdtpd_conditionals_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 age = 15
-name = "Zoe"
+nom = "Zoe"
 
 if age == 15:
-  print("Almost old enough to drive on your own.")
-elif name == "Zoe":
-  print("Hi Zoe! Good to see you!")
+  print("Vous avez presque l'âge de conduire par vous-même.")
+elif nom == "Zoe":
+  print("Bonjour Zoe! Ravi de te voir!")
 else:
-  print("Either older or younger than 15")
+  print("Sois plus âgé sois moins âgé de 15 ans.")
 </textarea>
 </div>
 
@@ -346,33 +346,29 @@ else:
 <textarea data-component="activecode" id=wdtpd_conditionals_4 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 age = 15
-name = "Zoe"
+nom = "Zoe"
 
-if name == "Eli":
-  print("Good to see you again!")
+if nom == "Eli":
+  print("Je suis content de vous revoir!")
 elif age == 16:
-  print("You can drive!")
+  print("Vous pouvez conduire!")
 else:
-  print("It's been awhile!")
+  print("Ca fait longtemps depuis notre dernière visite!")
 
-print("I'm a little sleepy.")
+print("Je suis un peu fatigué.")
 </textarea>
 </div>
 </div>
-<div class="section" id="booleans">
-<span id="index-0"></span><h2>3.2. Booleans<a class="headerlink" href="#booleans" title="Permalink to this headline">¶</a></h2>
-<p>The Python type for storing true and false values is called <code class="docutils literal notranslate"><span class="pre">bool</span></code>, named
-after the British mathematician, George Boole. George Boole created <em>Boolean
-Algebra</em>, which is the basis of all modern computer arithmetic.</p>
-<p>There are only two <strong>boolean values</strong>.  They are <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>.  Capitalization
-is important, since <code class="docutils literal notranslate"><span class="pre">true</span></code> and <code class="docutils literal notranslate"><span class="pre">false</span></code> are not boolean values (remember Python is case
-sensitive).</p>
+<div class="section" id="booleens-booleans">
+<span id="index-0"></span><h2>3.2. Booléens/<em>booleans</em><a class="headerlink" href="#booleens-booleans" title="Permalink to this headline">¶</a></h2>
+<p>Le type Python pour stocker les valeurs true et false est appelé <code class="docutils literal notranslate"><span class="pre">bool</span></code>, nommé après le mathématicien britannique George Boole. George Boole a créé <em>L’Algèbre Booléennes</em>, qui est la base de toute arithmétique informatique moderne.</p>
+<p>Il n’y a que deux <strong>valeurs booléennes</strong>. Ils sont <code class="docutils literal notranslate"><span class="pre">True</span></code> et <code class="docutils literal notranslate"><span class="pre">False</span></code>. La capitalisation est importante, puisque <code class="docutils literal notranslate"><span class="pre">true</span></code> et <code class="docutils literal notranslate"><span class="pre">false</span></code> ne sont pas des valeurs booléennes (rappelez-vous que Python est sensible à la différence entre majuscule et minuscule).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Boolean values are not strings!</p>
-<p class="last">It is extremely important to realize that True and False are not strings.   They are not surrounded by quotes.  They are the only two values in the data type <code class="docutils literal notranslate"><span class="pre">bool</span></code>.  Take a close look at the types shown below.</p>
+<p>Les valeurs booléennes ne sont pas des chaînes!</p>
+<p class="last">Il est extrêmement important de réaliser que True et False ne sont pas des chaînes. Ils ne sont pas entourés de guillemets. Ce sont les deux seules valeurs du type de données <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Examinez de près les types présentés ci-dessous.</p>
 </div>
 
 <div data-childcomponent="boolean_1" class="runestone explainer ac_section alert alert-warning">
@@ -385,8 +381,7 @@ print(type(True))
 print(type("True"))
 </textarea>
 </div>
-<p>A <strong>boolean expression</strong> is an expression that evaluates to a boolean value.
-The equality operator, <code class="docutils literal notranslate"><span class="pre">==</span></code>, compares two values and produces a boolean value related to whether the two values are equal to one another.</p>
+<p>Une <strong>expression booléenne</strong> est une expression dont le résultat est une valeur booléenne. L’opérateur d’égalité, <code class="docutils literal notranslate"><span class="pre">==</span></code>, compare deux valeurs et produit une valeur booléenne indiquant si les deux valeurs sont égales.</p>
 
 <div data-childcomponent="boolean_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -398,17 +393,16 @@ print(5 == 5)
 print(5 == 6)
 </textarea>
 </div>
-<p id="index-1">In the first statement, the two operands are equal, so the expression evaluates
-to <code class="docutils literal notranslate"><span class="pre">True</span></code>.  In the second statement, 5 is not equal to 6, so we get <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">==</span></code> operator is one of six common <strong>comparison operators</strong>; the others are:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span>               <span class="c1"># x is not equal to y</span>
-<span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>                <span class="c1"># x is greater than y</span>
-<span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>                <span class="c1"># x is less than y</span>
-<span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>               <span class="c1"># x is greater than or equal to y</span>
-<span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span>               <span class="c1"># x is less than or equal to y</span>
+<p id="index-1">Dans la première instruction, les deux opérandes sont égaux, ainsi l’expression est évaluée à <code class="docutils literal notranslate"><span class="pre">True</span></code>. Dans la deuxième déclaration, 5 n’est pas égal à 6, nous obtenons donc <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>L’opérateur <code class="docutils literal notranslate"><span class="pre">==</span></code> est l’un des six opérateurs de comparaison <strong>comparison operators</strong>; les autres sont:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span>               <span class="c1"># x n&#39;est pas égal à y</span>
+<span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>                <span class="c1"># x est supérieur à y</span>
+<span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>                <span class="c1"># x est inférieur à y</span>
+<span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>               <span class="c1"># x est supérieur ou égal à y</span>
+<span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span>               <span class="c1"># x est inférieur ou égal à y</span>
 </pre></div>
 </div>
-<p>We have already been using most of these, but <code class="docutils literal notranslate"><span class="pre">!=</span></code> is new to us. You should also remember that we used <code class="docutils literal notranslate"><span class="pre">not</span></code> with Reeborg, and that <code class="docutils literal notranslate"><span class="pre">not</span></code> switches the value of a boolean expression. Consider the following:</p>
+<p>Nous en avons déjà utilisé la plupart de ces dernier, mais <code class="docutils literal notranslate"><span class="pre">!=</span></code> Est nouveau pour nous. Vous devez également vous rappeler que nous avons utilisé <code class="docutils literal notranslate"><span class="pre">not</span></code> avec Reeborg et que <code class="docutils literal notranslate"><span class="pre">not</span></code> modifie la valeur d’une expression booléenne. Considérer ce qui suit:</p>
 
 <div data-childcomponent="boolean_3" class="runestone explainer ac_section alert alert-warning">
 
@@ -420,18 +414,18 @@ print(5 != 5)
 print(not 5 != 5)
 </textarea>
 </div>
-<p>When asking the computer a question with a boolean expression, a common error is to use a single equal sign (<code class="docutils literal notranslate"><span class="pre">=</span></code>) instead of a double equal sign (<code class="docutils literal notranslate"><span class="pre">==</span></code>). Remember that <code class="docutils literal notranslate"><span class="pre">=</span></code> is an assignment operator and <code class="docutils literal notranslate"><span class="pre">==</span></code> is a comparison operator.</p>
+<p>Lorsqu’on demande à l’ordinateur une question avec une expression booléenne, une erreur courante consiste à utiliser un seul signe égal (<code class="docutils literal notranslate"><span class="pre">=</span></code>) au lieu d’un double signe égal (<code class="docutils literal notranslate"><span class="pre">==</span></code>). Rappelez-vous que <code class="docutils literal notranslate"><span class="pre">=</span></code> est un opérateur d’affectation et <code class="docutils literal notranslate"><span class="pre">==</span></code> est un opérateur de comparaison.</p>
 </div>
-<div class="section" id="practice-problems">
-<h2>3.3. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
-<p>Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
+<div class="section" id="problemes-de-pratique">
+<h2>3.3. Problèmes de pratique<a class="headerlink" href="#problemes-de-pratique" title="Permalink to this headline">¶</a></h2>
+<p>Essayez les problèmes de pratique suivants. Vous pouvez travailler directement dans ce manuel ou utiliser Thonny. Dans tous les cas, veillez enregistrer votre solution dans votre dossier Informatique 20 lorsque vous avez terminé!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Remember that every time you take <code class="docutils literal notranslate"><span class="pre">input()</span></code> from the user, the data type of that input will be a string! Sometimes you need to convert what the user enters into a number.</p>
+<p class="last">N’oubliez pas que chaque fois que vous prenez une entrée <code class="docutils literal notranslate"><span class="pre">input()</span></code> de l’utilisateur, le type de données de cette entrée sera une chaîne! Parfois, vous devez convertir ce que l’utilisateur entre en nombre.</p>
 </div>
-<div class="section" id="add-subtract-two-numbers">
-<h3>3.3.1. Add/Subtract Two Numbers<a class="headerlink" href="#add-subtract-two-numbers" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that can either add or subtract two numbers. You should first ask the user whether they want to add or subtract, then take in the two numbers, then finally perform the required operation and print the result.</p>
+<div class="section" id="ajouter-soustraire-deux-nombres">
+<h3>3.3.1. Ajouter / Soustraire Deux nombres<a class="headerlink" href="#ajouter-soustraire-deux-nombres" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui peut additionner ou soustraire deux nombres. Vous devez d’abord demander à l’utilisateur s’il souhaite ajouter ou soustraire, puis prendre les deux nombres, puis enfin effectuer l’opération requise et imprimer le résultat.</p>
 
 <div data-childcomponent="practice_problem_conditionals_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -439,58 +433,58 @@ print(not 5 != 5)
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Add/Subtract Two Numbers
-# Put Your Name Here
-# Put the Date Here
+# Ajouter/Soustraire Deux nombres
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have already finished creating your own solution!</p>
+<p><strong>Ne regardez pas</strong> cet exemple de solution à moins que vous n’ayez déjà fini de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_practice_problem_conditionals_1"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>This is one possible solution. Note that it is not particularly efficient, as the same code appears in the <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">elif</span></code> blocks. This can be improved once variable scope and functions are understood.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add/Subtract Two Numbers</span>
-<span class="c1"># Dan Schellenberg</span>
-<span class="c1"># Oct 23, 2017</span>
+    <div data-component="reveal" id="reveal_solution_practice_problem_conditionals_1"   data-showtitle="Voir solution possible" data-hidetitle="Masquer la solution possible" >
+    <p>C’est une solution possible. Notez que ce n’est pas particulièrement efficace, car le même code apparaît dans les blocs <code class="docutils literal notranslate"><span class="pre">if</span></code> et <code class="docutils literal notranslate"><span class="pre">elif</span></code>. Cela peut être amélioré une fois la <em>scope</em> et les fonctions des variables soit comprises.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ajouter/Soustraire Deux nombres</span>
+<span class="c1"># Arman Gentil-Perret</span>
+<span class="c1"># le 30 jan, 2019</span>
 
-<span class="n">operation_chosen</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Would you like to add or subtract? &quot;</span><span class="p">)</span>
+<span class="n">operateur_choisi</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Voulez-vous ajouter (+) ou soustraire (-)? &quot;</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">operation_chosen</span> <span class="o">==</span> <span class="s2">&quot;add&quot;</span><span class="p">:</span>
-    <span class="c1">#get user input</span>
-    <span class="n">first_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the first number: &quot;</span><span class="p">)</span>
-    <span class="n">second_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the second number: &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">operateur_choisi</span> <span class="o">==</span> <span class="s2">&quot;+&quot;</span><span class="p">:</span>
+    <span class="c1">#Cherche l&#39;entré de l&#39;utilisateur</span>
+    <span class="n">premier_numero</span>  <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer le premier nombre : &quot;</span><span class="p">)</span>
+    <span class="n">deuxieme_numero</span>  <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer le deuxième nombre : &quot;</span><span class="p">)</span>
 
-    <span class="c1">#convert input into numbers</span>
-    <span class="n">first_number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span>
-    <span class="n">second_number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span>
+    <span class="c1">#convertir l&#39;entrée en nombres</span>
+    <span class="n">premier_numero</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">premier_numero</span><span class="p">)</span>
+    <span class="n">deuxieme_numero</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">deuxieme_numero</span><span class="p">)</span>
 
-    <span class="n">the_answer</span> <span class="o">=</span> <span class="n">first_number</span> <span class="o">+</span> <span class="n">second_number</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The answer when you add is&quot;</span><span class="p">,</span> <span class="n">the_answer</span><span class="p">)</span>
+    <span class="n">la_reponse</span> <span class="o">=</span> <span class="n">premier_numero</span> <span class="o">+</span> <span class="n">deuxieme_numero</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La réponse quand vous ajoutez est&quot;</span><span class="p">,</span> <span class="n">la_reponse</span><span class="p">)</span>
 
-<span class="k">elif</span> <span class="n">operation_chosen</span> <span class="o">==</span> <span class="s2">&quot;subtract&quot;</span><span class="p">:</span>
-    <span class="c1">#get user input</span>
-    <span class="n">first_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the first number: &quot;</span><span class="p">)</span>
-    <span class="n">second_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the second number: &quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">operateur_choisi</span> <span class="o">==</span> <span class="s2">&quot;subtract&quot;</span><span class="p">:</span>
+    <span class="c1">#Cherche l&#39;entré de l&#39;utilisateur</span>
+    <span class="n">premier_numero</span>  <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer le premier nombre : &quot;</span><span class="p">)</span>
+    <span class="n">deuxieme_numero</span>  <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer le deuxième nombre : &quot;</span><span class="p">)</span>
 
-    <span class="c1">#convert input into numbers</span>
-    <span class="n">first_number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">first_number</span><span class="p">)</span>
-    <span class="n">second_number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">second_number</span><span class="p">)</span>
+    <span class="c1">#convertir l&#39;entrée en nombres</span>
+    <span class="n">premier_numero</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">premier_numero</span><span class="p">)</span>
+    <span class="n">deuxieme_numero</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">deuxieme_numero</span><span class="p">)</span>
 
-    <span class="n">the_answer</span> <span class="o">=</span> <span class="n">first_number</span> <span class="o">-</span> <span class="n">second_number</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The answer when you subtract is&quot;</span><span class="p">,</span> <span class="n">the_answer</span><span class="p">)</span>
+    <span class="n">la_reponse</span> <span class="o">=</span> <span class="n">premier_numero</span> <span class="o">-</span> <span class="n">deuxieme_numero</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La réponse lorsque vous soustrayez est&quot;</span><span class="p">,</span> <span class="n">la_reponse</span><span class="p">)</span>
 
 <span class="k">else</span><span class="p">:</span>
-    <span class="c1">#neither add or subtract was entered</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error. I don&#39;t know what that means. Please enter &#39;add&#39; or &#39;subtract&#39;.&quot;</span><span class="p">)</span>
+    <span class="c1">#ni &quot;+&quot; ni &quot;-&quot; a été entré</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Erreur. Je ne sais pas ce que cela signifie. Veuillez entrer &#39;+&#39; ou &#39;-&#39;.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 
     </div>
     </div>
-<div class="section" id="area-calculator">
-<h3>3.3.2. Area Calculator<a class="headerlink" href="#area-calculator" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that asks the user if they want to find the area of a rectangle, circle, or triangle. Then have the user input the appropriate sizes (length and width, radius, or base and height) for the shape you will be calculating. Finally, perform the calculation and output the result with a nice message. <em>Note: You might want to use the code you created yesterday to help you create parts of this!</em></p>
+<div class="section" id="calculateur-d-aire-d-une-surface">
+<h3>3.3.2. Calculateur d’aire d’une surface<a class="headerlink" href="#calculateur-d-aire-d-une-surface" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui demande à l’utilisateur s’il souhaite trouver l’aire d’un rectangle, d’un cercle ou d’un triangle. Demandez ensuite à l’utilisateur de saisir les tailles appropriées (longueur et largeur, rayon ou base et hauteur) pour la forme à calculer. Enfin, effectuez le calcul et affichez le résultat avec un beau message. <em>Remarque: Vous voudrez peut-être utiliser le code que vous avez créé dans le programme Ajouter/Soustraire Deux nombres pour vous aider à créer des parties de ce code!</em></p>
 
 <div data-childcomponent="practice_problem_conditionals_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -498,20 +492,20 @@ print(not 5 != 5)
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Area Calculator
-# Put Your Name Here
-# Put the Date Here
+# Calculateur d'aire d'une surface
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
 </div>
 </div>
-<div class="section" id="if-you-are-having-trouble-more-details-on-conditionals">
-<h2>3.4. If You Are Having Trouble - More Details on Conditionals<a class="headerlink" href="#if-you-are-having-trouble-more-details-on-conditionals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="si-vous-avez-des-problemes-voici-plus-de-details-sur-les-conditions">
+<h2>3.4. Si vous avez des problèmes - Voici plus de détails sur les conditions<a class="headerlink" href="#si-vous-avez-des-problemes-voici-plus-de-details-sur-les-conditions" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="if-else">
 <h3>3.4.1. <code class="docutils literal notranslate"><span class="pre">if/else</span></code><a class="headerlink" href="#if-else" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">if/else</span></code> and <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> control structures are all referred to as conditional statements. Note that each time you ask the computer a question using one of these conditional statements, Python evaluates the question as a Boolean expression.</p>
+<p>Les structures de contrôle <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">if/else</span></code> et <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> sont toutes appelées des instructions conditionnelles/<em>conditional statements</em>. Notez que chaque fois que vous posez une question à l’ordinateur à l’aide de l’une de ces instructions conditionnelles, Python l’évalue comme une expression booléenne.</p>
 
 <div data-childcomponent="conditionals_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -522,31 +516,28 @@ print(not 5 != 5)
 x = 15
 
 if x % 2 == 0:
-    print(x, "is even")
+    print(x, "est pair")
 else:
-    print(x, "is odd")
+    print(x, "est impair")
 </textarea>
 </div>
 <div class="sidebar">
-<p class="first sidebar-title">Flowchart of a <strong>if</strong> statement with an <strong>else</strong></p>
+<p class="first sidebar-title">Organigramme d’une instruction <strong>if</strong> avec un <strong>else</strong></p>
 <img alt="../../_images/flowchart_if_else.png" class="last" src="../../_images/flowchart_if_else.png" />
 </div>
-<p>Just like with Reeborg, the syntax for an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement looks like this:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">BOOLEAN</span> <span class="n">EXPRESSION</span><span class="p">:</span>
-    <span class="n">STATEMENTS_1</span>        <span class="c1"># executed if condition evaluates to True</span>
+<p>Comme avec Reeborg, la syntaxe d’une instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> ressemble à ceci:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">EXPRESSION</span> <span class="n">BOOLÉENNE</span><span class="p">:</span>
+    <span class="n">INSTRUCTION_1</span>        <span class="c1"># exécutée si la condition est évaluée à True</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">STATEMENTS_2</span>        <span class="c1"># executed if condition evaluates to False</span>
+    <span class="n">INSTRUCTION_2</span>        <span class="c1"># exécuté si la condition est évaluée à False</span>
 </pre></div>
 </div>
-<p>The boolean expression after the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is called the <strong>condition</strong>.
-If it is true, then the immediately following indented statements get executed. If not, then the statements
-indented under the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause get executed.</p>
-<p>The more indented statements that follow are called a <strong>block</strong>. There is no limit on the number of statements that can appear under the two clauses of an
-<code class="docutils literal notranslate"><span class="pre">if</span></code> statement, but there has to be at least one statement in each block.</p>
+<p>L’expression booléenne après l’instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> est appelée <strong>condition</strong>. Si c’est le cas, les instructions qui suit qui sont indentée en tabulation sont exécutées. Si non, les instructions indentées sous la clause <code class="docutils literal notranslate"><span class="pre">else</span></code> sont exécutées.</p>
+<p>Les instructions indentée qui suivent l’instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> sont appelées un <strong>bloc</strong>. Il n’y a pas de limite au nombre d’instructions pouvant apparaître sous les deux clauses d’une instruction <code class="docutils literal notranslate"><span class="pre">if</span></code>, mais il doit y avoir au moins une instruction dans chaque bloc.</p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conditionals_mc_1">
-            <p>conditionals1: What does the following code print (choose from output a, b, c or nothing)?</p>
+            <p>conditionals1: Qu’est-ce que le code suivant imprime (choisissez parmi la sortie a, b, c ou rien)?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;TRUE&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -554,13 +545,13 @@ indented under the <code class="docutils literal notranslate"><span class="pre">
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="conditionals_mc_1_opt_a">TRUE</li><li data-component="feedback" id="conditionals_mc_1_opt_a">TRUE is printed by the if-block, which only executes if the conditional (in this case, 4+5 == 10) is true.  In this case 5+4 is not equal to 10.</li>
+            <li data-component="answer"  id="conditionals_mc_1_opt_a">TRUE</li><li data-component="feedback" id="conditionals_mc_1_opt_a">TRUE est imprimé par le bloc if, qui ne s’exécute que si le conditionnel (dans ce cas, 4 + 5 == 10) est vrai. Dans ce cas, 5 + 4 n'est pas égal à 10.</li>
             
-            <li data-component="answer" data-correct id="conditionals_mc_1_opt_b">FALSE</li><li data-component="feedback" id="conditionals_mc_1_opt_b">Since 4+5==10 evaluates to False, Python will skip over the if block and execute the statement in the else block.</li>
+            <li data-component="answer" data-correct id="conditionals_mc_1_opt_b">FALSE</li><li data-component="feedback" id="conditionals_mc_1_opt_b">Puisque 4 + 5 == 10 est évalué à False, Python ignorera le bloc if et exécutera l'instruction du bloc else.</li>
             
-            <li data-component="answer"  id="conditionals_mc_1_opt_c">TRUE on one line and FALSE on the next</li><li data-component="feedback" id="conditionals_mc_1_opt_c">Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.</li>
+            <li data-component="answer"  id="conditionals_mc_1_opt_c">sur une ligne et FALSE sur la suivante</li><li data-component="feedback" id="conditionals_mc_1_opt_c">Python n'imprimera jamais les valeurs TRUE et FALSE car il n'exécutera seulement un des blocs if ou else, mais pas les deux.</li>
             
-            <li data-component="answer"  id="conditionals_mc_1_opt_d">Nothing will be printed</li><li data-component="feedback" id="conditionals_mc_1_opt_d">Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.</li>
+            <li data-component="answer"  id="conditionals_mc_1_opt_d">rien ne sera imprimé</li><li data-component="feedback" id="conditionals_mc_1_opt_d">Python exécutera toujours soit le bloc if (si la condition est vraie), soit le bloc else (si la condition est fausse). Il ne sauterait jamais les deux blocs.</li>
             
 
             </ul>
@@ -568,7 +559,7 @@ indented under the <code class="docutils literal notranslate"><span class="pre">
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conditionals_mc_2">
-            <p>conditionals2: What does the following code print?</p>
+            <p>conditionals2: Qu’est-ce que le code suivant imprime?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="s2">&quot;TRUE&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -592,13 +583,13 @@ indented under the <code class="docutils literal notranslate"><span class="pre">
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="conditionals_mc_2_opt_a">Output a</li><li data-component="feedback" id="conditionals_mc_2_opt_a">Although TRUE is printed after the if-else statement completes, both blocks within the if-else statement print something too.  In this case, Python would have had to have skipped both blocks in the if-else statement, which it never would do.</li>
+            <li data-component="answer"  id="conditionals_mc_2_opt_a">Renvoi/Renvoi/output a</li><li data-component="feedback" id="conditionals_mc_2_opt_a">Bien que TRUE soit imprimé une fois l'instruction if-else terminée, les deux blocs de l'instruction if-else impriment également quelque chose. Dans ce cas, Python aurait dû ignorer les deux blocs de l'instruction if-else, ce qu'il ne ferait jamais.</li>
             
-            <li data-component="answer"  id="conditionals_mc_2_opt_b">Output b</li><li data-component="feedback" id="conditionals_mc_2_opt_b">Because there is a TRUE printed after the if-else statement ends, Python will always print TRUE as the last statement.</li>
+            <li data-component="answer"  id="conditionals_mc_2_opt_b">Renvoi/Renvoi/output b</li><li data-component="feedback" id="conditionals_mc_2_opt_b">Comme il y a un TRUE imprimé après la fin de l'instruction if-else, Python imprimera toujours TRUE comme dernière instruction.</li>
             
-            <li data-component="answer" data-correct id="conditionals_mc_2_opt_c">Output c</li><li data-component="feedback" id="conditionals_mc_2_opt_c">Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.</li>
+            <li data-component="answer" data-correct id="conditionals_mc_2_opt_c">Renvoi/Renvoi/output c</li><li data-component="feedback" id="conditionals_mc_2_opt_c">Python imprimera FALSE à partir du bloc else (car 5 + 4 n’est pas égal à 10), puis affichera TRUE à la fin de l'instruction if-else</li>
             
-            <li data-component="answer"  id="conditionals_mc_2_opt_d">Output d</li><li data-component="feedback" id="conditionals_mc_2_opt_d">To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.</li>
+            <li data-component="answer"  id="conditionals_mc_2_opt_d">Renvoi/Renvoi/output d</li><li data-component="feedback" id="conditionals_mc_2_opt_d">Pour imprimer ces trois lignes, Python devrait exécuter les deux blocs de l'instruction if-else, ce qu'il ne peut jamais faire.</li>
             
 
             </ul>
@@ -607,13 +598,10 @@ indented under the <code class="docutils literal notranslate"><span class="pre">
 <div class="section" id="if">
 <h3>3.4.2. <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h3>
 <div class="sidebar">
-<p class="first sidebar-title">Flowchart of an <strong>if</strong> with no <strong>else</strong></p>
+<p class="first sidebar-title">Organigramme d’un <strong>if</strong> sans <strong>else</strong></p>
 <img alt="../../_images/flowchart_if_only.png" class="last" src="../../_images/flowchart_if_only.png" />
 </div>
-<p>Another form of the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is one in which the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause is omitted entirely.
-This creates what is sometimes called <strong>unary selection</strong>.
-In this case, when the condition evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the statements are
-executed.  Otherwise the flow of execution continues to the statement after the body of the <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
+<p>Une autre forme de l’instruction <code class="docutils literal notranslate"><span class="pre">if</span></code> est celle dans laquelle la clause <code class="docutils literal notranslate"><span class="pre">else</span></code> est entièrement omise. Cela crée ce qu’on appelle parfois <strong>sélection unaire/unary selection</strong>. Dans ce cas, lorsque la condition est évaluée à <code class="docutils literal notranslate"><span class="pre">True</span></code>, les instructions sont exécutées. Sinon, le flux/<em>flow</em> d’exécution continue avec l’instruction après le corps du <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
 
 <div data-childcomponent="conditionals_if_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -623,41 +611,41 @@ executed.  Otherwise the flow of execution continues to the statement after the 
           >
 x = 10
 if x < 0:
-    print("The negative number ",  x, " is not valid here.")
-print("This is always printed")
+    print("Le nombre négatif  ",  x, " n'est pas valide ici.")
+print("Ceci est toujours imprimé")
 </textarea>
 </div>
-<p>What would be printed if the value of <code class="docutils literal notranslate"><span class="pre">x</span></code> is negative?  Try it.</p>
+<p>Que serait imprimé si la valeur de <code class="docutils literal notranslate"><span class="pre">x</span></code> est négative? Essayez-le</p>
 <p><strong>Check your understanding</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="conditionals_if_mc_1">
-            <p>conditionals3: What does the following code print?</p>
+            <p>conditionals3: Qu’est-ce que le code suivant imprime?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;The negative number &quot;</span><span class="p">,</span>  <span class="n">x</span><span class="p">,</span> <span class="s2">&quot; is not valid here.&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is always printed&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Le nombre négatif  &quot;</span><span class="p">,</span>  <span class="n">x</span><span class="p">,</span> <span class="s2">&quot; n&#39;est pas valide ici.&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Ceci est toujours imprimé&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span>
-<span class="n">This</span> <span class="ow">is</span> <span class="n">always</span> <span class="n">printed</span>
+<span class="n">Ceci</span> <span class="n">est</span> <span class="n">toujours</span> <span class="n">imprimé</span>
 
 <span class="n">b</span><span class="o">.</span>
-<span class="n">The</span> <span class="n">negative</span> <span class="n">number</span> <span class="o">-</span><span class="mi">10</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">valid</span> <span class="n">here</span>
-<span class="n">This</span> <span class="ow">is</span> <span class="n">always</span> <span class="n">printed</span>
+<span class="n">Le</span> <span class="n">nombre</span> <span class="n">négatif</span>  <span class="o">-</span><span class="mi">10</span> <span class="n">n</span><span class="s1">&#39;est pas valide ici</span>
+<span class="n">Ceci</span> <span class="n">est</span> <span class="n">toujours</span> <span class="n">imprimé</span>
 
 <span class="n">c</span><span class="o">.</span>
-<span class="n">The</span> <span class="n">negative</span> <span class="n">number</span> <span class="o">-</span><span class="mi">10</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">valid</span> <span class="n">here</span>
+<span class="n">Le</span> <span class="n">nombre</span> <span class="n">négatif</span>  <span class="o">-</span><span class="mi">10</span> <span class="n">n</span><span class="s1">&#39;est pas valide ici</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="conditionals_if_mc_1_opt_a">Output a</li><li data-component="feedback" id="conditionals_if_mc_1_opt_a">Because -10 is less than 0, Python will execute the body of the if-statement here.</li>
+            <li data-component="answer"  id="conditionals_if_mc_1_opt_a">Renvoi/output a</li><li data-component="feedback" id="conditionals_if_mc_1_opt_a">Puisque -10 est inférieur à 0, Python exécutera le corps de l'instruction *if* ici.</li>
             
-            <li data-component="answer" data-correct id="conditionals_if_mc_1_opt_b">Output b</li><li data-component="feedback" id="conditionals_if_mc_1_opt_b">Python executes the body of the if-block as well as the statement that follows the if-block.</li>
+            <li data-component="answer" data-correct id="conditionals_if_mc_1_opt_b">Renvoi/output b</li><li data-component="feedback" id="conditionals_if_mc_1_opt_b">Python exécute le corps du bloc if ainsi que l’instruction qui suit le bloc *if*.</li>
             
-            <li data-component="answer"  id="conditionals_if_mc_1_opt_c">Output c</li><li data-component="feedback" id="conditionals_if_mc_1_opt_c">Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).</li>
+            <li data-component="answer"  id="conditionals_if_mc_1_opt_c">Renvoi/output c</li><li data-component="feedback" id="conditionals_if_mc_1_opt_c">Python exécutera également l'instruction qui suit le bloc if (car elle n'est pas incluse dans un bloc else, mais plutôt une instruction normale).</li>
             
-            <li data-component="answer"  id="conditionals_if_mc_1_opt_d">It will cause an error because every if must have an else clause.</li><li data-component="feedback" id="conditionals_if_mc_1_opt_d">It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).</li>
+            <li data-component="answer"  id="conditionals_if_mc_1_opt_d">Cela provoquera une erreur car chaque *if* doit avoir une clause *else*.</li><li data-component="feedback" id="conditionals_if_mc_1_opt_d">Il est valide d'avoir un bloc *if* sans bloc *else* correspondant (mais vous ne puissiez pas avoir un bloc *else* sans un bloc *if* correspondant).</li>
             
 
             </ul>
@@ -665,15 +653,9 @@ print("This is always printed")
             </div>
 <div class="section" id="if-elif-else">
 <h3>3.4.3. <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code><a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">elif</span></code> is an abbreviation of <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>. Remember that exactly one branch will be
-executed. There is no limit of the number of <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements but only a
-single (and optional) final <code class="docutils literal notranslate"><span class="pre">else</span></code> statement is allowed and it must be the last
-branch in the statement.</p>
+<p><code class="docutils literal notranslate"><span class="pre">elif</span></code> est une abréviation de <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>. Rappelez-vous que seulement une branche sera exécutée. Il n’y a pas de limite au nombre d’instructions <code class="docutils literal notranslate"><span class="pre">elif</span></code> mais seulement une instruction unique (et facultative) finale <code class="docutils literal notranslate"><span class="pre">else</span></code> est autorisée et il sera la dernière branche de l’instruction.</p>
 <img alt="../../_images/flowchart_chained_conditional.png" src="../../_images/flowchart_chained_conditional.png" />
-<p>Each condition is checked in order. If the first is false, the next is checked,
-and so on. If one of them is true, the corresponding branch executes, and the
-statement ends. <strong>Even if more than one condition is true, only the first true
-branch executes</strong>.</p>
+<p>Chaque condition est vérifiée en ordre. Si le premier est faux, le suivant est vérifié, et ainsi de suite. Si l’une d’entre elles est vraie, la branche correspondante est exécutée et l’instruction se termine. <strong>Même si plusieurs conditions sont vraies, seule la première branche vraie est exécutée</strong>.</p>
 
 <div data-childcomponent="conditionals_if_elif_else_1" class="runestone explainer ac_section alert alert-warning">
 
@@ -685,11 +667,11 @@ x = 10
 y = 10
 
 if x < y:
-    print("x is less than y")
+    print("x est inférieur à y")
 elif x > y:
-    print("x is greater than y")
+    print("x est supérieur à y")
 else:
-    print("x and y must be equal")
+    print("x et y doivent être égaux")
 </textarea>
 </div>
 </div>
@@ -699,7 +681,7 @@ else:
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 2. Variables, Data Types, and User Input' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - 2. Variables, types de données et entrée par utilisateur' data-toggle="tooltip">
     <a href="VariablesAndDataTypes.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

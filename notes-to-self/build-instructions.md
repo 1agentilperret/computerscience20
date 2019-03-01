@@ -21,3 +21,11 @@ For right now, I'm using a customized build of Skulpt, in order to be able to us
   - if not using a virtual env, just navigate to the computerscience20 folder, then
 - `runestone build` -- will build the html and put it in ./docs/
 - `deactivate` (when done working)
+
+## internal referencing
+
+mark:
+.. _reference_name:
+
+call:
+:ref:`reference_name`
