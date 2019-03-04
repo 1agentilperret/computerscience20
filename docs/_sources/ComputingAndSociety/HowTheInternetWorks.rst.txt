@@ -19,8 +19,8 @@ Afficher ces vidéos au début du cours (une par jour) pendant plusieurs jours e
 .. index:: internet
 
 
-What is the Internet?
----------------------------
+Qu'est-ce que l'internet? / *What is the Internet?*
+------------------------------------------------------
 
 .. youtube:: Dxcc6ycZ73M
     :height: 315
@@ -29,8 +29,8 @@ What is the Internet?
     :http: https
 
 
-Wires, Cables & Wifi
---------------------------------------
+Fils, câbles et Wifi / *Wires, Cables & Wifi*
+------------------------------------------------
 
 .. youtube:: ZhEf7e4kopM
     :height: 315
@@ -39,8 +39,8 @@ Wires, Cables & Wifi
     :http: https
 
 
-IP Addresses & DNS
---------------------------------------
+Adresses IP et DNS / *IP Addresses & DNS* 
+-------------------------------------------
 
 .. youtube:: 5o8CwafCxnU
     :height: 315
@@ -49,8 +49,8 @@ IP Addresses & DNS
     :http: https
 
 
-Packets, Routing & Reliability
---------------------------------------
+Paquets, routage et fiabilité / *Packets, Routing & Reliability*
+------------------------------------------------------------------
 
 .. youtube:: AYdF7b3nMto
     :height: 315
@@ -69,8 +69,8 @@ HTTP & HTML
     :http: https
 
 
-Encryption & Public Keys
---------------------------------------
+Cryptage et clés publiques / *Encryption & Public Keys*
+--------------------------------------------------------
 
 .. youtube:: ZghMPWGXexs
     :height: 315
@@ -79,8 +79,8 @@ Encryption & Public Keys
     :http: https
 
 
-Cybersecurity & Crime
---------------------------------------
+Cybersécurité et criminalité / *Cybersecurity & Crime*
+--------------------------------------------------------
 
 .. youtube:: AuYNXgO_f3Y
     :height: 315
@@ -90,8 +90,8 @@ Cybersecurity & Crime
 
 
 
-How Search Works
---------------------------------------
+Comment fonctionne la recherche / *How Search Works*
+------------------------------------------------------
 
 .. youtube:: LVV_93mBfSU
     :height: 315

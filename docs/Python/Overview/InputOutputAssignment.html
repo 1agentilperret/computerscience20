@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>4. Input/Output Assignment &#8212; Computer Science 20 Saskatchewan</title>
+    <title>4. Projet entrée/sortie – Input/Output Assignment &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,10 +203,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">4. Input/Output Assignment</a><ul>
-<li><a class="reference internal" href="#what-does-this-program-do">4.1. What Does This Program Do?</a></li>
-<li><a class="reference internal" href="#being-careful-with-data-types">4.2. Being Careful with Data Types</a></li>
-<li><a class="reference internal" href="#input-output-sample-assignment">4.3. Input/Output Sample Assignment</a></li>
+<li><a class="reference internal" href="#">4. Projet entrée/sortie – <em>Input/Output Assignment</em></a><ul>
+<li><a class="reference internal" href="#que-fait-ce-programme">4.1. Que fait ce programme?</a></li>
+<li><a class="reference internal" href="#soyez-prudent-avec-les-types-de-donnees">4.2. Soyez prudent avec les types de données</a></li>
+<li><a class="reference internal" href="#exemple-de-projet-d-entree-sortie">4.3. Exemple de projet d’entrée/sortie</a></li>
+<li><a class="reference internal" href="#evaluation">4.4. Évaluation</a></li>
 </ul>
 </li>
 </ul>
@@ -253,11 +254,11 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="input-output-assignment">
-<h1>4. Input/Output Assignment<a class="headerlink" href="#input-output-assignment" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="projet-entree-sortie-input-output-assignment">
+<h1>4. Projet entrée/sortie – <em>Input/Output Assignment</em><a class="headerlink" href="#projet-entree-sortie-input-output-assignment" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Go over practice problem(s) from last day. Work on a first Python assignment, focused on input/output, data types and conditionals.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Révisez les problèmes de pratique de la dernière lecon. Travaillez sur un premier projet Python, axée sur les <strong>entrées/sorties</strong>, les types de données et les conditions.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_input_output_assn"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -268,35 +269,35 @@
 </ul>
 
     </div>
-    <div class="section" id="what-does-this-program-do">
-<h2>4.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
-<p>Remember that a single equal sign <code class="docutils literal notranslate"><span class="pre">=</span></code> is used to <strong>assign</strong> a value. Two equal signs <code class="docutils literal notranslate"><span class="pre">==</span></code> are used when <strong>comparing</strong> a value.</p>
+    <div class="section" id="que-fait-ce-programme">
+<h2>4.1. Que fait ce programme?<a class="headerlink" href="#que-fait-ce-programme" title="Permalink to this headline">¶</a></h2>
+<p>Rappelez-vous qu’un seul signe égal <code class="docutils literal notranslate"><span class="pre">=</span></code> est utilisé pour <strong>assigner</strong> une valeur. Deux signes égaux <code class="docutils literal notranslate"><span class="pre">==</span></code> sont utilisés pour <strong>comparer</strong> une valeur.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
+<p class="last">Votre enseignant peut choisir d’utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun va faire avant d’exécuter le code.</p>
 </div>
-<p>What will the following programs output? Why?</p>
+<p>Que vont produire les programmes suivants? Pourquoi?</p>
 
 <div data-childcomponent="wdtpd_input_output_first_assn_1" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_input_output_first_assn_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 print(16 == "16")
 </textarea>
 </div>
-<p>Can you spot the error in the following example? How could you fix it?</p>
+<p>Pouvez-vous voir l’erreur dans l’exemple suivant? Comment pourriez-vous résoudre ce problème?</p>
 
 <div data-childcomponent="wdtpd_input_output_first_assn_2" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_input_output_first_assn_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='Spot the error and fix it!' >
-name = input("What is your name? ")
-if name == sarah:
-  print("Hi Sarah! Good to see you!")
+         data-caption='trouvez l'erreur et corrigez-la!' >
+nom = input("Quel est votre nom? ")
+if nom == sarah:
+  print("Salut Sarah! Ravi de te voir!")
 </textarea>
 </div>
 
@@ -305,48 +306,47 @@ if name == sarah:
 <textarea data-component="activecode" id=wdtpd_input_output_first_assn_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-number = input("What number should we double? ")
-doubled_value = number * 2
-print(doubled_value)
+         data-caption='Que va imprimer ce programme?' >
+nombre = input("Quel nombre devrions-nous doubler? ")
+valeur_double = nombre * 2
+print(valeur_double)
 </textarea>
 </div>
 </div>
-<div class="section" id="being-careful-with-data-types">
-<h2>4.2. Being Careful with Data Types<a class="headerlink" href="#being-careful-with-data-types" title="Permalink to this headline">¶</a></h2>
-<p>Remember that when you are taking input from the user with the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function, the value is <strong>always, always a string!</strong> If you need to do some kind of mathematical calculation with input from the user, you must convert the input into a number (either an int or a float). Recall that the functions available to you for type conversion are:</p>
+<div class="section" id="soyez-prudent-avec-les-types-de-donnees">
+<h2>4.2. Soyez prudent avec les types de données<a class="headerlink" href="#soyez-prudent-avec-les-types-de-donnees" title="Permalink to this headline">¶</a></h2>
+<p>Rappelez-vous que lorsque vous prenez les entrées de l’utilisateur avec la fonction <code class="docutils literal notranslate"><span class="pre">input()</span></code>, la valeur est <strong>toujours, toujours une chaîne!</strong> Si vous devez effectuer une sorte de calcul mathématique avec l’entrée de l’utilisateur, vous devez convertir l’entrée en un nombre (<em>int</em> ou <em>float</em>). Rappelez-vous que les fonctions disponibles pour la conversion de type sont les suivantes:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">int(x)</span></code> to convert <em>x</em> to an integer</li>
-<li><code class="docutils literal notranslate"><span class="pre">float(x)</span></code> to convert <em>x</em> to a floating point number (number with a decimal)</li>
-<li><code class="docutils literal notranslate"><span class="pre">str(x)</span></code> to convert <em>x</em> to a string (a value surrounded by quotes)</li>
+<li><code class="docutils literal notranslate"><span class="pre">int(x)</span></code> pour convertir <em>x</em> en entier</li>
+<li><code class="docutils literal notranslate"><span class="pre">float(x)</span></code> pour convertir <em>x</em> en nombre à virgule flottante (nombre avec une décimale)</li>
+<li><code class="docutils literal notranslate"><span class="pre">str(x)</span></code> pour convertir <em>x</em> en chaîne (une valeur entourée de guillemets)</li>
 </ul>
 </div>
-<div class="section" id="input-output-sample-assignment">
-<h2>4.3. Input/Output Sample Assignment<a class="headerlink" href="#input-output-sample-assignment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="exemple-de-projet-d-entree-sortie">
+<h2>4.3. Exemple de projet d’entrée/sortie<a class="headerlink" href="#exemple-de-projet-d-entree-sortie" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You have now had a chance to practice a number of problems that involved taking in input from the user, performing some operation on that input, and printing out a result. This might be a nice time to put the knowledge you’ve gained into practice on a hand-in assignment. One possible assignment is given below.</p>
+<p class="last">Vous avez maintenant eu l’occasion de vous entraîner à un certain nombre de problèmes impliquant de saisir une entrée de l’utilisateur, d’effectuer une opération sur cette entrée et d’imprimer un résultat. Ce pourrait être un bon moment pour mettre en pratique les connaissances que vous avez acquises. Une tâche possible est donnée ci-dessous.</p>
 </div>
-<p><em>You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish for the day!</em></p>
-<p>Write a Python program that will convert degrees Celsius to degrees Fahrenheit AND from Fahrenheit to Celsius.</p>
-<p>Your program should ask the user which conversion you’d like to do (F to C, or C to F), then to input a value in degrees Celsius/Fahrenheit, and should output the converted value in degrees Fahrenheit/Celsius.</p>
-<p>For this first assignment, you don’t need to foolproof user input (in other words, you can assume that the user will enter just a number). This means that if the user were to enter in <code class="docutils literal notranslate"><span class="pre">bob</span></code> when you ask them for the temperature, your program will crash, and that is okay.</p>
-<p>As this is the first Python assignment you are going to submit, the following notes might be useful:</p>
+<p><em>Vous pouvez travailler directement dans le manuel ou utiliser Thonny. Quoi qu’il en soit, veillez enregistrer votre solution dans votre dossier Informatique 20 à la fin de la journée!</em></p>
+<p>Ecrivez un programme Python qui convertira les <em>degrés Celsius en degrés Fahrenheit</em> <strong>ET</strong> de <em>Fahrenheit en Celsius</em>.</p>
+<p>Votre programme devrait demander à l’utilisateur quelle conversion vous souhaitez effectuer (de F à C ou de C à F), puis saisir une valeur en degrés Celsius/Fahrenheit et générer la valeur convertie en degrés Fahrenheit/Celsius.</p>
+<p>Pour ce premier projet, vous n’avez pas besoin d’un programme qui saisie uniuquement les chiffres (en d’autres termes, vous pouvez supposer que l’utilisateur entrera juste un nombre). Cela signifie que si l’utilisateur va entrer <code class="docutils literal notranslate"><span class="pre">bob</span></code> lorsque vous lui demandez la température, votre programme se bloquerait, ce qui ne pose pas de problème pour ce programme.</p>
+<p>Comme il s’agit de le premier projet Python que vous allez soumettre, les notes suivantes peuvent être utiles:</p>
 <ul>
-<li><p class="first">be sure to include a comment header in your code, which means your Python file should start with something like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Temperature Conversion Assignment</span>
-<span class="c1"># Put Your Name Here</span>
-<span class="c1"># Put the Date Here</span>
-
-<span class="c1"># your code goes here</span>
-</pre></div>
-</div>
+<li><p class="first">veillez inclure un en-tête de commentaire dans votre code, ce qui signifie que votre fichier Python devrait commencer par quelque chose comme:</p>
+<blockquote>
+<div><p># Projet de conversion de température
+# Mettez votre nom ici
+# Mettez la date ici</p>
+<p># votre code va ici</p>
+</div></blockquote>
 </li>
 </ul>
-<p><strong>Extras for Experts (things to try if you finish before your classmates)</strong></p>
+<p>** Extras pour les experts**</p>
 <ul class="simple">
-<li>try to foolproof the user input (in other words, make sure your program doesn’t crash if the user types in “frank” instead of 15 when asked for a temperature). <em>Hint: check out the try and except control structure in Python. You’ll probably want to search the internet for some ideas on that.</em></li>
-<li>add the ability to convert to/from Kelvin as well</li>
+<li>essayez de vérifier l’entrée de l’utilisateur (en d’autres termes, assurez-vous que votre programme ne plante pas si l’utilisateur saisit “Frank” au lieu de 15 à la demande de température). <em>NOTE: consultez la structure **try and except control*</em> en Python. Vous voudrez probablement rechercher sur Internet quelques idées à ce sujet.*</li>
+<li>ajouter également la possibilité de convertir à partir de Kelvin (donc choisir de quelle unité convertir ensuite choisir vers quelle unité convertir).</li>
 </ul>
 
 <div data-childcomponent="first_input_output_assignment_scratch_work_area" class="runestone explainer ac_section alert alert-warning">
@@ -355,14 +355,129 @@ print(doubled_value)
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Temperature Conversion Assignment
-# Put Your Name Here
-# Put the Date Here
+# Projet de conversion de température
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
 </div>
+<div class="section" id="evaluation">
+<h2>4.4. Évaluation<a class="headerlink" href="#evaluation" title="Permalink to this headline">¶</a></h2>
+
+    <div data-component="reveal" id="eval_eighty_five_python_one"   data-showtitle="Évaluation pour avoir 85%" data-hidetitle="Cacher l'évaluation pour avoir 85%" >
+    <table border="1" class="docutils">
+<colgroup>
+<col width="81%" />
+<col width="3%" />
+<col width="7%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Critère</th>
+<th class="head">oui</th>
+<th class="head">non (-10%)</th>
+<th class="head">un peu (-5%)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Votre programme Python demande à l’utilisateur quelle conversion il/elle souhaiterait effectuer ((1) de F à C ou (2) de C à F)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python saisi une valeur de l’utilisateur en degrés Celsius/Fahrenheit</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Votre programme Python converti les degrés <em>Celsius en Fahrenheit</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python converti les degrés <em>Fahrenheit en Celsius</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Votre programme Python a suffisemment de commentaires pour expliquer à un autre programmeur ce que chaque partie de ton code fait</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python a des espaces blaches dans le code pour faciliter la lecture par un autre programmeur</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <div data-component="reveal" id="eval_one_hundy_python_one"   data-showtitle="Évaluation pour avoir 100%" data-hidetitle="Cacher l'évaluation pour avoir 100%" >
+    <table border="1" class="docutils">
+<colgroup>
+<col width="84%" />
+<col width="3%" />
+<col width="7%" />
+<col width="7%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Critère</th>
+<th class="head">oui</th>
+<th class="head">non (-10%)</th>
+<th class="head">un peu (-5%)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Votre programme Python demande à l’utilisateur <strong>de</strong> quelle unité il/elle souhaiterait convertir ([1] Celcius [2] Fahrenheit [3] Kelvin)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python demande à l’utilisateur <strong>vers</strong> quelle unité il/elle souhaiterait convertir ([1] Celcius [2] Fahrenheit [3] Kelvin)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Votre programme Python saisi une valeur de l’utilisateur en degrés Celsius/Fahrenheit/Kelvin</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python converti les degrés <em>Celsius en Fahrenheit et Kelvin</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Votre programme Python converti les degrés <em>Fahrenheit en Celsius et Kelvin</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python converti les degrés <em>Kelvin en Fahrenheit et Celsius</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Votre programme Python a suffisemment de commentaires pour expliquer à un autre programmeur ce que chaque partie de ton code fait</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Votre programme Python a des espaces blaches dans le code pour faciliter la lecture par un autre programmeur</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    </div>
 </div>
 
 
