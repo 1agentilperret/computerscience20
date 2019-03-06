@@ -3,12 +3,12 @@
    :start: 1
 
 
-String Operators and Assignment Work Time
+Opérateur de chaînes et temps de travail
 ==========================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Explore how the ``+`` and ``*`` operators work on strings. Continue to work on the first Python assignment, focused on input/output, data types and conditionals.
+    Découvrez comment les opérateurs ``+`` et ``*`` fonctionnent avec les chaînes. Continuez à travailler sur le premier projet Python, axée sur les entrées/sorties, les types de données et les conditions.
 
 
 .. reveal:: curriculum_addressed_intro_string_operators
@@ -20,126 +20,115 @@ String Operators and Assignment Work Time
     - **CS20-FP2** Investigate how control structures affect program flow.
 
 
-What Does This Program Do?
+Que fait ce programme?
 ---------------------------
 
-As you saw in the WDTPD questions from yesterday, using the ``*`` operator with strings results in something very different than using the ``*`` operator with numeric data. Consider the following questions carefully, being sure you understand WHY they output what they do.
+Comme vous l'avez vu dans les questions WDTPD de la dernière leçon, l'utilisation de l'opérateur "*" avec des chaînes donne un résultat très différent de l'utilisation de l'opérateur "*" avec des données numériques. Réfléchissez attentivement aux questions suivantes, en vous assurant de bien comprendre POURQUOI ils affichent ce qu’ils affichent.
 
-.. note:: Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code. 
+.. note:: Votre enseignant peut choisir d'utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun fera avant d'exécuter le code.
 
-**What will the following programs output? Why?**
+**Que vont produire les programmes suivants? Pourquoi??**
 
-What will this print if you enter in a ``15``? How about typing ``hey``? 
+Qu'est-ce que cela va imprimer si vous entrez ``15``? Pourquoi ne pas taper ``hey`` pour voir ce qui va imprimer? 
 
 .. activecode:: wdtpd_string_operators_1
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
-    number = input("What value should we change? ")
-    changed_value = number * 4
-    print(changed_value)
+    nombre = input("Quelle valeur devrions-nous changer? ")
+    valeur_changee = nombre * 4
+    print(valeur_changee)
 
-Enter ``3`` and ``5`` when you run the code below. What will the program print? *Hint: it will not be an error!*
+Entrez ``3`` et ``5`` lorsque vous exécutez le code ci-dessous. Que va imprimer le programme? *Indice: ce ne sera pas une erreur!*
+
 
 .. activecode:: wdtpd_string_operators_2
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
-    number_one = input("Please enter the first number: ")
-    number_two = input("Please enter the second number: ")
-    combined_value = number_one + number_two
-    print(combined_value)
+    premier_nombre = input("Veuillez entrer le premier numéro: ")
+    deuxieme_nombre = input("Veuillez entrer le deuxième numéro: ")
+    valeur_combinee = premier_nombre + deuxieme_nombre
+    print(valeur_combinee)
 
-Type in your first name and last name when you run the code below. How can you fix this code to write your name properly?
+Tapez votre prénom et votre nom de famille lorsque vous exécutez le code ci-dessous. Comment pouvez-vous corriger ce code pour écrire votre nom correctement?
 
 .. activecode:: wdtpd_string_operators_3
-    :caption: Fix the output of this code.
+    :caption: Corrige la sortie de ce code.
     :nocodelens:
 
-    first_name = input("Please enter your first name: ")
-    last_name = input("Please enter your last name: ")
-    full_name = first_name + last_name
-    print("Good to see you" + full_name)
+    prenom = input("Veuillez entrer votre prénom: ")
+    nom = input("Veuillez entrer votre nom de famille: ")
+    nom_complet = prenom + last_nom
+    print("Je suis content de vous rencontrer" + nom_complet)
 
 
 .. index:: concatenation
 
-Operations on Strings
----------------------
+Opérations avec les chaînes
+-----------------------------
 
-In general, you cannot perform mathematical operations on strings, even if the
-strings look like numbers. The following are illegal (assuming that ``message``
-has type string):
+En général, vous ne pouvez pas effectuer d’opérations mathématiques sur des chaînes, même si les chaînes ressemblent à des nombres. Les actions suivantes sont interdis (en supposant que ``message`` a une chaîne de caractères comme valeur):
 
 .. sourcecode:: python
     
     message - 1   
-    "Hello" / 123   
-    message * "Hello"   
+    "Bonjour" / 123   
+    message * "Bonjour"   
     "15" + 2
 
-Interestingly, the ``+`` operator does work with strings, but for strings, the
-``+`` operator represents **concatenation**, not addition.  Concatenation means
-joining the two operands by linking them end-to-end. This is the equivalent of using the Scratch |scratch_join_block_inline| join block.  For example:
+Fait intéressant, l’opérateur ``+`` fonctionne avec des chaînes, mais pour les chaînes, l’opérateur ``+`` représente **la concaténation/l'enchainement**, pas l’addition. La concaténation signifie joindre les deux opérandes en les reliant bout à bout. C'est l'équivalent d'utiliser le bloc de Scratch regrouper |scratch_join_block_inline|. Par exemple:
 
 .. |scratch_join_block_inline| image:: images/scratch_join_block.png
 
 .. activecode:: string_concatenation
     :nocanvas:
 
-    fruit = "banana"
-    bakedGood = " nut bread"
-    print(fruit + bakedGood)
+    fruit = " banane"
+    pateCuit = "pain aux noix "
+    print(pateCuit + "et à la" + fruit)
 
-The output of this program is ``banana nut bread``. The space before the word
-``nut`` is part of the string and is necessary to produce the space between
-the concatenated strings.  Take out the space and run it again.
+Le résultat de ce programme est ``pain aux noix et à la banane``. Les espaces à la fin du mot ``noix`` et au début du mot ``banane`` font partie de la chaîne et sont nécessaires pour produire l'espace entre les chaînes concaténées. Sortez les espaces et exécutez-le à nouveau.
 
-The ``*`` operator also works on strings.  It performs repetition. For example,
-``'Fun'*3`` is ``'FunFunFun'``. One of the operands has to be a string and the
-other has to be an integer.
+L'opérateur "*" fonctionne également sur les chaînes. Il effectue une répétition. Par exemple, ``"fun"*3`` est ``"FunFunFun"``. L'un des opérandes doit être une chaîne et l'autre doit être un entier.
+
 
 .. activecode:: string_repetition
     :nocanvas:
 
     print("Go" * 6)
 
-    name = "Riders"
-    print(name * 3)
+    nom = "Blades"
+    print(nom * 3)
 
-    print(name + "Go" * 3)
+    print(nom + "Go" * 3)
 
-    print((name + "Go") * 3)
+    print((nom + "Go") * 3)
 
-This interpretation of ``+`` and ``*`` makes sense by analogy with
-addition and multiplication. Just as ``4*3`` is equivalent to ``4+4+4``, we
-expect ``"Go"*3`` to be the same as ``"Go"+"Go"+"Go"``, and it is.  Note also in the last
-example that the order of operations for ``*`` and ``+`` is the same as it was for arithmetic.
-The repetition is done before the concatenation.  If you want to cause the concatenation to be
-done first, you will need to use parenthesis.
+Cette interprétation de ``+`` et ``*`` est logique par analogie avec l'addition et la multiplication. Tout comme ``4 * 3`` est équivalent à ``4 + 4 + 4``, nous nous attendons à ce que ``"Go" * 3`` soit identique à ``"Go"+"Go"+"Go"``, et c'est vrais dans ce cas. Notez également dans le dernier exemple que l'ordre des opérations pour ``*`` et ``+`` est le même que pour l'arithmétique (PEDMAS). La répétition est faite avant la concaténation. Si vous voulez que la concaténation soit faite en premier, vous devez utiliser une parenthèse.
 
 
-**Check your understanding**
+Vérifie ta compréhension
+----------------------------
 
 .. mchoice:: string_operators_practice_1
    :answer_a: python rocks
    :answer_b: python
    :answer_c: pythonrocks
-   :answer_d: Error, you cannot add two strings together.
+   :answer_d: Erreur, vous ne pouvez pas ajouter deux chaînes ensemble.
    :correct: c
-   :feedback_a: Concatenation does not automatically add a space.
-   :feedback_b: The expression first_string + second_string is evaluated first, then the resulting string is printed.
-   :feedback_c: Yes, the two strings are glued end to end.
-   :feedback_d: The + operator has different meanings depending on the operands, in this case, two strings.
+   :feedback_a: La concaténation n'ajoute pas automatiquement d'espace.
+   :feedback_b: l'expression chaine_un + chaine_deux est évaluée en premier, puis la chaîne résultante est imprimée
+   :feedback_c: Oui, les deux chaînes sont collées bout à bout.
+   :feedback_d: L'opérateur "+" a différentes significations selon les opérandes, dans ce cas, nous avons deux chaînes.
 
-
-   What is printed by the following statements?
+   Qu'est-ce qui est imprimé par les déclarations suivantes?
    
    .. code-block:: python
 
-      first_string = "python"
-      second_string = "rocks"
-      print(first_string + second_string)
+      chaine_un = "python"
+      chaine_deux = "rocks"
+      print(chaine_un + chaine_deux)
 
 
 
@@ -147,24 +136,24 @@ done first, you will need to use parenthesis.
    :answer_a: python!!!
    :answer_b: python!python!python!
    :answer_c: pythonpythonpython!
-   :answer_d: Error, you cannot perform concatenation and repetition at the same time.
+   :answer_d: Erreur, vous ne pouvez pas effectuer de concaténation et de répétition en même temps.
    :correct: a
-   :feedback_a: Yes, repetition has precedence over concatenation
-   :feedback_b: Repetition is done first.
-   :feedback_c: The repetition operator is working on the exclamation variable.
-   :feedback_d: The + and * operator are defined for strings as well as numbers.
+   :feedback_a: Oui, la répétition a priorité sur la concaténation.
+   :feedback_b: La répétition est faite en premier.
+   :feedback_c: L'opérateur de répétition affect la variable *exclamation*.
+   :feedback_d: Les opérateurs "+" et "*" sont définis pour les chaînes ainsi que pour les nombres.
 
 
-   What is printed by the following statements?
+   Qu'est-ce qui est imprimé par les déclarations suivantes?
    
    .. code-block:: python
  
-      first_string = "python"
+      chaine_un = "python"
       exclamation = "!"
-      print(first_string + exclamation * 3)
+      print(chaine_un + exclamation * 3)
 
 
-Assignment Work Time
+Temps de travail
 ---------------------
 
-Please spend the rest of the class continuing to work on your current Python assignment (likely some kind of input/output assignment). If you are completely done that assignment, you may want to look ahead at the next assignment or ask your teacher what additional challenges you can attempt.
+Veuillez passer le reste de la classe à continuer le travail sur votre projet Python (probablement un projet d'entrée/sortie). Si vous avez complètement terminé cette tâche, vous voudrez peut-être regarder vers la prochaine tâche ou demander à votre enseignant quels autres défis vous pouvez relever.

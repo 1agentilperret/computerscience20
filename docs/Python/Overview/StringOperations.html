@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>5. String Operators and Assignment Work Time &#8212; Computer Science 20 Saskatchewan</title>
+    <title>5. Opérateur de chaînes et temps de travail &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,10 +203,11 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">5. String Operators and Assignment Work Time</a><ul>
-<li><a class="reference internal" href="#what-does-this-program-do">5.1. What Does This Program Do?</a></li>
-<li><a class="reference internal" href="#operations-on-strings">5.2. Operations on Strings</a></li>
-<li><a class="reference internal" href="#assignment-work-time">5.3. Assignment Work Time</a></li>
+<li><a class="reference internal" href="#">5. Opérateur de chaînes et temps de travail</a><ul>
+<li><a class="reference internal" href="#que-fait-ce-programme">5.1. Que fait ce programme?</a></li>
+<li><a class="reference internal" href="#operations-avec-les-chaines">5.2. Opérations avec les chaînes</a></li>
+<li><a class="reference internal" href="#verifie-ta-comprehension">5.3. Vérifie ta compréhension</a></li>
+<li><a class="reference internal" href="#temps-de-travail">5.4. Temps de travail</a></li>
 </ul>
 </li>
 </ul>
@@ -253,11 +254,11 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="string-operators-and-assignment-work-time">
-<h1>5. String Operators and Assignment Work Time<a class="headerlink" href="#string-operators-and-assignment-work-time" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="operateur-de-chaines-et-temps-de-travail">
+<h1>5. Opérateur de chaînes et temps de travail<a class="headerlink" href="#operateur-de-chaines-et-temps-de-travail" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Explore how the <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span></code> operators work on strings. Continue to work on the first Python assignment, focused on input/output, data types and conditionals.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Découvrez comment les opérateurs <code class="docutils literal notranslate"><span class="pre">+</span></code> et <code class="docutils literal notranslate"><span class="pre">*</span></code> fonctionnent avec les chaînes. Continuez à travailler sur le premier projet Python, axée sur les entrées/sorties, les types de données et les conditions.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_intro_string_operators"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -268,70 +269,66 @@
 </ul>
 
     </div>
-    <div class="section" id="what-does-this-program-do">
-<h2>5.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
-<p>As you saw in the WDTPD questions from yesterday, using the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator with strings results in something very different than using the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator with numeric data. Consider the following questions carefully, being sure you understand WHY they output what they do.</p>
+    <div class="section" id="que-fait-ce-programme">
+<h2>5.1. Que fait ce programme?<a class="headerlink" href="#que-fait-ce-programme" title="Permalink to this headline">¶</a></h2>
+<p>Comme vous l’avez vu dans les questions WDTPD de la dernière leçon, l’utilisation de l’opérateur “*” avec des chaînes donne un résultat très différent de l’utilisation de l’opérateur “*” avec des données numériques. Réfléchissez attentivement aux questions suivantes, en vous assurant de bien comprendre POURQUOI ils affichent ce qu’ils affichent.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
+<p class="last">Votre enseignant peut choisir d’utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun fera avant d’exécuter le code.</p>
 </div>
-<p><strong>What will the following programs output? Why?</strong></p>
-<p>What will this print if you enter in a <code class="docutils literal notranslate"><span class="pre">15</span></code>? How about typing <code class="docutils literal notranslate"><span class="pre">hey</span></code>?</p>
+<p><strong>Que vont produire les programmes suivants? Pourquoi??</strong></p>
+<p>Qu’est-ce que cela va imprimer si vous entrez <code class="docutils literal notranslate"><span class="pre">15</span></code>? Pourquoi ne pas taper <code class="docutils literal notranslate"><span class="pre">hey</span></code> pour voir ce qui va imprimer?</p>
 
 <div data-childcomponent="wdtpd_string_operators_1" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_string_operators_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-number = input("What value should we change? ")
-changed_value = number * 4
-print(changed_value)
+         data-caption='Que va imprimer ce programme?' >
+nombre = input("Quelle valeur devrions-nous changer? ")
+valeur_changee = nombre * 4
+print(valeur_changee)
 </textarea>
 </div>
-<p>Enter <code class="docutils literal notranslate"><span class="pre">3</span></code> and <code class="docutils literal notranslate"><span class="pre">5</span></code> when you run the code below. What will the program print? <em>Hint: it will not be an error!</em></p>
+<p>Entrez <code class="docutils literal notranslate"><span class="pre">3</span></code> et <code class="docutils literal notranslate"><span class="pre">5</span></code> lorsque vous exécutez le code ci-dessous. Que va imprimer le programme? <em>Indice: ce ne sera pas une erreur!</em></p>
 
 <div data-childcomponent="wdtpd_string_operators_2" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_string_operators_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-number_one = input("Please enter the first number: ")
-number_two = input("Please enter the second number: ")
-combined_value = number_one + number_two
-print(combined_value)
+         data-caption='Que va imprimer ce programme?' >
+premier_nombre = input("Veuillez entrer le premier numéro: ")
+deuxieme_nombre = input("Veuillez entrer le deuxième numéro: ")
+valeur_combinee = premier_nombre + deuxieme_nombre
+print(valeur_combinee)
 </textarea>
 </div>
-<p>Type in your first name and last name when you run the code below. How can you fix this code to write your name properly?</p>
+<p>Tapez votre prénom et votre nom de famille lorsque vous exécutez le code ci-dessous. Comment pouvez-vous corriger ce code pour écrire votre nom correctement?</p>
 
 <div data-childcomponent="wdtpd_string_operators_3" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_string_operators_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='Fix the output of this code.' >
-first_name = input("Please enter your first name: ")
-last_name = input("Please enter your last name: ")
-full_name = first_name + last_name
-print("Good to see you" + full_name)
+         data-caption='Corrige la sortie de ce code.' >
+prenom = input("Veuillez entrer votre prénom: ")
+nom = input("Veuillez entrer votre nom de famille: ")
+nom_complet = prenom + last_nom
+print("Je suis content de vous rencontrer" + nom_complet)
 </textarea>
 </div>
 </div>
-<div class="section" id="operations-on-strings">
-<span id="index-0"></span><h2>5.2. Operations on Strings<a class="headerlink" href="#operations-on-strings" title="Permalink to this headline">¶</a></h2>
-<p>In general, you cannot perform mathematical operations on strings, even if the
-strings look like numbers. The following are illegal (assuming that <code class="docutils literal notranslate"><span class="pre">message</span></code>
-has type string):</p>
+<div class="section" id="operations-avec-les-chaines">
+<span id="index-0"></span><h2>5.2. Opérations avec les chaînes<a class="headerlink" href="#operations-avec-les-chaines" title="Permalink to this headline">¶</a></h2>
+<p>En général, vous ne pouvez pas effectuer d’opérations mathématiques sur des chaînes, même si les chaînes ressemblent à des nombres. Les actions suivantes sont interdis (en supposant que <code class="docutils literal notranslate"><span class="pre">message</span></code> a une chaîne de caractères comme valeur):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">-</span> <span class="mi">1</span>
-<span class="s2">&quot;Hello&quot;</span> <span class="o">/</span> <span class="mi">123</span>
-<span class="n">message</span> <span class="o">*</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="s2">&quot;Bonjour&quot;</span> <span class="o">/</span> <span class="mi">123</span>
+<span class="n">message</span> <span class="o">*</span> <span class="s2">&quot;Bonjour&quot;</span>
 <span class="s2">&quot;15&quot;</span> <span class="o">+</span> <span class="mi">2</span>
 </pre></div>
 </div>
-<p>Interestingly, the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator does work with strings, but for strings, the
-<code class="docutils literal notranslate"><span class="pre">+</span></code> operator represents <strong>concatenation</strong>, not addition.  Concatenation means
-joining the two operands by linking them end-to-end. This is the equivalent of using the Scratch <img alt="scratch_join_block_inline" src="../../_images/scratch_join_block.png" /> join block.  For example:</p>
+<p>Fait intéressant, l’opérateur <code class="docutils literal notranslate"><span class="pre">+</span></code> fonctionne avec des chaînes, mais pour les chaînes, l’opérateur <code class="docutils literal notranslate"><span class="pre">+</span></code> représente <strong>la concaténation/l’enchainement</strong>, pas l’addition. La concaténation signifie joindre les deux opérandes en les reliant bout à bout. C’est l’équivalent d’utiliser le bloc de Scratch regrouper <img alt="scratch_join_block_inline" src="../../_images/scratch_join_block.png" />. Par exemple:</p>
 
 <div data-childcomponent="string_concatenation" class="runestone explainer ac_section alert alert-warning">
 
@@ -339,17 +336,13 @@ joining the two operands by linking them end-to-end. This is the equivalent of u
       data-timelimit=25000  data-codelens="true"  
     data-audio=''    
           >
-fruit = "banana"
-bakedGood = " nut bread"
-print(fruit + bakedGood)
+fruit = " banane"
+pateCuit = "pain aux noix "
+print(pateCuit + "et à la" + fruit)
 </textarea>
 </div>
-<p>The output of this program is <code class="docutils literal notranslate"><span class="pre">banana</span> <span class="pre">nut</span> <span class="pre">bread</span></code>. The space before the word
-<code class="docutils literal notranslate"><span class="pre">nut</span></code> is part of the string and is necessary to produce the space between
-the concatenated strings.  Take out the space and run it again.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">*</span></code> operator also works on strings.  It performs repetition. For example,
-<code class="docutils literal notranslate"><span class="pre">'Fun'*3</span></code> is <code class="docutils literal notranslate"><span class="pre">'FunFunFun'</span></code>. One of the operands has to be a string and the
-other has to be an integer.</p>
+<p>Le résultat de ce programme est <code class="docutils literal notranslate"><span class="pre">pain</span> <span class="pre">aux</span> <span class="pre">noix</span> <span class="pre">et</span> <span class="pre">à</span> <span class="pre">la</span> <span class="pre">banane</span></code>. Les espaces à la fin du mot <code class="docutils literal notranslate"><span class="pre">noix</span></code> et au début du mot <code class="docutils literal notranslate"><span class="pre">banane</span></code> font partie de la chaîne et sont nécessaires pour produire l’espace entre les chaînes concaténées. Sortez les espaces et exécutez-le à nouveau.</p>
+<p>L’opérateur “*” fonctionne également sur les chaînes. Il effectue une répétition. Par exemple, <code class="docutils literal notranslate"><span class="pre">&quot;fun&quot;*3</span></code> est <code class="docutils literal notranslate"><span class="pre">&quot;FunFunFun&quot;</span></code>. L’un des opérandes doit être une chaîne et l’autre doit être un entier.</p>
 
 <div data-childcomponent="string_repetition" class="runestone explainer ac_section alert alert-warning">
 
@@ -359,38 +352,35 @@ other has to be an integer.</p>
           >
 print("Go" * 6)
 
-name = "Riders"
-print(name * 3)
+nom = "Blades"
+print(nom * 3)
 
-print(name + "Go" * 3)
+print(nom + "Go" * 3)
 
-print((name + "Go") * 3)
+print((nom + "Go") * 3)
 </textarea>
 </div>
-<p>This interpretation of <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span></code> makes sense by analogy with
-addition and multiplication. Just as <code class="docutils literal notranslate"><span class="pre">4*3</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">4+4+4</span></code>, we
-expect <code class="docutils literal notranslate"><span class="pre">&quot;Go&quot;*3</span></code> to be the same as <code class="docutils literal notranslate"><span class="pre">&quot;Go&quot;+&quot;Go&quot;+&quot;Go&quot;</span></code>, and it is.  Note also in the last
-example that the order of operations for <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">+</span></code> is the same as it was for arithmetic.
-The repetition is done before the concatenation.  If you want to cause the concatenation to be
-done first, you will need to use parenthesis.</p>
-<p><strong>Check your understanding</strong></p>
+<p>Cette interprétation de <code class="docutils literal notranslate"><span class="pre">+</span></code> et <code class="docutils literal notranslate"><span class="pre">*</span></code> est logique par analogie avec l’addition et la multiplication. Tout comme <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">*</span> <span class="pre">3</span></code> est équivalent à <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">+</span> <span class="pre">4</span> <span class="pre">+</span> <span class="pre">4</span></code>, nous nous attendons à ce que <code class="docutils literal notranslate"><span class="pre">&quot;Go&quot;</span> <span class="pre">*</span> <span class="pre">3</span></code> soit identique à <code class="docutils literal notranslate"><span class="pre">&quot;Go&quot;+&quot;Go&quot;+&quot;Go&quot;</span></code>, et c’est vrais dans ce cas. Notez également dans le dernier exemple que l’ordre des opérations pour <code class="docutils literal notranslate"><span class="pre">*</span></code> et <code class="docutils literal notranslate"><span class="pre">+</span></code> est le même que pour l’arithmétique (PEDMAS). La répétition est faite avant la concaténation. Si vous voulez que la concaténation soit faite en premier, vous devez utiliser une parenthèse.</p>
+</div>
+<div class="section" id="verifie-ta-comprehension">
+<h2>5.3. Vérifie ta compréhension<a class="headerlink" href="#verifie-ta-comprehension" title="Permalink to this headline">¶</a></h2>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string_operators_practice_1">
-            <p>intro-string-operators1: What is printed by the following statements?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">first_string</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
-<span class="n">second_string</span> <span class="o">=</span> <span class="s2">&quot;rocks&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">first_string</span> <span class="o">+</span> <span class="n">second_string</span><span class="p">)</span>
+            <p>intro-string-operators1: Qu’est-ce qui est imprimé par les déclarations suivantes?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">chaine_un</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+<span class="n">chaine_deux</span> <span class="o">=</span> <span class="s2">&quot;rocks&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">chaine_un</span> <span class="o">+</span> <span class="n">chaine_deux</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="string_operators_practice_1_opt_a">python rocks</li><li data-component="feedback" id="string_operators_practice_1_opt_a">Concatenation does not automatically add a space.</li>
+            <li data-component="answer"  id="string_operators_practice_1_opt_a">python rocks</li><li data-component="feedback" id="string_operators_practice_1_opt_a">La concaténation n'ajoute pas automatiquement d'espace.</li>
             
-            <li data-component="answer"  id="string_operators_practice_1_opt_b">python</li><li data-component="feedback" id="string_operators_practice_1_opt_b">The expression first_string + second_string is evaluated first, then the resulting string is printed.</li>
+            <li data-component="answer"  id="string_operators_practice_1_opt_b">python</li><li data-component="feedback" id="string_operators_practice_1_opt_b">l'expression chaine_un + chaine_deux est évaluée en premier, puis la chaîne résultante est imprimée</li>
             
-            <li data-component="answer" data-correct id="string_operators_practice_1_opt_c">pythonrocks</li><li data-component="feedback" id="string_operators_practice_1_opt_c">Yes, the two strings are glued end to end.</li>
+            <li data-component="answer" data-correct id="string_operators_practice_1_opt_c">pythonrocks</li><li data-component="feedback" id="string_operators_practice_1_opt_c">Oui, les deux chaînes sont collées bout à bout.</li>
             
-            <li data-component="answer"  id="string_operators_practice_1_opt_d">Error, you cannot add two strings together.</li><li data-component="feedback" id="string_operators_practice_1_opt_d">The + operator has different meanings depending on the operands, in this case, two strings.</li>
+            <li data-component="answer"  id="string_operators_practice_1_opt_d">Erreur, vous ne pouvez pas ajouter deux chaînes ensemble.</li><li data-component="feedback" id="string_operators_practice_1_opt_d">L'opérateur "+" a différentes significations selon les opérandes, dans ce cas, nous avons deux chaînes.</li>
             
 
             </ul>
@@ -398,28 +388,28 @@ done first, you will need to use parenthesis.</p>
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="string_operators_practice_2">
-            <p>intro-string-operators2: What is printed by the following statements?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">first_string</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+            <p>intro-string-operators2: Qu’est-ce qui est imprimé par les déclarations suivantes?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">chaine_un</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
 <span class="n">exclamation</span> <span class="o">=</span> <span class="s2">&quot;!&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">first_string</span> <span class="o">+</span> <span class="n">exclamation</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">chaine_un</span> <span class="o">+</span> <span class="n">exclamation</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer" data-correct id="string_operators_practice_2_opt_a">python!!!</li><li data-component="feedback" id="string_operators_practice_2_opt_a">Yes, repetition has precedence over concatenation</li>
+            <li data-component="answer" data-correct id="string_operators_practice_2_opt_a">python!!!</li><li data-component="feedback" id="string_operators_practice_2_opt_a">Oui, la répétition a priorité sur la concaténation.</li>
             
-            <li data-component="answer"  id="string_operators_practice_2_opt_b">python!python!python!</li><li data-component="feedback" id="string_operators_practice_2_opt_b">Repetition is done first.</li>
+            <li data-component="answer"  id="string_operators_practice_2_opt_b">python!python!python!</li><li data-component="feedback" id="string_operators_practice_2_opt_b">La répétition est faite en premier.</li>
             
-            <li data-component="answer"  id="string_operators_practice_2_opt_c">pythonpythonpython!</li><li data-component="feedback" id="string_operators_practice_2_opt_c">The repetition operator is working on the exclamation variable.</li>
+            <li data-component="answer"  id="string_operators_practice_2_opt_c">pythonpythonpython!</li><li data-component="feedback" id="string_operators_practice_2_opt_c">L'opérateur de répétition affect la variable *exclamation*.</li>
             
-            <li data-component="answer"  id="string_operators_practice_2_opt_d">Error, you cannot perform concatenation and repetition at the same time.</li><li data-component="feedback" id="string_operators_practice_2_opt_d">The + and * operator are defined for strings as well as numbers.</li>
+            <li data-component="answer"  id="string_operators_practice_2_opt_d">Erreur, vous ne pouvez pas effectuer de concaténation et de répétition en même temps.</li><li data-component="feedback" id="string_operators_practice_2_opt_d">Les opérateurs "+" et "*" sont définis pour les chaînes ainsi que pour les nombres.</li>
             
 
             </ul>
             </div>
             </div>
-<div class="section" id="assignment-work-time">
-<h2>5.3. Assignment Work Time<a class="headerlink" href="#assignment-work-time" title="Permalink to this headline">¶</a></h2>
-<p>Please spend the rest of the class continuing to work on your current Python assignment (likely some kind of input/output assignment). If you are completely done that assignment, you may want to look ahead at the next assignment or ask your teacher what additional challenges you can attempt.</p>
+<div class="section" id="temps-de-travail">
+<h2>5.4. Temps de travail<a class="headerlink" href="#temps-de-travail" title="Permalink to this headline">¶</a></h2>
+<p>Veuillez passer le reste de la classe à continuer le travail sur votre projet Python (probablement un projet d’entrée/sortie). Si vous avez complètement terminé cette tâche, vous voudrez peut-être regarder vers la prochaine tâche ou demander à votre enseignant quels autres défis vous pouvez relever.</p>
 </div>
 </div>
 
