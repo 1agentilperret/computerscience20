@@ -12,7 +12,7 @@ Projet 3: Le labyrinthe!
 
     Dans cette mission, vous devez concevoir un algorithme pour aider le chat Scratch à sortir d'un labyrinthe automatiquement. Rappelez-vous ce que vous avez appris sur l’utilisation de boucles (blocs de répétition) - elles peuvent nettoyer les sections de code répétées et rendre nos programmes beaucoup plus faciles à comprendre.
 
-.. image:: images/scrach_labyrinthe_background.jpg
+.. image:: images/scratch_labyrinthe_background.jpg
 
 Instructions 
 -------------
@@ -26,7 +26,7 @@ Instructions
     Débuter la mission:
     --------------------
 
-    1. Téléchargez l'image du :download:`labyrinthe <images/scrach_labyrinthe_background.jpg>`. Chargez-la dans Scratch comme arrière-plan d'un nouveau projet et centrez-le sur la scène.
+    1. Téléchargez l'image du :download:`labyrinthe <images/scratch_labyrinthe_background.jpg>`. Chargez-la dans Scratch comme arrière-plan d'un nouveau projet et centrez-le sur la scène.
     2. Créez les blocs de départ suivants pour vous assurer que votre chat scratch commence au même endroit à chaque fois:
     
     .. image:: images/scratch_labyrinthe_start_block.png

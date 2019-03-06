@@ -1,5 +1,5 @@
 Étape 10: Saut d'obstacles/*jumping hurdles* (répétition et fonctions)
-======================================================
+==========================================================================
 
 .. reveal:: curriculum_addressed_step_ten
     :showtitle: Résultats du programme d'études traités dans cette section. 

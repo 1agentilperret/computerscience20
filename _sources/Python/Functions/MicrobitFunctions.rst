@@ -32,7 +32,7 @@ Remember that variables created inside of a function have **local scope** (can o
 What will the following programs output? Why?
 
 
-.. activecode:: wdtpd_functions_7
+.. activecode:: wdtpd_functions_7_1
     :caption: What will this program print?
 
     def a(x):
