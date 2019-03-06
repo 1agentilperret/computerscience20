@@ -3,7 +3,7 @@
    :start: 1
 
 
-Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser "*envoyer à tous")
+Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser "*envoyer à tous*")
 ============================================================================
 
 .. topic:: Aperçu rapide de la journée

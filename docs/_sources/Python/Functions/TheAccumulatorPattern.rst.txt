@@ -226,7 +226,7 @@ Be sure to test your square root function with a variety of numbers, and check w
     def my_sqrt(n, number_of_guesses):
         # your code here
 
-.. reveal:: reveal_my_sqrt_hint
+.. reveal:: reveal_my_sqrt_hint_two
     :showtitle: Need a hint?
     :hidetitle: Hide Hint
 

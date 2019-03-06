@@ -67,7 +67,6 @@ La liste complète des fonctions (*questions*) auxquelles Reeborg peut répondre
 ..     If many objects could potentially be found in a given world, and we
 ..     are interested in only one object type, we can specify it as a function
 ..     argument::
-..
 ..         if object_here("dandelion"):
 ..             take("dandelion")
 ..

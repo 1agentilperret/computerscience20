@@ -32,7 +32,7 @@ Remember that variables created inside of a function have **local scope** (can o
 What will the following programs output? Why?
 
 
-.. activecode:: wdtpd_functions_7
+.. activecode:: wdtpd_functions_7_1
     :caption: What will this program print?
 
     def a(x):
@@ -51,7 +51,7 @@ What will the following programs output? Why?
     a(5)
 
 
-.. activecode:: wdtpd_functions_8
+.. activecode:: wdtpd_functions_8_1
     :caption: What will this program print?
 
     def a(x):
@@ -63,7 +63,7 @@ What will the following programs output? Why?
     print(x)
 
 
-.. activecode:: wdtpd_functions_9
+.. activecode:: wdtpd_functions_9_1
     :caption: What will this program print?
 
     def a(x):
@@ -76,7 +76,7 @@ What will the following programs output? Why?
     print(x)
 
 
-.. activecode:: wdtpd_functions_10
+.. activecode:: wdtpd_functions_10_1
     :caption: What will this program print?
 
     def a(x):
@@ -98,7 +98,7 @@ To confirm that you understand the major concepts you've seen in Python, try to 
 Question 1
 ~~~~~~~~~~~~~
 
-.. mchoice:: functions_practice_quiz_1
+.. mchoice:: functions_practice_quiz_one
     :answer_a: def some_function()
     :answer_b: function some_function()
     :answer_c: function some_function():

@@ -65,7 +65,7 @@ Let's draw the image three different ways:
 - using only the ``.forward()`` and ``.right()`` commands
 - using ``.forward()``, ``.backward()``, and ``.right(90)`` (note that you may use 90, and only 90, as the argument to the ``.right()`` command for this solution)
 
-.. activecode:: turtle_confusion_4
+.. activecode:: turtle_confusion_4_2
     :nocodelens:
 
     import turtle

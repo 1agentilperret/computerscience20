@@ -18,7 +18,7 @@ To confirm that you understand the major concepts you've seen in Python, try to 
 Question 1
 -----------
 
-.. mchoice:: functions_practice_quiz_1
+.. mchoice:: functions_practice_quiz_1_2
     :answer_a: def some_function()
     :answer_b: function some_function()
     :answer_c: function some_function():
@@ -35,7 +35,7 @@ Question 1
 Question 2
 -----------
 
-.. mchoice:: functions_practice_quiz_2
+.. mchoice:: functions_practice_quiz_2_2
     :answer_a: 5
     :answer_b: 21
     :answer_c: 18
@@ -60,7 +60,7 @@ Question 2
 Question 3
 -----------
 
-.. mchoice:: functions_practice_quiz_3
+.. mchoice:: functions_practice_quiz_3_2
     :answer_a: 5
     :answer_b: 21
     :answer_c: 18
@@ -84,7 +84,7 @@ Question 3
 Question 4
 -----------
 
-.. fillintheblank:: functions_practice_quiz_4
+.. fillintheblank:: functions_practice_quiz_4_2
 
     What will the following program print?::
 
@@ -106,7 +106,7 @@ Question 4
 Question 5
 -----------
 
-.. mchoice:: functions_practice_quiz_5
+.. mchoice:: functions_practice_quiz_5_2
     :answer_a: 30
     :answer_b: An error will occur.
     :answer_c: 5
@@ -135,7 +135,7 @@ Question 5
 Question 6
 -----------
 
-.. fillintheblank:: functions_practice_quiz_6
+.. fillintheblank:: functions_practice_quiz_6_2
 
     What will the following program print?::
 
@@ -155,7 +155,7 @@ Question 6
 Question 7
 -----------
 
-.. fillintheblank:: functions_practice_quiz_7
+.. fillintheblank:: functions_practice_quiz_7_2
 
     What will the following program print?::
 
@@ -177,7 +177,7 @@ Question 7
 Question 8
 -----------
 
-.. fillintheblank:: functions_practice_quiz_7
+.. fillintheblank:: functions_practice_quiz_8_2
 
     What will the following program print?::
 

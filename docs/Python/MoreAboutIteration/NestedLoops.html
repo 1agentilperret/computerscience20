@@ -695,6 +695,38 @@ pixel at column 45, row 55, has RGB values of 253, 212, and 1.  Try a few other 
 <li>unindent (remove all spaces before) the call to <code class="docutils literal notranslate"><span class="pre">img.draw(canvas)</span></code> (this will remove the animation, as the you only draw the completely transformed image, instead of the altered version after one completed loop)</li>
 </ul>
 </div>
+
+<div data-childcomponent="increase_color_amount" class="runestone explainer ac_section alert alert-warning">
+
+<textarea data-component="activecode" id=increase_color_amount data-lang="python" 
+      data-timelimit=180000    
+    data-audio=''    
+          >
+import image
+
+img = image.Image("sneakers.jpg")
+width = img.get_width()
+height = img.get_height()
+
+canvas = image.ImageWin(width, height)
+img.draw(canvas)
+
+for row in range(height):
+    for col in range(width):
+        p = img.get_pixel(col, row)
+
+        new_red = p.get_red()
+        new_green = p.get_green() + 50
+        new_blue = p.get_blue()
+
+        new_pixel = image.Pixel(new_red, new_green, new_blue)
+
+        img.set_pixel(col, row, new_pixel)
+
+    # unindent the following line to remove the "animation"
+    img.draw(canvas)
+</textarea>
+</div>
 <p>Let’s take a closer look at the code.  After importing the image module, we create an image object called <code class="docutils literal notranslate"><span class="pre">img</span></code> that represents a typical digital photo. We use the <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> and <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> functions to create a window that is the same size as the image.</p>
 <p>Lines 8 and 9 create the nested iteration that we discussed earlier.  This allows us to process each pixel in the image.
 Line 10 gets an individual pixel at the current location of the nested loop.</p>

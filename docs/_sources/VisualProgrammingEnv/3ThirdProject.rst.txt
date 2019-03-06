@@ -23,7 +23,7 @@ Instructions
     :hidetitle: Cacher Débuter la mission
     
     
-    Débuter la mission:
+    Débuter la mission
     --------------------
 
     1. Téléchargez l'image du :download:`labyrinthe <images/scratch_labyrinthe_background.jpg>`. Chargez-la dans Scratch comme arrière-plan d'un nouveau projet et centrez-le sur la scène.
@@ -37,18 +37,18 @@ Instructions
     :showtitle: Quelques Règles
     :hidetitle: Cacher Quelques Règles
         
-    Quelques Règles:
+    Quelques Règles
     -----------------
     
     Il existe plusieurs blocs bleus de déplacement qui vous permettent de résoudre ce problème en utilisant des emplacements de coordonnées. L'un des objectifs de ce défi est de proposer une solution élégante grâce à l'utilisation de boucles. Pour faciliter cela, les seuls blocs de mouvement bleus autorisés sont:
     
     ``Avancer de (-)		Tourner de (-) degrés		s’orienter à (-)``
 
-.. reveal:: regles_for_project_three
+.. reveal:: regles_for_project_three_expert
     :showtitle: Extras pour les experts
     :hidetitle: Cacher Extras pour les experts
         
-    Extra pour les experts:
+    Extra pour les experts
     ------------------------
     
     Est-ce que finir avec 40 blocs était trop facile? Examinez de plus près votre algorithme et le labyrinthe pour voyez si vous pouvez optimiser votre solution. Pour gagner le défi supplémentaire des experts de cette tâche, concevez un algorithme complet qui utilise moins de 32 blocs.

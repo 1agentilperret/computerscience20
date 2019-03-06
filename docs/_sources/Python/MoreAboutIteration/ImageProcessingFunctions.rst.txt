@@ -27,7 +27,7 @@ Image Conversion with Functions
 
 In a previous lesson, we used code similar to the following, which increases the amount of green in an image:
 
-.. activecode::  increase_color_amount
+.. activecode::  increase_color_amount_two
     :nocodelens:
     :timelimit: 180000
 

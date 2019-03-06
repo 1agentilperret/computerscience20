@@ -2,7 +2,7 @@
    :prefix: for-students
    :start: 1
    
-Comment utiliser ce manuel - Pour les étudiants
+Comment utiliser ce manuel par les étudiants
 ================================================
 
 La programmation n'est pas un "sport de spectateur". C'est quelque chose que vous faites, auquel vous participez.

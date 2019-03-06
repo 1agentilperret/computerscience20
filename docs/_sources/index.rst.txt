@@ -187,6 +187,10 @@ End of Semester Review
 
    Review/Reeborg.rst
    Review/Python.rst
+   Python/PracticeQuizzes/Loops.rst
+   Python/PracticeQuizzes/Functions.rst
+   Python/PracticeQuizzes/Booleans.rst
+   
 
 
 Computing and Society

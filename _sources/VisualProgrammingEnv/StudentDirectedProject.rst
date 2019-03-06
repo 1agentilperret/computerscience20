@@ -45,7 +45,7 @@ Votre programme de flappy bird devrait ressembler à ceci:
 .. image:: images/scratch_flappy_bird_game_fr.gif
 
 .. Projet 4: Recrér le jeu de Flappy bird
----------------------------------------
+---------------------------------------------
 
 .. .. topic:: Aperçu rapide du projet
 
@@ -54,7 +54,7 @@ Votre programme de flappy bird devrait ressembler à ceci:
     Dans cette activité, vous ferez une histoire courte ou une pièce de théâtre.
 
 .. Instructions 
--------------
+-----------------
 
 .. .. reveal:: Instructions_for_project_two
     :showtitle: Instructions
@@ -88,7 +88,7 @@ Votre programme de flappy bird devrait ressembler à ceci:
 .. Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
 .. Évaluation
------------
+---------------
 
 .. .. reveal:: eval_eighty_five_two
     :showtitle: Évaluation pour avoir 85%

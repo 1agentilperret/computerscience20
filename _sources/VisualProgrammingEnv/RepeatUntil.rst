@@ -191,7 +191,7 @@ Utilisons le bloc "répété jusqu'à" pour créer une simulation d'un boulet de
 Le processus de création du sprite de boulet de canon est illustré en étapes ci-dessous. Il y a quelques choses que vous devez savoir:
 
 - Lorsque vous tracez le cercle, vous pouvez appuyer la touche Maj (*shift*) pour forcer l'ellipse à rester circulaire.
--assurez-vous que votre boulet de canon se trouve **directement** au-dessus du point central sur la toile (ceci est plus facile à voir si vous zoomez une ou deux fois)
+- assurez-vous que votre boulet de canon se trouve **directement** au-dessus du point central sur la toile (ceci est plus facile à voir si vous zoomez une ou deux fois).
 
 .. image:: images/scratch_paint_cannonball_sprite.gif
 
@@ -200,15 +200,16 @@ Le processus de création du sprite de boulet de canon est illustré en étapes 
 	Dans la version précédente de Scratch (Scratch 2), il vous aurait fallu:
 
   - Cliquer "vectoriser" avant de faire un dessin! Il à fallu faire cela chaque fois pour vous assurer que la qualité de vos graphiques soit le plus élevée que possible. *Votre enseignant peut décider d'approfondir la différence entre les graphiques vectoriels et bitmap*.
-  -Lorsque vous dessinez le cercle, vous pouvez maintenir la touche Maj (*shift*) enfoncée pour forcer l'ellipse à rester circulaire.  -Identifier le centre du costume (puisque les calculs relatifs aux coordonnées x et y du sprite sont basés sur le point central du costume).
+  - Lorsque vous dessinez le cercle, vous pouvez maintenir la touche Maj (*shift*) enfoncée pour forcer l'ellipse à rester circulaire.  
+  - Identifier le centre du costume (puisque les calculs relatifs aux coordonnées x et y du sprite sont basés sur le point central du costume).
 
 Pour créer la simulation de boulet de canon, nous avons besoin de quelques variables représentant la vitesse à laquelle le boulet de canon se déplace. Cliquez sur l'onglet **Données** et créez deux variables: **vitesseX** et **vitesseY**. Ensuite, créez un script qui ressemble à ceci:
 
 .. image:: images/scratch_cannonball_motion.png
+
+Lorsque vous appuyez sur la touche espace, le boulet de canon reviendra à sa position initiale (à gauche de l'écran) et les variables *vitesseX* et *vitesseY* seront toutes deux définies comme 4. Le bloc **répéter jusqu'à ce que** constate que la répétition va countinuer jusqu'à ce que la position y du sprite soit inférieure à -159. *Le bloc **mettre y à ""** se trouve au bas de l'onglet **Mouvement***. Pour résumer, tout ce qui se trouve à l'intérieur du bloc de répétition continuera jusqu'à ce que le boulet de canon atteigne le niveau du sol virtuel (défini comme étant -159). 
   
-  Lorsque vous appuyez sur la touche espace, le boulet de canon reviendra à sa position initiale (à gauche de l'écran) et les variables *vitesseX* et *vitesseY* seront toutes deux définies comme 4. Le bloc **répéter jusqu'à ce que** constate que la répétition va countinuer jusqu'à ce que la position y du sprite soit inférieure à -159. *Le bloc **mettre y à ""** se trouve au bas de l'onglet **Mouvement***. Pour résumer, tout ce qui se trouve à l'intérieur du bloc de répétition continuera jusqu'à ce que le boulet de canon atteigne le niveau du sol virtuel (défini comme étant -159). 
-  
-  Enfin, nous modifions les coordonnées x et y du sprite par les variables vitesseX ​​et vitesseY. Le dernier bloc de code dans le répéter jusqu'à correspond à la façon dont nous simulons la gravité. À chaque itération (*cicle complet de la répétition*) de la boucle la valeur de la variable vitesseY ​​diminue. Parce que nous commençons avec une vitesse y positive, le boulet de canon se déplace vers le haut lorsque la touche espace est enfoncée. Au fil du temps, cependant, la vitesse à laquelle le boulet monte diminue, puis finit par devenir négatif (ce qui signifie qu'il commence à tomber). Cela nous permet de créer une simple simulation de mouvement parabolique.
+Enfin, nous modifions les coordonnées x et y du sprite par les variables vitesseX ​​et vitesseY. Le dernier bloc de code dans le répéter jusqu'à correspond à la façon dont nous simulons la gravité. À chaque itération (*cicle complet de la répétition*) de la boucle la valeur de la variable vitesseY ​​diminue. Parce que nous commençons avec une vitesse y positive, le boulet de canon se déplace vers le haut lorsque la touche espace est enfoncée. Au fil du temps, cependant, la vitesse à laquelle le boulet monte diminue, puis finit par devenir négatif (ce qui signifie qu'il commence à tomber). Cela nous permet de créer une simple simulation de mouvement parabolique.
 
 .. note:: Expérimentez en modifiant les valeurs initiales données pour les variables vitesseX et vitesseY. Vous pouvez également vouloir ajuster la valeur de "gravité" (initialement définie à -0,1).
 
@@ -217,21 +218,21 @@ Vérifie ta compréhension
 
 .. fillintheblank:: scratch_repeat_until_check_1
 
-    Quelle serait la valeur de la variable **Un Number** après l'exécution du code suivant?
+  Quelle serait la valeur de la variable **Un Number** après l'exécution du code suivant?
 
-    .. image:: images/scratch_repeat_until_test_yourself1.png
+  .. image:: images/scratch_repeat_until_test_yourself1.png
 
-    -: 28: Oui! Félicitation!
+  - : 28: Oui! Félicitation!
     : 30: Non. N'oubliez pas que 30 n'est pas inférieur, mais égal à, 30.
     :.*: Réessayer!
 
 .. fillintheblank:: scratch_repeat_until_check_2
 
-    Combien d'itérations le code suivant prend-il pour terminer son exécution? C'est-à-dire, combien de fois le bloc *répéter jusqu'à ce que ""* se produirait-elle?
+  Combien d'itérations le code suivant prend-il pour terminer son exécution? C'est-à-dire, combien de fois le bloc *répéter jusqu'à ce que ""* se produirait-elle?
 
-    .. image:: images/scratch_repeat_until_test_yourself1.png
+  .. image:: images/scratch_repeat_until_test_yourself1.png
 
-    -: 4: Oui! Félicitation!
+  - : 4: Oui! Félicitation!
     : 3: Rappelez-vous que 30 n'est pas inférieur, mais égal à, 30.
     :.*: Réessayer!
 

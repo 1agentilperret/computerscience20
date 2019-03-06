@@ -3,7 +3,7 @@
    :start: 1
 
 
-Introduction à Scratch (envoyer à tous)
+Introduction à Scratch et *envoyer à tous*
 ============================================
 
 .. topic:: Aperçu rapide de la journée

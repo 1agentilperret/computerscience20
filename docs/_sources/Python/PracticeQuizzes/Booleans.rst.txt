@@ -18,7 +18,7 @@ To confirm that you understand the major concepts you've seen in Python, try to 
 Question 1
 -----------
 
-.. mchoice:: booleans_practice_quiz_1
+.. mchoice:: booleans_practice_quiz_one
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -35,7 +35,7 @@ Question 1
 Question 2
 -----------
 
-.. mchoice:: booleans_practice_quiz_2
+.. mchoice:: booleans_practice_quiz_two
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -52,7 +52,7 @@ Question 2
 Question 3
 -----------
 
-.. mchoice:: booleans_practice_quiz_3
+.. mchoice:: booleans_practice_quiz_three
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -69,7 +69,7 @@ Question 3
 Question 4
 -----------
 
-.. mchoice:: booleans_practice_quiz_4
+.. mchoice:: booleans_practice_quiz_four
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -86,7 +86,7 @@ Question 4
 Question 5
 -----------
 
-.. mchoice:: booleans_practice_quiz_5
+.. mchoice:: booleans_practice_quiz_five
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -103,7 +103,7 @@ Question 5
 Question 6
 -----------
 
-.. mchoice:: booleans_practice_quiz_6
+.. mchoice:: booleans_practice_quiz_six
     :answer_a: True
     :answer_b: False
     :correct: b
@@ -120,7 +120,7 @@ Question 6
 Question 7
 -----------
 
-.. mchoice:: booleans_practice_quiz_7
+.. mchoice:: booleans_practice_quiz_seven
     :answer_a: True
     :answer_b: False
     :correct: a
@@ -137,7 +137,7 @@ Question 7
 Question 8
 -----------
 
-.. mchoice:: booleans_practice_quiz_8
+.. mchoice:: booleans_practice_quiz_eight
     :answer_a: True
     :answer_b: False
     :correct: b

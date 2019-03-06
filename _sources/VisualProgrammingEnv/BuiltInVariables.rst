@@ -59,18 +59,18 @@ L'une des variables intégrées que Scratch nous permet d'utiliser est une varia
 Avant d’exécuter ce code vous-même, essayez de déterminer quelle sera la valeur du tempo une fois le code exécuté. Vous pouvez voir que le tempo sera réinitialisé à 60 bpm au début du code, puis nous le modifierons dans la boucle imbriquée de 20 bpm. Combien de fois le "changement de tempo de 20 blocs" sera-t-il appelé? Puisqu'il y a un bloc repeat 3 dans un block repeat 2, le bloc "change de tempo" sera appelé 6 fois. Nous pouvons donc déterminer que la valeur du tempo une fois le code exécuté sera de 180 bpm (puisqu'il faut ajouter 20 bpm 6 fois).
 
 
-Check Your Understanding
+Vérifie ta compréhension
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. fillintheblank:: scratch_tempo_check
 
     Quelle serait la valeur du tempo si nous déplacions le bloc "ajouter 20 au tempo" comme indiqué?
 
-    .. image:: images/scratch_tempo_variable_2.png
-
-      -: 100: Oui! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.
-      : 180: Non. Le bloc 'ajouter 20 au tempo' ne se trouve pas dans la boucle imbriquée, nous ne le répétons donc que 2 fois
-      :.*: Réessayer! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.
+        .. image:: images/scratch_tempo_variable.png
+         
+          - : 100: Oui! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.
+            : 180: Non. Le bloc 'ajouter 20 au tempo' ne se trouve pas dans la boucle imbriquée, nous ne le répétons donc que 2 fois
+            :.*: Réessayer! Puisque nous répétons le bloc 'ajouter 20 au tempo' 2 fois, nous devons ajouter 40 bpm à la valeur d'origine.
 
 
 Réponse

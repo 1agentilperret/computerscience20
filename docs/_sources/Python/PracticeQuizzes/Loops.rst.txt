@@ -18,7 +18,7 @@ To confirm that you understand the major concepts you've seen in Python, try to 
 Question 1
 -----------
 
-.. mchoice:: loops_practice_quiz_1
+.. mchoice:: loops_practice_quiz_1_2
     :answer_a: No shape will be drawn.
     :answer_b: A line segment.
     :answer_c: A triangle.
@@ -46,7 +46,7 @@ Question 1
 Question 2
 -----------
 
-.. mchoice:: loops_practice_quiz_2
+.. mchoice:: loops_practice_quiz_2_2
     :answer_a: No shape will be drawn.
     :answer_b: A line segment.
     :answer_c: A triangle.
@@ -74,7 +74,7 @@ Question 2
 Question 3
 -----------
 
-.. fillintheblank:: loops_practice_quiz_3
+.. fillintheblank:: loops_practice_quiz_3_2
 
     In the following code, how many lines does this code print?::
 
@@ -89,7 +89,7 @@ Question 3
 Question 4
 -----------
 
-.. mchoice:: loops_practice_quiz_4
+.. mchoice:: loops_practice_quiz_4_2
     :answer_a: True
     :answer_b: False
     :correct: b
@@ -105,7 +105,7 @@ Question 4
 Question 5
 -----------
 
-.. fillintheblank:: loops_practice_quiz_5
+.. fillintheblank:: loops_practice_quiz_5_2
 
     What is the last line that this code will print?::
 

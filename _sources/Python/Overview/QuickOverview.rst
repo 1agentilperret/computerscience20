@@ -34,7 +34,7 @@ Pour chacun des segments de code que vous voyez sur cette pâge, vous pouvez les
 
 Lorsque vous utilisez Thonny, vous devez comprendre la différence entre l'éditeur **de texte** et le **shell** (également appelé l'interprèteur/*interpreter*). Si vous souhaitez enregistrer votre code pour l'utiliser ultérieurement, vous devez le saisir dans l'éditeur de texte, ce qui vous invitera à enregistrer votre fichier quelque part sur le disque lorsque vous appuierez sur le bouton Exécuter (*ou sur F5*). La sortie de votre code apparaîtra dans le shell (sous l'éditeur de texte). Vous pouvez également saisir le code Python de votre choix dans le shell, ce qui constitue un moyen pratique d'essayer de nouvelles choses en Python.
 
-.. imâge:: imâges/thonny_window.png
+imâge:: imâges/thonny_window.png
 
 
 .. index:: whitespace, syntax error
