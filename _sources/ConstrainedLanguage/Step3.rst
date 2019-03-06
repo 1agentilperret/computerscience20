@@ -5,8 +5,9 @@ Etape 3: tourner à gauche et passer à travers le code en étapes
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-CP2** Use common coding techniques to enhance code elegance and troubleshoot errors throughout Computer Science 20.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+    - **20IN-PT.2** Se servir de techniques de codage courantes pour améliorer l’élégance de son code et rechercher les causes d’erreurs.
+
 
 
 Didacticiel-*Tutorial*

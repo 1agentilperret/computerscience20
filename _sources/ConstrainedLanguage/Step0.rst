@@ -10,7 +10,7 @@
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
 
 Si vous préférez regarder une vidéo présentant Reeborg, la `vidéo suivante <https://www.youtube.com/watch?v=GSszijgTFxU>`_ illustre les mêmes idées que celles décrites dans le texte ci-dessous.
 

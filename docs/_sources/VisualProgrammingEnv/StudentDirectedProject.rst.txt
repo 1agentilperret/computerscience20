@@ -15,10 +15,10 @@ Projet dirigé par les étudiants
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
     
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.
-    - **CS20-FP2** Investigate how control structures affect program flow.
-    - **CS20-SD1** Develop a coding project or conduct research in an area of computer science of the student’s choice.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+    - **20IN-FP.1** Se servir de différents types de données, y compris entier, virgule flottante, booléen et chaine pour résoudre des problèmes de programmation.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
+    - **20IN-RA.1** Élaborer un projet de codage ou mener une recherche sur un sujet de son choix lié à l’informatique.
 
 
 Maintenant que vous avez appris pas mal de concepts avec Scratch, vous devriez essayer de construire un projet qui exploite ces idées. Assurez-vous que le projet que vous choisissez vous permet de démontrer votre compréhension de:

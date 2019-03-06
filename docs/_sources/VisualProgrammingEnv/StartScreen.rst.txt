@@ -15,8 +15,8 @@ Créer un écran de démarrage (Répéter, Si/Sinon, Diffuser "*envoyer à tous*
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
-    - **CS20-FP2** Investigate how control structures affect program flow.
+    - **20IN-PT.1** Appliquer diverses stratégies de résolution de problèmes pour résoudre des problèmes de programmation dans le cours d’Informatique 20.
+    - **20IN-FP.2** Faire des recherches sur la manière dont les structures de contrôle affectent le déroulement du programme.
 
 
 Si vous préférez regarder une vidéo, la `vidéo suivante <https://www.youtube.com/watch?v=mrLWnxC07DU>`_ illustre les mêmes idées que celles décrites dans le texte ci-dessous.
