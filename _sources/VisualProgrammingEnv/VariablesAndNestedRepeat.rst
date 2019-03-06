@@ -131,8 +131,8 @@ Check Your Understanding
     .. image:: images/scratch_nested_loops_check2.png
 
     - : 0: oui! Puisque tout est dans un bloc de répétition 0, cela n'arrivera pas du tout. 
-      : 8: Non. Quel est le bloc qui renferme tout?
-      :.*: Réessayer! Indice: Quel est le bloc qui contient tout?
+    - : 8: Non. Quel est le bloc qui renferme tout?
+    - :.*: Réessayer! Indice: Quel est le bloc qui contient tout?
 
 
 Problème de pratique
