@@ -107,11 +107,11 @@ Lorsqu'on a présenté les fonctions, on a expliqué que **l’appel** à une fo
 est équivalent à::
 
     move()
-    # begin of code block inside turn_right()
+    # début du block de code dans turn_right()
     turn_left()
     turn_left()
     turn_left()
-    # end of code block
+    # fin du bloc de code
     move()
 
 On peut voir les déclarations ``if`` de façon similaires, sauf que nous avons une insertion *conditionnelle* (ou plutôt **suppression**!). Donc::
