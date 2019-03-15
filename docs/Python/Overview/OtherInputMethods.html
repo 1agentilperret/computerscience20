@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>6. Other Input Methods (easygui_qt) &#8212; Computer Science 20 Saskatchewan</title>
+    <title>6. Autres méthodes de saisie(entrée/input) (easygui_qt) &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -203,18 +203,18 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">6. Other Input Methods (easygui_qt)</a><ul>
-<li><a class="reference internal" href="#what-does-this-program-do">6.1. What Does This Program Do?</a></li>
-<li><a class="reference internal" href="#getting-user-input-with-easygui-qt">6.2. Getting User Input With easygui_qt</a><ul>
-<li><a class="reference internal" href="#get-string-from-user">6.2.1. Get String From User</a></li>
-<li><a class="reference internal" href="#display-graphical-message">6.2.2. Display Graphical Message</a></li>
-<li><a class="reference internal" href="#lists">6.2.3. Lists</a></li>
-<li><a class="reference internal" href="#get-choice-from-user">6.2.4. Get Choice From User</a></li>
-<li><a class="reference internal" href="#other-methods">6.2.5. Other Methods</a></li>
+<li><a class="reference internal" href="#">6. Autres méthodes de saisie(<em>entrée/input</em>)  (easygui_qt)</a><ul>
+<li><a class="reference internal" href="#que-fait-ce-programme">6.1. Que fait ce programme?</a></li>
+<li><a class="reference internal" href="#obtenir-les-entrees-de-l-utilisateur-avec-easygui-qt">6.2. Obtenir les entrées de l’utilisateur avec easygui_qt</a><ul>
+<li><a class="reference internal" href="#obtenir-la-chaine-de-l-utilisateur">6.2.1. Obtenir la chaîne de l’utilisateur</a></li>
+<li><a class="reference internal" href="#afficher-un-message-graphique">6.2.2. Afficher un message graphique</a></li>
+<li><a class="reference internal" href="#des-listes">6.2.3. Des listes</a></li>
+<li><a class="reference internal" href="#obtenir-le-choix-de-l-utilisateur">6.2.4. Obtenir le choix de l’utilisateur</a></li>
+<li><a class="reference internal" href="#autres-methodes">6.2.5. Autres méthodes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mad-libs-practice-problem">6.3. Mad Libs Practice Problem</a><ul>
-<li><a class="reference internal" href="#extra-for-experts">6.3.1. Extra for Experts</a></li>
+<li><a class="reference internal" href="#probleme-de-pratique-mad-libs">6.3. Problème de pratique Mad Libs</a><ul>
+<li><a class="reference internal" href="#extra-pour-les-experts">6.3.1. Extra pour les experts</a></li>
 </ul>
 </li>
 </ul>
@@ -263,38 +263,38 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="other-input-methods-easygui-qt">
-<h1>6. Other Input Methods (easygui_qt)<a class="headerlink" href="#other-input-methods-easygui-qt" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="autres-methodes-de-saisie-entree-input-easygui-qt">
+<h1>6. Autres méthodes de saisie(<em>entrée/input</em>)  (easygui_qt)<a class="headerlink" href="#autres-methodes-de-saisie-entree-input-easygui-qt" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Getting user input with a pop-up window using the easygui_qt module. Work on a Python assignment, focused on input/output of strings, and conditionals.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Obtenir les entrées de l’utilisateur avec une fenêtre contextuelle à l’aide du module easygui_qt. Travaillez sur un projet Python, axée sur les entrées/sorties de chaînes et les conditions.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_input_methods"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
     <ul class="simple">
-<li><strong>CS20-CP1</strong> Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.</li>
+<li><strong>CS20-CP1</strong> Apply various problem-solving strategies to solve programming problems throughout Informatique 20.</li>
 <li><strong>CS20-FP1</strong> Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.</li>
 <li><strong>CS20-FP2</strong> Investigate how control structures affect program flow.</li>
 <li><strong>CS20-FP4</strong>  Investigate one-dimensional arrays and their applications.</li>
 </ul>
 
     </div>
-    <div class="section" id="what-does-this-program-do">
-<h2>6.1. What Does This Program Do?<a class="headerlink" href="#what-does-this-program-do" title="Permalink to this headline">¶</a></h2>
+    <div class="section" id="que-fait-ce-programme">
+<h2>6.1. Que fait ce programme?<a class="headerlink" href="#que-fait-ce-programme" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code.</p>
+<p class="last">Votre enseignant peut choisir d’utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun fait avant d’exécuter le code.</p>
 </div>
-<p>What will the following programs output? Why?</p>
-<p>Remember that a single equal sign <code class="docutils literal notranslate"><span class="pre">=</span></code> is used to <strong>assign</strong> a value. Two equal signs <code class="docutils literal notranslate"><span class="pre">==</span></code> are used when <strong>comparing</strong> a value.</p>
-<p>Try the following code with <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">42</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">32</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">82</span></code>, and <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">142</span></code>.</p>
+<p>Que vont produire les programmes suivants? Pourquoi?</p>
+<p>Rappelez-vous qu’un seul signe égal <code class="docutils literal notranslate"><span class="pre">=</span></code> est utilisé pour <strong>assigner</strong> une valeur. Deux signes égaux <code class="docutils literal notranslate"><span class="pre">==</span></code> sont utilisés pour <strong>comparer</strong> une valeur.</p>
+<p>Essayez le code suivant avec <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">42</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">32</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">2</span></code>, <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">82</span></code> et <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">142</span></code>.</p>
 
 <div data-childcomponent="wdtpd_input_output_strings_1" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_input_output_strings_1 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
+         data-caption='Que va imprimer ce programme?' >
 x = 42
 if x < 10:
     x = x + 10
@@ -305,7 +305,7 @@ elif x < 70:
 elif x < 100:
     x = x - 5
 else:
-    print("big number!")
+    print("grand nombre!")
 
 print(x)
 </textarea>
@@ -316,192 +316,180 @@ print(x)
 <textarea data-component="activecode" id=wdtpd_input_output_strings_2 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-age = input("How old are you?")
-print("Wow! Already " + age + " years old!")
+         data-caption='Que va imprimer ce programme?' >
+age = input("Quel âge avez-vous?")
+print("Hou la la! Déjà " + age + " ans!")
 </textarea>
 </div>
-<p>Try the following, entering in <code class="docutils literal notranslate"><span class="pre">17</span></code>. How about <code class="docutils literal notranslate"><span class="pre">14</span></code>? Can you fix it? <em>Hint: think data types!</em></p>
+<p>Essayez ce qui suit en entrant <code class="docutils literal notranslate"><span class="pre">17</span></code>. Ensuite <code class="docutils literal notranslate"><span class="pre">14</span></code>? Peux-tu le réparer? <em>Hint: pensez aux types de données!</em></p>
 
 <div data-childcomponent="wdtpd_input_output_strings_3" class="runestone explainer ac_section alert alert-warning">
 
 <textarea data-component="activecode" id=wdtpd_input_output_strings_3 data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
-         data-caption='What will this program print?' >
-age = input("How old are you?")
+         data-caption='Que va imprimer ce programme?' >
+age = input("Quel âge avez-vous?")
 if age > 15:
-    print("Wow! Already " + age + " years old!")
+    print("Hou la la! Déjà " + age + " ans!")
 </textarea>
 </div>
 </div>
-<div class="section" id="getting-user-input-with-easygui-qt">
-<span id="index-0"></span><h2>6.2. Getting User Input With easygui_qt<a class="headerlink" href="#getting-user-input-with-easygui-qt" title="Permalink to this headline">¶</a></h2>
-<p>One of the great things about Thonny is how easy it is to add additional modules to the standard Python installation. You can think of a module as being similar to the <strong>library</strong> tab that we used in Reeborg. It gives us the ability to use extra functionality that another programmer has created. When we were programming Reeborg, we would often put functions into the library tab, like this:</p>
+<div class="section" id="obtenir-les-entrees-de-l-utilisateur-avec-easygui-qt">
+<span id="index-0"></span><h2>6.2. Obtenir les entrées de l’utilisateur avec easygui_qt<a class="headerlink" href="#obtenir-les-entrees-de-l-utilisateur-avec-easygui-qt" title="Permalink to this headline">¶</a></h2>
+<p>Un des avantages de Thonny est la facilité avec laquelle il est possible d’ajouter des modules à l’installation standard de Python. Vous pouvez penser à un module similaire à l’onglet <strong>library</strong> que nous avons utilisé dans Reeborg. Cela nous donne la possibilité d’utiliser des fonctionnalités supplémentaires créées par un autre programmeur. Lorsque nous programmions Reeborg, nous avons souvent mis des fonctions dans l’onglet Bibliothèque, comme ceci:</p>
 <img alt="../../_images/reeborg_library.png" src="../../_images/reeborg_library.png" />
-<p>In Reeborg, we would often import that code using <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">turn_right</span></code>, so that we could simply call the <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> function in the same way that we could call <code class="docutils literal notranslate"><span class="pre">turn_left()</span></code>. However, it was also possible to import the library as follows:</p>
+<p>Dans Reeborg, nous importions souvent ce code en utilisant <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">library</span> <span class="pre">import</span> <span class="pre">turn_right</span></code>, de sorte que nous puissions simplement appeler la fonction <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code> de la même manière que nous pourrions appeler <code class="docutils literal notranslate"><span class="pre">turn_left()</span></code>. Cependant, il était également possible d’importer la bibliothèque comme ceci:</p>
 <img alt="../../_images/reeborg_code_calling_library.png" src="../../_images/reeborg_code_calling_library.png" />
-<p>You can think of this code as saying “Look into the <code class="docutils literal notranslate"><span class="pre">library</span></code>, and find something called <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code>”. For many Python modules, this is equivalent to saying, “Look into the library.py file, and find a function called turn_right()”.</p>
-<p>Another method of importing the library allows us give the module a nickname that is faster to type. Consider the following:</p>
+<p>Vous pouvez penser que ce code dit “Regardez dans la <code class="docutils literal notranslate"><span class="pre">bibliothèque</span></code>, et trouvez quelque chose qui s’appelle <code class="docutils literal notranslate"><span class="pre">turn_right()</span></code>”. Pour de nombreux modules Python, cela revient à dire “Regardez dans le fichier library.py et trouvez une fonction appelée turn_right()”.</p>
+<p>Une autre méthode d’importation de la bibliothèque nous permet d’attribuer au module un surnom plus rapide à taper. Considérer ce qui suit:</p>
 <img alt="../../_images/reeborg_import_as.png" src="../../_images/reeborg_import_as.png" />
-<p>When using Python outside Reeborg, if you’d like to get user input through a graphical pop-up box instead of just through the console, we can just install a module <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code>. In Thonny, open <em>Tools -&gt; Manage packages…</em>.</p>
+<p>Lorsque vous utilisez Python en dehors de Reeborg, si vous souhaitez obtenir un entrée de l’utilisateur par le biais d’une fenêtre contextuelle graphique plutôt que par le biais de la console, nous pouvons simplement installer le module <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code>. Dans Thonny, ouvrez <em>Tools -&gt; Manage packages…</em>.</p>
 <img alt="../../_images/thonny_manage_packages_menu_item.png" src="../../_images/thonny_manage_packages_menu_item.png" />
-<p>Now type in <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> into the Search box (be sure to spell it <em>exactly</em>). Now click the Install button.</p>
+<p>Maintenant, tapez <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> dans le champ de recherche (assurez-vous de l’épeler <em>exactement</em> come cela). Maintenant, cliquez sur le bouton Installer.</p>
 <img alt="../../_images/thonny_add_easygui_module.png" src="../../_images/thonny_add_easygui_module.png" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> package attempts to install <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>, along with it’s prerequisites. If you prefer (or if you run into installation problems), you can also just install each module on their own. The order you install them should be <code class="docutils literal notranslate"><span class="pre">sip</span></code>, then <code class="docutils literal notranslate"><span class="pre">PyQt5</span></code>, then <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>.</p>
+<p class="last">Le paquet <code class="docutils literal notranslate"><span class="pre">cs20-easygui</span></code> tente d’installer <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>, ainsi que ses prérequis. Si vous préférez (ou si vous rencontrez des problèmes d’installation), vous pouvez également installer chaque module individuellement. L’ordre dans lequel vous les installez devrait être <code class="docutils literal notranslate"><span class="pre">sip</span></code>, puis <code class="docutils literal notranslate"><span class="pre">PyQt5</span></code>, puis <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code>.</p>
 </div>
-<div class="section" id="get-string-from-user">
-<h3>6.2.1. Get String From User<a class="headerlink" href="#get-string-from-user" title="Permalink to this headline">¶</a></h3>
-<p>You will now be able to use the easygui_qt module in the same way you can use any other module. Here is a simple program that will use pop-up boxes to get the first and last names of the user, then print out the result to the console.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
+<div class="section" id="obtenir-la-chaine-de-l-utilisateur">
+<h3>6.2.1. Obtenir la chaîne de l’utilisateur<a class="headerlink" href="#obtenir-la-chaine-de-l-utilisateur" title="Permalink to this headline">¶</a></h3>
+<p>Vous pourrez maintenant utiliser le module easygui_qt de la même manière que vous pouvez utiliser n’importe quel autre module. Voici un programme simple qui utilisera des fenêtres contextuelles pour obtenir le nom et le prénom de l’utilisateur, puis affichera le résultat sur la console.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># importer le module pour permettre l&#39;interaction avec l&#39;interface graphique</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
 
-<span class="c1"># think of this as &quot;look inside easygui_qt, and run the get_string function</span>
-<span class="n">first_name</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Please enter your first name&quot;</span><span class="p">)</span>
-<span class="n">last_name</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Please enter your last name&quot;</span><span class="p">)</span>
+<span class="c1"># pense que cela ressemble à &quot;regarde dans easygui_qt, et lance la fonction get_string</span>
+<span class="n">prenom</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer votre prénom&quot;</span><span class="p">)</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer votre nom de famille&quot;</span><span class="p">)</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;Hello there, &quot;</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+<span class="n">salutation</span> <span class="o">=</span> <span class="s2">&quot;Bonjour, &quot;</span> <span class="o">+</span> <span class="n">prenom</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">nom</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="n">salutation</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="display-graphical-message">
-<h3>6.2.2. Display Graphical Message<a class="headerlink" href="#display-graphical-message" title="Permalink to this headline">¶</a></h3>
-<p>If you would like to output the message to a graphical window (instead of the console), you can call the <code class="docutils literal notranslate"><span class="pre">show_message()</span></code> function, as shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
+<div class="section" id="afficher-un-message-graphique">
+<h3>6.2.2. Afficher un message graphique<a class="headerlink" href="#afficher-un-message-graphique" title="Permalink to this headline">¶</a></h3>
+<p>Si vous souhaitez exporter le message dans une fenêtre graphique (au lieu de la console), vous pouvez appeler la fonction <code class="docutils literal notranslate"><span class="pre">show_message()</span></code>, comme indiqué ci-dessous.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># importer le module pour permettre l&#39;interaction avec l&#39;interface graphique</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
 
-<span class="c1"># think of this as &quot;look inside easygui_qt, and run the get_string function</span>
-<span class="n">first_name</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Please enter your first name&quot;</span><span class="p">)</span>
-<span class="n">last_name</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Please enter your last name&quot;</span><span class="p">)</span>
+<span class="c1"># pense que cela ressemble à &quot;regarde dans easygui_qt, et lance la fonction get_string&quot;</span>
+<span class="n">prenom</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer votre prénom&quot;</span><span class="p">)</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_string</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer votre nom de famille&quot;</span><span class="p">)</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;Hello there, &quot;</span> <span class="o">+</span> <span class="n">first_name</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">last_name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
+<span class="n">salutation</span> <span class="o">=</span> <span class="s2">&quot;Bonjour, &quot;</span> <span class="o">+</span> <span class="n">prenom</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">nom</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
 
-<span class="c1"># can also display output graphically</span>
-<span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+<span class="c1"># peut aussi afficher la sortie graphiquement</span>
+<span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="n">salutation</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="lists">
-<h3>6.2.3. Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h3>
-<p>In the next example, we need to provide a <strong>list</strong> of options for the user to pick from. As we saw in the quick Python overview, a list can be created using square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, with each elemnt inside the square brackets separated with a comma. Consider the example below, in which we create a list of ski hills, then print out some elements from it. <em>Note that lists begin counting at 0, so the first element in the list is accessed using list_name[0].</em></p>
+<div class="section" id="des-listes">
+<h3>6.2.3. Des listes<a class="headerlink" href="#des-listes" title="Permalink to this headline">¶</a></h3>
+<p>Dans l’exemple suivant, nous devons fournir une <strong>liste</strong> d’options parmi lesquelles l’utilisateur peut choisir. Comme nous l’avons vu dans l’aperçu rapide de Python, une liste peut être créée à l’aide de crochets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, chaque élément étant placé entre crochets séparés par une virgule. Prenons l’exemple ci-dessous, dans lequel nous créons une liste de pistes de ski, puis en imprimons quelques éléments. <em>Notez que les listes commencent à compter à 0. Le premier élément de la liste est accessible à l’aide de la commande list_name[0].</em></p>
 
-<div data-childcomponent="lists_overview_ski_hills" class="runestone explainer ac_section alert alert-warning">
+<div data-childcomponent="lists_overview_Piste_ski" class="runestone explainer ac_section alert alert-warning">
 
-<textarea data-component="activecode" id=lists_overview_ski_hills data-lang="python" 
+<textarea data-component="activecode" id=lists_overview_Piste_ski data-lang="python" 
       data-timelimit=25000    
     data-audio=''    
           >
-ski_hills = ["Table Mountain", "Mission Ridge", "Wapiti", "Duck Mountain", "Asessippi"]
-print(ski_hills[0])     # Table Mountain
-print(ski_hills[2])     # Wapiti
-print(ski_hills[8])     # IndexError: list index out of range
+Piste_ski = ["Table Mountain", "Mission Ridge", "Wapiti", "Duck Mountain", "Asessippi"]
+print(Piste_ski[0])     # Table Mountain
+print(Piste_ski[2])     # Wapiti
+print(Piste_ski[8])     # IndexError: liste index hors des limites
 </textarea>
 </div>
 </div>
-<div class="section" id="get-choice-from-user">
-<h3>6.2.4. Get Choice From User<a class="headerlink" href="#get-choice-from-user" title="Permalink to this headline">¶</a></h3>
-<p>To give the user a list of options to choose from, we can create a <strong>list</strong> of all the choices they can choose from. Imagine that you were creating a program that would allow the user to select which school subject was their favourite. You might include a list of options, as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
+<div class="section" id="obtenir-le-choix-de-l-utilisateur">
+<h3>6.2.4. Obtenir le choix de l’utilisateur<a class="headerlink" href="#obtenir-le-choix-de-l-utilisateur" title="Permalink to this headline">¶</a></h3>
+<p>Pour donner à l’utilisateur une liste d’options à choisir, nous pouvons créer une <strong>liste</strong> de tous les choix possibles. Imaginez que vous créiez un programme qui permettrait à l’utilisateur de sélectionner la matière de leur école préféré. Vous pouvez inclure une liste d’options, comme ceci:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># importer le module pour permettre l&#39;interaction avec l&#39;interface graphique</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
 
-<span class="n">subjects</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;English&quot;</span><span class="p">,</span> <span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;Computer Science&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;Phys Ed&quot;</span><span class="p">]</span>
+<span class="n">sujets</span> <span class="o">=</span> <span class="p">[</span><span class="n">Anglais</span><span class="s2">&quot;, &quot;</span><span class="n">Math</span><span class="s2">&quot;, &quot;</span><span class="n">Informatique</span><span class="s2">&quot;, &quot;</span><span class="n">Histoire</span><span class="s2">&quot;, &quot;</span><span class="n">Ed</span> <span class="n">Phys</span><span class="s2">&quot;]</span>
 
-<span class="c1"># the values passed to get_choice() are Prompt, Window Title, and Choices</span>
-<span class="n">favourite</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_choice</span><span class="p">(</span><span class="s2">&quot;What is your fav?&quot;</span><span class="p">,</span> <span class="s2">&quot;Pick Subject&quot;</span><span class="p">,</span> <span class="n">subjects</span><span class="p">)</span>
+<span class="c1"># les valeurs transmises à get_choice() sont Invite/*Prompt*, Titre de la fenêtre/*Titre de la fenêtre* et Choix/*Choices*</span>
 
-<span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;Good call. &quot;</span> <span class="o">+</span> <span class="n">favourite</span> <span class="o">+</span> <span class="s2">&quot; is good.&quot;</span><span class="p">)</span>
+<span class="n">préféré</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_choice</span><span class="p">(</span><span class="s2">&quot;Quel est ton préféré?&quot;</span><span class="p">,</span> <span class="s2">&quot;Choisi un sujet&quot;</span><span class="p">,</span> <span class="n">sujets</span><span class="p">)</span>
+
+<span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;D&#39;accord. &quot;</span> <span class="o">+</span> <span class="n">préféré</span> <span class="o">+</span> <span class="s2">&quot; est bon.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>You could take this a step further, doing something different depending on which subject the user selected.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import the module to allow GUI interaction</span>
+<p>Vous pouvez aller plus loin en faisant quelque chose de différent en fonction du sujet sélectionné par l’utilisateur.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># importer le module pour permettre l&#39;interaction avec l&#39;interface graphique</span>
 <span class="kn">import</span> <span class="nn">easygui_qt</span> <span class="kn">as</span> <span class="nn">easy</span>
 
-<span class="n">subjects</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;English&quot;</span><span class="p">,</span> <span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;Computer Science&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;Phys Ed&quot;</span><span class="p">]</span>
-<span class="n">favourite</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_choice</span><span class="p">(</span><span class="s2">&quot;What is your fav?&quot;</span><span class="p">,</span> <span class="s2">&quot;Pick Subject&quot;</span><span class="p">,</span> <span class="n">subjects</span><span class="p">)</span>
+<span class="n">sujets</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Anglais&quot;</span><span class="p">,</span> <span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;Informatique&quot;</span><span class="p">,</span> <span class="s2">&quot;Histoire&quot;</span><span class="p">,</span> <span class="s2">&quot;Ed Phys&quot;</span><span class="p">]</span>
+<span class="n">préféré</span> <span class="o">=</span> <span class="n">easy</span><span class="o">.</span><span class="n">get_choice</span><span class="p">(</span><span class="s2">&quot;Quel est ton préféré?&quot;</span><span class="p">,</span> <span class="s2">&quot;Choisi un sujet&quot;</span><span class="p">,</span> <span class="n">sujets</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">favourite</span> <span class="o">==</span> <span class="s2">&quot;English&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">préféré</span> <span class="o">==</span> <span class="s2">&quot;Anglais&quot;</span><span class="p">:</span>
     <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;To be or not to be: that is the question.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">favourite</span> <span class="o">==</span> <span class="s2">&quot;Math&quot;</span><span class="p">:</span>
-    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;I&#39;ll take that as a good sine&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">favourite</span> <span class="o">==</span> <span class="s2">&quot;Computer Science&quot;</span><span class="p">:</span>
-    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;Are you just saying that?&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">préféré</span> <span class="o">==</span> <span class="s2">&quot;Math&quot;</span><span class="p">:</span>
+    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;Le rhume fait couler les &quot;</span><span class="n">sinus</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">préféré</span> <span class="o">==</span> <span class="s2">&quot;Informatique&quot;</span><span class="p">:</span>
+    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;Vous ne faites que dire cela?&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">préféré</span> <span class="o">==</span> <span class="s2">&quot;Histoire&quot;</span><span class="p">:</span>
+    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;L&#39;éducation est l&#39;arme la plus puissante qu&#39;on puisse utiliser pour changer le monde. -Nelson Mandela&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;Good call. &quot;</span> <span class="o">+</span> <span class="n">favourite</span> <span class="o">+</span> <span class="s2">&quot; is good.&quot;</span><span class="p">)</span>
+    <span class="n">easy</span><span class="o">.</span><span class="n">show_message</span><span class="p">(</span><span class="s2">&quot;D&#39;accord. &quot;</span> <span class="o">+</span> <span class="n">préféré</span> <span class="o">+</span> <span class="s2">&quot; est bon.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="other-methods">
-<h3>6.2.5. Other Methods<a class="headerlink" href="#other-methods" title="Permalink to this headline">¶</a></h3>
-<p>There are many more methods you can use with easygui_qt. You may want to look in the appendices for the <a class="reference internal" href="../EasyGUI/Reference.html#easygui-reference"><span class="std std-ref">EasyGUI_Qt Reference</span></a> for a more comprehensive list of what is available. For quick reference, here are a few of them (each of the following assumes you have already called <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">easygui_qt</span> <span class="pre">as</span> <span class="pre">easy</span></code>):</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="62%" />
-<col width="38%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Function</th>
-<th class="head">What it Returns</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">easy.get_string(&quot;Some</span> <span class="pre">prompt/question:&quot;)</span></code></td>
-<td>returns a string (or None if cancelled)</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">easy.get_integer(&quot;Some</span> <span class="pre">prompt/question:&quot;)</span></code></td>
-<td>returns an int (or None if cancelled)</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">easy.get_float(&quot;Some</span> <span class="pre">prompt/question:&quot;)</span></code></td>
-<td>returns a float (or None if cancelled)</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">easy.get_yes_or_no(&quot;Some</span> <span class="pre">prompt/question:&quot;)</span></code></td>
-<td>returns a <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> (or None if cancelled)</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">easy.show_message(&quot;Some</span> <span class="pre">message.&quot;)</span></code></td>
-<td>doesn’t return anything</td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">easy.show_text(&quot;A</span> <span class="pre">large</span> <span class="pre">chunk</span> <span class="pre">of</span> <span class="pre">text.&quot;)</span></code></td>
-<td>doesn’t return anything</td>
-</tr>
-</tbody>
-</table>
-<p>Two other functions that you might find useful (that require you to use lists) are:</p>
+<div class="section" id="autres-methodes">
+<h3>6.2.5. Autres méthodes<a class="headerlink" href="#autres-methodes" title="Permalink to this headline">¶</a></h3>
+<p>Il existe de nombreuses autres méthodes que vous pouvez utiliser avec easygui_qt. Vous voudrez peut-être regarder dans les annexes pour le <a class="reference internal" href="../EasyGUI/Reference.html#easygui-reference"><span class="std std-ref">EasyGUI_Qt Reference</span></a> pour une liste plus complète de ce qui est disponible. Pour une référence rapide, en voici quelques-unes (chacune des exemples suivants supposent que vous avez déjà appelé <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">easygui_qt</span> <span class="pre">as</span> <span class="pre">easy</span></code>):</p>
+<p>Deux autres fonctions que vous pourriez trouver utiles (qui vous obligent à utiliser des listes) sont:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">easy.get_choice(&quot;Message</span> <span class="pre">to</span> <span class="pre">user&quot;,</span> <span class="pre">&quot;Window</span> <span class="pre">Title&quot;,</span> <span class="pre">[&quot;Some&quot;,</span> <span class="pre">&quot;list&quot;,</span> <span class="pre">&quot;of&quot;,</span> <span class="pre">&quot;choices&quot;])</span></code>, which returns a single choice from the list (or None if cancelled)</li>
-<li><code class="docutils literal notranslate"><span class="pre">easy.get_list_of_choices(&quot;Window</span> <span class="pre">title&quot;,</span> <span class="pre">[&quot;Some&quot;,</span> <span class="pre">&quot;list&quot;,</span> <span class="pre">&quot;of&quot;,</span> <span class="pre">&quot;choices&quot;])</span></code>, which returns a list of selected items (or an empty list if cancelled)</li>
+<li><code class="docutils literal notranslate"><span class="pre">easy.get_choice(&quot;Message</span> <span class="pre">à</span> <span class="pre">l'utilisateur&quot;,</span> <span class="pre">&quot;Titre</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">fenêtre&quot;,</span> <span class="pre">[&quot;Une&quot;,</span> <span class="pre">&quot;liste&quot;,</span> <span class="pre">&quot;de&quot;,</span> <span class="pre">&quot;choix&quot;])</span></code>, qui renvoie un seul choix dans la liste (ou Aucun si annulé)</li>
+<li><code class="docutils literal notranslate"><span class="pre">easy.get_list_of_choices(&quot;Titre</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">fenêtre&quot;,</span> <span class="pre">[&quot;Une&quot;,</span> <span class="pre">&quot;liste&quot;,</span> <span class="pre">&quot;de&quot;,</span> <span class="pre">&quot;choix&quot;])</span></code>, qui renvoie une liste des éléments sélectionnés (ou une liste vide si annulé)</li>
 </ul>
 </div>
 </div>
-<div class="section" id="mad-libs-practice-problem">
-<h2>6.3. Mad Libs Practice Problem<a class="headerlink" href="#mad-libs-practice-problem" title="Permalink to this headline">¶</a></h2>
-<p>You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish for the day! <em>If you work in Thonny, you will be able to use easygui_qt in your program.</em></p>
-<p>To practice input/output in Python, you will make two Mad Libs. At the start of the program, you should ask the user which MadLib they want. Once the user has selected a MadLib, your program should take in input from the user, then use that input when outputting a story or poem.</p>
-<p>If you are not familiar with madlibs, you may want to investigate what they are by searching the web for a “madlibs website”. In essence, you want to take a familiar story and make it funny by randomly placing your users words into the story. For example, you might start with the classic Humpty Dumpty rhyme:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Humpty Dumpty sat on a wall,
-Humpty Dumpty had a great fall.
-All the king&#39;s horses and all the king&#39;s men
-Couldn&#39;t put Humpty together again.
+<div class="section" id="probleme-de-pratique-mad-libs">
+<h2>6.3. Problème de pratique Mad Libs<a class="headerlink" href="#probleme-de-pratique-mad-libs" title="Permalink to this headline">¶</a></h2>
+<p>Vous pouvez travailler directement dans ce manuel ou utiliser Thonny. Dans tous les cas, veillez à enregistrer votre solution dans votre dossier Informatique 20 à la fin de la journée! <em>Si vous travaillez avec Thonny, vous pourrez utiliser easygui_qt dans votre programme.</em></p>
+<p>Pour pratiquer les entrées/sorties en Python, vous allez créer <strong>deux</strong> Mad Libs. Au début du programme, vous devez demander à l’utilisateur quelle MadLib il souhaite. Une fois que l’utilisateur a sélectionné sont MadLib, votre programme doit demander l’information nécessaire de l’utilisateur pour compléter le MadLib, puis utiliser cette entrée lors de la sortie d’un récit ou d’un poème.</p>
+<p>Si vous n’êtes pas familier avec les MadLibs, vous pouvez rechercher ce qu’ils sont en cherchant sur le Web un «site Web MadLibs». Essentiellement, vous voulez prendre une histoire familière et la rendre drôle en plaçant au hasard les mots de vos utilisateurs dans l’histoire. Par exemple, vous pouvez commencer avec la comptine classique Une Souris Verte:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Une souris verte
+Qui courait dans l&#39;herbe
+Je l&#39;attrape par la queue
+Je la montre à ces messieurs
+Ces messieurs me disent
+Trempez-la dans l&#39;huile
+Trempez-la dans l&#39;eau
+Ça fera un escargot
+Tout chaud
 </pre></div>
 </div>
-<p>In your program, you could take user input:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Person&#39;s First Name: Bree
-Person&#39;s Last Name: Janzen
-Verb (past tense action): ran
-Job Title (such as principal, electrician, etc.): plumber
-Animal (plural): dogs
+<p>Dans votre programme, vous pouvez prendre ces entrées de l’utilisateur:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Animal (féminin): fourmi
+Verbe (Action à l&#39;imparfait): mangeait
+Couleur (féminin): Orange
+Endroit (avec préposition): à Paris
+Action (contre un autre 1er pers. s.): attaque
+Partie du corps (avec pronom): le nez
+Group de personnes (un mot): Grenouilles
+Liquide (avec pronom): le magma
+Liquide (avec pronom): la lave
+Animal (avec pronom): une vache
+``Tout`` suivit par un Adverbe: dangereuse
 </pre></div>
 </div>
-<p>After processing the user input, your program could print out:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bree Janzen ran on a wall,
-Bree Janzen had a great fall.
-All the plumber&#39;s dogs and all the plumber&#39;s men
-Couldn&#39;t put Bree together again.
+<p>Après avoir traité l’entrée de l’utilisateur, votre programme pourrait imprimer:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Une fourmi orange
+Qui mangeit à Paris
+Je l&#39;attaque par le nez
+Je la montre à ces grenouilles
+Ces grenouille me disent
+Trempez-la dans le magme
+Trempez-la dans la lave
+Ça fera une vache
+Tout dangereuse
 </pre></div>
 </div>
-<p>Both of your madlibs should take in at least 5 words from the user, but no more than 10. Feel free to use any old school rhyme, or something of your own creation. Though it can be difficult with user input, try to make sure your story makes sense.</p>
-<p>Remember to use a comment header at the top of your program!</p>
+<p>Vos deux MadLib doivent prendre au moins 5 mots de l’utilisateur, mais pas plus de 10. N’hésitez pas à utiliser n’importe quelle comptine, ou une histoire de votre propre création. Bien que cela puisse être difficile avec la saisie de l’utilisateur, essayez de vous assurer que votre histoire a un sens.</p>
+<p>N’oubliez pas d’utiliser un en-tête de commentaire en haut de votre programme!</p>
 
 <div data-childcomponent="second_input_output_assignment_scratch_work_area" class="runestone explainer ac_section alert alert-warning">
 
@@ -510,18 +498,18 @@ Couldn&#39;t put Bree together again.
     data-audio=''    
           >
 # Madlibs
-# Put Your Name Here
-# Put the Date Here
+# Mettez votre nom ici
+# Mettez la date ici
 
-# your code goes here
+# votre code va ici
 </textarea>
 </div>
-<div class="section" id="extra-for-experts">
-<h3>6.3.1. Extra for Experts<a class="headerlink" href="#extra-for-experts" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="extra-pour-les-experts">
+<h3>6.3.1. Extra pour les experts<a class="headerlink" href="#extra-pour-les-experts" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>instead of having the user enter in all of the parts of speech, have the computer choose some of the words at random. You can do this in one of two ways:</li>
-<li>easier: create a list of possible words, and have Python choose one of these words <a class="reference external" href="http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from-a-list-using-python">at random</a>.</li>
-<li>harder: create text files for each of the parts of speech that you will require (ie. nouns.txt, adjectives.txt, etc) and have the computer randomly choose one of the words from the appropriate text file to complete the madlib. Hint: To simplify things, I’d recommend that you generate the text file with one word per line.</li>
+<li>au lieu de laisser l’utilisateur entrer toutes les parties du discours, demandez à l’ordinateur de choisir certains mots au hasard. Vous pouvez le faire de deux manières:</li>
+<li>plus facile: créez une liste de mots possibles et demandez à Python de choisir un de ces mots <a href="#id1"><span class="problematic" id="id2">`</span></a>aléatoirement &lt;<a class="reference external" href="http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from">http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from</a>- a-list-using-python&gt; <a href="#id3"><span class="problematic" id="id4">`</span></a>_.</li>
+<li>plus difficile: créez des fichiers texte pour chacune des parties du discours dont vous aurez besoin (par exemple, nouns.txt, adjectives.txt, etc.) et demandez à l’ordinateur de choisir au hasard un des mots du fichier texte approprié pour compléter le fichier madlib. Astuce: pour simplifier les choses, je vous recommande de générer le fichier texte avec un mot par ligne.</li>
 </ul>
 </div>
 </div>

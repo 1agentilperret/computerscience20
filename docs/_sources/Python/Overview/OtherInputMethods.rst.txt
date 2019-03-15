@@ -3,19 +3,19 @@
    :start: 1
 
 
-Other Input Methods (easygui_qt)
-=================================
+Autres méthodes de saisie(*entrée/input*)  (easygui_qt)
+========================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Getting user input with a pop-up window using the easygui_qt module. Work on a Python assignment, focused on input/output of strings, and conditionals.
+    Obtenir les entrées de l'utilisateur avec une fenêtre contextuelle à l'aide du module easygui_qt. Travaillez sur un projet Python, axée sur les entrées/sorties de chaînes et les conditions.
 
 
 .. reveal:: curriculum_addressed_input_methods
     :showtitle: Résultats du programme d'études traités dans cette section. 
     :hidetitle: Cacher les résultat du programme
 
-    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Computer Science 20.
+    - **CS20-CP1** Apply various problem-solving strategies to solve programming problems throughout Informatique 20.
     - **CS20-FP1** Utilize different data types, including integer, floating point, Boolean and string, to solve programming problems.
     - **CS20-FP2** Investigate how control structures affect program flow.
     - **CS20-FP4**  Investigate one-dimensional arrays and their applications.
@@ -23,19 +23,20 @@ Other Input Methods (easygui_qt)
 
 
 
-What Does This Program Do?
+Que fait ce programme?
 ---------------------------
 
-.. note:: Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code. 
+.. note:: Votre enseignant peut choisir d'utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun fait avant d'exécuter le code.
 
-What will the following programs output? Why?
+Que vont produire les programmes suivants? Pourquoi?
 
-Remember that a single equal sign ``=`` is used to **assign** a value. Two equal signs ``==`` are used when **comparing** a value.
+Rappelez-vous qu'un seul signe égal ``=`` est utilisé pour **assigner** une valeur. Deux signes égaux ``==`` sont utilisés pour **comparer** une valeur.
 
-Try the following code with ``x = 42``, ``x = 32``, ``x = 2``, ``x = 82``, and ``x = 142``.
+Essayez le code suivant avec ``x = 42``, ``x = 32``, ``x = 2``, ``x = 82`` et ``x = 142``.
+
 
 .. activecode:: wdtpd_input_output_strings_1
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
     x = 42
@@ -48,215 +49,237 @@ Try the following code with ``x = 42``, ``x = 32``, ``x = 2``, ``x = 82``, and `
     elif x < 100:
         x = x - 5
     else:
-        print("big number!")
+        print("grand nombre!")
 
     print(x)
 
 
 .. activecode:: wdtpd_input_output_strings_2
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
-    age = input("How old are you?")
-    print("Wow! Already " + age + " years old!")
+    age = input("Quel âge avez-vous?")
+    print("Hou la la! Déjà " + age + " ans!")
 
 
-Try the following, entering in ``17``. How about ``14``? Can you fix it? *Hint: think data types!*
+Essayez ce qui suit en entrant ``17``. Ensuite ``14``? Peux-tu le réparer? *Hint: pensez aux types de données!*
+
 
 .. activecode:: wdtpd_input_output_strings_3
-    :caption: What will this program print?
+    :caption: Que va imprimer ce programme?
     :nocodelens:
 
-    age = input("How old are you?")
+    age = input("Quel âge avez-vous?")
     if age > 15:
-        print("Wow! Already " + age + " years old!")
+        print("Hou la la! Déjà " + age + " ans!")
 
 
 .. index:: easygui_qt
 
-Getting User Input With easygui_qt
------------------------------------
+Obtenir les entrées de l'utilisateur avec easygui_qt
+-----------------------------------------------------
 
-One of the great things about Thonny is how easy it is to add additional modules to the standard Python installation. You can think of a module as being similar to the **library** tab that we used in Reeborg. It gives us the ability to use extra functionality that another programmer has created. When we were programming Reeborg, we would often put functions into the library tab, like this:
+Un des avantages de Thonny est la facilité avec laquelle il est possible d’ajouter des modules à l’installation standard de Python. Vous pouvez penser à un module similaire à l'onglet **library** que nous avons utilisé dans Reeborg. Cela nous donne la possibilité d'utiliser des fonctionnalités supplémentaires créées par un autre programmeur. Lorsque nous programmions Reeborg, nous avons souvent mis des fonctions dans l’onglet Bibliothèque, comme ceci:
 
 .. image:: images/reeborg_library.png
 
-In Reeborg, we would often import that code using ``from library import turn_right``, so that we could simply call the ``turn_right()`` function in the same way that we could call ``turn_left()``. However, it was also possible to import the library as follows:
+Dans Reeborg, nous importions souvent ce code en utilisant ``from library import turn_right``, de sorte que nous puissions simplement appeler la fonction ``turn_right()`` de la même manière que nous pourrions appeler ``turn_left()``. Cependant, il était également possible d'importer la bibliothèque comme ceci:
 
 .. image:: images/reeborg_code_calling_library.png
 
-You can think of this code as saying "Look into the ``library``, and find something called ``turn_right()``". For many Python modules, this is equivalent to saying, "Look into the library.py file, and find a function called turn_right()".
+Vous pouvez penser que ce code dit "Regardez dans la ``bibliothèque``, et trouvez quelque chose qui s'appelle ``turn_right()``". Pour de nombreux modules Python, cela revient à dire "Regardez dans le fichier library.py et trouvez une fonction appelée turn_right()".
 
-Another method of importing the library allows us give the module a nickname that is faster to type. Consider the following:
+Une autre méthode d’importation de la bibliothèque nous permet d’attribuer au module un surnom plus rapide à taper. Considérer ce qui suit:
 
 .. image:: images/reeborg_import_as.png
 
-When using Python outside Reeborg, if you'd like to get user input through a graphical pop-up box instead of just through the console, we can just install a module ``cs20-easygui``. In Thonny, open *Tools -> Manage packages...*. 
+Lorsque vous utilisez Python en dehors de Reeborg, si vous souhaitez obtenir un entrée de l'utilisateur par le biais d'une fenêtre contextuelle graphique plutôt que par le biais de la console, nous pouvons simplement installer le module ``cs20-easygui``. Dans Thonny, ouvrez *Tools -> Manage packages...*. 
 
 .. image:: images/thonny_manage_packages_menu_item.png
 
-Now type in ``cs20-easygui`` into the Search box (be sure to spell it *exactly*). Now click the Install button.
+Maintenant, tapez ``cs20-easygui`` dans le champ de recherche (assurez-vous de l'épeler *exactement* come cela). Maintenant, cliquez sur le bouton Installer.
 
 .. image:: images/thonny_add_easygui_module.png
 
-.. note:: The ``cs20-easygui`` package attempts to install ``easygui_qt``, along with it's prerequisites. If you prefer (or if you run into installation problems), you can also just install each module on their own. The order you install them should be ``sip``, then ``PyQt5``, then ``easygui_qt``.
+.. note:: Le paquet ``cs20-easygui`` tente d'installer ``easygui_qt``, ainsi que ses prérequis. Si vous préférez (ou si vous rencontrez des problèmes d'installation), vous pouvez également installer chaque module individuellement. L'ordre dans lequel vous les installez devrait être ``sip``, puis ``PyQt5``, puis ``easygui_qt``.
 
 
-Get String From User
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Obtenir la chaîne de l'utilisateur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You will now be able to use the easygui_qt module in the same way you can use any other module. Here is a simple program that will use pop-up boxes to get the first and last names of the user, then print out the result to the console. 
-
-.. sourcecode:: python
-    
-    # import the module to allow GUI interaction
-    import easygui_qt as easy
-
-    # think of this as "look inside easygui_qt, and run the get_string function
-    first_name = easy.get_string("Please enter your first name")
-    last_name = easy.get_string("Please enter your last name")
-
-    greeting = "Hello there, " + first_name + " " + last_name + "!"
-    print(greeting)
-
-
-Display Graphical Message
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you would like to output the message to a graphical window (instead of the console), you can call the ``show_message()`` function, as shown below.
+Vous pourrez maintenant utiliser le module easygui_qt de la même manière que vous pouvez utiliser n’importe quel autre module. Voici un programme simple qui utilisera des fenêtres contextuelles pour obtenir le nom et le prénom de l'utilisateur, puis affichera le résultat sur la console.
 
 .. sourcecode:: python
     
-    # import the module to allow GUI interaction
+    # importer le module pour permettre l'interaction avec l'interface graphique
     import easygui_qt as easy
 
-    # think of this as "look inside easygui_qt, and run the get_string function
-    first_name = easy.get_string("Please enter your first name")
-    last_name = easy.get_string("Please enter your last name")
+    # pense que cela ressemble à "regarde dans easygui_qt, et lance la fonction get_string
+    prenom = easy.get_string("Veuillez entrer votre prénom")
+    nom = easy.get_string("Veuillez entrer votre nom de famille")
 
-    greeting = "Hello there, " + first_name + " " + last_name + "!"
-
-    # can also display output graphically
-    easy.show_message(greeting)
+    salutation = "Bonjour, " + prenom + " " + nom + "!"
+    print(salutation)
 
 
-Lists
-~~~~~~~
+Afficher un message graphique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the next example, we need to provide a **list** of options for the user to pick from. As we saw in the quick Python overview, a list can be created using square brackets ``[]``, with each elemnt inside the square brackets separated with a comma. Consider the example below, in which we create a list of ski hills, then print out some elements from it. *Note that lists begin counting at 0, so the first element in the list is accessed using list_name[0].*
+Si vous souhaitez exporter le message dans une fenêtre graphique (au lieu de la console), vous pouvez appeler la fonction ``show_message()``, comme indiqué ci-dessous.
 
-.. activecode:: lists_overview_ski_hills
+
+.. sourcecode:: python
+    
+    # importer le module pour permettre l'interaction avec l'interface graphique
+    import easygui_qt as easy
+
+    # pense que cela ressemble à "regarde dans easygui_qt, et lance la fonction get_string"
+    prenom = easy.get_string("Veuillez entrer votre prénom")
+    nom = easy.get_string("Veuillez entrer votre nom de famille")
+
+    salutation = "Bonjour, " + prenom + " " + nom + "!"
+
+    # peut aussi afficher la sortie graphiquement
+    easy.show_message(salutation)
+
+
+Des listes
+~~~~~~~~~~~
+
+Dans l'exemple suivant, nous devons fournir une **liste** d'options parmi lesquelles l'utilisateur peut choisir. Comme nous l'avons vu dans l'aperçu rapide de Python, une liste peut être créée à l'aide de crochets ``[]``, chaque élément étant placé entre crochets séparés par une virgule. Prenons l'exemple ci-dessous, dans lequel nous créons une liste de pistes de ski, puis en imprimons quelques éléments. *Notez que les listes commencent à compter à 0. Le premier élément de la liste est accessible à l'aide de la commande list_name[0].*
+
+.. activecode:: lists_overview_Piste_ski
     :nocodelens:
 
-    ski_hills = ["Table Mountain", "Mission Ridge", "Wapiti", "Duck Mountain", "Asessippi"]
-    print(ski_hills[0])     # Table Mountain
-    print(ski_hills[2])     # Wapiti
-    print(ski_hills[8])     # IndexError: list index out of range
+    Piste_ski = ["Table Mountain", "Mission Ridge", "Wapiti", "Duck Mountain", "Asessippi"]
+    print(Piste_ski[0])     # Table Mountain
+    print(Piste_ski[2])     # Wapiti
+    print(Piste_ski[8])     # IndexError: liste index hors des limites
 
 
 
-Get Choice From User
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Obtenir le choix de l'utilisateur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To give the user a list of options to choose from, we can create a **list** of all the choices they can choose from. Imagine that you were creating a program that would allow the user to select which school subject was their favourite. You might include a list of options, as follows:
+Pour donner à l'utilisateur une liste d'options à choisir, nous pouvons créer une **liste** de tous les choix possibles. Imaginez que vous créiez un programme qui permettrait à l’utilisateur de sélectionner la matière de leur école préféré. Vous pouvez inclure une liste d’options, comme ceci:
+
 
 
 .. sourcecode:: python
 
-    # import the module to allow GUI interaction
+    # importer le module pour permettre l'interaction avec l'interface graphique
     import easygui_qt as easy
 
-    subjects = ["English", "Math", "Computer Science", "History", "Phys Ed"]
+    sujets = [Anglais", "Math", "Informatique", "Histoire", "Ed Phys"]
 
-    # the values passed to get_choice() are Prompt, Window Title, and Choices
-    favourite = easy.get_choice("What is your fav?", "Pick Subject", subjects)
+    # les valeurs transmises à get_choice() sont Invite/*Prompt*, Titre de la fenêtre/*Titre de la fenêtre* et Choix/*Choices*
 
-    easy.show_message("Good call. " + favourite + " is good.")
+    préféré = easy.get_choice("Quel est ton préféré?", "Choisi un sujet", sujets)
+
+    easy.show_message("D'accord. " + préféré + " est bon.")
 
 
-You could take this a step further, doing something different depending on which subject the user selected. 
+Vous pouvez aller plus loin en faisant quelque chose de différent en fonction du sujet sélectionné par l'utilisateur.
 
 .. sourcecode:: python
 
-    # import the module to allow GUI interaction
+    # importer le module pour permettre l'interaction avec l'interface graphique
     import easygui_qt as easy
 
-    subjects = ["English", "Math", "Computer Science", "History", "Phys Ed"]
-    favourite = easy.get_choice("What is your fav?", "Pick Subject", subjects)
+    sujets = ["Anglais", "Math", "Informatique", "Histoire", "Ed Phys"]
+    préféré = easy.get_choice("Quel est ton préféré?", "Choisi un sujet", sujets)
 
-    if favourite == "English":
+    if préféré == "Anglais":
         easy.show_message("To be or not to be: that is the question.")
-    elif favourite == "Math":
-        easy.show_message("I'll take that as a good sine")
-    elif favourite == "Computer Science":
-        easy.show_message("Are you just saying that?")
+    elif préféré == "Math":
+        easy.show_message("Le rhume fait couler les "sinus"")
+    elif préféré == "Informatique":
+        easy.show_message("Vous ne faites que dire cela?")
+    elif préféré == "Histoire":
+        easy.show_message("L'éducation est l'arme la plus puissante qu'on puisse utiliser pour changer le monde. -Nelson Mandela")
     else:
-        easy.show_message("Good call. " + favourite + " is good.")
+        easy.show_message("D'accord. " + préféré + " est bon.")
 
 
-Other Methods
+Autres méthodes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are many more methods you can use with easygui_qt. You may want to look in the appendices for the :ref:`easygui_reference` for a more comprehensive list of what is available. For quick reference, here are a few of them (each of the following assumes you have already called ``import easygui_qt as easy``):
+Il existe de nombreuses autres méthodes que vous pouvez utiliser avec easygui_qt. Vous voudrez peut-être regarder dans les annexes pour le :ref:`easygui_reference` pour une liste plus complète de ce qui est disponible. Pour une référence rapide, en voici quelques-unes (chacune des exemples suivants supposent que vous avez déjà appelé ``import easygui_qt as easy``):
 
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-|                                          Function                                         |                    What it Returns                     |
+|                                          Function                                         |                    Ce qu'il renvoi                     |
 +===========================================================================================+========================================================+
-| ``easy.get_string("Some prompt/question:")``                                              | returns a string (or None if cancelled)                |
+| ``easy.get_string("Un ``prompt``/question:")``                                            | renvoi une chaîne (ou Rien si annulé)                  |
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| ``easy.get_integer("Some prompt/question:")``                                             | returns an int (or None if cancelled)                  |
+| ``easy.get_integer("Un ``prompt``/question:")``                                           | renvoi un int (ou Rien si annulé)                      |+-------------------------------------------------------------------------------------------+--------------------------------------------------------+
+| ``easy.get_float("Un ``prompt``/question:")``                                             | renvoi une virgule flotante (ou Rien si annulé)        |
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| ``easy.get_float("Some prompt/question:")``                                               | returns a float (or None if cancelled)                 |
+| ``easy.get_yes_or_no("Un ``prompt``/question:")``                                         | renvoi un ``True`` ou ``False`` (ou Rien si annulé)    |
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| ``easy.get_yes_or_no("Some prompt/question:")``                                           | returns a ``True`` or ``False`` (or None if cancelled) |
+| ``easy.show_message("Un message.")``                                                      | ne renvoi rien                                         |
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| ``easy.show_message("Some message.")``                                                    | doesn't return anything                                |
-+-------------------------------------------------------------------------------------------+--------------------------------------------------------+
-| ``easy.show_text("A large chunk of text.")``                                              | doesn't return anything                                |
+| ``easy.show_text("Un gros morceau de texte.")``                                           | ne renvoi rien                                         |
 +-------------------------------------------------------------------------------------------+--------------------------------------------------------+
 
-Two other functions that you might find useful (that require you to use lists) are:
+Deux autres fonctions que vous pourriez trouver utiles (qui vous obligent à utiliser des listes) sont:
 
--  ``easy.get_choice("Message to user", "Window Title", ["Some", "list", "of", "choices"])``, which returns a single choice from the list (or None if cancelled)
-- ``easy.get_list_of_choices("Window title", ["Some", "list", "of", "choices"])``, which returns a list of selected items (or an empty list if cancelled)
+-  ``easy.get_choice("Message à l'utilisateur", "Titre de la fenêtre", ["Une", "liste", "de", "choix"])``, qui renvoie un seul choix dans la liste (ou Aucun si annulé)
+- ``easy.get_list_of_choices("Titre de la fenêtre", ["Une", "liste", "de", "choix"])``, qui renvoie une liste des éléments sélectionnés (ou une liste vide si annulé)
 
 
-
-Mad Libs Practice Problem
--------------------------
+Problème de pratique Mad Libs
+--------------------------------
 
 .. highlight:: none
 
-You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish for the day! *If you work in Thonny, you will be able to use easygui_qt in your program.*
+Vous pouvez travailler directement dans ce manuel ou utiliser Thonny. Dans tous les cas, veillez à enregistrer votre solution dans votre dossier Informatique 20 à la fin de la journée! *Si vous travaillez avec Thonny, vous pourrez utiliser easygui_qt dans votre programme.*
 
-To practice input/output in Python, you will make two Mad Libs. At the start of the program, you should ask the user which MadLib they want. Once the user has selected a MadLib, your program should take in input from the user, then use that input when outputting a story or poem.
+Pour pratiquer les entrées/sorties en Python, vous allez créer **deux** Mad Libs. Au début du programme, vous devez demander à l'utilisateur quelle MadLib il souhaite. Une fois que l'utilisateur a sélectionné sont MadLib, votre programme doit demander l'information nécessaire de l'utilisateur pour compléter le MadLib, puis utiliser cette entrée lors de la sortie d'un récit ou d'un poème.
+ 
+Si vous n'êtes pas familier avec les MadLibs, vous pouvez rechercher ce qu’ils sont en cherchant sur le Web un «site Web MadLibs». Essentiellement, vous voulez prendre une histoire familière et la rendre drôle en plaçant au hasard les mots de vos utilisateurs dans l'histoire. Par exemple, vous pouvez commencer avec la comptine classique Une Souris Verte::
 
-If you are not familiar with madlibs, you may want to investigate what they are by searching the web for a "madlibs website". In essence, you want to take a familiar story and make it funny by randomly placing your users words into the story. For example, you might start with the classic Humpty Dumpty rhyme::
-
-    Humpty Dumpty sat on a wall,
-    Humpty Dumpty had a great fall.
-    All the king's horses and all the king's men
-    Couldn't put Humpty together again.
-
-In your program, you could take user input::
-
-    Person's First Name: Bree
-    Person's Last Name: Janzen
-    Verb (past tense action): ran
-    Job Title (such as principal, electrician, etc.): plumber
-    Animal (plural): dogs
-
-After processing the user input, your program could print out::
-
-    Bree Janzen ran on a wall,
-    Bree Janzen had a great fall.
-    All the plumber's dogs and all the plumber's men
-    Couldn't put Bree together again.
+    Une souris verte
+    Qui courait dans l'herbe
+    Je l'attrape par la queue
+    Je la montre à ces messieurs
+    Ces messieurs me disent
+    Trempez-la dans l'huile
+    Trempez-la dans l'eau
+    Ça fera un escargot
+    Tout chaud
 
 
-Both of your madlibs should take in at least 5 words from the user, but no more than 10. Feel free to use any old school rhyme, or something of your own creation. Though it can be difficult with user input, try to make sure your story makes sense.
+Dans votre programme, vous pouvez prendre ces entrées de l'utilisateur::
 
-Remember to use a comment header at the top of your program!
+    Animal (féminin): fourmi
+    Verbe (Action à l'imparfait): mangeait
+    Couleur (féminin): Orange
+    Endroit (avec préposition): à Paris
+    Action (contre un autre 1er pers. s.): attaque
+    Partie du corps (avec pronom): le nez
+    Group de personnes (un mot): Grenouilles
+    Liquide (avec pronom): le magma
+    Liquide (avec pronom): la lave
+    Animal (avec pronom): une vache
+    ``Tout`` suivit par un Adverbe: dangereuse
+    
+Après avoir traité l’entrée de l'utilisateur, votre programme pourrait imprimer::
+
+    Une fourmi orange
+    Qui mangeit à Paris
+    Je l'attaque par le nez
+    Je la montre à ces grenouilles
+    Ces grenouille me disent
+    Trempez-la dans le magme
+    Trempez-la dans la lave
+    Ça fera une vache
+    Tout dangereuse
+    
+
+
+Vos deux MadLib doivent prendre au moins 5 mots de l'utilisateur, mais pas plus de 10. N'hésitez pas à utiliser n'importe quelle comptine, ou une histoire de votre propre création. Bien que cela puisse être difficile avec la saisie de l'utilisateur, essayez de vous assurer que votre histoire a un sens.
+
+N'oubliez pas d'utiliser un en-tête de commentaire en haut de votre programme!
 
 
 .. activecode:: second_input_output_assignment_scratch_work_area
@@ -264,17 +287,16 @@ Remember to use a comment header at the top of your program!
     :enabledownload:
 
     # Madlibs
-    # Put Your Name Here
-    # Put the Date Here
+    # Mettez votre nom ici
+    # Mettez la date ici
 
-    # your code goes here
+    # votre code va ici
 
 
 
-Extra for Experts
-~~~~~~~~~~~~~~~~~~
+Extra pour les experts
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-- instead of having the user enter in all of the parts of speech, have the computer choose some of the words at random. You can do this in one of two ways:
-- easier: create a list of possible words, and have Python choose one of these words `at random <http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from-a-list-using-python>`_.
-- harder: create text files for each of the parts of speech that you will require (ie. nouns.txt, adjectives.txt, etc) and have the computer randomly choose one of the words from the appropriate text file to complete the madlib. Hint: To simplify things, I'd recommend that you generate the text file with one word per line.
-
+- au lieu de laisser l'utilisateur entrer toutes les parties du discours, demandez à l'ordinateur de choisir certains mots au hasard. Vous pouvez le faire de deux manières:
+- plus facile: créez une liste de mots possibles et demandez à Python de choisir un de ces mots `aléatoirement <http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from- a-list-using-python> `_.
+- plus difficile: créez des fichiers texte pour chacune des parties du discours dont vous aurez besoin (par exemple, nouns.txt, adjectives.txt, etc.) et demandez à l’ordinateur de choisir au hasard un des mots du fichier texte approprié pour compléter le fichier madlib. Astuce: pour simplifier les choses, je vous recommande de générer le fichier texte avec un mot par ligne.
