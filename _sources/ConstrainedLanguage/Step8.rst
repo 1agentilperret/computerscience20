@@ -50,7 +50,7 @@ La liste complète des fonctions (*questions*) auxquelles Reeborg peut répondre
     wall_in_front ()     Renvoie Vrai s'il y a un mur devant Reeborg, Faux sinon.
     wall_on_right ()     Renvoie Vrai s'il y a un mur du côté droit de Reeborg, Faux sinon.
     object_here ()       Renvoie Vrai s'il y a un objet (étoile, pissenlit, etc.) sur la même tuile sur laquelle Reeborg est debout, Faux sinon.
-    carry_object ()      Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.
+    carries_object ()    Renvoie Vrai si Reeborg porte actuellement au moins un objet (étoile, pissenlit, etc.). Renvoie Faux si Reeborg ne porte rien.
     is_facing_north ()   Renvoie Vrai si Reeborg fait actuellement face au nord, Faux sinon.
     ===================  ============
 
