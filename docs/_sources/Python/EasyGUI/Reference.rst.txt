@@ -331,9 +331,9 @@ Cette fonction nécessite deux arguments, le titre de la fenêtre (sous forme de
 Display HTML Formatted Text
 ----------------------------
 
-To create a pop up window that shows the contents of a file as rendered HTML, use the ``show_file`` function.
+Pour créer une fenêtre contextuelle affichant le contenu d'un fichier au format HTML, utilisez la fonction ``show_file``.
 
-This function requires three arguments, the path of the file (as a string), the window titre (as a string), rendering engine to use (also a string).
+Cette fonction nécessite trois arguments, le chemin du fichier (sous forme de chaîne), le titre de la fenêtre (sous forme de chaîne), le moteur de rendu à utiliser (également une chaîne).
 
 .. sourcecode:: python
 
