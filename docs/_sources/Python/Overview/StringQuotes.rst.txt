@@ -3,12 +3,12 @@
    :start: 1
 
 
-Which Quotes to Use When Creating Strings
-==========================================
+Quelles citations/*quotes* utiliser lors de la création de chaînes/*strings*
+==============================================================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Triple quoted strings can span multiple lines, and contain other types of quotes. Work on a Python assignment, focused on input/output of strings, and conditionals.
+    Les chaînes à triple guillemet peuvent s'étendre sur plusieurs lignes et contenir d'autres types de guillemets. Travaillez sur un projet Python, axée sur les entrées/sorties de chaînes et des conditions.
 
 
 .. reveal:: curriculum_addressed_string_quotes
@@ -22,108 +22,101 @@ Which Quotes to Use When Creating Strings
 
 .. index:: string quotes
 
-A Bit More Detail About Strings
---------------------------------
+Un peu plus de détails sur les chaînes
+------------------------------------------
 
-Strings in Python can be enclosed in either single quotes (``'``) or double
-quotes (``"`` - the double quote character), or three of the same separate quote characters (``'''`` or ``"""``).
+Les chaînes en Python peuvent être placées entre guillemets simples (``'``) ou doubles quotes (``"`` - le caractère de guillemet double), ou trois des mêmes caractères de guillemets séparés (``'''`` ou ``"""``).
 
 .. activecode:: ch02_4
     :nocanvas:
 
-    print(type('This is a string.') )
-    print(type("And so is this.") )
-    print(type("""and this.""") )
-    print(type('''and even this...''') )
+    print(type('Ceci est une chaîne.') )
+    print(type("Celui-ci aussi.") )
+    print(type("""et lui.""") )
+    print(type('''et même celui là...''') )
 
 
-Double quoted strings can contain single quotes inside them, as in ``"Bruce's
-beard"``, and single quoted strings can have double quotes inside them, as in
-``'The knights who say "Ni!"'``.
-Strings enclosed with three occurrences of either quote symbol are called
-triple quoted strings.  They can contain either single or double quotes:
+Les chaînes entre guillemets peuvent contenir des guillemets simples à l'intérieur, comme dans  ``"La barbe à Bruce"``, et les chaînes simples peuvent avoir des guillemets doubles à l'intérieur, comme dans ``'Les chevaliers qui disent "Ni!"'``. Les chaînes entourées de trois occurrences de l'un ou l'autre des guillemets sont appelées des chaînes à triple citations/*triple quoted strings*. Ils peuvent contenir des guillemets simples ou doubles:
 
 .. activecode:: ch02_5
     :nocanvas:
 
-    print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
+    print('''"Oh non", s'écria-t-elle, "le vélo de Ben est cassé!"''')
 
-Triple quoted strings can even span multiple lines:
+Les chaînes à triple citations peuvent même s'étendre sur plusieurs lignes:
 
 .. activecode:: ch02_6
     :nocanvas:
 
-    print("""This message will span
-    several lines
-    of the text.""")
+    print("""Ce message s'étendra
+    plusieurs lignes
+    du texte.""")
 
-Python doesn't care whether you use single or double quotes or the
-three-of-a-kind quotes to surround your strings.  Once it has parsed the text of
-your program or command, the way it stores the value is identical in all cases,
-and the surrounding quotes are not part of the value.
+Python s'en fiche si vous utilisez des guillemets simples ou doubles ou les trois guillemets pour entourer vos chaînes. Une fois qu'il a analysé le texte de votre programme ou votre commande, la façon dont il stocke la valeur est identique dans tous les cas, et les guillemets qui entour ne font pas partie de la valeur.
 
 .. activecode:: ch02_7
     :nocanvas:
 
-    print('This is a string.')
-    print("""And so is this.""")
+    print('Ceci est une chaîne.')
+    print("""Et c'est la même chose.""")
 
 
-What Does This Program Do?
+Que fait ce programme?
 ---------------------------
 
-.. note:: Your teacher may choose to use the following examples as a class activity, by displaying the  examples, and having you take a guess as to what you think each will do before running the code. 
+.. note:: Votre enseignant peut choisir d'utiliser les exemples suivants comme activité de classe, en les affichant et en vous demandant de deviner ce que chacun fait avant d'exécuter le code.
 
-What will the following programs output? Why?
+Que vont produire les programmes suivants? Pourquoi?
 
-Can you fix the error in the following programs?
+Pouvez-vous corriger l'erreur dans les programmes suivants?
 
 .. activecode:: wdtpd_other_input_methods_1
-    :caption: Find and fix the error in this program!
+    :caption: Trouvez et corrigez l'erreur dans ce programme!
     :nocodelens:
 
-    song_quote = 'Leonard Cohen, in his song "Anthem", sings "There is a crack in everything; That's how the light gets in."'
+    citation_de_chanson = 'Les Trois Accords, dans leur chanson "Saskatchewan", chantent "Saskatchewan; Tu m'as pris ma femme."'
 
-    print(song_quote)
+    print(citation_de_chanson)
 
 
 .. activecode:: wdtpd_other_input_methods_2
-    :caption: Find and fix the errors in this program!
+    :caption: Trouvez et corrigez les erreurs dans ce programme!
     :nocodelens:
 
-    part_one = "Leonard Cohen, in his song "Anthem", sings"
-    part_two = 'There is a crack in everything; That's how the light gets in.'
+    partie_un = "Les Trois Accords, dans leur chanson "Saskatchewan", chantent"
+    partie_deux = 'Saskatchewan; Tu m'as pris ma femme.'
 
-    print(part_one + part_two)
+    print(partie_un + partie_deux)
+
 
 .. activecode:: wdtpd_other_input_methods_3
-    :caption: Find and fix the errors in this program!
+    :caption: Trouvez et corrigez les erreurs dans ce programme!
     :nocodelens:
 
-    interesting_quotes = 'There's a lot of people who have said interesting things. Some fun quotes include:
+    citations_intéressantes = 'Il y a beaucoup de gens qui ont dit des choses intéressantes. Quelques citations amusantes incluent:
     
-    "What I cannot create, I do not understand." - Richard Feynman
-    "Judge a man by his questions rather than by his answers." - Voltaire
-    "Our ignorance of history causes us to slander our own times." - Gustave Flaubert'
+    "Ce que je ne peux pas créer, je ne comprends pas." - Richard Feynman
+    "Juger un homme par ses questions plutôt que par ses réponses." - Voltaire
+    "L'histoire est le total des choses qui auraient pu être évitées" - Konrad Adenauer
 
-    print(interesting_quotes)
+    print(citations_intéressantes)
 
 
 .. note:: 
 
-    Another alternative to concatenating strings together is to use f-strings (formatted string literals). An f-string allows you to easily create a string that has the *value* of variables inserted into it. To create an f-string, you simply put the letter ``f`` before the quotes that begin the string. This tells Python that it should look for variable names inside the string, and if it finds any, it will replace them with the value of that variable. For Python to find the variable, you must enclose the variable inside curly brackets, like ``{some_variable}``. Consider this example of using an f-string::
+    Une autre alternative à la concaténation de chaînes consiste à utiliser des chaînes-f/*f-strings* (littéraux de chaîne formatés/*formatted string literals*). Une chaîne de caractères vous permet de facilement créer une chaîne contenant la *valeur* des variables insérées. Pour créer une chaîne de caractères, vous devez simplement mettre la lettre ``f`` avant les guillemets qui commencent la chaîne. Cela indique à Python qu'il doit rechercher les noms de variables à l'intérieur de la chaîne et s'il en trouve, il les remplacera par la valeur de cette variable. Pour que Python trouve la variable, vous devez la placer entre accolades, comme ``{une_variable}``. Considérons cet exemple d'utilisation d'une chaîne-f::
 
-        name = "Eli"
+        nom = "Eli"
         age = 14
 
-        greeting = f"Hello, {name}. I heard you just turned {age}!"
-        print(greeting)
+        salutation = f"Bonjour, {nom}. J'ai entendu dire que tu venais d'avoir {age}!"
+        print(salutation)
 
-        # this code will print the following:
-        # Hello, Eli. I heard you just turned 14!
+        # ce code imprimera ce qui suit:
+        # Bonjour, Eli. J'ai entendu dire que tu venais d'avoir 14 ans!
 
 
-Assignment Work Time
+Temps de travail
 ---------------------
 
-Please spend the rest of the class continuing to work on your current Python assignment (likely something emphasizing user input and output). 
+Veuillez passer le reste de la classe à continuer à travailler sur votre projet Python actuelle (probablement quelque chose mettant l’accent sur les entrées/sorties de l’utilisateur).
