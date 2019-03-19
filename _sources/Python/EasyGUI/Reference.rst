@@ -5,260 +5,262 @@
 
 .. _easygui_reference:
 
-EasyGUI_Qt Reference
-====================
+EasyGUI_Qt Référence
+=======================
 
-EasyGUI_Qt is inspired by EasyGUI and contains a number of different basic graphical user interface components. The version you are using is forked from `https://github.com/aroberge/easygui_qt <https://github.com/aroberge/easygui_qt>`_, and adds just a few changes to make things easier for students to use (improved install process by adding PyQt5 as a dependency, added get_file_name function). The following reference covers a subset of the functions that are most accessible to a student at the CS20 level, so you may want to read the `official docs of the original project <http://easygui-qt.readthedocs.io/en/latest/api.html>`_ if you would like to explore more usage options. If you explore the official docs, you may find it useful to know that you can call functions with only some of the arguments (this is called optional arguments). If you do this, however, you need to specify *which* argument you are passing, like ``easy.get_string(message="Some prompt/question:", default_response="Some string")``.
+EasyGUI_Qt est inspiré de EasyGUI et contient un certain nombre de composants d'interface utilisateur graphiques de base. La version que vous utilisez est fournie à partir de `https://github.com/aroberge/easygui_qt <https://github.com/aroberge/easygui_qt>`_, et ajoute juste quelques modifications pour simplifier l'utilisation du logiciel (amélioration du processus d’installation en ajoutant PyQt5 comme dépendance, ajout de la fonction get_file_Nom). La référence suivante couvre un sous-ensemble des fonctions les plus accessibles pour un étudiant au niveau Info20. Vous pouvez donc consulter les `documents officiels du projet original <http://easygui-qt.readthedocs.io/en/ latest / api.html>`_ si vous souhaitez explorer davantage les options d’utilisation. Si vous explorez la documentation officielle, vous trouverez peut-être utile de savoir que vous pouvez appeler des fonctions avec seulement certains arguments (cela s'appelle des arguments facultatifs). Si vous faites cela, cependant, vous devrez spécifier *l'argument* que vous passez, comme ``easy.get_string (message = "Un prompt/une question:", réponse_par_défaut = "Une chaîne")``.
 
 
 Installation
 -------------
 
-In Thonny, open Tools -> Manage Packages and type in ``cs20-easygui`` into the search bar, then click Install. This installation will take some time, as part of the installation is the backend graphical rendering engine (PyQt5).
+Dans Thonny, ouvrez Tools -> Manage Packages and type in ``cs20-easygui`` dans la barre de recherche, puis cliquez sur Installer. Cette installation prendra un certain temps car elle fait partie du moteur de rendu graphique principal (PyQt5).
 
+Affichage des messages
+----------------------------
 
-Showing Messages
------------------
+Si vous appelez ``show_message`` avec un seul argument, cet argument devrait être une chaîne contenant le message que vous souhaitez afficher.
 
-If you call ``show_message`` with a single argument, that argument should be a string containing the message you would like to show.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    easy.show_message("Enter your message here, or pass in a variable containing a string.")
+    easy.show_message("Entrez votre message ici ou transmettez une variable contenant une chaîne.")
 
 .. image:: images/showing-messages1.png
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``show_message`` with a second argument (separated by a comma), that second argument should also be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``show_message`` avec un deuxième argument (séparé par une virgule), ce deuxième argument doit également être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    easy.show_message("My message goes here!", "Some Title")
+    easy.show_message("Mon message est ici!", "Un titre")
 
 .. image:: images/showing-messages2.png
 
-Getting Strings
-----------------
+Obtenir des chaînes
+--------------------
 
-To create a pop up window that prompts the user to enter a string, use the ``get_string`` function. This function will return whatever the user types in (as a string). If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à entrer une chaîne, utilisez la fonction ``get_string``. Cette fonction renverra ce que l'utilisateur saisira (sous forme de chaîne). Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``None``.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_string("What is your name?")
+    reponse = easy.get_string("Quel est votre nom?")
 
 .. image:: images/getting-strings1.png
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_string`` with a second argument (separated by a comma), that second argument should also be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_string`` avec un second argument (séparé par une virgule), ce second argument doit également être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_string("What is your name?", "Name")
+    reponse = easy.get_string("Quel est votre nom?", "Nom")
 
 .. image:: images/getting-strings2.png
 
-If you call ``get_string`` with a third argument (separated by a comma), that third argument should also be a string, and will be interpreted as the default value inside the input box.
+Si vous appelez ``get_string`` avec un troisième argument (séparé par une virgule), ce troisième argument doit également être une chaîne et sera interprété comme la valeur par défaut dans la zone de saisie.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_string("What is your name?", "Name", "John Doe")
+    reponse = easy.get_string("Quel est votre nom?", "Nom", "John Doe")
 
 .. image:: images/getting-strings3.png
 
 
-Getting Integers
-----------------
+Obtenir des entiers/*intigers*
+---------------------------------
 
-To create a pop up window that prompts the user to enter an integer, use the ``get_integer`` function. This function will return an integer, and forces the user to only enter numbers. If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à entrer un entier, utilisez la fonction ``get_integer``. Cette fonction renverra un entier et obligera l'utilisateur à ne saisir que des nombres. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``Aucun``.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_integer("How old are you?")
+    reponse = easy.get_integer("Quel âge avez-vous?")
 
 .. image:: images/getting-integers1.png
 
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_integer`` with a second argument (separated by a comma), that second argument should be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_integer`` avec un deuxième argument (séparé par une virgule), ce dernier argument doit être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_integer("How old are you?", "Age")
+    reponse = easy.get_integer("Quel âge avez-vous?", "Âge")
 
 .. image:: images/getting-integers2.png
 
-If you call ``get_integer`` with a third argument (separated by a comma), that third argument should be an integer, and will be interpreted as the default value inside the input box.
+Si vous appelez ``get_integer`` avec un troisième argument (séparé par une virgule), ce troisième argument doit être un entier et sera interprété comme la valeur par défaut dans la zone de saisie.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_integer("How old are you?", "Age", 16)
+    reponse = easy.get_integer("Quel âge avez-vous?", "Age", 16)
 
 .. image:: images/getting-integers3.png
 
-If you call ``get_integer`` with five arguments (separated by commas), the fourth argument should be an integer representing the minimum value allowed, and the fifth argument should be an integer representing the maximum value allowed.
+Si vous appelez ``get_integer`` avec cinq arguments (séparés par des virgules), le quatrième argument doit être un entier représentant la valeur minimale autorisée, et le cinquième argument doit être un entier représentant la valeur maximale autorisée.
+
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_integer("How old are you?", "Age", 16, 0, 120)
+    reponse = easy.get_integer("Quel âge avez-vous?", "Âge", 16, 0, 120)
 
 .. image:: images/getting-integers4.png
 
 
-Getting Floats
-----------------
+Obtenir des virgules flotantes/*Floats*
+-----------------------------------------
 
-To create a pop up window that prompts the user to enter an float, use the ``get_float`` function. This function will return a float, and forces the user to only enter numeric values. If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à entrer un float, utilisez la fonction ``get_float``. Cette fonction retournera un float et obligera l'utilisateur à entrer uniquement des valeurs numériques. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``Aucun``.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_float("How tall are you (in meters)?")
+    reponse = easy.get_float("Quelle est votre taille (en mètres)?")
 
 .. image:: images/getting-floats1.png
 
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_float`` with a second argument (separated by a comma), that second argument should be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_float`` avec un deuxième argument (séparé par une virgule), ce dernier argument doit être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_float("How tall are you (in meters)?", "Height")
+    reponse = easy.get_float("Quelle est votre taille (en mètres)?", "Grandeur")
 
 .. image:: images/getting-floats2.png
 
-If you call ``get_float`` with a third argument (separated by a comma), that third argument should be a float, and will be interpreted as the default value inside the input box.
+Si vous appelez ``get_float`` avec un troisième argument (séparé par une virgule), ce troisième argument doit être un float et sera interprété comme la valeur par défaut dans la zone de saisie.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_float("How tall are you (in meters)?", "Height", 1.82)
+    reponse = easy.get_float("Quelle est votre taille (en mètres)?", "Grandeur", 1.82)
 
 .. image:: images/getting-floats3.png
 
-If you call ``get_float`` with five arguments (separated by commas), the fourth argument should be a number (int or float) representing the minimum value allowed, and the fifth argument should be a number (int or float) representing the maximum value allowed.
+Si vous appelez ``get_float`` avec cinq arguments (séparés par des virgules), le quatrième argument doit être un nombre (int ou float) représentant la valeur minimale autorisée, et le cinquième argument doit être un nombre (int ou float) représentant le valeur maximale autorisée.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_float("How tall are you (in meters)?", "Height", 1.82, 0.22, 2.72)
+    reponse = easy.get_float("Quelle est votre taille (en mètres)?", "Grandeur", 1.82, 0.22, 2.72)
 
 .. image:: images/getting-floats4.png
 
-If you call ``get_float`` with six arguments (separated by commas), the sixth argument should be an integer representing the number of decimals allowed.
+Si vous appelez ``get_float`` avec six arguments (séparés par des virgules), le sixième argument doit être un entier représentant le nombre de décimales autorisées.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    answer = easy.get_float("How tall are you (in meters)?", "Height", 1.82, 0.22, 2.72, 2)
+    reponse = easy.get_float("Quelle est votre taille (en mètres)?", "Grandeur", 1.82, 0.22, 2.72, 2)
 
 .. image:: images/getting-floats5.png
 
-Getting Selection from Drop-Down List
---------------------------------------
+Obtenir une sélection d'une liste déroulante
+-----------------------------------------------
 
-To create a pop up window that prompts the user to select an option from a drop-down list, use the ``get_choice`` function. This function will return a string containing the user's choice. If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à sélectionner une option dans une liste déroulante, utilisez la fonction ``get_choice``. Cette fonction renverra une chaîne contenant le choix de l'utilisateur. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``Aucun``.
 
-This function requires three arguments, the prompt message (as a string), the window title (as a string), and the choices the user can choose from (as a list).
+Cette fonction nécessite trois arguments, le message d'invite/*prompt* (sous forme de chaîne), le titre de la fenêtre (sous forme de chaîne) et les choix que l'utilisateur peut choisir (sous forme de liste).
+
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    prompt = "What is your favourite subject?"
-    title = "Best Subject"
-    choices = ["Computer Science", "Math", "Phys Ed", "English", "History"]
+    prompt = "Quel est votre sujet préféré?"
+    titre = "Meilleur sujet"
+    choix = ["Informatique", "Math", "Ed Phys", "Anglais", "Histoire"]
 
-    reply = easy.get_choice(prompt, title, choices)
+    reponse = easy.get_choice(prompt, titre, choix)
 
 .. image:: images/getting-choice.png
 
-Getting Multiple Selections from List
---------------------------------------
+Obtenir plusieurs sélections d'une liste
+-------------------------------------------
 
-To create a pop up window that prompts the user to select an option (or more than one option) from a list, use the ``get_list_of_choices`` function. This function will return a list containing the user's choices. If the user presses *Cancel*, closes the window, or does not select any options, this function will return an empty list.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à sélectionner une option (ou plusieurs options) dans une liste, utilisez la fonction ``get_list_of_choices``. Cette fonction renverra une liste contenant les choix de l'utilisateur. Si l'utilisateur appuie sur *Annuler*, ferme la fenêtre ou ne sélectionne aucune option, cette fonction renvoie une liste vide.
 
-This function requires two arguments, the window title (as a string), and the choices the user can choose from (as a list).
+Cette fonction nécessite deux arguments, le titre de la fenêtre (sous forme de chaîne) et les choix que l'utilisateur peut choisir (sous forme de liste).
 
 .. sourcecode:: python
     
     import easygui_qt as easy
-    prompt = "Subjects You Enjoy"
-    choices = ["Computer Science", "Math", "Phys Ed", "English", "History"]
+    prompt = "Sujets que vous aimez"
+    choix = ["Informatique", "Math", "Ed Phys", "Anglais", "Histoire"]
 
-    reply = easy.get_list_of_choices(prompt, choices)
+    reponse = easy.get_list_of_choices(prompt, choix)
 
 .. image:: images/getting-multiple-selections.png
 
-Getting A Password
--------------------
+Obtenir un mot de passe
+------------------------
 
-To create a pop up window that prompts the user to enter a password, use the ``get_password`` function. This function will return a string containing the user's input. If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à entrer un mot de passe, utilisez la fonction ``get_password``. Cette fonction renverra une chaîne contenant la saisie de l'utilisateur. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``None``.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    reply = easy.get_password("Please enter your password")
+    reponse = easy.get_password("Veuillez entrer votre mot de passe")
 
 .. image:: images/getting-password1.png
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_password`` with a second argument (separated by a comma), that second argument should be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_password`` avec un deuxième argument (séparé par une virgule), ce dernier argument doit être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    reply = easy.get_password("Please enter your password", "Password")
+    reponse = easy.get_password("Veuillez entrer votre mot de passe", "Mot De Passe")
 
 .. image:: images/getting-password2.png
 
 
-Getting A Yes/No Answer
-------------------------
+Obtenir une réponse Oui/Non
+------------------------------
 
-To create a pop up window that prompts the user to answer either Yes or No, use the ``get_yes_or_no`` function. This function will return a boolean (``True`` if they clicked Yes, ``False`` if they clicked No). If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle invitant l'utilisateur à répondre par Oui ou par Non, utilisez la fonction ``get_yes_or_no``. Cette fonction retournera un booléen (``True`` s'ils ont cliqué sur Oui, ``False`` s'ils ont cliqué sur Non). Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``None``.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    reply = easy.get_yes_or_no("Fight the monster?")
+    reponse = easy.get_yes_or_no("Combattez le monstre?")
 
 .. image:: images/getting-yes-no1.png
 
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_yes_or_no`` with a second argument (separated by a comma), that second argument should be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_yes_or_no`` avec un deuxième argument (séparé par une virgule), ce deuxième argument doit être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    reply = easy.get_yes_or_no("Fight the monster?", "Fight")
+    reponse = easy.get_yes_or_no("Combattez le monstre?", "Combat")
 
 .. image:: images/getting-yes-no2.png
 
 
-Getting An RGB Color Value
----------------------------
+Obtenir une valeur de couleur RVB/*RGB*
+------------------------------------------
 
-To create a pop up window that prompts the user to select a color, use the ``get_color_rgb`` function. This function will return a list with the RGB values of the selected color. If the user presses *Cancel*, or closes the window, this function will return ``None``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à sélectionner une couleur, utilisez la fonction ``get_color_rgb``. Cette fonction renverra une liste avec les valeurs RVB de la couleur sélectionnée. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie ``None``.
 
 .. sourcecode:: python
     
@@ -266,17 +268,17 @@ To create a pop up window that prompts the user to select a color, use the ``get
 
     color = easy.get_color_rgb()
 
-    r = color[0]    # access the amount in the red channel
-    g = color[1]    # access the amount in the green channel
-    b = color[2]    # access the amount in the blue channel
+    r = color[0]    # accéder au montant dans le canal rouge
+    g = color[1]    # accéder au montant dans le canal vert
+    b = color[2]    # accéder au montant dans le canal bleu
 
 .. image:: images/getting-color.png
 
 
-Get File Name Path
---------------------
+Obtenir le chemin du nom de fichier/*Get File Nom Path*
+-----------------------------------------------------------
 
-To create a pop up window that prompts the user to select a file from their computer, use the ``get_file_name`` function. This function will return a string containing the full path to the file they selected. If the user presses *Cancel*, or closes the window, this function will return an empty string ``''``.
+Pour créer une fenêtre contextuelle qui invite l'utilisateur à sélectionner un fichier à partir de son ordinateur, utilisez la fonction ``get_file_name``. Cette fonction renverra une chaîne contenant le chemin complet du fichier sélectionné. Si l'utilisateur appuie sur *Annuler* ou ferme la fenêtre, cette fonction renvoie une chaîne vide ``''``.
 
 .. sourcecode:: python
     
@@ -287,42 +289,41 @@ To create a pop up window that prompts the user to select a file from their comp
 .. image:: images/getting-file-name1.png
 
 
-**Additional Options**
+**Options additionelles**
 
-If you call ``get_file_name`` with a second argument (separated by a comma), that second argument should be a string, and will be interpreted as the title the pop up window should have.
+Si vous appelez ``get_file_name`` avec un deuxième argument (séparé par une virgule), ce deuxième argument doit être une chaîne et sera interprété comme le titre de la fenêtre contextuelle.
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    selected_image = easy.get_file_name("Select Image")
+    selected_image = easy.get_file_name("Choisi une Image")
 
 .. image:: images/getting-file-name2.png
 
 
-Display HTML Formatted Text
-----------------------------
+Afficher le texte formaté HTML
+---------------------------------
 
-To create a pop up window that shows rendered HTML, use the ``show_html`` function.
+Pour créer une fenêtre contextuelle affichant le rendu HTML, utilisez la fonction ``show_html``.
 
-This function requires two arguments, the window title (as a string), and the HTML to render (also a string).
+Cette fonction nécessite deux arguments, le titre de la fenêtre (sous forme de chaîne) et le code HTML à rendre (également une chaîne).
 
 .. sourcecode:: python
     
     import easygui_qt as easy
 
-    some_html = """
+    du_HTML = """
     <h1>Example</h1>
-    <p>This is just an example of <em>some</em> of the things you can 
-    do when rendering HTML. There are many more things you could do:</p>
+    <p>Ceci est juste un exemple de <em> certaines </em> des choses que vous pouvez faire lors du rendu HTML. Vous pouvez faire beaucoup plus de choses:</p>
 
     <ul>
-        <li>other HTML tags you learn</li>
-        <li>including images</li>
-        <li>much more!</li>
+        <li>autres balises/*tags* HTML que vous allez apprendre</li>
+        <li>y compris les images</li>
+        <li>beaucoup plus!</li>
     </ul>"""
 
-    easy.show_html("Demo", some_html)
+    easy.show_html("Demo", du_HTML)
 
 .. image:: images/showing-html.png
 
@@ -332,7 +333,7 @@ Display HTML Formatted Text
 
 To create a pop up window that shows the contents of a file as rendered HTML, use the ``show_file`` function.
 
-This function requires three arguments, the path of the file (as a string), the window title (as a string), rendering engine to use (also a string).
+This function requires three arguments, the path of the file (as a string), the window titre (as a string), rendering engine to use (also a string).
 
 .. sourcecode:: python
 
@@ -344,9 +345,9 @@ This function requires three arguments, the path of the file (as a string), the 
 .. image:: images/showing-file1.png
 
 
-**Additional Options**
+**Options additionelles**
 
-When calling the ``show_file`` function, you can choose between the following rendering engines:
+Lorsque vous appelez la fonction ``show_file``, vous pouvez choisir entre les moteurs de rendu suivants:
 
 - ``text``
 - ``code``
@@ -357,7 +358,7 @@ When calling the ``show_file`` function, you can choose between the following re
     
     import easygui_qt as easy
 
-    file = "path/to/some_script.py"
+    file = "chemin/vers/du_script.py"
     easy.show_file(file, "File Demo", "python")
 
 
