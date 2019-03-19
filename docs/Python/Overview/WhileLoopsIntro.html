@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>8. The while Statement &#8212; Computer Science 20 Saskatchewan</title>
+    <title>8. La déclaration while &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="9. Our First Turtle Program" href="FirstTurtleProgram.html" />
-    <link rel="prev" title="7. Which Quotes to Use When Creating Strings" href="StringQuotes.html" />
+    <link rel="prev" title="7. Quelles citations/quotes utiliser lors de la création de chaînes/strings" href="StringQuotes.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,14 +203,14 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">8. The <code class="docutils literal notranslate"><span class="pre">while</span></code> Statement</a><ul>
-<li><a class="reference internal" href="#practice-problems">8.1. Practice Problems</a><ul>
-<li><a class="reference internal" href="#counting-up">8.1.1. Counting Up</a></li>
-<li><a class="reference internal" href="#counting-down">8.1.2. Counting Down</a></li>
-<li><a class="reference internal" href="#kinda-password">8.1.3. Kinda Password</a></li>
+<li><a class="reference internal" href="#">8. La déclaration <code class="docutils literal notranslate"><span class="pre">while</span></code></a><ul>
+<li><a class="reference internal" href="#problemes-de-pratique">8.1. Problèmes de pratique</a><ul>
+<li><a class="reference internal" href="#compter">8.1.1. Compter</a></li>
+<li><a class="reference internal" href="#compte-a-rebours">8.1.2. Compte à rebours</a></li>
+<li><a class="reference internal" href="#un-mot-de-passe-ish">8.1.3. Un Mot de passe—ish</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#assignment-work-time">8.2. Assignment Work Time</a></li>
+<li><a class="reference internal" href="#temps-de-travail">8.2. Temps de travail</a></li>
 </ul>
 </li>
 </ul>
@@ -220,7 +220,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 7. Which Quotes to Use When Creating Strings" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - 7. Quelles citations/<em>quotes</em> utiliser lors de la création de chaînes/<em>strings</em>" data-toggle="tooltip">
     <a href="StringQuotes.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -257,11 +257,11 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="the-while-statement">
-<h1>8. The <code class="docutils literal notranslate"><span class="pre">while</span></code> Statement<a class="headerlink" href="#the-while-statement" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="la-declaration-while">
+<h1>8. La déclaration <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#la-declaration-while" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Explore how the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop works in Python. Learn how to use the debug functions of Thonny. Continue to work on the current Python assignment, focused on input/output and string concatenation.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Explorez le fonctionnement de la boucle <code class="docutils literal notranslate"><span class="pre">while</span></code> en Python. Apprenez à utiliser les fonctions de débogage de Thonny. Continuez à travailler sur le Python actuelle, axée sur les entrées/sorties et la concaténation de chaînes.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_intro_while_loops"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -272,18 +272,20 @@
 </ul>
 
     </div>
-    <p id="index-0">When we programmed in Reeborg, we used a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop whenever we did not know the number of iterations (times the loop would repeat) before hand. This was helpful when we needed to do things like:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">front_is_clear</span><span class="p">():</span>
-    <span class="n">move</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Similar to the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, a <code class="docutils literal notranslate"><span class="pre">while</span></code> statement uses a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. In the example above, the function <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code> returned either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
-<p>The following figure shows the flow of control.</p>
+    <p id="index-0">Lorsque nous avons programmé avec Reeborg, nous avons utilisé une boucle <code class="docutils literal notranslate"><span class="pre">while</span></code> chaque fois que nous ne savions pas le nombre d’itérations (le nombre de fois que la boucle se répéterait) avant la fin. Cela a été utile lorsque nous avions besoin de faire des choses comme:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>while front_is_clear():</dt>
+<dd>move()</dd>
+</dl>
+</div></blockquote>
+<p>Semblable à l’instruction <code class="docutils literal notranslate"><span class="pre">if</span></code>, une instruction <code class="docutils literal notranslate"><span class="pre">while</span></code> utilise une expression booléenne pour contrôler le déroulement de l’exécution. Le corps de while sera répété tant que l’expression booléenne de contrôle sera évaluée à <code class="docutils literal notranslate"><span class="pre">True</span></code>. Dans l’exemple ci-dessus, la fonction <code class="docutils literal notranslate"><span class="pre">front_is_clear()</span></code> a renvoyé soit <code class="docutils literal notranslate"><span class="pre">True</span></code> ou <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>La figure suivante montre le flux de contrôle/<em>flow of control</em>.</p>
 <img alt="../../_images/while_flow.png" src="../../_images/while_flow.png" />
-<p>A short example of a <code class="docutils literal notranslate"><span class="pre">while</span></code> statement follows.</p>
+<p>Un court exemple d’une déclaration <code class="docutils literal notranslate"><span class="pre">while</span></code> suit.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">For these introductory examples, we know the number of iterations (times the loop repeats) <em>before</em> the code executes. Later on, we will practice while loops in which we do not know the number of iterations ahead of time.</p>
+<p class="last">Pour ces exemples d’introduction, nous connaissons le nombre d’itérations (le nombre de fois que la boucle se répète) <em>avant</em> l’exécution du code. Plus tard, nous pratiquerons des boucles while dans lesquelles nous ne connaîtrons pas le nombre d’itérations à l’avance.</p>
 </div>
 
 <div data-childcomponent="while_intro_1" class="runestone explainer ac_section alert alert-warning">
@@ -298,7 +300,7 @@ while (i < 5):
     i = i + 1
 </textarea>
 </div>
-<p>It may be helpful to view the code above using codelens:</p>
+<p>Il peut être utile d’afficher le code ci-dessus à l’aide de codelens:</p>
 
 <div class="runestone" style="max-width: none;">
 <div class="alert alert-warning cd_section">
@@ -346,15 +348,15 @@ $(window).resize(function() {
 });
 </script>
 </div>
-<p>You can do something similar to the codelens feature above using Thonny. First, click on <em>View -&gt; Variables</em> to see the values of variables while your code runs.</p>
+<p>Vous pouvez faire quelque chose de similaire à la fonctionnalité de codelens ci-dessus en utilisant Thonny. Tout d’abord, cliquez sur <em>View -&gt; Variables</em> pour voir les valeurs des variables pendant l’exécution de votre code.</p>
 <img alt="../../_images/thonny_show_variables.png" src="../../_images/thonny_show_variables.png" />
-<p>Copy/paste the while loop code from above into the Thonny text editor. Now press the <em>Debug current script</em> button. Thonny will now highlight the next line it will evaluate. You can control the debugger using the <em>Step over</em>, <em>Step into</em>, and <em>Step out</em> buttons. For now, have Thonny go through the code by pressing <strong>Step into</strong> (or press the keyboard shortcut <strong>F7</strong>).</p>
+<p>Copiez/collez (Ctrl+C/Ctrl+V) le code de la boucle while en haut dans l’éditeur de texte Thonny. Maintenant, appuyez sur le bouton <em>Déboguer le script actuel</em> <img alt="debug_current_script" src="../../_images/debug_current_script.png" />. Thonny va maintenant mettre en évidence la prochaine ligne à évaluer. Vous pouvez contrôler le débogueur en utilisant les boutons <em>Step over</em>, <em>Step into</em>, et <em>Step out</em>. Pour l’instant, demandez à Thonny de parcourir le code en appuyant sur <strong>Pas à pas/Step into</strong> (ou en appuyant sur le raccourci clavier <strong>F7</strong>).</p>
 <img alt="../../_images/debug_mode_in_thonny_high_quality.gif" src="../../_images/debug_mode_in_thonny_high_quality.gif" />
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Using a visualization tool like codelens or Thonny’s debugger can really help you build a mental model of how Python works. Whenever you encounter a piece of Python code that you do not understand, your first reaction should be to run the code in one of these environments to help yourself figure out how it works!</p>
+<p class="last">L’utilisation d’un outil de visualisation tel que codelens ou le débogueur de Thonny peut vraiment vous aider à construire un modèle mental du fonctionnement de Python. Chaque fois que vous rencontrez un morceau de code Python que vous ne comprenez pas, votre première réaction devrait être d’exécuter le code dans l’un de ces environnements pour vous aider à comprendre comment cela fonctionne!</p>
 </div>
-<p>The following code is just slightly different from the version above. Can you spot the difference? Before you run the code, try to figure out what it will print. Will it be the same as the first version?</p>
+<p>Le code suivant est légèrement différent de la version ci-dessus. Pouvez-vous repérer la différence? Avant d’exécuter le code, essayez de comprendre ce qu’il imprimera. Sera-ce la même chose que la première version?</p>
 
 <div data-childcomponent="while_intro_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -370,14 +372,9 @@ while (i < 5):
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Though Python’s <code class="docutils literal notranslate"><span class="pre">while</span></code> is very close to the English “while”,
-there is an important difference:  In English “while X, do Y”,
-we usually assume that immediately after X becomes false, we stop
-with Y.  In Python there is <em>not</em> an immediate stop:  After the
-initial test, any following tests come only after the execution of
-the <em>whole</em> body, even if the condition becomes false in the middle of the loop body.</p>
+<p class="last">Bien que <code class="docutils literal notranslate"><span class="pre">while</span></code> de Python soit très proche du mot anglais “while”, il y a une différence importante: en anglais “while X, fait Y”, on suppose généralement que dès que X devient faux, on arrête avec Y. En Python, il n’ya <em>pas</em> d’arrêt immédiat: après la test initial, les tests suivants ne surviennent qu’après l’exécution de le corps entier, même si la condition devient fausse au milieu du corps de la boucle.</p>
 </div>
-<p>What will the following code do? <em>Note: it might be better to run this in Thonny, rather than here in your browser…</em></p>
+<p>Que fera le code suivant? <em>Note: il vaudrait peut-être mieux utiliser ceci dans Thonny, plutôt qu’ici dans votre navigateur…</em></p>
 
 <div data-childcomponent="while_intro_3" class="runestone explainer ac_section alert alert-warning">
 
@@ -386,14 +383,14 @@ the <em>whole</em> body, even if the condition becomes false in the middle of th
     data-audio=''    
           >
 while True:
-    print("hello")
+    print("Bonjour")
 </textarea>
 </div>
-<div class="section" id="practice-problems">
-<h2>8.1. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="counting-up">
-<h3>8.1.1. Counting Up<a class="headerlink" href="#counting-up" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that will print out the numbers 1 to 100.</p>
+<div class="section" id="problemes-de-pratique">
+<h2>8.1. Problèmes de pratique<a class="headerlink" href="#problemes-de-pratique" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="compter">
+<h3>8.1.1. Compter<a class="headerlink" href="#compter" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui imprimera les nombres de 1 à 100.</p>
 
 <div data-childcomponent="while_intro_4" class="runestone explainer ac_section alert alert-warning">
 
@@ -401,13 +398,13 @@ while True:
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
     data-audio=''    
           >
-#put your code here!
+#mettez votre code ici!
 </textarea>
 </div>
 </div>
-<div class="section" id="counting-down">
-<h3>8.1.2. Counting Down<a class="headerlink" href="#counting-down" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that counts down from 20 to 1, then prints <em>Blastoff!</em>.</p>
+<div class="section" id="compte-a-rebours">
+<h3>8.1.2. Compte à rebours<a class="headerlink" href="#compte-a-rebours" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui compte à rebours de 20 à 1, puis imprime <em>Blastoff!</em>.</p>
 
 <div data-childcomponent="while_intro_5" class="runestone explainer ac_section alert alert-warning">
 
@@ -415,13 +412,13 @@ while True:
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
     data-audio=''    
           >
-#put your code here!
+#mettez votre code ici!
 </textarea>
 </div>
 </div>
-<div class="section" id="kinda-password">
-<h3>8.1.3. Kinda Password<a class="headerlink" href="#kinda-password" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that asks the user to enter a password. Keep asking for the password until they enter “sask”.  Once they have successfully typed in “sask”, print out <em>What a great place!</em>.</p>
+<div class="section" id="un-mot-de-passe-ish">
+<h3>8.1.3. Un Mot de passe—ish<a class="headerlink" href="#un-mot-de-passe-ish" title="Permalink to this headline">¶</a></h3>
+<p>Ecrivez un programme qui demande à l’utilisateur d’entrer un mot de passe. Continuez à demander le mot de passe jusqu’à ce qu’ils entrent “sask”. Une fois qu’ils ont tapé “sask” avec succès, imprimez <em>Quel endroit fantastique!</em>.</p>
 
 <div data-childcomponent="while_intro_6" class="runestone explainer ac_section alert alert-warning">
 
@@ -429,21 +426,21 @@ while True:
       data-timelimit=25000  data-codelens="true" data-enabledownload="true" 
     data-audio=''    
           >
-#put your code here!
+#mettez votre code ici!
 </textarea>
 </div>
 </div>
 </div>
-<div class="section" id="assignment-work-time">
-<h2>8.2. Assignment Work Time<a class="headerlink" href="#assignment-work-time" title="Permalink to this headline">¶</a></h2>
-<p>Please spend the rest of the class continuing to work on your current Python assignment (likely a string input/output assignment like Madlibs, or something similar).</p>
+<div class="section" id="temps-de-travail">
+<h2>8.2. Temps de travail<a class="headerlink" href="#temps-de-travail" title="Permalink to this headline">¶</a></h2>
+<p>Veuillez passer le reste de la classe à continuer à travailler sur votre projet Python actuelle (probablement une affectation d’entrée/sortie de chaîne telle que les Madlibs ou quelque chose de similaire).</p>
 </div>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 7. Which Quotes to Use When Creating Strings' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - 7. Quelles citations/<em>quotes</em> utiliser lors de la création de chaînes/<em>strings</em>' data-toggle="tooltip">
     <a href="StringQuotes.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

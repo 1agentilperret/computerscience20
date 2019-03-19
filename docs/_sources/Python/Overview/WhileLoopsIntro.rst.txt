@@ -3,12 +3,12 @@
    :start: 1
 
 
-The ``while`` Statement
-========================
+La déclaration ``while``
+==========================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Explore how the ``while`` loop works in Python. Learn how to use the debug functions of Thonny. Continue to work on the current Python assignment, focused on input/output and string concatenation.
+    Explorez le fonctionnement de la boucle ``while`` en Python. Apprenez à utiliser les fonctions de débogage de Thonny. Continuez à travailler sur le Python actuelle, axée sur les entrées/sorties et la concaténation de chaînes.
 
 
 .. reveal:: curriculum_addressed_intro_while_loops
@@ -22,20 +22,20 @@ The ``while`` Statement
 
 .. index:: while
 
-When we programmed in Reeborg, we used a ``while`` loop whenever we did not know the number of iterations (times the loop would repeat) before hand. This was helpful when we needed to do things like::
+Lorsque nous avons programmé avec Reeborg, nous avons utilisé une boucle ``while`` chaque fois que nous ne savions pas le nombre d'itérations (le nombre de fois que la boucle se répéterait) avant la fin. Cela a été utile lorsque nous avions besoin de faire des choses comme:
 
     while front_is_clear(): 
         move() 
 
-Similar to the ``if`` statement, a ``while`` statement uses a boolean expression to control the flow of execution.  The body of while will be repeated as long as the controlling boolean expression evaluates to ``True``. In the example above, the function ``front_is_clear()`` returned either ``True`` or ``False``.
+Semblable à l’instruction ``if``, une instruction ``while`` utilise une expression booléenne pour contrôler le déroulement de l’exécution. Le corps de while sera répété tant que l'expression booléenne de contrôle sera évaluée à ``True``. Dans l'exemple ci-dessus, la fonction ``front_is_clear()`` a renvoyé soit ``True`` ou ``False``.
 
-The following figure shows the flow of control.
+La figure suivante montre le flux de contrôle/*flow of control*.
 
 .. image:: images/while_flow.png
 
-A short example of a ``while`` statement follows. 
+Un court exemple d'une déclaration ``while`` suit.
 
-.. note:: For these introductory examples, we know the number of iterations (times the loop repeats) *before* the code executes. Later on, we will practice while loops in which we do not know the number of iterations ahead of time.
+.. note:: Pour ces exemples d'introduction, nous connaissons le nombre d'itérations (le nombre de fois que la boucle se répète) *avant* l'exécution du code. Plus tard, nous pratiquerons des boucles while dans lesquelles nous ne connaîtrons pas le nombre d'itérations à l'avance.
 
 .. activecode:: while_intro_1
 
@@ -44,7 +44,7 @@ A short example of a ``while`` statement follows.
         print(i)
         i = i + 1
 
-It may be helpful to view the code above using codelens:
+Il peut être utile d’afficher le code ci-dessus à l’aide de codelens:
 
 .. codelens:: while_intro_1_codelens
 
@@ -53,17 +53,19 @@ It may be helpful to view the code above using codelens:
         print(i)
         i = i + 1  
 
-You can do something similar to the codelens feature above using Thonny. First, click on *View -> Variables* to see the values of variables while your code runs.
+Vous pouvez faire quelque chose de similaire à la fonctionnalité de codelens ci-dessus en utilisant Thonny. Tout d’abord, cliquez sur *View -> Variables* pour voir les valeurs des variables pendant l’exécution de votre code.
 
 .. image:: images/thonny_show_variables.png
 
-Copy/paste the while loop code from above into the Thonny text editor. Now press the *Debug current script* button. Thonny will now highlight the next line it will evaluate. You can control the debugger using the *Step over*, *Step into*, and *Step out* buttons. For now, have Thonny go through the code by pressing **Step into** (or press the keyboard shortcut **F7**). 
+Copiez/collez (Ctrl+C/Ctrl+V) le code de la boucle while en haut dans l’éditeur de texte Thonny. Maintenant, appuyez sur le bouton *Déboguer le script actuel* |debug_current_script|. Thonny va maintenant mettre en évidence la prochaine ligne à évaluer. Vous pouvez contrôler le débogueur en utilisant les boutons *Step over*, *Step into*, et *Step out*. Pour l'instant, demandez à Thonny de parcourir le code en appuyant sur **Pas à pas/Step into** (ou en appuyant sur le raccourci clavier **F7**).
+
+.. |debug_current_script| image:: images/debug_current_script.png
 
 .. image:: images/debug_mode_in_thonny_high_quality.gif
 
-.. note:: Using a visualization tool like codelens or Thonny's debugger can really help you build a mental model of how Python works. Whenever you encounter a piece of Python code that you do not understand, your first reaction should be to run the code in one of these environments to help yourself figure out how it works!
+.. note:: L'utilisation d'un outil de visualisation tel que codelens ou le débogueur de Thonny peut vraiment vous aider à construire un modèle mental du fonctionnement de Python. Chaque fois que vous rencontrez un morceau de code Python que vous ne comprenez pas, votre première réaction devrait être d'exécuter le code dans l'un de ces environnements pour vous aider à comprendre comment cela fonctionne!
 
-The following code is just slightly different from the version above. Can you spot the difference? Before you run the code, try to figure out what it will print. Will it be the same as the first version?
+Le code suivant est légèrement différent de la version ci-dessus. Pouvez-vous repérer la différence? Avant d’exécuter le code, essayez de comprendre ce qu’il imprimera. Sera-ce la même chose que la première version?
 
 .. activecode:: while_intro_2
 
@@ -74,58 +76,53 @@ The following code is just slightly different from the version above. Can you sp
 
 
 .. warning::
-   Though Python's ``while`` is very close to the English "while", 
-   there is an important difference:  In English "while X, do Y", 
-   we usually assume that immediately after X becomes false, we stop 
-   with Y.  In Python there is *not* an immediate stop:  After the 
-   initial test, any following tests come only after the execution of 
-   the *whole* body, even if the condition becomes false in the middle of the loop body.
+   Bien que ``while`` de Python soit très proche du mot anglais "while", il y a une différence importante: en anglais "while X, fait Y", on suppose généralement que dès que X devient faux, on arrête avec Y. En Python, il n’ya *pas* d’arrêt immédiat: après la test initial, les tests suivants ne surviennent qu'après l'exécution de le corps entier, même si la condition devient fausse au milieu du corps de la boucle.
 
-What will the following code do? *Note: it might be better to run this in Thonny, rather than here in your browser...*
+Que fera le code suivant? *Note: il vaudrait peut-être mieux utiliser ceci dans Thonny, plutôt qu'ici dans votre navigateur...*
 
 .. activecode:: while_intro_3
 
     while True:
-        print("hello")
+        print("Bonjour")
 
 
-Practice Problems
+Problèmes de pratique
 -----------------------
 
-Counting Up
+Compter
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that will print out the numbers 1 to 100.
+Ecrivez un programme qui imprimera les nombres de 1 à 100.
 
 .. activecode:: while_intro_4
     :enabledownload:
 
-    #put your code here!
+    #mettez votre code ici!
 
 
-Counting Down
+Compte à rebours
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that counts down from 20 to 1, then prints *Blastoff!*.
+Ecrivez un programme qui compte à rebours de 20 à 1, puis imprime *Blastoff!*.
 
 .. activecode:: while_intro_5
     :enabledownload:
 
-    #put your code here!
+    #mettez votre code ici!
 
 
-Kinda Password
+Un Mot de passe---ish
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write a program that asks the user to enter a password. Keep asking for the password until they enter "sask".  Once they have successfully typed in "sask", print out *What a great place!*.
+Ecrivez un programme qui demande à l'utilisateur d'entrer un mot de passe. Continuez à demander le mot de passe jusqu'à ce qu'ils entrent "sask". Une fois qu'ils ont tapé "sask" avec succès, imprimez *Quel endroit fantastique!*.
 
 .. activecode:: while_intro_6
     :enabledownload:
 
-    #put your code here!
+    #mettez votre code ici!
 
 
-Assignment Work Time
+Temps de travail
 ---------------------
 
-Please spend the rest of the class continuing to work on your current Python assignment (likely a string input/output assignment like Madlibs, or something similar). 
+Veuillez passer le reste de la classe à continuer à travailler sur votre projet Python actuelle (probablement une affectation d'entrée/sortie de chaîne telle que les Madlibs ou quelque chose de similaire).
