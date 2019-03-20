@@ -88,12 +88,13 @@ Comme il s’agit de le premier projet Python que vous allez soumettre, les note
 - veillez inclure un en-tête de commentaire dans votre code, ce qui signifie que votre fichier Python devrait commencer par quelque chose comme:
 
 .. sourcecode:: python
+    
     # Projet de conversion de température
     # Mettez votre nom ici
     # Mettez la date ici
 
     # votre code va ici
- 
+    
 
 ** Extras pour les experts**
 
