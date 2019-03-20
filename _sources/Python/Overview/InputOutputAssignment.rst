@@ -116,7 +116,6 @@ Comme il s’agit de le premier projet Python que vous allez soumettre, les note
 Évaluation
 -----------
 
-
 .. reveal:: eval_eighty_five_python_one
     :showtitle: Évaluation pour avoir 85%
     :hidetitle: Cacher l'évaluation pour avoir 85%

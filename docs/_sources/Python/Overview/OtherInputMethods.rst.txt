@@ -300,3 +300,55 @@ Extra pour les experts
 - au lieu de laisser l'utilisateur entrer toutes les parties du discours, demandez à l'ordinateur de choisir certains mots au hasard. Vous pouvez le faire de deux manières:
 - plus facile: créez une liste de mots possibles et demandez à Python de choisir un de ces mots `aléatoirement <http://stackoverflow.com/questions/306400/how-do-i-randomly-select-an-item-from- a-list-using-python> `_.
 - plus difficile: créez des fichiers texte pour chacune des parties du discours dont vous aurez besoin (par exemple, nouns.txt, adjectives.txt, etc.) et demandez à l’ordinateur de choisir au hasard un des mots du fichier texte approprié pour compléter le fichier madlib. Astuce: pour simplifier les choses, je vous recommande de générer le fichier texte avec un mot par ligne.
+
+Évaluation
+-----------
+
+Veuillez demander à votre enseignant de mettre à jour cette section.
+
+.. .. reveal:: eval_eighty_five_python_one
+    :showtitle: Évaluation pour avoir 85%
+    :hidetitle: Cacher l'évaluation pour avoir 85%
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Critère                                                                                                                                       | oui  | non (-10%)  | un peu (-5%) |
+    +===============================================================================================================================================+======+=============+==============+
+    | Votre programme Python demande à l'utilisateur quelle conversion il/elle souhaiterait effectuer ((1) de F à C ou (2) de C à F)                |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre programme Python saisi une valeur de l'utilisateur en degrés Celsius/Fahrenheit                                                         |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre programme Python converti les degrés *Celsius en Fahrenheit*                                                                            |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre programme Python converti les degrés *Fahrenheit en Celsius*                                                                            |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre programme Python a suffisemment de commentaires pour expliquer à un autre programmeur ce que chaque partie de ton code fait             |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    | Votre programme Python a des espaces blaches dans le code pour faciliter la lecture par un autre programmeur                                  |      |             |              |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+--------------+
+    
+    
+
+
+.. .. reveal:: eval_one_hundy_python_one
+    :showtitle: Évaluation pour avoir 100%
+    :hidetitle: Cacher l'évaluation pour avoir 100%
+   
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Critère                                                                                                                                                             | oui  | non (-10%)  | un peu (-5%)|
+    +=====================================================================================================================================================================+======+=============+=============+
+    | Votre programme Python demande à l'utilisateur **de** quelle unité il/elle souhaiterait convertir ([1] Celcius [2] Fahrenheit [3] Kelvin)                           |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python demande à l'utilisateur **vers** quelle unité il/elle souhaiterait convertir ([1] Celcius [2] Fahrenheit [3] Kelvin)                         |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python saisi une valeur de l'utilisateur en degrés Celsius/Fahrenheit/Kelvin                                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python converti les degrés *Celsius en Fahrenheit et Kelvin*                                                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python converti les degrés *Fahrenheit en Celsius et Kelvin*                                                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python converti les degrés *Kelvin en Fahrenheit et Celsius*                                                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python a suffisemment de commentaires pour expliquer à un autre programmeur ce que chaque partie de ton code fait                                   |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
+    | Votre programme Python a des espaces blaches dans le code pour faciliter la lecture par un autre programmeur                                                        |      |             |             |
+    +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
