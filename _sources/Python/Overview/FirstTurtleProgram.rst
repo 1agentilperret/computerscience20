@@ -3,12 +3,12 @@
    :start: 1
 
 
-Our First Turtle Program
-=========================
+Notre premier programme de Turtles/*Turtle*
+=============================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Learn how to do basic drawing in Python using the turtle module.
+    Apprenez à dessiner en Python en utilisant le module Turtle/*Turtle*.
 
 
 .. reveal:: curriculum_addressed_first_turtle_program
@@ -22,22 +22,15 @@ Our First Turtle Program
 
 .. index:: turtle
 
-There are many *modules* in Python that provide very powerful features that we
-can use in our own programs.  Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations. We have already used one module, called ``easygui_qt``, which allowed us to use pop-up windows when asking for user input. Today, we will introduce a module that allows us to create a data object called a **turtle** that can be used to draw pictures. *The turtle module is very similar to the Pen functionality that we explored using Scratch!* Note that the ``turtle`` module is part of the standard Python installation, so you do not need to install it before using it.
+Il existe de nombreux *modules* en Python qui fournissent des fonctionnalités très puissantes que nous pouvons utiliser dans nos propres programmes. Certains d'entre eux peuvent envoyer un courriel ou récupérer des pages Web. D'autres nous permettent d'effectuer des calculs mathématiques complexes. Nous avons déjà utilisé un module, appelé ``easygui_qt``, qui nous permettait d'utiliser des fenêtres contextuelles lorsque nous demandions une saisie de l'utilisateur. Aujourd'hui, nous allons présenter un module qui nous permet de créer un objet de données appelé **Turtle** pouvant être utilisé pour dessiner des images. *Le module Turtle est très similaire à la fonctionnalité du stylo que nous avons explorée avec Scratch! * Notez que le module ``Turtle`` fait partie de l'installation standard de Python, vous n'avez donc pas besoin de l'installer avant de l'utiliser.
 
-Turtle graphics, as it is known, is based on a very simple
-metaphor. Imagine that you have a turtle that understands English.  You can
-tell your turtle to do simple commands such as go forward and turn right.  As the turtle
-moves around, if its tail is down touching the ground, it will
-draw a line (leave a trail behind) as it moves.  If you tell your turtle to lift up its tail it can still move around but will not leave a trail.  As you will see, you can make
-some pretty amazing drawings with this simple capability. 
+Turtle Graphics, comme il est connu, est basé sur une métaphore très simple. Imaginez que vous avez une tortue qui comprend l'anglais. Vous pouvez dire à votre tortue de faire des commandes simples telles que avancer et tourner à droite. Lorsque la tortue se déplace, si sa queue touche le sol, elle tracera une ligne (laissant une trace derrière) à mesure qu'elle se déplacera. Si vous dites à votre tortue de relever la queue, elle peut toujours se déplacer mais ne laissera pas de trace. Comme vous le verrez, vous pouvez faire des dessins assez étonnants avec cette capacité simple.
 
-Let's try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name ``alex``, but remember that you can choose any name you wish as long as you follow the naming rules from the previous chapter.
+Essayons quelques lignes de code Python pour créer une nouvelle tortue et commençons à dessiner une figure simple comme un rectangle. Nous ferons référence à notre première tortue en utilisant le nom de variable ``alex``, mais souvenez-vous que vous pouvez choisir le nom de votre choix aussi longtemps que vous suivez les règles de noms du chapitre précédent.
 
-The program as shown will only draw the first two sides of the rectangle.
-After line 4 you will have a straight line going from the center of the
-drawing canvas towards the right.  After line 6, you will have a canvas with a
-turtle and a half drawn rectangle.  Press the run button to try it and see.
+Le programme, tel qu’il est montré, ne dessinera que les deux premiers côtés du rectangle. Après la ligne 4, vous aurez une ligne droite allant du centre du dessin à la droite. Après la ligne 6, vous aurez une toile avec une tortue et un rectangle à moitié dessiné. Appuyez sur le bouton Exécuter pour essayer et voir.
+
+Le programme, tel qu’il est montré, ne dessinera que les deux premiers côtés du rectangle. Après la ligne 4, vous aurez une ligne droite allant du centre du dessin à la droite. Après la ligne 6, vous aurez une toile avec une tortue et un rectangle à moitié dessiné. Appuyez sur le bouton Exécuter pour essayer et voir.
 
 .. activecode:: turtle_intro_1
     :nocodelens:

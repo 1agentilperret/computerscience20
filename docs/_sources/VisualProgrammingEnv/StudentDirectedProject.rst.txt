@@ -125,6 +125,19 @@ Votre programme de flappy bird devrait ressembler à ceci:
     | Deux ou plus entrée utilisateur utilisée dans une condition (SI) qui affecte l’histoire                                                                             |      |             |             |
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+-------------+-------------+
 
+<form>
+    <label for="ZIP">ZIP : </label>
+    <input type="text" id="ZIP"> 
+    <label for="Country">Country : </label>
+    <select id="Country">
+      <option value="ch">Switzerland</option>
+      <option value="fr">France</option>
+      <option value="de">Germany</option>
+      <option value="nl">The Netherlands</option>
+    </select>
+    <input type="submit" value="Validate">
+</form>
+
 .. |FlappyBird| raw:: html
 
    <a href="https://docs.google.com/document/d/1NI-xjfz9SINjMJh5qYww-6IrBbeTt5-D_Fd-uY9tfkA/edit?usp=sharing" target="_blank" style="color:Blue;">Instructions et photos stock pour création du projet flappy bird Google Drive</a>
