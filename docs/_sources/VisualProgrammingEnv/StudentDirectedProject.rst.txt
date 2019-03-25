@@ -45,7 +45,8 @@ Votre programme de flappy bird devrait ressembler à ceci:
 .. image:: images/scratch_flappy_bird_game_fr.gif
 
 Évaluation
-    ---------------
+    Sur quoi je suis évalué pour ce projet?
+    ------------------------------------------
 
     - La tâche de programmation
         - Démontrer la synthèse de la solution en combinant ses connaissances et de l’information.
