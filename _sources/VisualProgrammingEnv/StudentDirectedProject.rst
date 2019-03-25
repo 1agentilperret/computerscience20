@@ -44,6 +44,28 @@ Votre programme de flappy bird devrait ressembler à ceci:
 
 .. image:: images/scratch_flappy_bird_game_fr.gif
 
+Évaluation
+    ---------------
+
+    - La tâche de programmation
+        - Démontrer la synthèse de la solution en combinant ses connaissances et de l’information.
+        - Démontre une compréhension claire de la façon dont les différentes parties du problème sont liées les unes aux autres et ces derniers à l'ensemble.
+        - Utilise les outils de logiciel et les ressources informatiques correctement et efficacement.
+
+    - La justesse
+        - Programme s'exécute sans erreurs.
+
+    - Utilisation de commentaires / documentation
+        - Utilisation claire et efficace des commentaires pour indiquer pourquoi le code a été écrit.
+        - Les réponses/solutions sont correctement étiquetées/commentées.
+        - Prend en charge la procédure de conception avec une documentation et des références plus que suffisantes.
+
+    - Présentation et organisation
+        - Nom, date, spécifications de la mission et description incluses.
+        - Excellente utilisation des espaces blancs (indentation, lignes vides).
+        - Travail bien organisé et facile à suivre.
+
+
 .. Projet 4: Recrér le jeu de Flappy bird
 ---------------------------------------------
 
@@ -87,27 +109,7 @@ Votre programme de flappy bird devrait ressembler à ceci:
 
 .. Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
-    Évaluation
-    ---------------
-
-    - La tâche de programmation
-        - Démontrer la synthèse de la solution en combinant ses connaissances et de l’information.
-        - Démontre une compréhension claire de la façon dont les différentes parties du problème sont liées les unes aux autres et ces derniers à l'ensemble.
-        - Utilise les outils de logiciel et les ressources informatiques correctement et efficacement.
-
-    - La justesse
-        - Programme s'exécute sans erreurs.
-
-    - Utilisation de commentaires / documentation
-        - Utilisation claire et efficace des commentaires pour indiquer pourquoi le code a été écrit.
-        - Les réponses/solutions sont correctement étiquetées/commentées.
-        - Prend en charge la procédure de conception avec une documentation et des références plus que suffisantes.
-
-    - Présentation et organisation
-        - Nom, date, spécifications de la mission et description incluses.
-        - Excellente utilisation des espaces blancs (indentation, lignes vides).
-        - Travail bien organisé et facile à suivre.
-
+    
 
 .. .. reveal:: eval_eighty_five_two
     :showtitle: Évaluation pour avoir 85%
