@@ -64,6 +64,18 @@ Votre programme de flappy bird devrait ressembler à ceci:
         - Nom, date, spécifications de la mission et description incluses.
         - Excellente utilisation des espaces blancs (indentation, lignes vides).
         - Travail bien organisé et facile à suivre.
+    
+    - Éléments des instructions trouvé dans le programme
+        - diffusion/événement (*pour contrôler le déroulement du programme*)
+        - boucles (*répéter, répéter jusqu'à ce que, répéter indéfiniment*)
+        - conditions (*blocs si, si/sinon*)
+        - variables
+        
+    - Élément des instruction pour les experts
+        - clones (*trouvés dans l'onglet Control*)
+        - listes (*trouvées dans l'onglet Données*)
+        - réagir aux entrées vidéo et audio (*disponibles dans l'onglet qu'on doit ajouter nommé Détection vidéo et synthèse vocal*)
+
 
 
 .. Projet 4: Recrér le jeu de Flappy bird
