@@ -87,8 +87,8 @@ Votre programme de flappy bird devrait ressembler à ceci:
 
 .. Lorsque vous avez terminé, appuyez sur le bouton **PARTAGER** de l'éditeur et soumettez l'URL de ce projet.
 
- Évaluation
----------------
+    Évaluation
+    ---------------
 
     - La tâche de programmation
         - Démontrer la synthèse de la solution en combinant ses connaissances et de l’information.
