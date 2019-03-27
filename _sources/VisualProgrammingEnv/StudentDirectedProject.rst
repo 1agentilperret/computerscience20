@@ -46,7 +46,7 @@ Votre programme de flappy bird devrait ressembler à ceci:
 
 Évaluation
     Sur quoi je suis évalué pour ce projet?
-    ------------------------------------------
+------------------------------------------
 
     - La tâche de programmation
         - Démontrer la synthèse de la solution en combinant ses connaissances et de l’information.

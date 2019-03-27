@@ -3,12 +3,12 @@
    :start: 1
 
 
-Notre premier programme de Turtles/*Turtle*
+Notre premier programme de Turtues/*Turtle*
 =============================================
 
 .. topic:: Aperçu rapide de la journée
 
-    Apprenez à dessiner en Python en utilisant le module Turtle/*Turtle*.
+    Apprenez à dessiner en Python en utilisant le module turtle/*turtle*.
 
 
 .. reveal:: curriculum_addressed_first_turtle_program
@@ -22,7 +22,7 @@ Notre premier programme de Turtles/*Turtle*
 
 .. index:: turtle
 
-Il existe de nombreux *modules* en Python qui fournissent des fonctionnalités très puissantes que nous pouvons utiliser dans nos propres programmes. Certains d'entre eux peuvent envoyer un courriel ou récupérer des pages Web. D'autres nous permettent d'effectuer des calculs mathématiques complexes. Nous avons déjà utilisé un module, appelé ``easygui_qt``, qui nous permettait d'utiliser des fenêtres contextuelles lorsque nous demandions une saisie de l'utilisateur. Aujourd'hui, nous allons présenter un module qui nous permet de créer un objet de données appelé **Turtle** pouvant être utilisé pour dessiner des images. *Le module Turtle est très similaire à la fonctionnalité du stylo que nous avons explorée avec Scratch! * Notez que le module ``Turtle`` fait partie de l'installation standard de Python, vous n'avez donc pas besoin de l'installer avant de l'utiliser.
+Il existe de nombreux *modules* en Python qui fournissent des fonctionnalités très puissantes que nous pouvons utiliser dans nos propres programmes. Certains d'entre eux peuvent envoyer un courriel ou récupérer des pages Web. D'autres nous permettent d'effectuer des calculs mathématiques complexes. Nous avons déjà utilisé un module, appelé ``easygui_qt``, qui nous permettait d'utiliser des fenêtres contextuelles lorsque nous demandions une saisie de l'utilisateur. Aujourd'hui, nous allons présenter un module qui nous permet de créer un objet de données appelé **turtle** pouvant être utilisé pour dessiner des images. *Le module turtle est très similaire à la fonctionnalité du stylo que nous avons explorée avec Scratch! * Notez que le module ``turtle`` fait partie de l'installation standard de Python, vous n'avez donc pas besoin de l'installer avant de l'utiliser.
 
 Turtle Graphics, comme il est connu, est basé sur une métaphore très simple. Imaginez que vous avez une tortue qui comprend l'anglais. Vous pouvez dire à votre tortue de faire des commandes simples telles que avancer et tourner à droite. Lorsque la tortue se déplace, si sa queue touche le sol, elle tracera une ligne (laissant une trace derrière) à mesure qu'elle se déplacera. Si vous dites à votre tortue de relever la queue, elle peut toujours se déplacer mais ne laissera pas de trace. Comme vous le verrez, vous pouvez faire des dessins assez étonnants avec cette capacité simple.
 
@@ -35,67 +35,56 @@ Le programme, tel qu’il est montré, ne dessinera que les deux premiers côté
 .. activecode:: turtle_intro_1
     :nocodelens:
 
-    import turtle            	# allows us to use the turtles library
-    window = turtle.Screen()    # creates a graphics window
-    alex = turtle.Turtle()   	# create a turtle named alex
-    alex.forward(150)        	# tell alex to move forward by 150 units
-    alex.left(90)           	# turn by 90 degrees
-    alex.forward(75)         	# complete the second side of a rectangle
+    import turtle            	# nous permet d'utiliser la bibliothèque de *turtues*
+    window = turtle.Screen()    # crée une fenêtre graphique
+    alex = turtle.Turtle()   	# crée une tortue nommée alex
+    alex.forward(150)        	# dit à alex d'avancer de 150 pas
+    alex.left(90)           	# tourne de 90 degrés
+    alex.forward(75)         	# complète le deuxième côté d'un rectangle qui mesure 75 pas
 
 
-.. admonition:: **Try This!**
+.. admonition:: **Essayez ceci!**
 
-    Modify the program above by adding the commands necessary to have *alex* complete the rectangle. 
-
-
-Understanding a Turtle Program
--------------------------------
-
-Here are a couple of things you'll need to understand about the turtle program we wrote above.
-
-The first line tells Python to load a **module** named ``turtle``.  That module
-brings us two new types that we can use: the ``Turtle`` type, and the
-``Screen`` type.  The dot notation ``turtle.Turtle`` means *"The Turtle type
-that is defined within the turtle module"*.   (Remember that Python is case
-sensitive, so the module name, ``turtle``, with a lowercase `t`, is different from the type
-``Turtle`` because of the uppercase `T`.)
-
-We then create and open what the turtle module calls a screen (we would
-prefer to call it a window, or in the case of this web version of Python
-simply a canvas), which we assign to variable ``window``. Every window
-contains a **canvas**, which is the area inside the window on which we can draw.
-
-In line 3 we create a turtle. The variable ``alex`` is made to refer to this
-turtle.   These first three lines set us up so that we are ready to do some drawing.
-
-In lines 4-6, we instruct the **object** ``alex`` to move and to turn. We do this
-by **invoking** or activating alex's **methods** --- these are the
-instructions that all turtles know how to respond to.  Here the dot indicates that
-the methods invoked belong to and refer to the object ``alex``.
+    Modifiez le programme ci-dessus en ajoutant les commandes nécessaires pour que *alex* complète le rectangle.
 
 
-**Check your understanding**
+Comprendre un programme de *turtle*
+-------------------------------------
+
+Voici quelques points que vous devez comprendre sur le programme de *turtle* que nous avons écrit ci-dessus.
+
+La première ligne indique à Python de chercher un **module** nommé ``turtle``. Ce module nous apporte deux nouveaux types que nous pouvons utiliser: le type ``Turtle`` et le type ``Screen``. La notation avec un point ``turtle.Turtle`` signifie *"Le type de *Turtle* défini dans le module turtle"*. (N'oubliez pas que Python est sensible à la casse, le nom du module, ``turtle``, avec un ``t`` minuscule, est différent du type ``Turtle`` en raison du ``T`` majuscule.)
+
+Nous créons ensuite et ouvrons ce que le module turtle appelle un écran/*screen* (nous préférerions l'appeler une fenêtre ou, dans le cas de cette version Web de Python, simplement un toile), que nous affectons à la variable ``window``. Chaque fenêtre contient une **toile**, qui est la zone à l'intérieur de la fenêtre sur laquelle nous pouvons dessiner.
+
+Dans la ligne 3, nous créons une tortue. La variable ``alex`` fait référence à cette tortue. Ces trois premières lignes nous préparent à dessiner.
+
+Aux lignes 4 à 6, nous ordonnons à **l'objet** ``alex`` de se déplacer et de se tourner. Nous faisons cela en **invoquant** ou en activant les méthodes à **alex** - ce sont les instructions auxquelles toutes les tortues savent répondre. Ici, le point indique que les méthodes invoquées appartiennent à, et font référence à l'objet ``alex``.
+
+
+**Vérifie ta compréhension**
 
 .. mchoice:: turtle_intro_check_1
-   :answer_a: North
-   :answer_b: South
-   :answer_c: East 
-   :answer_d: West
+   :answer_a: Nord
+   :answer_b: Sud
+   :answer_c: Est 
+   :answer_d: Ouest
    :correct: c
-   :feedback_a: Some turtle systems start with the turtle facing north, but not this one.
-   :feedback_b: No, look at the first example with a turtle.  Which direction does the turtle move?
-   :feedback_c: Yes, the turtle starts out facing east.
-   :feedback_d: No, look at the first example with a turtle.  Which direction does the turtle move?
+   :feedback_a: Certains systèmes de tortues commencent avec une tortue qui fait face au nord, mais pas celle-ci.
+   :feedback_b: Non, regardez le premier exemple avec une tortue. Dans quelle direction se déplace la tortue?
+   :feedback_c: Oui, la tortue commence face à l'est.
+   :feedback_d: Non, regardez le premier exemple avec une tortue. Dans quelle direction se déplace la tortue?
 
-   Which direction does the Turtle face when it is created?
+   Dans quelle direction la tortue fait-elle face lorsqu'elle est créée?
 
 
-Mixed Up Programs
-~~~~~~~~~~~~~~~~~~
+Programmes mixtes
+~~~~~~~~~~~~~~~~~~~~
 
 .. parsonsprob:: turtle_intro_parsons_1
 
-   The following program uses a turtle to draw a capital L as shown in the picture, <img src="../../_static/parsons/TurtleL4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   Le programme suivant utilise une tortue pour dessiner un L majuscule, comme indiqué dans l’image, <img src="../../_static/parsons/TurtleL4.png" width="150" align="left" hspace="10" vspace="5" /> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires comme: importer le module turtle, obtenir la fenêtre sur laquelle on peut dessiner et créer la tortue. Rappelez-vous que la tortue commence face à l'est quand elle est créée. La tortue doit se tourner vers le sud et tracer une ligne de 150 pixels de long, puis se tourner vers l’est et tracer une ligne de 75 pixels de long. Nous avons ajouté une boussole à la photo pour indiquer les directions nord, sud, ouest et est. <br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si des lignes sont dans le mauvais ordre.</p>
+   
    -----
    import turtle
    window = turtle.Screen()
@@ -110,7 +99,8 @@ Mixed Up Programs
 
 .. parsonsprob:: turtle_intro_parsons_2
 
-   The following program uses a turtle to draw a checkmark as shown to the left, <img src="../../_static/parsons/TurtleCheckmark4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  Northeast is between north and east. Southeast is between south and east. <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   Le programme suivant utilise une tortue pour dessiner une coche comme indiqué à gauche, <img src="../../_static/parsons/TurtleCheckmark4.png" width="150" align="left" hspace="10" vspace="5" /> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires comme: importer le module turtle, obtenir la fenêtre sur laquelle on peut dessiner et créer la tortue. La tortue doit faire face au sud-est, tracer une ligne de 75 pixels de long, ensuite faire face au nord-est, et tracer une ligne de 150 pixels de long. Nous avons ajouté une boussole à la photo pour indiquer les directions nord, sud, ouest et est. Le nord-est est entre le nord et l'est. Le sud-est est entre le sud et l'est. <br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si des lignes sont dans le mauvais ordre.</p>
+   
    -----
    import turtle
    =====
@@ -126,7 +116,8 @@ Mixed Up Programs
 
 .. parsonsprob:: turtle_intro_parsons_3
 
-   The <img src="../../_static/parsons/TurtleLineToWest.png" width="150" align="left" hspace="10" vspace="5" /> following program uses a turtle to draw a single line to the west as shown to the left, but the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   Le programme suivant <img src="../../_static/parsons/TurtleLineToWest.png" width="150" align="left" hspace="10" vspace="5" /> utilise une tortue pour dessiner une ligne unique à l'ouest, comme indiqué à gauche, mais les lignes de programme sont mélangées. Le programme doit faire tous les réglages nécessaires comme: importer le module turtle, obtenir la fenêtre sur laquelle on peut dessiner et créer la tortue. La tortue doit alors se tourner pour faire face à l'ouest et tracer une ligne de 75 pixels de long. <br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si des lignes sont dans le mauvais ordre.</p>
+
    -----
    import turtle
    window = turtle.Screen()
@@ -134,21 +125,15 @@ Mixed Up Programs
    jamal.left(180)
    jamal.forward(75)
 
-Turtle Methods
----------------
+Les Méthodes de tortu/*Turtle Methods*
+----------------------------------------
 
-An object can have various methods (things it can do), and it can also
-have **attributes** (sometimes called *properties*).  For example, each
-turtle has a *color* attribute.  The method invocation  ``alex.color("red")``
-will make alex red and the line that it draws will be red too.
+Un objet peut avoir différentes méthodes (choses qu'il peut faire), et il peut aussi avoir des **attributs** (parfois appelés *propriétés/properties*). Par exemple, chaque tortue a un attribut *color*. L’appel de la méthode ``alex.color ("red")`` fera qu'alex soit rouge et que la ligne qu'il dessine sera aussi rouge.
 
-The color of the turtle, the width of its pen(tail), the position of the turtle
-within the window, which way it is facing, and so on are all part of its
-current **state**.   Similarly, the window object has a background color which is part of its state.
+La couleur de la tortue, la largeur de son stylo (queue), la position de la tortue dans la fenêtre, son orientation, etc. font tous partie de son **état** actuel. De même, la fenêtre de l'objet a une couleur d'arrière-plan qui fait partie de son état.
 
-Quite a number of methods exist that allow us to modify the turtle and
-window objects.  In the example below, we show just show a couple and have only commented those
-lines that are different from the previous example.  Note also that we have decided to call our turtle object *tess*, and have changed the name of the Screen object to be *wn*.
+Il existe un grand nombre de méthodes qui nous permettent de modifier les objets; tortue et fenêtre. Dans l'exemple ci-dessous, nous montrons simplement quelques une et n'avons commenté que les lignes qui diffèrent de l'exemple précédent. Notez également que nous avons décidé d'appeler notre objet tortue *tess* et avons changé le nom de l'objet Screen à *wn*.
+
 
 .. activecode:: turtle_intro_2
     :nocodelens:
@@ -156,43 +141,41 @@ lines that are different from the previous example.  Note also that we have deci
     import turtle
 
     wn = turtle.Screen()
-    wn.bgcolor("lightgreen")        # set the window background color
+    wn.bgcolor("lightgreen")        # définit la couleur de fond de la fenêtre color
 
     tess = turtle.Turtle()
-    tess.color("blue")              # make tess blue
-    tess.pensize(3)                 # set the width of her pen
+    tess.color("blue")              # tess est bleu
+    tess.pensize(3)                 # définit la largeur de son stylo
 
     tess.forward(50)
     tess.left(120)
     tess.forward(50)
 
-    wn.exitonclick()                # wait for a user click on the canvas
+    wn.exitonclick()                # attendez qu'un utilisateur clique sur la fenêtre pour fermer
 
 
-The last line plays a very important role. The *wn* variable refers to the window shown
-above. When we invoke its ``exitonclick`` method, the program pauses execution and waits for the user to click the mouse somewhere in the window.
-When this click event occurs, the response is to close the turtle window and
-exit (stop execution of) the Python program.
+La dernière ligne joue un rôle très important. La variable *wn* fait référence à la fenêtre ci-dessus. Lorsque nous appelons sa méthode ``exitonclick``, le programme suspend l'exécution et attend que l'utilisateur clique avec la souris quelque part dans la fenêtre. Lorsque cet événement click se produit, la réponse est de fermer la fenêtre graphique et de quitter (arrêter l'exécution du programme) Python.
 
-Each time we run this program, a new drawing window pops up, and will remain on the
-screen until we click on it.
+Chaque fois que nous exécutons ce programme, une nouvelle fenêtre de dessin s’affiche et reste affichée jusqu’à ce que nous cliquions dessus.
 
 
-Check your understanding
+Vérifie ta compréhension
 -------------------------
 
 .. mchoice:: turtle_intro_check_2
-   :answer_a: It creates a new turtle object that can be used for drawing.
-   :answer_b: It defines the module turtle which will allow you to create a Turtle object and draw with it.
-   :answer_c: It makes the turtle draw half of a rectangle on the screen.
-   :answer_d: Nothing, it is unnecessary.
+   :answer_a: Il crée un nouvel objet tortue pouvant être utilisé pour dessiner.
+   :answer_b: Il définit le module tortue qui vous permettra de créer un objet Tortue et de dessiner avec lui.
+   :answer_c: La tortue dessine la moitié d'un rectangle à l'écran.
+   :answer_d: Rien, c'est inutile.
    :correct: b
-   :feedback_a: The line &quotalex = turtle.Turtle()&quot is what actually creates the turtle object.
-   :feedback_b: This line imports the module called turtle, which has all the built in functions for drawing on the screen with the Turtle object.
-   :feedback_c: This functionality is performed with the lines: &quotalex.forward(150)&quot, &quotlex.left(90)&quot, and &quotalex.forward(75)&quot
-   :feedback_d: If we leave it out, Python will give an error saying that it does not know about the name &quotturtle&quot when it reaches the line &quotwn = turtle.Screen()&quot
+   :feedback_a: La ligne &quotalex = turtle.Turtle()&quot est ce qui crée réellement l'objet tortue.
+   :feedback_b: Cette ligne importe le module appelé tortue, qui possède toutes les fonctions intégrées pour dessiner à l'écran avec l'objet Tortue.
+   :feedback_c: cette fonctionnalité est réalisée avec les lignes: &quotalex.forward(150)&quot, &quotlex.left(90)&quot, and &quotalex.forward(75)&quot
+   :feedback_d: Si on ne le met pas dans le programme, Python donnera une erreur en disant qu'il ne connaît pas le nom &quotturtle&quot when it reaches the line &quotwn = turtle.Screen()&quot
+   
+   If we leave it out, Python will give an error saying that it does not know about the name &quotturtle&quot quand il atteint la ligne &quotwn = turtle.Screen()&quot
 
-   Consider the following code:
+   Considérons le code suivant:
 
    .. code-block:: python
 
@@ -203,27 +186,28 @@ Check your understanding
      alex.left(90)
      alex.forward(75)
 
-   What does the line "import turtle" do?
+   Que fait la ligne "import turtle"?
 
 .. mchoice:: turtle_intro_check_3
-   :answer_a: This is simply for clarity.  It would also work to just type "Turtle()" instead of "turtle.Turtle()".
-   :answer_b: The period (.) is what tells Python that we want to invoke a new object.
-   :answer_c: The first "turtle" (before the period) tells Python that we are referring to the turtle module, which is where the object "Turtle" is found.
+   :answer_a: Ceci est simplement pour plus de clarté. Il serait également utile de simplement taper "Turtle()" au lieu de "turtle.Turtle()".
+   :answer_b: Le point (.) indique à Python que nous souhaitons appeler un nouvel objet.
+   :answer_c: La première "tortue" (avant le point) indique à Python que nous faisons référence au module turtle, où se trouve l'objet "Turtle".
    :correct: c
-   :feedback_a: We must specify the name of the module where Python can find the Turtle object.
-   :feedback_b: The period separates the module name from the object name.  The parentheses at the end are what tell Python to invoke a new object.
-   :feedback_c: Yes, the Turtle type is defined in the module turtle.  Remember that Python is case sensitive and Turtle is different from turtle.
+   :feedback_a: Nous devons spécifier le nom du module où Python peut trouver l'objet Turtle.
+   :feedback_b: Le point sépare le nom du module et le nom de l'objet. Les parenthèses à la fin sont ce qui dit à Python d’appeler un nouvel objet.
+   :feedback_c: Oui, le type de tortue est défini dans le module turtle. Rappelez-vous que Python est sensible au majuscule et que **T**urtle est différente de **t**urtle.
 
-   Why do we type ``turtle.Turtle()`` to get a new Turtle object?
+   Pourquoi tapons-nous ``turtle.Turtle()`` pour obtenir un nouvel objet Turtle?
+
 
 .. mchoice:: turtle_intro_check_4
-   :answer_a: True
-   :answer_b: False
+   :answer_a: Vrai
+   :answer_b: Faux
    :correct: a
-   :feedback_a: In this chapter you saw one named alex and one named tess, but any legal variable name is allowed.
-   :feedback_b: A variable, including one referring to a Turtle object, can have whatever name you choose as long as it follows the naming conventions from Chapter 2.
+   :feedback_a: Dans ce chapitre, vous avez vu une nommée alex et une nommée tess, mais tout nom de variable est autorisé.
+   :feedback_b: une variable, y compris une qui fait référence à un objet Turtle, peut avoir le nom que vous choisissez, dans la mesure où elle respecte les conventions de dénomination du chapitre 2.
 
-   True or False: A Turtle object can have any name that follows the naming rules from Chapter 2.
+   Vrai ou Faux: un objet Tortue peut avoir n'importe quel nom qui suit les règles de nommage du Chapitre 2.
 
 .. mchoice:: turtle_intro_check_5
    :answer_a: <img src="../../_static/parsons/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
@@ -232,24 +216,25 @@ Check your understanding
    :answer_d: <img src="../../_static/parsons/test1Alt4v2.png" alt="right turn of 270 degrees before drawing, draw a line 150 pixels long, turn right 90, and draw a line 75 pixels long">
    :answer_e: <img src="../../_static/parsons/test1correct.png" alt="left turn of 90 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :correct: e
-   :feedback_a: This code would turn the turtle to the south before drawing
-   :feedback_b: This code would turn the turtle to the west before drawing
-   :feedback_c: This code would turn the turtle to the south before drawing
-   :feedback_d: This code is almost correct, but the short end would be facing east instead of west.  
-   :feedback_e: Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
+   :feedback_a: Ce code ferait tourner la tortue vers le sud avant de dessiner
+   :feedback_b: Ce code ferait tourner la tortue vers l'ouest avant de dessiner
+   :feedback_c: Ce code ferait tourner la tortue vers le sud avant de dessiner
+   :feedback_d: Ce code est presque correct, mais l'extrémité courte serait tournée vers l'est plutôt que vers l'ouest.
+   :feedback_e: Oui, la tortue commence en fesant face à l'est. Pour tourner au nord, vous pouvez tourner à gauche de 90 degrés ou à droite de 270 degrés.
 
-   Which of the following code would produce the following image? 
+   Lequel des codes suivants produirait l'image suivante? 
 
    .. image:: images/turtleTest1.png
       :alt: long line to north with shorter line to west on top
       :width: 150px
 
-More Mixed Up Programs!
-------------------------
+D'autres programmes mélangé/*More Mixed Up Programs!*
+--------------------------------------------------------
 
 .. parsonsprob:: turtle_intro_parsons_4
 
-   The following program uses a turtle to draw a capital L in white on a blue background as shown to the left, <img src="../../_static/parsons/BlueTurtleL.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle and set the pen size to 10.  The turtle should then turn to face south, draw a line that is 150 pixels long, turn to face east, and draw a line that is 75 pixels long.   Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   Le programme suivant utilise une tortue pour dessiner un L majuscule en blanc sur un fond bleu, comme indiqué à gauche, <img src="../../_static/parsons/BlueTurtleL.png" width="150" align="left" hspace="10" vspace="5" /> mais les lignes sont mélangées. Le programme doit effectuer tous les réglages nécessaires comme: créer la tortue et définir la taille du stylo à 10, la tortue doit ensuite se tourner vers le sud, tracer une ligne de 150 pixels de long, se tourner vers l'est et trancer une ligne de 75 pixels de long. Enfin, définissez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus. <br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si des lignes sont dans le mauvais ordre.</p>
+
    -----
    import turtle
    wn = turtle.Screen()
@@ -259,17 +244,18 @@ More Mixed Up Programs!
    =====
    jamal.color("white")               	
    jamal.pensize(10) 
-   =====                
+   =====
    jamal.right(90)
    jamal.forward(150)
-   ===== 
+   =====
    jamal.left(90)
    jamal.forward(75)
    wn.exitonclick()
 
 .. parsonsprob:: turtle_intro_parsons_5
 
-   The following program uses a turtle to draw a capital T in white on a green background as shown to the left, <img src="../../_static/parsons/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>  
+   Le programme suivant utilise une tortue pour dessiner un T majuscule en blanc sur un fond vert comme indiqué à gauche, <img src="../../_static/parsons/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> mais les lignes sont mélangées. Le programme doit effectuer tous les réglages nécessaires comme: créer la tortue et définir la taille du stylo à 10. Après cela, la tortue doit se tourner vers le nord, tracer une ligne de 150 pixels de long, se tourner vers l'ouest et tracer une ligne de 50 pixels de long. Ensuite, la tortue devrait tourner à 180 degrés et tracer une ligne de 100 pixels de long. Enfin, définissez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus. <br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si des lignes sont dans le mauvais ordre.</p>
+
    -----
    import turtle
    wn = turtle.Screen()
@@ -277,7 +263,7 @@ More Mixed Up Programs!
    jamal = turtle.Turtle()
    jamal.color("white")               	
    jamal.pensize(10) 
-   =====                
+   =====
    jamal.left(90)
    jamal.forward(150)
    =====
@@ -290,17 +276,17 @@ More Mixed Up Programs!
    wn.exitonclick()
 
 
-Practice Problems
-------------------
+Problèmes de pratique
+------------------------
 
-Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!
+Essayez les problèmes de pratique suivants. Vous pouvez travailler directement dans ce manuel ou utiliser Thonny. Dans tous les cas, veillez enregistrer votre solution dans votre dossier Infromatique 20 lorsque vous avez terminé!
 
-You might find the Python Documentation for the turtle module to be helpful: `https://docs.python.org/3/library/turtle.html <https://docs.python.org/3/library/turtle.html>`_ 
+La documentation Python du module tortue pourrait vous être utile: `https://docs.python.org/fr/3/library/turtle.html <https://docs.python.org/fr/3/library/turtle.html>`_ 
 
+.. attention::
 
-.. caution::
+   Assurez-vous de NE PAS enregistrer un fichier sous le nom ``turtle.py``. Si vous le faites, lorsque vous appelez ``import turtle``, Python recherche un fichier appelé turtle.py, ce qui signifie qu'il importera le fichier turtle.py que vous venez de sauvegarder. Vous obtiendrez une erreur lors de la tentative de création d'un objet Screen() ou Turtle(), car ils ne seront pas définis.
 
-   Be sure that you DO NOT save any file as ``turtle.py``. If you do, when you call ``import turtle``, Python looks for a file called turtle.py, which means that it will import the turtle.py file you just saved. You will get an error when attempting to create a Screen() or Turtle() object, as these will not actually be defined.
 
 
 Color Selection
