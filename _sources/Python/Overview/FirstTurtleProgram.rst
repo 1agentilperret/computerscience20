@@ -289,20 +289,22 @@ La documentation Python du module tortue pourrait vous être utile: `https://doc
 
 
 
-Color Selection
+Sélection de couleur
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Modify the program given below so that before it creates the window, it prompts the user to enter the desired background color. It should store the user's response in a variable, and modify the color of the window according to the user's wishes. Do similar changes to allow the user to set the turtle bree's color as well.
+Modifiez le programme indiqué ci-dessous afin qu'avant de créer la fenêtre, il invite l'utilisateur à saisir la couleur d'arrière-plan souhaitée. Il convient de stocker la réponse de l'utilisateur dans une variable et de modifier la couleur de la fenêtre en fonction des souhaits de l'utilisateur. Effectuez des modifications similaires pour permettre à l'utilisateur de définir également la couleur de la tortue nommée Bree.
 
-(Hint: you can find a list of permitted color names at `https://www.w3schools.com/colors/colors_names.asp <https://www.w3schools.com/colors/colors_names.asp>`_ .  It includes some quite unusual ones, like "PeachPuff" and "HotPink".)
+(Hint: vous pouvez trouver une liste des noms de couleurs autorisés à l'adresse suivante: `https://www.w3schools.com/colors/colors_names.asp <https://www.w3schools.com/colors/colors_names.asp>`_ . Ce site comprend des exemples assez inhabituels, comme "PeachPuff" et "HotPink".)
+
 
 .. note:: 
-    If you are running your code in Thonny, the order of your instructions matters a lot, since a window will open up in front of the main Thonny window (whereas in the browser, the window is just a canvas on the webpage). You might want to ask the user questions *before* creating a Screen() to draw on. Although you can use something like ``easygui_qt`` to ask the questions with pop-up windows, there is also a ``screen.textinput("Window name", "Question to ask")`` function built into the turtle module that will cause a pop-up window to appear. You need to use the name of your turtle.Screen() instance when calling the ``textinput`` function. For example::
+    Si vous utilisez votre code dans Thonny, l'ordre de vos instructions est très important, car une fenêtre s'ouvrira devant la fenêtre principale de Thonny (alors que dans le navigateur, la fenêtre n'est qu'un canevas sur la page Web). Vous voudrez peut-être poser des questions à l'utilisateur *avant* de créer un Screen() sur lequel dessiner. Bien que vous puissiez utiliser quelque chose comme ``easygui_qt`` pour poser les questions avec des fenêtres contextuelles, il existe également une fonction ``screen.textinput ("Nom de la fenêtre", "Question à poser")`` intégrée au module tortue cela fera apparaître la question dans une fenêtre pop-up. Vous devez utiliser l'instance turtle.Screen() lors de l'appel de la fonction ``textinput``. Par exemple:: 
       
       canvas = turtle.Screen()
-      question = canvas.textinput("Window name", "Question to ask")
+      question = canvas.textinput("Nom de la fenêtre", "Question à poser")
 
-    Be aware, however, that the ``textinput()`` function will not work in the browser version of Python.
+    Sachez cependant que la fonction ``textinput()`` ne fonctionnera pas dans la version de Python de ce navigateur.
+
 
 .. activecode:: practice_problem_turtle_intro_1
     :nocodelens:

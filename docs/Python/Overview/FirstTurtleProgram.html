@@ -212,7 +212,7 @@
 <li><a class="reference internal" href="#verifie-ta-comprehension">9.3. Vérifie ta compréhension</a></li>
 <li><a class="reference internal" href="#d-autres-programmes-melange-more-mixed-up-programs">9.4. D’autres programmes mélangé/<em>More Mixed Up Programs!</em></a></li>
 <li><a class="reference internal" href="#problemes-de-pratique">9.5. Problèmes de pratique</a><ul>
-<li><a class="reference internal" href="#color-selection">9.5.1. Color Selection</a></li>
+<li><a class="reference internal" href="#selection-de-couleur">9.5.1. Sélection de couleur</a></li>
 <li><a class="reference internal" href="#drawing-any-size-of-square">9.5.2. Drawing any Size of Square</a></li>
 </ul>
 </li>
@@ -529,18 +529,18 @@ wn.exitonclick()
 <p class="first admonition-title">Attention</p>
 <p class="last">Assurez-vous de NE PAS enregistrer un fichier sous le nom <code class="docutils literal notranslate"><span class="pre">turtle.py</span></code>. Si vous le faites, lorsque vous appelez <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">turtle</span></code>, Python recherche un fichier appelé turtle.py, ce qui signifie qu’il importera le fichier turtle.py que vous venez de sauvegarder. Vous obtiendrez une erreur lors de la tentative de création d’un objet Screen() ou Turtle(), car ils ne seront pas définis.</p>
 </div>
-<div class="section" id="color-selection">
-<h3>9.5.1. Color Selection<a class="headerlink" href="#color-selection" title="Permalink to this headline">¶</a></h3>
-<p>Modify the program given below so that before it creates the window, it prompts the user to enter the desired background color. It should store the user’s response in a variable, and modify the color of the window according to the user’s wishes. Do similar changes to allow the user to set the turtle bree’s color as well.</p>
-<p>(Hint: you can find a list of permitted color names at <a class="reference external" href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a> .  It includes some quite unusual ones, like “PeachPuff” and “HotPink”.)</p>
+<div class="section" id="selection-de-couleur">
+<h3>9.5.1. Sélection de couleur<a class="headerlink" href="#selection-de-couleur" title="Permalink to this headline">¶</a></h3>
+<p>Modifiez le programme indiqué ci-dessous afin qu’avant de créer la fenêtre, il invite l’utilisateur à saisir la couleur d’arrière-plan souhaitée. Il convient de stocker la réponse de l’utilisateur dans une variable et de modifier la couleur de la fenêtre en fonction des souhaits de l’utilisateur. Effectuez des modifications similaires pour permettre à l’utilisateur de définir également la couleur de la tortue nommée Bree.</p>
+<p>(Hint: vous pouvez trouver une liste des noms de couleurs autorisés à l’adresse suivante: <a class="reference external" href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a> . Ce site comprend des exemples assez inhabituels, comme “PeachPuff” et “HotPink”.)</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>If you are running your code in Thonny, the order of your instructions matters a lot, since a window will open up in front of the main Thonny window (whereas in the browser, the window is just a canvas on the webpage). You might want to ask the user questions <em>before</em> creating a Screen() to draw on. Although you can use something like <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code> to ask the questions with pop-up windows, there is also a <code class="docutils literal notranslate"><span class="pre">screen.textinput(&quot;Window</span> <span class="pre">name&quot;,</span> <span class="pre">&quot;Question</span> <span class="pre">to</span> <span class="pre">ask&quot;)</span></code> function built into the turtle module that will cause a pop-up window to appear. You need to use the name of your turtle.Screen() instance when calling the <code class="docutils literal notranslate"><span class="pre">textinput</span></code> function. For example:</p>
+<p>Si vous utilisez votre code dans Thonny, l’ordre de vos instructions est très important, car une fenêtre s’ouvrira devant la fenêtre principale de Thonny (alors que dans le navigateur, la fenêtre n’est qu’un canevas sur la page Web). Vous voudrez peut-être poser des questions à l’utilisateur <em>avant</em> de créer un Screen() sur lequel dessiner. Bien que vous puissiez utiliser quelque chose comme <code class="docutils literal notranslate"><span class="pre">easygui_qt</span></code> pour poser les questions avec des fenêtres contextuelles, il existe également une fonction <code class="docutils literal notranslate"><span class="pre">screen.textinput</span> <span class="pre">(&quot;Nom</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">fenêtre&quot;,</span> <span class="pre">&quot;Question</span> <span class="pre">à</span> <span class="pre">poser&quot;)</span></code> intégrée au module tortue cela fera apparaître la question dans une fenêtre pop-up. Vous devez utiliser l’instance turtle.Screen() lors de l’appel de la fonction <code class="docutils literal notranslate"><span class="pre">textinput</span></code>. Par exemple:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">canvas</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-<span class="n">question</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Window name&quot;</span><span class="p">,</span> <span class="s2">&quot;Question to ask&quot;</span><span class="p">)</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Nom de la fenêtre&quot;</span><span class="p">,</span> <span class="s2">&quot;Question à poser&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p class="last">Be aware, however, that the <code class="docutils literal notranslate"><span class="pre">textinput()</span></code> function will not work in the browser version of Python.</p>
+<p class="last">Sachez cependant que la fonction <code class="docutils literal notranslate"><span class="pre">textinput()</span></code> ne fonctionnera pas dans la version de Python de ce navigateur.</p>
 </div>
 
 <div data-childcomponent="practice_problem_turtle_intro_1" class="runestone explainer ac_section alert alert-warning">

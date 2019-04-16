@@ -225,11 +225,11 @@ La structure de contrôle ``if/elif/else`` fonctionne exactement de la même man
 .. activecode:: if_elif_else_intro
     :nocodelens:
 
-    température = -3
+    temperature = -3
 
-    if température < -10:
+    if temperature < -10:
         print("porter une manteau d'hiver")
-    elif température < 15:
+    elif temperature < 15:
         print("porter une chemise à manches longues")
     else:
         print("porter un t-shirt")
