@@ -102,7 +102,7 @@ Si vous appelez ``get_integer`` avec un troisième argument (séparé par une vi
 .. sourcecode:: python
     
     import easygui_qt as easy
-    reponse = easy.get_integer("Quel âge avez-vous?", "Age", 16)
+    reponse = easy.get_integer("Quel âge avez-vous?", "Âge", 16)
 
 .. image:: images/getting-integers3.png
 

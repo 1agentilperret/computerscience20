@@ -370,11 +370,11 @@ L'exemple suivant ne fonctionnera pas lorsque vous essayez de l'exécuter. Essay
     :nocodelens:
     :caption: Pouvez-vous comprendre ce qui ne va pas?
 
-    âge = input("Quel âge avez-vous?")
+    age = input("Quel âge avez-vous?")
 
-    if âge == 16:
+    if age == 16:
         print("Vous pouvez obtenir votre permis de conduire!")
-    elif âge == 15:
+    elif age == 15:
         print("Vous pouvez obtenir votre permis de conduire d'apprenti.")
 
 
