@@ -310,91 +310,96 @@ Modifiez le programme indiqué ci-dessous afin qu'avant de créer la fenêtre, i
     :nocodelens:
     :enabledownload:
 
-    # Color Selection
+    # Sélection de couleur
 
     import turtle
 
-    # create window, and set it's color
+    # créer une fenêtre et définir sa couleur
     canvas = turtle.Screen()
     canvas.bgcolor("lightgreen")        
 
-    #create the turtle, and it's attributes
+    # créer la tortue, et ses attributs
     bree = turtle.Turtle()
     bree.color("blue")
     bree.pensize(3)
 
-    #draw!
+    #dessiner!
     bree.forward(100)
     bree.right(60)
     bree.forward(100)
 
-**Do not look** at this sample solution unless you have already finished creating your own solution!
+**Ne regardez pas** cet exemple de solution à moins que vous n'ayez déjà fini de créer votre propre solution!
 
 .. reveal:: reveal_solution_practice_problem_turtle_intro_1
-    :showtitle: Reveal Solution
-    :hidetitle: Hide Solution
+    :showtitle: Voir la Solution
+    :hidetitle: Masquer la Solution
 
-    The following solution will work well in the browser, where a text input box appears automatically when you call the ``input()`` function::
+    La solution suivante fonctionnera bien dans le navigateur, où une zone de saisie de texte apparaît automatiquement lorsque vous appelez la fonction ``input()``::
 
-      # Color Selection
+      # Sélection de couleur
 
       import turtle
 
-      # create window, and set it's color
+      # créer une fenêtre et définir sa couleur
       canvas = turtle.Screen()
-      the_background_color = input("Please enter a background color: ")
+      the_background_color = input("Veuillez entrer une couleur de l'arrière-plan:")
       canvas.bgcolor(the_background_color)
 
-      #create the turtle, and it's attributes
+      # créer la tortue, et ses attributs
       bree = turtle.Turtle()
-      brees_color = input("Please enter the color of the turtle: ")
+      brees_color = input("Veuillez entrer la couleur de la tortue:")
       bree.color(brees_color)
       bree.pensize(3)
 
-      #draw!
+      #dessiner!
       bree.forward(100)
       bree.right(60)
       bree.forward(100)
 
-    If you are using Thonny to create your solution, you will likely want to use the ``screen.textinput("window name", "question to ask")`` function when asking for user input. Here is a version that does that::
+    Si vous utilisez Thonny pour créer votre solution, vous souhaiterez probablement utiliser la fonction ``screen.textinput("nom de la fenêtre", "question à poser")`` lors de la demande de saisie de l'utilisateur. Voici une version qui fait ça::
 
-      # Color Selection
+      # Sélection de couleur
 
       import turtle
 
-      # create window, and set it's color
+      # créer une fenêtre et définir sa couleur
       canvas = turtle.Screen()
-      the_background_color = canvas.textinput("Color", "Please enter a background color: ")
+      the_background_color = canvas.textinput("Couleur", "Veuillez saisir une couleur d'arrière-plan: ")
       canvas.bgcolor(the_background_color)
 
-      #create the turtle, and it's attributes
+      # créer la tortue, et ses attributs
       bree = turtle.Turtle()
-      brees_color = canvas.textinput("Color", "Please enter the color of the turtle: ")
+      brees_color = canvas.textinput("Couleur", "Veuillez saisir la couleur de la tortue:")
       bree.color(brees_color)
       bree.pensize(3)
 
-      #draw!
+      #dessiner!
       bree.forward(100)
       bree.right(60)
       bree.forward(100)
 
 
-Drawing any Size of Square
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dessiner un carré de n'importe quelle taille
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a program that uses the turtle module to draw a square. The user should be able to set a number of options each time the code runs, so the program should ask the user for: 
+Créez un programme qui utilise le module tortue pour dessiner un carré. L'utilisateur doit pouvoir définir un certain nombre d'options chaque fois que le code est exécuté. Le programme doit donc lui demander:
 
--  the width of the turtles pen
--  the turtle color
--  the length of the sides of the square that will be drawn
--  the background color to use
+- la largeur du stylo de la tortue
+- la couleur de la tortue
+- la longueur des côtés du carré qui sera tracé
+- la couleur de fond à utiliser
    
-*Hint:* your input from the user will return a string, but the turtles ``pensize`` method expects its argument to be an ``int``.  That means you need to convert the string to an int before you pass it to ``pensize``.
+*Hint:* votre entrée de l'utilisateur retournera une chaîne, mais la méthode ``pensize`` des tortues s'attend à ce que son argument soit un ``int``. Cela signifie que vous devez convertir la chaîne en *int* avant de la passer à ``pensize``.
 
 .. activecode:: practice_problem_turtle_intro_2
     :nocodelens:
     :enabledownload:
 
-    # Color Selection
+    # Que fait ce programme?
+    # Mon nom
+    # Date
 
     import turtle
+
+    # Mon code
+

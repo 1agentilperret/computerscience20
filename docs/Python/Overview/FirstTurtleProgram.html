@@ -213,7 +213,7 @@
 <li><a class="reference internal" href="#d-autres-programmes-melange-more-mixed-up-programs">9.4. D’autres programmes mélangé/<em>More Mixed Up Programs!</em></a></li>
 <li><a class="reference internal" href="#problemes-de-pratique">9.5. Problèmes de pratique</a><ul>
 <li><a class="reference internal" href="#selection-de-couleur">9.5.1. Sélection de couleur</a></li>
-<li><a class="reference internal" href="#drawing-any-size-of-square">9.5.2. Drawing any Size of Square</a></li>
+<li><a class="reference internal" href="#dessiner-un-carre-de-n-importe-quelle-taille">9.5.2. Dessiner un carré de n’importe quelle taille</a></li>
 </ul>
 </li>
 </ul>
@@ -549,67 +549,67 @@ wn.exitonclick()
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Color Selection
+# Sélection de couleur
 
 import turtle
 
-# create window, and set it's color
+# créer une fenêtre et définir sa couleur
 canvas = turtle.Screen()
 canvas.bgcolor("lightgreen")
 
-#create the turtle, and it's attributes
+# créer la tortue, et ses attributs
 bree = turtle.Turtle()
 bree.color("blue")
 bree.pensize(3)
 
-#draw!
+#dessiner!
 bree.forward(100)
 bree.right(60)
 bree.forward(100)
 </textarea>
 </div>
-<p><strong>Do not look</strong> at this sample solution unless you have already finished creating your own solution!</p>
+<p><strong>Ne regardez pas</strong> cet exemple de solution à moins que vous n’ayez déjà fini de créer votre propre solution!</p>
 
-    <div data-component="reveal" id="reveal_solution_practice_problem_turtle_intro_1"   data-showtitle="Reveal Solution" data-hidetitle="Hide Solution" >
-    <p>The following solution will work well in the browser, where a text input box appears automatically when you call the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Color Selection</span>
+    <div data-component="reveal" id="reveal_solution_practice_problem_turtle_intro_1"   data-showtitle="Voir la Solution" data-hidetitle="Masquer la Solution" >
+    <p>La solution suivante fonctionnera bien dans le navigateur, où une zone de saisie de texte apparaît automatiquement lorsque vous appelez la fonction <code class="docutils literal notranslate"><span class="pre">input()</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sélection de couleur</span>
 
 <span class="kn">import</span> <span class="nn">turtle</span>
 
-<span class="c1"># create window, and set it&#39;s color</span>
+<span class="c1"># créer une fenêtre et définir sa couleur</span>
 <span class="n">canvas</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-<span class="n">the_background_color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter a background color: &quot;</span><span class="p">)</span>
+<span class="n">the_background_color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer une couleur de l&#39;arrière-plan:&quot;</span><span class="p">)</span>
 <span class="n">canvas</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="n">the_background_color</span><span class="p">)</span>
 
-<span class="c1">#create the turtle, and it&#39;s attributes</span>
+<span class="c1"># créer la tortue, et ses attributs</span>
 <span class="n">bree</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">brees_color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter the color of the turtle: &quot;</span><span class="p">)</span>
+<span class="n">brees_color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer la couleur de la tortue:&quot;</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">brees_color</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="c1">#draw!</span>
+<span class="c1">#dessiner!</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>If you are using Thonny to create your solution, you will likely want to use the <code class="docutils literal notranslate"><span class="pre">screen.textinput(&quot;window</span> <span class="pre">name&quot;,</span> <span class="pre">&quot;question</span> <span class="pre">to</span> <span class="pre">ask&quot;)</span></code> function when asking for user input. Here is a version that does that:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Color Selection</span>
+<p>Si vous utilisez Thonny pour créer votre solution, vous souhaiterez probablement utiliser la fonction <code class="docutils literal notranslate"><span class="pre">screen.textinput(&quot;nom</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">fenêtre&quot;,</span> <span class="pre">&quot;question</span> <span class="pre">à</span> <span class="pre">poser&quot;)</span></code> lors de la demande de saisie de l’utilisateur. Voici une version qui fait ça:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sélection de couleur</span>
 
 <span class="kn">import</span> <span class="nn">turtle</span>
 
-<span class="c1"># create window, and set it&#39;s color</span>
+<span class="c1"># créer une fenêtre et définir sa couleur</span>
 <span class="n">canvas</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-<span class="n">the_background_color</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Color&quot;</span><span class="p">,</span> <span class="s2">&quot;Please enter a background color: &quot;</span><span class="p">)</span>
+<span class="n">the_background_color</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Couleur&quot;</span><span class="p">,</span> <span class="s2">&quot;Veuillez saisir une couleur d&#39;arrière-plan: &quot;</span><span class="p">)</span>
 <span class="n">canvas</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="n">the_background_color</span><span class="p">)</span>
 
-<span class="c1">#create the turtle, and it&#39;s attributes</span>
+<span class="c1"># créer la tortue, et ses attributs</span>
 <span class="n">bree</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">brees_color</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Color&quot;</span><span class="p">,</span> <span class="s2">&quot;Please enter the color of the turtle: &quot;</span><span class="p">)</span>
+<span class="n">brees_color</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="s2">&quot;Couleur&quot;</span><span class="p">,</span> <span class="s2">&quot;Veuillez saisir la couleur de la tortue:&quot;</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">brees_color</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="c1">#draw!</span>
+<span class="c1">#dessiner!</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
 <span class="n">bree</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -618,16 +618,16 @@ bree.forward(100)
 
     </div>
     </div>
-<div class="section" id="drawing-any-size-of-square">
-<h3>9.5.2. Drawing any Size of Square<a class="headerlink" href="#drawing-any-size-of-square" title="Permalink to this headline">¶</a></h3>
-<p>Create a program that uses the turtle module to draw a square. The user should be able to set a number of options each time the code runs, so the program should ask the user for:</p>
+<div class="section" id="dessiner-un-carre-de-n-importe-quelle-taille">
+<h3>9.5.2. Dessiner un carré de n’importe quelle taille<a class="headerlink" href="#dessiner-un-carre-de-n-importe-quelle-taille" title="Permalink to this headline">¶</a></h3>
+<p>Créez un programme qui utilise le module tortue pour dessiner un carré. L’utilisateur doit pouvoir définir un certain nombre d’options chaque fois que le code est exécuté. Le programme doit donc lui demander:</p>
 <ul class="simple">
-<li>the width of the turtles pen</li>
-<li>the turtle color</li>
-<li>the length of the sides of the square that will be drawn</li>
-<li>the background color to use</li>
+<li>la largeur du stylo de la tortue</li>
+<li>la couleur de la tortue</li>
+<li>la longueur des côtés du carré qui sera tracé</li>
+<li>la couleur de fond à utiliser</li>
 </ul>
-<p><em>Hint:</em> your input from the user will return a string, but the turtles <code class="docutils literal notranslate"><span class="pre">pensize</span></code> method expects its argument to be an <code class="docutils literal notranslate"><span class="pre">int</span></code>.  That means you need to convert the string to an int before you pass it to <code class="docutils literal notranslate"><span class="pre">pensize</span></code>.</p>
+<p><em>Hint:</em> votre entrée de l’utilisateur retournera une chaîne, mais la méthode <code class="docutils literal notranslate"><span class="pre">pensize</span></code> des tortues s’attend à ce que son argument soit un <code class="docutils literal notranslate"><span class="pre">int</span></code>. Cela signifie que vous devez convertir la chaîne en <em>int</em> avant de la passer à <code class="docutils literal notranslate"><span class="pre">pensize</span></code>.</p>
 
 <div data-childcomponent="practice_problem_turtle_intro_2" class="runestone explainer ac_section alert alert-warning">
 
@@ -635,9 +635,13 @@ bree.forward(100)
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Color Selection
+# Que fait ce programme?
+# Mon nom
+# Date
 
 import turtle
+
+# Mon code
 </textarea>
 </div>
 </div>
