@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>10. Multiple Turtles and for Loops &#8212; Computer Science 20 Saskatchewan</title>
+    <title>10. Plusieurs tortues et boucles for &#8212; Computer Science 20 Saskatchewan</title>
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -110,7 +110,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="11. Logical Operators" href="LogicalOperators.html" />
-    <link rel="prev" title="9. Our First Turtle Program" href="FirstTurtleProgram.html" />
+    <link rel="prev" title="9. Notre premier programme de Turtues/Turtle" href="FirstTurtleProgram.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -203,21 +203,21 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">10. Multiple Turtles and <code class="docutils literal notranslate"><span class="pre">for</span></code> Loops</a><ul>
-<li><a class="reference internal" href="#instances-a-herd-of-turtles">10.1. Instances — A Herd of Turtles</a><ul>
-<li><a class="reference internal" href="#mixed-up-programs">10.1.1. Mixed Up Programs</a></li>
+<li><a class="reference internal" href="#">10. Plusieurs tortues et boucles <code class="docutils literal notranslate"><span class="pre">for</span></code></a><ul>
+<li><a class="reference internal" href="#instances-un-troupeau-de-tortues">10.1. Instances — Un troupeau de tortues</a><ul>
+<li><a class="reference internal" href="#programmes-melanges-mixed-up-programs">10.1.1. Programmes mélangés - Mixed Up Programs</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#the-for-loop">10.2. The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
-<li><a class="reference internal" href="#iteration-simplifies-our-turtle-program">10.3. Iteration Simplifies our Turtle Program</a><ul>
-<li><a class="reference internal" href="#id1">10.3.1. Mixed Up Programs</a></li>
+<li><a class="reference internal" href="#la-boucle-for-loop">10.2. La boucle <code class="docutils literal notranslate"><span class="pre">for</span></code> <em>Loop</em></a></li>
+<li><a class="reference internal" href="#iteration-simplifie-notre-programme-de-tortue">10.3. Itération simplifie notre programme de tortue</a><ul>
+<li><a class="reference internal" href="#programmes-mixtes">10.3.1. Programmes mixtes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#the-range-function">10.4. The Range Function</a></li>
-<li><a class="reference internal" href="#practice-problems">10.5. Practice Problems</a><ul>
-<li><a class="reference internal" href="#regular-polygons">10.5.1. Regular Polygons</a></li>
-<li><a class="reference internal" href="#draw-a-star">10.5.2. Draw a Star</a></li>
-<li><a class="reference internal" href="#drawing-a-clock">10.5.3. Drawing a Clock</a></li>
+<li><a class="reference internal" href="#la-fonction-de-portee-the-range-function">10.4. La fonction de portée - <em>The Range Function</em></a></li>
+<li><a class="reference internal" href="#problemes-de-pratique">10.5. Problèmes de pratique</a><ul>
+<li><a class="reference internal" href="#polygones-reguliers">10.5.1. Polygones réguliers</a></li>
+<li><a class="reference internal" href="#dessiner-une-etoile">10.5.2. Dessiner une étoile</a></li>
+<li><a class="reference internal" href="#dessiner-une-horloge">10.5.3. Dessiner une horloge</a></li>
 </ul>
 </li>
 </ul>
@@ -229,7 +229,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - 9. Our First Turtle Program" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - 9. Notre premier programme de Turtues/<em>Turtle</em>" data-toggle="tooltip">
     <a href="FirstTurtleProgram.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -266,11 +266,11 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="multiple-turtles-and-for-loops">
-<h1>10. Multiple Turtles and <code class="docutils literal notranslate"><span class="pre">for</span></code> Loops<a class="headerlink" href="#multiple-turtles-and-for-loops" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="plusieurs-tortues-et-boucles-for">
+<h1>10. Plusieurs tortues et boucles <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#plusieurs-tortues-et-boucles-for" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Quick Overview of Day</p>
-<p>Explore how to instantiate more than one turtle object in the same program. Introduce the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, and use the <code class="docutils literal notranslate"><span class="pre">range()</span></code> function to simplify the creation of large for loops.</p>
+<p class="topic-title first">Aperçu rapide de la journée</p>
+<p>Découvrez comment déplacer plusieurs tortues dans le même programme. Présenter la boucle <code class="docutils literal notranslate"><span class="pre">for</span></code> et utilisez la fonction <code class="docutils literal notranslate"><span class="pre">range()</span></code> pour simplifier la création de grandes boucles <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 </div>
 
     <div data-component="reveal" id="curriculum_addressed_intro_for_loops"   data-showtitle="Résultats du programme d'études traités dans cette section." data-hidetitle="Cacher les résultat du programme" >
@@ -282,14 +282,9 @@
 </ul>
 
     </div>
-    <div class="section" id="instances-a-herd-of-turtles">
-<h2>10.1. Instances — A Herd of Turtles<a class="headerlink" href="#instances-a-herd-of-turtles" title="Permalink to this headline">¶</a></h2>
-<p>Just like we can have many different integers in a program, we can have many
-turtles.  Each of them is an independent object, and we call each one an <strong>instance</strong> of the Turtle type (class).  Each instance has its own
-attributes and methods — so alex might draw with a thin black pen and be at
-some position, while tess might be going in her own direction with a fat pink
-pen.  So here is what happens when alex completes a square and tess
-completes a triangle:</p>
+    <div class="section" id="instances-un-troupeau-de-tortues">
+<h2>10.1. Instances — Un troupeau de tortues<a class="headerlink" href="#instances-un-troupeau-de-tortues" title="Permalink to this headline">¶</a></h2>
+<p>Tout comme nous pouvons avoir plusieurs nombres entiers différents dans un programme, nous pouvons avoir plusieurs tortues. Chacun d’entre eux est un objet indépendant, et nous appelons chacun une <strong>instance</strong> de la classe du type Turtle. Chaque instance a ses propres attributs et méthodes - ainsi alex pourrait dessiner avec un mince stylo noir et se trouver à une certaine position, tandis que tess pourrait se diriger dans sa propre direction avec un gros stylo rose. Voici donc ce qui se passe quand alex complète un carré et que tess complète un triangle:</p>
 
 <div data-childcomponent="for-loops-1" class="runestone explainer ac_section alert alert-warning">
 
@@ -297,20 +292,20 @@ completes a triangle:</p>
       data-timelimit=25000    
     data-audio=''    
           >
-# Set up the window and its attributes
+# Configurer la fenêtre et ses attributs
 import turtle
 wn = turtle.Screen()
 wn.bgcolor("lightgreen")
 
-# create tess and set some attributes
+# créer tess et définir ses attributs
 tess = turtle.Turtle()
 tess.color("hotpink")
 tess.pensize(5)
 
-# create alex, who is a second turtle object
+# créer alex, la deuxième tortue
 alex = turtle.Turtle()
 
-# Let tess draw an equilateral triangle
+# Tess dessine un triangle équilatéral
 tess.forward(80)
 tess.left(120)
 tess.forward(80)
@@ -318,11 +313,11 @@ tess.left(120)
 tess.forward(80)
 tess.left(120)
 
-# turn tess around, and move her away from the origin
+# retourne tess et éloigne-la de l'origine
 tess.right(180)
 tess.forward(80)
 
-# make alex draw a square
+# fais alex dessiner un carré
 alex.forward(50)
 alex.left(90)
 alex.forward(50)
@@ -335,28 +330,18 @@ alex.left(90)
 wn.exitonclick()
 </textarea>
 </div>
-<p>Here are some <em>How to think like a computer scientist</em> observations:</p>
+<p>Voici quelques observation qui aide à <em>penser comme un informaticien</em>:</p>
 <ul class="simple">
-<li>We could have left out the last turn for alex, but that would not have been
-as satisfying.  If you’re asked to draw a closed shape like a square or a
-rectangle, it is a good idea to complete all the turns and to leave the
-turtle back where it started, facing the same direction as it started in.
-This makes reasoning about the program and composing chunks of code into
-bigger programs easier for us humans!</li>
-<li>We did the same with tess: she drew her triangle and turned through a full
-360 degress.  Then we turned her around and moved her aside.  Even the blank
-line 21 is a hint about how the programmer’s <em>mental chunking</em> is working: in
-big terms, tess’ movements were chunked as “draw the triangle”  (lines 15-20)
-and then “move away from the origin” (lines 22 and 23).</li>
-<li>One of the key uses for comments is to record your mental chunking, and big
-ideas. They’re not always explicit in the code.</li>
+<li>Nous aurions pu laisser le dernier virage pour alex, mais cela n’aurait pas été aussi satisfaisant. Si on vous demande de dessiner une forme fermée comme un carré ou un rectangle, il est judicieux de terminer tous les tours et de laisser la tortue à son point de départ, dans la même direction que celle dans laquelle elle a démarré. Cela rend le programme et la composition de morceaux de code dans de plus gros programmes plus facile à créer pour nous les humains!</li>
+<li>Nous avons fait la même chose avec tess: elle a tracé son triangle et elle a parcouru 360 degrés. Puis nous l’avons retournée et l’avons déplacée de l’origine. Même la ligne vierge 21 indique comment fonctionne le <em>découpage mental</em> du programmeur: en gros, les mouvements de tess ont été divisés en “tracer le triangle” (lignes 15-20) puis “s’éloigner de l’origine” ( lignes 22 et 23).</li>
+<li>L’une des principales utilisations des commentaires est d’enregistrer votre découpage mental et vos grandes idées. Ils ne sont pas toujours explicites dans le code.</li>
 </ul>
-<div class="section" id="mixed-up-programs">
-<h3>10.1.1. Mixed Up Programs<a class="headerlink" href="#mixed-up-programs" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="programmes-melanges-mixed-up-programs">
+<h3>10.1.1. Programmes mélangés - Mixed Up Programs<a class="headerlink" href="#programmes-melanges-mixed-up-programs" title="Permalink to this headline">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="for-loops-parsons-1"      >
-        <span data-question>intro-for-loops1: The following program has one turtle, "jamal", draw a capital L in blue and then another, "tina", draw a line to the west in orange as shown to the left, <img src="../../_static/parsons/TwoTurtles1.png" width="150" align="left" hspace="10" vspace="5" />.  The program should do all set-up, have "jamal" draw the L, and then have "tina" draw the line.   Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p></span>import turtle
+        <span data-question>intro-for-loops1: Le programme suivant contient une tortue "jamal", tracez un L majuscule en bleu, puis une autre, "tina", tracez une ligne à l'ouest en orange, comme indiqué à gauche, <img src="../../_static/parsons/TwoTurtles1.png" width="150" align="left" hspace="10" vspace="5" />. Le programme doit faire tous les réglages, faire "jamal" tracer le L, puis "tina" tracer la ligne. Enfin, il faut définir la fermeture de la fenêtre lorsque l'utilisateur clique dessus. <br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche à la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si certaines des lignes sont dans le mauvais ordre.</p></span>import turtle
 wn = turtle.Screen()
 ---
 jamal = turtle.Turtle()
@@ -380,7 +365,7 @@ wn.exitonclick()
     
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="for-loops-parsons-2"      >
-        <span data-question>intro-for-loops2: The following program has one turtle, "jamal", draw a line to the north in blue and then another, "tina", draw a line to the east in orange as shown to the left, <img src="../../_static/parsons/TwoTurtlesL.png" width="150" align="left" hspace="10" vspace="5" />.  The program should import the turtle module, get the window to draw on, create the turtle "jamal", have it draw a line to the north, then create the turtle "tina", and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p></span>import turtle
+        <span data-question>intro-for-loops2: Le programme suivant contient une tortue "jamal", tracez une ligne au nord en bleu puis une autre, "tina", une ligne à l'est en orange, comme indiqué à gauche, <img src="../../_static/parsons/TwoTurtlesL.png" width="150" align="left" hspace="10" vspace="5" />. Le programme doit importer le module tortue, obtenir la fenêtre sur laquelle dessiner, créer la tortue "jamal", la faire tracer une ligne au nord, puis créer la tortue "tina" et la faire tracer une ligne à l'est. Enfin, il convient de définir la fermeture de la fenêtre lorsque l'utilisateur clique dessus. <br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche à la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si certaines des lignes sont dans le mauvais ordre. </p></span>import turtle
 ---
 wn = turtle.Screen()
 ---
@@ -401,16 +386,11 @@ wn.exitonclick()
         </div>
     </div>
 </div>
-<div class="section" id="the-for-loop">
-<span id="index-0"></span><h2>10.2. The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#the-for-loop" title="Permalink to this headline">¶</a></h2>
-<p>When we drew a square yesterday, it was quite tedious.  We had to move then turn, move
-then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
-or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.</p>
-<p>As we have seen previously, using <strong>iteration</strong> to repeat code over and over can solve the copy/pasting code problem we encountered when drawing a square.</p>
-<p>In Python, the <strong>for</strong> statement allows us to write programs that implement iteration.   As a simple example, let’s say we have some friends, and
-we’d like to send them each an email inviting them to our party.  We
-don’t quite know how to send email yet, so for the moment we’ll just print a
-message for each friend.</p>
+<div class="section" id="la-boucle-for-loop">
+<span id="index-0"></span><h2>10.2. La boucle <code class="docutils literal notranslate"><span class="pre">for</span></code> <em>Loop</em><a class="headerlink" href="#la-boucle-for-loop" title="Permalink to this headline">¶</a></h2>
+<p>Quand nous avons dessiné un carré durant la dernière leçon, c’était très long, presque pénible. Nous avons dû bouger puis tourner, bouger puis tourner, etc. etc. quatre fois. Si nous dessinions un hexagone, un octogone ou un polygone à 42 côtés, cela aurait été un cauchemar de dupliquer tout ce code.</p>
+<p>Comme nous l’avons vu précédemment, utiliser <strong>itération</strong> pour répéter le code à plusieurs reprises peut résoudre le problème de copier/coller de code rencontré lors de la révision de code.</p>
+<p>En Python, l’instruction <strong>for</strong> nous permet d’écrire des programmes qui implémentent l’itération. À titre d’exemple simple, supposons que nous avons des amis et que nous aimerions leur envoyer chacun un courrier électronique les invitant à notre fête. Nous ne savons pas encore comment envoyer un email, alors pour le moment, nous allons simplement imprimer un message pour chaque ami.</p>
 
 <div data-childcomponent="for-loops-2" class="runestone explainer ac_section alert alert-warning">
 
@@ -418,46 +398,34 @@ message for each friend.</p>
       data-timelimit=25000  data-codelens="true"  
     data-audio=''    
           >
-for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-    print("Hi", name, "Please come to my party on Saturday!")
+for nom in ["Joe", "Amy", "Brad", "Angelina", "Ally", "Jack", "Paris"]:
+    print("Bonjour", nom, "venez s'il vous plait à ma fête samedi!!")
 </textarea>
 </div>
-<p>Take a look at the output produced when you press the <code class="docutils literal notranslate"><span class="pre">run</span></code> button.  There is one line printed for each friend.  Here’s how it works:</p>
+<p>Jetez un coup d’oeil à la sortie produite lorsque vous appuyez sur le bouton <code class="docutils literal notranslate"><span class="pre">run</span></code>. Il y a une ligne imprimée pour chaque ami. Voici comment ça fonctionne:</p>
 <ul class="simple">
-<li><strong>name</strong> in this <code class="docutils literal notranslate"><span class="pre">for</span></code> statement is called the <strong>loop variable</strong>.</li>
-<li>The list of names in the square brackets is called a Python <strong>list</strong>.
-Lists are very useful.  We will have much more to say about them later.</li>
-<li>Line 2  is the <strong>loop body</strong>.  The loop body is always
-indented. The indentation determines exactly what statements are “in the
-loop”.  The loop body is performed one time for each name in the list.</li>
-<li>On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if
-there are still more items to be processed.  If there are none left (this is
-called the <strong>terminating condition</strong> of the loop), the loop has finished.
-Program execution continues at the next statement after the loop body.</li>
-<li>If there are items still to be processed, the loop variable is updated to
-refer to the next item in the list.  This means, in this case, that the loop
-body is executed here 7 times, and each time <code class="docutils literal notranslate"><span class="pre">name</span></code> will refer to a different
-friend.</li>
-<li>At the end of each execution of the body of the loop, Python returns
-to the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement, to see if there are more items to be handled.</li>
+<li><strong>nom</strong> dans cette déclaration <code class="docutils literal notranslate"><span class="pre">for</span></code> est appelé <strong>variable de boucle</strong>.</li>
+<li>La liste des noms entre crochets s’appelle une <strong>liste</strong> Python. Les listes sont très utiles. Nous aurons beaucoup plus à dire à leur sujet plus tard.</li>
+<li>La ligne 2 est le <strong>corps de la boucle/*loop body*</strong>. Le corps de la boucle est toujours en retrait. L’indentation détermine exactement quelles instructions sont “dans la boucle”. Le corps de la boucle est exécuté une fois pour chaque nom de la liste.</li>
+<li>à chaque <em>itération</em> ou <em>passe</em> de la boucle, une vérification est effectuée pour voir s’il reste encore des éléments à traiter. S’il n’en reste aucun (c’est ce qu’on appelle la <strong>condition de fin/*terminating condition*</strong> de la boucle), la boucle est terminée. L’exécution du programme se poursuit à l’instruction suivante après le corps de la boucle.</li>
+<li>S’il reste des éléments à traiter, la variable de boucle est mise à jour pour faire référence à l’élément suivant de la liste. Cela signifie que, dans ce cas, le corps de la boucle est exécuté ici 7 fois et chaque fois, <code class="docutils literal notranslate"><span class="pre">nom</span></code> fera référence à un ami différent.</li>
+<li>A la fin de chaque exécution du corps de la boucle, Python retourne à l’instruction <code class="docutils literal notranslate"><span class="pre">for</span></code>, pour voir s’il y a plus d’éléments à gérer.</li>
 </ul>
-<p>A codelens demonstration is a good way to help you visualize exactly how the flow of control
-works with the for loop. Click on the <strong>Show CodeLens</strong> button in the example above. Try stepping forward and backward through the program by pressing the buttons. You can see the value of <code class="docutils literal notranslate"><span class="pre">name</span></code> change as the loop iterates through the list of friends.</p>
+<p>Une démonstration de codelens est un bon moyen de vous aider à visualiser exactement comment le flux de contrôle fonctionne avec la boucle <em>for</em>. Cliquez sur le bouton <strong>Show CodeLens</strong> dans l’exemple ci-dessus. Essayez d’avancer et de revenir en arrière dans le programme en appuyant sur les boutons. Vous pouvez voir la valeur de <code class="docutils literal notranslate"><span class="pre">nom</span></code> changer pendant que la boucle parcourt la liste d’amis.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>Although you might not want to worry about this yet, it is <strong>really</strong> useful to know that you can access any specific part of list by providing it’s index value in square brackets, such as <code class="docutils literal notranslate"><span class="pre">some_list[2]</span></code> (the first element has an index of 0, the second has an index of 1, etc). Consider the following:</p>
+<p>Bien que vous ne souhaitiez pas vous inquiéter pour le moment, il est vraiment utile de savoir que vous pouvez accéder à n’importe quelle partie de la liste en fournissant sa valeur d’index entre crochets, comme <a href="#id1"><span class="problematic" id="id2">``</span></a>une_liste[2]``( le premier élément a un indice de 0, le second un indice de 1, etc.). Considérer ce qui suit:</p>
 <div class="last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;James&quot;</span><span class="p">,</span> <span class="s2">&quot;Malindu&quot;</span><span class="p">,</span> <span class="s2">&quot;Michelle&quot;</span><span class="p">,</span> <span class="s2">&quot;Zoe&quot;</span><span class="p">,</span> <span class="s2">&quot;Eli&quot;</span><span class="p">,</span> <span class="s2">&quot;Bree&quot;</span><span class="p">]</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># prints James</span>
-<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># prints Zoe</span>
+<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># va imprimer James</span>
+<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># va imprimer Zoe</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="iteration-simplifies-our-turtle-program">
-<h2>10.3. Iteration Simplifies our Turtle Program<a class="headerlink" href="#iteration-simplifies-our-turtle-program" title="Permalink to this headline">¶</a></h2>
-<p>To draw a square we’d like to do the same thing four times — move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
-square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the <cite>forward</cite> and <cite>left</cite> four times, one time for each value in the list.</p>
+<div class="section" id="iteration-simplifie-notre-programme-de-tortue">
+<h2>10.3. Itération simplifie notre programme de tortue<a class="headerlink" href="#iteration-simplifie-notre-programme-de-tortue" title="Permalink to this headline">¶</a></h2>
+<p>Pour dessiner un carré, nous aimerions faire la même chose quatre fois: déplacez la tortue vers l’avant et tournez de 90 degrés. Nous avons précédemment utilisé 8 lignes de code Python pour faire dessiner par alex les quatre côtés d’un carré. Le programme suivant fait exactement la même chose mais, à l’aide de la déclaration <code class="docutils literal notranslate"><span class="pre">for</span></code>, n’utilise que trois lignes (sans le code de configuration). Rappelez-vous que l’instruction <code class="docutils literal notranslate"><span class="pre">for</span></code> répètera <cite>forward</cite> et <cite>left</cite> quatre fois, une fois pour chaque valeur de la liste.</p>
 
 <div data-childcomponent="ch03_for1" class="runestone explainer ac_section alert alert-warning">
 
@@ -467,11 +435,11 @@ square.  This next program does exactly the same thing but, with the help of the
           >
 import turtle
 
-# setup the drawing environment
+# configurer l'environnement de dessin
 wn = turtle.Screen()
 alex = turtle.Turtle()
 
-# the following repeats 4 times
+# le suivant répète 4 fois
 for i in [0, 1, 2, 3]:
     alex.forward(50)
     alex.left(90)
@@ -479,12 +447,8 @@ for i in [0, 1, 2, 3]:
 wn.exitonclick()
 </textarea>
 </div>
-<p>While “saving some lines of code” might be convenient, it is not the big
-deal here.  What is much more important is that we’ve found a “repeating
-pattern” of statements, and we reorganized our program to repeat the pattern.
-Finding the chunks and somehow getting our programs arranged around those
-chunks is a vital skill when learning <em>How to think like a computer scientist</em>.</p>
-<p>It is also important to realize that we could have used a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop to accomplish the same drawing, and a version that does just that is below:</p>
+<p>Bien que “sauvegarder quelques lignes de code” puisse être pratique, ce n’est pas le gros problème ici. Ce qui est beaucoup plus important, c’est que nous avons trouvé un “patron répétitif” et que nous avons réorganisé notre programme pour le répéter. Trouver les morceaux et organiser d’une manière ou d’une autre nos programmes autour de ces morceaux est une compétence vitale pour apprendre <em>Comment penser comme un informaticien</em>.</p>
+<p>Il est également important de réaliser que nous aurions pu utiliser une boucle <code class="docutils literal notranslate"><span class="pre">while</span></code> pour réaliser le même dessin, et une version qui le fait est la suivante:</p>
 
 <div data-childcomponent="ch03_for123" class="runestone explainer ac_section alert alert-warning">
 
@@ -494,22 +458,22 @@ chunks is a vital skill when learning <em>How to think like a computer scientist
           >
 import turtle
 
-# setup the drawing environment
+# configurer l'environnement de dessin
 wn = turtle.Screen()
 alex = turtle.Turtle()
 
-# the following repeats 4 times
-counter = 0
-while counter < 4:
+# le suivant répète 4 fois
+counteur = 0
+while counteur < 4:
     alex.forward(50)
     alex.left(90)
-    counter = counter + 1
+    counteur = counteur + 1
 
 wn.exitonclick()
 </textarea>
 </div>
-<p>Notice that although this code does the same thing as the for loop version, it requires some extra code compared to the for loop version. Generally speaking, if you know ahead of time how many times a loop should iterate, you should use a for loop (for example, iterating 4 times to draw a square). If you don’t know ahead of time how many times a loop should iterate, a while loop is a better choice (for example, iterating until Reeborg had a wall in front of it).</p>
-<p>Thinking back to the for loop version we saw above, the values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values. For example, consider the following program.</p>
+<p>Notez que, bien que ce code fasse la même chose que la version de la boucle <em>for</em>, il nécessite un code supplémentaire par rapport à la version de la boucle <em>for</em>. En règle générale, si vous savez à l’avance combien de fois une boucle doit être itérée, vous devez utiliser une boucle <em>for</em> (par exemple, itérer 4 fois pour dessiner un carré). Si vous ne savez pas à l’avance combien de fois une boucle doit itérer, une boucle while est un meilleur choix (par exemple, itérer jusqu’à ce que Reeborg ait un mur devant lui).</p>
+<p>En repensant à la version de la boucle <em>for</em> que nous avons vue ci-dessus, les valeurs [0,1,2,3] ont été fournies pour que le corps de la boucle s’exécute 4 fois. Nous aurions pu utiliser autre valeurs pour les quatres valeurs. Par exemple, considérons le programme suivant.</p>
 
 <div data-childcomponent="ch03_forcolor" class="runestone explainer ac_section alert alert-warning">
 
@@ -519,11 +483,11 @@ wn.exitonclick()
           >
 import turtle
 
-# setup the drawing environment
+# configurer l'environnement de dessin
 wn = turtle.Screen()
 alex = turtle.Turtle()
 
-# the following repeats 4 times
+# le suivant répète 4 fois
 for i in [0, 1, 2, 3]:
     alex.forward(50)
     alex.left(90)
@@ -531,8 +495,7 @@ for i in [0, 1, 2, 3]:
 wn.exitonclick()
 </textarea>
 </div>
-<p>In the previous example, there were four integers in the list.  This time there are four strings.  Since there are four items in the list, the iteration will still occur four times.  <code class="docutils literal notranslate"><span class="pre">some_color</span></code> will
-take on each color in the list.  We can even take this one step further and use the value of <code class="docutils literal notranslate"><span class="pre">some_color</span></code> as part of the computation.</p>
+<p>Dans l’exemple précédent, il y avait quatre entiers dans la liste. Cette fois, il y a quatre chaînes. Puisqu’il y a quatre éléments dans la liste, l’itération aura lieu quatre fois. <code class="docutils literal notranslate"><span class="pre">des_couleurs</span></code> prendra chacune des couleurs de la liste. Nous pouvons même aller un peu plus loin et utiliser la valeur de <code class="docutils literal notranslate"><span class="pre">des_couleurs</span></code> dans l’exécution du code.</p>
 
 <div data-childcomponent="colorlist" class="runestone explainer ac_section alert alert-warning">
 
@@ -542,30 +505,30 @@ take on each color in the list.  We can even take this one step further and use 
           >
 import turtle
 
-# setup the drawing environment
+# configurer l'environnement de dessin
 wn = turtle.Screen()
 alex = turtle.Turtle()
 
-for some_color in ["yellow", "red", "purple", "blue"]:
-    alex.color(some_color)
+for des_couleurs in ["yellow", "red", "purple", "blue"]:
+    alex.color(des_couleurs)
     alex.forward(50)
     alex.left(90)
 
 wn.exitonclick()
 </textarea>
 </div>
-<p>In this case, the value of <code class="docutils literal notranslate"><span class="pre">some_color</span></code> is used to change the color attribute of <code class="docutils literal notranslate"><span class="pre">alex</span></code>.  Each iteration causes <code class="docutils literal notranslate"><span class="pre">some_color</span></code> to change to the next value in the list.</p>
-<div class="section" id="id1">
-<h3>10.3.1. Mixed Up Programs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Dans ce cas, la valeur de <code class="docutils literal notranslate"><span class="pre">des_couleurs</span></code> est utilisée pour modifier l’attribut de couleur de <code class="docutils literal notranslate"><span class="pre">alex</span></code>. À chaque itération, <code class="docutils literal notranslate"><span class="pre">des_couleurs</span></code> passe à la valeur suivante de la liste.</p>
+<div class="section" id="programmes-mixtes">
+<h3>10.3.1. Programmes mixtes<a class="headerlink" href="#programmes-mixtes" title="Permalink to this headline">¶</a></h3>
 
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="3_8"      >
-        <span data-question>intro-for-loops3: The following program uses a turtle to draw a triangle as shown to the left, <img src="../../_static/parsons/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p></span>import turtle
+        <span data-question>intro-for-loops3: Le programme suivant utilise une tortue pour dessiner un triangle comme celui à la gauche, <img src="../../_static/parsons/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires et créer la tortue. Après cela, itérer (passe par la boucle) 3 fois, et la tortue doit avancer de 175 pixels, puis à gauche à 120 degrés à chaque fois qu'on passe par la boucle. Après la boucle, configurez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus.<br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. indention. Cliquez sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si l’une des lignes est dans le mauvais ordre ou mal mise en retrait.</p></span>import turtle
 ---
 wn = turtle.Screen()
 marie = turtle.Turtle()
 ---
-# repeat 3 times
+# répéter 3 fois
 for i in [0,1,2]:
 ---
  marie.forward(175)
@@ -578,11 +541,12 @@ wn.exitonclick()
     
         <div class="runestone" style="max-width: none;">
         <pre data-component="parsons" id="3_9"      >
-        <span data-question>intro-for-loops4: The following program uses a turtle to draw a rectangle as shown to the left, <img src="../../_static/parsons/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p></span>import turtle
+        <span data-question>intro-for-loops4:  Le programme suivant utilise une tortue pour dessiner un rectangle comme celui à la gauche, <img src="../../_static/parsons/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires et créer la tortue. Après cela, itérer (passe par la boucle) 2 fois, et chaque fois qu'on passe par la boucle, la tortue devrait avancer de 175 pixels, tourner à droite de 90 degrés, avancer de 150 pixels et tourner à droite de 90 degrés. Après la boucle, configurez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus.<br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. indention. Cliquez sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si l’une des lignes est dans le mauvais ordre ou mal mise en retrait.</p>
+</span>import turtle
 wn = turtle.Screen()
 carlos = turtle.Turtle()
 ---
-# repeat 2 times
+# répéter 2 fois
 for i in [1,2]:
 ---
     carlos.forward(175)
@@ -595,23 +559,23 @@ for i in [1,2]:
 wn.exitonclick()
         </pre>
         </div>
-    <p><strong>Check your understanding</strong></p>
+    <p><strong>Vérifie ta compréhension</strong></p>
 
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_4_1">
-            <p>intro-for-loops5: In the following code, how many lines does this code print?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="s2">&quot;cookies.  I&#39;m going to eat one.&quot;</span><span class="p">)</span>
+            <p>intro-for-loops5: Dans le code suivant, combien de lignes sera imprimé par ce code?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;J&#39;ai&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">&quot;biscuits.  Je vais en manger un.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="test_question3_4_1_opt_a">1</li><li data-component="feedback" id="test_question3_4_1_opt_a">The loop body prints one line, but the body will execute exactly one time for each element in the list [5, 4, 3, 2, 1, 0].</li>
+            <li data-component="answer"  id="test_question3_4_1_opt_a">1</li><li data-component="feedback" id="test_question3_4_1_opt_a">le corps de la boucle imprime une ligne, mais il s'exécutera seulement une fois pour chaque élément de la liste [5, 4, 3, 2, 1, 0].</li>
             
-            <li data-component="answer"  id="test_question3_4_1_opt_b">5</li><li data-component="feedback" id="test_question3_4_1_opt_b">Although the biggest number in the list is 5, there are actually 6 elements in the list.</li>
+            <li data-component="answer"  id="test_question3_4_1_opt_b">5</li><li data-component="feedback" id="test_question3_4_1_opt_b">Bien que le plus grand nombre dans la liste soit 5, il y a actuellement 6 éléments dans la liste.</li>
             
-            <li data-component="answer" data-correct id="test_question3_4_1_opt_c">6</li><li data-component="feedback" id="test_question3_4_1_opt_c">The loop body will execute (and print one line) for each of the 6 elements in the list [5, 4, 3, 2, 1, 0].</li>
+            <li data-component="answer" data-correct id="test_question3_4_1_opt_c">6</li><li data-component="feedback" id="test_question3_4_1_opt_c">le corps de la boucle sera exécuté (et imprimera une ligne) pour chacun des 6 éléments de la liste [5, 4, 3, 2, 1, 0].</li>
             
-            <li data-component="answer"  id="test_question3_4_1_opt_d">10</li><li data-component="feedback" id="test_question3_4_1_opt_d">The loop body will not execute more times than the number of elements in the list.</li>
+            <li data-component="answer"  id="test_question3_4_1_opt_d">10</li><li data-component="feedback" id="test_question3_4_1_opt_d">le corps de la boucle ne s'exécutera pas plus de fois que le nombre d'éléments de la liste.</li>
             
 
             </ul>
@@ -619,12 +583,12 @@ wn.exitonclick()
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_4_2">
-            intro-for-loops6: How does python know what statements are contained in the loop body?
-            <li data-component="answer" data-correct id="test_question3_4_2_opt_a">They are indented to the same degree from the loop header.</li><li data-component="feedback" id="test_question3_4_2_opt_a">The loop body can have any number of lines, all indented from the loop header.</li>
+            intro-for-loops6: Comment python sait-il quelles instructions sont contenues dans le corps de la boucle?
+            <li data-component="answer" data-correct id="test_question3_4_2_opt_a">Ils sont indentés au même degré que l'en-tête de la boucle.</li><li data-component="feedback" id="test_question3_4_2_opt_a">le corps de la boucle peut avoir n'importe quel nombre de lignes, toutes indenté à partir de l'en-tête de la boucle.</li>
             
-            <li data-component="answer"  id="test_question3_4_2_opt_b">There is always exactly one line in the loop body.</li><li data-component="feedback" id="test_question3_4_2_opt_b">The loop body may have more than one line.</li>
+            <li data-component="answer"  id="test_question3_4_2_opt_b">Il y a toujours exactement une ligne dans le corps de la boucle.</li><li data-component="feedback" id="test_question3_4_2_opt_b">le corps de la boucle peut avoir plus qu'une ligne.</li>
             
-            <li data-component="answer"  id="test_question3_4_2_opt_c">The loop body ends with a semi-colon (;) which is not shown in the code above.</li><li data-component="feedback" id="test_question3_4_2_opt_c">Python does not need semi-colons in its syntax, but relies mainly on indentation.</li>
+            <li data-component="answer"  id="test_question3_4_2_opt_c">Le corps de la boucle se termine par un point-virgule (;) qui n'apparaît pas dans le code ci-dessus.</li><li data-component="feedback" id="test_question3_4_2_opt_c">Python n'a pas besoin de point-virgule dans sa syntaxe, mais dépend principalement sur l'indentation.</li>
             
 
             </ul>
@@ -632,60 +596,55 @@ wn.exitonclick()
             
             <div class="runestone alert alert-warning">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question3_4_3">
-            <p>intro-for-loops7: In the following code, what is the value of number the second time Python executes the loop?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="s2">&quot;cookies.  I&#39;m going to eat one.&quot;</span><span class="p">)</span>
+            <p>intro-for-loops7: Dans le code suivant, quelle est la valeur de nombre la deuxième fois que Python exécute la boucle?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;J&#39;ai&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">&quot;biscuits.  Je vais en manger un.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 
-            <li data-component="answer"  id="test_question3_4_3_opt_a">2</li><li data-component="feedback" id="test_question3_4_3_opt_a">Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.</li>
+            <li data-component="answer"  id="test_question3_4_3_opt_a">2</li><li data-component="feedback" id="test_question3_4_3_opt_a">Python attribue à nombre la valeur des éléments de la liste, l'un après l'autre, en ordre (de gauche à droite). nombre obtient une nouvelle valeur chaque fois que la boucle se répète.</li>
             
-            <li data-component="answer" data-correct id="test_question3_4_3_opt_b">4</li><li data-component="feedback" id="test_question3_4_3_opt_b">Yes, Python will process the items from left to right so the first time the value of number is 5 and the second time it is 4.</li>
+            <li data-component="answer" data-correct id="test_question3_4_3_opt_b">4</li><li data-component="feedback" id="test_question3_4_3_opt_b">Oui, Python traitera les éléments de gauche à droite, donc la première fois, la valeur de number est 5 et la deuxième fois, elle est 4.</li>
             
-            <li data-component="answer"  id="test_question3_4_3_opt_c">5</li><li data-component="feedback" id="test_question3_4_3_opt_c">Python gives number the value of items in the list, one at a time, in order.  number gets a new value each time the loop repeats.</li>
+            <li data-component="answer"  id="test_question3_4_3_opt_c">5</li><li data-component="feedback" id="test_question3_4_3_opt_c">Python attribue à number la valeur des éléments de la liste, l'un après l'autre, en ordre. nombre obtient une nouvelle valeur chaque fois que la boucle se répète.</li>
             
-            <li data-component="answer"  id="test_question3_4_3_opt_d">1</li><li data-component="feedback" id="test_question3_4_3_opt_d">Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.</li>
+            <li data-component="answer"  id="test_question3_4_3_opt_d">1</li><li data-component="feedback" id="test_question3_4_3_opt_d">Python attribue à number la valeur des éléments de la liste, l'un après l'autre, en ordre (de gauche à droite). nombre obtient une nouvelle valeur chaque fois que la boucle se répète.</li>
             
 
             </ul>
             </div>
             </div>
 </div>
-<div class="section" id="the-range-function">
-<span id="index-1"></span><h2>10.4. The Range Function<a class="headerlink" href="#the-range-function" title="Permalink to this headline">¶</a></h2>
-<p>It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-want to write simple <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
-In fact, these lists are so popular that Python gives us special built-in
-<code class="docutils literal notranslate"><span class="pre">range</span></code> objects
-that can deliver a sequence of values to
-the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.  When called with one parameter, the sequence provided by <code class="docutils literal notranslate"><span class="pre">range</span></code> always starts with 0.  If you ask for <code class="docutils literal notranslate"><span class="pre">range(4)</span></code>, then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise, <code class="docutils literal notranslate"><span class="pre">range(10)</span></code> provides 10 values, 0 through 9.</p>
+<div class="section" id="la-fonction-de-portee-the-range-function">
+<span id="index-1"></span><h2>10.4. La fonction de portée - <em>The Range Function</em><a class="headerlink" href="#la-fonction-de-portee-the-range-function" title="Permalink to this headline">¶</a></h2>
+<p>La génération de listes avec un nombre spécifique d’entiers est très commun, surtout lorsque vous voulez écrire une simple itération contrôlée nommée <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code>. Même si vous pouvez utiliser quatre éléments ou quatre nombres entiers, le plus classique est d’utiliser une liste d’entiers commençant par 0. En fait, ces listes sont si populaires que Python donne une fonctions prédéfini <code class="docutils literal notranslate"><span class="pre">range</span></code> pouvant transmettre une séquence de valeurs à la boucle <code class="docutils literal notranslate"><span class="pre">for</span></code>. Lorsqu’elle est appelée avec un paramètre, la séquence fournie par <code class="docutils literal notranslate"><span class="pre">range</span></code> commence toujours par 0. Si vous demandez <code class="docutils literal notranslate"><span class="pre">range(4)</span></code>, vous obtiendrez 4 valeurs commençant par 0. En d’autres termes, 0, 1 , 2 et enfin 3. Notez que 4 n’est pas inclus puisqu’on commence avec 0. De même, <code class="docutils literal notranslate"><span class="pre">range(10)</span></code> fournit 10 valeurs, comprises entre 0 et 9.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-    <span class="c1"># Executes the body with i = 0, then 1, then 2, then 3</span>
+    <span class="c1"># Exécute le corps avec i = 0, puis 1, puis 2, puis 3</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="c1"># sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+    <span class="c1"># définit x comme chacun des ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Computer scientists like to count from 0!</p>
+<p class="last">Les informaticiens aiment compter à partir de 0!</p>
 </div>
-<p>So to repeat something four times, a good Python programmer would do this:</p>
+<p>Donc, pour répéter quelque chose quatre fois, un bon programmeur Python ferait ceci:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
     <span class="n">alex</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">alex</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="practice-problems">
-<h2>10.5. Practice Problems<a class="headerlink" href="#practice-problems" title="Permalink to this headline">¶</a></h2>
-<p>Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!</p>
-<p>You might find the Python Documentation for the turtle module to be helpful: <a class="reference external" href="https://docs.python.org/3/library/turtle.html">https://docs.python.org/3/library/turtle.html</a>.</p>
-<div class="section" id="regular-polygons">
-<h3>10.5.1. Regular Polygons<a class="headerlink" href="#regular-polygons" title="Permalink to this headline">¶</a></h3>
-<p>Create a program that uses for loops to make a turtle draw regular polygons (regular means all sides the same lengths, all angles the same). First, ask the user how many sides they want the polygon to have, and how long each side length should be. Now draw the regular polygon that meets the user’s requirements!</p>
+<div class="section" id="problemes-de-pratique">
+<h2>10.5. Problèmes de pratique<a class="headerlink" href="#problemes-de-pratique" title="Permalink to this headline">¶</a></h2>
+<p>Essayez les problèmes de pratique suivants. Vous pouvez travailler directement sur le site ou utiliser Thonny. Quoi qu’il en soit, veillez enregistrer votre solution dans votre dossier Informaqique 20 lorsque vous avez terminé!</p>
+<p>La documentation Python du module tortue pourrait vous être utile: <a class="reference external" href="https://docs.python.org/3/library/turtle.html">https://docs.python.org/3/library/turtle.html</a>.</p>
+<div class="section" id="polygones-reguliers">
+<h3>10.5.1. Polygones réguliers<a class="headerlink" href="#polygones-reguliers" title="Permalink to this headline">¶</a></h3>
+<p>Créez un programme qui utilise les boucles <code class="docutils literal notranslate"><span class="pre">for</span></code> pour que la tortue dessine des polygones réguliers (normal signifie que tous les côtés ont les mêmes longueurs et les mêmes angles). Tout d’abord, demandez à l’utilisateur combien de côtés il souhaite que le polygone ait et quelle longueur doit avoir chaque côté. Dessinez maintenant le polygone régulier qui répond aux exigences de l’utilisateur!</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Remember that in a regular polygon, the sum of the interior angles of the polygon will always be 360 degrees.</p>
+<p class="last">N’oubliez pas que dans un polygone régulier, la somme des angles intérieurs du polygone sera toujours de 360 ​​degrés.</p>
 </div>
 
 <div data-childcomponent="practice_problem_turtle_for_loops_1" class="runestone explainer ac_section alert alert-warning">
@@ -694,22 +653,22 @@ the <code class="docutils literal notranslate"><span class="pre">for</span></cod
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Drawing Regular Polygons
+# Dessiner des polygones réguliers
 
 import turtle
 </textarea>
 </div>
 </div>
-<div class="section" id="draw-a-star">
-<h3>10.5.2. Draw a Star<a class="headerlink" href="#draw-a-star" title="Permalink to this headline">¶</a></h3>
-<p>Create a program that uses the turtle module to draw a five sided star. The user should be able to set a number of options each time the code runs, so the program should ask the user for:</p>
+<div class="section" id="dessiner-une-etoile">
+<h3>10.5.2. Dessiner une étoile<a class="headerlink" href="#dessiner-une-etoile" title="Permalink to this headline">¶</a></h3>
+<p>Créez un programme qui utilise le module tortue pour dessiner une étoile à cinq sommets. L’utilisateur doit pouvoir définir un certain nombre d’options chaque fois que le code est exécuté. Le programme doit donc lui demander:</p>
 <ul class="simple">
-<li>the width of the turtles pen</li>
-<li>the turtle color</li>
-<li>the length of the sides of the star that will be drawn</li>
-<li>the background color to use</li>
+<li>la largeur du stylo de la tortue</li>
+<li>la couleur de la tortue</li>
+<li>la longueur des côtés de l’étoile qui sera dessinée</li>
+<li>la couleur de fond à utiliser</li>
 </ul>
-<p>One run of the program might produce a star that looks like the following:</p>
+<p>Une exécution du programme peut produire une étoile ressemblant à ceci:</p>
 <img alt="../../_images/star1.png" src="../../_images/star1.png" />
 
 <div data-childcomponent="practice_problem_turtle_for_loops_2" class="runestone explainer ac_section alert alert-warning">
@@ -718,17 +677,17 @@ import turtle
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Drawing a Star
+# Dessiner une étoile
 
 import turtle
 </textarea>
 </div>
 </div>
-<div class="section" id="drawing-a-clock">
-<h3>10.5.3. Drawing a Clock<a class="headerlink" href="#drawing-a-clock" title="Permalink to this headline">¶</a></h3>
-<p>Create a program that uses the turtle module to draw the shape of an analogue clock. Do this using <strong>ONLY ONE TURTLE object</strong>. It should look like the following:</p>
+<div class="section" id="dessiner-une-horloge">
+<h3>10.5.3. Dessiner une horloge<a class="headerlink" href="#dessiner-une-horloge" title="Permalink to this headline">¶</a></h3>
+<p>Créez un programme qui utilise le module tortue pour dessiner la forme d’une horloge analogique. Faites ceci en utilisant <strong>SEULEMENT un objet TURTLE</strong>. Cela devrait ressembler à ceci:</p>
 <img alt="../../_images/tess_clock1.png" src="../../_images/tess_clock1.png" />
-<p>You might need to explore the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Turtle documentation on the Python Docs website</a> to figure out how to leave an image of where the turtle was.</p>
+<p>Vous devrez peut-être explorer la documentation <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Turtle sur le site Web Python Docs</a> pour savoir comment laisser une image de l’emplacement de la tortue.</p>
 
 <div data-childcomponent="practice_problem_turtle_for_loops_3" class="runestone explainer ac_section alert alert-warning">
 
@@ -736,7 +695,7 @@ import turtle
       data-timelimit=25000   data-enabledownload="true" 
     data-audio=''    
           >
-# Drawing a Clock
+# Dessiner une horloge
 
 import turtle
 </textarea>
@@ -748,7 +707,7 @@ import turtle
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - 9. Our First Turtle Program' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - 9. Notre premier programme de Turtues/<em>Turtle</em>' data-toggle="tooltip">
     <a href="FirstTurtleProgram.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

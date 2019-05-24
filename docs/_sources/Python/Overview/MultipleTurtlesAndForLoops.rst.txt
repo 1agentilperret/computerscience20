@@ -3,12 +3,12 @@
    :start: 1
 
 
-Multiple Turtles and ``for`` Loops
+Plusieurs tortues et boucles ``for``
 =============================================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Explore how to instantiate more than one turtle object in the same program. Introduce the ``for`` loop, and use the ``range()`` function to simplify the creation of large for loops.
+    Découvrez comment déplacer plusieurs tortues dans le même programme. Présenter la boucle ``for`` et utilisez la fonction ``range()`` pour simplifier la création de grandes boucles ``for``.
 
 
 .. reveal:: curriculum_addressed_intro_for_loops
@@ -20,33 +20,29 @@ Multiple Turtles and ``for`` Loops
     - **CS20-FP2** Investigate how control structures affect program flow.
     - **CS20-FP4** Investigate one-dimensional arrays and their applications.
 
-Instances --- A Herd of Turtles
--------------------------------
+Instances --- Un troupeau de tortues
+---------------------------------------
 
-Just like we can have many different integers in a program, we can have many
-turtles.  Each of them is an independent object, and we call each one an **instance** of the Turtle type (class).  Each instance has its own
-attributes and methods --- so alex might draw with a thin black pen and be at
-some position, while tess might be going in her own direction with a fat pink
-pen.  So here is what happens when alex completes a square and tess
-completes a triangle:
+Tout comme nous pouvons avoir plusieurs nombres entiers différents dans un programme, nous pouvons avoir plusieurs tortues. Chacun d'entre eux est un objet indépendant, et nous appelons chacun une **instance** de la classe du type Turtle. Chaque instance a ses propres attributs et méthodes - ainsi alex pourrait dessiner avec un mince stylo noir et se trouver à une certaine position, tandis que tess pourrait se diriger dans sa propre direction avec un gros stylo rose. Voici donc ce qui se passe quand alex complète un carré et que tess complète un triangle:
+
 
 .. activecode:: for-loops-1
     :nocodelens:
 
-    # Set up the window and its attributes
+    # Configurer la fenêtre et ses attributs
     import turtle
     wn = turtle.Screen()
     wn.bgcolor("lightgreen")
 
-    # create tess and set some attributes
+    # créer tess et définir ses attributs
     tess = turtle.Turtle()
     tess.color("hotpink")
     tess.pensize(5)
 
-    # create alex, who is a second turtle object
+    # créer alex, la deuxième tortue
     alex = turtle.Turtle()
 
-    # Let tess draw an equilateral triangle
+    # Tess dessine un triangle équilatéral
     tess.forward(80)
     tess.left(120)
     tess.forward(80)
@@ -54,11 +50,11 @@ completes a triangle:
     tess.forward(80)
     tess.left(120)
 
-    # turn tess around, and move her away from the origin
+    # retourne tess et éloigne-la de l'origine
     tess.right(180)
     tess.forward(80)
 
-    # make alex draw a square
+    # fais alex dessiner un carré
     alex.forward(50)
     alex.left(90)
     alex.forward(50)
@@ -70,30 +66,18 @@ completes a triangle:
 
     wn.exitonclick()
 
+Voici quelques observation qui aide à *penser comme un informaticien*:
 
-Here are some *How to think like a computer scientist* observations:
+* Nous aurions pu laisser le dernier virage pour alex, mais cela n'aurait pas été aussi satisfaisant. Si on vous demande de dessiner une forme fermée comme un carré ou un rectangle, il est judicieux de terminer tous les tours et de laisser la tortue à son point de départ, dans la même direction que celle dans laquelle elle a démarré. Cela rend le programme et la composition de morceaux de code dans de plus gros programmes plus facile à créer pour nous les humains!
+* Nous avons fait la même chose avec tess: elle a tracé son triangle et elle a parcouru 360 degrés. Puis nous l'avons retournée et l'avons déplacée de l'origine. Même la ligne vierge 21 indique comment fonctionne le *découpage mental* du programmeur: en gros, les mouvements de tess ont été divisés en "tracer le triangle" (lignes 15-20) puis "s'éloigner de l'origine" ( lignes 22 et 23).
+* L’une des principales utilisations des commentaires est d’enregistrer votre découpage mental et vos grandes idées. Ils ne sont pas toujours explicites dans le code.
 
-* We could have left out the last turn for alex, but that would not have been
-  as satisfying.  If you're asked to draw a closed shape like a square or a
-  rectangle, it is a good idea to complete all the turns and to leave the
-  turtle back where it started, facing the same direction as it started in.
-  This makes reasoning about the program and composing chunks of code into
-  bigger programs easier for us humans!
-* We did the same with tess: she drew her triangle and turned through a full
-  360 degress.  Then we turned her around and moved her aside.  Even the blank
-  line 21 is a hint about how the programmer's *mental chunking* is working: in
-  big terms, tess' movements were chunked as "draw the triangle"  (lines 15-20)
-  and then "move away from the origin" (lines 22 and 23).
-* One of the key uses for comments is to record your mental chunking, and big
-  ideas. They're not always explicit in the code.
-
-
-Mixed Up Programs
-~~~~~~~~~~~~~~~~~~~~
+Programmes mélangés - Mixed Up Programs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. parsonsprob:: for-loops-parsons-1
 
-    The following program has one turtle, "jamal", draw a capital L in blue and then another, "tina", draw a line to the west in orange as shown to the left, <img src="../../_static/parsons/TwoTurtles1.png" width="150" align="left" hspace="10" vspace="5" />.  The program should do all set-up, have "jamal" draw the L, and then have "tina" draw the line.   Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+    Le programme suivant contient une tortue "jamal", tracez un L majuscule en bleu, puis une autre, "tina", tracez une ligne à l'ouest en orange, comme indiqué à gauche, <img src="../../_static/parsons/TwoTurtles1.png" width="150" align="left" hspace="10" vspace="5" />. Le programme doit faire tous les réglages, faire "jamal" tracer le L, puis "tina" tracer la ligne. Enfin, il faut définir la fermeture de la fenêtre lorsque l'utilisateur clique dessus. <br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche à la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si certaines des lignes sont dans le mauvais ordre.</p>
     -----
     import turtle
     wn = turtle.Screen()
@@ -117,7 +101,7 @@ Mixed Up Programs
 
 .. parsonsprob:: for-loops-parsons-2
 
-    The following program has one turtle, "jamal", draw a line to the north in blue and then another, "tina", draw a line to the east in orange as shown to the left, <img src="../../_static/parsons/TwoTurtlesL.png" width="150" align="left" hspace="10" vspace="5" />.  The program should import the turtle module, get the window to draw on, create the turtle "jamal", have it draw a line to the north, then create the turtle "tina", and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p> 
+    Le programme suivant contient une tortue "jamal", tracez une ligne au nord en bleu puis une autre, "tina", une ligne à l'est en orange, comme indiqué à gauche, <img src="../../_static/parsons/TwoTurtlesL.png" width="150" align="left" hspace="10" vspace="5" />. Le programme doit importer le module tortue, obtenir la fenêtre sur laquelle dessiner, créer la tortue "jamal", la faire tracer une ligne au nord, puis créer la tortue "tina" et la faire tracer une ligne à l'est. Enfin, il convient de définir la fermeture de la fenêtre lorsque l'utilisateur clique dessus. <br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche à la colonne de droite et placez-les dans le bon ordre. Cliquez ensuite sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si certaines des lignes sont dans le mauvais ordre. </p>
     -----
     import turtle
     =====
@@ -140,77 +124,64 @@ Mixed Up Programs
 
 .. index:: for
 
-The ``for`` Loop
-----------------
+La boucle ``for`` *Loop*
+-----------------------------
 
-When we drew a square yesterday, it was quite tedious.  We had to move then turn, move
-then turn, etc. etc. four times.  If we were drawing a hexagon, or an octogon,
-or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.
+Quand nous avons dessiné un carré durant la dernière leçon, c'était très long, presque pénible. Nous avons dû bouger puis tourner, bouger puis tourner, etc. etc. quatre fois. Si nous dessinions un hexagone, un octogone ou un polygone à 42 côtés, cela aurait été un cauchemar de dupliquer tout ce code.
 
-As we have seen previously, using **iteration** to repeat code over and over can solve the copy/pasting code problem we encountered when drawing a square.
+Comme nous l'avons vu précédemment, utiliser **itération** pour répéter le code à plusieurs reprises peut résoudre le problème de copier/coller de code rencontré lors de la révision de code.
 
-In Python, the **for** statement allows us to write programs that implement iteration.   As a simple example, let's say we have some friends, and
-we'd like to send them each an email inviting them to our party.  We
-don't quite know how to send email yet, so for the moment we'll just print a
-message for each friend.
+En Python, l'instruction **for** nous permet d'écrire des programmes qui implémentent l'itération. À titre d’exemple simple, supposons que nous avons des amis et que nous aimerions leur envoyer chacun un courrier électronique les invitant à notre fête. Nous ne savons pas encore comment envoyer un email, alors pour le moment, nous allons simplement imprimer un message pour chaque ami.
 
 .. activecode:: for-loops-2
     :nocanvas:
 
-    for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-        print("Hi", name, "Please come to my party on Saturday!")
+    for nom in ["Joe", "Amy", "Brad", "Angelina", "Ally", "Jack", "Paris"]:
+        print("Bonjour", nom, "venez s'il vous plait à ma fête samedi!!")
 
-Take a look at the output produced when you press the ``run`` button.  There is one line printed for each friend.  Here's how it works:
+Jetez un coup d'oeil à la sortie produite lorsque vous appuyez sur le bouton ``run``. Il y a une ligne imprimée pour chaque ami. Voici comment ça fonctionne:
 
-* **name** in this ``for`` statement is called the **loop variable**.
-* The list of names in the square brackets is called a Python **list**.  
-  Lists are very useful.  We will have much more to say about them later.
-* Line 2  is the **loop body**.  The loop body is always
-  indented. The indentation determines exactly what statements are "in the
-  loop".  The loop body is performed one time for each name in the list.
-* On each *iteration* or *pass* of the loop, a check is done to see if
-  there are still more items to be processed.  If there are none left (this is
-  called the **terminating condition** of the loop), the loop has finished.
-  Program execution continues at the next statement after the loop body.
-* If there are items still to be processed, the loop variable is updated to
-  refer to the next item in the list.  This means, in this case, that the loop
-  body is executed here 7 times, and each time ``name`` will refer to a different
-  friend.
-* At the end of each execution of the body of the loop, Python returns
-  to the ``for`` statement, to see if there are more items to be handled.
+* **nom** dans cette déclaration ``for`` est appelé **variable de boucle**.
 
+* La liste des noms entre crochets s'appelle une **liste** Python. Les listes sont très utiles. Nous aurons beaucoup plus à dire à leur sujet plus tard.
 
-A codelens demonstration is a good way to help you visualize exactly how the flow of control
-works with the for loop. Click on the **Show CodeLens** button in the example above. Try stepping forward and backward through the program by pressing the buttons. You can see the value of ``name`` change as the loop iterates through the list of friends.
+* La ligne 2 est le **corps de la boucle/*loop body***. Le corps de la boucle est toujours en retrait. L'indentation détermine exactement quelles instructions sont "dans la boucle". Le corps de la boucle est exécuté une fois pour chaque nom de la liste.
+
+* à chaque *itération* ou *passe* de la boucle, une vérification est effectuée pour voir s'il reste encore des éléments à traiter. S'il n'en reste aucun (c'est ce qu'on appelle la **condition de fin/*terminating condition*** de la boucle), la boucle est terminée. L'exécution du programme se poursuit à l'instruction suivante après le corps de la boucle.
+
+* S'il reste des éléments à traiter, la variable de boucle est mise à jour pour faire référence à l'élément suivant de la liste. Cela signifie que, dans ce cas, le corps de la boucle est exécuté ici 7 fois et chaque fois, ``nom`` fera référence à un ami différent.
+
+* A la fin de chaque exécution du corps de la boucle, Python retourne à l'instruction ``for``, pour voir s'il y a plus d'éléments à gérer.
+
+Une démonstration de codelens est un bon moyen de vous aider à visualiser exactement comment le flux de contrôle fonctionne avec la boucle *for*. Cliquez sur le bouton **Show CodeLens** dans l'exemple ci-dessus. Essayez d’avancer et de revenir en arrière dans le programme en appuyant sur les boutons. Vous pouvez voir la valeur de ``nom`` changer pendant que la boucle parcourt la liste d'amis.
 
 .. note:: 
 
-    Although you might not want to worry about this yet, it is **really** useful to know that you can access any specific part of list by providing it's index value in square brackets, such as ``some_list[2]`` (the first element has an index of 0, the second has an index of 1, etc). Consider the following:
+    Bien que vous ne souhaitiez pas vous inquiéter pour le moment, il est vraiment utile de savoir que vous pouvez accéder à n’importe quelle partie de la liste en fournissant sa valeur d’index entre crochets, comme ``une_liste[2]``( le premier élément a un indice de 0, le second un indice de 1, etc.). Considérer ce qui suit:
 
     .. code-block:: python
 
         names = ["James", "Malindu", "Michelle", "Zoe", "Eli", "Bree"]
         
-        print(names[0])  # prints James
-        print(names[3])  # prints Zoe
+        print(names[0])  # va imprimer James
+        print(names[3])  # va imprimer Zoe
 
 
-Iteration Simplifies our Turtle Program
----------------------------------------
+Itération simplifie notre programme de tortue
+-----------------------------------------------------
 
-To draw a square we'd like to do the same thing four times --- move the turtle forward some distance and turn 90 degrees.  We previously used 8 lines of Python code to have alex draw the four sides of a
-square.  This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code).  Remember that the for statement will repeat the `forward` and `left` four times, one time for each value in the list.
+Pour dessiner un carré, nous aimerions faire la même chose quatre fois: déplacez la tortue vers l’avant et tournez de 90 degrés. Nous avons précédemment utilisé 8 lignes de code Python pour faire dessiner par alex les quatre côtés d’un carré. Le programme suivant fait exactement la même chose mais, à l’aide de la déclaration ``for``, n’utilise que trois lignes (sans le code de configuration). Rappelez-vous que l'instruction ``for`` répètera `forward` et `left` quatre fois, une fois pour chaque valeur de la liste.
 
 .. activecode:: ch03_for1
     :nocodelens:
 
     import turtle
 
-    # setup the drawing environment
+    # configurer l'environnement de dessin
     wn = turtle.Screen()
     alex = turtle.Turtle()
 
-    # the following repeats 4 times
+    # le suivant répète 4 fois
     for i in [0, 1, 2, 3]:
         alex.forward(50)
         alex.left(90)
@@ -218,47 +189,42 @@ square.  This next program does exactly the same thing but, with the help of the
     wn.exitonclick()
 
 
-While "saving some lines of code" might be convenient, it is not the big
-deal here.  What is much more important is that we've found a "repeating
-pattern" of statements, and we reorganized our program to repeat the pattern.
-Finding the chunks and somehow getting our programs arranged around those
-chunks is a vital skill when learning *How to think like a computer scientist*.
+Bien que "sauvegarder quelques lignes de code" puisse être pratique, ce n'est pas le gros problème ici. Ce qui est beaucoup plus important, c’est que nous avons trouvé un "patron répétitif" et que nous avons réorganisé notre programme pour le répéter. Trouver les morceaux et organiser d'une manière ou d'une autre nos programmes autour de ces morceaux est une compétence vitale pour apprendre *Comment penser comme un informaticien*.
 
-It is also important to realize that we could have used a ``while`` loop to accomplish the same drawing, and a version that does just that is below:
+Il est également important de réaliser que nous aurions pu utiliser une boucle ``while`` pour réaliser le même dessin, et une version qui le fait est la suivante:
 
 .. activecode:: ch03_for123
     :nocodelens:
 
     import turtle
 
-    # setup the drawing environment
+    # configurer l'environnement de dessin
     wn = turtle.Screen()
     alex = turtle.Turtle()
 
-    # the following repeats 4 times
-    counter = 0
-    while counter < 4:
+    # le suivant répète 4 fois
+    counteur = 0
+    while counteur < 4:
         alex.forward(50)
         alex.left(90)
-        counter = counter + 1
+        counteur = counteur + 1
 
     wn.exitonclick()
 
-Notice that although this code does the same thing as the for loop version, it requires some extra code compared to the for loop version. Generally speaking, if you know ahead of time how many times a loop should iterate, you should use a for loop (for example, iterating 4 times to draw a square). If you don't know ahead of time how many times a loop should iterate, a while loop is a better choice (for example, iterating until Reeborg had a wall in front of it). 
+Notez que, bien que ce code fasse la même chose que la version de la boucle *for*, il nécessite un code supplémentaire par rapport à la version de la boucle *for*. En règle générale, si vous savez à l'avance combien de fois une boucle doit être itérée, vous devez utiliser une boucle *for* (par exemple, itérer 4 fois pour dessiner un carré). Si vous ne savez pas à l'avance combien de fois une boucle doit itérer, une boucle while est un meilleur choix (par exemple, itérer jusqu'à ce que Reeborg ait un mur devant lui).
 
-Thinking back to the for loop version we saw above, the values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values. For example, consider the following program.
-
+En repensant à la version de la boucle *for* que nous avons vue ci-dessus, les valeurs [0,1,2,3] ont été fournies pour que le corps de la boucle s'exécute 4 fois. Nous aurions pu utiliser autre valeurs pour les quatres valeurs. Par exemple, considérons le programme suivant.
 
 .. activecode:: ch03_forcolor
     :nocodelens:
 
     import turtle
 
-    # setup the drawing environment
+    # configurer l'environnement de dessin
     wn = turtle.Screen()
     alex = turtle.Turtle()
 
-    # the following repeats 4 times
+    # le suivant répète 4 fois
     for i in [0, 1, 2, 3]:
         alex.forward(50)
         alex.left(90)
@@ -266,42 +232,41 @@ Thinking back to the for loop version we saw above, the values [0,1,2,3] were pr
     wn.exitonclick()
 
 
-In the previous example, there were four integers in the list.  This time there are four strings.  Since there are four items in the list, the iteration will still occur four times.  ``some_color`` will
-take on each color in the list.  We can even take this one step further and use the value of ``some_color`` as part of the computation.
+Dans l'exemple précédent, il y avait quatre entiers dans la liste. Cette fois, il y a quatre chaînes. Puisqu'il y a quatre éléments dans la liste, l'itération aura lieu quatre fois. ``des_couleurs`` prendra chacune des couleurs de la liste. Nous pouvons même aller un peu plus loin et utiliser la valeur de ``des_couleurs`` dans l'exécution du code.
 
 .. activecode:: colorlist
     :nocodelens:
 
     import turtle
 
-    # setup the drawing environment
+    # configurer l'environnement de dessin
     wn = turtle.Screen()
     alex = turtle.Turtle()
 
-    for some_color in ["yellow", "red", "purple", "blue"]:
-        alex.color(some_color)
+    for des_couleurs in ["yellow", "red", "purple", "blue"]:
+        alex.color(des_couleurs)
         alex.forward(50)
         alex.left(90)
 
     wn.exitonclick()
 
 
-In this case, the value of ``some_color`` is used to change the color attribute of ``alex``.  Each iteration causes ``some_color`` to change to the next value in the list.
+Dans ce cas, la valeur de ``des_couleurs`` est utilisée pour modifier l'attribut de couleur de ``alex``. À chaque itération, ``des_couleurs`` passe à la valeur suivante de la liste.
 
 
-Mixed Up Programs
+Programmes mixtes
 ~~~~~~~~~~~~~~~~~~
 
 .. parsonsprob:: 3_8
 
-    The following program uses a turtle to draw a triangle as shown to the left, <img src="../../_static/parsons/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 3 times, and each time through the loop the turtle should go forward 175 pixels, and then turn left 120 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p> 
+    Le programme suivant utilise une tortue pour dessiner un triangle comme celui à la gauche, <img src="../../_static/parsons/TurtleTriangle.png" width="150" align="left" hspace="10" vspace="5"/> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires et créer la tortue. Après cela, itérer (passe par la boucle) 3 fois, et la tortue doit avancer de 175 pixels, puis à gauche à 120 degrés à chaque fois qu'on passe par la boucle. Après la boucle, configurez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus.<br /><br /><p> Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. indention. Cliquez sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si l’une des lignes est dans le mauvais ordre ou mal mise en retrait.</p> 
     -----
     import turtle 
     =====         
     wn = turtle.Screen()
     marie = turtle.Turtle()
     =====
-    # repeat 3 times
+    # répéter 3 fois
     for i in [0,1,2]:  
     =====   
      marie.forward(175)
@@ -313,13 +278,14 @@ Mixed Up Programs
 
 .. parsonsprob:: 3_9
 
-    The following program uses a turtle to draw a rectangle as shown to the left, <img src="../../_static/parsons/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>  
+     Le programme suivant utilise une tortue pour dessiner un rectangle comme celui à la gauche, <img src="../../_static/parsons/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> mais les lignes sont mélangées. Le programme doit faire tous les réglages nécessaires et créer la tortue. Après cela, itérer (passe par la boucle) 2 fois, et chaque fois qu'on passe par la boucle, la tortue devrait avancer de 175 pixels, tourner à droite de 90 degrés, avancer de 150 pixels et tourner à droite de 90 degrés. Après la boucle, configurez la fenêtre pour qu'elle se ferme lorsque l'utilisateur clique dessus.<br /><br /><p>Faites glisser les blocs d'instructions de la colonne de gauche vers la colonne de droite et placez-les dans le bon ordre. indention. Cliquez sur <i>Check Me</i> pour voir si vous avez raison. On vous dira si l’une des lignes est dans le mauvais ordre ou mal mise en retrait.</p> 
+
     -----
     import turtle          
     wn = turtle.Screen()
     carlos = turtle.Turtle()
     =====
-    # repeat 2 times
+    # répéter 2 fois
     for i in [1,2]:  
     =====   
         carlos.forward(175)
@@ -332,7 +298,7 @@ Mixed Up Programs
     wn.exitonclick()
 
 
-**Check your understanding**
+**Vérifie ta compréhension**
 
 .. mchoice:: test_question3_4_1
     :answer_a: 1
@@ -340,29 +306,29 @@ Mixed Up Programs
     :answer_c: 6
     :answer_d: 10
     :correct: c
-    :feedback_a: The loop body prints one line, but the body will execute exactly one time for each element in the list [5, 4, 3, 2, 1, 0].
-    :feedback_b: Although the biggest number in the list is 5, there are actually 6 elements in the list.
-    :feedback_c: The loop body will execute (and print one line) for each of the 6 elements in the list [5, 4, 3, 2, 1, 0].
-    :feedback_d: The loop body will not execute more times than the number of elements in the list.
+    :feedback_a: le corps de la boucle imprime une ligne, mais il s'exécutera seulement une fois pour chaque élément de la liste [5, 4, 3, 2, 1, 0].
+    :feedback_b: Bien que le plus grand nombre dans la liste soit 5, il y a actuellement 6 éléments dans la liste.
+    :feedback_c: le corps de la boucle sera exécuté (et imprimera une ligne) pour chacun des 6 éléments de la liste [5, 4, 3, 2, 1, 0].
+    :feedback_d: le corps de la boucle ne s'exécutera pas plus de fois que le nombre d'éléments de la liste.
 
-    In the following code, how many lines does this code print?
+    Dans le code suivant, combien de lignes sera imprimé par ce code?
 
     .. code-block:: python
 
-        for number in [5, 4, 3, 2, 1, 0]:
-            print("I have", number, "cookies.  I'm going to eat one.")
+        for nombre in [5, 4, 3, 2, 1, 0]:
+            print("J'ai", nombre, "biscuits.  Je vais en manger un.")
 
 
 .. mchoice:: test_question3_4_2
-    :answer_a: They are indented to the same degree from the loop header.
-    :answer_b: There is always exactly one line in the loop body.
-    :answer_c: The loop body ends with a semi-colon (;) which is not shown in the code above.
+    :answer_a: Ils sont indentés au même degré que l'en-tête de la boucle.
+    :answer_b:  Il y a toujours exactement une ligne dans le corps de la boucle.
+    :answer_c: Le corps de la boucle se termine par un point-virgule (;) qui n'apparaît pas dans le code ci-dessus.
     :correct: a
-    :feedback_a: The loop body can have any number of lines, all indented from the loop header.
-    :feedback_b: The loop body may have more than one line.
-    :feedback_c: Python does not need semi-colons in its syntax, but relies mainly on indentation.
+    :feedback_a: le corps de la boucle peut avoir n'importe quel nombre de lignes, toutes indenté à partir de l'en-tête de la boucle.
+    :feedback_b: le corps de la boucle peut avoir plus qu'une ligne.
+    :feedback_c: Python n'a pas besoin de point-virgule dans sa syntaxe, mais dépend principalement sur l'indentation.
 
-    How does python know what statements are contained in the loop body?
+    Comment python sait-il quelles instructions sont contenues dans le corps de la boucle?
 
 
 .. mchoice:: test_question3_4_3
@@ -371,44 +337,39 @@ Mixed Up Programs
     :answer_c: 5
     :answer_d: 1
     :correct: b
-    :feedback_a: Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
-    :feedback_b: Yes, Python will process the items from left to right so the first time the value of number is 5 and the second time it is 4.
-    :feedback_c: Python gives number the value of items in the list, one at a time, in order.  number gets a new value each time the loop repeats.
-    :feedback_d: Python gives number the value of items in the list, one at a time, in order (from left to right).  number gets a new value each time the loop repeats.
+    :feedback_a: Python attribue à nombre la valeur des éléments de la liste, l'un après l'autre, en ordre (de gauche à droite). nombre obtient une nouvelle valeur chaque fois que la boucle se répète.
+    :feedback_b: Oui, Python traitera les éléments de gauche à droite, donc la première fois, la valeur de number est 5 et la deuxième fois, elle est 4.
+    :feedback_c:  Python attribue à number la valeur des éléments de la liste, l'un après l'autre, en ordre. nombre obtient une nouvelle valeur chaque fois que la boucle se répète.
+    :feedback_d: Python attribue à number la valeur des éléments de la liste, l'un après l'autre, en ordre (de gauche à droite). nombre obtient une nouvelle valeur chaque fois que la boucle se répète.
 
-    In the following code, what is the value of number the second time Python executes the loop?
+    Dans le code suivant, quelle est la valeur de nombre la deuxième fois que Python exécute la boucle?
 
     .. code-block:: python
 
-        for number in [5, 4, 3, 2, 1, 0]:
-            print("I have", number, "cookies.  I'm going to eat one.")
+        for nombre in [5, 4, 3, 2, 1, 0]:
+            print("J'ai", nombre, "biscuits.  Je vais en manger un.")
 
 
 .. index:: range
 
-The Range Function
--------------------
+La fonction de portée - *The Range Function*
+-----------------------------------------------
 
-It turns out that generating lists with a specific number of integers is a very common thing to do, especially when you
-want to write simple ``for loop`` controlled iteration.  Even though you can use any four items, or any four integers for that matter, the conventional thing to do is to use a list of integers starting with 0.
-In fact, these lists are so popular that Python gives us special built-in
-``range`` objects
-that can deliver a sequence of values to
-the ``for`` loop.  When called with one parameter, the sequence provided by ``range`` always starts with 0.  If you ask for ``range(4)``, then you will get 4 values starting with 0.  In other words, 0, 1, 2, and finally 3.  Notice that 4 is not included since we started with 0.  Likewise, ``range(10)`` provides 10 values, 0 through 9.
+La génération de listes avec un nombre spécifique d’entiers est très commun, surtout lorsque vous voulez écrire une simple itération contrôlée nommée ``for loop``. Même si vous pouvez utiliser quatre éléments ou quatre nombres entiers, le plus classique est d'utiliser une liste d'entiers commençant par 0. En fait, ces listes sont si populaires que Python donne une fonctions prédéfini ``range`` pouvant transmettre une séquence de valeurs à la boucle ``for``. Lorsqu'elle est appelée avec un paramètre, la séquence fournie par ``range`` commence toujours par 0. Si vous demandez ``range(4)``, vous obtiendrez 4 valeurs commençant par 0. En d'autres termes, 0, 1 , 2 et enfin 3. Notez que 4 n'est pas inclus puisqu'on commence avec 0. De même, ``range(10)`` fournit 10 valeurs, comprises entre 0 et 9.
 
 .. sourcecode:: python
 
       for i in range(4):
-          # Executes the body with i = 0, then 1, then 2, then 3
+          # Exécute le corps avec i = 0, puis 1, puis 2, puis 3
       for x in range(10):
-          # sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+          # définit x comme chacun des ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 .. note::
 
-    Computer scientists like to count from 0!
+    Les informaticiens aiment compter à partir de 0!
 
 
-So to repeat something four times, a good Python programmer would do this:
+Donc, pour répéter quelque chose quatre fois, un bon programmeur Python ferait ceci:
 
 .. sourcecode:: python
 
@@ -417,41 +378,41 @@ So to repeat something four times, a good Python programmer would do this:
         alex.left(90)
 
 
-Practice Problems
-------------------
+Problèmes de pratique
+-----------------------
 
-Try the following practice problems. You can either work directly in the textbook, or using Thonny. Either way, be sure to save your solution into your Computer Science 20 folder when you finish!
+Essayez les problèmes de pratique suivants. Vous pouvez travailler directement sur le site ou utiliser Thonny. Quoi qu'il en soit, veillez enregistrer votre solution dans votre dossier Informaqique 20 lorsque vous avez terminé!
 
-You might find the Python Documentation for the turtle module to be helpful: `https://docs.python.org/3/library/turtle.html <https://docs.python.org/3/library/turtle.html>`_.
+La documentation Python du module tortue pourrait vous être utile: `https://docs.python.org/3/library/turtle.html <https://docs.python.org/3/library/turtle.html>`_.
 
 
-Regular Polygons
+Polygones réguliers
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a program that uses for loops to make a turtle draw regular polygons (regular means all sides the same lengths, all angles the same). First, ask the user how many sides they want the polygon to have, and how long each side length should be. Now draw the regular polygon that meets the user's requirements!
+Créez un programme qui utilise les boucles ``for`` pour que la tortue dessine des polygones réguliers (normal signifie que tous les côtés ont les mêmes longueurs et les mêmes angles). Tout d'abord, demandez à l'utilisateur combien de côtés il souhaite que le polygone ait et quelle longueur doit avoir chaque côté. Dessinez maintenant le polygone régulier qui répond aux exigences de l'utilisateur!
 
-.. note:: Remember that in a regular polygon, the sum of the interior angles of the polygon will always be 360 degrees.
+.. note:: N'oubliez pas que dans un polygone régulier, la somme des angles intérieurs du polygone sera toujours de 360 ​​degrés.
    
 .. activecode:: practice_problem_turtle_for_loops_1
     :nocodelens:
     :enabledownload:
 
-    # Drawing Regular Polygons
+    # Dessiner des polygones réguliers
 
     import turtle
 
 
-Draw a Star
+Dessiner une étoile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a program that uses the turtle module to draw a five sided star. The user should be able to set a number of options each time the code runs, so the program should ask the user for: 
+Créez un programme qui utilise le module tortue pour dessiner une étoile à cinq sommets. L'utilisateur doit pouvoir définir un certain nombre d'options chaque fois que le code est exécuté. Le programme doit donc lui demander:
 
--  the width of the turtles pen
--  the turtle color
--  the length of the sides of the star that will be drawn
--  the background color to use
+- la largeur du stylo de la tortue
+- la couleur de la tortue
+- la longueur des côtés de l'étoile qui sera dessinée
+- la couleur de fond à utiliser
 
-One run of the program might produce a star that looks like the following:
+Une exécution du programme peut produire une étoile ressemblant à ceci:
 
 .. image:: images/star1.png
 
@@ -460,24 +421,24 @@ One run of the program might produce a star that looks like the following:
     :nocodelens:
     :enabledownload:
 
-    # Drawing a Star
+    # Dessiner une étoile
 
     import turtle
 
 
-Drawing a Clock
+Dessiner une horloge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a program that uses the turtle module to draw the shape of an analogue clock. Do this using **ONLY ONE TURTLE object**. It should look like the following:
+Créez un programme qui utilise le module tortue pour dessiner la forme d’une horloge analogique. Faites ceci en utilisant **SEULEMENT un objet TURTLE**. Cela devrait ressembler à ceci:
 
 .. image:: images/tess_clock1.png
 
-You might need to explore the `Turtle documentation on the Python Docs website <https://docs.python.org/3/library/turtle.html>`_ to figure out how to leave an image of where the turtle was.
+Vous devrez peut-être explorer la documentation `Turtle sur le site Web Python Docs <https://docs.python.org/3/library/turtle.html>`_ pour savoir comment laisser une image de l'emplacement de la tortue.
 
 .. activecode:: practice_problem_turtle_for_loops_3
     :nocodelens:
     :enabledownload:
 
-    # Drawing a Clock
+    # Dessiner une horloge
 
     import turtle
