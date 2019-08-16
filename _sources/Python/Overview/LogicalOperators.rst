@@ -3,12 +3,12 @@
    :start: 1
 
 
-Logical Operators
+Opérateurs logiques
 ===============================
 
-.. topic:: Quick Overview of Day
+.. topic:: Aperçu rapide de la journée
 
-    Introduce the logical operators ``and``, ``or``, ``not``. Work on practice problems, in which students create programs that utilize logical operators. Booleans practice quiz.
+    Présenter les opérateurs logiques ``and``, ``or``, ``not``. Travaillez sur des problèmes pratiques, dans lesquels les étudiants créent des programmes utilisant des opérateurs logiques. quiz de pratique de Booléen.
 
 .. reveal:: curriculum_addressed_logical_operators
     :showtitle: Résultats du programme d'études traités dans cette section. 
@@ -26,17 +26,11 @@ Logical Operators
 ``and``, ``or``, ``not``
 ----------------------------
 
-There are three **logical operators**: ``and``, ``or``, and ``not``. The
-semantics (meaning) of these operators is similar to their meaning in English.
-For example, ``x > 0 and x < 10`` is true only if ``x`` is greater than 0 *and*
-at the same time, x is less than 10.  How would you describe this in words?  You would say that x is between 0 and 10, not including the endpoints.
+Il existe trois **opérateurs logiques**: ``and``, ``or``, and ``not``. La sémantique (signification) de ces opérateurs est similaire à leur signification en anglais. Par exemple, ``x> 0 et x <10`` est vrai seulement si ``x`` est supérieur à 0 et/*and* en même temps, x est inférieur à 10. Comment décririez-vous cela avec des mots? Vous diriez que x est compris entre 0 et 10, sans compter le 0 et le 10.
 
-``n % 2 == 0 or n % 3 == 0`` is true if *either* of the conditions is true,
-that is, if the number is divisible by 2 *or* divisible by 3.  In this case, one, or the other, or both of the parts has to be true for the result to be true.
+``n % 2 == 0 or n % 3 == 0`` est vrai si un ou/*or* l'autre est vrai, c'est-à-dire si le nombre est divisible par 2 ou/*or* divisible par 3. Dans ce cas, l'une ou l'autre ou les deux parties doivent être vraies pour que le résultat soit vrai.
 
-Finally, the ``not`` operator negates a boolean expression, so ``not  x > y``
-is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
-``y``.
+Enfin, l'opérateur ``not`` nie une expression booléenne, donc ``not  x > y`` est vrai si ``x > y`` est faux, c'est-à-dire si ``x`` est inférieur ou égal à ``y``.
 
 .. activecode:: local_operators_example_1
 
@@ -47,20 +41,22 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
     print(n % 2 == 0 or n % 3 == 0)
 
 
-.. caution:: Common Mistake!
+.. caution:: Une erreur commune!
 
-    There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable ``number`` and we want to check to see if its value is 5,6, or 7.  In words we might say: "number equal to 5 or 6 or 7".  However, if we translate this into Python, ``number == 5 or 6 or 7``, it will not be correct.  The ``or`` operator must join the results of three equality checks.  The correct way to write this is ``number == 5 or number == 6 or number == 7``.  This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.
+    Une erreur très commune se produit lorsque les programmeurs essaient d'écrire des expressions booléennes. Par exemple, si nous avons une variable ``nombre`` et que nous voulons vérifier si sa valeur est 5, 6 ou 7. En d'autres termes, nous pourrions dire: "nombre égal à 5, 6 ou 7". Cependant, si nous traduisons cela en Python comme, ``nombre == 5 or 6 or 7``, ce ne sera pas correct. L'opérateur ``or`` doit joindre les résultats de trois vérification d'égalité. La bonne façon d'écrire ceci est ``nombre == 5 ou nombre == 6 ou nombre == 7``. Cela peut sembler beaucoup de dactylographie mais c'est absolument nécessaire. Vous ne pouvez pas prendre de raccourci.
 
 
-Check Your Understanding
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Vérifie ta compréhension
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: test_question6_2_1
    :answer_a: x &gt; 0 and &lt; 5
    :answer_b: x &gt; 0 or x &lt; 5
    :answer_c: x &gt; 0 and x &lt; 5
    :correct: c
-   :feedback_a: Each comparison must be between exactly two values.  In this case the right-hand expression &lt; 5 lacks a value on its left.
+   :feedback_a: chaque comparaison doit comporter exactement deux valeurs. Dans ce cas, l’expression de droite & lt; 5 manque une valeur à sa gauche.
+   
+   Each comparison must be between exactly two values.  In this case the right-hand expression &lt; 5 lacks a value on its left.
    :feedback_b: Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be True.
    :feedback_c: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write 0 &lt; x &lt; 5.
 
