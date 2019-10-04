@@ -41,7 +41,7 @@ Si vous préférez regarder une vidéo, la `vidéo <https://www.youtube.com/watc
 .. _variables_scratch:
 
 Variables 
----------
+---------------------
 
 Lorsque nous avons dessiné une variété de polygones réguliers dans la dernière section, nous avons trouvé qu'il y avait un motif que nous pouvions utiliser, comme le montre l'image ci-dessous:
 
